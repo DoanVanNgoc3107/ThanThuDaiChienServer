@@ -4,4 +4,6 @@ WiredTiger*
 
 # Bỏ qua các bản nén database cũ và file cài đặt
 *.gz
+.vscode
+.cursor
 *.deb

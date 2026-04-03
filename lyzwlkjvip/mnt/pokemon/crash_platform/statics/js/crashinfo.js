@@ -21,7 +21,7 @@ function switchStatus(status) {
         data: JSON.stringify(datas),
         beforeSend: function(XMLHttpRequest) {
             if (datas.comments === "") {
-                $("#switch-status-error").text("备注不可为空！");
+                $("#switch-status-error").text("Ghi chú không được để trống!");
                 return false;
             } else {
                 return true;
@@ -29,10 +29,10 @@ function switchStatus(status) {
         },
         success: function (data) {
             if (data.ret) {
-                alert("处理成功");
+                alert("Xử lý thành công");
                 window.location.reload();
             } else {
-                alert("处理失败")
+                alert("Xử lý thất bại")
             }
         },
         error: function () {
@@ -82,15 +82,15 @@ $(function() {
                 html += divs[i];
             }
             fullVersion.innerHTML = html;
-            fullBtn.innerHTML = "收起";
+            fullBtn.innerHTML = "Thu gọn";
             fullBtn.onclick = packUp;
         }
         function packUp() {
             fullVersion.innerHTML = divs[0] + divs[1];
-            fullBtn.innerHTML = "...全部";
+            fullBtn.innerHTML = "...Xem hết";
             fullBtn.onclick = fullShow;
         }
-        fullBtn.innerHTML = "...全部";
+        fullBtn.innerHTML = "...Xem hết";
         fullBtn.onclick = fullShow;
     }
 
@@ -137,7 +137,7 @@ $(function() {
                 }
             },
             error: function () {
-                alert("chart 请求失败！")
+                alert("Yêu cầu chart thất bại!")
             },
         });
 
@@ -147,7 +147,7 @@ $(function() {
             data: {
                 labels: responseData.xAex,
                 datasets: [{
-                    label: "错误",
+                    label: "Lỗi",
                     fill: false,
                     borderColor: "#007bff",
                     borderWidth: 2,
@@ -161,7 +161,7 @@ $(function() {
                 },
                 title: {
                     display: false,
-                    text: '趋势图',
+                    text: 'Biểu đồ xu hướng',
                     // fontSize: 20,
                 },
                 scales: {
@@ -212,7 +212,7 @@ $(function() {
             }
         },
         columns: [
-            {field: 'id', title: '序列号', align: 'center',
+            {field: 'id', title: 'Số thứ tự', align: 'center',
                 formatter: function (value, row, index) {
                         var e = '<a href="javascript:;" onclick="showMore(\'' + row.id + '\',\'' + StackStyle + '\')">' + value + '</a>';
                         if (index === 0) {
@@ -221,7 +221,7 @@ $(function() {
                         return e;
                     }
                 },
-            {field: 'report_time', title: '上报时间', align: 'center',
+            {field: 'report_time', title: 'Thời gian báo lỗi', align: 'center',
                 formatter: function (value, row, index) {
                     var e = '<a href="javascript:;" onclick="showMore(\'' + row.id + '\',\'' + StackStyle + '\')">' + value + '</a>';
                     return e;
@@ -248,7 +248,7 @@ $(function() {
     $("#crash_comment button").on("click", function() {
         var comments = $("#crash_comment textarea").val()
         if (comments === "") {
-            alert("不能为空")
+            alert("Không được để trống")
         } else {
             var datas = {
                 "_id": StackID,
@@ -269,7 +269,7 @@ $(function() {
                         $("#crash_comment_view").append(strData)
                         $("#crash_comment textarea").val("")
                     } else {
-                        alert("添加失败")
+                        alert("Thêm thất bại")
                     }
                 }
             })

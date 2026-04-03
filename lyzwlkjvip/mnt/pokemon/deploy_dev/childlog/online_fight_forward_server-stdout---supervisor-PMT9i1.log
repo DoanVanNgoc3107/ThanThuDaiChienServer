@@ -1,0 +1,405 @@
+[online_fight_forward_server I 260403 07:13:58.388.001 document.go:151] register document default ok
+[online_fight_forward_server I 260403 07:13:58.400.002 init.go:171] register document ok
+[online_fight_forward_server D 260403 07:13:58.456.003 config.go:49] cwd in /mnt/pokemon/release/online_fight_forward
+[online_fight_forward_server I 260403 07:13:58.484.004 config.go:60] online_fight_forward.cn.1 config in defines.json
+[online_fight_forward.cn.1 I 260403 07:13:58.484.005 main.go:39] &main.Define{ContainerOption:service.ContainerOption{Name:"@online_fight_forward.cn.1", Debug:false, Addr:"", NSQLookupd:"http://127.0.0.1:4161/", Mainnsqd:"", NSQTcpAddresses:[]string{"127.0.0.1:4150"}, Shushu:false, Services:[]service.IOption{(*service.Option)(0xc00016f500)}, ServicesRaw:[]json.RawMessage(nil)}, IP:"", QueryIPUrl:"http://127.0.0.1:18081/ip"}
+panic: Get http://127.0.0.1:18081/ip: dial tcp 127.0.0.1:18081: connect: connection refused
+
+goroutine 1 [running]:
+main.(*Define).queryIp(0xc000244540)
+	/mnt/hgfs/pokemon_server/gosrc/tjgame/online_fight_forward/server.go:31 +0x3e0
+main.main()
+	/mnt/hgfs/pokemon_server/gosrc/tjgame/online_fight_forward/main.go:40 +0x53f
+[online_fight_forward_server I 260403 07:13:59.654.001 document.go:151] register document default ok
+[online_fight_forward_server I 260403 07:13:59.658.002 init.go:171] register document ok
+[online_fight_forward_server D 260403 07:13:59.700.003 config.go:49] cwd in /mnt/pokemon/release/online_fight_forward
+[online_fight_forward_server I 260403 07:13:59.713.004 config.go:60] online_fight_forward.cn.1 config in defines.json
+[online_fight_forward.cn.1 I 260403 07:13:59.713.005 main.go:39] &main.Define{ContainerOption:service.ContainerOption{Name:"@online_fight_forward.cn.1", Debug:false, Addr:"", NSQLookupd:"http://127.0.0.1:4161/", Mainnsqd:"", NSQTcpAddresses:[]string{"127.0.0.1:4150"}, Shushu:false, Services:[]service.IOption{(*service.Option)(0xc000282e40)}, ServicesRaw:[]json.RawMessage(nil)}, IP:"", QueryIPUrl:"http://127.0.0.1:18081/ip"}
+[online_fight_forward.cn.1 I 260403 07:13:59.749.007 server.go:39] query ip 127.0.0.1
+[online_fight_forward.cn.1 I 260403 07:14:04.520.009 main.go:56] metrics listen: 192.168.97.6:2113
+[online_fight_forward.cn.1 I 260403 07:14:04.525.010 service.go:67] watch patch file cn_patch
+[online_fight_forward.cn.1 I 260403 07:14:04.531.013 rpcclient.go:292] create client consumer RESP-c_online_fight_forward.cn.1/0global_1rpc
+[online_fight_forward.cn.1 I 260403 07:14:04.532.014 consumer.go:1175] INF    2 [RESP-c_online_fight_forward.cn.1/0global_1rpc] (127.0.0.1:4150) connecting to nsqd
+[online_fight_forward.cn.1 I 260403 07:14:04.541.015 connection.go:505] Listen on [::]:47559 ...
+[online_fight_forward.cn.1 I 260403 07:14:04.541.016 server_rudp.go:48] rudp server listen [::]:47559
+[online_fight_forward.cn.1 I 260403 07:14:04.541.017 server.go:79] address 127.0.0.1:47559
+[online_fight_forward.cn.1 I 260403 07:14:04.573.018 service.go:282] current patch set 914
+[online_fight_forward.cn.1 I 260403 07:14:04.582.019 service.go:295] start runner 1 patch 914 success
+[online_fight_forward.cn.1 I 260403 07:14:04.582.020 container.go:259] service online_fight_forward.cn.1 start
+[online_fight_forward.cn.1 I 260403 07:14:04.582.021 container.go:264] container @online_fight_forward.cn.1 start
+[online_fight_forward.cn.1 I 260403 07:14:04.582.022 server_rudp.go:66] rudp server [::]:47559 start ok
+[online_fight_forward.cn.1 I 260403 07:14:04.583.024 rpcserver.go:349] create server consumer StartOnlineFightBattleAuto/global
+[online_fight_forward.cn.1 I 260403 07:14:04.583.026 rpcserver.go:349] create server consumer StartOnlineFightBattlePlayRecord/global
+[online_fight_forward.cn.1 I 260403 07:14:04.586.030 rpcserver.go:349] create server consumer REQ-online_fight_forward.cn.1/rpc
+[online_fight_forward.cn.1 I 260403 07:14:04.586.034 rpcserver.go:349] create server consumer StartOnlineFightBattle/global
+[online_fight_forward.cn.1 I 260403 07:14:04.586.035 consumer.go:1175] INF    3 [StartOnlineFightBattleAuto/global] (127.0.0.1:4150) connecting to nsqd
+[online_fight_forward.cn.1 I 260403 07:14:04.588.036 consumer.go:1175] INF    4 [StartOnlineFightBattlePlayRecord/global] (127.0.0.1:4150) connecting to nsqd
+[online_fight_forward.cn.1 I 260403 07:14:04.593.037 consumer.go:1175] INF    5 [REQ-online_fight_forward.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[online_fight_forward.cn.1 I 260403 07:14:04.597.038 consumer.go:1175] INF    6 [StartOnlineFightBattle/global] (127.0.0.1:4150) connecting to nsqd
+[online_fight_forward.cn.1 I 260403 07:43:39.821.041 server_rudp.go:88] rudp server [::]:47559 stopping
+[online_fight_forward.cn.1 I 260403 07:43:39.822.042 consumer.go:1175] INF    5 [REQ-online_fight_forward.cn.1/rpc] stopping...
+[online_fight_forward.cn.1 I 260403 07:43:39.822.043 consumer.go:1175] INF    3 [StartOnlineFightBattleAuto/global] stopping...
+[online_fight_forward.cn.1 I 260403 07:43:39.822.040 consumer.go:1175] INF    4 [StartOnlineFightBattlePlayRecord/global] stopping...
+[online_fight_forward.cn.1 I 260403 07:43:39.824.044 producer.go:382] INF    7 stopping
+[online_fight_forward.cn.1 I 260403 07:43:39.825.045 proxy.go:117] Stopping Runner[1]
+[online_fight_forward.cn.1 E 260403 07:43:39.828.047 proxy.go:122] Stop Runner[1] error exit status 1
+goroutine 83 [running]:
+tjgame/server_framework/tj/log.Errorf(0x141859d, 0x18, 0xc0140e0060, 0x2, 0x2)
+	/mnt/hgfs/pokemon_server/gosrc/tjgame/server_framework/tj/log/log.go:155 +0x7b
+tjgame/services/cross/onlinefight/forward.(*AntiProxyRunner).Stop(0xc000470100)
+	/mnt/hgfs/pokemon_server/gosrc/tjgame/services/cross/onlinefight/forward/proxy.go:122 +0x1df
+tjgame/services/cross/onlinefight/forward.(*Service).Stop(0xc017377c70)
+	/mnt/hgfs/pokemon_server/gosrc/tjgame/services/cross/onlinefight/forward/service.go:101 +0x6b
+tjgame/server_framework/tj/service.(*Container).Stop(0xc01552a4b0)
+	/mnt/hgfs/pokemon_server/gosrc/tjgame/server_framework/tj/service/container.go:277 +0x243
+main.(*Server).OnStop(0xc0002fa750)
+	/mnt/hgfs/pokemon_server/gosrc/tjgame/online_fight_forward/server.go:55 +0x32
+tjgame/server_framework/tj.(*RudpServerFramework).Stop(0xc0003ac1e0)
+	/mnt/hgfs/pokemon_server/gosrc/tjgame/server_framework/tj/server_rudp.go:99 +0x75
+tjgame/server_framework/tj.(*RudpServerFramework).Start.func1(0xc0003f07e0, 0xc0003ac1e0)
+	/mnt/hgfs/pokemon_server/gosrc/tjgame/server_framework/tj/server_rudp.go:59 +0x42
+created by tjgame/server_framework/tj.(*RudpServerFramework).Start
+	/mnt/hgfs/pokemon_server/gosrc/tjgame/server_framework/tj/server_rudp.go:57 +0x333
+
+[online_fight_forward.cn.1 I 260403 07:43:39.828.048 container.go:279] service online_fight_forward.cn.1 stop
+[online_fight_forward.cn.1 I 260403 07:43:39.829.049 container.go:286] container @online_fight_forward.cn.1 stop
+[online_fight_forward.cn.1 I 260403 07:43:39.833.046 consumer.go:1175] INF    6 [StartOnlineFightBattle/global] stopping...
+[online_fight_forward.cn.1 I 260403 07:43:39.829.050 server_rudp.go:91] rudp server [::]:47559 stop ok
+[online_fight_forward_server I 260403 07:43:51.237.001 document.go:151] register document default ok
+[online_fight_forward_server I 260403 07:43:51.250.002 init.go:171] register document ok
+[online_fight_forward_server D 260403 07:43:51.330.003 config.go:49] cwd in /mnt/pokemon/release/online_fight_forward
+[online_fight_forward_server I 260403 07:43:51.343.004 config.go:60] online_fight_forward.cn.1 config in defines.json
+[online_fight_forward.cn.1 I 260403 07:43:51.343.005 main.go:39] &main.Define{ContainerOption:service.ContainerOption{Name:"@online_fight_forward.cn.1", Debug:false, Addr:"", NSQLookupd:"http://127.0.0.1:4161/", Mainnsqd:"", NSQTcpAddresses:[]string{"127.0.0.1:4150"}, Shushu:false, Services:[]service.IOption{(*service.Option)(0xc0002f0ac0)}, ServicesRaw:[]json.RawMessage(nil)}, IP:"", QueryIPUrl:"http://127.0.0.1:18081/ip"}
+panic: Get http://127.0.0.1:18081/ip: dial tcp 127.0.0.1:18081: connect: connection refused
+
+goroutine 1 [running]:
+main.(*Define).queryIp(0xc00021c540)
+	/mnt/hgfs/pokemon_server/gosrc/tjgame/online_fight_forward/server.go:31 +0x3e0
+main.main()
+	/mnt/hgfs/pokemon_server/gosrc/tjgame/online_fight_forward/main.go:40 +0x53f
+[online_fight_forward_server I 260403 07:43:52.573.001 document.go:151] register document default ok
+[online_fight_forward_server I 260403 07:43:52.579.002 init.go:171] register document ok
+[online_fight_forward_server D 260403 07:43:52.605.003 config.go:49] cwd in /mnt/pokemon/release/online_fight_forward
+[online_fight_forward_server I 260403 07:43:52.613.004 config.go:60] online_fight_forward.cn.1 config in defines.json
+[online_fight_forward.cn.1 I 260403 07:43:52.616.005 main.go:39] &main.Define{ContainerOption:service.ContainerOption{Name:"@online_fight_forward.cn.1", Debug:false, Addr:"", NSQLookupd:"http://127.0.0.1:4161/", Mainnsqd:"", NSQTcpAddresses:[]string{"127.0.0.1:4150"}, Shushu:false, Services:[]service.IOption{(*service.Option)(0xc0001417c0)}, ServicesRaw:[]json.RawMessage(nil)}, IP:"", QueryIPUrl:"http://127.0.0.1:18081/ip"}
+[online_fight_forward.cn.1 I 260403 07:43:52.639.007 server.go:39] query ip 127.0.0.1
+[online_fight_forward.cn.1 I 260403 07:43:58.047.009 main.go:56] metrics listen: 192.168.97.6:2113
+[online_fight_forward.cn.1 I 260403 07:43:58.053.010 service.go:67] watch patch file cn_patch
+[online_fight_forward.cn.1 I 260403 07:43:58.057.013 rpcclient.go:292] create client consumer RESP-c_online_fight_forward.cn.1/0global_1rpc
+[online_fight_forward.cn.1 I 260403 07:43:58.057.014 consumer.go:1175] INF    2 [RESP-c_online_fight_forward.cn.1/0global_1rpc] (127.0.0.1:4150) connecting to nsqd
+[online_fight_forward.cn.1 I 260403 07:43:58.062.015 connection.go:505] Listen on [::]:35448 ...
+[online_fight_forward.cn.1 I 260403 07:43:58.062.016 server_rudp.go:48] rudp server listen [::]:35448
+[online_fight_forward.cn.1 I 260403 07:43:58.062.017 server.go:79] address 127.0.0.1:35448
+[online_fight_forward.cn.1 I 260403 07:43:58.063.018 service.go:282] current patch set 914
+[online_fight_forward.cn.1 I 260403 07:43:58.070.019 service.go:295] start runner 1 patch 914 success
+[online_fight_forward.cn.1 I 260403 07:43:58.071.020 container.go:259] service online_fight_forward.cn.1 start
+[online_fight_forward.cn.1 I 260403 07:43:58.071.022 rpcserver.go:349] create server consumer StartOnlineFightBattle/global
+[online_fight_forward.cn.1 I 260403 07:43:58.072.023 container.go:264] container @online_fight_forward.cn.1 start
+[online_fight_forward.cn.1 I 260403 07:43:58.072.024 server_rudp.go:66] rudp server [::]:35448 start ok
+[online_fight_forward.cn.1 I 260403 07:43:58.073.026 rpcserver.go:349] create server consumer StartOnlineFightBattleAuto/global
+[online_fight_forward.cn.1 I 260403 07:43:58.074.028 rpcserver.go:349] create server consumer StartOnlineFightBattlePlayRecord/global
+[online_fight_forward.cn.1 I 260403 07:43:58.076.032 rpcserver.go:349] create server consumer REQ-online_fight_forward.cn.1/rpc
+[online_fight_forward.cn.1 I 260403 07:43:58.077.035 consumer.go:1175] INF    3 [StartOnlineFightBattle/global] (127.0.0.1:4150) connecting to nsqd
+[online_fight_forward.cn.1 I 260403 07:43:58.078.036 consumer.go:1175] INF    4 [StartOnlineFightBattleAuto/global] (127.0.0.1:4150) connecting to nsqd
+[online_fight_forward.cn.1 I 260403 07:43:58.079.037 consumer.go:1175] INF    5 [StartOnlineFightBattlePlayRecord/global] (127.0.0.1:4150) connecting to nsqd
+[online_fight_forward.cn.1 I 260403 07:43:58.080.038 consumer.go:1175] INF    6 [REQ-online_fight_forward.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[online_fight_forward.cn.1 E 260403 08:38:32.113.041 conn.go:731] ERR    5 [StartOnlineFightBattlePlayRecord/global] (127.0.0.1:4150) IO error - EOF
+[online_fight_forward.cn.1 E 260403 08:38:32.114.042 conn.go:731] ERR    2 [RESP-c_online_fight_forward.cn.1/0global_1rpc] (127.0.0.1:4150) IO error - EOF
+[online_fight_forward.cn.1 I 260403 08:38:32.115.043 conn.go:731] INF    5 [StartOnlineFightBattlePlayRecord/global] (127.0.0.1:4150) beginning close
+[online_fight_forward.cn.1 I 260403 08:38:32.115.044 conn.go:731] INF    2 [RESP-c_online_fight_forward.cn.1/0global_1rpc] (127.0.0.1:4150) beginning close
+[online_fight_forward.cn.1 E 260403 08:38:32.116.045 conn.go:731] ERR    6 [REQ-online_fight_forward.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[online_fight_forward.cn.1 I 260403 08:38:32.116.046 conn.go:731] INF    5 [StartOnlineFightBattlePlayRecord/global] (127.0.0.1:4150) readLoop exiting
+[online_fight_forward.cn.1 I 260403 08:38:32.116.047 conn.go:731] INF    6 [REQ-online_fight_forward.cn.1/rpc] (127.0.0.1:4150) beginning close
+[online_fight_forward.cn.1 E 260403 08:38:32.111.040 conn.go:731] ERR    3 [StartOnlineFightBattle/global] (127.0.0.1:4150) IO error - EOF
+[online_fight_forward.cn.1 I 260403 08:38:32.118.048 conn.go:731] INF    2 [RESP-c_online_fight_forward.cn.1/0global_1rpc] (127.0.0.1:4150) readLoop exiting
+[online_fight_forward.cn.1 I 260403 08:38:32.118.049 conn.go:731] INF    6 [REQ-online_fight_forward.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[online_fight_forward.cn.1 I 260403 08:38:32.119.050 conn.go:731] INF    6 [REQ-online_fight_forward.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[online_fight_forward.cn.1 I 260403 08:38:32.119.051 conn.go:731] INF    6 [REQ-online_fight_forward.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[online_fight_forward.cn.1 I 260403 08:38:32.120.052 conn.go:731] INF    2 [RESP-c_online_fight_forward.cn.1/0global_1rpc] (127.0.0.1:4150) breaking out of writeLoop
+[online_fight_forward.cn.1 I 260403 08:38:32.120.053 conn.go:731] INF    2 [RESP-c_online_fight_forward.cn.1/0global_1rpc] (127.0.0.1:4150) writeLoop exiting
+[online_fight_forward.cn.1 E 260403 08:38:32.120.054 conn.go:731] ERR    4 [StartOnlineFightBattleAuto/global] (127.0.0.1:4150) IO error - EOF
+[online_fight_forward.cn.1 I 260403 08:38:32.120.055 conn.go:731] INF    4 [StartOnlineFightBattleAuto/global] (127.0.0.1:4150) beginning close
+[online_fight_forward.cn.1 I 260403 08:38:32.121.056 conn.go:731] INF    4 [StartOnlineFightBattleAuto/global] (127.0.0.1:4150) readLoop exiting
+[online_fight_forward.cn.1 I 260403 08:38:32.121.057 conn.go:731] INF    4 [StartOnlineFightBattleAuto/global] (127.0.0.1:4150) breaking out of writeLoop
+[online_fight_forward.cn.1 I 260403 08:38:32.121.058 conn.go:731] INF    4 [StartOnlineFightBattleAuto/global] (127.0.0.1:4150) writeLoop exiting
+[online_fight_forward.cn.1 I 260403 08:38:32.121.059 conn.go:731] INF    5 [StartOnlineFightBattlePlayRecord/global] (127.0.0.1:4150) breaking out of writeLoop
+[online_fight_forward.cn.1 I 260403 08:38:32.121.060 conn.go:731] INF    5 [StartOnlineFightBattlePlayRecord/global] (127.0.0.1:4150) writeLoop exiting
+[online_fight_forward.cn.1 I 260403 08:38:32.122.061 conn.go:731] INF    3 [StartOnlineFightBattle/global] (127.0.0.1:4150) beginning close
+[online_fight_forward.cn.1 I 260403 08:38:32.122.062 conn.go:731] INF    3 [StartOnlineFightBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[online_fight_forward.cn.1 I 260403 08:38:32.122.063 conn.go:731] INF    3 [StartOnlineFightBattle/global] (127.0.0.1:4150) readLoop exiting
+[online_fight_forward.cn.1 I 260403 08:38:32.123.064 conn.go:731] INF    3 [StartOnlineFightBattle/global] (127.0.0.1:4150) writeLoop exiting
+[online_fight_forward.cn.1 I 260403 08:38:32.221.065 conn.go:731] INF    6 [REQ-online_fight_forward.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[online_fight_forward.cn.1 I 260403 08:38:32.221.066 conn.go:731] INF    6 [REQ-online_fight_forward.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[online_fight_forward.cn.1 W 260403 08:38:32.221.067 consumer.go:1175] WRN    6 [REQ-online_fight_forward.cn.1/rpc] there are 0 connections left alive
+[online_fight_forward.cn.1 I 260403 08:38:32.222.068 consumer.go:1175] INF    6 [REQ-online_fight_forward.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[online_fight_forward.cn.1 I 260403 08:38:32.222.069 conn.go:731] INF    2 [RESP-c_online_fight_forward.cn.1/0global_1rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[online_fight_forward.cn.1 I 260403 08:38:32.222.070 conn.go:731] INF    2 [RESP-c_online_fight_forward.cn.1/0global_1rpc] (127.0.0.1:4150) clean close complete
+[online_fight_forward.cn.1 W 260403 08:38:32.222.071 consumer.go:1175] WRN    2 [RESP-c_online_fight_forward.cn.1/0global_1rpc] there are 0 connections left alive
+[online_fight_forward.cn.1 I 260403 08:38:32.222.072 consumer.go:1175] INF    2 [RESP-c_online_fight_forward.cn.1/0global_1rpc] (127.0.0.1:4150) re-connecting in 5s
+[online_fight_forward.cn.1 I 260403 08:38:32.222.073 conn.go:731] INF    4 [StartOnlineFightBattleAuto/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[online_fight_forward.cn.1 I 260403 08:38:32.222.074 conn.go:731] INF    4 [StartOnlineFightBattleAuto/global] (127.0.0.1:4150) clean close complete
+[online_fight_forward.cn.1 W 260403 08:38:32.222.075 consumer.go:1175] WRN    4 [StartOnlineFightBattleAuto/global] there are 0 connections left alive
+[online_fight_forward.cn.1 I 260403 08:38:32.222.076 consumer.go:1175] INF    4 [StartOnlineFightBattleAuto/global] (127.0.0.1:4150) re-connecting in 5s
+[online_fight_forward.cn.1 I 260403 08:38:32.223.078 conn.go:731] INF    3 [StartOnlineFightBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[online_fight_forward.cn.1 I 260403 08:38:32.223.079 conn.go:731] INF    3 [StartOnlineFightBattle/global] (127.0.0.1:4150) clean close complete
+[online_fight_forward.cn.1 W 260403 08:38:32.223.080 consumer.go:1175] WRN    3 [StartOnlineFightBattle/global] there are 0 connections left alive
+[online_fight_forward.cn.1 I 260403 08:38:32.223.081 consumer.go:1175] INF    3 [StartOnlineFightBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[online_fight_forward.cn.1 I 260403 08:38:32.223.082 conn.go:731] INF    5 [StartOnlineFightBattlePlayRecord/global] (127.0.0.1:4150) clean close complete
+[online_fight_forward.cn.1 W 260403 08:38:32.223.083 consumer.go:1175] WRN    5 [StartOnlineFightBattlePlayRecord/global] there are 0 connections left alive
+[online_fight_forward.cn.1 I 260403 08:38:32.223.084 consumer.go:1175] INF    5 [StartOnlineFightBattlePlayRecord/global] (127.0.0.1:4150) re-connecting in 5s
+[online_fight_forward.cn.1 I 260403 08:38:32.223.077 conn.go:731] INF    5 [StartOnlineFightBattlePlayRecord/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[online_fight_forward.cn.1 I 260403 08:38:37.224.087 consumer.go:1175] INF    5 [StartOnlineFightBattlePlayRecord/global] (127.0.0.1:4150) connecting to nsqd
+[online_fight_forward.cn.1 I 260403 08:38:37.223.086 consumer.go:1175] INF    2 [RESP-c_online_fight_forward.cn.1/0global_1rpc] (127.0.0.1:4150) connecting to nsqd
+[online_fight_forward.cn.1 I 260403 08:38:37.224.085 consumer.go:1175] INF    6 [REQ-online_fight_forward.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[online_fight_forward.cn.1 I 260403 08:38:37.225.088 consumer.go:1175] INF    3 [StartOnlineFightBattle/global] (127.0.0.1:4150) connecting to nsqd
+[online_fight_forward.cn.1 I 260403 08:38:37.229.089 consumer.go:1175] INF    4 [StartOnlineFightBattleAuto/global] (127.0.0.1:4150) connecting to nsqd
+[online_fight_forward.cn.1 E 260403 09:31:39.409.091 conn.go:731] ERR    5 [StartOnlineFightBattlePlayRecord/global] (127.0.0.1:4150) IO error - EOF
+[online_fight_forward.cn.1 I 260403 09:31:39.409.092 conn.go:731] INF    5 [StartOnlineFightBattlePlayRecord/global] (127.0.0.1:4150) beginning close
+[online_fight_forward.cn.1 I 260403 09:31:39.409.093 conn.go:731] INF    5 [StartOnlineFightBattlePlayRecord/global] (127.0.0.1:4150) readLoop exiting
+[online_fight_forward.cn.1 E 260403 09:31:39.409.094 conn.go:731] ERR    2 [RESP-c_online_fight_forward.cn.1/0global_1rpc] (127.0.0.1:4150) IO error - EOF
+[online_fight_forward.cn.1 I 260403 09:31:39.409.095 conn.go:731] INF    2 [RESP-c_online_fight_forward.cn.1/0global_1rpc] (127.0.0.1:4150) beginning close
+[online_fight_forward.cn.1 I 260403 09:31:39.409.096 conn.go:731] INF    2 [RESP-c_online_fight_forward.cn.1/0global_1rpc] (127.0.0.1:4150) readLoop exiting
+[online_fight_forward.cn.1 I 260403 09:31:39.410.097 conn.go:731] INF    5 [StartOnlineFightBattlePlayRecord/global] (127.0.0.1:4150) breaking out of writeLoop
+[online_fight_forward.cn.1 I 260403 09:31:39.410.098 conn.go:731] INF    5 [StartOnlineFightBattlePlayRecord/global] (127.0.0.1:4150) writeLoop exiting
+[online_fight_forward.cn.1 I 260403 09:31:39.410.099 conn.go:731] INF    2 [RESP-c_online_fight_forward.cn.1/0global_1rpc] (127.0.0.1:4150) breaking out of writeLoop
+[online_fight_forward.cn.1 I 260403 09:31:39.410.100 conn.go:731] INF    2 [RESP-c_online_fight_forward.cn.1/0global_1rpc] (127.0.0.1:4150) writeLoop exiting
+[online_fight_forward.cn.1 E 260403 09:31:39.410.101 conn.go:731] ERR    6 [REQ-online_fight_forward.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[online_fight_forward.cn.1 I 260403 09:31:39.411.102 conn.go:731] INF    6 [REQ-online_fight_forward.cn.1/rpc] (127.0.0.1:4150) beginning close
+[online_fight_forward.cn.1 I 260403 09:31:39.411.103 conn.go:731] INF    6 [REQ-online_fight_forward.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[online_fight_forward.cn.1 I 260403 09:31:39.411.104 conn.go:731] INF    6 [REQ-online_fight_forward.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[online_fight_forward.cn.1 I 260403 09:31:39.411.105 conn.go:731] INF    6 [REQ-online_fight_forward.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[online_fight_forward.cn.1 E 260403 09:31:39.411.106 conn.go:731] ERR    4 [StartOnlineFightBattleAuto/global] (127.0.0.1:4150) IO error - EOF
+[online_fight_forward.cn.1 I 260403 09:31:39.411.107 conn.go:731] INF    4 [StartOnlineFightBattleAuto/global] (127.0.0.1:4150) beginning close
+[online_fight_forward.cn.1 I 260403 09:31:39.411.108 conn.go:731] INF    4 [StartOnlineFightBattleAuto/global] (127.0.0.1:4150) readLoop exiting
+[online_fight_forward.cn.1 E 260403 09:31:39.406.090 conn.go:731] ERR    3 [StartOnlineFightBattle/global] (127.0.0.1:4150) IO error - EOF
+[online_fight_forward.cn.1 I 260403 09:31:39.418.110 conn.go:731] INF    4 [StartOnlineFightBattleAuto/global] (127.0.0.1:4150) breaking out of writeLoop
+[online_fight_forward.cn.1 I 260403 09:31:39.414.109 conn.go:731] INF    3 [StartOnlineFightBattle/global] (127.0.0.1:4150) beginning close
+[online_fight_forward.cn.1 I 260403 09:31:39.418.111 conn.go:731] INF    4 [StartOnlineFightBattleAuto/global] (127.0.0.1:4150) writeLoop exiting
+[online_fight_forward.cn.1 I 260403 09:31:39.419.112 conn.go:731] INF    3 [StartOnlineFightBattle/global] (127.0.0.1:4150) readLoop exiting
+[online_fight_forward.cn.1 I 260403 09:31:39.419.113 conn.go:731] INF    3 [StartOnlineFightBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[online_fight_forward.cn.1 I 260403 09:31:39.420.114 conn.go:731] INF    3 [StartOnlineFightBattle/global] (127.0.0.1:4150) writeLoop exiting
+[online_fight_forward.cn.1 I 260403 09:31:39.512.116 conn.go:731] INF    6 [REQ-online_fight_forward.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[online_fight_forward.cn.1 I 260403 09:31:39.512.117 conn.go:731] INF    5 [StartOnlineFightBattlePlayRecord/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[online_fight_forward.cn.1 I 260403 09:31:39.512.119 conn.go:731] INF    5 [StartOnlineFightBattlePlayRecord/global] (127.0.0.1:4150) clean close complete
+[online_fight_forward.cn.1 I 260403 09:31:39.512.118 conn.go:731] INF    6 [REQ-online_fight_forward.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[online_fight_forward.cn.1 W 260403 09:31:39.512.121 consumer.go:1175] WRN    6 [REQ-online_fight_forward.cn.1/rpc] there are 0 connections left alive
+[online_fight_forward.cn.1 I 260403 09:31:39.512.120 conn.go:731] INF    2 [RESP-c_online_fight_forward.cn.1/0global_1rpc] (127.0.0.1:4150) clean close complete
+[online_fight_forward.cn.1 W 260403 09:31:39.512.122 consumer.go:1175] WRN    5 [StartOnlineFightBattlePlayRecord/global] there are 0 connections left alive
+[online_fight_forward.cn.1 I 260403 09:31:39.512.123 consumer.go:1175] INF    6 [REQ-online_fight_forward.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[online_fight_forward.cn.1 W 260403 09:31:39.512.124 consumer.go:1175] WRN    2 [RESP-c_online_fight_forward.cn.1/0global_1rpc] there are 0 connections left alive
+[online_fight_forward.cn.1 I 260403 09:31:39.512.125 consumer.go:1175] INF    5 [StartOnlineFightBattlePlayRecord/global] (127.0.0.1:4150) re-connecting in 5s
+[online_fight_forward.cn.1 I 260403 09:31:39.512.126 consumer.go:1175] INF    2 [RESP-c_online_fight_forward.cn.1/0global_1rpc] (127.0.0.1:4150) re-connecting in 5s
+[online_fight_forward.cn.1 I 260403 09:31:39.512.115 conn.go:731] INF    2 [RESP-c_online_fight_forward.cn.1/0global_1rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[online_fight_forward.cn.1 I 260403 09:31:39.520.128 conn.go:731] INF    3 [StartOnlineFightBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[online_fight_forward.cn.1 I 260403 09:31:39.520.127 conn.go:731] INF    4 [StartOnlineFightBattleAuto/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[online_fight_forward.cn.1 I 260403 09:31:39.520.129 conn.go:731] INF    3 [StartOnlineFightBattle/global] (127.0.0.1:4150) clean close complete
+[online_fight_forward.cn.1 I 260403 09:31:39.520.130 conn.go:731] INF    4 [StartOnlineFightBattleAuto/global] (127.0.0.1:4150) clean close complete
+[online_fight_forward.cn.1 W 260403 09:31:39.520.131 consumer.go:1175] WRN    3 [StartOnlineFightBattle/global] there are 0 connections left alive
+[online_fight_forward.cn.1 I 260403 09:31:39.520.132 consumer.go:1175] INF    3 [StartOnlineFightBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[online_fight_forward.cn.1 W 260403 09:31:39.520.133 consumer.go:1175] WRN    4 [StartOnlineFightBattleAuto/global] there are 0 connections left alive
+[online_fight_forward.cn.1 I 260403 09:31:39.520.134 consumer.go:1175] INF    4 [StartOnlineFightBattleAuto/global] (127.0.0.1:4150) re-connecting in 5s
+[online_fight_forward.cn.1 I 260403 09:31:44.516.136 consumer.go:1175] INF    2 [RESP-c_online_fight_forward.cn.1/0global_1rpc] (127.0.0.1:4150) connecting to nsqd
+[online_fight_forward.cn.1 I 260403 09:31:44.515.135 consumer.go:1175] INF    5 [StartOnlineFightBattlePlayRecord/global] (127.0.0.1:4150) connecting to nsqd
+[online_fight_forward.cn.1 I 260403 09:31:44.522.137 consumer.go:1175] INF    3 [StartOnlineFightBattle/global] (127.0.0.1:4150) connecting to nsqd
+[online_fight_forward.cn.1 I 260403 09:31:44.524.138 consumer.go:1175] INF    4 [StartOnlineFightBattleAuto/global] (127.0.0.1:4150) connecting to nsqd
+[online_fight_forward.cn.1 I 260403 09:31:44.524.139 consumer.go:1175] INF    6 [REQ-online_fight_forward.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[online_fight_forward.cn.1 E 260403 10:19:05.000.140 conn.go:731] ERR    2 [RESP-c_online_fight_forward.cn.1/0global_1rpc] (127.0.0.1:4150) IO error - EOF
+[online_fight_forward.cn.1 I 260403 10:19:05.001.142 conn.go:731] INF    2 [RESP-c_online_fight_forward.cn.1/0global_1rpc] (127.0.0.1:4150) beginning close
+[online_fight_forward.cn.1 I 260403 10:19:05.002.143 conn.go:731] INF    2 [RESP-c_online_fight_forward.cn.1/0global_1rpc] (127.0.0.1:4150) readLoop exiting
+[online_fight_forward.cn.1 E 260403 10:19:05.002.145 conn.go:731] ERR    4 [StartOnlineFightBattleAuto/global] (127.0.0.1:4150) IO error - EOF
+[online_fight_forward.cn.1 E 260403 10:19:05.004.144 conn.go:731] ERR    6 [REQ-online_fight_forward.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[online_fight_forward.cn.1 I 260403 10:19:05.004.146 conn.go:731] INF    4 [StartOnlineFightBattleAuto/global] (127.0.0.1:4150) beginning close
+[online_fight_forward.cn.1 I 260403 10:19:05.005.147 conn.go:731] INF    6 [REQ-online_fight_forward.cn.1/rpc] (127.0.0.1:4150) beginning close
+[online_fight_forward.cn.1 E 260403 10:19:05.000.141 conn.go:731] ERR    3 [StartOnlineFightBattle/global] (127.0.0.1:4150) IO error - EOF
+[online_fight_forward.cn.1 I 260403 10:19:05.005.148 conn.go:731] INF    2 [RESP-c_online_fight_forward.cn.1/0global_1rpc] (127.0.0.1:4150) breaking out of writeLoop
+[online_fight_forward.cn.1 I 260403 10:19:05.006.150 conn.go:731] INF    6 [REQ-online_fight_forward.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[online_fight_forward.cn.1 I 260403 10:19:05.007.151 conn.go:731] INF    3 [StartOnlineFightBattle/global] (127.0.0.1:4150) beginning close
+[online_fight_forward.cn.1 I 260403 10:19:05.009.154 conn.go:731] INF    3 [StartOnlineFightBattle/global] (127.0.0.1:4150) readLoop exiting
+[online_fight_forward.cn.1 E 260403 10:19:05.010.155 conn.go:731] ERR    5 [StartOnlineFightBattlePlayRecord/global] (127.0.0.1:4150) IO error - EOF
+[online_fight_forward.cn.1 I 260403 10:19:05.006.149 conn.go:731] INF    4 [StartOnlineFightBattleAuto/global] (127.0.0.1:4150) readLoop exiting
+[online_fight_forward.cn.1 I 260403 10:19:05.010.157 conn.go:731] INF    4 [StartOnlineFightBattleAuto/global] (127.0.0.1:4150) breaking out of writeLoop
+[online_fight_forward.cn.1 I 260403 10:19:05.016.159 conn.go:731] INF    4 [StartOnlineFightBattleAuto/global] (127.0.0.1:4150) writeLoop exiting
+[online_fight_forward.cn.1 I 260403 10:19:05.010.156 conn.go:731] INF    5 [StartOnlineFightBattlePlayRecord/global] (127.0.0.1:4150) beginning close
+[online_fight_forward.cn.1 I 260403 10:19:05.009.153 conn.go:731] INF    6 [REQ-online_fight_forward.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[online_fight_forward.cn.1 I 260403 10:19:05.017.160 conn.go:731] INF    6 [REQ-online_fight_forward.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[online_fight_forward.cn.1 I 260403 10:19:05.008.152 conn.go:731] INF    2 [RESP-c_online_fight_forward.cn.1/0global_1rpc] (127.0.0.1:4150) writeLoop exiting
+[online_fight_forward.cn.1 I 260403 10:19:05.016.158 conn.go:731] INF    3 [StartOnlineFightBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[online_fight_forward.cn.1 I 260403 10:19:05.018.161 conn.go:731] INF    3 [StartOnlineFightBattle/global] (127.0.0.1:4150) writeLoop exiting
+[online_fight_forward.cn.1 I 260403 10:19:05.018.162 conn.go:731] INF    5 [StartOnlineFightBattlePlayRecord/global] (127.0.0.1:4150) readLoop exiting
+[online_fight_forward.cn.1 I 260403 10:19:05.018.163 conn.go:731] INF    5 [StartOnlineFightBattlePlayRecord/global] (127.0.0.1:4150) breaking out of writeLoop
+[online_fight_forward.cn.1 I 260403 10:19:05.018.164 conn.go:731] INF    5 [StartOnlineFightBattlePlayRecord/global] (127.0.0.1:4150) writeLoop exiting
+[online_fight_forward.cn.1 I 260403 10:19:05.117.165 conn.go:731] INF    4 [StartOnlineFightBattleAuto/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[online_fight_forward.cn.1 I 260403 10:19:05.117.166 conn.go:731] INF    4 [StartOnlineFightBattleAuto/global] (127.0.0.1:4150) clean close complete
+[online_fight_forward.cn.1 W 260403 10:19:05.118.167 consumer.go:1175] WRN    4 [StartOnlineFightBattleAuto/global] there are 0 connections left alive
+[online_fight_forward.cn.1 I 260403 10:19:05.118.168 conn.go:731] INF    2 [RESP-c_online_fight_forward.cn.1/0global_1rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[online_fight_forward.cn.1 I 260403 10:19:05.118.169 conn.go:731] INF    2 [RESP-c_online_fight_forward.cn.1/0global_1rpc] (127.0.0.1:4150) clean close complete
+[online_fight_forward.cn.1 W 260403 10:19:05.118.170 consumer.go:1175] WRN    2 [RESP-c_online_fight_forward.cn.1/0global_1rpc] there are 0 connections left alive
+[online_fight_forward.cn.1 I 260403 10:19:05.118.171 consumer.go:1175] INF    2 [RESP-c_online_fight_forward.cn.1/0global_1rpc] (127.0.0.1:4150) re-connecting in 5s
+[online_fight_forward.cn.1 I 260403 10:19:05.118.173 conn.go:731] INF    5 [StartOnlineFightBattlePlayRecord/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[online_fight_forward.cn.1 I 260403 10:19:05.118.172 conn.go:731] INF    6 [REQ-online_fight_forward.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[online_fight_forward.cn.1 I 260403 10:19:05.118.174 conn.go:731] INF    5 [StartOnlineFightBattlePlayRecord/global] (127.0.0.1:4150) clean close complete
+[online_fight_forward.cn.1 I 260403 10:19:05.118.175 conn.go:731] INF    6 [REQ-online_fight_forward.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[online_fight_forward.cn.1 W 260403 10:19:05.118.176 consumer.go:1175] WRN    6 [REQ-online_fight_forward.cn.1/rpc] there are 0 connections left alive
+[online_fight_forward.cn.1 W 260403 10:19:05.118.177 consumer.go:1175] WRN    5 [StartOnlineFightBattlePlayRecord/global] there are 0 connections left alive
+[online_fight_forward.cn.1 I 260403 10:19:05.118.179 consumer.go:1175] INF    5 [StartOnlineFightBattlePlayRecord/global] (127.0.0.1:4150) re-connecting in 5s
+[online_fight_forward.cn.1 I 260403 10:19:05.118.178 consumer.go:1175] INF    6 [REQ-online_fight_forward.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[online_fight_forward.cn.1 I 260403 10:19:05.118.180 conn.go:731] INF    3 [StartOnlineFightBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[online_fight_forward.cn.1 I 260403 10:19:05.118.181 consumer.go:1175] INF    4 [StartOnlineFightBattleAuto/global] (127.0.0.1:4150) re-connecting in 5s
+[online_fight_forward.cn.1 I 260403 10:19:05.118.182 conn.go:731] INF    3 [StartOnlineFightBattle/global] (127.0.0.1:4150) clean close complete
+[online_fight_forward.cn.1 W 260403 10:19:05.119.183 consumer.go:1175] WRN    3 [StartOnlineFightBattle/global] there are 0 connections left alive
+[online_fight_forward.cn.1 I 260403 10:19:05.120.184 consumer.go:1175] INF    3 [StartOnlineFightBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[online_fight_forward.cn.1 I 260403 10:19:10.119.185 consumer.go:1175] INF    5 [StartOnlineFightBattlePlayRecord/global] (127.0.0.1:4150) connecting to nsqd
+[online_fight_forward.cn.1 I 260403 10:19:10.119.186 consumer.go:1175] INF    2 [RESP-c_online_fight_forward.cn.1/0global_1rpc] (127.0.0.1:4150) connecting to nsqd
+[online_fight_forward.cn.1 I 260403 10:19:10.120.187 consumer.go:1175] INF    6 [REQ-online_fight_forward.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[online_fight_forward.cn.1 I 260403 10:19:10.120.188 consumer.go:1175] INF    4 [StartOnlineFightBattleAuto/global] (127.0.0.1:4150) connecting to nsqd
+[online_fight_forward.cn.1 I 260403 10:19:10.121.189 consumer.go:1175] INF    3 [StartOnlineFightBattle/global] (127.0.0.1:4150) connecting to nsqd
+[online_fight_forward.cn.1 E 260403 11:05:38.515.190 conn.go:731] ERR    2 [RESP-c_online_fight_forward.cn.1/0global_1rpc] (127.0.0.1:4150) IO error - EOF
+[online_fight_forward.cn.1 I 260403 11:05:38.516.191 conn.go:731] INF    2 [RESP-c_online_fight_forward.cn.1/0global_1rpc] (127.0.0.1:4150) beginning close
+[online_fight_forward.cn.1 I 260403 11:05:38.517.192 conn.go:731] INF    2 [RESP-c_online_fight_forward.cn.1/0global_1rpc] (127.0.0.1:4150) readLoop exiting
+[online_fight_forward.cn.1 I 260403 11:05:38.518.193 conn.go:731] INF    2 [RESP-c_online_fight_forward.cn.1/0global_1rpc] (127.0.0.1:4150) breaking out of writeLoop
+[online_fight_forward.cn.1 E 260403 11:05:38.521.195 conn.go:731] ERR    5 [StartOnlineFightBattlePlayRecord/global] (127.0.0.1:4150) IO error - EOF
+[online_fight_forward.cn.1 E 260403 11:05:38.521.196 conn.go:731] ERR    4 [StartOnlineFightBattleAuto/global] (127.0.0.1:4150) IO error - EOF
+[online_fight_forward.cn.1 I 260403 11:05:38.521.198 conn.go:731] INF    5 [StartOnlineFightBattlePlayRecord/global] (127.0.0.1:4150) beginning close
+[online_fight_forward.cn.1 I 260403 11:05:38.521.199 conn.go:731] INF    4 [StartOnlineFightBattleAuto/global] (127.0.0.1:4150) beginning close
+[online_fight_forward.cn.1 I 260403 11:05:38.521.200 conn.go:731] INF    5 [StartOnlineFightBattlePlayRecord/global] (127.0.0.1:4150) readLoop exiting
+[online_fight_forward.cn.1 I 260403 11:05:38.522.201 conn.go:731] INF    4 [StartOnlineFightBattleAuto/global] (127.0.0.1:4150) readLoop exiting
+[online_fight_forward.cn.1 I 260403 11:05:38.522.203 conn.go:731] INF    4 [StartOnlineFightBattleAuto/global] (127.0.0.1:4150) breaking out of writeLoop
+[online_fight_forward.cn.1 I 260403 11:05:38.522.204 conn.go:731] INF    4 [StartOnlineFightBattleAuto/global] (127.0.0.1:4150) writeLoop exiting
+[online_fight_forward.cn.1 E 260403 11:05:38.522.205 conn.go:731] ERR    6 [REQ-online_fight_forward.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[online_fight_forward.cn.1 I 260403 11:05:38.522.202 conn.go:731] INF    5 [StartOnlineFightBattlePlayRecord/global] (127.0.0.1:4150) breaking out of writeLoop
+[online_fight_forward.cn.1 I 260403 11:05:38.522.206 conn.go:731] INF    6 [REQ-online_fight_forward.cn.1/rpc] (127.0.0.1:4150) beginning close
+[online_fight_forward.cn.1 I 260403 11:05:38.522.207 conn.go:731] INF    5 [StartOnlineFightBattlePlayRecord/global] (127.0.0.1:4150) writeLoop exiting
+[online_fight_forward.cn.1 I 260403 11:05:38.522.208 conn.go:731] INF    6 [REQ-online_fight_forward.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[online_fight_forward.cn.1 I 260403 11:05:38.523.209 conn.go:731] INF    6 [REQ-online_fight_forward.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[online_fight_forward.cn.1 I 260403 11:05:38.523.210 conn.go:731] INF    6 [REQ-online_fight_forward.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[online_fight_forward.cn.1 E 260403 11:05:38.523.197 conn.go:731] ERR    3 [StartOnlineFightBattle/global] (127.0.0.1:4150) IO error - EOF
+[online_fight_forward.cn.1 I 260403 11:05:38.523.211 conn.go:731] INF    3 [StartOnlineFightBattle/global] (127.0.0.1:4150) beginning close
+[online_fight_forward.cn.1 I 260403 11:05:38.523.212 conn.go:731] INF    3 [StartOnlineFightBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[online_fight_forward.cn.1 I 260403 11:05:38.523.213 conn.go:731] INF    3 [StartOnlineFightBattle/global] (127.0.0.1:4150) writeLoop exiting
+[online_fight_forward.cn.1 I 260403 11:05:38.523.194 conn.go:731] INF    2 [RESP-c_online_fight_forward.cn.1/0global_1rpc] (127.0.0.1:4150) writeLoop exiting
+[online_fight_forward.cn.1 I 260403 11:05:38.525.214 conn.go:731] INF    3 [StartOnlineFightBattle/global] (127.0.0.1:4150) readLoop exiting
+[online_fight_forward.cn.1 I 260403 11:05:38.623.215 conn.go:731] INF    4 [StartOnlineFightBattleAuto/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[online_fight_forward.cn.1 I 260403 11:05:38.623.216 conn.go:731] INF    4 [StartOnlineFightBattleAuto/global] (127.0.0.1:4150) clean close complete
+[online_fight_forward.cn.1 W 260403 11:05:38.623.218 consumer.go:1175] WRN    4 [StartOnlineFightBattleAuto/global] there are 0 connections left alive
+[online_fight_forward.cn.1 I 260403 11:05:38.623.219 conn.go:731] INF    6 [REQ-online_fight_forward.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[online_fight_forward.cn.1 I 260403 11:05:38.623.220 conn.go:731] INF    6 [REQ-online_fight_forward.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[online_fight_forward.cn.1 W 260403 11:05:38.623.221 consumer.go:1175] WRN    6 [REQ-online_fight_forward.cn.1/rpc] there are 0 connections left alive
+[online_fight_forward.cn.1 I 260403 11:05:38.623.217 conn.go:731] INF    2 [RESP-c_online_fight_forward.cn.1/0global_1rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[online_fight_forward.cn.1 I 260403 11:05:38.623.222 conn.go:731] INF    2 [RESP-c_online_fight_forward.cn.1/0global_1rpc] (127.0.0.1:4150) clean close complete
+[online_fight_forward.cn.1 I 260403 11:05:38.623.223 consumer.go:1175] INF    6 [REQ-online_fight_forward.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[online_fight_forward.cn.1 W 260403 11:05:38.624.224 consumer.go:1175] WRN    2 [RESP-c_online_fight_forward.cn.1/0global_1rpc] there are 0 connections left alive
+[online_fight_forward.cn.1 I 260403 11:05:38.624.225 consumer.go:1175] INF    2 [RESP-c_online_fight_forward.cn.1/0global_1rpc] (127.0.0.1:4150) re-connecting in 5s
+[online_fight_forward.cn.1 I 260403 11:05:38.624.226 consumer.go:1175] INF    4 [StartOnlineFightBattleAuto/global] (127.0.0.1:4150) re-connecting in 5s
+[online_fight_forward.cn.1 I 260403 11:05:38.624.227 conn.go:731] INF    5 [StartOnlineFightBattlePlayRecord/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[online_fight_forward.cn.1 I 260403 11:05:38.624.228 conn.go:731] INF    5 [StartOnlineFightBattlePlayRecord/global] (127.0.0.1:4150) clean close complete
+[online_fight_forward.cn.1 W 260403 11:05:38.624.229 consumer.go:1175] WRN    5 [StartOnlineFightBattlePlayRecord/global] there are 0 connections left alive
+[online_fight_forward.cn.1 I 260403 11:05:38.624.230 consumer.go:1175] INF    5 [StartOnlineFightBattlePlayRecord/global] (127.0.0.1:4150) re-connecting in 5s
+[online_fight_forward.cn.1 I 260403 11:05:38.625.232 conn.go:731] INF    3 [StartOnlineFightBattle/global] (127.0.0.1:4150) clean close complete
+[online_fight_forward.cn.1 I 260403 11:05:38.625.231 conn.go:731] INF    3 [StartOnlineFightBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[online_fight_forward.cn.1 W 260403 11:05:38.626.233 consumer.go:1175] WRN    3 [StartOnlineFightBattle/global] there are 0 connections left alive
+[online_fight_forward.cn.1 I 260403 11:05:38.626.234 consumer.go:1175] INF    3 [StartOnlineFightBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[online_fight_forward.cn.1 I 260403 11:05:43.624.235 consumer.go:1175] INF    6 [REQ-online_fight_forward.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[online_fight_forward.cn.1 I 260403 11:05:43.624.236 consumer.go:1175] INF    4 [StartOnlineFightBattleAuto/global] (127.0.0.1:4150) connecting to nsqd
+[online_fight_forward.cn.1 I 260403 11:05:43.625.237 consumer.go:1175] INF    2 [RESP-c_online_fight_forward.cn.1/0global_1rpc] (127.0.0.1:4150) connecting to nsqd
+[online_fight_forward.cn.1 I 260403 11:05:43.625.238 consumer.go:1175] INF    5 [StartOnlineFightBattlePlayRecord/global] (127.0.0.1:4150) connecting to nsqd
+[online_fight_forward.cn.1 I 260403 11:05:43.629.239 consumer.go:1175] INF    3 [StartOnlineFightBattle/global] (127.0.0.1:4150) connecting to nsqd
+[online_fight_forward.cn.1 E 260403 11:50:07.273.241 conn.go:731] ERR    4 [StartOnlineFightBattleAuto/global] (127.0.0.1:4150) IO error - EOF
+[online_fight_forward.cn.1 I 260403 11:50:07.273.244 conn.go:731] INF    4 [StartOnlineFightBattleAuto/global] (127.0.0.1:4150) beginning close
+[online_fight_forward.cn.1 I 260403 11:50:07.273.245 conn.go:731] INF    4 [StartOnlineFightBattleAuto/global] (127.0.0.1:4150) readLoop exiting
+[online_fight_forward.cn.1 E 260403 11:50:07.272.242 conn.go:731] ERR    6 [REQ-online_fight_forward.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[online_fight_forward.cn.1 I 260403 11:50:07.274.246 conn.go:731] INF    6 [REQ-online_fight_forward.cn.1/rpc] (127.0.0.1:4150) beginning close
+[online_fight_forward.cn.1 I 260403 11:50:07.274.247 conn.go:731] INF    6 [REQ-online_fight_forward.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[online_fight_forward.cn.1 E 260403 11:50:07.274.248 conn.go:731] ERR    2 [RESP-c_online_fight_forward.cn.1/0global_1rpc] (127.0.0.1:4150) IO error - EOF
+[online_fight_forward.cn.1 I 260403 11:50:07.274.249 conn.go:731] INF    4 [StartOnlineFightBattleAuto/global] (127.0.0.1:4150) breaking out of writeLoop
+[online_fight_forward.cn.1 I 260403 11:50:07.274.250 conn.go:731] INF    2 [RESP-c_online_fight_forward.cn.1/0global_1rpc] (127.0.0.1:4150) beginning close
+[online_fight_forward.cn.1 I 260403 11:50:07.274.251 conn.go:731] INF    4 [StartOnlineFightBattleAuto/global] (127.0.0.1:4150) writeLoop exiting
+[online_fight_forward.cn.1 I 260403 11:50:07.274.252 conn.go:731] INF    2 [RESP-c_online_fight_forward.cn.1/0global_1rpc] (127.0.0.1:4150) readLoop exiting
+[online_fight_forward.cn.1 E 260403 11:50:07.272.240 conn.go:731] ERR    5 [StartOnlineFightBattlePlayRecord/global] (127.0.0.1:4150) IO error - EOF
+[online_fight_forward.cn.1 I 260403 11:50:07.274.253 conn.go:731] INF    6 [REQ-online_fight_forward.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[online_fight_forward.cn.1 I 260403 11:50:07.274.254 conn.go:731] INF    5 [StartOnlineFightBattlePlayRecord/global] (127.0.0.1:4150) beginning close
+[online_fight_forward.cn.1 I 260403 11:50:07.274.255 conn.go:731] INF    6 [REQ-online_fight_forward.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[online_fight_forward.cn.1 I 260403 11:50:07.274.256 conn.go:731] INF    2 [RESP-c_online_fight_forward.cn.1/0global_1rpc] (127.0.0.1:4150) breaking out of writeLoop
+[online_fight_forward.cn.1 E 260403 11:50:07.273.243 conn.go:731] ERR    3 [StartOnlineFightBattle/global] (127.0.0.1:4150) IO error - EOF
+[online_fight_forward.cn.1 I 260403 11:50:07.274.257 conn.go:731] INF    5 [StartOnlineFightBattlePlayRecord/global] (127.0.0.1:4150) readLoop exiting
+[online_fight_forward.cn.1 I 260403 11:50:07.274.259 conn.go:731] INF    5 [StartOnlineFightBattlePlayRecord/global] (127.0.0.1:4150) breaking out of writeLoop
+[online_fight_forward.cn.1 I 260403 11:50:07.274.260 conn.go:731] INF    3 [StartOnlineFightBattle/global] (127.0.0.1:4150) beginning close
+[online_fight_forward.cn.1 I 260403 11:50:07.274.261 conn.go:731] INF    5 [StartOnlineFightBattlePlayRecord/global] (127.0.0.1:4150) writeLoop exiting
+[online_fight_forward.cn.1 I 260403 11:50:07.274.262 conn.go:731] INF    3 [StartOnlineFightBattle/global] (127.0.0.1:4150) readLoop exiting
+[online_fight_forward.cn.1 I 260403 11:50:07.274.263 conn.go:731] INF    3 [StartOnlineFightBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[online_fight_forward.cn.1 I 260403 11:50:07.274.264 conn.go:731] INF    3 [StartOnlineFightBattle/global] (127.0.0.1:4150) writeLoop exiting
+[online_fight_forward.cn.1 I 260403 11:50:07.274.258 conn.go:731] INF    2 [RESP-c_online_fight_forward.cn.1/0global_1rpc] (127.0.0.1:4150) writeLoop exiting
+[online_fight_forward.cn.1 I 260403 11:50:07.375.265 conn.go:731] INF    2 [RESP-c_online_fight_forward.cn.1/0global_1rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[online_fight_forward.cn.1 I 260403 11:50:07.375.266 conn.go:731] INF    2 [RESP-c_online_fight_forward.cn.1/0global_1rpc] (127.0.0.1:4150) clean close complete
+[online_fight_forward.cn.1 W 260403 11:50:07.375.267 consumer.go:1175] WRN    2 [RESP-c_online_fight_forward.cn.1/0global_1rpc] there are 0 connections left alive
+[online_fight_forward.cn.1 I 260403 11:50:07.375.268 consumer.go:1175] INF    2 [RESP-c_online_fight_forward.cn.1/0global_1rpc] (127.0.0.1:4150) re-connecting in 5s
+[online_fight_forward.cn.1 I 260403 11:50:07.375.269 conn.go:731] INF    6 [REQ-online_fight_forward.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[online_fight_forward.cn.1 I 260403 11:50:07.375.270 conn.go:731] INF    6 [REQ-online_fight_forward.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[online_fight_forward.cn.1 W 260403 11:50:07.375.271 consumer.go:1175] WRN    6 [REQ-online_fight_forward.cn.1/rpc] there are 0 connections left alive
+[online_fight_forward.cn.1 I 260403 11:50:07.375.272 consumer.go:1175] INF    6 [REQ-online_fight_forward.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[online_fight_forward.cn.1 I 260403 11:50:07.375.273 conn.go:731] INF    5 [StartOnlineFightBattlePlayRecord/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[online_fight_forward.cn.1 I 260403 11:50:07.375.274 conn.go:731] INF    5 [StartOnlineFightBattlePlayRecord/global] (127.0.0.1:4150) clean close complete
+[online_fight_forward.cn.1 W 260403 11:50:07.375.275 consumer.go:1175] WRN    5 [StartOnlineFightBattlePlayRecord/global] there are 0 connections left alive
+[online_fight_forward.cn.1 I 260403 11:50:07.376.276 consumer.go:1175] INF    5 [StartOnlineFightBattlePlayRecord/global] (127.0.0.1:4150) re-connecting in 5s
+[online_fight_forward.cn.1 I 260403 11:50:07.376.278 conn.go:731] INF    3 [StartOnlineFightBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[online_fight_forward.cn.1 I 260403 11:50:07.376.279 conn.go:731] INF    4 [StartOnlineFightBattleAuto/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[online_fight_forward.cn.1 I 260403 11:50:07.376.280 conn.go:731] INF    3 [StartOnlineFightBattle/global] (127.0.0.1:4150) clean close complete
+[online_fight_forward.cn.1 I 260403 11:50:07.376.277 conn.go:731] INF    4 [StartOnlineFightBattleAuto/global] (127.0.0.1:4150) clean close complete
+[online_fight_forward.cn.1 W 260403 11:50:07.376.281 consumer.go:1175] WRN    4 [StartOnlineFightBattleAuto/global] there are 0 connections left alive
+[online_fight_forward.cn.1 I 260403 11:50:07.376.282 consumer.go:1175] INF    4 [StartOnlineFightBattleAuto/global] (127.0.0.1:4150) re-connecting in 5s
+[online_fight_forward.cn.1 W 260403 11:50:07.376.283 consumer.go:1175] WRN    3 [StartOnlineFightBattle/global] there are 0 connections left alive
+[online_fight_forward.cn.1 I 260403 11:50:07.376.284 consumer.go:1175] INF    3 [StartOnlineFightBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[online_fight_forward.cn.1 I 260403 11:50:12.376.285 consumer.go:1175] INF    2 [RESP-c_online_fight_forward.cn.1/0global_1rpc] (127.0.0.1:4150) connecting to nsqd
+[online_fight_forward.cn.1 I 260403 11:50:12.376.286 consumer.go:1175] INF    6 [REQ-online_fight_forward.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[online_fight_forward.cn.1 I 260403 11:50:12.377.287 consumer.go:1175] INF    5 [StartOnlineFightBattlePlayRecord/global] (127.0.0.1:4150) connecting to nsqd
+[online_fight_forward.cn.1 I 260403 11:50:12.378.288 consumer.go:1175] INF    4 [StartOnlineFightBattleAuto/global] (127.0.0.1:4150) connecting to nsqd
+[online_fight_forward.cn.1 I 260403 11:50:12.379.289 consumer.go:1175] INF    3 [StartOnlineFightBattle/global] (127.0.0.1:4150) connecting to nsqd
+[online_fight_forward.cn.1 E 260403 12:23:39.752.290 conn.go:731] ERR    3 [StartOnlineFightBattle/global] (127.0.0.1:4150) IO error - EOF
+[online_fight_forward.cn.1 I 260403 12:23:39.754.292 conn.go:731] INF    3 [StartOnlineFightBattle/global] (127.0.0.1:4150) beginning close
+[online_fight_forward.cn.1 I 260403 12:23:39.754.293 conn.go:731] INF    3 [StartOnlineFightBattle/global] (127.0.0.1:4150) readLoop exiting
+[online_fight_forward.cn.1 E 260403 12:23:39.753.291 conn.go:731] ERR    2 [RESP-c_online_fight_forward.cn.1/0global_1rpc] (127.0.0.1:4150) IO error - EOF
+[online_fight_forward.cn.1 E 260403 12:23:39.756.294 conn.go:731] ERR    6 [REQ-online_fight_forward.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[online_fight_forward.cn.1 E 260403 12:23:39.757.295 conn.go:731] ERR    5 [StartOnlineFightBattlePlayRecord/global] (127.0.0.1:4150) IO error - EOF
+[online_fight_forward.cn.1 I 260403 12:23:39.757.296 conn.go:731] INF    3 [StartOnlineFightBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[online_fight_forward.cn.1 I 260403 12:23:39.757.299 conn.go:731] INF    5 [StartOnlineFightBattlePlayRecord/global] (127.0.0.1:4150) beginning close
+[online_fight_forward.cn.1 I 260403 12:23:39.757.298 conn.go:731] INF    6 [REQ-online_fight_forward.cn.1/rpc] (127.0.0.1:4150) beginning close
+[online_fight_forward.cn.1 I 260403 12:23:39.757.297 conn.go:731] INF    2 [RESP-c_online_fight_forward.cn.1/0global_1rpc] (127.0.0.1:4150) beginning close
+[online_fight_forward.cn.1 I 260403 12:23:39.758.300 conn.go:731] INF    3 [StartOnlineFightBattle/global] (127.0.0.1:4150) writeLoop exiting
+[online_fight_forward.cn.1 I 260403 12:23:39.759.301 conn.go:731] INF    5 [StartOnlineFightBattlePlayRecord/global] (127.0.0.1:4150) readLoop exiting
+[online_fight_forward.cn.1 I 260403 12:23:39.759.302 conn.go:731] INF    2 [RESP-c_online_fight_forward.cn.1/0global_1rpc] (127.0.0.1:4150) readLoop exiting
+[online_fight_forward.cn.1 I 260403 12:23:39.759.303 conn.go:731] INF    6 [REQ-online_fight_forward.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[online_fight_forward.cn.1 I 260403 12:23:39.759.305 conn.go:731] INF    2 [RESP-c_online_fight_forward.cn.1/0global_1rpc] (127.0.0.1:4150) breaking out of writeLoop
+[online_fight_forward.cn.1 I 260403 12:23:39.759.308 conn.go:731] INF    2 [RESP-c_online_fight_forward.cn.1/0global_1rpc] (127.0.0.1:4150) writeLoop exiting
+[online_fight_forward.cn.1 I 260403 12:23:39.759.307 conn.go:731] INF    6 [REQ-online_fight_forward.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[online_fight_forward.cn.1 I 260403 12:23:39.759.306 conn.go:731] INF    5 [StartOnlineFightBattlePlayRecord/global] (127.0.0.1:4150) breaking out of writeLoop
+[online_fight_forward.cn.1 E 260403 12:23:39.759.304 conn.go:731] ERR    4 [StartOnlineFightBattleAuto/global] (127.0.0.1:4150) IO error - EOF
+[online_fight_forward.cn.1 I 260403 12:23:39.759.310 conn.go:731] INF    5 [StartOnlineFightBattlePlayRecord/global] (127.0.0.1:4150) writeLoop exiting
+[online_fight_forward.cn.1 I 260403 12:23:39.759.309 conn.go:731] INF    6 [REQ-online_fight_forward.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[online_fight_forward.cn.1 I 260403 12:23:39.759.311 conn.go:731] INF    4 [StartOnlineFightBattleAuto/global] (127.0.0.1:4150) beginning close
+[online_fight_forward.cn.1 I 260403 12:23:39.760.312 conn.go:731] INF    4 [StartOnlineFightBattleAuto/global] (127.0.0.1:4150) readLoop exiting
+[online_fight_forward.cn.1 I 260403 12:23:39.760.313 conn.go:731] INF    4 [StartOnlineFightBattleAuto/global] (127.0.0.1:4150) breaking out of writeLoop
+[online_fight_forward.cn.1 I 260403 12:23:39.760.314 conn.go:731] INF    4 [StartOnlineFightBattleAuto/global] (127.0.0.1:4150) writeLoop exiting
+[online_fight_forward.cn.1 I 260403 12:23:39.860.315 conn.go:731] INF    3 [StartOnlineFightBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[online_fight_forward.cn.1 I 260403 12:23:39.860.316 conn.go:731] INF    3 [StartOnlineFightBattle/global] (127.0.0.1:4150) clean close complete
+[online_fight_forward.cn.1 I 260403 12:23:39.860.317 conn.go:731] INF    6 [REQ-online_fight_forward.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[online_fight_forward.cn.1 I 260403 12:23:39.860.319 conn.go:731] INF    6 [REQ-online_fight_forward.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[online_fight_forward.cn.1 W 260403 12:23:39.860.320 consumer.go:1175] WRN    3 [StartOnlineFightBattle/global] there are 0 connections left alive
+[online_fight_forward.cn.1 W 260403 12:23:39.860.321 consumer.go:1175] WRN    6 [REQ-online_fight_forward.cn.1/rpc] there are 0 connections left alive
+[online_fight_forward.cn.1 I 260403 12:23:39.860.322 conn.go:731] INF    2 [RESP-c_online_fight_forward.cn.1/0global_1rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[online_fight_forward.cn.1 I 260403 12:23:39.860.318 conn.go:731] INF    5 [StartOnlineFightBattlePlayRecord/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[online_fight_forward.cn.1 I 260403 12:23:39.860.323 conn.go:731] INF    2 [RESP-c_online_fight_forward.cn.1/0global_1rpc] (127.0.0.1:4150) clean close complete
+[online_fight_forward.cn.1 I 260403 12:23:39.860.324 consumer.go:1175] INF    6 [REQ-online_fight_forward.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[online_fight_forward.cn.1 I 260403 12:23:39.860.325 consumer.go:1175] INF    3 [StartOnlineFightBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[online_fight_forward.cn.1 I 260403 12:23:39.860.326 conn.go:731] INF    5 [StartOnlineFightBattlePlayRecord/global] (127.0.0.1:4150) clean close complete
+[online_fight_forward.cn.1 I 260403 12:23:39.861.328 conn.go:731] INF    4 [StartOnlineFightBattleAuto/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[online_fight_forward.cn.1 I 260403 12:23:39.861.329 conn.go:731] INF    4 [StartOnlineFightBattleAuto/global] (127.0.0.1:4150) clean close complete
+[online_fight_forward.cn.1 W 260403 12:23:39.861.330 consumer.go:1175] WRN    5 [StartOnlineFightBattlePlayRecord/global] there are 0 connections left alive
+[online_fight_forward.cn.1 W 260403 12:23:39.861.327 consumer.go:1175] WRN    2 [RESP-c_online_fight_forward.cn.1/0global_1rpc] there are 0 connections left alive
+[online_fight_forward.cn.1 I 260403 12:23:39.861.331 consumer.go:1175] INF    5 [StartOnlineFightBattlePlayRecord/global] (127.0.0.1:4150) re-connecting in 5s
+[online_fight_forward.cn.1 I 260403 12:23:39.861.332 consumer.go:1175] INF    2 [RESP-c_online_fight_forward.cn.1/0global_1rpc] (127.0.0.1:4150) re-connecting in 5s
+[online_fight_forward.cn.1 W 260403 12:23:39.862.333 consumer.go:1175] WRN    4 [StartOnlineFightBattleAuto/global] there are 0 connections left alive
+[online_fight_forward.cn.1 I 260403 12:23:39.862.334 consumer.go:1175] INF    4 [StartOnlineFightBattleAuto/global] (127.0.0.1:4150) re-connecting in 5s
+[online_fight_forward.cn.1 I 260403 12:23:44.862.335 consumer.go:1175] INF    5 [StartOnlineFightBattlePlayRecord/global] (127.0.0.1:4150) connecting to nsqd
+[online_fight_forward.cn.1 I 260403 12:23:44.863.336 consumer.go:1175] INF    4 [StartOnlineFightBattleAuto/global] (127.0.0.1:4150) connecting to nsqd
+[online_fight_forward.cn.1 I 260403 12:23:44.864.337 consumer.go:1175] INF    2 [RESP-c_online_fight_forward.cn.1/0global_1rpc] (127.0.0.1:4150) connecting to nsqd
+[online_fight_forward.cn.1 I 260403 12:23:44.864.338 consumer.go:1175] INF    3 [StartOnlineFightBattle/global] (127.0.0.1:4150) connecting to nsqd
+[online_fight_forward.cn.1 I 260403 12:23:44.864.339 consumer.go:1175] INF    6 [REQ-online_fight_forward.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd

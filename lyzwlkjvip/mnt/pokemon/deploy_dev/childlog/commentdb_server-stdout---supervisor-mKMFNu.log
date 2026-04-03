@@ -1,0 +1,357 @@
+[host_server I 260403 07:13:58.364.001 document.go:151] register document default ok
+[host_server I 260403 07:13:58.375.002 init.go:171] register document ok
+[host_server D 260403 07:13:58.395.003 config.go:49] cwd in /mnt/pokemon/release/storage
+[host_server D 260403 07:13:58.413.004 config.go:23] GetExtend service commentdb.cn.1 &storage.Option{Option:service.Option{Name:"commentdb.cn.1", Alias:[]string(nil), Dependent:[]string(nil)}, MongoDB:"mongodb://root:GpFkU9O24cjhnWco@mongo44:27017/commentdb_cn_1?authMechanism=SCRAM-SHA-1&authSource=admin", DBName:"commentdb_cn_1", MGOPoolLimit:0, MGOStats:false}
+[host_server I 260403 07:13:58.424.005 config.go:60] commentdb.cn.1 config in defines.json
+[commentdb.cn.1 I 260403 07:13:58.425.006 main.go:44] &services.Define{ContainerOption:service.ContainerOption{Name:"@commentdb.cn.1", Debug:false, Addr:"", NSQLookupd:"http://127.0.0.1:4161/", Mainnsqd:"", NSQTcpAddresses:[]string{"127.0.0.1:4150"}, Shushu:false, Services:[]service.IOption{(*storage.Option)(0xc00033f260)}, ServicesRaw:[]json.RawMessage(nil)}}
+[commentdb.cn.1 I 260403 07:14:03.585.009 storage.go:236] connect to mongodb mongodb://root:GpFkU9O24cjhnWco@mongo44:27017/commentdb_cn_1?authMechanism=SCRAM-SHA-1&authSource=admin commentdb_cn_1
+[commentdb.cn.1 W 260403 07:14:03.592.010 service.go:161] EnsureIndexKey CardComment error <nil>
+[commentdb.cn.1 W 260403 07:14:03.593.011 service.go:165] EnsureIndexKey CardComment error <nil>
+[commentdb.cn.1 I 260403 07:14:03.639.015 rpcclient.go:292] create client consumer RESP-c_commentdb.cn.1/0global_1rpc
+[commentdb.cn.1 I 260403 07:14:03.648.016 consumer.go:1175] INF    2 [RESP-c_commentdb.cn.1/0global_1rpc] (127.0.0.1:4150) connecting to nsqd
+[commentdb.cn.1 I 260403 07:14:03.655.017 container.go:259] service commentdb.cn.1 start
+[commentdb.cn.1 I 260403 07:14:03.655.018 container.go:264] container @commentdb.cn.1 start
+[commentdb.cn.1 I 260403 07:14:03.655.019 server.go:29] server start ok
+[commentdb.cn.1 I 260403 07:14:03.662.023 rpcserver.go:349] create server consumer REQ-commentdb.cn.1/rpc
+[commentdb.cn.1 I 260403 07:14:03.664.091 consumer.go:1175] INF    3 [REQ-commentdb.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[commentdb.cn.1 I 260403 07:14:04.737.092 framework.go:534] REQ commentdb.cn.1.DBReadsert 1 [0xc0134ef910 0xc013e26c38 0xc000542a18]
+[commentdb.cn.1 I 260403 07:14:04.754.093 producer.go:382] INF    4 (127.0.0.1:4150) connecting to nsqd
+[commentdb.cn.1 I 260403 07:14:04.755.094 rpcserver.go:622] RESP commentdb.cn.1.DBReadsert 1 29240B 18.207ms from c_comment.cn.1
+[commentdb.cn.1 I 260403 07:14:14.732.095 framework.go:534] REQ commentdb.cn.1.DBUpdate 2 [0xc0139ebef0 IDHex("69ce84f4c9d6fb04c2e442a1") 0xc013a79f20 0xc017b7b638]
+[commentdb.cn.1 I 260403 07:14:14.734.096 rpcserver.go:622] RESP commentdb.cn.1.DBUpdate 2 46B 2.618ms from c_comment.cn.1
+[commentdb.cn.1 I 260403 07:16:03.665.097 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 07:18:03.666.098 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 07:20:03.667.099 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 07:22:03.668.100 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 07:24:03.670.101 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 07:26:03.671.102 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 07:28:03.716.103 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 07:30:03.719.104 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 07:32:03.754.105 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 07:34:03.756.106 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 07:36:03.757.107 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 07:38:03.758.108 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 07:40:03.759.109 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 07:42:03.760.110 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 07:43:39.810.111 producer.go:382] INF    4 stopping
+[commentdb.cn.1 I 260403 07:43:39.811.112 consumer.go:1175] INF    3 [REQ-commentdb.cn.1/rpc] stopping...
+[commentdb.cn.1 I 260403 07:43:39.811.113 producer.go:382] INF    4 exiting router
+[commentdb.cn.1 I 260403 07:43:39.812.114 session.go:132] Commit 1 objects, success 1
+panic: runtime error: invalid memory address or nil pointer dereference
+[signal SIGSEGV: segmentation violation code=0x1 addr=0x0 pc=0xc09c20]
+
+goroutine 73 [running]:
+tjgame/services/storage.(*Storage).workerRoutine(0xc000412050)
+	/mnt/hgfs/pokemon_server/gosrc/tjgame/services/storage/storage.go:37 +0x40
+created by tjgame/services/storage.NewStorage
+	/mnt/hgfs/pokemon_server/gosrc/tjgame/services/storage/storage.go:244 +0x25f
+[host_server I 260403 07:43:51.187.001 document.go:151] register document default ok
+[host_server I 260403 07:43:51.199.002 init.go:171] register document ok
+[host_server D 260403 07:43:51.207.003 config.go:49] cwd in /mnt/pokemon/release/storage
+[host_server D 260403 07:43:51.215.004 config.go:23] GetExtend service commentdb.cn.1 &storage.Option{Option:service.Option{Name:"commentdb.cn.1", Alias:[]string(nil), Dependent:[]string(nil)}, MongoDB:"mongodb://root:GpFkU9O24cjhnWco@mongo44:27017/commentdb_cn_1?authMechanism=SCRAM-SHA-1&authSource=admin", DBName:"commentdb_cn_1", MGOPoolLimit:0, MGOStats:false}
+[host_server I 260403 07:43:51.215.005 config.go:60] commentdb.cn.1 config in defines.json
+[commentdb.cn.1 I 260403 07:43:51.215.006 main.go:44] &services.Define{ContainerOption:service.ContainerOption{Name:"@commentdb.cn.1", Debug:false, Addr:"", NSQLookupd:"http://127.0.0.1:4161/", Mainnsqd:"", NSQTcpAddresses:[]string{"127.0.0.1:4150"}, Shushu:false, Services:[]service.IOption{(*storage.Option)(0xc00034d650)}, ServicesRaw:[]json.RawMessage(nil)}}
+[commentdb.cn.1 I 260403 07:43:57.319.009 storage.go:236] connect to mongodb mongodb://root:GpFkU9O24cjhnWco@mongo44:27017/commentdb_cn_1?authMechanism=SCRAM-SHA-1&authSource=admin commentdb_cn_1
+[commentdb.cn.1 W 260403 07:43:57.322.010 service.go:161] EnsureIndexKey CardComment error <nil>
+[commentdb.cn.1 W 260403 07:43:57.322.011 service.go:165] EnsureIndexKey CardComment error <nil>
+[commentdb.cn.1 I 260403 07:43:57.338.015 rpcclient.go:292] create client consumer RESP-c_commentdb.cn.1/0global_1rpc
+[commentdb.cn.1 I 260403 07:43:57.339.016 consumer.go:1175] INF    2 [RESP-c_commentdb.cn.1/0global_1rpc] (127.0.0.1:4150) connecting to nsqd
+[commentdb.cn.1 I 260403 07:43:57.346.017 container.go:259] service commentdb.cn.1 start
+[commentdb.cn.1 I 260403 07:43:57.346.018 container.go:264] container @commentdb.cn.1 start
+[commentdb.cn.1 I 260403 07:43:57.346.019 server.go:29] server start ok
+[commentdb.cn.1 I 260403 07:43:57.349.023 rpcserver.go:349] create server consumer REQ-commentdb.cn.1/rpc
+[commentdb.cn.1 I 260403 07:43:57.350.091 consumer.go:1175] INF    3 [REQ-commentdb.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[commentdb.cn.1 I 260403 07:43:57.379.092 framework.go:534] REQ commentdb.cn.1.DBReadsert 1 [0xc014fd21e0 0xc01034a048 0xc0004ce0d8]
+[commentdb.cn.1 I 260403 07:43:57.394.093 producer.go:382] INF    4 (127.0.0.1:4150) connecting to nsqd
+[commentdb.cn.1 I 260403 07:43:57.394.094 rpcserver.go:622] RESP commentdb.cn.1.DBReadsert 1 29240B -ms
+[commentdb.cn.1 I 260403 07:44:16.683.095 framework.go:534] REQ commentdb.cn.1.DBUpdate 2 [0xc014fbee80 IDHex("69ce84f4c9d6fb04c2e442a1") 0xc014ba4340 0xc00053e558]
+[commentdb.cn.1 I 260403 07:44:16.688.096 rpcserver.go:622] RESP commentdb.cn.1.DBUpdate 2 46B 5.821ms from c_comment.cn.1
+[commentdb.cn.1 I 260403 07:45:57.356.097 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 07:47:57.357.098 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 07:49:57.358.099 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 07:51:57.359.100 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 07:53:57.362.101 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 07:55:57.365.102 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 07:57:57.366.103 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 07:59:57.367.104 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 08:01:57.367.105 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 08:03:57.372.106 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 08:05:57.373.107 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 08:07:57.374.108 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 08:09:57.381.109 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 08:11:57.382.110 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 08:13:57.384.111 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 08:15:57.385.112 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 08:17:57.391.113 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 08:19:57.396.114 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 08:21:57.397.115 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 08:23:57.398.116 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 08:25:57.400.117 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 08:27:57.401.118 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 08:29:57.404.119 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 08:31:57.410.120 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 08:33:57.412.121 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 08:35:57.414.122 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 08:37:57.415.123 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 E 260403 08:38:32.110.126 conn.go:731] ERR    4 (127.0.0.1:4150) IO error - EOF
+[commentdb.cn.1 E 260403 08:38:32.109.125 conn.go:731] ERR    3 [REQ-commentdb.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[commentdb.cn.1 E 260403 08:38:32.109.124 conn.go:731] ERR    2 [RESP-c_commentdb.cn.1/0global_1rpc] (127.0.0.1:4150) IO error - EOF
+[commentdb.cn.1 I 260403 08:38:32.117.127 conn.go:731] INF    4 (127.0.0.1:4150) beginning close
+[commentdb.cn.1 I 260403 08:38:32.117.128 conn.go:731] INF    2 [RESP-c_commentdb.cn.1/0global_1rpc] (127.0.0.1:4150) beginning close
+[commentdb.cn.1 I 260403 08:38:32.117.129 conn.go:731] INF    3 [REQ-commentdb.cn.1/rpc] (127.0.0.1:4150) beginning close
+[commentdb.cn.1 I 260403 08:38:32.118.130 conn.go:731] INF    4 (127.0.0.1:4150) readLoop exiting
+[commentdb.cn.1 I 260403 08:38:32.118.131 conn.go:731] INF    3 [REQ-commentdb.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[commentdb.cn.1 I 260403 08:38:32.118.132 conn.go:731] INF    2 [RESP-c_commentdb.cn.1/0global_1rpc] (127.0.0.1:4150) readLoop exiting
+[commentdb.cn.1 I 260403 08:38:32.118.133 conn.go:731] INF    4 (127.0.0.1:4150) breaking out of writeLoop
+[commentdb.cn.1 I 260403 08:38:32.119.134 conn.go:731] INF    2 [RESP-c_commentdb.cn.1/0global_1rpc] (127.0.0.1:4150) breaking out of writeLoop
+[commentdb.cn.1 I 260403 08:38:32.119.135 conn.go:731] INF    3 [REQ-commentdb.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[commentdb.cn.1 I 260403 08:38:32.119.136 conn.go:731] INF    4 (127.0.0.1:4150) writeLoop exiting
+[commentdb.cn.1 I 260403 08:38:32.119.137 conn.go:731] INF    2 [RESP-c_commentdb.cn.1/0global_1rpc] (127.0.0.1:4150) writeLoop exiting
+[commentdb.cn.1 I 260403 08:38:32.119.138 conn.go:731] INF    3 [REQ-commentdb.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[commentdb.cn.1 I 260403 08:38:32.220.139 conn.go:731] INF    4 (127.0.0.1:4150) finished draining, cleanup exiting
+[commentdb.cn.1 I 260403 08:38:32.220.140 conn.go:731] INF    4 (127.0.0.1:4150) clean close complete
+[commentdb.cn.1 I 260403 08:38:32.220.141 producer.go:382] INF    4 exiting router
+[commentdb.cn.1 I 260403 08:38:32.220.142 conn.go:731] INF    3 [REQ-commentdb.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[commentdb.cn.1 I 260403 08:38:32.220.143 conn.go:731] INF    3 [REQ-commentdb.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[commentdb.cn.1 W 260403 08:38:32.220.144 consumer.go:1175] WRN    3 [REQ-commentdb.cn.1/rpc] there are 0 connections left alive
+[commentdb.cn.1 I 260403 08:38:32.221.145 consumer.go:1175] INF    3 [REQ-commentdb.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[commentdb.cn.1 I 260403 08:38:32.221.146 conn.go:731] INF    2 [RESP-c_commentdb.cn.1/0global_1rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[commentdb.cn.1 I 260403 08:38:32.221.147 conn.go:731] INF    2 [RESP-c_commentdb.cn.1/0global_1rpc] (127.0.0.1:4150) clean close complete
+[commentdb.cn.1 W 260403 08:38:32.221.148 consumer.go:1175] WRN    2 [RESP-c_commentdb.cn.1/0global_1rpc] there are 0 connections left alive
+[commentdb.cn.1 I 260403 08:38:32.221.149 consumer.go:1175] INF    2 [RESP-c_commentdb.cn.1/0global_1rpc] (127.0.0.1:4150) re-connecting in 5s
+[commentdb.cn.1 I 260403 08:38:37.221.150 consumer.go:1175] INF    2 [RESP-c_commentdb.cn.1/0global_1rpc] (127.0.0.1:4150) connecting to nsqd
+[commentdb.cn.1 I 260403 08:38:37.221.151 consumer.go:1175] INF    3 [REQ-commentdb.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[commentdb.cn.1 I 260403 08:39:57.417.152 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 08:41:57.419.153 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 08:43:57.421.154 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 08:45:57.422.155 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 08:47:57.424.156 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 08:49:57.426.157 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 08:51:57.427.158 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 08:53:57.428.159 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 08:55:57.435.160 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 08:57:57.437.161 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 08:59:57.441.162 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 09:01:57.442.163 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 09:03:57.444.164 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 09:05:57.447.165 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 09:07:57.450.166 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 09:09:57.453.167 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 09:11:57.455.168 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 09:13:57.457.169 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 09:15:57.458.170 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 09:17:57.461.171 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 09:19:57.463.172 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 09:21:57.464.173 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 09:23:57.475.174 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 09:25:57.479.175 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 09:27:57.481.176 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 09:29:57.492.177 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 E 260403 09:31:39.403.178 conn.go:731] ERR    3 [REQ-commentdb.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[commentdb.cn.1 E 260403 09:31:39.403.179 conn.go:731] ERR    2 [RESP-c_commentdb.cn.1/0global_1rpc] (127.0.0.1:4150) IO error - EOF
+[commentdb.cn.1 I 260403 09:31:39.404.180 conn.go:731] INF    2 [RESP-c_commentdb.cn.1/0global_1rpc] (127.0.0.1:4150) beginning close
+[commentdb.cn.1 I 260403 09:31:39.404.182 conn.go:731] INF    2 [RESP-c_commentdb.cn.1/0global_1rpc] (127.0.0.1:4150) readLoop exiting
+[commentdb.cn.1 I 260403 09:31:39.404.181 conn.go:731] INF    3 [REQ-commentdb.cn.1/rpc] (127.0.0.1:4150) beginning close
+[commentdb.cn.1 I 260403 09:31:39.404.183 conn.go:731] INF    3 [REQ-commentdb.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[commentdb.cn.1 I 260403 09:31:39.406.184 conn.go:731] INF    2 [RESP-c_commentdb.cn.1/0global_1rpc] (127.0.0.1:4150) breaking out of writeLoop
+[commentdb.cn.1 I 260403 09:31:39.406.185 conn.go:731] INF    2 [RESP-c_commentdb.cn.1/0global_1rpc] (127.0.0.1:4150) writeLoop exiting
+[commentdb.cn.1 I 260403 09:31:39.407.186 conn.go:731] INF    3 [REQ-commentdb.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[commentdb.cn.1 I 260403 09:31:39.407.187 conn.go:731] INF    3 [REQ-commentdb.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[commentdb.cn.1 I 260403 09:31:39.507.188 conn.go:731] INF    2 [RESP-c_commentdb.cn.1/0global_1rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[commentdb.cn.1 I 260403 09:31:39.508.189 conn.go:731] INF    2 [RESP-c_commentdb.cn.1/0global_1rpc] (127.0.0.1:4150) clean close complete
+[commentdb.cn.1 W 260403 09:31:39.508.190 consumer.go:1175] WRN    2 [RESP-c_commentdb.cn.1/0global_1rpc] there are 0 connections left alive
+[commentdb.cn.1 I 260403 09:31:39.508.191 consumer.go:1175] INF    2 [RESP-c_commentdb.cn.1/0global_1rpc] (127.0.0.1:4150) re-connecting in 5s
+[commentdb.cn.1 I 260403 09:31:39.510.192 conn.go:731] INF    3 [REQ-commentdb.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[commentdb.cn.1 I 260403 09:31:39.510.193 conn.go:731] INF    3 [REQ-commentdb.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[commentdb.cn.1 W 260403 09:31:39.510.194 consumer.go:1175] WRN    3 [REQ-commentdb.cn.1/rpc] there are 0 connections left alive
+[commentdb.cn.1 I 260403 09:31:39.510.195 consumer.go:1175] INF    3 [REQ-commentdb.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[commentdb.cn.1 I 260403 09:31:44.510.196 consumer.go:1175] INF    2 [RESP-c_commentdb.cn.1/0global_1rpc] (127.0.0.1:4150) connecting to nsqd
+[commentdb.cn.1 I 260403 09:31:44.514.197 consumer.go:1175] INF    3 [REQ-commentdb.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[commentdb.cn.1 I 260403 09:31:57.493.198 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 09:33:57.503.199 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 09:35:57.505.200 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 09:37:57.506.201 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 09:39:57.517.202 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 09:41:57.518.203 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 09:43:57.520.204 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 09:45:57.524.205 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 09:47:57.527.206 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 09:49:57.531.207 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 09:51:57.534.208 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 09:53:57.535.209 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 09:55:57.546.210 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 09:57:57.549.211 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 09:59:42.857.212 framework.go:534] REQ commentdb.cn.1.CardCommentQuery 3 [0xc01766d728 0xc01766d750 <nil> 0xc014d40820]
+[commentdb.cn.1 I 260403 09:59:42.873.213 rpcserver.go:622] RESP commentdb.cn.1.CardCommentQuery 3 46B 16.953ms from c_comment.cn.1
+[commentdb.cn.1 I 260403 09:59:42.873.214 producer.go:382] INF    4 (127.0.0.1:4150) connecting to nsqd
+[commentdb.cn.1 I 260403 09:59:42.876.215 framework.go:534] REQ commentdb.cn.1.CardCommentQuery 4 [0xc017124b10 0xc017124b18 <nil> 0xc014de4c00]
+[commentdb.cn.1 I 260403 09:59:42.877.216 rpcserver.go:622] RESP commentdb.cn.1.CardCommentQuery 4 46B 715µs from c_comment.cn.1
+[commentdb.cn.1 I 260403 09:59:42.899.217 framework.go:534] REQ commentdb.cn.1.CardCommentQuery 5 [0xc01548f430 0xc01548f438 IDHex("69cf57bc36908d001b1ee319") 0xc014faa6a0]
+[commentdb.cn.1 I 260403 09:59:42.900.218 rpcserver.go:622] RESP commentdb.cn.1.CardCommentQuery 5 46B 1.866ms from c_comment.cn.1
+[commentdb.cn.1 I 260403 09:59:42.924.219 framework.go:534] REQ commentdb.cn.1.DBReadBy 6 [0xc014f78ff0 0xc01453c148]
+[commentdb.cn.1 I 260403 09:59:42.925.220 rpcserver.go:622] RESP commentdb.cn.1.DBReadBy 6 195B 2.027ms from c_comment.cn.1
+[commentdb.cn.1 I 260403 09:59:42.994.221 framework.go:534] REQ commentdb.cn.1.DBReadBy 7 [0xc014f79d50 0xc01453c190]
+[commentdb.cn.1 I 260403 09:59:42.994.222 rpcserver.go:622] RESP commentdb.cn.1.DBReadBy 7 46B 874µs from c_comment.cn.1
+[commentdb.cn.1 I 260403 09:59:56.673.223 framework.go:534] REQ commentdb.cn.1.DBUpdate 8 [0xc014fe6630 IDHex("69cf5bbe36908d001d5db5f9") 0xc014d96700 0xc00a814118]
+[commentdb.cn.1 I 260403 09:59:56.696.224 rpcserver.go:622] RESP commentdb.cn.1.DBUpdate 8 46B 22.569ms from c_comment.cn.1
+[commentdb.cn.1 I 260403 09:59:57.564.225 session.go:132] Commit 2 objects, success 2
+[commentdb.cn.1 I 260403 10:01:57.566.226 session.go:132] Commit 2 objects, success 2
+[commentdb.cn.1 I 260403 10:03:57.575.227 session.go:132] Commit 2 objects, success 2
+[commentdb.cn.1 I 260403 10:05:57.578.228 session.go:132] Commit 2 objects, success 2
+[commentdb.cn.1 I 260403 10:07:57.579.229 session.go:132] Commit 2 objects, success 2
+[commentdb.cn.1 I 260403 10:09:57.583.230 session.go:132] Commit 2 objects, success 2
+[commentdb.cn.1 I 260403 10:11:57.585.231 session.go:132] Commit 2 objects, success 2
+[commentdb.cn.1 I 260403 10:13:57.588.232 session.go:132] Commit 2 objects, success 2
+[commentdb.cn.1 I 260403 10:15:57.590.233 session.go:132] Commit 2 objects, success 2
+[commentdb.cn.1 I 260403 10:17:57.592.234 session.go:132] Commit 2 objects, success 2
+[commentdb.cn.1 E 260403 10:19:04.992.235 conn.go:731] ERR    4 (127.0.0.1:4150) IO error - EOF
+[commentdb.cn.1 I 260403 10:19:04.996.236 conn.go:731] INF    4 (127.0.0.1:4150) beginning close
+[commentdb.cn.1 I 260403 10:19:04.996.237 conn.go:731] INF    4 (127.0.0.1:4150) readLoop exiting
+[commentdb.cn.1 I 260403 10:19:04.996.238 conn.go:731] INF    4 (127.0.0.1:4150) breaking out of writeLoop
+[commentdb.cn.1 I 260403 10:19:04.996.239 conn.go:731] INF    4 (127.0.0.1:4150) writeLoop exiting
+[commentdb.cn.1 E 260403 10:19:04.997.240 conn.go:731] ERR    2 [RESP-c_commentdb.cn.1/0global_1rpc] (127.0.0.1:4150) IO error - EOF
+[commentdb.cn.1 I 260403 10:19:04.997.241 conn.go:731] INF    2 [RESP-c_commentdb.cn.1/0global_1rpc] (127.0.0.1:4150) beginning close
+[commentdb.cn.1 I 260403 10:19:04.997.242 conn.go:731] INF    2 [RESP-c_commentdb.cn.1/0global_1rpc] (127.0.0.1:4150) readLoop exiting
+[commentdb.cn.1 I 260403 10:19:04.997.243 conn.go:731] INF    2 [RESP-c_commentdb.cn.1/0global_1rpc] (127.0.0.1:4150) breaking out of writeLoop
+[commentdb.cn.1 I 260403 10:19:04.997.244 conn.go:731] INF    2 [RESP-c_commentdb.cn.1/0global_1rpc] (127.0.0.1:4150) writeLoop exiting
+[commentdb.cn.1 E 260403 10:19:04.997.245 conn.go:731] ERR    3 [REQ-commentdb.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[commentdb.cn.1 I 260403 10:19:04.997.246 conn.go:731] INF    3 [REQ-commentdb.cn.1/rpc] (127.0.0.1:4150) beginning close
+[commentdb.cn.1 I 260403 10:19:04.997.247 conn.go:731] INF    3 [REQ-commentdb.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[commentdb.cn.1 I 260403 10:19:04.997.248 conn.go:731] INF    3 [REQ-commentdb.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[commentdb.cn.1 I 260403 10:19:04.997.249 conn.go:731] INF    3 [REQ-commentdb.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[commentdb.cn.1 I 260403 10:19:05.097.250 conn.go:731] INF    4 (127.0.0.1:4150) finished draining, cleanup exiting
+[commentdb.cn.1 I 260403 10:19:05.097.251 conn.go:731] INF    4 (127.0.0.1:4150) clean close complete
+[commentdb.cn.1 I 260403 10:19:05.097.252 producer.go:382] INF    4 exiting router
+[commentdb.cn.1 I 260403 10:19:05.097.253 conn.go:731] INF    2 [RESP-c_commentdb.cn.1/0global_1rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[commentdb.cn.1 I 260403 10:19:05.098.254 conn.go:731] INF    2 [RESP-c_commentdb.cn.1/0global_1rpc] (127.0.0.1:4150) clean close complete
+[commentdb.cn.1 I 260403 10:19:05.100.256 conn.go:731] INF    3 [REQ-commentdb.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[commentdb.cn.1 W 260403 10:19:05.100.257 consumer.go:1175] WRN    3 [REQ-commentdb.cn.1/rpc] there are 0 connections left alive
+[commentdb.cn.1 I 260403 10:19:05.100.258 consumer.go:1175] INF    3 [REQ-commentdb.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[commentdb.cn.1 I 260403 10:19:05.099.255 conn.go:731] INF    3 [REQ-commentdb.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[commentdb.cn.1 W 260403 10:19:05.100.259 consumer.go:1175] WRN    2 [RESP-c_commentdb.cn.1/0global_1rpc] there are 0 connections left alive
+[commentdb.cn.1 I 260403 10:19:05.101.260 consumer.go:1175] INF    2 [RESP-c_commentdb.cn.1/0global_1rpc] (127.0.0.1:4150) re-connecting in 5s
+[commentdb.cn.1 I 260403 10:19:10.101.261 consumer.go:1175] INF    3 [REQ-commentdb.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[commentdb.cn.1 I 260403 10:19:10.101.262 consumer.go:1175] INF    2 [RESP-c_commentdb.cn.1/0global_1rpc] (127.0.0.1:4150) connecting to nsqd
+[commentdb.cn.1 I 260403 10:19:57.597.263 session.go:132] Commit 2 objects, success 2
+[commentdb.cn.1 I 260403 10:21:57.603.264 session.go:132] Commit 2 objects, success 2
+[commentdb.cn.1 I 260403 10:23:57.605.265 session.go:132] Commit 2 objects, success 2
+[commentdb.cn.1 I 260403 10:25:57.609.266 session.go:132] Commit 2 objects, success 2
+[commentdb.cn.1 I 260403 10:27:57.613.267 session.go:132] Commit 2 objects, success 2
+[commentdb.cn.1 I 260403 10:29:57.614.268 session.go:132] Commit 2 objects, success 2
+[commentdb.cn.1 I 260403 10:31:57.616.269 session.go:132] Commit 2 objects, success 2
+[commentdb.cn.1 I 260403 10:33:57.619.270 session.go:132] Commit 2 objects, success 2
+[commentdb.cn.1 I 260403 10:35:57.623.271 session.go:132] Commit 2 objects, success 2
+[commentdb.cn.1 I 260403 10:37:57.625.272 session.go:132] Commit 2 objects, success 2
+[commentdb.cn.1 I 260403 10:39:57.628.273 session.go:132] Commit 2 objects, success 2
+[commentdb.cn.1 I 260403 10:41:57.631.274 session.go:132] Commit 2 objects, success 2
+[commentdb.cn.1 I 260403 10:43:57.633.275 session.go:132] Commit 2 objects, success 2
+[commentdb.cn.1 I 260403 10:45:57.634.276 session.go:132] Commit 2 objects, success 2
+[commentdb.cn.1 I 260403 10:47:57.641.277 session.go:132] Commit 2 objects, success 2
+[commentdb.cn.1 I 260403 10:49:57.643.278 session.go:132] Commit 2 objects, success 2
+[commentdb.cn.1 I 260403 10:51:57.649.279 session.go:132] Commit 2 objects, success 2
+[commentdb.cn.1 I 260403 10:53:57.651.280 session.go:132] Commit 2 objects, success 2
+[commentdb.cn.1 I 260403 10:55:57.653.281 session.go:132] Commit 2 objects, success 2
+[commentdb.cn.1 I 260403 10:57:57.655.282 session.go:132] Commit 2 objects, success 2
+[commentdb.cn.1 I 260403 10:59:57.657.283 session.go:132] Commit 2 objects, success 2
+[commentdb.cn.1 I 260403 11:01:57.670.284 session.go:132] Commit 2 objects, success 2
+[commentdb.cn.1 I 260403 11:03:57.675.285 session.go:132] Commit 2 objects, success 2
+[commentdb.cn.1 E 260403 11:05:38.513.286 conn.go:731] ERR    3 [REQ-commentdb.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[commentdb.cn.1 I 260403 11:05:38.513.287 conn.go:731] INF    3 [REQ-commentdb.cn.1/rpc] (127.0.0.1:4150) beginning close
+[commentdb.cn.1 I 260403 11:05:38.513.288 conn.go:731] INF    3 [REQ-commentdb.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[commentdb.cn.1 E 260403 11:05:38.514.289 conn.go:731] ERR    2 [RESP-c_commentdb.cn.1/0global_1rpc] (127.0.0.1:4150) IO error - EOF
+[commentdb.cn.1 I 260403 11:05:38.515.290 conn.go:731] INF    2 [RESP-c_commentdb.cn.1/0global_1rpc] (127.0.0.1:4150) beginning close
+[commentdb.cn.1 I 260403 11:05:38.515.291 conn.go:731] INF    2 [RESP-c_commentdb.cn.1/0global_1rpc] (127.0.0.1:4150) readLoop exiting
+[commentdb.cn.1 I 260403 11:05:38.515.292 conn.go:731] INF    2 [RESP-c_commentdb.cn.1/0global_1rpc] (127.0.0.1:4150) breaking out of writeLoop
+[commentdb.cn.1 I 260403 11:05:38.515.293 conn.go:731] INF    2 [RESP-c_commentdb.cn.1/0global_1rpc] (127.0.0.1:4150) writeLoop exiting
+[commentdb.cn.1 I 260403 11:05:38.516.294 conn.go:731] INF    3 [REQ-commentdb.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[commentdb.cn.1 I 260403 11:05:38.517.295 conn.go:731] INF    3 [REQ-commentdb.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[commentdb.cn.1 I 260403 11:05:38.616.297 conn.go:731] INF    2 [RESP-c_commentdb.cn.1/0global_1rpc] (127.0.0.1:4150) clean close complete
+[commentdb.cn.1 I 260403 11:05:38.616.296 conn.go:731] INF    2 [RESP-c_commentdb.cn.1/0global_1rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[commentdb.cn.1 W 260403 11:05:38.617.298 consumer.go:1175] WRN    2 [RESP-c_commentdb.cn.1/0global_1rpc] there are 0 connections left alive
+[commentdb.cn.1 I 260403 11:05:38.617.299 consumer.go:1175] INF    2 [RESP-c_commentdb.cn.1/0global_1rpc] (127.0.0.1:4150) re-connecting in 5s
+[commentdb.cn.1 I 260403 11:05:38.617.300 conn.go:731] INF    3 [REQ-commentdb.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[commentdb.cn.1 I 260403 11:05:38.617.301 conn.go:731] INF    3 [REQ-commentdb.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[commentdb.cn.1 W 260403 11:05:38.617.302 consumer.go:1175] WRN    3 [REQ-commentdb.cn.1/rpc] there are 0 connections left alive
+[commentdb.cn.1 I 260403 11:05:38.617.303 consumer.go:1175] INF    3 [REQ-commentdb.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[commentdb.cn.1 I 260403 11:05:43.617.304 consumer.go:1175] INF    3 [REQ-commentdb.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[commentdb.cn.1 I 260403 11:05:43.618.305 consumer.go:1175] INF    2 [RESP-c_commentdb.cn.1/0global_1rpc] (127.0.0.1:4150) connecting to nsqd
+[commentdb.cn.1 I 260403 11:05:57.682.306 session.go:132] Commit 2 objects, success 2
+[commentdb.cn.1 I 260403 11:07:57.684.307 session.go:132] Commit 2 objects, success 2
+[commentdb.cn.1 I 260403 11:09:57.687.308 session.go:132] Commit 2 objects, success 2
+[commentdb.cn.1 I 260403 11:11:57.689.309 session.go:132] Commit 2 objects, success 2
+[commentdb.cn.1 I 260403 11:13:57.694.310 session.go:132] Commit 2 objects, success 2
+[commentdb.cn.1 I 260403 11:15:57.697.311 session.go:132] Commit 2 objects, success 2
+[commentdb.cn.1 I 260403 11:17:57.699.312 session.go:132] Commit 2 objects, success 2
+[commentdb.cn.1 I 260403 11:19:57.700.313 session.go:132] Commit 2 objects, success 2
+[commentdb.cn.1 I 260403 11:21:57.712.314 session.go:132] Commit 2 objects, success 2
+[commentdb.cn.1 I 260403 11:23:57.713.315 session.go:132] Commit 2 objects, success 2
+[commentdb.cn.1 I 260403 11:25:57.715.316 session.go:132] Commit 2 objects, success 2
+[commentdb.cn.1 I 260403 11:27:57.716.317 session.go:132] Commit 2 objects, success 2
+[commentdb.cn.1 I 260403 11:29:57.719.318 session.go:132] Commit 2 objects, success 2
+[commentdb.cn.1 I 260403 11:31:57.720.319 session.go:132] Commit 2 objects, success 2
+[commentdb.cn.1 I 260403 11:33:57.721.320 session.go:132] Commit 2 objects, success 2
+[commentdb.cn.1 I 260403 11:35:57.723.321 session.go:132] Commit 2 objects, success 2
+[commentdb.cn.1 I 260403 11:37:57.727.322 session.go:132] Commit 2 objects, success 2
+[commentdb.cn.1 I 260403 11:39:57.731.323 session.go:132] Commit 2 objects, success 2
+[commentdb.cn.1 I 260403 11:41:57.732.324 session.go:132] Commit 2 objects, success 2
+[commentdb.cn.1 I 260403 11:43:57.733.325 session.go:132] Commit 2 objects, success 2
+[commentdb.cn.1 I 260403 11:45:57.736.326 session.go:132] Commit 2 objects, success 2
+[commentdb.cn.1 I 260403 11:47:57.738.327 session.go:132] Commit 2 objects, success 2
+[commentdb.cn.1 I 260403 11:49:57.741.328 session.go:132] Commit 2 objects, success 2
+[commentdb.cn.1 E 260403 11:50:07.269.329 conn.go:731] ERR    3 [REQ-commentdb.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[commentdb.cn.1 I 260403 11:50:07.269.330 conn.go:731] INF    3 [REQ-commentdb.cn.1/rpc] (127.0.0.1:4150) beginning close
+[commentdb.cn.1 I 260403 11:50:07.269.331 conn.go:731] INF    3 [REQ-commentdb.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[commentdb.cn.1 I 260403 11:50:07.269.332 conn.go:731] INF    3 [REQ-commentdb.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[commentdb.cn.1 I 260403 11:50:07.269.333 conn.go:731] INF    3 [REQ-commentdb.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[commentdb.cn.1 E 260403 11:50:07.269.334 conn.go:731] ERR    2 [RESP-c_commentdb.cn.1/0global_1rpc] (127.0.0.1:4150) IO error - EOF
+[commentdb.cn.1 I 260403 11:50:07.269.335 conn.go:731] INF    2 [RESP-c_commentdb.cn.1/0global_1rpc] (127.0.0.1:4150) beginning close
+[commentdb.cn.1 I 260403 11:50:07.269.336 conn.go:731] INF    2 [RESP-c_commentdb.cn.1/0global_1rpc] (127.0.0.1:4150) readLoop exiting
+[commentdb.cn.1 I 260403 11:50:07.269.337 conn.go:731] INF    2 [RESP-c_commentdb.cn.1/0global_1rpc] (127.0.0.1:4150) breaking out of writeLoop
+[commentdb.cn.1 I 260403 11:50:07.269.338 conn.go:731] INF    2 [RESP-c_commentdb.cn.1/0global_1rpc] (127.0.0.1:4150) writeLoop exiting
+[commentdb.cn.1 I 260403 11:50:07.370.339 conn.go:731] INF    2 [RESP-c_commentdb.cn.1/0global_1rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[commentdb.cn.1 I 260403 11:50:07.370.340 conn.go:731] INF    2 [RESP-c_commentdb.cn.1/0global_1rpc] (127.0.0.1:4150) clean close complete
+[commentdb.cn.1 W 260403 11:50:07.370.341 consumer.go:1175] WRN    2 [RESP-c_commentdb.cn.1/0global_1rpc] there are 0 connections left alive
+[commentdb.cn.1 I 260403 11:50:07.370.342 conn.go:731] INF    3 [REQ-commentdb.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[commentdb.cn.1 I 260403 11:50:07.370.343 consumer.go:1175] INF    2 [RESP-c_commentdb.cn.1/0global_1rpc] (127.0.0.1:4150) re-connecting in 5s
+[commentdb.cn.1 I 260403 11:50:07.370.344 conn.go:731] INF    3 [REQ-commentdb.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[commentdb.cn.1 W 260403 11:50:07.370.345 consumer.go:1175] WRN    3 [REQ-commentdb.cn.1/rpc] there are 0 connections left alive
+[commentdb.cn.1 I 260403 11:50:07.370.346 consumer.go:1175] INF    3 [REQ-commentdb.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[commentdb.cn.1 I 260403 11:50:12.371.347 consumer.go:1175] INF    2 [RESP-c_commentdb.cn.1/0global_1rpc] (127.0.0.1:4150) connecting to nsqd
+[commentdb.cn.1 I 260403 11:50:12.371.348 consumer.go:1175] INF    3 [REQ-commentdb.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[commentdb.cn.1 I 260403 11:51:57.742.349 session.go:132] Commit 2 objects, success 2
+[commentdb.cn.1 I 260403 11:53:57.744.350 session.go:132] Commit 2 objects, success 2
+[commentdb.cn.1 I 260403 11:55:57.751.351 session.go:132] Commit 2 objects, success 2
+[commentdb.cn.1 I 260403 11:57:57.754.352 session.go:132] Commit 2 objects, success 2
+[commentdb.cn.1 I 260403 11:59:57.755.353 session.go:132] Commit 2 objects, success 2
+[commentdb.cn.1 I 260403 12:01:57.758.354 session.go:132] Commit 2 objects, success 2
+[commentdb.cn.1 I 260403 12:03:57.760.355 session.go:132] Commit 2 objects, success 2
+[commentdb.cn.1 I 260403 12:05:57.763.356 session.go:132] Commit 2 objects, success 2
+[commentdb.cn.1 I 260403 12:07:57.764.357 session.go:132] Commit 2 objects, success 2
+[commentdb.cn.1 I 260403 12:09:57.765.358 session.go:132] Commit 2 objects, success 2
+[commentdb.cn.1 I 260403 12:11:57.766.359 session.go:132] Commit 2 objects, success 2
+[commentdb.cn.1 I 260403 12:13:57.768.360 session.go:132] Commit 2 objects, success 2
+[commentdb.cn.1 I 260403 12:15:57.769.361 session.go:132] Commit 2 objects, success 2
+[commentdb.cn.1 I 260403 12:17:57.771.362 session.go:132] Commit 2 objects, success 2
+[commentdb.cn.1 I 260403 12:19:57.773.363 session.go:132] Commit 2 objects, success 2
+[commentdb.cn.1 I 260403 12:21:57.774.364 session.go:132] Commit 2 objects, success 2
+[commentdb.cn.1 E 260403 12:23:39.750.365 conn.go:731] ERR    3 [REQ-commentdb.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[commentdb.cn.1 I 260403 12:23:39.751.366 conn.go:731] INF    3 [REQ-commentdb.cn.1/rpc] (127.0.0.1:4150) beginning close
+[commentdb.cn.1 I 260403 12:23:39.751.367 conn.go:731] INF    3 [REQ-commentdb.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[commentdb.cn.1 I 260403 12:23:39.751.368 conn.go:731] INF    3 [REQ-commentdb.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[commentdb.cn.1 I 260403 12:23:39.751.369 conn.go:731] INF    3 [REQ-commentdb.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[commentdb.cn.1 E 260403 12:23:39.751.370 conn.go:731] ERR    2 [RESP-c_commentdb.cn.1/0global_1rpc] (127.0.0.1:4150) IO error - EOF
+[commentdb.cn.1 I 260403 12:23:39.751.371 conn.go:731] INF    2 [RESP-c_commentdb.cn.1/0global_1rpc] (127.0.0.1:4150) beginning close
+[commentdb.cn.1 I 260403 12:23:39.752.372 conn.go:731] INF    2 [RESP-c_commentdb.cn.1/0global_1rpc] (127.0.0.1:4150) readLoop exiting
+[commentdb.cn.1 I 260403 12:23:39.752.373 conn.go:731] INF    2 [RESP-c_commentdb.cn.1/0global_1rpc] (127.0.0.1:4150) breaking out of writeLoop
+[commentdb.cn.1 I 260403 12:23:39.752.374 conn.go:731] INF    2 [RESP-c_commentdb.cn.1/0global_1rpc] (127.0.0.1:4150) writeLoop exiting
+[commentdb.cn.1 I 260403 12:23:39.852.375 conn.go:731] INF    3 [REQ-commentdb.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[commentdb.cn.1 I 260403 12:23:39.852.376 conn.go:731] INF    3 [REQ-commentdb.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[commentdb.cn.1 W 260403 12:23:39.852.377 consumer.go:1175] WRN    3 [REQ-commentdb.cn.1/rpc] there are 0 connections left alive
+[commentdb.cn.1 I 260403 12:23:39.852.378 consumer.go:1175] INF    3 [REQ-commentdb.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[commentdb.cn.1 I 260403 12:23:39.852.379 conn.go:731] INF    2 [RESP-c_commentdb.cn.1/0global_1rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[commentdb.cn.1 I 260403 12:23:39.852.380 conn.go:731] INF    2 [RESP-c_commentdb.cn.1/0global_1rpc] (127.0.0.1:4150) clean close complete
+[commentdb.cn.1 W 260403 12:23:39.852.381 consumer.go:1175] WRN    2 [RESP-c_commentdb.cn.1/0global_1rpc] there are 0 connections left alive
+[commentdb.cn.1 I 260403 12:23:39.852.382 consumer.go:1175] INF    2 [RESP-c_commentdb.cn.1/0global_1rpc] (127.0.0.1:4150) re-connecting in 5s
+[commentdb.cn.1 I 260403 12:23:44.853.383 consumer.go:1175] INF    2 [RESP-c_commentdb.cn.1/0global_1rpc] (127.0.0.1:4150) connecting to nsqd
+[commentdb.cn.1 I 260403 12:23:44.853.384 consumer.go:1175] INF    3 [REQ-commentdb.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[commentdb.cn.1 I 260403 12:23:57.776.385 session.go:132] Commit 2 objects, success 2

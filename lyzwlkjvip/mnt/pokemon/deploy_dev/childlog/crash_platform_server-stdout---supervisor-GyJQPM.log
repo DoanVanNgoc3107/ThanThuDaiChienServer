@@ -1,0 +1,9 @@
+[I 260403 07:13:59 server:134] crash_platform is running
+[I 260403 07:13:59 server:343] crash_platform start
+[I 260403 07:43:41 server:314] crash_platform has been stopped
+[I 260403 07:43:41 server:329] the server is stopped
+Sub ea Start
+[W 260403 07:43:41 server:158] web crash_platform is stopped
+end analyProcess
+[I 260403 07:43:51 server:134] crash_platform is running
+[I 260403 07:43:51 server:343] crash_platform start

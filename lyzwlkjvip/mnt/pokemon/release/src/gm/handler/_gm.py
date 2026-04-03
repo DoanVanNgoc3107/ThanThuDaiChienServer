@@ -840,7 +840,7 @@ class YYHandler(AuthedHandler):
 			'columns': columns,
 			'data': result,
 			'placard': placardCache,
-			'language': self.language
+			'language': self.pageLocale
 		})
 
 	@staticmethod
@@ -1282,6 +1282,30 @@ class CalculateCardAttrs(BaseHandler):
 		ret = yield self.userGMRPC.gmGetRoleCards(servName, roleUID, cardID)
 		cards = sorted(ret['cards'].values(), key=lambda x:x['fighting_point'], reverse=True)
 
+		def _safe_unicode(v):
+			if isinstance(v, unicode):
+				return v
+			if isinstance(v, str):
+				for enc in ('utf-8', 'gbk', 'latin1'):
+					try:
+						return v.decode(enc)
+					except Exception:
+						pass
+				return v.decode('utf-8', 'ignore')
+			return v
+
+		def _safe_json_obj(obj):
+			if isinstance(obj, dict):
+				n = {}
+				for k, v in obj.iteritems():
+					n[_safe_unicode(k)] = _safe_json_obj(v)
+				return n
+			if isinstance(obj, list):
+				return [_safe_json_obj(v) for v in obj]
+			if isinstance(obj, tuple):
+				return [_safe_json_obj(v) for v in obj]
+			return _safe_unicode(obj)
+
 		def _convert(d):
 			if d.get('id', None):
 				d['id'] = binascii.hexlify(d['id'])
@@ -1292,13 +1316,14 @@ class CalculateCardAttrs(BaseHandler):
 			return d;
 
 		map(_convert, cards)
+		cards = [_safe_json_obj(d) for d in cards]
 		columns = [
 			{'field': 'id', 'title': ''},
-			{'field': 'name', 'title': '卡片名称'},
-			{'field': 'fighting_point', 'title': '战斗力'},
+			{'field': 'name', 'title': 'Tên thẻ'},
+			{'field': 'fighting_point', 'title': 'Lực chiến'},
 		]
 		self.write({'columns': columns,
-			'data': cards, 'role': {'id': binascii.hexlify(ret['role']['id']), 'name': ret['role']['name']}})
+			'data': cards, 'role': {'id': binascii.hexlify(ret['role']['id']), 'name': _safe_unicode(ret['role']['name'])}})
 
 	@coroutine
 	def post(self):
@@ -1312,11 +1337,11 @@ class CalculateCardAttrs(BaseHandler):
 			attrsMap[i] = v
 
 		sysMaps = {
-			'base': '基础属性',
-			'character': '性格',
-			'nvalue': '个体值',
-			'const': '养成固定值',
-			'percent': '养成百分比',
+			'base': 'Thuộc tính cơ bản',
+			'character': 'Tính cách',
+			'nvalue': 'Giá trị cá thể',
+			'const': 'Giá trị bồi dưỡng cố định',
+			'percent': 'Tỷ lệ bồi dưỡng',
 		}
 		tables = {}
 		columns = {}
@@ -1411,7 +1436,7 @@ class DataExportHandler(AuthedHandler):
 
 		recordCount = self.mongo_client[import_collection].find({}).count()
 		if recordCount != 0:
-			self.write({'ret': False, 'msg': '当前%s中已存在数据'% import_collection})
+			self.write({'ret': False, 'msg': 'Trong %s hiện đã có dữ liệu'% import_collection})
 			return
 
 		p = subprocess.Popen('mongorestore --version', shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)

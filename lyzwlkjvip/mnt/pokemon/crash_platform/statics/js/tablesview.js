@@ -1,5 +1,5 @@
 function a_method(self, file, _id) {
-    $(self).text('解析中...');
+    $(self).text('Đang phân tích...');
     $(self).addClass("disabled");
     $.ajax({
         url: '/db/manualanalysis',
@@ -8,7 +8,7 @@ function a_method(self, file, _id) {
         async: true,
         data: {"file": file, "_id": _id},
         success: function (data) {
-            $(self).text('解析');
+            $(self).text('Phân tích');
             $(self).removeClass("disabled");
             if (data.ret) {
                 if (file == "dmp") {
@@ -16,13 +16,13 @@ function a_method(self, file, _id) {
                 } else {
                     $('#sotable').bootstrapTable("refresh")
                 }
-                alert("已完成解析")
+                alert("Đã phân tích xong")
             } else {
                 alert(data.error)
             }
         },
         error: function (result) {
-            $(self).text('解析');
+            $(self).text('Phân tích');
             $(self).removeClass("disabled");
             alert("fail!");
         },
@@ -82,17 +82,17 @@ $(function () {
         queryParams: queryParams,
 
         columns: [
-            {field: 'id', title: 'DB序号', align: 'center'},
-            {field: 'feature', title: '描述', align: 'center',
+            {field: 'id', title: 'Mã DB', align: 'center'},
+            {field: 'feature', title: 'Mô tả', align: 'center',
                 formatter: function(value, row, index) {
                     return '<a href="/crashinfo?_id='+encodeURIComponent(row.id)+'&type=-1" target="_blank">' + value + '</a>'
                 }
             },
-            {field: 'report_version', title: '上报版本号', align: 'center',},
-            {field: 'count', title: '崩溃总次数', align: 'center',},
-            {field: 'firsttime', title: '首次上报时间', align: 'center',},
-            {field: 'lasttime', title: '最后上报时间', align: 'center',},
-            {field: 'status', title: '状态', align: 'center',},
+            {field: 'report_version', title: 'Phiên bản báo lỗi', align: 'center',},
+            {field: 'count', title: 'Tổng số crash', align: 'center',},
+            {field: 'firsttime', title: 'Thời gian báo đầu tiên', align: 'center',},
+            {field: 'lasttime', title: 'Thời gian báo gần nhất', align: 'center',},
+            {field: 'status', title: 'Trạng thái', align: 'center',},
         ],
     });
     $('#sotable').bootstrapTable({
@@ -115,16 +115,16 @@ $(function () {
         queryParams: queryParams,
 
         columns: [
-            {field: 'id', title: 'DB序号', align: 'center'},
-            {field: 'version', title: '版本号', align: 'center',},
-            {field: 'package_name', title: '包名', align: 'center',},
-            {field: 'time', title: '上传时间', align: 'center',},
-            {field: 'name', title: '上传文件名', align: 'center',},
-            {field: 'status', title: '状态', align: 'center',},
-            {field: 'symbol_nums', title: '符号文件序列号', align: 'center',},
-            {field: 'op', title: '操作', align: 'center',
+            {field: 'id', title: 'Mã DB', align: 'center'},
+            {field: 'version', title: 'Phiên bản', align: 'center',},
+            {field: 'package_name', title: 'Tên gói', align: 'center',},
+            {field: 'time', title: 'Thời gian tải lên', align: 'center',},
+            {field: 'name', title: 'Tên tệp đã tải', align: 'center',},
+            {field: 'status', title: 'Trạng thái', align: 'center',},
+            {field: 'symbol_nums', title: 'Mã tệp symbol', align: 'center',},
+            {field: 'op', title: 'Thao tác', align: 'center',
                 formatter: function (value, row, index) {
-                    return '<a href="#" class="btn btn-default" onclick="a_method(this, \'so\', \'' + row.id + '\')">解析</a>'
+                    return '<a href="#" class="btn btn-default" onclick="a_method(this, \'so\', \'" + row.id + "\')">Phân tích</a>'
                 }
             }],
     });
@@ -155,16 +155,16 @@ $(function () {
         contentType: "application/json",
 
         columns: [
-            {field: 'id', title: 'DB序号', align: 'center'},
-            {field: 'feature', title: '描述', align: 'center',},
-            {field: 'report_time', title: '崩溃时间', align: 'center',},
-            {field: 'file_name', title: 'dmp文件名', align: 'center',},
-            {field: 'status', title: '状态', align: 'center',},
-            {field: 'symbol_nums', title: '使用的符号文件', align: 'center',},
-            {field: 'id', title: '操作', align: 'center',
+            {field: 'id', title: 'Mã DB', align: 'center'},
+            {field: 'feature', title: 'Mô tả', align: 'center',},
+            {field: 'report_time', title: 'Thời điểm crash', align: 'center',},
+            {field: 'file_name', title: 'Tên tệp dmp', align: 'center',},
+            {field: 'status', title: 'Trạng thái', align: 'center',},
+            {field: 'symbol_nums', title: 'Tệp symbol đã dùng', align: 'center',},
+            {field: 'id', title: 'Thao tác', align: 'center',
                 formatter: function (value, row, index) {
-                    var e = '<a href="#" class="btn btn-default" onclick="a_method(this, \'dmp\', \'' + row.id + '\')">解析</a>';  //row.id为每行的id
-                    // var d = '<a href="#" mce_href="#" onclick="del(\'' + row.id + '\')">查看</a> ';
+                    var e = '<a href="#" class="btn btn-default" onclick="a_method(this, \'dmp\', \'" + row.id + "\')">Phân tích</a>';  // row.id is each row id
+                    // var d = '<a href="#" mce_href="#" onclick="del(\'' + row.id + '\')">View</a> ';
                     return e;
                 }
             },
@@ -191,17 +191,17 @@ $(function () {
         // classes: "table table-hover table-no-bordered",
 
        columns: [
-            {field: 'id', title: 'DB序号', align: 'center'},
-            {field: 'feature', title: '描述', align: 'center',
+            {field: 'id', title: 'Mã DB', align: 'center'},
+            {field: 'feature', title: 'Mô tả', align: 'center',
                 formatter: function(value, row, index) {
                     return '<a href="/crashinfo?_id=' + encodeURIComponent(row.id) + '&type=1" target="_blank">' + value + '</a>'
                 }
             },
-            {field: 'report_version', title: '上报版本号', align: 'center',},
-            {field: 'count', title: '上报总次数', align: 'center'},
-            {field: 'firsttime', title: '首次上报时间', align: 'center',},
-            {field: 'lasttime', title: '最后上报文件名', align: 'center',},
-            {field: 'status', title: '状态', align: 'center',},
+            {field: 'report_version', title: 'Phiên bản báo lỗi', align: 'center',},
+            {field: 'count', title: 'Tổng số lần báo', align: 'center'},
+            {field: 'firsttime', title: 'Thời gian báo đầu tiên', align: 'center',},
+            {field: 'lasttime', title: 'Tên tệp báo gần nhất', align: 'center',},
+            {field: 'status', title: 'Trạng thái', align: 'center',},
         ],
     });
     $('#exceptionstable').bootstrapTable({
@@ -225,14 +225,14 @@ $(function () {
         // classes: "table table-hover table-no-bordered",
 
        columns: [
-            {field: 'id', title: 'DB序号', align: 'center'},
-            {field: 'feature', title: '描述', align: 'center',},
-            {field: 'version', title: '版本号', align: 'center',},
-            {field: 'package_name', title: '包名', align: 'center',},
-            {field: 'report_time', title: '上报时间', align: 'center',},
-            {field: 'phone_name', title: '手机型号', align: 'center',},
-            {field: 'phone_sys', title: '系统型号', align: 'center',},
-            {field: 'status', title: '状态', align: 'center',},
+            {field: 'id', title: 'Mã DB', align: 'center'},
+            {field: 'feature', title: 'Mô tả', align: 'center',},
+            {field: 'version', title: 'Phiên bản', align: 'center',},
+            {field: 'package_name', title: 'Tên gói', align: 'center',},
+            {field: 'report_time', title: 'Thời gian báo lỗi', align: 'center',},
+            {field: 'phone_name', title: 'Mẫu điện thoại', align: 'center',},
+            {field: 'phone_sys', title: 'Hệ điều hành', align: 'center',},
+            {field: 'status', title: 'Trạng thái', align: 'center',},
         ],
     });
     $(document).keyup(function(e) {

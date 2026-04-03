@@ -1,0 +1,262 @@
+[host_server I 260403 07:13:58.349.001 document.go:151] register document default ok
+[host_server I 260403 07:13:58.360.002 init.go:171] register document ok
+[host_server D 260403 07:13:58.368.003 config.go:49] cwd in /mnt/pokemon/release/cross
+[host_server D 260403 07:13:58.397.004 config.go:23] GetExtend service card_comment.cn.1 &service.Option{Name:"card_comment.cn.1", Alias:[]string(nil), Dependent:[]string{"commentdb.cn.1"}}
+[host_server D 260403 07:13:58.397.005 config.go:23] GetExtend service card_score.cn.1 &service.Option{Name:"card_score.cn.1", Alias:[]string(nil), Dependent:[]string{"commentdb.cn.1"}}
+[host_server I 260403 07:13:58.397.006 config.go:60] comment.cn.1 config in defines.json
+[comment.cn.1 I 260403 07:13:58.397.007 main.go:44] &services.Define{ContainerOption:service.ContainerOption{Name:"@comment.cn.1", Debug:false, Addr:"", NSQLookupd:"http://127.0.0.1:4161/", Mainnsqd:"", NSQTcpAddresses:[]string{"127.0.0.1:4150"}, Shushu:false, Services:[]service.IOption{(*service.Option)(0xc0000ade40), (*service.Option)(0xc0000adf80)}, ServicesRaw:[]json.RawMessage(nil)}}
+[comment.cn.1 I 260403 07:14:04.718.011 rpcclient.go:292] create client consumer RESP-c_comment.cn.1/0global_1rpc
+[comment.cn.1 I 260403 07:14:04.720.012 consumer.go:1175] INF    2 [RESP-c_comment.cn.1/0global_1rpc] (127.0.0.1:4150) connecting to nsqd
+[comment.cn.1 I 260403 07:14:04.726.013 container.go:250] remote service commentdb.cn.1 start
+[comment.cn.1 I 260403 07:14:04.727.014 container.go:259] service card_comment.cn.1 start
+[comment.cn.1 I 260403 07:14:04.731.015 producer.go:382] INF    1 (127.0.0.1:4150) connecting to nsqd
+[comment.cn.1 I 260403 07:14:04.770.016 container.go:259] service card_score.cn.1 start
+[comment.cn.1 I 260403 07:14:04.774.018 container.go:264] container @comment.cn.1 start
+[comment.cn.1 I 260403 07:14:04.774.019 server.go:29] server start ok
+[comment.cn.1 I 260403 07:14:04.777.022 rpcserver.go:349] create server consumer REQ-card_comment.cn.1/rpc
+[comment.cn.1 I 260403 07:14:04.787.033 rpcserver.go:349] create server consumer REQ-card_score.cn.1/rpc
+[comment.cn.1 I 260403 07:14:04.787.037 consumer.go:1175] INF    3 [REQ-card_comment.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[comment.cn.1 I 260403 07:14:04.788.038 consumer.go:1175] INF    4 [REQ-card_score.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[comment.cn.1 I 260403 07:14:14.735.039 manager.go:250] process dirty, count 1 success 1 fail 0 cost 6.013ms, dirty 0, lru 0, chan 0
+[comment.cn.1 I 260403 07:43:39.811.040 producer.go:382] INF    5 stopping
+[comment.cn.1 I 260403 07:43:39.838.041 consumer.go:1175] INF    3 [REQ-card_comment.cn.1/rpc] stopping...
+[comment.cn.1 I 260403 07:43:39.838.042 consumer.go:1175] INF    4 [REQ-card_score.cn.1/rpc] stopping...
+[comment.cn.1 I 260403 07:43:39.838.043 container.go:279] service card_comment.cn.1 stop
+[comment.cn.1 I 260403 07:43:39.840.044 container.go:279] service card_score.cn.1 stop
+[comment.cn.1 I 260403 07:43:39.840.045 container.go:286] container @comment.cn.1 stop
+[comment.cn.1 I 260403 07:43:39.840.046 server.go:49] server stop ok
+[host_server I 260403 07:43:51.239.001 document.go:151] register document default ok
+[host_server I 260403 07:43:51.242.002 init.go:171] register document ok
+[host_server D 260403 07:43:51.279.003 config.go:49] cwd in /mnt/pokemon/release/cross
+[host_server D 260403 07:43:51.336.004 config.go:23] GetExtend service card_comment.cn.1 &service.Option{Name:"card_comment.cn.1", Alias:[]string(nil), Dependent:[]string{"commentdb.cn.1"}}
+[host_server D 260403 07:43:51.344.005 config.go:23] GetExtend service card_score.cn.1 &service.Option{Name:"card_score.cn.1", Alias:[]string(nil), Dependent:[]string{"commentdb.cn.1"}}
+[host_server I 260403 07:43:51.344.006 config.go:60] comment.cn.1 config in defines.json
+[comment.cn.1 I 260403 07:43:51.344.007 main.go:44] &services.Define{ContainerOption:service.ContainerOption{Name:"@comment.cn.1", Debug:false, Addr:"", NSQLookupd:"http://127.0.0.1:4161/", Mainnsqd:"", NSQTcpAddresses:[]string{"127.0.0.1:4150"}, Shushu:false, Services:[]service.IOption{(*service.Option)(0xc0000e78c0), (*service.Option)(0xc0000e7a00)}, ServicesRaw:[]json.RawMessage(nil)}}
+[comment.cn.1 I 260403 07:43:56.654.011 rpcclient.go:292] create client consumer RESP-c_comment.cn.1/0global_1rpc
+[comment.cn.1 I 260403 07:43:56.656.012 consumer.go:1175] INF    2 [RESP-c_comment.cn.1/0global_1rpc] (127.0.0.1:4150) connecting to nsqd
+[comment.cn.1 I 260403 07:43:56.667.013 container.go:250] remote service commentdb.cn.1 start
+[comment.cn.1 I 260403 07:43:56.669.014 container.go:259] service card_comment.cn.1 start
+[comment.cn.1 I 260403 07:43:56.676.015 producer.go:382] INF    1 (127.0.0.1:4150) connecting to nsqd
+[comment.cn.1 I 260403 07:43:57.402.016 container.go:259] service card_score.cn.1 start
+[comment.cn.1 I 260403 07:43:57.402.017 container.go:264] container @comment.cn.1 start
+[comment.cn.1 I 260403 07:43:57.402.018 server.go:29] server start ok
+[comment.cn.1 I 260403 07:43:57.408.022 rpcserver.go:349] create server consumer REQ-card_comment.cn.1/rpc
+[comment.cn.1 I 260403 07:43:57.410.033 rpcserver.go:349] create server consumer REQ-card_score.cn.1/rpc
+[comment.cn.1 I 260403 07:43:57.411.037 consumer.go:1175] INF    3 [REQ-card_comment.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[comment.cn.1 I 260403 07:43:57.415.038 consumer.go:1175] INF    4 [REQ-card_score.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[comment.cn.1 I 260403 07:44:16.689.039 manager.go:250] process dirty, count 1 success 1 fail 0 cost 17.263ms, dirty 0, lru 0, chan 0
+[comment.cn.1 E 260403 08:38:32.115.040 conn.go:731] ERR    2 [RESP-c_comment.cn.1/0global_1rpc] (127.0.0.1:4150) IO error - EOF
+[comment.cn.1 E 260403 08:38:32.123.041 conn.go:731] ERR    1 (127.0.0.1:4150) IO error - EOF
+[comment.cn.1 E 260403 08:38:32.123.043 conn.go:731] ERR    4 [REQ-card_score.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[comment.cn.1 E 260403 08:38:32.123.042 conn.go:731] ERR    3 [REQ-card_comment.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[comment.cn.1 I 260403 08:38:32.124.044 conn.go:731] INF    2 [RESP-c_comment.cn.1/0global_1rpc] (127.0.0.1:4150) beginning close
+[comment.cn.1 I 260403 08:38:32.125.045 conn.go:731] INF    4 [REQ-card_score.cn.1/rpc] (127.0.0.1:4150) beginning close
+[comment.cn.1 I 260403 08:38:32.125.047 conn.go:731] INF    3 [REQ-card_comment.cn.1/rpc] (127.0.0.1:4150) beginning close
+[comment.cn.1 I 260403 08:38:32.125.048 conn.go:731] INF    2 [RESP-c_comment.cn.1/0global_1rpc] (127.0.0.1:4150) readLoop exiting
+[comment.cn.1 I 260403 08:38:32.125.049 conn.go:731] INF    4 [REQ-card_score.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[comment.cn.1 I 260403 08:38:32.125.051 conn.go:731] INF    4 [REQ-card_score.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[comment.cn.1 I 260403 08:38:32.126.052 conn.go:731] INF    4 [REQ-card_score.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[comment.cn.1 I 260403 08:38:32.125.046 conn.go:731] INF    1 (127.0.0.1:4150) beginning close
+[comment.cn.1 I 260403 08:38:32.126.054 conn.go:731] INF    3 [REQ-card_comment.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[comment.cn.1 I 260403 08:38:32.126.053 conn.go:731] INF    1 (127.0.0.1:4150) readLoop exiting
+[comment.cn.1 I 260403 08:38:32.126.055 conn.go:731] INF    3 [REQ-card_comment.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[comment.cn.1 I 260403 08:38:32.126.056 conn.go:731] INF    1 (127.0.0.1:4150) breaking out of writeLoop
+[comment.cn.1 I 260403 08:38:32.125.050 conn.go:731] INF    3 [REQ-card_comment.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[comment.cn.1 I 260403 08:38:32.126.057 conn.go:731] INF    1 (127.0.0.1:4150) writeLoop exiting
+[comment.cn.1 I 260403 08:38:32.126.058 conn.go:731] INF    2 [RESP-c_comment.cn.1/0global_1rpc] (127.0.0.1:4150) breaking out of writeLoop
+[comment.cn.1 I 260403 08:38:32.126.059 conn.go:731] INF    2 [RESP-c_comment.cn.1/0global_1rpc] (127.0.0.1:4150) writeLoop exiting
+[comment.cn.1 I 260403 08:38:32.226.060 conn.go:731] INF    4 [REQ-card_score.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[comment.cn.1 I 260403 08:38:32.226.061 conn.go:731] INF    4 [REQ-card_score.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[comment.cn.1 W 260403 08:38:32.226.062 consumer.go:1175] WRN    4 [REQ-card_score.cn.1/rpc] there are 0 connections left alive
+[comment.cn.1 I 260403 08:38:32.226.063 consumer.go:1175] INF    4 [REQ-card_score.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[comment.cn.1 I 260403 08:38:32.227.064 conn.go:731] INF    1 (127.0.0.1:4150) finished draining, cleanup exiting
+[comment.cn.1 I 260403 08:38:32.227.065 conn.go:731] INF    1 (127.0.0.1:4150) clean close complete
+[comment.cn.1 I 260403 08:38:32.227.066 conn.go:731] INF    3 [REQ-card_comment.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[comment.cn.1 I 260403 08:38:32.227.067 conn.go:731] INF    3 [REQ-card_comment.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[comment.cn.1 I 260403 08:38:32.227.068 producer.go:382] INF    1 exiting router
+[comment.cn.1 W 260403 08:38:32.227.069 consumer.go:1175] WRN    3 [REQ-card_comment.cn.1/rpc] there are 0 connections left alive
+[comment.cn.1 I 260403 08:38:32.227.070 consumer.go:1175] INF    3 [REQ-card_comment.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[comment.cn.1 I 260403 08:38:32.227.071 conn.go:731] INF    2 [RESP-c_comment.cn.1/0global_1rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[comment.cn.1 I 260403 08:38:32.227.072 conn.go:731] INF    2 [RESP-c_comment.cn.1/0global_1rpc] (127.0.0.1:4150) clean close complete
+[comment.cn.1 W 260403 08:38:32.227.073 consumer.go:1175] WRN    2 [RESP-c_comment.cn.1/0global_1rpc] there are 0 connections left alive
+[comment.cn.1 I 260403 08:38:32.227.074 consumer.go:1175] INF    2 [RESP-c_comment.cn.1/0global_1rpc] (127.0.0.1:4150) re-connecting in 5s
+[comment.cn.1 I 260403 08:38:37.227.076 consumer.go:1175] INF    2 [RESP-c_comment.cn.1/0global_1rpc] (127.0.0.1:4150) connecting to nsqd
+[comment.cn.1 I 260403 08:38:37.228.077 consumer.go:1175] INF    4 [REQ-card_score.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[comment.cn.1 I 260403 08:38:37.227.075 consumer.go:1175] INF    3 [REQ-card_comment.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[comment.cn.1 E 260403 09:31:39.406.078 conn.go:731] ERR    3 [REQ-card_comment.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[comment.cn.1 I 260403 09:31:39.407.079 conn.go:731] INF    3 [REQ-card_comment.cn.1/rpc] (127.0.0.1:4150) beginning close
+[comment.cn.1 I 260403 09:31:39.407.080 conn.go:731] INF    3 [REQ-card_comment.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[comment.cn.1 I 260403 09:31:39.408.081 conn.go:731] INF    3 [REQ-card_comment.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[comment.cn.1 I 260403 09:31:39.408.082 conn.go:731] INF    3 [REQ-card_comment.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[comment.cn.1 E 260403 09:31:39.408.083 conn.go:731] ERR    4 [REQ-card_score.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[comment.cn.1 I 260403 09:31:39.408.084 conn.go:731] INF    4 [REQ-card_score.cn.1/rpc] (127.0.0.1:4150) beginning close
+[comment.cn.1 I 260403 09:31:39.408.085 conn.go:731] INF    4 [REQ-card_score.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[comment.cn.1 I 260403 09:31:39.408.086 conn.go:731] INF    4 [REQ-card_score.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[comment.cn.1 I 260403 09:31:39.408.087 conn.go:731] INF    4 [REQ-card_score.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[comment.cn.1 E 260403 09:31:39.411.088 conn.go:731] ERR    2 [RESP-c_comment.cn.1/0global_1rpc] (127.0.0.1:4150) IO error - EOF
+[comment.cn.1 I 260403 09:31:39.411.089 conn.go:731] INF    2 [RESP-c_comment.cn.1/0global_1rpc] (127.0.0.1:4150) beginning close
+[comment.cn.1 I 260403 09:31:39.411.090 conn.go:731] INF    2 [RESP-c_comment.cn.1/0global_1rpc] (127.0.0.1:4150) readLoop exiting
+[comment.cn.1 I 260403 09:31:39.411.091 conn.go:731] INF    2 [RESP-c_comment.cn.1/0global_1rpc] (127.0.0.1:4150) breaking out of writeLoop
+[comment.cn.1 I 260403 09:31:39.411.092 conn.go:731] INF    2 [RESP-c_comment.cn.1/0global_1rpc] (127.0.0.1:4150) writeLoop exiting
+[comment.cn.1 I 260403 09:31:39.512.093 conn.go:731] INF    2 [RESP-c_comment.cn.1/0global_1rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[comment.cn.1 I 260403 09:31:39.512.094 conn.go:731] INF    2 [RESP-c_comment.cn.1/0global_1rpc] (127.0.0.1:4150) clean close complete
+[comment.cn.1 W 260403 09:31:39.512.095 consumer.go:1175] WRN    2 [RESP-c_comment.cn.1/0global_1rpc] there are 0 connections left alive
+[comment.cn.1 I 260403 09:31:39.512.096 consumer.go:1175] INF    2 [RESP-c_comment.cn.1/0global_1rpc] (127.0.0.1:4150) re-connecting in 5s
+[comment.cn.1 I 260403 09:31:39.514.098 conn.go:731] INF    4 [REQ-card_score.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[comment.cn.1 W 260403 09:31:39.514.099 consumer.go:1175] WRN    4 [REQ-card_score.cn.1/rpc] there are 0 connections left alive
+[comment.cn.1 I 260403 09:31:39.514.097 conn.go:731] INF    3 [REQ-card_comment.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[comment.cn.1 I 260403 09:31:39.514.102 conn.go:731] INF    3 [REQ-card_comment.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[comment.cn.1 I 260403 09:31:39.514.101 consumer.go:1175] INF    4 [REQ-card_score.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[comment.cn.1 W 260403 09:31:39.514.103 consumer.go:1175] WRN    3 [REQ-card_comment.cn.1/rpc] there are 0 connections left alive
+[comment.cn.1 I 260403 09:31:39.514.104 consumer.go:1175] INF    3 [REQ-card_comment.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[comment.cn.1 I 260403 09:31:39.514.100 conn.go:731] INF    4 [REQ-card_score.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[comment.cn.1 I 260403 09:31:44.515.105 consumer.go:1175] INF    4 [REQ-card_score.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[comment.cn.1 I 260403 09:31:44.516.106 consumer.go:1175] INF    2 [RESP-c_comment.cn.1/0global_1rpc] (127.0.0.1:4150) connecting to nsqd
+[comment.cn.1 I 260403 09:31:44.520.107 consumer.go:1175] INF    3 [REQ-card_comment.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[comment.cn.1 I 260403 09:59:42.809.108 framework.go:534] REQ card_comment.cn.1.CardCommentList 1 [0xc000466000]
+[comment.cn.1 I 260403 09:59:42.849.109 manager.go:76] CardCommentManger refreshHot 1261
+[comment.cn.1 I 260403 09:59:42.852.110 producer.go:382] INF    1 (127.0.0.1:4150) connecting to nsqd
+[comment.cn.1 I 260403 09:59:42.876.111 manager.go:134] CardCommentManger refreshTotal 1261
+[comment.cn.1 I 260403 09:59:42.938.113 rpcserver.go:622] RESP card_comment.cn.1.CardCommentList 1 37B 134.764ms from c_game.cn.1
+[comment.cn.1 I 260403 09:59:42.938.112 producer.go:382] INF    5 (127.0.0.1:4150) connecting to nsqd
+[comment.cn.1 I 260403 09:59:42.992.114 framework.go:534] REQ card_score.cn.1.CardScoreGet 2 [IDHex("69cf57bc36908d001b1ee319") 0xc01560a118]
+[comment.cn.1 I 260403 09:59:42.995.115 rpcserver.go:622] RESP card_score.cn.1.CardScoreGet 2 46B 2.751ms from c_game.cn.1
+[comment.cn.1 I 260403 09:59:53.952.116 framework.go:534] REQ card_score.cn.1.CardScoreRank 3 [0xc0179d86d8 0xc0179d86e0]
+[comment.cn.1 I 260403 09:59:53.954.117 rpcserver.go:622] RESP card_score.cn.1.CardScoreRank 3 1883B 2.068ms from c_game.cn.1
+[comment.cn.1 I 260403 09:59:56.697.118 manager.go:250] process dirty, count 1 success 1 fail 0 cost 28.821ms, dirty 0, lru 0, chan 0
+[comment.cn.1 E 260403 10:19:04.993.120 conn.go:731] ERR    1 (127.0.0.1:4150) IO error - EOF
+[comment.cn.1 I 260403 10:19:04.993.121 conn.go:731] INF    1 (127.0.0.1:4150) beginning close
+[comment.cn.1 I 260403 10:19:04.993.122 conn.go:731] INF    1 (127.0.0.1:4150) readLoop exiting
+[comment.cn.1 E 260403 10:19:04.992.119 conn.go:731] ERR    5 (127.0.0.1:4150) IO error - EOF
+[comment.cn.1 I 260403 10:19:04.999.123 conn.go:731] INF    5 (127.0.0.1:4150) beginning close
+[comment.cn.1 I 260403 10:19:04.999.124 conn.go:731] INF    5 (127.0.0.1:4150) readLoop exiting
+[comment.cn.1 I 260403 10:19:04.999.125 conn.go:731] INF    5 (127.0.0.1:4150) breaking out of writeLoop
+[comment.cn.1 I 260403 10:19:04.999.126 conn.go:731] INF    5 (127.0.0.1:4150) writeLoop exiting
+[comment.cn.1 E 260403 10:19:04.999.127 conn.go:731] ERR    4 [REQ-card_score.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[comment.cn.1 I 260403 10:19:04.999.128 conn.go:731] INF    4 [REQ-card_score.cn.1/rpc] (127.0.0.1:4150) beginning close
+[comment.cn.1 I 260403 10:19:04.999.129 conn.go:731] INF    4 [REQ-card_score.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[comment.cn.1 I 260403 10:19:04.999.130 conn.go:731] INF    4 [REQ-card_score.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[comment.cn.1 I 260403 10:19:04.999.131 conn.go:731] INF    4 [REQ-card_score.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[comment.cn.1 E 260403 10:19:04.999.133 conn.go:731] ERR    3 [REQ-card_comment.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[comment.cn.1 I 260403 10:19:04.999.134 conn.go:731] INF    3 [REQ-card_comment.cn.1/rpc] (127.0.0.1:4150) beginning close
+[comment.cn.1 I 260403 10:19:04.999.135 conn.go:731] INF    3 [REQ-card_comment.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[comment.cn.1 I 260403 10:19:04.999.136 conn.go:731] INF    3 [REQ-card_comment.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[comment.cn.1 I 260403 10:19:04.999.137 conn.go:731] INF    3 [REQ-card_comment.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[comment.cn.1 E 260403 10:19:04.999.132 conn.go:731] ERR    2 [RESP-c_comment.cn.1/0global_1rpc] (127.0.0.1:4150) IO error - EOF
+[comment.cn.1 I 260403 10:19:05.000.138 conn.go:731] INF    2 [RESP-c_comment.cn.1/0global_1rpc] (127.0.0.1:4150) beginning close
+[comment.cn.1 I 260403 10:19:05.000.139 conn.go:731] INF    2 [RESP-c_comment.cn.1/0global_1rpc] (127.0.0.1:4150) readLoop exiting
+[comment.cn.1 I 260403 10:19:05.000.140 conn.go:731] INF    2 [RESP-c_comment.cn.1/0global_1rpc] (127.0.0.1:4150) breaking out of writeLoop
+[comment.cn.1 I 260403 10:19:05.001.141 conn.go:731] INF    2 [RESP-c_comment.cn.1/0global_1rpc] (127.0.0.1:4150) writeLoop exiting
+[comment.cn.1 I 260403 10:19:05.005.142 conn.go:731] INF    1 (127.0.0.1:4150) breaking out of writeLoop
+[comment.cn.1 I 260403 10:19:05.006.143 conn.go:731] INF    1 (127.0.0.1:4150) writeLoop exiting
+[comment.cn.1 I 260403 10:19:05.102.144 conn.go:731] INF    3 [REQ-card_comment.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[comment.cn.1 I 260403 10:19:05.103.145 conn.go:731] INF    2 [RESP-c_comment.cn.1/0global_1rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[comment.cn.1 I 260403 10:19:05.103.146 conn.go:731] INF    2 [RESP-c_comment.cn.1/0global_1rpc] (127.0.0.1:4150) clean close complete
+[comment.cn.1 I 260403 10:19:05.103.147 conn.go:731] INF    3 [REQ-card_comment.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[comment.cn.1 W 260403 10:19:05.103.148 consumer.go:1175] WRN    2 [RESP-c_comment.cn.1/0global_1rpc] there are 0 connections left alive
+[comment.cn.1 W 260403 10:19:05.104.149 consumer.go:1175] WRN    3 [REQ-card_comment.cn.1/rpc] there are 0 connections left alive
+[comment.cn.1 I 260403 10:19:05.104.150 conn.go:731] INF    5 (127.0.0.1:4150) finished draining, cleanup exiting
+[comment.cn.1 I 260403 10:19:05.104.151 consumer.go:1175] INF    2 [RESP-c_comment.cn.1/0global_1rpc] (127.0.0.1:4150) re-connecting in 5s
+[comment.cn.1 I 260403 10:19:05.104.152 consumer.go:1175] INF    3 [REQ-card_comment.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[comment.cn.1 I 260403 10:19:05.104.153 conn.go:731] INF    5 (127.0.0.1:4150) clean close complete
+[comment.cn.1 I 260403 10:19:05.104.154 producer.go:382] INF    5 exiting router
+[comment.cn.1 I 260403 10:19:05.104.155 conn.go:731] INF    4 [REQ-card_score.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[comment.cn.1 I 260403 10:19:05.105.156 conn.go:731] INF    4 [REQ-card_score.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[comment.cn.1 W 260403 10:19:05.105.157 consumer.go:1175] WRN    4 [REQ-card_score.cn.1/rpc] there are 0 connections left alive
+[comment.cn.1 I 260403 10:19:05.105.158 consumer.go:1175] INF    4 [REQ-card_score.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[comment.cn.1 I 260403 10:19:05.106.159 conn.go:731] INF    1 (127.0.0.1:4150) finished draining, cleanup exiting
+[comment.cn.1 I 260403 10:19:05.106.160 conn.go:731] INF    1 (127.0.0.1:4150) clean close complete
+[comment.cn.1 I 260403 10:19:05.106.161 producer.go:382] INF    1 exiting router
+[comment.cn.1 I 260403 10:19:10.105.162 consumer.go:1175] INF    3 [REQ-card_comment.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[comment.cn.1 I 260403 10:19:10.106.163 consumer.go:1175] INF    2 [RESP-c_comment.cn.1/0global_1rpc] (127.0.0.1:4150) connecting to nsqd
+[comment.cn.1 I 260403 10:19:10.108.164 consumer.go:1175] INF    4 [REQ-card_score.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[comment.cn.1 E 260403 11:05:38.517.165 conn.go:731] ERR    4 [REQ-card_score.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[comment.cn.1 I 260403 11:05:38.517.166 conn.go:731] INF    4 [REQ-card_score.cn.1/rpc] (127.0.0.1:4150) beginning close
+[comment.cn.1 I 260403 11:05:38.518.167 conn.go:731] INF    4 [REQ-card_score.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[comment.cn.1 I 260403 11:05:38.519.168 conn.go:731] INF    4 [REQ-card_score.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[comment.cn.1 I 260403 11:05:38.520.169 conn.go:731] INF    4 [REQ-card_score.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[comment.cn.1 E 260403 11:05:38.520.170 conn.go:731] ERR    3 [REQ-card_comment.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[comment.cn.1 E 260403 11:05:38.520.171 conn.go:731] ERR    2 [RESP-c_comment.cn.1/0global_1rpc] (127.0.0.1:4150) IO error - EOF
+[comment.cn.1 I 260403 11:05:38.520.172 conn.go:731] INF    3 [REQ-card_comment.cn.1/rpc] (127.0.0.1:4150) beginning close
+[comment.cn.1 I 260403 11:05:38.520.173 conn.go:731] INF    2 [RESP-c_comment.cn.1/0global_1rpc] (127.0.0.1:4150) beginning close
+[comment.cn.1 I 260403 11:05:38.520.174 conn.go:731] INF    3 [REQ-card_comment.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[comment.cn.1 I 260403 11:05:38.520.175 conn.go:731] INF    2 [RESP-c_comment.cn.1/0global_1rpc] (127.0.0.1:4150) readLoop exiting
+[comment.cn.1 I 260403 11:05:38.520.176 conn.go:731] INF    2 [RESP-c_comment.cn.1/0global_1rpc] (127.0.0.1:4150) breaking out of writeLoop
+[comment.cn.1 I 260403 11:05:38.520.177 conn.go:731] INF    3 [REQ-card_comment.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[comment.cn.1 I 260403 11:05:38.520.178 conn.go:731] INF    2 [RESP-c_comment.cn.1/0global_1rpc] (127.0.0.1:4150) writeLoop exiting
+[comment.cn.1 I 260403 11:05:38.520.179 conn.go:731] INF    3 [REQ-card_comment.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[comment.cn.1 I 260403 11:05:38.620.180 conn.go:731] INF    4 [REQ-card_score.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[comment.cn.1 I 260403 11:05:38.620.181 conn.go:731] INF    4 [REQ-card_score.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[comment.cn.1 W 260403 11:05:38.620.182 consumer.go:1175] WRN    4 [REQ-card_score.cn.1/rpc] there are 0 connections left alive
+[comment.cn.1 I 260403 11:05:38.620.183 consumer.go:1175] INF    4 [REQ-card_score.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[comment.cn.1 I 260403 11:05:38.622.184 conn.go:731] INF    2 [RESP-c_comment.cn.1/0global_1rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[comment.cn.1 I 260403 11:05:38.622.185 conn.go:731] INF    2 [RESP-c_comment.cn.1/0global_1rpc] (127.0.0.1:4150) clean close complete
+[comment.cn.1 W 260403 11:05:38.622.186 consumer.go:1175] WRN    2 [RESP-c_comment.cn.1/0global_1rpc] there are 0 connections left alive
+[comment.cn.1 I 260403 11:05:38.622.187 consumer.go:1175] INF    2 [RESP-c_comment.cn.1/0global_1rpc] (127.0.0.1:4150) re-connecting in 5s
+[comment.cn.1 I 260403 11:05:38.622.188 conn.go:731] INF    3 [REQ-card_comment.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[comment.cn.1 I 260403 11:05:38.622.189 conn.go:731] INF    3 [REQ-card_comment.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[comment.cn.1 W 260403 11:05:38.622.190 consumer.go:1175] WRN    3 [REQ-card_comment.cn.1/rpc] there are 0 connections left alive
+[comment.cn.1 I 260403 11:05:38.622.191 consumer.go:1175] INF    3 [REQ-card_comment.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[comment.cn.1 I 260403 11:05:43.621.192 consumer.go:1175] INF    4 [REQ-card_score.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[comment.cn.1 I 260403 11:05:43.623.193 consumer.go:1175] INF    2 [RESP-c_comment.cn.1/0global_1rpc] (127.0.0.1:4150) connecting to nsqd
+[comment.cn.1 I 260403 11:05:43.623.194 consumer.go:1175] INF    3 [REQ-card_comment.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[comment.cn.1 E 260403 11:50:07.265.195 conn.go:731] ERR    2 [RESP-c_comment.cn.1/0global_1rpc] (127.0.0.1:4150) IO error - EOF
+[comment.cn.1 E 260403 11:50:07.273.196 conn.go:731] ERR    4 [REQ-card_score.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[comment.cn.1 E 260403 11:50:07.273.197 conn.go:731] ERR    3 [REQ-card_comment.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[comment.cn.1 I 260403 11:50:07.274.198 conn.go:731] INF    2 [RESP-c_comment.cn.1/0global_1rpc] (127.0.0.1:4150) beginning close
+[comment.cn.1 I 260403 11:50:07.275.200 conn.go:731] INF    3 [REQ-card_comment.cn.1/rpc] (127.0.0.1:4150) beginning close
+[comment.cn.1 I 260403 11:50:07.276.201 conn.go:731] INF    2 [RESP-c_comment.cn.1/0global_1rpc] (127.0.0.1:4150) readLoop exiting
+[comment.cn.1 I 260403 11:50:07.276.202 conn.go:731] INF    3 [REQ-card_comment.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[comment.cn.1 I 260403 11:50:07.276.204 conn.go:731] INF    2 [RESP-c_comment.cn.1/0global_1rpc] (127.0.0.1:4150) breaking out of writeLoop
+[comment.cn.1 I 260403 11:50:07.276.205 conn.go:731] INF    2 [RESP-c_comment.cn.1/0global_1rpc] (127.0.0.1:4150) writeLoop exiting
+[comment.cn.1 I 260403 11:50:07.276.203 conn.go:731] INF    3 [REQ-card_comment.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[comment.cn.1 I 260403 11:50:07.276.206 conn.go:731] INF    3 [REQ-card_comment.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[comment.cn.1 I 260403 11:50:07.275.199 conn.go:731] INF    4 [REQ-card_score.cn.1/rpc] (127.0.0.1:4150) beginning close
+[comment.cn.1 I 260403 11:50:07.276.207 conn.go:731] INF    4 [REQ-card_score.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[comment.cn.1 I 260403 11:50:07.276.208 conn.go:731] INF    4 [REQ-card_score.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[comment.cn.1 I 260403 11:50:07.276.209 conn.go:731] INF    4 [REQ-card_score.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[comment.cn.1 I 260403 11:50:07.376.210 conn.go:731] INF    2 [RESP-c_comment.cn.1/0global_1rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[comment.cn.1 I 260403 11:50:07.377.212 conn.go:731] INF    2 [RESP-c_comment.cn.1/0global_1rpc] (127.0.0.1:4150) clean close complete
+[comment.cn.1 I 260403 11:50:07.376.211 conn.go:731] INF    4 [REQ-card_score.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[comment.cn.1 W 260403 11:50:07.377.213 consumer.go:1175] WRN    2 [RESP-c_comment.cn.1/0global_1rpc] there are 0 connections left alive
+[comment.cn.1 I 260403 11:50:07.377.214 conn.go:731] INF    4 [REQ-card_score.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[comment.cn.1 I 260403 11:50:07.377.215 consumer.go:1175] INF    2 [RESP-c_comment.cn.1/0global_1rpc] (127.0.0.1:4150) re-connecting in 5s
+[comment.cn.1 W 260403 11:50:07.377.216 consumer.go:1175] WRN    4 [REQ-card_score.cn.1/rpc] there are 0 connections left alive
+[comment.cn.1 I 260403 11:50:07.377.217 consumer.go:1175] INF    4 [REQ-card_score.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[comment.cn.1 I 260403 11:50:07.377.218 conn.go:731] INF    3 [REQ-card_comment.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[comment.cn.1 I 260403 11:50:07.377.219 conn.go:731] INF    3 [REQ-card_comment.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[comment.cn.1 W 260403 11:50:07.377.220 consumer.go:1175] WRN    3 [REQ-card_comment.cn.1/rpc] there are 0 connections left alive
+[comment.cn.1 I 260403 11:50:07.377.221 consumer.go:1175] INF    3 [REQ-card_comment.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[comment.cn.1 I 260403 11:50:12.377.222 consumer.go:1175] INF    2 [RESP-c_comment.cn.1/0global_1rpc] (127.0.0.1:4150) connecting to nsqd
+[comment.cn.1 I 260403 11:50:12.377.223 consumer.go:1175] INF    4 [REQ-card_score.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[comment.cn.1 I 260403 11:50:12.379.224 consumer.go:1175] INF    3 [REQ-card_comment.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[comment.cn.1 E 260403 12:23:39.747.225 conn.go:731] ERR    2 [RESP-c_comment.cn.1/0global_1rpc] (127.0.0.1:4150) IO error - EOF
+[comment.cn.1 I 260403 12:23:39.748.227 conn.go:731] INF    2 [RESP-c_comment.cn.1/0global_1rpc] (127.0.0.1:4150) beginning close
+[comment.cn.1 I 260403 12:23:39.749.228 conn.go:731] INF    2 [RESP-c_comment.cn.1/0global_1rpc] (127.0.0.1:4150) readLoop exiting
+[comment.cn.1 E 260403 12:23:39.749.229 conn.go:731] ERR    4 [REQ-card_score.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[comment.cn.1 I 260403 12:23:39.749.230 conn.go:731] INF    4 [REQ-card_score.cn.1/rpc] (127.0.0.1:4150) beginning close
+[comment.cn.1 I 260403 12:23:39.749.231 conn.go:731] INF    2 [RESP-c_comment.cn.1/0global_1rpc] (127.0.0.1:4150) breaking out of writeLoop
+[comment.cn.1 I 260403 12:23:39.750.233 conn.go:731] INF    2 [RESP-c_comment.cn.1/0global_1rpc] (127.0.0.1:4150) writeLoop exiting
+[comment.cn.1 I 260403 12:23:39.750.232 conn.go:731] INF    4 [REQ-card_score.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[comment.cn.1 I 260403 12:23:39.750.234 conn.go:731] INF    4 [REQ-card_score.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[comment.cn.1 I 260403 12:23:39.751.235 conn.go:731] INF    4 [REQ-card_score.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[comment.cn.1 E 260403 12:23:39.747.226 conn.go:731] ERR    3 [REQ-card_comment.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[comment.cn.1 I 260403 12:23:39.751.236 conn.go:731] INF    3 [REQ-card_comment.cn.1/rpc] (127.0.0.1:4150) beginning close
+[comment.cn.1 I 260403 12:23:39.752.237 conn.go:731] INF    3 [REQ-card_comment.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[comment.cn.1 I 260403 12:23:39.752.238 conn.go:731] INF    3 [REQ-card_comment.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[comment.cn.1 I 260403 12:23:39.752.239 conn.go:731] INF    3 [REQ-card_comment.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[comment.cn.1 I 260403 12:23:39.851.240 conn.go:731] INF    4 [REQ-card_score.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[comment.cn.1 I 260403 12:23:39.852.241 conn.go:731] INF    4 [REQ-card_score.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[comment.cn.1 W 260403 12:23:39.852.242 consumer.go:1175] WRN    4 [REQ-card_score.cn.1/rpc] there are 0 connections left alive
+[comment.cn.1 I 260403 12:23:39.852.243 consumer.go:1175] INF    4 [REQ-card_score.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[comment.cn.1 I 260403 12:23:39.852.244 conn.go:731] INF    2 [RESP-c_comment.cn.1/0global_1rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[comment.cn.1 I 260403 12:23:39.852.245 conn.go:731] INF    2 [RESP-c_comment.cn.1/0global_1rpc] (127.0.0.1:4150) clean close complete
+[comment.cn.1 W 260403 12:23:39.852.246 consumer.go:1175] WRN    2 [RESP-c_comment.cn.1/0global_1rpc] there are 0 connections left alive
+[comment.cn.1 I 260403 12:23:39.852.247 consumer.go:1175] INF    2 [RESP-c_comment.cn.1/0global_1rpc] (127.0.0.1:4150) re-connecting in 5s
+[comment.cn.1 I 260403 12:23:39.852.249 conn.go:731] INF    3 [REQ-card_comment.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[comment.cn.1 W 260403 12:23:39.852.250 consumer.go:1175] WRN    3 [REQ-card_comment.cn.1/rpc] there are 0 connections left alive
+[comment.cn.1 I 260403 12:23:39.852.251 consumer.go:1175] INF    3 [REQ-card_comment.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[comment.cn.1 I 260403 12:23:39.852.248 conn.go:731] INF    3 [REQ-card_comment.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[comment.cn.1 I 260403 12:23:44.852.252 consumer.go:1175] INF    4 [REQ-card_score.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[comment.cn.1 I 260403 12:23:44.853.253 consumer.go:1175] INF    2 [RESP-c_comment.cn.1/0global_1rpc] (127.0.0.1:4150) connecting to nsqd
+[comment.cn.1 I 260403 12:23:44.853.254 consumer.go:1175] INF    3 [REQ-card_comment.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd

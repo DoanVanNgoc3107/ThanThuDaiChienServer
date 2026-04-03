@@ -1,0 +1,605 @@
+[host_server I 260403 07:13:58.466.001 document.go:151] register document default ok
+[host_server I 260403 07:13:58.496.002 init.go:171] register document ok
+[host_server D 260403 07:13:58.525.003 config.go:49] cwd in /mnt/pokemon/release/storage
+[host_server D 260403 07:13:58.559.004 config.go:23] GetExtend service accountdb.cn.1 &storage.Option{Option:service.Option{Name:"accountdb.cn.1", Alias:[]string{"giftdb.cn.1", "paymentdb.cn.1"}, Dependent:[]string(nil)}, MongoDB:"mongodb://root:GpFkU9O24cjhnWco@mongo44:27017/account?authMechanism=SCRAM-SHA-1&authSource=admin", DBName:"account", MGOPoolLimit:0, MGOStats:false}
+[host_server I 260403 07:13:58.560.005 config.go:60] account.cn.1 config in defines.json
+[account.cn.1 I 260403 07:13:58.560.006 main.go:44] &services.Define{ContainerOption:service.ContainerOption{Name:"@account.cn.1", Debug:false, Addr:"", NSQLookupd:"http://127.0.0.1:4161/", Mainnsqd:"", NSQTcpAddresses:[]string{"127.0.0.1:4150"}, Shushu:false, Services:[]service.IOption{(*storage.Option)(0xc000331340)}, ServicesRaw:[]json.RawMessage(nil)}}
+[account.cn.1 I 260403 07:14:04.709.009 storage.go:236] connect to mongodb mongodb://root:GpFkU9O24cjhnWco@mongo44:27017/account?authMechanism=SCRAM-SHA-1&authSource=admin account
+[account.cn.1 I 260403 07:14:04.713.012 container.go:224] alias giftdb.cn.1 to service accountdb.cn.1
+[account.cn.1 I 260403 07:14:04.713.013 container.go:224] alias paymentdb.cn.1 to service accountdb.cn.1
+[account.cn.1 I 260403 07:14:04.727.016 rpcclient.go:292] create client consumer RESP-c_account.cn.1/0global_1rpc
+[account.cn.1 I 260403 07:14:04.729.017 consumer.go:1175] INF    2 [RESP-c_account.cn.1/0global_1rpc] (127.0.0.1:4150) connecting to nsqd
+[account.cn.1 I 260403 07:14:04.736.018 container.go:259] service accountdb.cn.1 start
+[account.cn.1 I 260403 07:14:04.738.019 container.go:264] container @account.cn.1 start
+[account.cn.1 I 260403 07:14:04.738.020 server.go:29] server start ok
+[account.cn.1 I 260403 07:14:04.740.024 rpcserver.go:349] create server consumer REQ-giftdb.cn.1/rpc
+[account.cn.1 I 260403 07:14:04.741.028 rpcserver.go:349] create server consumer REQ-paymentdb.cn.1/rpc
+[account.cn.1 I 260403 07:14:04.742.032 rpcserver.go:349] create server consumer REQ-accountdb.cn.1/rpc
+[account.cn.1 I 260403 07:14:04.744.234 consumer.go:1175] INF    3 [REQ-giftdb.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[account.cn.1 I 260403 07:14:04.748.235 consumer.go:1175] INF    4 [REQ-paymentdb.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[account.cn.1 I 260403 07:14:04.751.236 consumer.go:1175] INF    5 [REQ-accountdb.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[account.cn.1 I 260403 07:14:04.778.237 framework.go:534] REQ accountdb.cn.1.MyPayOrderAll 1 []
+[account.cn.1 I 260403 07:14:04.792.238 rpcserver.go:622] RESP accountdb.cn.1.MyPayOrderAll 1 1B 14.58ms from c_payment.cn.1
+[account.cn.1 I 260403 07:14:04.795.239 producer.go:382] INF    6 (127.0.0.1:4150) connecting to nsqd
+[account.cn.1 I 260403 07:14:04.806.240 framework.go:534] REQ accountdb.cn.1.DBReadBy 2 [0xc014df0680 0xc01453c130]
+[account.cn.1 I 260403 07:14:04.812.241 rpcserver.go:622] RESP accountdb.cn.1.DBReadBy 2 46B 6.419ms from c_payment.cn.1
+[account.cn.1 I 260403 07:14:19.996.242 framework.go:534] REQ accountdb.cn.1.AccountLogin 3 [0xc014df0f60]
+[account.cn.1 I 260403 07:14:20.004.243 rpcserver.go:622] RESP accountdb.cn.1.AccountLogin 3 259B 7.743ms from c_login.cn.1
+[account.cn.1 I 260403 07:14:21.370.244 framework.go:534] REQ accountdb.cn.1.AccountRoleCheckIn 4 [IDHex("69cf509793eec200226c8ed1") 0xc014dcc450 0xc000456e80]
+[account.cn.1 I 260403 07:14:21.371.245 rpcserver.go:622] RESP accountdb.cn.1.AccountRoleCheckIn 4 46B 1.187ms from c_login.cn.1
+[account.cn.1 I 260403 07:15:22.610.246 framework.go:534] REQ accountdb.cn.1.AccountQuery 5 [IDHex("69cf509793eec200226c8ed1")]
+[account.cn.1 I 260403 07:15:22.610.247 rpcserver.go:622] RESP accountdb.cn.1.AccountQuery 5 259B 834µs from c_gm.cn.1
+[account.cn.1 I 260403 07:16:04.745.248 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 07:18:04.746.249 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 07:20:04.747.250 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 07:22:04.749.251 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 07:24:04.750.252 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 07:26:04.751.253 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 07:28:04.753.254 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 07:28:42.910.255 framework.go:534] REQ accountdb.cn.1.AccountLogin 6 [0xc014e40150]
+[account.cn.1 I 260403 07:28:42.926.256 rpcserver.go:622] RESP accountdb.cn.1.AccountLogin 6 259B 16.624ms from c_login.cn.1
+[account.cn.1 I 260403 07:28:43.415.257 framework.go:534] REQ accountdb.cn.1.AccountRoleCheckIn 7 [IDHex("69cf509793eec200226c8ed1") 0xc014df02d0 0xc00037a080]
+[account.cn.1 I 260403 07:28:43.416.258 rpcserver.go:622] RESP accountdb.cn.1.AccountRoleCheckIn 7 46B 1.403ms from c_login.cn.1
+[account.cn.1 I 260403 07:30:04.767.259 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 07:32:04.771.260 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 07:34:04.772.261 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 07:36:04.774.262 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 07:37:17.985.263 framework.go:534] REQ accountdb.cn.1.AccountLogin 8 [0xc014e1e080]
+[account.cn.1 I 260403 07:37:17.998.264 rpcserver.go:622] RESP accountdb.cn.1.AccountLogin 8 259B 12.829ms from c_login.cn.1
+[account.cn.1 I 260403 07:37:18.247.265 framework.go:534] REQ accountdb.cn.1.AccountRoleCheckIn 9 [IDHex("69cf509793eec200226c8ed1") 0xc014df0f40 0xc0006e01c0]
+[account.cn.1 I 260403 07:37:18.248.266 rpcserver.go:622] RESP accountdb.cn.1.AccountRoleCheckIn 9 46B 1.19ms from c_login.cn.1
+[account.cn.1 I 260403 07:38:04.785.267 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 07:38:06.099.268 framework.go:534] REQ accountdb.cn.1.AccountLogin 10 [0xc014e1f0d0]
+[account.cn.1 I 260403 07:38:06.116.269 rpcserver.go:622] RESP accountdb.cn.1.AccountLogin 10 259B 16.978ms from c_login.cn.1
+[account.cn.1 I 260403 07:38:07.011.270 framework.go:534] REQ accountdb.cn.1.AccountRoleCheckIn 11 [IDHex("69cf509793eec200226c8ed1") 0xc014e53590 0xc00039e680]
+[account.cn.1 I 260403 07:38:07.011.271 rpcserver.go:622] RESP accountdb.cn.1.AccountRoleCheckIn 11 46B 234µs from c_login.cn.1
+[account.cn.1 I 260403 07:40:04.801.272 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 07:42:04.802.273 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 07:43:39.817.274 producer.go:382] INF    6 stopping
+[account.cn.1 I 260403 07:43:39.819.275 consumer.go:1175] INF    5 [REQ-accountdb.cn.1/rpc] stopping...
+[account.cn.1 I 260403 07:43:39.820.276 consumer.go:1175] INF    3 [REQ-giftdb.cn.1/rpc] stopping...
+[account.cn.1 I 260403 07:43:39.820.277 consumer.go:1175] INF    4 [REQ-paymentdb.cn.1/rpc] stopping...
+[account.cn.1 I 260403 07:43:39.824.279 conn.go:731] INF    6 (127.0.0.1:4150) beginning close
+[account.cn.1 I 260403 07:43:39.824.280 conn.go:731] INF    6 (127.0.0.1:4150) readLoop exiting
+[account.cn.1 I 260403 07:43:39.824.281 conn.go:731] INF    6 (127.0.0.1:4150) breaking out of writeLoop
+[account.cn.1 I 260403 07:43:39.825.282 conn.go:731] INF    6 (127.0.0.1:4150) writeLoop exiting
+[account.cn.1 I 260403 07:43:39.824.278 producer.go:382] INF    6 exiting router
+[account.cn.1 I 260403 07:43:39.825.283 session.go:132] Commit 1 objects, success 1
+panic: runtime error: invalid memory address or nil pointer dereference
+[signal SIGSEGV: segmentation violation code=0x1 addr=0x0 pc=0xc09c20]
+
+goroutine 90 [running]:
+tjgame/services/storage.(*Storage).workerRoutine(0xc0004260f0)
+	/mnt/hgfs/pokemon_server/gosrc/tjgame/services/storage/storage.go:37 +0x40
+created by tjgame/services/storage.NewStorage
+	/mnt/hgfs/pokemon_server/gosrc/tjgame/services/storage/storage.go:244 +0x25f
+panic: runtime error: invalid memory address or nil pointer dereference
+[signal SIGSEGV: segmentation violation code=0x1 addr=0x0 pc=0xc09c20]
+
+goroutine 87 [running]:
+tjgame/services/storage.(*Storage).workerRoutine(0xc0004260f0)
+	/mnt/hgfs/pokemon_server/gosrc/tjgame/services/storage/storage.go:37 +0x40
+created by tjgame/services/storage.NewStorage
+	/mnt/hgfs/pokemon_server/gosrc/tjgame/services/storage/storage.go:244 +0x25f
+[host_server I 260403 07:43:51.256.001 document.go:151] register document default ok
+[host_server I 260403 07:43:51.258.002 init.go:171] register document ok
+[host_server D 260403 07:43:51.273.003 config.go:49] cwd in /mnt/pokemon/release/storage
+[host_server D 260403 07:43:51.291.004 config.go:23] GetExtend service accountdb.cn.1 &storage.Option{Option:service.Option{Name:"accountdb.cn.1", Alias:[]string{"giftdb.cn.1", "paymentdb.cn.1"}, Dependent:[]string(nil)}, MongoDB:"mongodb://root:GpFkU9O24cjhnWco@mongo44:27017/account?authMechanism=SCRAM-SHA-1&authSource=admin", DBName:"account", MGOPoolLimit:0, MGOStats:false}
+[host_server I 260403 07:43:51.292.005 config.go:60] account.cn.1 config in defines.json
+[account.cn.1 I 260403 07:43:51.292.006 main.go:44] &services.Define{ContainerOption:service.ContainerOption{Name:"@account.cn.1", Debug:false, Addr:"", NSQLookupd:"http://127.0.0.1:4161/", Mainnsqd:"", NSQTcpAddresses:[]string{"127.0.0.1:4150"}, Shushu:false, Services:[]service.IOption{(*storage.Option)(0xc0002f1490)}, ServicesRaw:[]json.RawMessage(nil)}}
+[account.cn.1 I 260403 07:43:57.105.009 storage.go:236] connect to mongodb mongodb://root:GpFkU9O24cjhnWco@mongo44:27017/account?authMechanism=SCRAM-SHA-1&authSource=admin account
+[account.cn.1 I 260403 07:43:57.110.012 container.go:224] alias giftdb.cn.1 to service accountdb.cn.1
+[account.cn.1 I 260403 07:43:57.110.013 container.go:224] alias paymentdb.cn.1 to service accountdb.cn.1
+[account.cn.1 I 260403 07:43:57.131.016 rpcclient.go:292] create client consumer RESP-c_account.cn.1/0global_1rpc
+[account.cn.1 I 260403 07:43:57.140.017 consumer.go:1175] INF    2 [RESP-c_account.cn.1/0global_1rpc] (127.0.0.1:4150) connecting to nsqd
+[account.cn.1 I 260403 07:43:57.157.018 container.go:259] service accountdb.cn.1 start
+[account.cn.1 I 260403 07:43:57.157.019 container.go:264] container @account.cn.1 start
+[account.cn.1 I 260403 07:43:57.157.020 server.go:29] server start ok
+[account.cn.1 I 260403 07:43:57.159.024 rpcserver.go:349] create server consumer REQ-giftdb.cn.1/rpc
+[account.cn.1 I 260403 07:43:57.160.028 rpcserver.go:349] create server consumer REQ-paymentdb.cn.1/rpc
+[account.cn.1 I 260403 07:43:57.161.032 rpcserver.go:349] create server consumer REQ-accountdb.cn.1/rpc
+[account.cn.1 I 260403 07:43:57.161.234 consumer.go:1175] INF    3 [REQ-giftdb.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[account.cn.1 I 260403 07:43:57.164.235 consumer.go:1175] INF    4 [REQ-paymentdb.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[account.cn.1 I 260403 07:43:57.164.236 consumer.go:1175] INF    5 [REQ-accountdb.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[account.cn.1 I 260403 07:43:57.190.237 framework.go:534] REQ accountdb.cn.1.MyPayOrderAll 1 []
+[account.cn.1 I 260403 07:43:57.206.238 producer.go:382] INF    6 (127.0.0.1:4150) connecting to nsqd
+[account.cn.1 I 260403 07:43:57.208.239 rpcserver.go:622] RESP accountdb.cn.1.MyPayOrderAll 1 1B -ms
+[account.cn.1 I 260403 07:43:57.215.240 framework.go:534] REQ accountdb.cn.1.DBReadBy 2 [0xc015cd8700 0xc015b0c148]
+[account.cn.1 I 260403 07:43:57.217.241 rpcserver.go:622] RESP accountdb.cn.1.DBReadBy 2 46B 2.582ms from c_payment.cn.1
+[account.cn.1 I 260403 07:45:57.159.242 session.go:132] Commit 0 objects, success 0
+[account.cn.1 I 260403 07:46:49.547.243 framework.go:534] REQ accountdb.cn.1.AccountLogin 3 [0xc015d1f030]
+[account.cn.1 I 260403 07:46:49.562.244 rpcserver.go:622] RESP accountdb.cn.1.AccountLogin 3 305B 15.965ms from c_login.cn.1
+[account.cn.1 I 260403 07:46:50.644.245 framework.go:534] REQ accountdb.cn.1.AccountRoleCheckIn 4 [IDHex("69cf509793eec200226c8ed1") 0xc015d06d40 0xc000402440]
+[account.cn.1 I 260403 07:46:50.646.246 rpcserver.go:622] RESP accountdb.cn.1.AccountRoleCheckIn 4 46B 2.165ms from c_login.cn.1
+[account.cn.1 I 260403 07:47:57.194.247 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 07:49:57.196.248 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 07:51:45.212.249 framework.go:534] REQ accountdb.cn.1.AccountLogin 5 [0xc015ced060]
+[account.cn.1 I 260403 07:51:45.228.250 rpcserver.go:622] RESP accountdb.cn.1.AccountLogin 5 305B 15.752ms from c_login.cn.1
+[account.cn.1 I 260403 07:51:46.551.251 framework.go:534] REQ accountdb.cn.1.AccountRoleCheckIn 6 [IDHex("69cf509793eec200226c8ed1") 0xc015cedf00 0xc0003f0300]
+[account.cn.1 I 260403 07:51:46.552.252 rpcserver.go:622] RESP accountdb.cn.1.AccountRoleCheckIn 6 46B 2.591ms from c_login.cn.1
+[account.cn.1 I 260403 07:51:57.219.253 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 07:53:57.220.254 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 07:55:57.221.255 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 07:57:57.227.256 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 07:59:57.228.257 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 08:00:10.744.258 framework.go:534] REQ accountdb.cn.1.AccountLogin 7 [0xc015cedf00]
+[account.cn.1 I 260403 08:00:10.761.259 rpcserver.go:622] RESP accountdb.cn.1.AccountLogin 7 305B 18.043ms from c_login.cn.1
+[account.cn.1 I 260403 08:00:11.033.260 framework.go:534] REQ accountdb.cn.1.AccountRoleCheckIn 8 [IDHex("69cf509793eec200226c8ed1") 0xc015d48250 0xc000402a00]
+[account.cn.1 I 260403 08:00:11.034.261 rpcserver.go:622] RESP accountdb.cn.1.AccountRoleCheckIn 8 46B 415µs from c_login.cn.1
+[account.cn.1 I 260403 08:01:57.260.262 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 08:03:57.266.263 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 08:05:57.267.264 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 08:07:57.301.265 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 08:09:57.305.266 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 08:11:57.316.267 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 08:13:57.351.268 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 08:15:57.353.269 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 08:17:57.355.270 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 08:19:57.358.271 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 08:21:57.360.272 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 08:23:57.362.273 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 08:25:57.364.274 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 08:27:57.369.275 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 08:29:57.371.276 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 08:31:57.372.277 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 08:33:57.374.278 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 08:34:54.777.279 framework.go:534] REQ accountdb.cn.1.AccountLogin 9 [0xc015d309f0]
+[account.cn.1 I 260403 08:34:54.794.280 rpcserver.go:622] RESP accountdb.cn.1.AccountLogin 9 332B 17.631ms from c_login.cn.1
+[account.cn.1 I 260403 08:34:56.048.281 framework.go:534] REQ accountdb.cn.1.AccountRoleCheckIn 10 [IDHex("69cf509793eec200226c8ed1") 0xc015cec480 0xc0003f0040]
+[account.cn.1 I 260403 08:34:56.049.282 rpcserver.go:622] RESP accountdb.cn.1.AccountRoleCheckIn 10 46B 884µs from c_login.cn.1
+[account.cn.1 I 260403 08:35:57.401.283 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 08:37:57.402.284 session.go:132] Commit 1 objects, success 1
+[account.cn.1 E 260403 08:38:32.114.285 conn.go:731] ERR    2 [RESP-c_account.cn.1/0global_1rpc] (127.0.0.1:4150) IO error - EOF
+[account.cn.1 I 260403 08:38:32.114.286 conn.go:731] INF    2 [RESP-c_account.cn.1/0global_1rpc] (127.0.0.1:4150) beginning close
+[account.cn.1 I 260403 08:38:32.114.287 conn.go:731] INF    2 [RESP-c_account.cn.1/0global_1rpc] (127.0.0.1:4150) readLoop exiting
+[account.cn.1 I 260403 08:38:32.115.288 conn.go:731] INF    2 [RESP-c_account.cn.1/0global_1rpc] (127.0.0.1:4150) breaking out of writeLoop
+[account.cn.1 I 260403 08:38:32.115.289 conn.go:731] INF    2 [RESP-c_account.cn.1/0global_1rpc] (127.0.0.1:4150) writeLoop exiting
+[account.cn.1 E 260403 08:38:32.115.290 conn.go:731] ERR    5 [REQ-accountdb.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[account.cn.1 I 260403 08:38:32.115.291 conn.go:731] INF    5 [REQ-accountdb.cn.1/rpc] (127.0.0.1:4150) beginning close
+[account.cn.1 I 260403 08:38:32.115.292 conn.go:731] INF    5 [REQ-accountdb.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[account.cn.1 I 260403 08:38:32.115.293 conn.go:731] INF    5 [REQ-accountdb.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[account.cn.1 I 260403 08:38:32.115.294 conn.go:731] INF    5 [REQ-accountdb.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[account.cn.1 E 260403 08:38:32.115.295 conn.go:731] ERR    6 (127.0.0.1:4150) IO error - EOF
+[account.cn.1 I 260403 08:38:32.115.296 conn.go:731] INF    6 (127.0.0.1:4150) beginning close
+[account.cn.1 I 260403 08:38:32.115.297 conn.go:731] INF    6 (127.0.0.1:4150) readLoop exiting
+[account.cn.1 I 260403 08:38:32.115.298 conn.go:731] INF    6 (127.0.0.1:4150) breaking out of writeLoop
+[account.cn.1 I 260403 08:38:32.115.299 conn.go:731] INF    6 (127.0.0.1:4150) writeLoop exiting
+[account.cn.1 E 260403 08:38:32.115.300 conn.go:731] ERR    4 [REQ-paymentdb.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[account.cn.1 I 260403 08:38:32.116.301 conn.go:731] INF    4 [REQ-paymentdb.cn.1/rpc] (127.0.0.1:4150) beginning close
+[account.cn.1 I 260403 08:38:32.116.302 conn.go:731] INF    4 [REQ-paymentdb.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[account.cn.1 I 260403 08:38:32.116.303 conn.go:731] INF    4 [REQ-paymentdb.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[account.cn.1 I 260403 08:38:32.116.304 conn.go:731] INF    4 [REQ-paymentdb.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[account.cn.1 E 260403 08:38:32.117.305 conn.go:731] ERR    3 [REQ-giftdb.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[account.cn.1 I 260403 08:38:32.117.306 conn.go:731] INF    3 [REQ-giftdb.cn.1/rpc] (127.0.0.1:4150) beginning close
+[account.cn.1 I 260403 08:38:32.118.307 conn.go:731] INF    3 [REQ-giftdb.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[account.cn.1 I 260403 08:38:32.118.308 conn.go:731] INF    3 [REQ-giftdb.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[account.cn.1 I 260403 08:38:32.118.309 conn.go:731] INF    3 [REQ-giftdb.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[account.cn.1 I 260403 08:38:32.216.310 conn.go:731] INF    2 [RESP-c_account.cn.1/0global_1rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[account.cn.1 I 260403 08:38:32.217.311 conn.go:731] INF    6 (127.0.0.1:4150) finished draining, cleanup exiting
+[account.cn.1 I 260403 08:38:32.217.312 conn.go:731] INF    6 (127.0.0.1:4150) clean close complete
+[account.cn.1 I 260403 08:38:32.217.314 producer.go:382] INF    6 exiting router
+[account.cn.1 I 260403 08:38:32.217.313 conn.go:731] INF    2 [RESP-c_account.cn.1/0global_1rpc] (127.0.0.1:4150) clean close complete
+[account.cn.1 I 260403 08:38:32.217.315 conn.go:731] INF    5 [REQ-accountdb.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[account.cn.1 I 260403 08:38:32.217.316 conn.go:731] INF    5 [REQ-accountdb.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[account.cn.1 W 260403 08:38:32.219.319 consumer.go:1175] WRN    2 [RESP-c_account.cn.1/0global_1rpc] there are 0 connections left alive
+[account.cn.1 I 260403 08:38:32.218.318 conn.go:731] INF    4 [REQ-paymentdb.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[account.cn.1 W 260403 08:38:32.219.320 consumer.go:1175] WRN    5 [REQ-accountdb.cn.1/rpc] there are 0 connections left alive
+[account.cn.1 I 260403 08:38:32.219.324 consumer.go:1175] INF    2 [RESP-c_account.cn.1/0global_1rpc] (127.0.0.1:4150) re-connecting in 5s
+[account.cn.1 I 260403 08:38:32.219.321 conn.go:731] INF    3 [REQ-giftdb.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[account.cn.1 W 260403 08:38:32.219.322 consumer.go:1175] WRN    4 [REQ-paymentdb.cn.1/rpc] there are 0 connections left alive
+[account.cn.1 I 260403 08:38:32.220.325 consumer.go:1175] INF    4 [REQ-paymentdb.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[account.cn.1 I 260403 08:38:32.218.317 conn.go:731] INF    4 [REQ-paymentdb.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[account.cn.1 I 260403 08:38:32.219.323 conn.go:731] INF    3 [REQ-giftdb.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[account.cn.1 W 260403 08:38:32.220.326 consumer.go:1175] WRN    3 [REQ-giftdb.cn.1/rpc] there are 0 connections left alive
+[account.cn.1 I 260403 08:38:32.220.327 consumer.go:1175] INF    3 [REQ-giftdb.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[account.cn.1 I 260403 08:38:32.220.328 consumer.go:1175] INF    5 [REQ-accountdb.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[account.cn.1 I 260403 08:38:37.221.329 consumer.go:1175] INF    5 [REQ-accountdb.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[account.cn.1 I 260403 08:38:37.221.330 consumer.go:1175] INF    2 [RESP-c_account.cn.1/0global_1rpc] (127.0.0.1:4150) connecting to nsqd
+[account.cn.1 I 260403 08:38:37.221.331 consumer.go:1175] INF    3 [REQ-giftdb.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[account.cn.1 I 260403 08:38:37.222.332 consumer.go:1175] INF    4 [REQ-paymentdb.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[account.cn.1 I 260403 08:38:51.319.333 framework.go:534] REQ accountdb.cn.1.AccountLogin 11 [0xc015db4000]
+[account.cn.1 I 260403 08:38:51.347.334 rpcserver.go:622] RESP accountdb.cn.1.AccountLogin 11 332B 32.402ms from c_login.cn.1
+[account.cn.1 I 260403 08:38:51.348.335 producer.go:382] INF    6 (127.0.0.1:4150) connecting to nsqd
+[account.cn.1 I 260403 08:38:56.347.336 framework.go:534] REQ accountdb.cn.1.AccountRoleCheckIn 12 [IDHex("69cf509793eec200226c8ed1") 0xc015d063c0 0xc0003f0040]
+[account.cn.1 I 260403 08:38:56.347.337 rpcserver.go:622] RESP accountdb.cn.1.AccountRoleCheckIn 12 46B 444µs from c_login.cn.1
+[account.cn.1 I 260403 08:39:57.434.338 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 08:41:57.442.339 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 08:43:03.535.340 framework.go:534] REQ accountdb.cn.1.AccountLogin 13 [0xc015cec400]
+[account.cn.1 I 260403 08:43:03.557.341 rpcserver.go:622] RESP accountdb.cn.1.AccountLogin 13 332B 22.512ms from c_login.cn.1
+[account.cn.1 I 260403 08:43:04.737.342 framework.go:534] REQ accountdb.cn.1.AccountRoleCheckIn 14 [IDHex("69cf509793eec200226c8ed1") 0xc015ced640 0xc000356340]
+[account.cn.1 I 260403 08:43:04.738.343 rpcserver.go:622] RESP accountdb.cn.1.AccountRoleCheckIn 14 46B 1.015ms from c_login.cn.1
+[account.cn.1 I 260403 08:43:57.465.344 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 08:45:57.466.345 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 08:47:57.468.346 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 08:49:11.831.347 framework.go:534] REQ accountdb.cn.1.AccountLogin 15 [0xc015d72790]
+[account.cn.1 I 260403 08:49:11.839.348 rpcserver.go:622] RESP accountdb.cn.1.AccountLogin 15 332B 7.692ms from c_login.cn.1
+[account.cn.1 I 260403 08:49:12.252.349 framework.go:534] REQ accountdb.cn.1.AccountRoleCheckIn 16 [IDHex("69cf509793eec200226c8ed1") 0xc015d063b0 0xc0003320c0]
+[account.cn.1 I 260403 08:49:12.253.350 rpcserver.go:622] RESP accountdb.cn.1.AccountRoleCheckIn 16 46B 1.033ms from c_login.cn.1
+[account.cn.1 I 260403 08:49:57.494.351 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 08:51:57.496.352 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 08:53:57.497.353 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 08:55:57.498.354 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 08:57:57.502.355 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 08:59:57.504.356 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 09:01:57.508.357 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 09:03:57.513.358 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 09:05:57.514.359 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 09:07:57.516.360 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 09:09:57.517.361 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 09:11:57.519.362 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 09:13:57.521.363 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 09:15:57.522.364 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 09:17:57.529.365 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 09:19:57.531.366 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 09:21:48.798.367 framework.go:534] REQ accountdb.cn.1.AccountLogin 17 [0xc015d48260]
+[account.cn.1 I 260403 09:21:48.822.368 rpcserver.go:622] RESP accountdb.cn.1.AccountLogin 17 332B 25.333ms from c_login.cn.1
+[account.cn.1 I 260403 09:21:49.243.369 framework.go:534] REQ accountdb.cn.1.AccountRoleCheckIn 18 [IDHex("69cf509793eec200226c8ed1") 0xc015d49090 0xc000332100]
+[account.cn.1 I 260403 09:21:49.244.370 rpcserver.go:622] RESP accountdb.cn.1.AccountRoleCheckIn 18 46B 1.877ms from c_login.cn.1
+[account.cn.1 I 260403 09:21:57.536.371 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 09:23:57.538.372 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 09:25:57.550.373 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 09:27:57.552.374 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 09:29:57.553.375 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 09:31:21.744.376 framework.go:534] REQ accountdb.cn.1.AccountLogin 19 [0xc015d06e40]
+[account.cn.1 I 260403 09:31:21.763.377 rpcserver.go:622] RESP accountdb.cn.1.AccountLogin 19 325B 18.85ms from c_login.cn.1
+[account.cn.1 I 260403 09:31:22.077.378 framework.go:534] REQ accountdb.cn.1.AccountRoleCheckIn 20 [IDHex("69cf509793eec200226c8ed1") 0xc015d5f320 0xc000402bc0]
+[account.cn.1 I 260403 09:31:22.077.379 rpcserver.go:622] RESP accountdb.cn.1.AccountRoleCheckIn 20 46B 1.901ms from c_login.cn.1
+[account.cn.1 E 260403 09:31:39.403.380 conn.go:731] ERR    6 (127.0.0.1:4150) IO error - EOF
+[account.cn.1 I 260403 09:31:39.412.381 conn.go:731] INF    6 (127.0.0.1:4150) beginning close
+[account.cn.1 I 260403 09:31:39.412.382 conn.go:731] INF    6 (127.0.0.1:4150) readLoop exiting
+[account.cn.1 I 260403 09:31:39.412.383 conn.go:731] INF    6 (127.0.0.1:4150) breaking out of writeLoop
+[account.cn.1 I 260403 09:31:39.412.384 conn.go:731] INF    6 (127.0.0.1:4150) writeLoop exiting
+[account.cn.1 E 260403 09:31:39.412.385 conn.go:731] ERR    5 [REQ-accountdb.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[account.cn.1 I 260403 09:31:39.412.387 conn.go:731] INF    5 [REQ-accountdb.cn.1/rpc] (127.0.0.1:4150) beginning close
+[account.cn.1 E 260403 09:31:39.412.386 conn.go:731] ERR    3 [REQ-giftdb.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[account.cn.1 I 260403 09:31:39.412.388 conn.go:731] INF    5 [REQ-accountdb.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[account.cn.1 I 260403 09:31:39.412.390 conn.go:731] INF    5 [REQ-accountdb.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[account.cn.1 I 260403 09:31:39.412.389 conn.go:731] INF    3 [REQ-giftdb.cn.1/rpc] (127.0.0.1:4150) beginning close
+[account.cn.1 I 260403 09:31:39.413.391 conn.go:731] INF    5 [REQ-accountdb.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[account.cn.1 I 260403 09:31:39.413.392 conn.go:731] INF    3 [REQ-giftdb.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[account.cn.1 I 260403 09:31:39.413.395 conn.go:731] INF    3 [REQ-giftdb.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[account.cn.1 I 260403 09:31:39.413.396 conn.go:731] INF    3 [REQ-giftdb.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[account.cn.1 E 260403 09:31:39.413.394 conn.go:731] ERR    4 [REQ-paymentdb.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[account.cn.1 I 260403 09:31:39.413.397 conn.go:731] INF    4 [REQ-paymentdb.cn.1/rpc] (127.0.0.1:4150) beginning close
+[account.cn.1 I 260403 09:31:39.413.398 conn.go:731] INF    4 [REQ-paymentdb.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[account.cn.1 I 260403 09:31:39.413.399 conn.go:731] INF    4 [REQ-paymentdb.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[account.cn.1 I 260403 09:31:39.413.400 conn.go:731] INF    4 [REQ-paymentdb.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[account.cn.1 E 260403 09:31:39.413.393 conn.go:731] ERR    2 [RESP-c_account.cn.1/0global_1rpc] (127.0.0.1:4150) IO error - EOF
+[account.cn.1 I 260403 09:31:39.413.401 conn.go:731] INF    2 [RESP-c_account.cn.1/0global_1rpc] (127.0.0.1:4150) beginning close
+[account.cn.1 I 260403 09:31:39.413.402 conn.go:731] INF    2 [RESP-c_account.cn.1/0global_1rpc] (127.0.0.1:4150) readLoop exiting
+[account.cn.1 I 260403 09:31:39.413.403 conn.go:731] INF    2 [RESP-c_account.cn.1/0global_1rpc] (127.0.0.1:4150) breaking out of writeLoop
+[account.cn.1 I 260403 09:31:39.413.404 conn.go:731] INF    2 [RESP-c_account.cn.1/0global_1rpc] (127.0.0.1:4150) writeLoop exiting
+[account.cn.1 I 260403 09:31:39.512.405 conn.go:731] INF    6 (127.0.0.1:4150) finished draining, cleanup exiting
+[account.cn.1 I 260403 09:31:39.513.406 conn.go:731] INF    6 (127.0.0.1:4150) clean close complete
+[account.cn.1 I 260403 09:31:39.513.407 producer.go:382] INF    6 exiting router
+[account.cn.1 I 260403 09:31:39.513.408 conn.go:731] INF    5 [REQ-accountdb.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[account.cn.1 I 260403 09:31:39.513.409 conn.go:731] INF    5 [REQ-accountdb.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[account.cn.1 W 260403 09:31:39.513.410 consumer.go:1175] WRN    5 [REQ-accountdb.cn.1/rpc] there are 0 connections left alive
+[account.cn.1 I 260403 09:31:39.513.411 consumer.go:1175] INF    5 [REQ-accountdb.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[account.cn.1 I 260403 09:31:39.513.412 conn.go:731] INF    3 [REQ-giftdb.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[account.cn.1 I 260403 09:31:39.513.414 conn.go:731] INF    4 [REQ-paymentdb.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[account.cn.1 I 260403 09:31:39.513.415 conn.go:731] INF    4 [REQ-paymentdb.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[account.cn.1 W 260403 09:31:39.513.416 consumer.go:1175] WRN    4 [REQ-paymentdb.cn.1/rpc] there are 0 connections left alive
+[account.cn.1 I 260403 09:31:39.513.417 consumer.go:1175] INF    4 [REQ-paymentdb.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[account.cn.1 I 260403 09:31:39.513.413 conn.go:731] INF    3 [REQ-giftdb.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[account.cn.1 W 260403 09:31:39.513.418 consumer.go:1175] WRN    3 [REQ-giftdb.cn.1/rpc] there are 0 connections left alive
+[account.cn.1 I 260403 09:31:39.513.419 consumer.go:1175] INF    3 [REQ-giftdb.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[account.cn.1 I 260403 09:31:39.513.420 conn.go:731] INF    2 [RESP-c_account.cn.1/0global_1rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[account.cn.1 I 260403 09:31:39.513.421 conn.go:731] INF    2 [RESP-c_account.cn.1/0global_1rpc] (127.0.0.1:4150) clean close complete
+[account.cn.1 W 260403 09:31:39.514.422 consumer.go:1175] WRN    2 [RESP-c_account.cn.1/0global_1rpc] there are 0 connections left alive
+[account.cn.1 I 260403 09:31:39.514.423 consumer.go:1175] INF    2 [RESP-c_account.cn.1/0global_1rpc] (127.0.0.1:4150) re-connecting in 5s
+[account.cn.1 I 260403 09:31:44.523.425 consumer.go:1175] INF    2 [RESP-c_account.cn.1/0global_1rpc] (127.0.0.1:4150) connecting to nsqd
+[account.cn.1 I 260403 09:31:44.523.426 consumer.go:1175] INF    3 [REQ-giftdb.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[account.cn.1 I 260403 09:31:44.524.427 consumer.go:1175] INF    4 [REQ-paymentdb.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[account.cn.1 I 260403 09:31:44.523.424 consumer.go:1175] INF    5 [REQ-accountdb.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[account.cn.1 I 260403 09:31:57.584.428 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 09:33:57.585.429 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 09:35:57.587.430 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 09:37:57.593.431 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 09:38:18.375.432 framework.go:534] REQ accountdb.cn.1.AccountLogin 21 [0xc015d72540]
+[account.cn.1 I 260403 09:38:18.391.433 rpcserver.go:622] RESP accountdb.cn.1.AccountLogin 21 325B 16.427ms from c_login.cn.1
+[account.cn.1 I 260403 09:38:18.391.434 producer.go:382] INF    6 (127.0.0.1:4150) connecting to nsqd
+[account.cn.1 I 260403 09:38:18.814.435 framework.go:534] REQ accountdb.cn.1.AccountRoleCheckIn 22 [IDHex("69cf509793eec200226c8ed1") 0xc015d5eac0 0xc000332100]
+[account.cn.1 I 260403 09:38:18.815.436 rpcserver.go:622] RESP accountdb.cn.1.AccountRoleCheckIn 22 46B 1.312ms from c_login.cn.1
+[account.cn.1 I 260403 09:39:57.620.437 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 09:41:57.627.438 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 09:43:57.629.439 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 09:45:57.633.440 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 09:47:57.634.441 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 09:49:57.636.442 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 09:51:57.639.443 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 09:53:57.640.444 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 09:55:57.643.445 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 09:57:57.650.446 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 09:59:57.655.447 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 10:01:57.658.448 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 10:03:57.659.449 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 10:05:57.660.450 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 10:07:57.661.451 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 10:09:57.663.452 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 10:11:57.664.453 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 10:13:57.670.454 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 10:15:57.671.455 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 10:17:57.675.456 session.go:132] Commit 1 objects, success 1
+[account.cn.1 E 260403 10:19:04.993.457 conn.go:731] ERR    6 (127.0.0.1:4150) IO error - EOF
+[account.cn.1 I 260403 10:19:04.994.458 conn.go:731] INF    6 (127.0.0.1:4150) beginning close
+[account.cn.1 I 260403 10:19:04.994.459 conn.go:731] INF    6 (127.0.0.1:4150) readLoop exiting
+[account.cn.1 I 260403 10:19:04.994.460 conn.go:731] INF    6 (127.0.0.1:4150) breaking out of writeLoop
+[account.cn.1 I 260403 10:19:04.994.461 conn.go:731] INF    6 (127.0.0.1:4150) writeLoop exiting
+[account.cn.1 E 260403 10:19:04.995.462 conn.go:731] ERR    2 [RESP-c_account.cn.1/0global_1rpc] (127.0.0.1:4150) IO error - EOF
+[account.cn.1 I 260403 10:19:04.995.463 conn.go:731] INF    2 [RESP-c_account.cn.1/0global_1rpc] (127.0.0.1:4150) beginning close
+[account.cn.1 I 260403 10:19:04.995.464 conn.go:731] INF    2 [RESP-c_account.cn.1/0global_1rpc] (127.0.0.1:4150) readLoop exiting
+[account.cn.1 I 260403 10:19:04.995.465 conn.go:731] INF    2 [RESP-c_account.cn.1/0global_1rpc] (127.0.0.1:4150) breaking out of writeLoop
+[account.cn.1 I 260403 10:19:04.995.466 conn.go:731] INF    2 [RESP-c_account.cn.1/0global_1rpc] (127.0.0.1:4150) writeLoop exiting
+[account.cn.1 E 260403 10:19:04.995.467 conn.go:731] ERR    3 [REQ-giftdb.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[account.cn.1 I 260403 10:19:04.995.468 conn.go:731] INF    3 [REQ-giftdb.cn.1/rpc] (127.0.0.1:4150) beginning close
+[account.cn.1 I 260403 10:19:04.995.469 conn.go:731] INF    3 [REQ-giftdb.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[account.cn.1 I 260403 10:19:04.995.470 conn.go:731] INF    3 [REQ-giftdb.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[account.cn.1 I 260403 10:19:04.995.471 conn.go:731] INF    3 [REQ-giftdb.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[account.cn.1 E 260403 10:19:04.995.472 conn.go:731] ERR    4 [REQ-paymentdb.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[account.cn.1 I 260403 10:19:04.995.473 conn.go:731] INF    4 [REQ-paymentdb.cn.1/rpc] (127.0.0.1:4150) beginning close
+[account.cn.1 I 260403 10:19:04.995.474 conn.go:731] INF    4 [REQ-paymentdb.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[account.cn.1 I 260403 10:19:04.995.475 conn.go:731] INF    4 [REQ-paymentdb.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[account.cn.1 I 260403 10:19:04.996.476 conn.go:731] INF    4 [REQ-paymentdb.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[account.cn.1 E 260403 10:19:04.996.477 conn.go:731] ERR    5 [REQ-accountdb.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[account.cn.1 I 260403 10:19:04.996.478 conn.go:731] INF    5 [REQ-accountdb.cn.1/rpc] (127.0.0.1:4150) beginning close
+[account.cn.1 I 260403 10:19:04.996.479 conn.go:731] INF    5 [REQ-accountdb.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[account.cn.1 I 260403 10:19:04.996.480 conn.go:731] INF    5 [REQ-accountdb.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[account.cn.1 I 260403 10:19:04.996.481 conn.go:731] INF    5 [REQ-accountdb.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[account.cn.1 I 260403 10:19:05.095.482 conn.go:731] INF    2 [RESP-c_account.cn.1/0global_1rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[account.cn.1 I 260403 10:19:05.095.483 conn.go:731] INF    2 [RESP-c_account.cn.1/0global_1rpc] (127.0.0.1:4150) clean close complete
+[account.cn.1 W 260403 10:19:05.096.484 consumer.go:1175] WRN    2 [RESP-c_account.cn.1/0global_1rpc] there are 0 connections left alive
+[account.cn.1 I 260403 10:19:05.096.485 consumer.go:1175] INF    2 [RESP-c_account.cn.1/0global_1rpc] (127.0.0.1:4150) re-connecting in 5s
+[account.cn.1 I 260403 10:19:05.096.486 conn.go:731] INF    4 [REQ-paymentdb.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[account.cn.1 I 260403 10:19:05.096.487 conn.go:731] INF    4 [REQ-paymentdb.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[account.cn.1 W 260403 10:19:05.096.488 consumer.go:1175] WRN    4 [REQ-paymentdb.cn.1/rpc] there are 0 connections left alive
+[account.cn.1 I 260403 10:19:05.096.489 consumer.go:1175] INF    4 [REQ-paymentdb.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[account.cn.1 I 260403 10:19:05.096.490 conn.go:731] INF    3 [REQ-giftdb.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[account.cn.1 I 260403 10:19:05.097.493 conn.go:731] INF    3 [REQ-giftdb.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[account.cn.1 I 260403 10:19:05.096.491 conn.go:731] INF    6 (127.0.0.1:4150) finished draining, cleanup exiting
+[account.cn.1 I 260403 10:19:05.097.494 conn.go:731] INF    5 [REQ-accountdb.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[account.cn.1 I 260403 10:19:05.097.495 conn.go:731] INF    5 [REQ-accountdb.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[account.cn.1 W 260403 10:19:05.097.496 consumer.go:1175] WRN    5 [REQ-accountdb.cn.1/rpc] there are 0 connections left alive
+[account.cn.1 I 260403 10:19:05.097.497 consumer.go:1175] INF    5 [REQ-accountdb.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[account.cn.1 W 260403 10:19:05.099.498 consumer.go:1175] WRN    3 [REQ-giftdb.cn.1/rpc] there are 0 connections left alive
+[account.cn.1 I 260403 10:19:05.099.499 consumer.go:1175] INF    3 [REQ-giftdb.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[account.cn.1 I 260403 10:19:05.097.492 conn.go:731] INF    6 (127.0.0.1:4150) clean close complete
+[account.cn.1 I 260403 10:19:05.099.500 producer.go:382] INF    6 exiting router
+[account.cn.1 I 260403 10:19:10.098.501 consumer.go:1175] INF    2 [RESP-c_account.cn.1/0global_1rpc] (127.0.0.1:4150) connecting to nsqd
+[account.cn.1 I 260403 10:19:10.098.502 consumer.go:1175] INF    5 [REQ-accountdb.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[account.cn.1 I 260403 10:19:10.099.503 consumer.go:1175] INF    4 [REQ-paymentdb.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[account.cn.1 I 260403 10:19:10.100.504 consumer.go:1175] INF    3 [REQ-giftdb.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[account.cn.1 I 260403 10:19:57.677.505 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 10:20:55.510.506 framework.go:534] REQ accountdb.cn.1.AccountLogin 23 [0xc015d481e0]
+[account.cn.1 I 260403 10:20:55.528.507 rpcserver.go:622] RESP accountdb.cn.1.AccountLogin 23 325B 18.82ms from c_login.cn.1
+[account.cn.1 I 260403 10:20:55.529.508 producer.go:382] INF    6 (127.0.0.1:4150) connecting to nsqd
+[account.cn.1 I 260403 10:20:55.933.509 framework.go:534] REQ accountdb.cn.1.AccountRoleCheckIn 24 [IDHex("69cf509793eec200226c8ed1") 0xc015d07660 0xc000402440]
+[account.cn.1 I 260403 10:20:55.934.510 rpcserver.go:622] RESP accountdb.cn.1.AccountRoleCheckIn 24 46B 1.14ms from c_login.cn.1
+[account.cn.1 I 260403 10:21:57.703.511 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 10:23:57.704.512 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 10:25:57.715.513 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 10:27:57.717.514 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 10:29:57.723.515 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 10:31:57.724.516 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 10:33:57.725.517 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 10:35:57.726.518 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 10:37:35.726.519 framework.go:534] REQ accountdb.cn.1.AccountLogin 25 [0xc015d72d40]
+[account.cn.1 I 260403 10:37:35.747.520 rpcserver.go:622] RESP accountdb.cn.1.AccountLogin 25 325B 22.134ms from c_login.cn.1
+[account.cn.1 I 260403 10:37:36.010.521 framework.go:534] REQ accountdb.cn.1.AccountRoleCheckIn 26 [IDHex("69cf509793eec200226c8ed1") 0xc015d061a0 0xc017a21b40]
+[account.cn.1 I 260403 10:37:36.010.522 rpcserver.go:622] RESP accountdb.cn.1.AccountRoleCheckIn 26 46B 1.178ms from c_login.cn.1
+[account.cn.1 I 260403 10:37:57.750.523 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 10:39:57.751.524 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 10:41:57.754.525 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 10:43:57.755.526 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 10:45:57.757.527 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 10:47:57.764.528 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 10:48:04.044.529 framework.go:534] REQ accountdb.cn.1.AccountLogin 27 [0xc015d5ec70]
+[account.cn.1 I 260403 10:48:04.064.530 rpcserver.go:622] RESP accountdb.cn.1.AccountLogin 27 325B 20.4ms from c_login.cn.1
+[account.cn.1 I 260403 10:48:04.484.531 framework.go:534] REQ accountdb.cn.1.AccountRoleCheckIn 28 [IDHex("69cf509793eec200226c8ed1") 0xc015d48810 0xc000332140]
+[account.cn.1 I 260403 10:48:04.485.532 rpcserver.go:622] RESP accountdb.cn.1.AccountRoleCheckIn 28 46B 2.419ms from c_login.cn.1
+[account.cn.1 I 260403 10:49:57.794.533 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 10:51:57.795.534 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 10:53:57.797.535 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 10:55:57.798.536 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 10:57:57.799.537 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 10:59:57.804.538 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 11:01:57.805.539 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 11:03:57.806.540 session.go:132] Commit 1 objects, success 1
+[account.cn.1 E 260403 11:05:38.512.541 conn.go:731] ERR    6 (127.0.0.1:4150) IO error - EOF
+[account.cn.1 I 260403 11:05:38.513.542 conn.go:731] INF    6 (127.0.0.1:4150) beginning close
+[account.cn.1 I 260403 11:05:38.513.543 conn.go:731] INF    6 (127.0.0.1:4150) readLoop exiting
+[account.cn.1 I 260403 11:05:38.513.544 conn.go:731] INF    6 (127.0.0.1:4150) breaking out of writeLoop
+[account.cn.1 I 260403 11:05:38.513.545 conn.go:731] INF    6 (127.0.0.1:4150) writeLoop exiting
+[account.cn.1 E 260403 11:05:38.514.546 conn.go:731] ERR    2 [RESP-c_account.cn.1/0global_1rpc] (127.0.0.1:4150) IO error - EOF
+[account.cn.1 I 260403 11:05:38.514.547 conn.go:731] INF    2 [RESP-c_account.cn.1/0global_1rpc] (127.0.0.1:4150) beginning close
+[account.cn.1 I 260403 11:05:38.514.548 conn.go:731] INF    2 [RESP-c_account.cn.1/0global_1rpc] (127.0.0.1:4150) readLoop exiting
+[account.cn.1 I 260403 11:05:38.514.549 conn.go:731] INF    2 [RESP-c_account.cn.1/0global_1rpc] (127.0.0.1:4150) breaking out of writeLoop
+[account.cn.1 I 260403 11:05:38.514.550 conn.go:731] INF    2 [RESP-c_account.cn.1/0global_1rpc] (127.0.0.1:4150) writeLoop exiting
+[account.cn.1 E 260403 11:05:38.514.551 conn.go:731] ERR    5 [REQ-accountdb.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[account.cn.1 I 260403 11:05:38.514.552 conn.go:731] INF    5 [REQ-accountdb.cn.1/rpc] (127.0.0.1:4150) beginning close
+[account.cn.1 I 260403 11:05:38.514.553 conn.go:731] INF    5 [REQ-accountdb.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[account.cn.1 I 260403 11:05:38.514.554 conn.go:731] INF    5 [REQ-accountdb.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[account.cn.1 I 260403 11:05:38.514.555 conn.go:731] INF    5 [REQ-accountdb.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[account.cn.1 E 260403 11:05:38.514.556 conn.go:731] ERR    4 [REQ-paymentdb.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[account.cn.1 I 260403 11:05:38.514.557 conn.go:731] INF    4 [REQ-paymentdb.cn.1/rpc] (127.0.0.1:4150) beginning close
+[account.cn.1 I 260403 11:05:38.514.558 conn.go:731] INF    4 [REQ-paymentdb.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[account.cn.1 I 260403 11:05:38.514.559 conn.go:731] INF    4 [REQ-paymentdb.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[account.cn.1 I 260403 11:05:38.514.560 conn.go:731] INF    4 [REQ-paymentdb.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[account.cn.1 E 260403 11:05:38.514.561 conn.go:731] ERR    3 [REQ-giftdb.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[account.cn.1 I 260403 11:05:38.514.562 conn.go:731] INF    3 [REQ-giftdb.cn.1/rpc] (127.0.0.1:4150) beginning close
+[account.cn.1 I 260403 11:05:38.514.563 conn.go:731] INF    3 [REQ-giftdb.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[account.cn.1 I 260403 11:05:38.514.564 conn.go:731] INF    3 [REQ-giftdb.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[account.cn.1 I 260403 11:05:38.514.565 conn.go:731] INF    3 [REQ-giftdb.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[account.cn.1 I 260403 11:05:38.616.566 conn.go:731] INF    3 [REQ-giftdb.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[account.cn.1 I 260403 11:05:38.616.567 conn.go:731] INF    3 [REQ-giftdb.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[account.cn.1 W 260403 11:05:38.616.568 consumer.go:1175] WRN    3 [REQ-giftdb.cn.1/rpc] there are 0 connections left alive
+[account.cn.1 I 260403 11:05:38.616.569 consumer.go:1175] INF    3 [REQ-giftdb.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[account.cn.1 I 260403 11:05:38.616.570 conn.go:731] INF    2 [RESP-c_account.cn.1/0global_1rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[account.cn.1 I 260403 11:05:38.616.571 conn.go:731] INF    2 [RESP-c_account.cn.1/0global_1rpc] (127.0.0.1:4150) clean close complete
+[account.cn.1 W 260403 11:05:38.616.572 consumer.go:1175] WRN    2 [RESP-c_account.cn.1/0global_1rpc] there are 0 connections left alive
+[account.cn.1 I 260403 11:05:38.616.573 consumer.go:1175] INF    2 [RESP-c_account.cn.1/0global_1rpc] (127.0.0.1:4150) re-connecting in 5s
+[account.cn.1 I 260403 11:05:38.616.574 conn.go:731] INF    6 (127.0.0.1:4150) finished draining, cleanup exiting
+[account.cn.1 I 260403 11:05:38.616.575 conn.go:731] INF    6 (127.0.0.1:4150) clean close complete
+[account.cn.1 I 260403 11:05:38.616.576 producer.go:382] INF    6 exiting router
+[account.cn.1 I 260403 11:05:38.616.577 conn.go:731] INF    5 [REQ-accountdb.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[account.cn.1 I 260403 11:05:38.616.578 conn.go:731] INF    5 [REQ-accountdb.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[account.cn.1 W 260403 11:05:38.616.579 consumer.go:1175] WRN    5 [REQ-accountdb.cn.1/rpc] there are 0 connections left alive
+[account.cn.1 I 260403 11:05:38.616.580 consumer.go:1175] INF    5 [REQ-accountdb.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[account.cn.1 I 260403 11:05:38.616.581 conn.go:731] INF    4 [REQ-paymentdb.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[account.cn.1 I 260403 11:05:38.616.582 conn.go:731] INF    4 [REQ-paymentdb.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[account.cn.1 W 260403 11:05:38.616.583 consumer.go:1175] WRN    4 [REQ-paymentdb.cn.1/rpc] there are 0 connections left alive
+[account.cn.1 I 260403 11:05:38.616.584 consumer.go:1175] INF    4 [REQ-paymentdb.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[account.cn.1 I 260403 11:05:43.618.586 consumer.go:1175] INF    4 [REQ-paymentdb.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[account.cn.1 I 260403 11:05:43.618.587 consumer.go:1175] INF    3 [REQ-giftdb.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[account.cn.1 I 260403 11:05:43.618.585 consumer.go:1175] INF    5 [REQ-accountdb.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[account.cn.1 I 260403 11:05:43.620.588 consumer.go:1175] INF    2 [RESP-c_account.cn.1/0global_1rpc] (127.0.0.1:4150) connecting to nsqd
+[account.cn.1 I 260403 11:05:57.807.589 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 11:07:57.809.590 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 11:09:57.810.591 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 11:11:57.811.592 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 11:13:57.822.593 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 11:15:57.823.594 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 11:17:57.824.595 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 11:19:57.829.596 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 11:21:57.830.597 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 11:23:57.841.598 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 11:25:57.843.599 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 11:27:57.845.600 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 11:29:57.856.601 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 11:31:57.866.602 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 11:33:57.868.603 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 11:35:57.870.604 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 11:37:57.881.605 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 11:39:57.883.606 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 11:41:57.891.607 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 11:43:57.892.608 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 11:45:57.900.609 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 11:47:57.903.610 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 11:49:57.905.611 session.go:132] Commit 1 objects, success 1
+[account.cn.1 E 260403 11:50:07.264.612 conn.go:731] ERR    2 [RESP-c_account.cn.1/0global_1rpc] (127.0.0.1:4150) IO error - EOF
+[account.cn.1 I 260403 11:50:07.264.613 conn.go:731] INF    2 [RESP-c_account.cn.1/0global_1rpc] (127.0.0.1:4150) beginning close
+[account.cn.1 I 260403 11:50:07.264.614 conn.go:731] INF    2 [RESP-c_account.cn.1/0global_1rpc] (127.0.0.1:4150) readLoop exiting
+[account.cn.1 I 260403 11:50:07.265.615 conn.go:731] INF    2 [RESP-c_account.cn.1/0global_1rpc] (127.0.0.1:4150) breaking out of writeLoop
+[account.cn.1 I 260403 11:50:07.265.616 conn.go:731] INF    2 [RESP-c_account.cn.1/0global_1rpc] (127.0.0.1:4150) writeLoop exiting
+[account.cn.1 E 260403 11:50:07.265.617 conn.go:731] ERR    3 [REQ-giftdb.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[account.cn.1 I 260403 11:50:07.265.618 conn.go:731] INF    3 [REQ-giftdb.cn.1/rpc] (127.0.0.1:4150) beginning close
+[account.cn.1 I 260403 11:50:07.265.619 conn.go:731] INF    3 [REQ-giftdb.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[account.cn.1 I 260403 11:50:07.265.620 conn.go:731] INF    3 [REQ-giftdb.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[account.cn.1 I 260403 11:50:07.265.621 conn.go:731] INF    3 [REQ-giftdb.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[account.cn.1 E 260403 11:50:07.265.622 conn.go:731] ERR    4 [REQ-paymentdb.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[account.cn.1 I 260403 11:50:07.265.623 conn.go:731] INF    4 [REQ-paymentdb.cn.1/rpc] (127.0.0.1:4150) beginning close
+[account.cn.1 I 260403 11:50:07.265.624 conn.go:731] INF    4 [REQ-paymentdb.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[account.cn.1 I 260403 11:50:07.265.625 conn.go:731] INF    4 [REQ-paymentdb.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[account.cn.1 I 260403 11:50:07.265.626 conn.go:731] INF    4 [REQ-paymentdb.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[account.cn.1 E 260403 11:50:07.266.627 conn.go:731] ERR    5 [REQ-accountdb.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[account.cn.1 I 260403 11:50:07.266.628 conn.go:731] INF    5 [REQ-accountdb.cn.1/rpc] (127.0.0.1:4150) beginning close
+[account.cn.1 I 260403 11:50:07.266.629 conn.go:731] INF    5 [REQ-accountdb.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[account.cn.1 I 260403 11:50:07.266.630 conn.go:731] INF    5 [REQ-accountdb.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[account.cn.1 I 260403 11:50:07.266.631 conn.go:731] INF    5 [REQ-accountdb.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[account.cn.1 I 260403 11:50:07.365.632 conn.go:731] INF    2 [RESP-c_account.cn.1/0global_1rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[account.cn.1 I 260403 11:50:07.365.633 conn.go:731] INF    2 [RESP-c_account.cn.1/0global_1rpc] (127.0.0.1:4150) clean close complete
+[account.cn.1 W 260403 11:50:07.365.634 consumer.go:1175] WRN    2 [RESP-c_account.cn.1/0global_1rpc] there are 0 connections left alive
+[account.cn.1 I 260403 11:50:07.365.635 consumer.go:1175] INF    2 [RESP-c_account.cn.1/0global_1rpc] (127.0.0.1:4150) re-connecting in 5s
+[account.cn.1 I 260403 11:50:07.365.636 conn.go:731] INF    3 [REQ-giftdb.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[account.cn.1 I 260403 11:50:07.365.637 conn.go:731] INF    3 [REQ-giftdb.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[account.cn.1 W 260403 11:50:07.365.638 consumer.go:1175] WRN    3 [REQ-giftdb.cn.1/rpc] there are 0 connections left alive
+[account.cn.1 I 260403 11:50:07.365.639 consumer.go:1175] INF    3 [REQ-giftdb.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[account.cn.1 I 260403 11:50:07.366.640 conn.go:731] INF    4 [REQ-paymentdb.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[account.cn.1 I 260403 11:50:07.366.641 conn.go:731] INF    4 [REQ-paymentdb.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[account.cn.1 W 260403 11:50:07.366.642 consumer.go:1175] WRN    4 [REQ-paymentdb.cn.1/rpc] there are 0 connections left alive
+[account.cn.1 I 260403 11:50:07.366.643 consumer.go:1175] INF    4 [REQ-paymentdb.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[account.cn.1 I 260403 11:50:07.366.644 conn.go:731] INF    5 [REQ-accountdb.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[account.cn.1 I 260403 11:50:07.366.645 conn.go:731] INF    5 [REQ-accountdb.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[account.cn.1 W 260403 11:50:07.366.646 consumer.go:1175] WRN    5 [REQ-accountdb.cn.1/rpc] there are 0 connections left alive
+[account.cn.1 I 260403 11:50:07.366.647 consumer.go:1175] INF    5 [REQ-accountdb.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[account.cn.1 I 260403 11:50:12.366.648 consumer.go:1175] INF    2 [RESP-c_account.cn.1/0global_1rpc] (127.0.0.1:4150) connecting to nsqd
+[account.cn.1 I 260403 11:50:12.370.649 consumer.go:1175] INF    4 [REQ-paymentdb.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[account.cn.1 I 260403 11:50:12.370.650 consumer.go:1175] INF    5 [REQ-accountdb.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[account.cn.1 I 260403 11:50:12.370.651 consumer.go:1175] INF    3 [REQ-giftdb.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[account.cn.1 I 260403 11:51:57.906.652 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 11:53:57.909.653 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 11:55:57.910.654 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 11:57:57.911.655 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 11:59:57.915.656 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 12:01:57.920.657 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 12:02:06.416.658 framework.go:534] REQ accountdb.cn.1.AccountLogin 29 [0xc015d8abb0]
+[account.cn.1 I 260403 12:02:06.436.659 rpcserver.go:622] RESP accountdb.cn.1.AccountLogin 29 325B 21.278ms from c_login.cn.1
+[account.cn.1 I 260403 12:02:06.437.660 producer.go:382] INF    6 (127.0.0.1:4150) connecting to nsqd
+[account.cn.1 I 260403 12:02:07.763.661 framework.go:534] REQ accountdb.cn.1.AccountRoleCheckIn 30 [IDHex("69cf509793eec200226c8ed1") 0xc015d316c0 0xc017a21d00]
+[account.cn.1 I 260403 12:02:07.764.662 rpcserver.go:622] RESP accountdb.cn.1.AccountRoleCheckIn 30 46B 1.053ms from c_login.cn.1
+[account.cn.1 I 260403 12:03:57.934.663 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 12:05:57.945.664 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 12:07:57.949.665 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 12:09:57.955.666 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 12:11:57.957.667 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 12:12:10.353.668 framework.go:534] REQ accountdb.cn.1.AccountLogin 31 [0xc015d8a0f0]
+[account.cn.1 I 260403 12:12:10.374.669 rpcserver.go:622] RESP accountdb.cn.1.AccountLogin 31 325B 21.783ms from c_login.cn.1
+[account.cn.1 I 260403 12:12:10.742.670 framework.go:534] REQ accountdb.cn.1.AccountRoleCheckIn 32 [IDHex("69cf509793eec200226c8ed1") 0xc015d485e0 0xc017a21e40]
+[account.cn.1 I 260403 12:12:10.743.671 rpcserver.go:622] RESP accountdb.cn.1.AccountRoleCheckIn 32 46B 469µs from c_login.cn.1
+[account.cn.1 I 260403 12:13:57.993.672 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 12:14:36.061.673 framework.go:534] REQ accountdb.cn.1.AccountLogin 33 [0xc015d30180]
+[account.cn.1 I 260403 12:14:36.079.674 rpcserver.go:622] RESP accountdb.cn.1.AccountLogin 33 325B 18.714ms from c_login.cn.1
+[account.cn.1 I 260403 12:14:37.533.675 framework.go:534] REQ accountdb.cn.1.AccountRoleCheckIn 34 [IDHex("69cf509793eec200226c8ed1") 0xc015d065d0 0xc000356040]
+[account.cn.1 I 260403 12:14:37.533.676 rpcserver.go:622] RESP accountdb.cn.1.AccountRoleCheckIn 34 46B 783µs from c_login.cn.1
+[account.cn.1 I 260403 12:15:58.019.677 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 12:17:58.020.678 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 12:19:58.021.679 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 12:21:58.022.680 session.go:132] Commit 1 objects, success 1
+[account.cn.1 E 260403 12:23:39.744.681 conn.go:731] ERR    6 (127.0.0.1:4150) IO error - EOF
+[account.cn.1 I 260403 12:23:39.745.682 conn.go:731] INF    6 (127.0.0.1:4150) beginning close
+[account.cn.1 I 260403 12:23:39.745.683 conn.go:731] INF    6 (127.0.0.1:4150) readLoop exiting
+[account.cn.1 I 260403 12:23:39.745.684 conn.go:731] INF    6 (127.0.0.1:4150) breaking out of writeLoop
+[account.cn.1 I 260403 12:23:39.745.685 conn.go:731] INF    6 (127.0.0.1:4150) writeLoop exiting
+[account.cn.1 E 260403 12:23:39.745.686 conn.go:731] ERR    2 [RESP-c_account.cn.1/0global_1rpc] (127.0.0.1:4150) IO error - EOF
+[account.cn.1 I 260403 12:23:39.746.687 conn.go:731] INF    2 [RESP-c_account.cn.1/0global_1rpc] (127.0.0.1:4150) beginning close
+[account.cn.1 I 260403 12:23:39.746.688 conn.go:731] INF    2 [RESP-c_account.cn.1/0global_1rpc] (127.0.0.1:4150) readLoop exiting
+[account.cn.1 I 260403 12:23:39.746.689 conn.go:731] INF    2 [RESP-c_account.cn.1/0global_1rpc] (127.0.0.1:4150) breaking out of writeLoop
+[account.cn.1 I 260403 12:23:39.746.690 conn.go:731] INF    2 [RESP-c_account.cn.1/0global_1rpc] (127.0.0.1:4150) writeLoop exiting
+[account.cn.1 E 260403 12:23:39.746.691 conn.go:731] ERR    4 [REQ-paymentdb.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[account.cn.1 I 260403 12:23:39.746.692 conn.go:731] INF    4 [REQ-paymentdb.cn.1/rpc] (127.0.0.1:4150) beginning close
+[account.cn.1 I 260403 12:23:39.746.693 conn.go:731] INF    4 [REQ-paymentdb.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[account.cn.1 I 260403 12:23:39.746.694 conn.go:731] INF    4 [REQ-paymentdb.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[account.cn.1 I 260403 12:23:39.746.695 conn.go:731] INF    4 [REQ-paymentdb.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[account.cn.1 E 260403 12:23:39.746.696 conn.go:731] ERR    5 [REQ-accountdb.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[account.cn.1 I 260403 12:23:39.746.697 conn.go:731] INF    5 [REQ-accountdb.cn.1/rpc] (127.0.0.1:4150) beginning close
+[account.cn.1 I 260403 12:23:39.746.698 conn.go:731] INF    5 [REQ-accountdb.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[account.cn.1 I 260403 12:23:39.746.699 conn.go:731] INF    5 [REQ-accountdb.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[account.cn.1 I 260403 12:23:39.746.700 conn.go:731] INF    5 [REQ-accountdb.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[account.cn.1 E 260403 12:23:39.746.701 conn.go:731] ERR    3 [REQ-giftdb.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[account.cn.1 I 260403 12:23:39.746.702 conn.go:731] INF    3 [REQ-giftdb.cn.1/rpc] (127.0.0.1:4150) beginning close
+[account.cn.1 I 260403 12:23:39.746.703 conn.go:731] INF    3 [REQ-giftdb.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[account.cn.1 I 260403 12:23:39.746.704 conn.go:731] INF    3 [REQ-giftdb.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[account.cn.1 I 260403 12:23:39.746.705 conn.go:731] INF    3 [REQ-giftdb.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[account.cn.1 I 260403 12:23:39.846.707 conn.go:731] INF    6 (127.0.0.1:4150) clean close complete
+[account.cn.1 I 260403 12:23:39.846.708 producer.go:382] INF    6 exiting router
+[account.cn.1 I 260403 12:23:39.846.706 conn.go:731] INF    6 (127.0.0.1:4150) finished draining, cleanup exiting
+[account.cn.1 I 260403 12:23:39.847.709 conn.go:731] INF    3 [REQ-giftdb.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[account.cn.1 I 260403 12:23:39.847.710 conn.go:731] INF    3 [REQ-giftdb.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[account.cn.1 W 260403 12:23:39.847.711 consumer.go:1175] WRN    3 [REQ-giftdb.cn.1/rpc] there are 0 connections left alive
+[account.cn.1 I 260403 12:23:39.847.712 consumer.go:1175] INF    3 [REQ-giftdb.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[account.cn.1 I 260403 12:23:39.847.713 conn.go:731] INF    2 [RESP-c_account.cn.1/0global_1rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[account.cn.1 I 260403 12:23:39.847.714 conn.go:731] INF    2 [RESP-c_account.cn.1/0global_1rpc] (127.0.0.1:4150) clean close complete
+[account.cn.1 W 260403 12:23:39.847.715 consumer.go:1175] WRN    2 [RESP-c_account.cn.1/0global_1rpc] there are 0 connections left alive
+[account.cn.1 I 260403 12:23:39.847.716 consumer.go:1175] INF    2 [RESP-c_account.cn.1/0global_1rpc] (127.0.0.1:4150) re-connecting in 5s
+[account.cn.1 I 260403 12:23:39.847.717 conn.go:731] INF    4 [REQ-paymentdb.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[account.cn.1 I 260403 12:23:39.847.718 conn.go:731] INF    4 [REQ-paymentdb.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[account.cn.1 W 260403 12:23:39.847.719 consumer.go:1175] WRN    4 [REQ-paymentdb.cn.1/rpc] there are 0 connections left alive
+[account.cn.1 I 260403 12:23:39.847.720 consumer.go:1175] INF    4 [REQ-paymentdb.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[account.cn.1 I 260403 12:23:39.847.721 conn.go:731] INF    5 [REQ-accountdb.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[account.cn.1 I 260403 12:23:39.847.722 conn.go:731] INF    5 [REQ-accountdb.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[account.cn.1 W 260403 12:23:39.847.723 consumer.go:1175] WRN    5 [REQ-accountdb.cn.1/rpc] there are 0 connections left alive
+[account.cn.1 I 260403 12:23:39.847.724 consumer.go:1175] INF    5 [REQ-accountdb.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[account.cn.1 I 260403 12:23:44.850.725 consumer.go:1175] INF    2 [RESP-c_account.cn.1/0global_1rpc] (127.0.0.1:4150) connecting to nsqd
+[account.cn.1 I 260403 12:23:44.851.726 consumer.go:1175] INF    5 [REQ-accountdb.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[account.cn.1 I 260403 12:23:44.851.728 consumer.go:1175] INF    3 [REQ-giftdb.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[account.cn.1 I 260403 12:23:44.851.727 consumer.go:1175] INF    4 [REQ-paymentdb.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[account.cn.1 I 260403 12:23:58.024.729 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 12:24:12.534.730 framework.go:534] REQ accountdb.cn.1.AccountQuery 35 [IDHex("69cf509793eec200226c8ed1")]
+[account.cn.1 I 260403 12:24:12.536.731 rpcserver.go:622] RESP accountdb.cn.1.AccountQuery 35 325B 2.385ms from c_gm.cn.1
+[account.cn.1 I 260403 12:24:12.537.732 producer.go:382] INF    6 (127.0.0.1:4150) connecting to nsqd
+[account.cn.1 I 260403 12:24:14.136.733 framework.go:534] REQ accountdb.cn.1.AccountQuery 36 [IDHex("69cf509793eec200226c8ed1")]
+[account.cn.1 I 260403 12:24:14.136.734 rpcserver.go:622] RESP accountdb.cn.1.AccountQuery 36 325B 863µs from c_gm.cn.1
+[account.cn.1 I 260403 12:24:48.249.735 framework.go:534] REQ accountdb.cn.1.AccountQuery 37 [IDHex("69cf509793eec200226c8ed1")]
+[account.cn.1 I 260403 12:24:48.249.736 rpcserver.go:622] RESP accountdb.cn.1.AccountQuery 37 325B 834µs from c_gm.cn.1
+[account.cn.1 I 260403 12:24:49.252.737 framework.go:534] REQ accountdb.cn.1.AccountQuery 38 [IDHex("69cf509793eec200226c8ed1")]
+[account.cn.1 I 260403 12:24:49.255.738 rpcserver.go:622] RESP accountdb.cn.1.AccountQuery 38 325B 2.763ms from c_gm.cn.1

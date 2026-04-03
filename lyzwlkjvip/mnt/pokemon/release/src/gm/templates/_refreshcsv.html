@@ -20,7 +20,7 @@
         			<form class="form-inline" role="form">
 						<div class="form-group">
 						  	<label>{{ _(u'服务器') }}</label>
-						    <input id="serv-select" class="form-control input-sm" data-toggle="modal" data-target="#serv-select-modal" placeholder="默认为所有server">
+						    <input id="serv-select" class="form-control input-sm" data-toggle="modal" data-target="#serv-select-modal" placeholder="Mặc định toàn bộ server">
 						</div>
 					</form>
         		</div>
@@ -45,32 +45,32 @@
 	        		<div id="tabContent" class="tab-content">
 						<div class="tab-pane fade in active" id="refreshcsv">
 							<div class="margin-top-s">
-								<p><i>请选好区服，点击确认按钮进行<span class='note-red'>配表刷新</span>。</i></p>
-								<input id="refreshcsv-click" type="button" class="btn btn-default btn-success input-sm" value="刷新配表"><br>
+								<p><i>Vui lòng chọn server, sau đó bấm xác nhận để <span class='note-red'>làm mới bảng cấu hình</span>.</i></p>
+								<input id="refreshcsv-click" type="button" class="btn btn-default btn-success input-sm" value="Làm mới bảng cấu hình"><br>
 								<pre id='show-ret' class="hidden margin-top-s"></pre>
 							</div>
 						</div>
 
 						<div class="tab-pane fade" id="execpy">
 							<div class="margin-top-s">
-								<p><i>请上传脚本文件，并选好区服，点击确认按钮进行<span class='note-red'>脚本执行</span>。</i></p>
+								<p><i>Vui lòng tải file script, chọn server, rồi bấm xác nhận để <span class='note-red'>chạy script</span>.</i></p>
 								<input id='src-file' type='file'>
-								<input id="execpy-click" type="button" class="btn btn-default btn-success input-sm margin-top-s" value="执行脚本"><br>
+								<input id="execpy-click" type="button" class="btn btn-default btn-success input-sm margin-top-s" value="Chạy script"><br>
 								<pre id='execpy-ret' class="hidden margin-top-s"></pre>
 							</div>
 						</div>
 
 						<div class="tab-pane fade" id="genrobots">
 							<div class="margin-top-s">
-								<p><i>请选好区服，点击确认按钮进行<span class='note-red'>机器人生成</span>。</i></p>
-								<input id="genrobots-click" type="button" class="btn btn-default btn-success input-sm margin-top-s" value="生成机器人"><br>
+								<p><i>Vui lòng chọn server rồi bấm xác nhận để <span class='note-red'>tạo bot</span>.</i></p>
+								<input id="genrobots-click" type="button" class="btn btn-default btn-success input-sm margin-top-s" value="Tạo bot"><br>
 								<pre id='genrobots-ret' class="hidden margin-top-s"></pre>
 							</div>
 						</div>
 
 						<div class="tab-pane fade" id="cardattrs">
 							<div class="margin-top-s">
-								<p><i>请选好区服并输入角色，来进行<span class='note-red'>卡牌属性计算</span>。</i></p>
+								<p><i>Vui lòng chọn server và nhập nhân vật để <span class='note-red'>tính chỉ số thẻ</span>.</i></p>
 								<div class="form-inline">
 			        				<div class="from-group">
 			        					<div class="form-group">
@@ -86,11 +86,11 @@
 
 								<div class="row margin-top-s">
 		        					<div class="col-lg-4 col-md-4">
-		        						<div>--卡牌列表--</div><br>
+		        						<div>--Danh sách thẻ--</div><br>
 									  	<table id="cards-display" class="table table-condensed"></table>
 									</div>
 									<div class="col-lg-2 col-md-3 right-border left-border">
-										<div>--卡牌信息--</div><br>
+										<div>--Thông tin thẻ--</div><br>
 										<div id="card-info" class="note-red"></div>
 										<br>
 										<div>
@@ -100,7 +100,7 @@
 										<div id="card-keys"></div>
 									</div>
 									<div class="col-lg-6 col-md-5">
-										<div>--卡牌属性--</div><br>
+										<div>--Chỉ số thẻ--</div><br>
 										<div id="card-cal-result"></div>
 										<div>
 											<div>
@@ -127,38 +127,38 @@
 
 						<div class="tab-pane fade" id="dataexport">
 							<div class="margin-top-s">
-								<p><i>导出完成后，点击链接可进行下载。</i></p>
-								<input id="dataexport-click" type="button" class="btn btn-default btn-success input-sm" value="导出数据">
+								<p><i>Sau khi xuất xong, bấm liên kết để tải xuống.</i></p>
+								<input id="dataexport-click" type="button" class="btn btn-default btn-success input-sm" value="Xuất dữ liệu">
 								<div id="dataexport-show" class='margin-left-m' style='display: inline-block;'></div>
 							</div>
 						</div>
 						<div class="tab-pane fade" id="dataimport">
 							<div class="margin-top-s">
-								<p><i>上传mongo .json压缩文件，进行导入操作。</i></p>
+								<p><i>Tải file nén mongo .json để thực hiện nhập dữ liệu.</i></p>
 								<input id='dataimport-file' type='file'>
-								<input id="dataimport-click" type="button" class="btn btn-default btn-success input-sm margin-top-s" value="导入数据">
+								<input id="dataimport-click" type="button" class="btn btn-default btn-success input-sm margin-top-s" value="Nhập dữ liệu">
 								<div id="dataimport-show" class='margin-left-m' style='display: inline-block;'></div>
 							</div>
 						</div>
 
 						<div class="tab-pane fade" id="crossservice">
 							<div class="margin-top-s">
-								<p><i>选择要触发的<span class='note-red'>跨服服务</span>，点击按钮进行手动触发。</i></p>
-								<p><i>注意：正常情况下每天凌晨5点自动触发，此功能用于紧急情况下手动触发。</i></p>
+								<p><i>Chọn <span class='note-red'>dịch vụ liên server</span> cần kích hoạt, rồi bấm nút để chạy thủ công.</i></p>
+								<p><i>Lưu ý: bình thường hệ thống tự chạy lúc 5:00 sáng mỗi ngày; mục này dùng cho tình huống khẩn cấp.</i></p>
 								
 								<div class="row margin-top-m">
 									<div class="col-lg-12">
 										<table class="table table-bordered table-hover" style="width: auto;">
 											<thead>
 												<tr>
-													<th>跨服类型</th>
-													<th>选择跨服组</th>
-													<th>操作</th>
+													<th>Loại liên server</th>
+													<th>Chọn cụm liên server</th>
+													<th>Thao tác</th>
 												</tr>
 											</thead>
 											<tbody>
 												<tr>
-													<td>跨服竞技场</td>
+													<td>Đấu trường liên server</td>
 													<td>
 														<select class="form-control input-sm cross-service-select" data-type="crossarena">
 															<option value="crossarena.cn.1">crossarena.cn.1</option>
@@ -173,10 +173,10 @@
 															<option value="crossarena.cn.10">crossarena.cn.10</option>
 														</select>
 													</td>
-													<td><button class="btn btn-warning btn-sm cross-service-btn" data-type="crossarena">触发</button></td>
+													<td><button class="btn btn-warning btn-sm cross-service-btn" data-type="crossarena">Kích hoạt</button></td>
 												</tr>
 												<tr>
-													<td>跨服石英大会</td>
+													<td>Đại hội Thạch Anh liên server</td>
 													<td>
 														<select class="form-control input-sm cross-service-select" data-type="crosscraft">
 															<option value="crosscraft.cn.1">crosscraft.cn.1</option>
@@ -191,10 +191,10 @@
 															<option value="crosscraft.cn.10">crosscraft.cn.10</option>
 														</select>
 													</td>
-													<td><button class="btn btn-warning btn-sm cross-service-btn" data-type="crosscraft">触发</button></td>
+													<td><button class="btn btn-warning btn-sm cross-service-btn" data-type="crosscraft">Kích hoạt</button></td>
 												</tr>
 												<tr>
-													<td>跨服道馆</td>
+													<td>Nhà thi đấu liên server</td>
 													<td>
 														<select class="form-control input-sm cross-service-select" data-type="crossgym">
 															<option value="crossgym.cn.1">crossgym.cn.1</option>
@@ -209,10 +209,10 @@
 															<option value="crossgym.cn.10">crossgym.cn.10</option>
 														</select>
 													</td>
-													<td><button class="btn btn-warning btn-sm cross-service-btn" data-type="crossgym">触发</button></td>
+													<td><button class="btn btn-warning btn-sm cross-service-btn" data-type="crossgym">Kích hoạt</button></td>
 												</tr>
 												<tr>
-													<td>跨服资源战</td>
+													<td>Chiến tài nguyên liên server</td>
 													<td>
 														<select class="form-control input-sm cross-service-select" data-type="crossmine">
 															<option value="crossmine.cn.1">crossmine.cn.1</option>
@@ -227,10 +227,10 @@
 															<option value="crossmine.cn.10">crossmine.cn.10</option>
 														</select>
 													</td>
-													<td><button class="btn btn-warning btn-sm cross-service-btn" data-type="crossmine">触发</button></td>
+													<td><button class="btn btn-warning btn-sm cross-service-btn" data-type="crossmine">Kích hoạt</button></td>
 												</tr>
 												<tr>
-													<td>跨服实时对战</td>
+													<td>Đối chiến thời gian thực liên server</td>
 													<td>
 														<select class="form-control input-sm cross-service-select" data-type="onlinefight">
 															<option value="onlinefight.cn.1">onlinefight.cn.1</option>
@@ -245,10 +245,10 @@
 															<option value="onlinefight.cn.10">onlinefight.cn.10</option>
 														</select>
 													</td>
-													<td><button class="btn btn-warning btn-sm cross-service-btn" data-type="onlinefight">触发</button></td>
+													<td><button class="btn btn-warning btn-sm cross-service-btn" data-type="onlinefight">Kích hoạt</button></td>
 												</tr>
 												<tr>
-													<td>跨服部屋</td>
+													<td>Công hội liên server</td>
 													<td>
 														<select class="form-control input-sm cross-service-select" data-type="crossunionfight">
 															<option value="crossunionfight.cn.1">crossunionfight.cn.1</option>
@@ -263,10 +263,10 @@
 															<option value="crossunionfight.cn.10">crossunionfight.cn.10</option>
 														</select>
 													</td>
-													<td><button class="btn btn-warning btn-sm cross-service-btn" data-type="crossunionfight">触发</button></td>
+													<td><button class="btn btn-warning btn-sm cross-service-btn" data-type="crossunionfight">Kích hoạt</button></td>
 												</tr>
 												<tr>
-													<td>跨服聊天</td>
+													<td>Chat liên server</td>
 													<td>
 														<select class="form-control input-sm cross-service-select" data-type="crosschat">
 															<option value="crosschat.cn.1">crosschat.cn.1</option>
@@ -281,16 +281,16 @@
 															<option value="crosschat.cn.10">crosschat.cn.10</option>
 														</select>
 													</td>
-													<td><button class="btn btn-warning btn-sm cross-service-btn" data-type="crosschat">触发</button></td>
+													<td><button class="btn btn-warning btn-sm cross-service-btn" data-type="crosschat">Kích hoạt</button></td>
 												</tr>
 												<tr>
-													<td>拟态对战</td>
+													<td>Đối chiến mô phỏng</td>
 													<td>
 														<select class="form-control input-sm cross-service-select" data-type="crossmimicry">
 															<option value="crossmimicry.cn.1">crossmimicry.cn.1</option>
 														</select>
 													</td>
-													<td><button class="btn btn-warning btn-sm cross-service-btn" data-type="crossmimicry">触发</button></td>
+													<td><button class="btn btn-warning btn-sm cross-service-btn" data-type="crossmimicry">Kích hoạt</button></td>
 												</tr>
 											</tbody>
 										</table>
@@ -314,129 +314,129 @@
 		var CardsRoleInfo = {};
 		const cardsConfig = {
 			"keys": [
-				["unit", "基础"],
-				["star", "星数"],
-				["advance", "阶数"],
-				["nvalue", "个体值"],
-				["character", "性格"],
-				["fetters", "羁绊"],
-				["effort", "努力值"],
-				["feel", "好感度"],
-				["feel_effect", "好感度效果"],
-				["equips", "饰品"],
-				["passive_skill", "被动技能"],
-				["talent", "天赋"],
-				["trainer", "训练师等级"],
-				["trainer_attr_skill", "训练师等级属性技能"],
-				["pokedex", "图鉴"],
-				["pokedex_advance", "图鉴突破"],
-				["figure", "形象"],
-				["title", "称号"],
-				["union_skill", "公会修炼"],
-				["heldItems", "携带道具"],
-				["heldItems_effect", "携带道具效果"],
-				["explorer_component", "探险器组件"],
-				["explorer_effect", "探险器效果"],
-				["star_effect", "潜力值效果"],
-				["ability", "特性"]
+				["unit", "Cơ bản"],
+				["star", "Sao"],
+				["advance", "Bậc"],
+				["nvalue", "Chỉ số cá thể"],
+				["character", "Tính cách"],
+				["fetters", "Liên kết"],
+				["effort", "EV"],
+				["feel", "Độ thân mật"],
+				["feel_effect", "Hiệu quả thân mật"],
+				["equips", "Trang sức"],
+				["passive_skill", "Kỹ năng bị động"],
+				["talent", "Thiên phú"],
+				["trainer", "Cấp huấn luyện viên"],
+				["trainer_attr_skill", "Kỹ năng thuộc tính cấp huấn luyện viên"],
+				["pokedex", "Pokédex"],
+				["pokedex_advance", "Đột phá Pokédex"],
+				["figure", "Ngoại hình"],
+				["title", "Danh hiệu"],
+				["union_skill", "Tu luyện công hội"],
+				["heldItems", "Vật phẩm mang theo"],
+				["heldItems_effect", "Hiệu quả vật phẩm mang theo"],
+				["explorer_component", "Linh kiện máy thám hiểm"],
+				["explorer_effect", "Hiệu quả máy thám hiểm"],
+				["star_effect", "Hiệu quả điểm tiềm năng"],
+				["ability", "Đặc tính"]
 			],
 
 			"attrs": [
 				["hp", "HP"],
 				["mp1", "MP1"],
 				["mp2", "MP2"],
-				["hpRecover", "HP回复"],
-				["mp1Recover", "MP1回复"],
-				["mp2Recover", "MP2回复"],
-				["damage", "物理攻击"],
-				["specialDamage", "特殊攻击"],
-				["defence", "物理防御力"],
-				["specialDefence", "特殊防御力"],
-				["defenceIgnore", "物理防御忽视"],
-				["specialDefenceIgnore", "特殊防御忽视"],
-				["speed", "速度"],
-				["strike", "暴击"],
-				["strikeDamage", "暴击伤害"],
-				["strikeResistance", "暴击抗性"],
-				["block", "格挡等级"],
-				["breakBlock", "破格挡等级"],
-				["blockPower", "格挡强度"],
-				["dodge", "闪避"],
-				["hit", "命中"],
-				["damageAdd", "伤害加成"],
-				["damageSub", "伤害减免"],
-				["ultimateAdd", "必杀加成"],
-				["ultimateSub", "必杀抗性"],
-				["suckBlood", "吸血"],
-				["rebound", "反弹"],
-				["cure", "治疗效果"],
-				["natureRestraint", "属性克制"],
-				["damageDeepen", "伤害加深"],
-				["damageReduce", "伤害降低"]
+				["hpRecover", "Hồi HP"],
+				["mp1Recover", "Hồi MP1"],
+				["mp2Recover", "Hồi MP2"],
+				["damage", "Công vật lý"],
+				["specialDamage", "Công đặc biệt"],
+				["defence", "Phòng thủ vật lý"],
+				["specialDefence", "Phòng thủ đặc biệt"],
+				["defenceIgnore", "Xuyên phòng thủ vật lý"],
+				["specialDefenceIgnore", "Xuyên phòng thủ đặc biệt"],
+				["speed", "Tốc độ"],
+				["strike", "Bạo kích"],
+				["strikeDamage", "Sát thương bạo kích"],
+				["strikeResistance", "Kháng bạo kích"],
+				["block", "Cấp đỡ đòn"],
+				["breakBlock", "Cấp phá đỡ đòn"],
+				["blockPower", "Cường độ đỡ đòn"],
+				["dodge", "Né tránh"],
+				["hit", "Chính xác"],
+				["damageAdd", "Tăng sát thương"],
+				["damageSub", "Giảm sát thương"],
+				["ultimateAdd", "Tăng tất sát"],
+				["ultimateSub", "Kháng tất sát"],
+				["suckBlood", "Hút máu"],
+				["rebound", "Phản sát thương"],
+				["cure", "Hiệu quả hồi phục"],
+				["natureRestraint", "Khắc hệ"],
+				["damageDeepen", "Khuếch đại sát thương"],
+				["damageReduce", "Giảm nhận sát thương"]
 			],
 
 			"attrs_extend": [
-				["physicalDamageAdd", "物理攻击伤害加成"],
-				["physicalDamageSub", "物理攻击伤害减免"],
-				["specialDamageAdd", "特殊攻击伤害加成"],
-				["specialDamageSub", "特殊攻击伤害减免"],
+				["physicalDamageAdd", "Tăng sát thương công vật lý"],
+				["physicalDamageSub", "Giảm sát thương công vật lý"],
+				["specialDamageAdd", "Tăng sát thương công đặc biệt"],
+				["specialDamageSub", "Giảm sát thương công đặc biệt"],
 
-				["normalDamageAdd", "一般系伤害加成"],
-				["fireDamageAdd", "火系伤害加成"],
-				["waterDamageAdd", "水系伤害加成"],
-				["grassDamageAdd", "草系伤害加成"],
-				["electricityDamageAdd", "电系伤害加成"],
-				["iceDamageAdd", "冰系伤害加成"],
-				["combatDamageAdd", "格斗系伤害加成"],
-				["poisonDamageAdd", "毒系伤害加成"],
-				["groundDamageAdd", "地面系伤害加成"],
-				["flyDamageAdd", "飞行系伤害加成"],
-				["superDamageAdd", "超能系伤害加成"],
-				["wormDamageAdd", "虫系伤害加成"],
-				["rockDamageAdd", "岩石系伤害加成"],
-				["ghostDamageAdd", "幽灵系伤害加成"],
-				["dragonDamageAdd", "龙系伤害加成"],
-				["evilDamageAdd", "恶系伤害加成"],
-				["steelDamageAdd", "钢系伤害加成"],
-				["fairyDamageAdd", "妖精系伤害加成"],
+				["normalDamageAdd", "Tăng sát thương hệ Thường"],
+				["fireDamageAdd", "Tăng sát thương hệ Lửa"],
+				["waterDamageAdd", "Tăng sát thương hệ Nước"],
+				["grassDamageAdd", "Tăng sát thương hệ Cỏ"],
+				["electricityDamageAdd", "Tăng sát thương hệ Điện"],
+				["iceDamageAdd", "Tăng sát thương hệ Băng"],
+				["combatDamageAdd", "Tăng sát thương hệ Giác đấu"],
+				["poisonDamageAdd", "Tăng sát thương hệ Độc"],
+				["groundDamageAdd", "Tăng sát thương hệ Đất"],
+				["flyDamageAdd", "Tăng sát thương hệ Bay"],
+				["superDamageAdd", "Tăng sát thương hệ Siêu năng"],
+				["wormDamageAdd", "Tăng sát thương hệ Côn trùng"],
+				["rockDamageAdd", "Tăng sát thương hệ Đá"],
+				["ghostDamageAdd", "Tăng sát thương hệ Ma"],
+				["dragonDamageAdd", "Tăng sát thương hệ Rồng"],
+				["evilDamageAdd", "Tăng sát thương hệ Bóng tối"],
+				["steelDamageAdd", "Tăng sát thương hệ Thép"],
+				["fairyDamageAdd", "Tăng sát thương hệ Tiên"],
 
-				["normalDamageSub", "一般系伤害减免"],
-				["fireDamageSub", "火系伤害减免"],
-				["waterDamageSub", "水系伤害减免"],
-				["grassDamageSub", "草系伤害减免"],
-				["electricityDamageSub", "电系伤害减免"],
-				["iceDamageSub", "冰系伤害减免"],
-				["combatDamageSub", "格斗系伤害减免"],
-				["poisonDamageSub", "毒系伤害减免"],
-				["groundDamageSub", "地面系伤害减免"],
-				["flyDamageSub", "飞行系伤害减免"],
-				["superDamageSub", "超能系伤害减免"],
-				["wormDamageSub", "虫系伤害减免"],
-				["rockDamageSub", "岩石系伤害减免"],
-				["ghostDamageSub", "幽灵系伤害减免"],
-				["dragonDamageSub", "龙系伤害减免"],
-				["evilDamageSub", "恶系伤害减免"],
-				["steelDamageSub", "钢系伤害减免"],
-				["fairyDamageSub", "妖精系伤害减免"],
+				["normalDamageSub", "Giảm sát thương hệ Thường"],
+				["fireDamageSub", "Giảm sát thương hệ Lửa"],
+				["waterDamageSub", "Giảm sát thương hệ Nước"],
+				["grassDamageSub", "Giảm sát thương hệ Cỏ"],
+				["electricityDamageSub", "Giảm sát thương hệ Điện"],
+				["iceDamageSub", "Giảm sát thương hệ Băng"],
+				["combatDamageSub", "Giảm sát thương hệ Giác đấu"],
+				["poisonDamageSub", "Giảm sát thương hệ Độc"],
+				["groundDamageSub", "Giảm sát thương hệ Đất"],
+				["flyDamageSub", "Giảm sát thương hệ Bay"],
+				["superDamageSub", "Giảm sát thương hệ Siêu năng"],
+				["wormDamageSub", "Giảm sát thương hệ Côn trùng"],
+				["rockDamageSub", "Giảm sát thương hệ Đá"],
+				["ghostDamageSub", "Giảm sát thương hệ Ma"],
+				["dragonDamageSub", "Giảm sát thương hệ Rồng"],
+				["evilDamageSub", "Giảm sát thương hệ Bóng tối"],
+				["steelDamageSub", "Giảm sát thương hệ Thép"],
+				["fairyDamageSub", "Giảm sát thương hệ Tiên"],
 
-				["normalCure", "一般系治疗效果加成"],
-				["fireCure", "火系治疗效果加成"],
-				["waterCure", "水系治疗效果加成"],
-				["grassCure", "草系治疗效果加成"],
-				["electricityCure", "电系治疗效果加成"],
-				["iceCure", "冰系治疗效果加成"],
-				["combatCure", "格斗系治疗效果加成"],
-				["poisonCure", "毒系治疗效果加成"],
-				["groundCure", "地面系治疗效果加成"],
-				["flyCure", "飞行系治疗效果加成"],
-				["superCure", "超能系治疗效果加成"],
-				["wormCure", "虫系治疗效果加成"],
-				["rockCure", "岩石系治疗效果加成"],
-				["ghostCure", "幽灵系治疗效果加成"],
-				["dragonCure", "龙系治疗效果加成"],
-				["evilCure", "恶系治疗效果加成"],
-				["steelCure", "钢系治疗效果加成"],
-				["fairyCure", "妖精系治疗效果加成"]
+				["normalCure", "Tăng hồi phục hệ Thường"],
+				["fireCure", "Tăng hồi phục hệ Lửa"],
+				["waterCure", "Tăng hồi phục hệ Nước"],
+				["grassCure", "Tăng hồi phục hệ Cỏ"],
+				["electricityCure", "Tăng hồi phục hệ Điện"],
+				["iceCure", "Tăng hồi phục hệ Băng"],
+				["combatCure", "Tăng hồi phục hệ Giác đấu"],
+				["poisonCure", "Tăng hồi phục hệ Độc"],
+				["groundCure", "Tăng hồi phục hệ Đất"],
+				["flyCure", "Tăng hồi phục hệ Bay"],
+				["superCure", "Tăng hồi phục hệ Siêu năng"],
+				["wormCure", "Tăng hồi phục hệ Côn trùng"],
+				["rockCure", "Tăng hồi phục hệ Đá"],
+				["ghostCure", "Tăng hồi phục hệ Ma"],
+				["dragonCure", "Tăng hồi phục hệ Rồng"],
+				["evilCure", "Tăng hồi phục hệ Bóng tối"],
+				["steelCure", "Tăng hồi phục hệ Thép"],
+				["fairyCure", "Tăng hồi phục hệ Tiên"]
 			]
 		}
 
@@ -453,7 +453,7 @@
 					success: function(result) {
 						$("#show-ret").removeClass('hidden');
 						$("#show-ret").text(result.ret);
-						alert("success");
+						alert("Thành công");
 					}
 				})
 			})
@@ -463,7 +463,7 @@
 				console.log(file);
 
 				if ((!file) || (file.size == 0)) {
-					alert("文件为空，请选文件");
+					alert("File trống, vui lòng chọn file");
 					return;
 				}
 
@@ -483,7 +483,7 @@
 					success: function(rep) {
 						$("#execpy-ret").removeClass('hidden');
 						$("#execpy-ret").text(rep.result);
-						alert("success");
+						alert("Thành công");
 					}
 				})
 			})
@@ -491,7 +491,7 @@
 			$("#genrobots-click").on('click', function() {
 				let reqData = getReqData();
 				if (!reqData.servName) {
-					alert('必须要选择一个server');
+					alert('Bắt buộc phải chọn một server');
 					return;
 				}
 
@@ -504,13 +504,13 @@
 					success: function(rep) {
 						$("#genrobots-ret").removeClass('hidden');
 						$("#genrobots-ret").text(rep.result);
-						alert("success");
+						alert("Thành công");
 					}
 				})
 			})
 
 			// 卡牌属性计算
-			let html = "<div>--选中取消--</div>";
+			let html = "<div>--Chọn mục bỏ qua--</div>";
 			for (let i=0; i<cardsConfig.keys.length; i++) {
 				html += '<div><input name="card-info-checkbox" type="checkbox" value="'+ cardsConfig.keys[i][0] + '">' + cardsConfig.keys[i][1] + "</div>";
 			}
@@ -519,12 +519,12 @@
 			$("#card-role-search").on('click', function() {
 				let reqData = getReqData()
 				if (!(reqData.servName)) {
-					alert("请选一个区服");
+					alert("Vui lòng chọn một server");
 					return;
 				}
 				let role_uid = $("#role-uid").val();
 				if (!(role_uid)) {
-					alert("请输入一个角色UID");
+					alert("Vui lòng nhập một UID nhân vật");
 					return;
 				}
 				reqData.role_uid = parseInt(role_uid);
@@ -550,15 +550,15 @@
 					        onClickRow: function(row, ele) {
 					        	console.log(row);
 					        	let html = "";
-					        	html += "<p>当前角色: " + CardsRoleInfo.servName + ", " + CardsRoleInfo.id +
+						    	html += "<p>Nhân vật hiện tại: " + CardsRoleInfo.servName + ", " + CardsRoleInfo.id +
 					        		", " + CardsRoleInfo.name + "</p><br>";
-					        	html += "<p>名字: " + row.name + "</p>";
+						    	html += "<p>Tên: " + row.name + "</p>";
 					        	html += "<p>CSV ID: " + row.card_id + "</p>";
 					        	html += "<p>DB ID: <span id='cur_card_id'>" + row.id + "</span></p>";
-					        	html += "<p>等级: " + row.level + "</p>";
-					        	html += "<p>星数: " + row.star + "</p>";
-					        	html += "<p>阶数: " + row.advance + "</p>";
-					        	html += "<p>性格: " + row.character + "</p>";
+						    	html += "<p>Cấp: " + row.level + "</p>";
+						    	html += "<p>Sao: " + row.star + "</p>";
+						    	html += "<p>Bậc: " + row.advance + "</p>";
+						    	html += "<p>Tính cách: " + row.character + "</p>";
 					        	$("#card-info").html(html);
 					        },
 					        locale: userLocale
@@ -573,7 +573,7 @@
 				CardsRoleInfo.cur_card_id = $("#cur_card_id").text();
 				console.log(CardsRoleInfo)
 				if (!CardsRoleInfo.servName || !CardsRoleInfo.id || !CardsRoleInfo.cur_card_id) {
-					alert("请重新查询");
+					alert("Vui lòng truy vấn lại");
 					return;
 				}
 				let disables = [];
@@ -634,17 +634,17 @@
 
 			$('#dataexport-click').on('click', function() {
 				$(this).attr('disabled', true);
-				$('#dataexport-show').html('<strong style="color: red;">正在导出中，请稍后...</strong>');
+				$('#dataexport-show').html('<strong style="color: red;">Đang xuất dữ liệu, vui lòng chờ...</strong>');
                 $.ajax({
                     url: '/data_export',
                     type: 'get',
                     async: true,
                     success: function(rep) {
                         if (!rep.ret) {
-                            alert('导出失败');
+							alert('Xuất dữ liệu thất bại');
                         } else {
-                            alert('导出完成');
-                            let h = `<a href='statics/${rep.data}' download='' title="下载"  mce_href="#">${rep.data}</a>`;
+							alert('Xuất dữ liệu hoàn tất');
+							let h = `<a href='statics/${rep.data}' download='' title="Tải xuống"  mce_href="#">${rep.data}</a>`;
                             $('#dataexport-show').html(h);
                         }
                     },
@@ -656,11 +656,11 @@
 
             $('#dataimport-click').on('click', function() {
             	$(this).attr('disabled', true);
-				$('#dataimport-show').html('<strong style="color: red;">正在导入中，请稍后...</strong>');
+				$('#dataimport-show').html('<strong style="color: red;">Đang nhập dữ liệu, vui lòng chờ...</strong>');
 
 				let importFile = document.getElementById('dataimport-file').files[0];
 				if (!importFile) {
-					alert('请选择数据文件，再进行导入');
+					alert('Vui lòng chọn file dữ liệu trước khi nhập');
 					return;
 				}
 				let form = new FormData();
@@ -678,7 +678,7 @@
                         if (rep.ret === false) {
                         	alert(rep.msg)
                         } else {
-                        	alert('导入成功')
+							alert('Nhập dữ liệu thành công')
                         }
                     },
                     complete: function() {
@@ -695,13 +695,13 @@
 				let serviceKey = $('select[data-type="' + serviceType + '"]').val();
 				let serviceName = btn.closest('tr').find('td:first').text();
 				
-				if (!confirm('确定要手动触发 ' + serviceName + ' (' + serviceKey + ') 吗？')) {
+				if (!confirm('Bạn có chắc muốn kích hoạt thủ công ' + serviceName + ' (' + serviceKey + ') không?')) {
 					return;
 				}
 				
 				btn.attr('disabled', true);
 				$('#crossservice-ret').removeClass('hidden');
-				$('#crossservice-ret').text('正在触发 ' + serviceKey + '，请稍候...');
+				$('#crossservice-ret').text('Đang kích hoạt ' + serviceKey + ', vui lòng chờ...');
 
 				$.ajax({
 					url: '/cross/service/start',
@@ -711,16 +711,16 @@
 					data: JSON.stringify({serviceKey: serviceKey}),
 					success: function(rep) {
 						if (rep.result) {
-							$('#crossservice-ret').text('触发成功: ' + rep.message);
-							alert(serviceKey + ' 触发成功！');
+							$('#crossservice-ret').text('Kích hoạt thành công: ' + rep.message);
+							alert(serviceKey + ' kích hoạt thành công!');
 						} else {
-							$('#crossservice-ret').text('触发失败: ' + rep.message);
-							alert(serviceKey + ' 触发失败: ' + rep.message);
+							$('#crossservice-ret').text('Kích hoạt thất bại: ' + rep.message);
+							alert(serviceKey + ' kích hoạt thất bại: ' + rep.message);
 						}
 					},
 					error: function(xhr, status, error) {
-						$('#crossservice-ret').text('请求失败: ' + error);
-						alert('请求失败: ' + error);
+						$('#crossservice-ret').text('Yêu cầu thất bại: ' + error);
+						alert('Yêu cầu thất bại: ' + error);
 					},
 					complete: function() {
 						btn.attr('disabled', false);

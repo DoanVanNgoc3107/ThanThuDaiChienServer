@@ -1,0 +1,1189 @@
+[gm.cn.1 I 260403 07:14:05  server:130] Added service to container: accountdb.cn.1 (type: Client)
+[gm.cn.1 I 260403 07:14:05  server:130] Added service to container: giftdb.cn.1 (type: Client)
+[gm.cn.1 I 260403 07:14:05  server:130] Added service to container: card_comment.cn.1 (type: Client)
+[gm.cn.1 I 260403 07:14:05  server:130] Added service to container: crossarena.cn.1 (type: Client)
+[gm.cn.1 I 260403 07:14:05  server:130] Added service to container: crossarena.cn.2 (type: Client)
+[gm.cn.1 I 260403 07:14:05  server:130] Added service to container: crossarena.cn.3 (type: Client)
+[gm.cn.1 I 260403 07:14:05  server:130] Added service to container: crossarena.cn.4 (type: Client)
+[gm.cn.1 I 260403 07:14:05  server:130] Added service to container: crossarena.cn.5 (type: Client)
+[gm.cn.1 I 260403 07:14:05  server:130] Added service to container: crossarena.cn.6 (type: Client)
+[gm.cn.1 I 260403 07:14:05  server:130] Added service to container: crossarena.cn.7 (type: Client)
+[gm.cn.1 I 260403 07:14:05  server:130] Added service to container: crossarena.cn.8 (type: Client)
+[gm.cn.1 I 260403 07:14:05  server:130] Added service to container: crossarena.cn.9 (type: Client)
+[gm.cn.1 I 260403 07:14:05  server:130] Added service to container: crossarena.cn.10 (type: Client)
+[gm.cn.1 I 260403 07:14:05  server:130] Added service to container: crosscraft.cn.1 (type: Client)
+[gm.cn.1 I 260403 07:14:05  server:130] Added service to container: crosscraft.cn.2 (type: Client)
+[gm.cn.1 I 260403 07:14:05  server:130] Added service to container: crosscraft.cn.3 (type: Client)
+[gm.cn.1 I 260403 07:14:05  server:130] Added service to container: crosscraft.cn.4 (type: Client)
+[gm.cn.1 I 260403 07:14:05  server:130] Added service to container: crosscraft.cn.5 (type: Client)
+[gm.cn.1 I 260403 07:14:05  server:130] Added service to container: crosscraft.cn.6 (type: Client)
+[gm.cn.1 I 260403 07:14:05  server:130] Added service to container: crosscraft.cn.7 (type: Client)
+[gm.cn.1 I 260403 07:14:05  server:130] Added service to container: crosscraft.cn.8 (type: Client)
+[gm.cn.1 I 260403 07:14:05  server:130] Added service to container: crosscraft.cn.9 (type: Client)
+[gm.cn.1 I 260403 07:14:05  server:130] Added service to container: crosscraft.cn.10 (type: Client)
+[gm.cn.1 I 260403 07:14:05  server:130] Added service to container: crossgym.cn.1 (type: Client)
+[gm.cn.1 I 260403 07:14:05  server:130] Added service to container: crossgym.cn.2 (type: Client)
+[gm.cn.1 I 260403 07:14:05  server:130] Added service to container: crossgym.cn.3 (type: Client)
+[gm.cn.1 I 260403 07:14:05  server:130] Added service to container: crossgym.cn.4 (type: Client)
+[gm.cn.1 I 260403 07:14:05  server:130] Added service to container: crossgym.cn.5 (type: Client)
+[gm.cn.1 I 260403 07:14:05  server:130] Added service to container: crossgym.cn.6 (type: Client)
+[gm.cn.1 I 260403 07:14:05  server:130] Added service to container: crossgym.cn.7 (type: Client)
+[gm.cn.1 I 260403 07:14:05  server:130] Added service to container: crossgym.cn.8 (type: Client)
+[gm.cn.1 I 260403 07:14:05  server:130] Added service to container: crossgym.cn.9 (type: Client)
+[gm.cn.1 I 260403 07:14:05  server:130] Added service to container: crossgym.cn.10 (type: Client)
+[gm.cn.1 I 260403 07:14:05  server:130] Added service to container: crossmine.cn.1 (type: Client)
+[gm.cn.1 I 260403 07:14:05  server:130] Added service to container: crossmine.cn.2 (type: Client)
+[gm.cn.1 I 260403 07:14:05  server:130] Added service to container: crossmine.cn.3 (type: Client)
+[gm.cn.1 I 260403 07:14:05  server:130] Added service to container: crossmine.cn.4 (type: Client)
+[gm.cn.1 I 260403 07:14:05  server:130] Added service to container: crossmine.cn.5 (type: Client)
+[gm.cn.1 I 260403 07:14:05  server:130] Added service to container: crossmine.cn.6 (type: Client)
+[gm.cn.1 I 260403 07:14:05  server:130] Added service to container: crossmine.cn.7 (type: Client)
+[gm.cn.1 I 260403 07:14:05  server:130] Added service to container: crossmine.cn.8 (type: Client)
+[gm.cn.1 I 260403 07:14:05  server:130] Added service to container: crossmine.cn.9 (type: Client)
+[gm.cn.1 I 260403 07:14:05  server:130] Added service to container: crossmine.cn.10 (type: Client)
+[gm.cn.1 I 260403 07:14:05  server:130] Added service to container: onlinefight.cn.1 (type: Client)
+[gm.cn.1 I 260403 07:14:05  server:130] Added service to container: onlinefight.cn.2 (type: Client)
+[gm.cn.1 I 260403 07:14:05  server:130] Added service to container: onlinefight.cn.3 (type: Client)
+[gm.cn.1 I 260403 07:14:05  server:130] Added service to container: onlinefight.cn.4 (type: Client)
+[gm.cn.1 I 260403 07:14:05  server:130] Added service to container: onlinefight.cn.5 (type: Client)
+[gm.cn.1 I 260403 07:14:05  server:130] Added service to container: onlinefight.cn.6 (type: Client)
+[gm.cn.1 I 260403 07:14:05  server:130] Added service to container: onlinefight.cn.7 (type: Client)
+[gm.cn.1 I 260403 07:14:05  server:130] Added service to container: onlinefight.cn.8 (type: Client)
+[gm.cn.1 I 260403 07:14:05  server:130] Added service to container: onlinefight.cn.9 (type: Client)
+[gm.cn.1 I 260403 07:14:05  server:130] Added service to container: onlinefight.cn.10 (type: Client)
+[gm.cn.1 I 260403 07:14:05  server:130] Added service to container: crossunionfight.cn.1 (type: Client)
+[gm.cn.1 I 260403 07:14:05  server:130] Added service to container: crossunionfight.cn.2 (type: Client)
+[gm.cn.1 I 260403 07:14:05  server:130] Added service to container: crossunionfight.cn.3 (type: Client)
+[gm.cn.1 I 260403 07:14:05  server:130] Added service to container: crossunionfight.cn.4 (type: Client)
+[gm.cn.1 I 260403 07:14:05  server:130] Added service to container: crossunionfight.cn.5 (type: Client)
+[gm.cn.1 I 260403 07:14:05  server:130] Added service to container: crossunionfight.cn.6 (type: Client)
+[gm.cn.1 I 260403 07:14:05  server:130] Added service to container: crossunionfight.cn.7 (type: Client)
+[gm.cn.1 I 260403 07:14:05  server:130] Added service to container: crossunionfight.cn.8 (type: Client)
+[gm.cn.1 I 260403 07:14:05  server:130] Added service to container: crossunionfight.cn.9 (type: Client)
+[gm.cn.1 I 260403 07:14:05  server:130] Added service to container: crossunionfight.cn.10 (type: Client)
+[gm.cn.1 I 260403 07:14:05  server:130] Added service to container: crossmatch.cn.1 (type: Client)
+[gm.cn.1 I 260403 07:14:05  server:130] Added service to container: crosschat.cn.1 (type: Client)
+[gm.cn.1 I 260403 07:14:05  server:130] Added service to container: crosschat.cn.2 (type: Client)
+[gm.cn.1 I 260403 07:14:05  server:130] Added service to container: crosschat.cn.3 (type: Client)
+[gm.cn.1 I 260403 07:14:05  server:130] Added service to container: crosschat.cn.4 (type: Client)
+[gm.cn.1 I 260403 07:14:05  server:130] Added service to container: crosschat.cn.5 (type: Client)
+[gm.cn.1 I 260403 07:14:05  server:130] Added service to container: crosschat.cn.6 (type: Client)
+[gm.cn.1 I 260403 07:14:05  server:130] Added service to container: crosschat.cn.7 (type: Client)
+[gm.cn.1 I 260403 07:14:05  server:130] Added service to container: crosschat.cn.8 (type: Client)
+[gm.cn.1 I 260403 07:14:05  server:130] Added service to container: crosschat.cn.9 (type: Client)
+[gm.cn.1 I 260403 07:14:05  server:130] Added service to container: crosschat.cn.10 (type: Client)
+[gm.cn.1 I 260403 07:14:05  server:130] Added service to container: gamemerge.cn.1 (type: GameRPClient)
+[gm.cn.1 I 260403 07:14:05  server:130] Added service to container: game.cn.1 (type: GameRPClient)
+[gm.cn.1 I 260403 07:14:05  server:130] Added service to container: game.cn.2 (type: GameRPClient)
+[gm.cn.1 I 260403 07:14:05  writer:110] starting writer...
+[gm.cn.1 I 260403 07:14:05  writer:189] [127.0.0.1:4150] connecting to nsqd
+[gm.cn.1 I 260403 07:14:05  reader:235] [RESP-c_gm.cn.1:0global_1rpc] starting reader for RESP-c_gm.cn.1/0global_1rpc...
+[gm.cn.1 I 260403 07:14:05  reader:490] [127.0.0.1:4150:RESP-c_gm.cn.1:0global_1rpc] connecting to nsqd
+[gm.cn.1 I 260403 07:14:05  writer:110] starting writer...
+[gm.cn.1 I 260403 07:14:05  writer:189] [127.0.0.1:4150] connecting to nsqd
+[gm.cn.1 W 260403 07:14:05  reader:508] [127.0.0.1:4150:RESP-c_gm.cn.1:0global_1rpc] max RDY count 2500 < reader max in flight 10000, truncation possible
+[gm.cn.1 I 260403 07:14:06  server:155] Cross service pattern ^crossarena found 10 services: ['crossarena.cn.10', 'crossarena.cn.9', 'crossarena.cn.8', 'crossarena.cn.3', 'crossarena.cn.2', 'crossarena.cn.1', 'crossarena.cn.7', 'crossarena.cn.6', 'crossarena.cn.5', 'crossarena.cn.4']
+[gm.cn.1 I 260403 07:14:06  server:155] Cross service pattern ^crosscraft found 10 services: ['crosscraft.cn.8', 'crosscraft.cn.9', 'crosscraft.cn.2', 'crosscraft.cn.3', 'crosscraft.cn.1', 'crosscraft.cn.6', 'crosscraft.cn.7', 'crosscraft.cn.4', 'crosscraft.cn.5', 'crosscraft.cn.10']
+[gm.cn.1 I 260403 07:14:06  server:155] Cross service pattern ^crossgym found 10 services: ['crossgym.cn.4', 'crossgym.cn.10', 'crossgym.cn.5', 'crossgym.cn.7', 'crossgym.cn.6', 'crossgym.cn.1', 'crossgym.cn.3', 'crossgym.cn.2', 'crossgym.cn.9', 'crossgym.cn.8']
+[gm.cn.1 I 260403 07:14:06  server:155] Cross service pattern ^crossmine found 10 services: ['crossmine.cn.8', 'crossmine.cn.4', 'crossmine.cn.10', 'crossmine.cn.9', 'crossmine.cn.5', 'crossmine.cn.6', 'crossmine.cn.7', 'crossmine.cn.2', 'crossmine.cn.3', 'crossmine.cn.1']
+[gm.cn.1 I 260403 07:14:06  server:155] Cross service pattern ^onlinefight found 10 services: ['onlinefight.cn.8', 'onlinefight.cn.9', 'onlinefight.cn.1', 'onlinefight.cn.2', 'onlinefight.cn.4', 'onlinefight.cn.5', 'onlinefight.cn.6', 'onlinefight.cn.3', 'onlinefight.cn.7', 'onlinefight.cn.10']
+[gm.cn.1 I 260403 07:14:06  server:155] Cross service pattern ^crossunionfight found 10 services: ['crossunionfight.cn.3', 'crossunionfight.cn.4', 'crossunionfight.cn.5', 'crossunionfight.cn.7', 'crossunionfight.cn.8', 'crossunionfight.cn.9', 'crossunionfight.cn.2', 'crossunionfight.cn.10', 'crossunionfight.cn.6', 'crossunionfight.cn.1']
+[gm.cn.1 I 260403 07:14:06  server:155] Cross service pattern ^crosschat found 10 services: ['crosschat.cn.10', 'crosschat.cn.8', 'crosschat.cn.5', 'crosschat.cn.2', 'crosschat.cn.9', 'crosschat.cn.7', 'crosschat.cn.6', 'crosschat.cn.4', 'crosschat.cn.3', 'crosschat.cn.1']
+[gm.cn.1 I 260403 07:14:06  server:155] Cross service pattern ^crossmatch found 1 services: ['crossmatch.cn.1']
+[gm.cn.1 I 260403 07:14:06  server:158] Total cross services: ['crossunionfight.cn.3', 'crosschat.cn.5', 'crossunionfight.cn.4', 'crossunionfight.cn.5', 'onlinefight.cn.8', 'onlinefight.cn.9', 'crossunionfight.cn.7', 'crossmine.cn.8', 'onlinefight.cn.1', 'crossmine.cn.10', 'onlinefight.cn.2', 'crossmine.cn.9', 'onlinefight.cn.4', 'onlinefight.cn.5', 'onlinefight.cn.6', 'onlinefight.cn.7', 'crossunionfight.cn.8', 'crossunionfight.cn.9', 'crosscraft.cn.8', 'crosscraft.cn.9', 'crossgym.cn.10', 'crosschat.cn.10', 'crosscraft.cn.2', 'crosscraft.cn.3', 'crossunionfight.cn.2', 'crosscraft.cn.1', 'crosscraft.cn.6', 'crosscraft.cn.7', 'crosscraft.cn.4', 'crosscraft.cn.5', 'onlinefight.cn.3', 'crossgym.cn.5', 'crossgym.cn.4', 'crossgym.cn.7', 'crossgym.cn.6', 'crossgym.cn.1', 'crossgym.cn.3', 'crossgym.cn.2', 'crossgym.cn.9', 'crosschat.cn.8', 'crosscraft.cn.10', 'crossgym.cn.8', 'crossarena.cn.10', 'crossmatch.cn.1', 'crossunionfight.cn.10', 'crossmine.cn.5', 'onlinefight.cn.10', 'crossmine.cn.6', 'crossmine.cn.7', 'crossarena.cn.9', 'crossarena.cn.8', 'crossmine.cn.2', 'crossmine.cn.3', 'crossmine.cn.1', 'crossarena.cn.3', 'crossarena.cn.2', 'crossarena.cn.1', 'crossarena.cn.7', 'crossarena.cn.6', 'crossarena.cn.5', 'crossarena.cn.4', 'crossunionfight.cn.6', 'crosschat.cn.9', 'crossunionfight.cn.1', 'crosschat.cn.7', 'crosschat.cn.6', 'crossmine.cn.4', 'crosschat.cn.4', 'crosschat.cn.3', 'crosschat.cn.2', 'crosschat.cn.1']
+It is release mode!
+Server UTC 8:00:00 Local UTC 00:00:00 Delta 0:00:00
+[gm.cn.1] GM Server listen at 0.0.0.0:38088 running ...
+[gm.cn.1 I 260403 07:14:06  server:225] [gm.cn.1] GM Server Start OK
+[gm.cn.1 I 260403 07:14:06  reader:235] [chatMessage:gm.cn.1] starting reader for chatMessage/gm.cn.1...
+[gm.cn.1 I 260403 07:14:06  reader:490] [127.0.0.1:4150:chatMessage:gm.cn.1] connecting to nsqd
+[gm.cn.1 I 260403 07:14:06 DBStreamProcess-1 __init__:45] DBStreamProcess-1 160 7ffff79a69d0 Start
+[gm.cn.1 W 260403 07:14:06  reader:508] [127.0.0.1:4150:chatMessage:gm.cn.1] max RDY count 2500 < reader max in flight 10000, truncation possible
+[gm.cn.1 I 260403 07:14:06 DBStreamProcess-1 stream:62] current cursor {'cur_account_time': 1775194263.0, 'cur_order_amount': 0.0, 'cur_login_time': 1775200232.0, 'cur_order_time': 0.0}
+[gm.cn.1 I 260403 07:14:15  gamerpc_client:50] game.cn.1 hello ack
+[gm.cn.1 I 260403 07:14:16  gamerpc_client:50] game.cn.2 hello ack
+[gm.cn.1 I 260403 07:14:50  web:1828] 302 GET / (192.168.97.1) 6.28ms 
+[gm.cn.1 I 260403 07:14:50  web:1828] 200 GET /login (192.168.97.1) 53.58ms 
+[gm.cn.1 I 260403 07:14:52  web:1828] 302 POST /login (192.168.97.1) 5.40ms 
+[gm.cn.1 I 260403 07:14:53  web:1828] 200 GET / (192.168.97.1) 65.75ms 
+[gm.cn.1 I 260403 07:14:53  web:1828] 200 GET /statics/node_modules/bootstrap-table/dist/locale/bootstrap-table-zh-CN.min.js?v=7bcf9c9dec4ce89c9162d669c0a736c2 (192.168.97.1) 2.20ms 
+[gm.cn.1 I 260403 07:14:55  web:1828] 302 GET /lanauge_set?lang=vn (192.168.97.1) 2.43ms 
+[gm.cn.1 I 260403 07:14:55  web:1828] 200 GET / (192.168.97.1) 20.18ms 
+[gm.cn.1 I 260403 07:14:55  web:1828] 200 GET /statics/node_modules/bootstrap-table/dist/locale/bootstrap-table-vi-VN.min.js?v=ca4c3ab74f29bd9bcf437220620ffaad (192.168.97.1) 1.58ms 
+[gm.cn.1 I 260403 07:14:59  web:1828] 200 GET /operate_activity (192.168.97.1) 41.15ms 
+[gm.cn.1 I 260403 07:14:59  web:1828] 200 GET /statics/node_modules/x-editable/dist/bootstrap3-editable/css/bootstrap-editable.css?v=ee9499b32ece32762c7aa051065822f7 (192.168.97.1) 1.58ms 
+[gm.cn.1 I 260403 07:14:59  web:1828] 200 GET /statics/node_modules/bootstrap-table/dist/extensions/editable/bootstrap-table-editable.min.js?v=e19999a774acbf74a555d57ddce97020 (192.168.97.1) 1.83ms 
+[gm.cn.1 I 260403 07:14:59  web:1828] 200 GET /statics/node_modules/x-editable/dist/bootstrap3-editable/js/bootstrap-editable.min.js?v=7b5029b45a6e19df2445dba4ad0a8a36 (192.168.97.1) 6.08ms 
+[gm.cn.1 I 260403 07:15:02  web:1828] 200 GET /refreshcsv (192.168.97.1) 58.24ms 
+[gm.cn.1 I 260403 07:15:10  web:1828] 200 GET /server_area_page (192.168.97.1) 50.63ms 
+[gm.cn.1 I 260403 07:15:14  web:1828] 200 GET /transfer (192.168.97.1) 57.20ms 
+[gm.cn.1 I 260403 07:15:15  web:1828] 200 GET /server_merge_page (192.168.97.1) 77.68ms 
+[gm.cn.1 I 260403 07:15:15  web:1828] 200 GET /server_merge/config (192.168.97.1) 2.27ms 
+[gm.cn.1 I 260403 07:15:17  web:1828] 200 GET /role_activity (192.168.97.1) 58.99ms 
+[gm.cn.1 I 260403 07:15:20  web:1828] 200 GET /online_role?servName=game.cn.1 (192.168.97.1) 2.57ms 
+[gm.cn.1 I 260403 07:15:20  __init__:76] `admin` gmGetGameOnlineRoles (u'game.cn.1', 0, 10)
+[gm.cn.1 I 260403 07:15:20  web:1828] 200 GET /online_role?servName=game.cn.1&limit=10&offset=0 (192.168.97.1) 9.62ms 
+[gm.cn.1 I 260403 07:15:22  __init__:76] `admin` gmGetRoleInfo (u'game.cn.1', 'i\xcfW\xbc6\x90\x8d\x00\x1b\x1e\xe3\x19')
+[gm.cn.1 I 260403 07:15:22  web:1828] 200 GET /role_detail?servName=game.cn.1&roleSearch=69cf57bc36908d001b1ee319 (192.168.97.1) 21.36ms 
+[gm.cn.1 I 260403 07:15:31  web:1828] 200 GET /kick_player_page (192.168.97.1) 61.85ms 
+[gm.cn.1 I 260403 07:15:39  __init__:92] `admin` gmKickPlayer (u'game.cn.1', 1)
+[gm.cn.1 I 260403 07:15:39  web:1828] 200 GET /kick_player?servName=game.cn.1&roleID=1 (192.168.97.1) 33.09ms 
+[gm.cn.1 I 260403 07:15:46  web:1828] 200 GET /memory_viewer_page (192.168.97.1) 54.86ms 
+[gm.cn.1 I 260403 07:15:49  __init__:76] `admin` gmGetPlayerMemoryData (u'game.cn.1', 1, None)
+[gm.cn.1 I 260403 07:15:49  web:1828] 200 GET /memory_data?servName=game.cn.1&roleID=1&_t=1775200549457&_=1775200546404 (192.168.97.1) 7.22ms 
+[gm.cn.1 I 260403 07:15:49  __init__:76] `admin` gmGetPlayerDBData (u'game.cn.1', 1, None)
+[gm.cn.1 I 260403 07:15:51  web:1828] 200 GET /db_data?servName=game.cn.1&roleID=1&_t=1775200549474&_=1775200546405 (192.168.97.1) 2416.13ms 
+[gm.cn.1 I 260403 07:15:53  __init__:76] `admin` gmGetPlayerMemoryData (u'game.cn.1', 1, [u'daily_record'])
+[gm.cn.1 I 260403 07:15:53  web:1828] 200 GET /memory_data?servName=game.cn.1&roleID=1&modules=daily_record&_t=1775200553460&_=1775200546406 (192.168.97.1) 7.74ms 
+[gm.cn.1 I 260403 07:15:54  __init__:76] `admin` gmGetPlayerMemoryData (u'game.cn.1', 1, [u'embattle'])
+[gm.cn.1 I 260403 07:15:54  web:1828] 200 GET /memory_data?servName=game.cn.1&roleID=1&modules=embattle&_t=1775200554644&_=1775200546407 (192.168.97.1) 9.68ms 
+[gm.cn.1 I 260403 07:16:02  web:1828] 200 GET /anomaly_detection_page (192.168.97.1) 57.96ms 
+[gm.cn.1 I 260403 07:16:04  web:1828] 200 GET /account_migrate (192.168.97.1) 30.54ms 
+[gm.cn.1 I 260403 07:16:06  web:1828] 200 GET /chat_monitor (192.168.97.1) 36.52ms 
+[gm.cn.1 I 260403 07:16:07  web:1828] 200 GET /gift_packs (192.168.97.1) 35.47ms 
+[gm.cn.1 I 260403 07:16:07  web:1828] 200 GET /statics/js/FileSaver.min.js?v=988ed42168dce8f3315a1c46f188ef4c (192.168.97.1) 1.30ms 
+[gm.cn.1 I 260403 07:16:07  __init__:76] `admin` gmGetGiftCsv ()
+[gm.cn.1 I 260403 07:16:07  csv:105] CSV reload before, 375200444 140737150911664 140737150911664
+[gm.cn.1 I 260403 07:16:09  csv:113] CSV reload after, 375200569 140737175656440 140737175656440
+[gm.cn.1 I 260403 07:16:09  web:1828] 200 GET /gift_packs?page=1 (192.168.97.1) 1478.97ms 
+[gm.cn.1 I 260403 07:16:09  web:1828] 304 GET /operate_activity (192.168.97.1) 40.10ms 
+[gm.cn.1 I 260403 07:16:12  __init__:76] `admin` gmGetGameYYComfig (u'game.cn.1',)
+[gm.cn.1 I 260403 07:16:13  web:1828] 200 POST /operate_activity (192.168.97.1) 494.82ms 
+[gm.cn.1 I 260403 07:16:28  web:1828] 200 GET /statics/node_modules/x-editable/dist/bootstrap3-editable/img/loading.gif (192.168.97.1) 4.32ms 
+[gm.cn.1 I 260403 07:16:28  web:1828] 200 GET /statics/node_modules/x-editable/dist/bootstrap3-editable/img/clear.png (192.168.97.1) 3.34ms 
+[gm.cn.1 I 260403 07:16:45  __init__:92] `admin` gmSetGameYYComfig ({'yyhuodong': {1: {u'rDesc': u'hello'}}}, u'game.cn.1')
+[gm.cn.1 I 260403 07:16:45  web:1828] 200 POST /operation_config/yyhuodong (192.168.97.1) 162.21ms 
+[gm.cn.1 W 260403 07:24:05  gamerpc_client:45] gamemerge.cn.1 lost
+[gm.cn.1 W 260403 07:34:05  gamerpc_client:45] gamemerge.cn.1 lost
+[gm.cn.1 I 260403 07:35:45  server:232] [gm.cn.1] GM Server onShutdown ...
+[gm.cn.1 I 260403 07:35:46 DBStreamProcess-1 stream:259] DBStreamProcess-1 160 7ffff79a69d0 End
+[gm.cn.1 I 260403 07:35:46  server:264] [gm.cn.1] GM Server onApplicationExit
+[gm.cn.1 I 260403 07:35:46  server:212] [gm.cn.1] GM Server Shutdown OK
+[gm.cn.1 I 260403 07:35:50  server:130] Added service to container: accountdb.cn.1 (type: Client)
+[gm.cn.1 I 260403 07:35:50  server:130] Added service to container: giftdb.cn.1 (type: Client)
+[gm.cn.1 I 260403 07:35:50  server:130] Added service to container: card_comment.cn.1 (type: Client)
+[gm.cn.1 I 260403 07:35:50  server:130] Added service to container: crossarena.cn.1 (type: Client)
+[gm.cn.1 I 260403 07:35:50  server:130] Added service to container: crossarena.cn.2 (type: Client)
+[gm.cn.1 I 260403 07:35:50  server:130] Added service to container: crossarena.cn.3 (type: Client)
+[gm.cn.1 I 260403 07:35:50  server:130] Added service to container: crossarena.cn.4 (type: Client)
+[gm.cn.1 I 260403 07:35:50  server:130] Added service to container: crossarena.cn.5 (type: Client)
+[gm.cn.1 I 260403 07:35:50  server:130] Added service to container: crossarena.cn.6 (type: Client)
+[gm.cn.1 I 260403 07:35:50  server:130] Added service to container: crossarena.cn.7 (type: Client)
+[gm.cn.1 I 260403 07:35:50  server:130] Added service to container: crossarena.cn.8 (type: Client)
+[gm.cn.1 I 260403 07:35:50  server:130] Added service to container: crossarena.cn.9 (type: Client)
+[gm.cn.1 I 260403 07:35:50  server:130] Added service to container: crossarena.cn.10 (type: Client)
+[gm.cn.1 I 260403 07:35:50  server:130] Added service to container: crosscraft.cn.1 (type: Client)
+[gm.cn.1 I 260403 07:35:50  server:130] Added service to container: crosscraft.cn.2 (type: Client)
+[gm.cn.1 I 260403 07:35:50  server:130] Added service to container: crosscraft.cn.3 (type: Client)
+[gm.cn.1 I 260403 07:35:50  server:130] Added service to container: crosscraft.cn.4 (type: Client)
+[gm.cn.1 I 260403 07:35:50  server:130] Added service to container: crosscraft.cn.5 (type: Client)
+[gm.cn.1 I 260403 07:35:50  server:130] Added service to container: crosscraft.cn.6 (type: Client)
+[gm.cn.1 I 260403 07:35:50  server:130] Added service to container: crosscraft.cn.7 (type: Client)
+[gm.cn.1 I 260403 07:35:50  server:130] Added service to container: crosscraft.cn.8 (type: Client)
+[gm.cn.1 I 260403 07:35:50  server:130] Added service to container: crosscraft.cn.9 (type: Client)
+[gm.cn.1 I 260403 07:35:50  server:130] Added service to container: crosscraft.cn.10 (type: Client)
+[gm.cn.1 I 260403 07:35:50  server:130] Added service to container: crossgym.cn.1 (type: Client)
+[gm.cn.1 I 260403 07:35:50  server:130] Added service to container: crossgym.cn.2 (type: Client)
+[gm.cn.1 I 260403 07:35:50  server:130] Added service to container: crossgym.cn.3 (type: Client)
+[gm.cn.1 I 260403 07:35:50  server:130] Added service to container: crossgym.cn.4 (type: Client)
+[gm.cn.1 I 260403 07:35:50  server:130] Added service to container: crossgym.cn.5 (type: Client)
+[gm.cn.1 I 260403 07:35:50  server:130] Added service to container: crossgym.cn.6 (type: Client)
+[gm.cn.1 I 260403 07:35:50  server:130] Added service to container: crossgym.cn.7 (type: Client)
+[gm.cn.1 I 260403 07:35:50  server:130] Added service to container: crossgym.cn.8 (type: Client)
+[gm.cn.1 I 260403 07:35:50  server:130] Added service to container: crossgym.cn.9 (type: Client)
+[gm.cn.1 I 260403 07:35:50  server:130] Added service to container: crossgym.cn.10 (type: Client)
+[gm.cn.1 I 260403 07:35:50  server:130] Added service to container: crossmine.cn.1 (type: Client)
+[gm.cn.1 I 260403 07:35:50  server:130] Added service to container: crossmine.cn.2 (type: Client)
+[gm.cn.1 I 260403 07:35:50  server:130] Added service to container: crossmine.cn.3 (type: Client)
+[gm.cn.1 I 260403 07:35:50  server:130] Added service to container: crossmine.cn.4 (type: Client)
+[gm.cn.1 I 260403 07:35:50  server:130] Added service to container: crossmine.cn.5 (type: Client)
+[gm.cn.1 I 260403 07:35:50  server:130] Added service to container: crossmine.cn.6 (type: Client)
+[gm.cn.1 I 260403 07:35:50  server:130] Added service to container: crossmine.cn.7 (type: Client)
+[gm.cn.1 I 260403 07:35:50  server:130] Added service to container: crossmine.cn.8 (type: Client)
+[gm.cn.1 I 260403 07:35:50  server:130] Added service to container: crossmine.cn.9 (type: Client)
+[gm.cn.1 I 260403 07:35:50  server:130] Added service to container: crossmine.cn.10 (type: Client)
+[gm.cn.1 I 260403 07:35:50  server:130] Added service to container: onlinefight.cn.1 (type: Client)
+[gm.cn.1 I 260403 07:35:50  server:130] Added service to container: onlinefight.cn.2 (type: Client)
+[gm.cn.1 I 260403 07:35:50  server:130] Added service to container: onlinefight.cn.3 (type: Client)
+[gm.cn.1 I 260403 07:35:50  server:130] Added service to container: onlinefight.cn.4 (type: Client)
+[gm.cn.1 I 260403 07:35:50  server:130] Added service to container: onlinefight.cn.5 (type: Client)
+[gm.cn.1 I 260403 07:35:50  server:130] Added service to container: onlinefight.cn.6 (type: Client)
+[gm.cn.1 I 260403 07:35:50  server:130] Added service to container: onlinefight.cn.7 (type: Client)
+[gm.cn.1 I 260403 07:35:50  server:130] Added service to container: onlinefight.cn.8 (type: Client)
+[gm.cn.1 I 260403 07:35:50  server:130] Added service to container: onlinefight.cn.9 (type: Client)
+[gm.cn.1 I 260403 07:35:50  server:130] Added service to container: onlinefight.cn.10 (type: Client)
+[gm.cn.1 I 260403 07:35:50  server:130] Added service to container: crossunionfight.cn.1 (type: Client)
+[gm.cn.1 I 260403 07:35:50  server:130] Added service to container: crossunionfight.cn.2 (type: Client)
+[gm.cn.1 I 260403 07:35:50  server:130] Added service to container: crossunionfight.cn.3 (type: Client)
+[gm.cn.1 I 260403 07:35:50  server:130] Added service to container: crossunionfight.cn.4 (type: Client)
+[gm.cn.1 I 260403 07:35:50  server:130] Added service to container: crossunionfight.cn.5 (type: Client)
+[gm.cn.1 I 260403 07:35:50  server:130] Added service to container: crossunionfight.cn.6 (type: Client)
+[gm.cn.1 I 260403 07:35:50  server:130] Added service to container: crossunionfight.cn.7 (type: Client)
+[gm.cn.1 I 260403 07:35:50  server:130] Added service to container: crossunionfight.cn.8 (type: Client)
+[gm.cn.1 I 260403 07:35:50  server:130] Added service to container: crossunionfight.cn.9 (type: Client)
+[gm.cn.1 I 260403 07:35:50  server:130] Added service to container: crossunionfight.cn.10 (type: Client)
+[gm.cn.1 I 260403 07:35:50  server:130] Added service to container: crossmatch.cn.1 (type: Client)
+[gm.cn.1 I 260403 07:35:50  server:130] Added service to container: crosschat.cn.1 (type: Client)
+[gm.cn.1 I 260403 07:35:50  server:130] Added service to container: crosschat.cn.2 (type: Client)
+[gm.cn.1 I 260403 07:35:50  server:130] Added service to container: crosschat.cn.3 (type: Client)
+[gm.cn.1 I 260403 07:35:50  server:130] Added service to container: crosschat.cn.4 (type: Client)
+[gm.cn.1 I 260403 07:35:50  server:130] Added service to container: crosschat.cn.5 (type: Client)
+[gm.cn.1 I 260403 07:35:50  server:130] Added service to container: crosschat.cn.6 (type: Client)
+[gm.cn.1 I 260403 07:35:50  server:130] Added service to container: crosschat.cn.7 (type: Client)
+[gm.cn.1 I 260403 07:35:50  server:130] Added service to container: crosschat.cn.8 (type: Client)
+[gm.cn.1 I 260403 07:35:50  server:130] Added service to container: crosschat.cn.9 (type: Client)
+[gm.cn.1 I 260403 07:35:50  server:130] Added service to container: crosschat.cn.10 (type: Client)
+[gm.cn.1 I 260403 07:35:50  server:130] Added service to container: gamemerge.cn.1 (type: GameRPClient)
+[gm.cn.1 I 260403 07:35:50  server:130] Added service to container: game.cn.1 (type: GameRPClient)
+[gm.cn.1 I 260403 07:35:50  server:130] Added service to container: game.cn.2 (type: GameRPClient)
+[gm.cn.1 I 260403 07:35:50  writer:110] starting writer...
+[gm.cn.1 I 260403 07:35:50  writer:189] [127.0.0.1:4150] connecting to nsqd
+[gm.cn.1 I 260403 07:35:50  reader:235] [RESP-c_gm.cn.1:0global_1rpc] starting reader for RESP-c_gm.cn.1/0global_1rpc...
+[gm.cn.1 I 260403 07:35:50  reader:490] [127.0.0.1:4150:RESP-c_gm.cn.1:0global_1rpc] connecting to nsqd
+[gm.cn.1 I 260403 07:35:50  writer:110] starting writer...
+[gm.cn.1 I 260403 07:35:50  writer:189] [127.0.0.1:4150] connecting to nsqd
+[gm.cn.1 W 260403 07:35:50  reader:508] [127.0.0.1:4150:RESP-c_gm.cn.1:0global_1rpc] max RDY count 2500 < reader max in flight 10000, truncation possible
+[gm.cn.1 I 260403 07:35:51  server:155] Cross service pattern ^crossarena found 10 services: ['crossarena.cn.10', 'crossarena.cn.9', 'crossarena.cn.8', 'crossarena.cn.3', 'crossarena.cn.2', 'crossarena.cn.1', 'crossarena.cn.7', 'crossarena.cn.6', 'crossarena.cn.5', 'crossarena.cn.4']
+[gm.cn.1 I 260403 07:35:51  server:155] Cross service pattern ^crosscraft found 10 services: ['crosscraft.cn.8', 'crosscraft.cn.9', 'crosscraft.cn.2', 'crosscraft.cn.3', 'crosscraft.cn.1', 'crosscraft.cn.6', 'crosscraft.cn.7', 'crosscraft.cn.4', 'crosscraft.cn.5', 'crosscraft.cn.10']
+[gm.cn.1 I 260403 07:35:51  server:155] Cross service pattern ^crossgym found 10 services: ['crossgym.cn.4', 'crossgym.cn.10', 'crossgym.cn.5', 'crossgym.cn.7', 'crossgym.cn.6', 'crossgym.cn.1', 'crossgym.cn.3', 'crossgym.cn.2', 'crossgym.cn.9', 'crossgym.cn.8']
+[gm.cn.1 I 260403 07:35:51  server:155] Cross service pattern ^crossmine found 10 services: ['crossmine.cn.8', 'crossmine.cn.4', 'crossmine.cn.10', 'crossmine.cn.9', 'crossmine.cn.5', 'crossmine.cn.6', 'crossmine.cn.7', 'crossmine.cn.2', 'crossmine.cn.3', 'crossmine.cn.1']
+[gm.cn.1 I 260403 07:35:51  server:155] Cross service pattern ^onlinefight found 10 services: ['onlinefight.cn.8', 'onlinefight.cn.9', 'onlinefight.cn.1', 'onlinefight.cn.2', 'onlinefight.cn.4', 'onlinefight.cn.5', 'onlinefight.cn.6', 'onlinefight.cn.3', 'onlinefight.cn.7', 'onlinefight.cn.10']
+[gm.cn.1 I 260403 07:35:51  server:155] Cross service pattern ^crossunionfight found 10 services: ['crossunionfight.cn.3', 'crossunionfight.cn.4', 'crossunionfight.cn.5', 'crossunionfight.cn.7', 'crossunionfight.cn.8', 'crossunionfight.cn.9', 'crossunionfight.cn.2', 'crossunionfight.cn.10', 'crossunionfight.cn.6', 'crossunionfight.cn.1']
+[gm.cn.1 I 260403 07:35:51  server:155] Cross service pattern ^crosschat found 10 services: ['crosschat.cn.10', 'crosschat.cn.8', 'crosschat.cn.5', 'crosschat.cn.2', 'crosschat.cn.9', 'crosschat.cn.7', 'crosschat.cn.6', 'crosschat.cn.4', 'crosschat.cn.3', 'crosschat.cn.1']
+[gm.cn.1 I 260403 07:35:51  server:155] Cross service pattern ^crossmatch found 1 services: ['crossmatch.cn.1']
+[gm.cn.1 I 260403 07:35:51  server:158] Total cross services: ['crossunionfight.cn.3', 'crosschat.cn.5', 'crossunionfight.cn.4', 'crossunionfight.cn.5', 'onlinefight.cn.8', 'onlinefight.cn.9', 'crossunionfight.cn.7', 'crossmine.cn.8', 'onlinefight.cn.1', 'crossmine.cn.10', 'onlinefight.cn.2', 'crossmine.cn.9', 'onlinefight.cn.4', 'onlinefight.cn.5', 'onlinefight.cn.6', 'onlinefight.cn.7', 'crossunionfight.cn.8', 'crossunionfight.cn.9', 'crosscraft.cn.8', 'crosscraft.cn.9', 'crossgym.cn.10', 'crosschat.cn.10', 'crosscraft.cn.2', 'crosscraft.cn.3', 'crossunionfight.cn.2', 'crosscraft.cn.1', 'crosscraft.cn.6', 'crosscraft.cn.7', 'crosscraft.cn.4', 'crosscraft.cn.5', 'onlinefight.cn.3', 'crossgym.cn.5', 'crossgym.cn.4', 'crossgym.cn.7', 'crossgym.cn.6', 'crossgym.cn.1', 'crossgym.cn.3', 'crossgym.cn.2', 'crossgym.cn.9', 'crosschat.cn.8', 'crosscraft.cn.10', 'crossgym.cn.8', 'crossarena.cn.10', 'crossmatch.cn.1', 'crossunionfight.cn.10', 'crossmine.cn.5', 'onlinefight.cn.10', 'crossmine.cn.6', 'crossmine.cn.7', 'crossarena.cn.9', 'crossarena.cn.8', 'crossmine.cn.2', 'crossmine.cn.3', 'crossmine.cn.1', 'crossarena.cn.3', 'crossarena.cn.2', 'crossarena.cn.1', 'crossarena.cn.7', 'crossarena.cn.6', 'crossarena.cn.5', 'crossarena.cn.4', 'crossunionfight.cn.6', 'crosschat.cn.9', 'crossunionfight.cn.1', 'crosschat.cn.7', 'crosschat.cn.6', 'crossmine.cn.4', 'crosschat.cn.4', 'crosschat.cn.3', 'crosschat.cn.2', 'crosschat.cn.1']
+It is release mode!
+Server UTC 8:00:00 Local UTC 00:00:00 Delta 0:00:00
+[gm.cn.1] GM Server listen at 0.0.0.0:38088 running ...
+[gm.cn.1 I 260403 07:35:51  server:225] [gm.cn.1] GM Server Start OK
+[gm.cn.1 I 260403 07:35:51  reader:235] [chatMessage:gm.cn.1] starting reader for chatMessage/gm.cn.1...
+[gm.cn.1 I 260403 07:35:51 DBStreamProcess-1 __init__:45] DBStreamProcess-1 1c0 7ffff79a69d0 Start
+[gm.cn.1 I 260403 07:35:51  reader:490] [127.0.0.1:4150:chatMessage:gm.cn.1] connecting to nsqd
+[gm.cn.1 W 260403 07:35:51  reader:508] [127.0.0.1:4150:chatMessage:gm.cn.1] max RDY count 2500 < reader max in flight 10000, truncation possible
+[gm.cn.1 I 260403 07:35:51 DBStreamProcess-1 stream:62] current cursor {'cur_account_time': 1775194263.0, 'cur_order_amount': 0.0, 'cur_login_time': 1775201323.0, 'cur_order_time': 0.0}
+[gm.cn.1 I 260403 07:35:52  gamerpc_client:50] game.cn.1 hello ack
+[gm.cn.1 I 260403 07:35:52  gamerpc_client:50] game.cn.2 hello ack
+[gm.cn.1 I 260403 07:42:22  server:232] [gm.cn.1] GM Server onShutdown ...
+[gm.cn.1 I 260403 07:42:23 DBStreamProcess-1 stream:259] DBStreamProcess-1 1c0 7ffff79a69d0 End
+[gm.cn.1 I 260403 07:42:23  server:264] [gm.cn.1] GM Server onApplicationExit
+[gm.cn.1 I 260403 07:42:23  server:212] [gm.cn.1] GM Server Shutdown OK
+[gm.cn.1 I 260403 07:42:43  server:130] Added service to container: accountdb.cn.1 (type: Client)
+[gm.cn.1 I 260403 07:42:43  server:130] Added service to container: giftdb.cn.1 (type: Client)
+[gm.cn.1 I 260403 07:42:43  server:130] Added service to container: card_comment.cn.1 (type: Client)
+[gm.cn.1 I 260403 07:42:43  server:130] Added service to container: crossarena.cn.1 (type: Client)
+[gm.cn.1 I 260403 07:42:43  server:130] Added service to container: crossarena.cn.2 (type: Client)
+[gm.cn.1 I 260403 07:42:43  server:130] Added service to container: crossarena.cn.3 (type: Client)
+[gm.cn.1 I 260403 07:42:43  server:130] Added service to container: crossarena.cn.4 (type: Client)
+[gm.cn.1 I 260403 07:42:43  server:130] Added service to container: crossarena.cn.5 (type: Client)
+[gm.cn.1 I 260403 07:42:43  server:130] Added service to container: crossarena.cn.6 (type: Client)
+[gm.cn.1 I 260403 07:42:43  server:130] Added service to container: crossarena.cn.7 (type: Client)
+[gm.cn.1 I 260403 07:42:43  server:130] Added service to container: crossarena.cn.8 (type: Client)
+[gm.cn.1 I 260403 07:42:43  server:130] Added service to container: crossarena.cn.9 (type: Client)
+[gm.cn.1 I 260403 07:42:43  server:130] Added service to container: crossarena.cn.10 (type: Client)
+[gm.cn.1 I 260403 07:42:43  server:130] Added service to container: crosscraft.cn.1 (type: Client)
+[gm.cn.1 I 260403 07:42:43  server:130] Added service to container: crosscraft.cn.2 (type: Client)
+[gm.cn.1 I 260403 07:42:43  server:130] Added service to container: crosscraft.cn.3 (type: Client)
+[gm.cn.1 I 260403 07:42:43  server:130] Added service to container: crosscraft.cn.4 (type: Client)
+[gm.cn.1 I 260403 07:42:43  server:130] Added service to container: crosscraft.cn.5 (type: Client)
+[gm.cn.1 I 260403 07:42:43  server:130] Added service to container: crosscraft.cn.6 (type: Client)
+[gm.cn.1 I 260403 07:42:43  server:130] Added service to container: crosscraft.cn.7 (type: Client)
+[gm.cn.1 I 260403 07:42:43  server:130] Added service to container: crosscraft.cn.8 (type: Client)
+[gm.cn.1 I 260403 07:42:43  server:130] Added service to container: crosscraft.cn.9 (type: Client)
+[gm.cn.1 I 260403 07:42:43  server:130] Added service to container: crosscraft.cn.10 (type: Client)
+[gm.cn.1 I 260403 07:42:43  server:130] Added service to container: crossgym.cn.1 (type: Client)
+[gm.cn.1 I 260403 07:42:43  server:130] Added service to container: crossgym.cn.2 (type: Client)
+[gm.cn.1 I 260403 07:42:43  server:130] Added service to container: crossgym.cn.3 (type: Client)
+[gm.cn.1 I 260403 07:42:43  server:130] Added service to container: crossgym.cn.4 (type: Client)
+[gm.cn.1 I 260403 07:42:43  server:130] Added service to container: crossgym.cn.5 (type: Client)
+[gm.cn.1 I 260403 07:42:43  server:130] Added service to container: crossgym.cn.6 (type: Client)
+[gm.cn.1 I 260403 07:42:43  server:130] Added service to container: crossgym.cn.7 (type: Client)
+[gm.cn.1 I 260403 07:42:43  server:130] Added service to container: crossgym.cn.8 (type: Client)
+[gm.cn.1 I 260403 07:42:43  server:130] Added service to container: crossgym.cn.9 (type: Client)
+[gm.cn.1 I 260403 07:42:43  server:130] Added service to container: crossgym.cn.10 (type: Client)
+[gm.cn.1 I 260403 07:42:43  server:130] Added service to container: crossmine.cn.1 (type: Client)
+[gm.cn.1 I 260403 07:42:43  server:130] Added service to container: crossmine.cn.2 (type: Client)
+[gm.cn.1 I 260403 07:42:43  server:130] Added service to container: crossmine.cn.3 (type: Client)
+[gm.cn.1 I 260403 07:42:43  server:130] Added service to container: crossmine.cn.4 (type: Client)
+[gm.cn.1 I 260403 07:42:43  server:130] Added service to container: crossmine.cn.5 (type: Client)
+[gm.cn.1 I 260403 07:42:43  server:130] Added service to container: crossmine.cn.6 (type: Client)
+[gm.cn.1 I 260403 07:42:43  server:130] Added service to container: crossmine.cn.7 (type: Client)
+[gm.cn.1 I 260403 07:42:43  server:130] Added service to container: crossmine.cn.8 (type: Client)
+[gm.cn.1 I 260403 07:42:43  server:130] Added service to container: crossmine.cn.9 (type: Client)
+[gm.cn.1 I 260403 07:42:43  server:130] Added service to container: crossmine.cn.10 (type: Client)
+[gm.cn.1 I 260403 07:42:43  server:130] Added service to container: onlinefight.cn.1 (type: Client)
+[gm.cn.1 I 260403 07:42:43  server:130] Added service to container: onlinefight.cn.2 (type: Client)
+[gm.cn.1 I 260403 07:42:43  server:130] Added service to container: onlinefight.cn.3 (type: Client)
+[gm.cn.1 I 260403 07:42:43  server:130] Added service to container: onlinefight.cn.4 (type: Client)
+[gm.cn.1 I 260403 07:42:43  server:130] Added service to container: onlinefight.cn.5 (type: Client)
+[gm.cn.1 I 260403 07:42:43  server:130] Added service to container: onlinefight.cn.6 (type: Client)
+[gm.cn.1 I 260403 07:42:43  server:130] Added service to container: onlinefight.cn.7 (type: Client)
+[gm.cn.1 I 260403 07:42:43  server:130] Added service to container: onlinefight.cn.8 (type: Client)
+[gm.cn.1 I 260403 07:42:43  server:130] Added service to container: onlinefight.cn.9 (type: Client)
+[gm.cn.1 I 260403 07:42:43  server:130] Added service to container: onlinefight.cn.10 (type: Client)
+[gm.cn.1 I 260403 07:42:43  server:130] Added service to container: crossunionfight.cn.1 (type: Client)
+[gm.cn.1 I 260403 07:42:43  server:130] Added service to container: crossunionfight.cn.2 (type: Client)
+[gm.cn.1 I 260403 07:42:43  server:130] Added service to container: crossunionfight.cn.3 (type: Client)
+[gm.cn.1 I 260403 07:42:43  server:130] Added service to container: crossunionfight.cn.4 (type: Client)
+[gm.cn.1 I 260403 07:42:43  server:130] Added service to container: crossunionfight.cn.5 (type: Client)
+[gm.cn.1 I 260403 07:42:43  server:130] Added service to container: crossunionfight.cn.6 (type: Client)
+[gm.cn.1 I 260403 07:42:43  server:130] Added service to container: crossunionfight.cn.7 (type: Client)
+[gm.cn.1 I 260403 07:42:43  server:130] Added service to container: crossunionfight.cn.8 (type: Client)
+[gm.cn.1 I 260403 07:42:43  server:130] Added service to container: crossunionfight.cn.9 (type: Client)
+[gm.cn.1 I 260403 07:42:43  server:130] Added service to container: crossunionfight.cn.10 (type: Client)
+[gm.cn.1 I 260403 07:42:43  server:130] Added service to container: crossmatch.cn.1 (type: Client)
+[gm.cn.1 I 260403 07:42:43  server:130] Added service to container: crosschat.cn.1 (type: Client)
+[gm.cn.1 I 260403 07:42:43  server:130] Added service to container: crosschat.cn.2 (type: Client)
+[gm.cn.1 I 260403 07:42:43  server:130] Added service to container: crosschat.cn.3 (type: Client)
+[gm.cn.1 I 260403 07:42:43  server:130] Added service to container: crosschat.cn.4 (type: Client)
+[gm.cn.1 I 260403 07:42:43  server:130] Added service to container: crosschat.cn.5 (type: Client)
+[gm.cn.1 I 260403 07:42:43  server:130] Added service to container: crosschat.cn.6 (type: Client)
+[gm.cn.1 I 260403 07:42:43  server:130] Added service to container: crosschat.cn.7 (type: Client)
+[gm.cn.1 I 260403 07:42:43  server:130] Added service to container: crosschat.cn.8 (type: Client)
+[gm.cn.1 I 260403 07:42:43  server:130] Added service to container: crosschat.cn.9 (type: Client)
+[gm.cn.1 I 260403 07:42:43  server:130] Added service to container: crosschat.cn.10 (type: Client)
+[gm.cn.1 I 260403 07:42:43  server:130] Added service to container: gamemerge.cn.1 (type: GameRPClient)
+[gm.cn.1 I 260403 07:42:43  server:130] Added service to container: game.cn.1 (type: GameRPClient)
+[gm.cn.1 I 260403 07:42:43  server:130] Added service to container: game.cn.2 (type: GameRPClient)
+[gm.cn.1 I 260403 07:42:43  writer:110] starting writer...
+[gm.cn.1 I 260403 07:42:43  writer:189] [127.0.0.1:4150] connecting to nsqd
+[gm.cn.1 I 260403 07:42:43  reader:235] [RESP-c_gm.cn.1:0global_1rpc] starting reader for RESP-c_gm.cn.1/0global_1rpc...
+[gm.cn.1 I 260403 07:42:43  reader:490] [127.0.0.1:4150:RESP-c_gm.cn.1:0global_1rpc] connecting to nsqd
+[gm.cn.1 I 260403 07:42:43  writer:110] starting writer...
+[gm.cn.1 I 260403 07:42:43  writer:189] [127.0.0.1:4150] connecting to nsqd
+[gm.cn.1 W 260403 07:42:43  reader:508] [127.0.0.1:4150:RESP-c_gm.cn.1:0global_1rpc] max RDY count 2500 < reader max in flight 10000, truncation possible
+[gm.cn.1 I 260403 07:42:44  server:155] Cross service pattern ^crossarena found 10 services: ['crossarena.cn.10', 'crossarena.cn.9', 'crossarena.cn.8', 'crossarena.cn.3', 'crossarena.cn.2', 'crossarena.cn.1', 'crossarena.cn.7', 'crossarena.cn.6', 'crossarena.cn.5', 'crossarena.cn.4']
+[gm.cn.1 I 260403 07:42:44  server:155] Cross service pattern ^crosscraft found 10 services: ['crosscraft.cn.8', 'crosscraft.cn.9', 'crosscraft.cn.2', 'crosscraft.cn.3', 'crosscraft.cn.1', 'crosscraft.cn.6', 'crosscraft.cn.7', 'crosscraft.cn.4', 'crosscraft.cn.5', 'crosscraft.cn.10']
+[gm.cn.1 I 260403 07:42:44  server:155] Cross service pattern ^crossgym found 10 services: ['crossgym.cn.4', 'crossgym.cn.10', 'crossgym.cn.5', 'crossgym.cn.7', 'crossgym.cn.6', 'crossgym.cn.1', 'crossgym.cn.3', 'crossgym.cn.2', 'crossgym.cn.9', 'crossgym.cn.8']
+[gm.cn.1 I 260403 07:42:44  server:155] Cross service pattern ^crossmine found 10 services: ['crossmine.cn.8', 'crossmine.cn.4', 'crossmine.cn.10', 'crossmine.cn.9', 'crossmine.cn.5', 'crossmine.cn.6', 'crossmine.cn.7', 'crossmine.cn.2', 'crossmine.cn.3', 'crossmine.cn.1']
+[gm.cn.1 I 260403 07:42:44  server:155] Cross service pattern ^onlinefight found 10 services: ['onlinefight.cn.8', 'onlinefight.cn.9', 'onlinefight.cn.1', 'onlinefight.cn.2', 'onlinefight.cn.4', 'onlinefight.cn.5', 'onlinefight.cn.6', 'onlinefight.cn.3', 'onlinefight.cn.7', 'onlinefight.cn.10']
+[gm.cn.1 I 260403 07:42:44  server:155] Cross service pattern ^crossunionfight found 10 services: ['crossunionfight.cn.3', 'crossunionfight.cn.4', 'crossunionfight.cn.5', 'crossunionfight.cn.7', 'crossunionfight.cn.8', 'crossunionfight.cn.9', 'crossunionfight.cn.2', 'crossunionfight.cn.10', 'crossunionfight.cn.6', 'crossunionfight.cn.1']
+[gm.cn.1 I 260403 07:42:44  server:155] Cross service pattern ^crosschat found 10 services: ['crosschat.cn.10', 'crosschat.cn.8', 'crosschat.cn.5', 'crosschat.cn.2', 'crosschat.cn.9', 'crosschat.cn.7', 'crosschat.cn.6', 'crosschat.cn.4', 'crosschat.cn.3', 'crosschat.cn.1']
+[gm.cn.1 I 260403 07:42:44  server:155] Cross service pattern ^crossmatch found 1 services: ['crossmatch.cn.1']
+[gm.cn.1 I 260403 07:42:44  server:158] Total cross services: ['crossunionfight.cn.3', 'crosschat.cn.5', 'crossunionfight.cn.4', 'crossunionfight.cn.5', 'onlinefight.cn.8', 'onlinefight.cn.9', 'crossunionfight.cn.7', 'crossmine.cn.8', 'onlinefight.cn.1', 'crossmine.cn.10', 'onlinefight.cn.2', 'crossmine.cn.9', 'onlinefight.cn.4', 'onlinefight.cn.5', 'onlinefight.cn.6', 'onlinefight.cn.7', 'crossunionfight.cn.8', 'crossunionfight.cn.9', 'crosscraft.cn.8', 'crosscraft.cn.9', 'crossgym.cn.10', 'crosschat.cn.10', 'crosscraft.cn.2', 'crosscraft.cn.3', 'crossunionfight.cn.2', 'crosscraft.cn.1', 'crosscraft.cn.6', 'crosscraft.cn.7', 'crosscraft.cn.4', 'crosscraft.cn.5', 'onlinefight.cn.3', 'crossgym.cn.5', 'crossgym.cn.4', 'crossgym.cn.7', 'crossgym.cn.6', 'crossgym.cn.1', 'crossgym.cn.3', 'crossgym.cn.2', 'crossgym.cn.9', 'crosschat.cn.8', 'crosscraft.cn.10', 'crossgym.cn.8', 'crossarena.cn.10', 'crossmatch.cn.1', 'crossunionfight.cn.10', 'crossmine.cn.5', 'onlinefight.cn.10', 'crossmine.cn.6', 'crossmine.cn.7', 'crossarena.cn.9', 'crossarena.cn.8', 'crossmine.cn.2', 'crossmine.cn.3', 'crossmine.cn.1', 'crossarena.cn.3', 'crossarena.cn.2', 'crossarena.cn.1', 'crossarena.cn.7', 'crossarena.cn.6', 'crossarena.cn.5', 'crossarena.cn.4', 'crossunionfight.cn.6', 'crosschat.cn.9', 'crossunionfight.cn.1', 'crosschat.cn.7', 'crosschat.cn.6', 'crossmine.cn.4', 'crosschat.cn.4', 'crosschat.cn.3', 'crosschat.cn.2', 'crosschat.cn.1']
+It is release mode!
+Server UTC 8:00:00 Local UTC 00:00:00 Delta 0:00:00
+[gm.cn.1] GM Server listen at 0.0.0.0:38088 running ...
+[gm.cn.1 I 260403 07:42:44  server:225] [gm.cn.1] GM Server Start OK
+[gm.cn.1 I 260403 07:42:44 DBStreamProcess-1 __init__:45] DBStreamProcess-1 1f5 7ffff79a69d0 Start
+[gm.cn.1 I 260403 07:42:44  reader:235] [chatMessage:gm.cn.1] starting reader for chatMessage/gm.cn.1...
+[gm.cn.1 I 260403 07:42:44  reader:490] [127.0.0.1:4150:chatMessage:gm.cn.1] connecting to nsqd
+[gm.cn.1 W 260403 07:42:44  reader:508] [127.0.0.1:4150:chatMessage:gm.cn.1] max RDY count 2500 < reader max in flight 10000, truncation possible
+[gm.cn.1 I 260403 07:42:44 DBStreamProcess-1 stream:62] current cursor {'cur_account_time': 1775194263.0, 'cur_order_amount': 0.0, 'cur_login_time': 1775201887.0, 'cur_order_time': 0.0}
+[gm.cn.1 I 260403 07:42:45  gamerpc_client:50] game.cn.1 hello ack
+[gm.cn.1 I 260403 07:42:45  gamerpc_client:50] game.cn.2 hello ack
+[gm.cn.1 I 260403 07:43:39  server:232] [gm.cn.1] GM Server onShutdown ...
+[gm.cn.1 I 260403 07:43:40 DBStreamProcess-1 stream:259] DBStreamProcess-1 1f5 7ffff79a69d0 End
+[gm.cn.1 I 260403 07:43:40  server:264] [gm.cn.1] GM Server onApplicationExit
+[gm.cn.1 W 260403 07:43:40  reader:535] [127.0.0.1:4150:RESP-c_gm.cn.1:0global_1rpc] connection closed
+[gm.cn.1 I 260403 07:43:40  reader:552] [127.0.0.1:4150:RESP-c_gm.cn.1:0global_1rpc] attempting to reconnect in 5s
+[gm.cn.1 I 260403 07:43:40  server:212] [gm.cn.1] GM Server Shutdown OK
+[gm.cn.1 I 260403 07:43:58  server:130] Added service to container: accountdb.cn.1 (type: Client)
+[gm.cn.1 I 260403 07:43:58  server:130] Added service to container: giftdb.cn.1 (type: Client)
+[gm.cn.1 I 260403 07:43:58  server:130] Added service to container: card_comment.cn.1 (type: Client)
+[gm.cn.1 I 260403 07:43:58  server:130] Added service to container: crossarena.cn.1 (type: Client)
+[gm.cn.1 I 260403 07:43:58  server:130] Added service to container: crossarena.cn.2 (type: Client)
+[gm.cn.1 I 260403 07:43:58  server:130] Added service to container: crossarena.cn.3 (type: Client)
+[gm.cn.1 I 260403 07:43:58  server:130] Added service to container: crossarena.cn.4 (type: Client)
+[gm.cn.1 I 260403 07:43:58  server:130] Added service to container: crossarena.cn.5 (type: Client)
+[gm.cn.1 I 260403 07:43:58  server:130] Added service to container: crossarena.cn.6 (type: Client)
+[gm.cn.1 I 260403 07:43:58  server:130] Added service to container: crossarena.cn.7 (type: Client)
+[gm.cn.1 I 260403 07:43:58  server:130] Added service to container: crossarena.cn.8 (type: Client)
+[gm.cn.1 I 260403 07:43:58  server:130] Added service to container: crossarena.cn.9 (type: Client)
+[gm.cn.1 I 260403 07:43:58  server:130] Added service to container: crossarena.cn.10 (type: Client)
+[gm.cn.1 I 260403 07:43:58  server:130] Added service to container: crosscraft.cn.1 (type: Client)
+[gm.cn.1 I 260403 07:43:58  server:130] Added service to container: crosscraft.cn.2 (type: Client)
+[gm.cn.1 I 260403 07:43:58  server:130] Added service to container: crosscraft.cn.3 (type: Client)
+[gm.cn.1 I 260403 07:43:58  server:130] Added service to container: crosscraft.cn.4 (type: Client)
+[gm.cn.1 I 260403 07:43:58  server:130] Added service to container: crosscraft.cn.5 (type: Client)
+[gm.cn.1 I 260403 07:43:58  server:130] Added service to container: crosscraft.cn.6 (type: Client)
+[gm.cn.1 I 260403 07:43:58  server:130] Added service to container: crosscraft.cn.7 (type: Client)
+[gm.cn.1 I 260403 07:43:58  server:130] Added service to container: crosscraft.cn.8 (type: Client)
+[gm.cn.1 I 260403 07:43:58  server:130] Added service to container: crosscraft.cn.9 (type: Client)
+[gm.cn.1 I 260403 07:43:58  server:130] Added service to container: crosscraft.cn.10 (type: Client)
+[gm.cn.1 I 260403 07:43:58  server:130] Added service to container: crossgym.cn.1 (type: Client)
+[gm.cn.1 I 260403 07:43:58  server:130] Added service to container: crossgym.cn.2 (type: Client)
+[gm.cn.1 I 260403 07:43:58  server:130] Added service to container: crossgym.cn.3 (type: Client)
+[gm.cn.1 I 260403 07:43:58  server:130] Added service to container: crossgym.cn.4 (type: Client)
+[gm.cn.1 I 260403 07:43:58  server:130] Added service to container: crossgym.cn.5 (type: Client)
+[gm.cn.1 I 260403 07:43:58  server:130] Added service to container: crossgym.cn.6 (type: Client)
+[gm.cn.1 I 260403 07:43:58  server:130] Added service to container: crossgym.cn.7 (type: Client)
+[gm.cn.1 I 260403 07:43:58  server:130] Added service to container: crossgym.cn.8 (type: Client)
+[gm.cn.1 I 260403 07:43:58  server:130] Added service to container: crossgym.cn.9 (type: Client)
+[gm.cn.1 I 260403 07:43:58  server:130] Added service to container: crossgym.cn.10 (type: Client)
+[gm.cn.1 I 260403 07:43:58  server:130] Added service to container: crossmine.cn.1 (type: Client)
+[gm.cn.1 I 260403 07:43:58  server:130] Added service to container: crossmine.cn.2 (type: Client)
+[gm.cn.1 I 260403 07:43:58  server:130] Added service to container: crossmine.cn.3 (type: Client)
+[gm.cn.1 I 260403 07:43:58  server:130] Added service to container: crossmine.cn.4 (type: Client)
+[gm.cn.1 I 260403 07:43:58  server:130] Added service to container: crossmine.cn.5 (type: Client)
+[gm.cn.1 I 260403 07:43:58  server:130] Added service to container: crossmine.cn.6 (type: Client)
+[gm.cn.1 I 260403 07:43:58  server:130] Added service to container: crossmine.cn.7 (type: Client)
+[gm.cn.1 I 260403 07:43:58  server:130] Added service to container: crossmine.cn.8 (type: Client)
+[gm.cn.1 I 260403 07:43:58  server:130] Added service to container: crossmine.cn.9 (type: Client)
+[gm.cn.1 I 260403 07:43:58  server:130] Added service to container: crossmine.cn.10 (type: Client)
+[gm.cn.1 I 260403 07:43:58  server:130] Added service to container: onlinefight.cn.1 (type: Client)
+[gm.cn.1 I 260403 07:43:58  server:130] Added service to container: onlinefight.cn.2 (type: Client)
+[gm.cn.1 I 260403 07:43:58  server:130] Added service to container: onlinefight.cn.3 (type: Client)
+[gm.cn.1 I 260403 07:43:58  server:130] Added service to container: onlinefight.cn.4 (type: Client)
+[gm.cn.1 I 260403 07:43:58  server:130] Added service to container: onlinefight.cn.5 (type: Client)
+[gm.cn.1 I 260403 07:43:58  server:130] Added service to container: onlinefight.cn.6 (type: Client)
+[gm.cn.1 I 260403 07:43:58  server:130] Added service to container: onlinefight.cn.7 (type: Client)
+[gm.cn.1 I 260403 07:43:58  server:130] Added service to container: onlinefight.cn.8 (type: Client)
+[gm.cn.1 I 260403 07:43:58  server:130] Added service to container: onlinefight.cn.9 (type: Client)
+[gm.cn.1 I 260403 07:43:58  server:130] Added service to container: onlinefight.cn.10 (type: Client)
+[gm.cn.1 I 260403 07:43:58  server:130] Added service to container: crossunionfight.cn.1 (type: Client)
+[gm.cn.1 I 260403 07:43:58  server:130] Added service to container: crossunionfight.cn.2 (type: Client)
+[gm.cn.1 I 260403 07:43:58  server:130] Added service to container: crossunionfight.cn.3 (type: Client)
+[gm.cn.1 I 260403 07:43:58  server:130] Added service to container: crossunionfight.cn.4 (type: Client)
+[gm.cn.1 I 260403 07:43:58  server:130] Added service to container: crossunionfight.cn.5 (type: Client)
+[gm.cn.1 I 260403 07:43:58  server:130] Added service to container: crossunionfight.cn.6 (type: Client)
+[gm.cn.1 I 260403 07:43:58  server:130] Added service to container: crossunionfight.cn.7 (type: Client)
+[gm.cn.1 I 260403 07:43:58  server:130] Added service to container: crossunionfight.cn.8 (type: Client)
+[gm.cn.1 I 260403 07:43:58  server:130] Added service to container: crossunionfight.cn.9 (type: Client)
+[gm.cn.1 I 260403 07:43:58  server:130] Added service to container: crossunionfight.cn.10 (type: Client)
+[gm.cn.1 I 260403 07:43:58  server:130] Added service to container: crossmatch.cn.1 (type: Client)
+[gm.cn.1 I 260403 07:43:58  server:130] Added service to container: crosschat.cn.1 (type: Client)
+[gm.cn.1 I 260403 07:43:58  server:130] Added service to container: crosschat.cn.2 (type: Client)
+[gm.cn.1 I 260403 07:43:58  server:130] Added service to container: crosschat.cn.3 (type: Client)
+[gm.cn.1 I 260403 07:43:58  server:130] Added service to container: crosschat.cn.4 (type: Client)
+[gm.cn.1 I 260403 07:43:58  server:130] Added service to container: crosschat.cn.5 (type: Client)
+[gm.cn.1 I 260403 07:43:58  server:130] Added service to container: crosschat.cn.6 (type: Client)
+[gm.cn.1 I 260403 07:43:58  server:130] Added service to container: crosschat.cn.7 (type: Client)
+[gm.cn.1 I 260403 07:43:58  server:130] Added service to container: crosschat.cn.8 (type: Client)
+[gm.cn.1 I 260403 07:43:58  server:130] Added service to container: crosschat.cn.9 (type: Client)
+[gm.cn.1 I 260403 07:43:58  server:130] Added service to container: crosschat.cn.10 (type: Client)
+[gm.cn.1 I 260403 07:43:58  server:130] Added service to container: gamemerge.cn.1 (type: GameRPClient)
+[gm.cn.1 I 260403 07:43:58  server:130] Added service to container: game.cn.1 (type: GameRPClient)
+[gm.cn.1 I 260403 07:43:58  server:130] Added service to container: game.cn.2 (type: GameRPClient)
+[gm.cn.1 I 260403 07:43:58  writer:110] starting writer...
+[gm.cn.1 I 260403 07:43:58  writer:189] [127.0.0.1:4150] connecting to nsqd
+[gm.cn.1 I 260403 07:43:58  reader:235] [RESP-c_gm.cn.1:0global_1rpc] starting reader for RESP-c_gm.cn.1/0global_1rpc...
+[gm.cn.1 I 260403 07:43:58  reader:490] [127.0.0.1:4150:RESP-c_gm.cn.1:0global_1rpc] connecting to nsqd
+[gm.cn.1 I 260403 07:43:58  writer:110] starting writer...
+[gm.cn.1 I 260403 07:43:58  writer:189] [127.0.0.1:4150] connecting to nsqd
+[gm.cn.1 W 260403 07:43:58  reader:508] [127.0.0.1:4150:RESP-c_gm.cn.1:0global_1rpc] max RDY count 2500 < reader max in flight 10000, truncation possible
+[gm.cn.1 I 260403 07:43:59  server:155] Cross service pattern ^crossarena found 10 services: ['crossarena.cn.10', 'crossarena.cn.9', 'crossarena.cn.8', 'crossarena.cn.3', 'crossarena.cn.2', 'crossarena.cn.1', 'crossarena.cn.7', 'crossarena.cn.6', 'crossarena.cn.5', 'crossarena.cn.4']
+[gm.cn.1 I 260403 07:43:59  server:155] Cross service pattern ^crosscraft found 10 services: ['crosscraft.cn.8', 'crosscraft.cn.9', 'crosscraft.cn.2', 'crosscraft.cn.3', 'crosscraft.cn.1', 'crosscraft.cn.6', 'crosscraft.cn.7', 'crosscraft.cn.4', 'crosscraft.cn.5', 'crosscraft.cn.10']
+[gm.cn.1 I 260403 07:43:59  server:155] Cross service pattern ^crossgym found 10 services: ['crossgym.cn.4', 'crossgym.cn.10', 'crossgym.cn.5', 'crossgym.cn.7', 'crossgym.cn.6', 'crossgym.cn.1', 'crossgym.cn.3', 'crossgym.cn.2', 'crossgym.cn.9', 'crossgym.cn.8']
+[gm.cn.1 I 260403 07:43:59  server:155] Cross service pattern ^crossmine found 10 services: ['crossmine.cn.8', 'crossmine.cn.4', 'crossmine.cn.10', 'crossmine.cn.9', 'crossmine.cn.5', 'crossmine.cn.6', 'crossmine.cn.7', 'crossmine.cn.2', 'crossmine.cn.3', 'crossmine.cn.1']
+[gm.cn.1 I 260403 07:43:59  server:155] Cross service pattern ^onlinefight found 10 services: ['onlinefight.cn.8', 'onlinefight.cn.9', 'onlinefight.cn.1', 'onlinefight.cn.2', 'onlinefight.cn.4', 'onlinefight.cn.5', 'onlinefight.cn.6', 'onlinefight.cn.3', 'onlinefight.cn.7', 'onlinefight.cn.10']
+[gm.cn.1 I 260403 07:43:59  server:155] Cross service pattern ^crossunionfight found 10 services: ['crossunionfight.cn.3', 'crossunionfight.cn.4', 'crossunionfight.cn.5', 'crossunionfight.cn.7', 'crossunionfight.cn.8', 'crossunionfight.cn.9', 'crossunionfight.cn.2', 'crossunionfight.cn.10', 'crossunionfight.cn.6', 'crossunionfight.cn.1']
+[gm.cn.1 I 260403 07:43:59  server:155] Cross service pattern ^crosschat found 10 services: ['crosschat.cn.10', 'crosschat.cn.8', 'crosschat.cn.5', 'crosschat.cn.2', 'crosschat.cn.9', 'crosschat.cn.7', 'crosschat.cn.6', 'crosschat.cn.4', 'crosschat.cn.3', 'crosschat.cn.1']
+[gm.cn.1 I 260403 07:43:59  server:155] Cross service pattern ^crossmatch found 1 services: ['crossmatch.cn.1']
+[gm.cn.1 I 260403 07:43:59  server:158] Total cross services: ['crossunionfight.cn.3', 'crosschat.cn.5', 'crossunionfight.cn.4', 'crossunionfight.cn.5', 'onlinefight.cn.8', 'onlinefight.cn.9', 'crossunionfight.cn.7', 'crossmine.cn.8', 'onlinefight.cn.1', 'crossmine.cn.10', 'onlinefight.cn.2', 'crossmine.cn.9', 'onlinefight.cn.4', 'onlinefight.cn.5', 'onlinefight.cn.6', 'onlinefight.cn.7', 'crossunionfight.cn.8', 'crossunionfight.cn.9', 'crosscraft.cn.8', 'crosscraft.cn.9', 'crossgym.cn.10', 'crosschat.cn.10', 'crosscraft.cn.2', 'crosscraft.cn.3', 'crossunionfight.cn.2', 'crosscraft.cn.1', 'crosscraft.cn.6', 'crosscraft.cn.7', 'crosscraft.cn.4', 'crosscraft.cn.5', 'onlinefight.cn.3', 'crossgym.cn.5', 'crossgym.cn.4', 'crossgym.cn.7', 'crossgym.cn.6', 'crossgym.cn.1', 'crossgym.cn.3', 'crossgym.cn.2', 'crossgym.cn.9', 'crosschat.cn.8', 'crosscraft.cn.10', 'crossgym.cn.8', 'crossarena.cn.10', 'crossmatch.cn.1', 'crossunionfight.cn.10', 'crossmine.cn.5', 'onlinefight.cn.10', 'crossmine.cn.6', 'crossmine.cn.7', 'crossarena.cn.9', 'crossarena.cn.8', 'crossmine.cn.2', 'crossmine.cn.3', 'crossmine.cn.1', 'crossarena.cn.3', 'crossarena.cn.2', 'crossarena.cn.1', 'crossarena.cn.7', 'crossarena.cn.6', 'crossarena.cn.5', 'crossarena.cn.4', 'crossunionfight.cn.6', 'crosschat.cn.9', 'crossunionfight.cn.1', 'crosschat.cn.7', 'crosschat.cn.6', 'crossmine.cn.4', 'crosschat.cn.4', 'crosschat.cn.3', 'crosschat.cn.2', 'crosschat.cn.1']
+It is release mode!
+Server UTC 8:00:00 Local UTC 00:00:00 Delta 0:00:00
+[gm.cn.1] GM Server listen at 0.0.0.0:38088 running ...
+[gm.cn.1 I 260403 07:43:59  server:225] [gm.cn.1] GM Server Start OK
+[gm.cn.1 I 260403 07:43:59  reader:235] [chatMessage:gm.cn.1] starting reader for chatMessage/gm.cn.1...
+[gm.cn.1 I 260403 07:43:59  reader:490] [127.0.0.1:4150:chatMessage:gm.cn.1] connecting to nsqd
+[gm.cn.1 I 260403 07:43:59 DBStreamProcess-1 __init__:45] DBStreamProcess-1 370 7ffff79a69d0 Start
+[gm.cn.1 W 260403 07:43:59  reader:508] [127.0.0.1:4150:chatMessage:gm.cn.1] max RDY count 2500 < reader max in flight 10000, truncation possible
+[gm.cn.1 I 260403 07:43:59 DBStreamProcess-1 stream:62] current cursor {'cur_account_time': 1775194263.0, 'cur_order_amount': 0.0, 'cur_login_time': 1775201887.0, 'cur_order_time': 0.0}
+[gm.cn.1 I 260403 07:44:08  gamerpc_client:50] game.cn.1 hello ack
+[gm.cn.1 I 260403 07:44:08  gamerpc_client:50] game.cn.2 hello ack
+[gm.cn.1 I 260403 07:46:26  web:1828] 302 GET /operate_activity (192.168.97.1) 5.85ms 
+[gm.cn.1 I 260403 07:46:26  web:1828] 200 GET /login (192.168.97.1) 22.90ms 
+[gm.cn.1 I 260403 07:46:28  web:1828] 302 POST /login (192.168.97.1) 4.73ms 
+[gm.cn.1 I 260403 07:46:28  web:1828] 200 GET / (192.168.97.1) 43.94ms 
+[gm.cn.1 I 260403 07:46:31  web:1828] 302 GET /lanauge_set?lang=vn (192.168.97.1) 1.23ms 
+[gm.cn.1 E 260403 07:46:31  web:1424] Uncaught exception GET / (192.168.97.1)
+    HTTPServerRequest(protocol='http', host='192.168.1.13:38088', method='GET', uri='/', version='HTTP/1.1', remote_ip='192.168.97.1', headers={'Accept-Language': 'vi,en-US;q=0.9,en;q=0.8,fr-FR;q=0.7,fr;q=0.6', 'Accept-Encoding': 'gzip, deflate', 'Host': '192.168.1.13:38088', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://192.168.1.13:38088/', 'Cookie': 'TJ_GM_SESSIONID="2|1:0|10:1775202388|15:TJ_GM_SESSIONID|48:MDdjOGFkZTEtMzQ3Zi01NWUwLTg4NjYtZTRiYjIxZGM0NTRm|8d23cda8e17415151a3d1372e213c18e1b24688e9609ef58c77e17c5e9b6a8b6"', 'If-None-Match': '"66b55b8b1d2846f36e6bde23adbac28f252dcc2d"', 'Upgrade-Insecure-Requests': '1'})
+    Traceback (most recent call last):
+      File "/mnt/pokemon/release/src/tornado/web.py", line 1348, in _execute
+        result = yield result
+      File "/mnt/pokemon/release/src/tornado/gen.py", line 807, in run
+        value = future.result()
+      File "/mnt/pokemon/release/src/tornado/concurrent.py", line 209, in result
+        raise_exc_info(self._exc_info)
+      File "/mnt/pokemon/release/src/tornado/gen.py", line 197, in wrapper
+        result = func(*args, **kwargs)
+      File "/mnt/pokemon/release/src/gm/handler/dashboard.py", line 75, in get
+        self.render_page("dashboard.html", overview=self.QueryResult)
+      File "/mnt/pokemon/release/src/gm/handler/base.py", line 95, in render_page
+        userLocale = self.pageLocale,
+      File "/mnt/pokemon/release/src/gm/handler/base.py", line 149, in pageLocale
+        for short_name, locale_name in Session.LOCALE_NAMES.items():
+    AttributeError: type object 'Session' has no attribute 'LOCALE_NAMES'
+[gm.cn.1 E 260403 07:46:31  web:1828] 500 GET / (192.168.97.1) 41.95ms 
+[gm.cn.1 I 260403 07:48:28  server:232] [gm.cn.1] GM Server onShutdown ...
+[gm.cn.1 I 260403 07:48:29 DBStreamProcess-1 stream:259] DBStreamProcess-1 370 7ffff79a69d0 End
+[gm.cn.1 I 260403 07:48:29  server:264] [gm.cn.1] GM Server onApplicationExit
+[gm.cn.1 I 260403 07:48:29  server:212] [gm.cn.1] GM Server Shutdown OK
+[gm.cn.1 I 260403 07:48:32  server:130] Added service to container: accountdb.cn.1 (type: Client)
+[gm.cn.1 I 260403 07:48:32  server:130] Added service to container: giftdb.cn.1 (type: Client)
+[gm.cn.1 I 260403 07:48:32  server:130] Added service to container: card_comment.cn.1 (type: Client)
+[gm.cn.1 I 260403 07:48:32  server:130] Added service to container: crossarena.cn.1 (type: Client)
+[gm.cn.1 I 260403 07:48:32  server:130] Added service to container: crossarena.cn.2 (type: Client)
+[gm.cn.1 I 260403 07:48:32  server:130] Added service to container: crossarena.cn.3 (type: Client)
+[gm.cn.1 I 260403 07:48:32  server:130] Added service to container: crossarena.cn.4 (type: Client)
+[gm.cn.1 I 260403 07:48:32  server:130] Added service to container: crossarena.cn.5 (type: Client)
+[gm.cn.1 I 260403 07:48:32  server:130] Added service to container: crossarena.cn.6 (type: Client)
+[gm.cn.1 I 260403 07:48:32  server:130] Added service to container: crossarena.cn.7 (type: Client)
+[gm.cn.1 I 260403 07:48:32  server:130] Added service to container: crossarena.cn.8 (type: Client)
+[gm.cn.1 I 260403 07:48:32  server:130] Added service to container: crossarena.cn.9 (type: Client)
+[gm.cn.1 I 260403 07:48:32  server:130] Added service to container: crossarena.cn.10 (type: Client)
+[gm.cn.1 I 260403 07:48:32  server:130] Added service to container: crosscraft.cn.1 (type: Client)
+[gm.cn.1 I 260403 07:48:32  server:130] Added service to container: crosscraft.cn.2 (type: Client)
+[gm.cn.1 I 260403 07:48:32  server:130] Added service to container: crosscraft.cn.3 (type: Client)
+[gm.cn.1 I 260403 07:48:32  server:130] Added service to container: crosscraft.cn.4 (type: Client)
+[gm.cn.1 I 260403 07:48:32  server:130] Added service to container: crosscraft.cn.5 (type: Client)
+[gm.cn.1 I 260403 07:48:32  server:130] Added service to container: crosscraft.cn.6 (type: Client)
+[gm.cn.1 I 260403 07:48:32  server:130] Added service to container: crosscraft.cn.7 (type: Client)
+[gm.cn.1 I 260403 07:48:32  server:130] Added service to container: crosscraft.cn.8 (type: Client)
+[gm.cn.1 I 260403 07:48:32  server:130] Added service to container: crosscraft.cn.9 (type: Client)
+[gm.cn.1 I 260403 07:48:32  server:130] Added service to container: crosscraft.cn.10 (type: Client)
+[gm.cn.1 I 260403 07:48:32  server:130] Added service to container: crossgym.cn.1 (type: Client)
+[gm.cn.1 I 260403 07:48:32  server:130] Added service to container: crossgym.cn.2 (type: Client)
+[gm.cn.1 I 260403 07:48:32  server:130] Added service to container: crossgym.cn.3 (type: Client)
+[gm.cn.1 I 260403 07:48:32  server:130] Added service to container: crossgym.cn.4 (type: Client)
+[gm.cn.1 I 260403 07:48:32  server:130] Added service to container: crossgym.cn.5 (type: Client)
+[gm.cn.1 I 260403 07:48:32  server:130] Added service to container: crossgym.cn.6 (type: Client)
+[gm.cn.1 I 260403 07:48:32  server:130] Added service to container: crossgym.cn.7 (type: Client)
+[gm.cn.1 I 260403 07:48:32  server:130] Added service to container: crossgym.cn.8 (type: Client)
+[gm.cn.1 I 260403 07:48:32  server:130] Added service to container: crossgym.cn.9 (type: Client)
+[gm.cn.1 I 260403 07:48:32  server:130] Added service to container: crossgym.cn.10 (type: Client)
+[gm.cn.1 I 260403 07:48:32  server:130] Added service to container: crossmine.cn.1 (type: Client)
+[gm.cn.1 I 260403 07:48:32  server:130] Added service to container: crossmine.cn.2 (type: Client)
+[gm.cn.1 I 260403 07:48:32  server:130] Added service to container: crossmine.cn.3 (type: Client)
+[gm.cn.1 I 260403 07:48:32  server:130] Added service to container: crossmine.cn.4 (type: Client)
+[gm.cn.1 I 260403 07:48:32  server:130] Added service to container: crossmine.cn.5 (type: Client)
+[gm.cn.1 I 260403 07:48:32  server:130] Added service to container: crossmine.cn.6 (type: Client)
+[gm.cn.1 I 260403 07:48:32  server:130] Added service to container: crossmine.cn.7 (type: Client)
+[gm.cn.1 I 260403 07:48:32  server:130] Added service to container: crossmine.cn.8 (type: Client)
+[gm.cn.1 I 260403 07:48:32  server:130] Added service to container: crossmine.cn.9 (type: Client)
+[gm.cn.1 I 260403 07:48:32  server:130] Added service to container: crossmine.cn.10 (type: Client)
+[gm.cn.1 I 260403 07:48:32  server:130] Added service to container: onlinefight.cn.1 (type: Client)
+[gm.cn.1 I 260403 07:48:32  server:130] Added service to container: onlinefight.cn.2 (type: Client)
+[gm.cn.1 I 260403 07:48:32  server:130] Added service to container: onlinefight.cn.3 (type: Client)
+[gm.cn.1 I 260403 07:48:32  server:130] Added service to container: onlinefight.cn.4 (type: Client)
+[gm.cn.1 I 260403 07:48:32  server:130] Added service to container: onlinefight.cn.5 (type: Client)
+[gm.cn.1 I 260403 07:48:32  server:130] Added service to container: onlinefight.cn.6 (type: Client)
+[gm.cn.1 I 260403 07:48:32  server:130] Added service to container: onlinefight.cn.7 (type: Client)
+[gm.cn.1 I 260403 07:48:32  server:130] Added service to container: onlinefight.cn.8 (type: Client)
+[gm.cn.1 I 260403 07:48:32  server:130] Added service to container: onlinefight.cn.9 (type: Client)
+[gm.cn.1 I 260403 07:48:32  server:130] Added service to container: onlinefight.cn.10 (type: Client)
+[gm.cn.1 I 260403 07:48:32  server:130] Added service to container: crossunionfight.cn.1 (type: Client)
+[gm.cn.1 I 260403 07:48:32  server:130] Added service to container: crossunionfight.cn.2 (type: Client)
+[gm.cn.1 I 260403 07:48:32  server:130] Added service to container: crossunionfight.cn.3 (type: Client)
+[gm.cn.1 I 260403 07:48:32  server:130] Added service to container: crossunionfight.cn.4 (type: Client)
+[gm.cn.1 I 260403 07:48:32  server:130] Added service to container: crossunionfight.cn.5 (type: Client)
+[gm.cn.1 I 260403 07:48:32  server:130] Added service to container: crossunionfight.cn.6 (type: Client)
+[gm.cn.1 I 260403 07:48:32  server:130] Added service to container: crossunionfight.cn.7 (type: Client)
+[gm.cn.1 I 260403 07:48:32  server:130] Added service to container: crossunionfight.cn.8 (type: Client)
+[gm.cn.1 I 260403 07:48:32  server:130] Added service to container: crossunionfight.cn.9 (type: Client)
+[gm.cn.1 I 260403 07:48:32  server:130] Added service to container: crossunionfight.cn.10 (type: Client)
+[gm.cn.1 I 260403 07:48:32  server:130] Added service to container: crossmatch.cn.1 (type: Client)
+[gm.cn.1 I 260403 07:48:32  server:130] Added service to container: crosschat.cn.1 (type: Client)
+[gm.cn.1 I 260403 07:48:32  server:130] Added service to container: crosschat.cn.2 (type: Client)
+[gm.cn.1 I 260403 07:48:32  server:130] Added service to container: crosschat.cn.3 (type: Client)
+[gm.cn.1 I 260403 07:48:32  server:130] Added service to container: crosschat.cn.4 (type: Client)
+[gm.cn.1 I 260403 07:48:32  server:130] Added service to container: crosschat.cn.5 (type: Client)
+[gm.cn.1 I 260403 07:48:32  server:130] Added service to container: crosschat.cn.6 (type: Client)
+[gm.cn.1 I 260403 07:48:32  server:130] Added service to container: crosschat.cn.7 (type: Client)
+[gm.cn.1 I 260403 07:48:32  server:130] Added service to container: crosschat.cn.8 (type: Client)
+[gm.cn.1 I 260403 07:48:32  server:130] Added service to container: crosschat.cn.9 (type: Client)
+[gm.cn.1 I 260403 07:48:32  server:130] Added service to container: crosschat.cn.10 (type: Client)
+[gm.cn.1 I 260403 07:48:32  server:130] Added service to container: gamemerge.cn.1 (type: GameRPClient)
+[gm.cn.1 I 260403 07:48:32  server:130] Added service to container: game.cn.1 (type: GameRPClient)
+[gm.cn.1 I 260403 07:48:32  server:130] Added service to container: game.cn.2 (type: GameRPClient)
+[gm.cn.1 I 260403 07:48:32  writer:110] starting writer...
+[gm.cn.1 I 260403 07:48:32  writer:189] [127.0.0.1:4150] connecting to nsqd
+[gm.cn.1 I 260403 07:48:32  reader:235] [RESP-c_gm.cn.1:0global_1rpc] starting reader for RESP-c_gm.cn.1/0global_1rpc...
+[gm.cn.1 I 260403 07:48:32  reader:490] [127.0.0.1:4150:RESP-c_gm.cn.1:0global_1rpc] connecting to nsqd
+[gm.cn.1 I 260403 07:48:32  writer:110] starting writer...
+[gm.cn.1 I 260403 07:48:32  writer:189] [127.0.0.1:4150] connecting to nsqd
+[gm.cn.1 W 260403 07:48:32  reader:508] [127.0.0.1:4150:RESP-c_gm.cn.1:0global_1rpc] max RDY count 2500 < reader max in flight 10000, truncation possible
+[gm.cn.1 I 260403 07:48:33  server:155] Cross service pattern ^crossarena found 10 services: ['crossarena.cn.10', 'crossarena.cn.9', 'crossarena.cn.8', 'crossarena.cn.3', 'crossarena.cn.2', 'crossarena.cn.1', 'crossarena.cn.7', 'crossarena.cn.6', 'crossarena.cn.5', 'crossarena.cn.4']
+[gm.cn.1 I 260403 07:48:33  server:155] Cross service pattern ^crosscraft found 10 services: ['crosscraft.cn.8', 'crosscraft.cn.9', 'crosscraft.cn.2', 'crosscraft.cn.3', 'crosscraft.cn.1', 'crosscraft.cn.6', 'crosscraft.cn.7', 'crosscraft.cn.4', 'crosscraft.cn.5', 'crosscraft.cn.10']
+[gm.cn.1 I 260403 07:48:33  server:155] Cross service pattern ^crossgym found 10 services: ['crossgym.cn.4', 'crossgym.cn.10', 'crossgym.cn.5', 'crossgym.cn.7', 'crossgym.cn.6', 'crossgym.cn.1', 'crossgym.cn.3', 'crossgym.cn.2', 'crossgym.cn.9', 'crossgym.cn.8']
+[gm.cn.1 I 260403 07:48:33  server:155] Cross service pattern ^crossmine found 10 services: ['crossmine.cn.8', 'crossmine.cn.4', 'crossmine.cn.10', 'crossmine.cn.9', 'crossmine.cn.5', 'crossmine.cn.6', 'crossmine.cn.7', 'crossmine.cn.2', 'crossmine.cn.3', 'crossmine.cn.1']
+[gm.cn.1 I 260403 07:48:33  server:155] Cross service pattern ^onlinefight found 10 services: ['onlinefight.cn.8', 'onlinefight.cn.9', 'onlinefight.cn.1', 'onlinefight.cn.2', 'onlinefight.cn.4', 'onlinefight.cn.5', 'onlinefight.cn.6', 'onlinefight.cn.3', 'onlinefight.cn.7', 'onlinefight.cn.10']
+[gm.cn.1 I 260403 07:48:33  server:155] Cross service pattern ^crossunionfight found 10 services: ['crossunionfight.cn.3', 'crossunionfight.cn.4', 'crossunionfight.cn.5', 'crossunionfight.cn.7', 'crossunionfight.cn.8', 'crossunionfight.cn.9', 'crossunionfight.cn.2', 'crossunionfight.cn.10', 'crossunionfight.cn.6', 'crossunionfight.cn.1']
+[gm.cn.1 I 260403 07:48:33  server:155] Cross service pattern ^crosschat found 10 services: ['crosschat.cn.10', 'crosschat.cn.8', 'crosschat.cn.5', 'crosschat.cn.2', 'crosschat.cn.9', 'crosschat.cn.7', 'crosschat.cn.6', 'crosschat.cn.4', 'crosschat.cn.3', 'crosschat.cn.1']
+[gm.cn.1 I 260403 07:48:33  server:155] Cross service pattern ^crossmatch found 1 services: ['crossmatch.cn.1']
+[gm.cn.1 I 260403 07:48:33  server:158] Total cross services: ['crossunionfight.cn.3', 'crosschat.cn.5', 'crossunionfight.cn.4', 'crossunionfight.cn.5', 'onlinefight.cn.8', 'onlinefight.cn.9', 'crossunionfight.cn.7', 'crossmine.cn.8', 'onlinefight.cn.1', 'crossmine.cn.10', 'onlinefight.cn.2', 'crossmine.cn.9', 'onlinefight.cn.4', 'onlinefight.cn.5', 'onlinefight.cn.6', 'onlinefight.cn.7', 'crossunionfight.cn.8', 'crossunionfight.cn.9', 'crosscraft.cn.8', 'crosscraft.cn.9', 'crossgym.cn.10', 'crosschat.cn.10', 'crosscraft.cn.2', 'crosscraft.cn.3', 'crossunionfight.cn.2', 'crosscraft.cn.1', 'crosscraft.cn.6', 'crosscraft.cn.7', 'crosscraft.cn.4', 'crosscraft.cn.5', 'onlinefight.cn.3', 'crossgym.cn.5', 'crossgym.cn.4', 'crossgym.cn.7', 'crossgym.cn.6', 'crossgym.cn.1', 'crossgym.cn.3', 'crossgym.cn.2', 'crossgym.cn.9', 'crosschat.cn.8', 'crosscraft.cn.10', 'crossgym.cn.8', 'crossarena.cn.10', 'crossmatch.cn.1', 'crossunionfight.cn.10', 'crossmine.cn.5', 'onlinefight.cn.10', 'crossmine.cn.6', 'crossmine.cn.7', 'crossarena.cn.9', 'crossarena.cn.8', 'crossmine.cn.2', 'crossmine.cn.3', 'crossmine.cn.1', 'crossarena.cn.3', 'crossarena.cn.2', 'crossarena.cn.1', 'crossarena.cn.7', 'crossarena.cn.6', 'crossarena.cn.5', 'crossarena.cn.4', 'crossunionfight.cn.6', 'crosschat.cn.9', 'crossunionfight.cn.1', 'crosschat.cn.7', 'crosschat.cn.6', 'crossmine.cn.4', 'crosschat.cn.4', 'crosschat.cn.3', 'crosschat.cn.2', 'crosschat.cn.1']
+It is release mode!
+Server UTC 8:00:00 Local UTC 00:00:00 Delta 0:00:00
+[gm.cn.1] GM Server listen at 0.0.0.0:38088 running ...
+[gm.cn.1 I 260403 07:48:33  server:225] [gm.cn.1] GM Server Start OK
+[gm.cn.1 I 260403 07:48:33  reader:235] [chatMessage:gm.cn.1] starting reader for chatMessage/gm.cn.1...
+[gm.cn.1 I 260403 07:48:33 DBStreamProcess-1 __init__:45] DBStreamProcess-1 3f9 7ffff79a69d0 Start
+[gm.cn.1 I 260403 07:48:33  reader:490] [127.0.0.1:4150:chatMessage:gm.cn.1] connecting to nsqd
+[gm.cn.1 W 260403 07:48:33  reader:508] [127.0.0.1:4150:chatMessage:gm.cn.1] max RDY count 2500 < reader max in flight 10000, truncation possible
+[gm.cn.1 I 260403 07:48:33 DBStreamProcess-1 stream:62] current cursor {'cur_account_time': 1775194263.0, 'cur_order_amount': 0.0, 'cur_login_time': 1775202410.0, 'cur_order_time': 0.0}
+[gm.cn.1 I 260403 07:48:34  gamerpc_client:50] game.cn.1 hello ack
+[gm.cn.1 I 260403 07:48:34  gamerpc_client:50] game.cn.2 hello ack
+[gm.cn.1 I 260403 07:48:49  web:1828] 302 GET / (192.168.97.1) 5.79ms 
+[gm.cn.1 I 260403 07:48:49  web:1828] 200 GET /login (192.168.97.1) 19.25ms 
+[gm.cn.1 I 260403 07:48:49  web:1828] 302 GET /lanauge_set?lang=vn (192.168.97.1) 0.39ms 
+[gm.cn.1 I 260403 07:50:00  web:1828] 302 GET / (192.168.97.1) 1.42ms 
+[gm.cn.1 I 260403 07:50:01  web:1828] 200 GET /login (192.168.97.1) 40.79ms 
+[gm.cn.1 I 260403 07:50:03  web:1828] 302 POST /login (192.168.97.1) 8.28ms 
+[gm.cn.1 I 260403 07:50:03  web:1828] 200 GET / (192.168.97.1) 60.90ms 
+[gm.cn.1 I 260403 07:50:06  web:1828] 302 GET /lanauge_set?lang=vn (192.168.97.1) 1.90ms 
+[gm.cn.1 I 260403 07:50:06  web:1828] 200 GET / (192.168.97.1) 47.53ms 
+[gm.cn.1 I 260403 07:50:08  web:1828] 200 GET /operate_activity (192.168.97.1) 47.78ms 
+[gm.cn.1 I 260403 07:50:11  __init__:76] `admin` gmGetGameYYComfig (u'game.cn.1',)
+[gm.cn.1 I 260403 07:50:11  web:1828] 200 POST /operate_activity (192.168.97.1) 498.84ms 
+[gm.cn.1 I 260403 07:55:32  __init__:92] `admin` gmSetGameYYComfig ({'yyhuodong': {100708: {u'beginDate': 20260403, u'endDate': 20260501}}}, u'game.cn.1')
+[gm.cn.1 I 260403 07:55:32  web:1828] 200 POST /operation_config/yyhuodong (192.168.97.1) 178.51ms 
+[gm.cn.1 I 260403 07:55:36  __init__:92] `admin` gmSetGameYYComfig ({'yyhuodong': {100708: {u'beginDate': 20260403, u'endDate': 20260501}}},)
+[gm.cn.1 I 260403 07:58:18  __init__:92] `admin` gmSetGameYYComfig ({'yyhuodong': {100001: {u'beginDate': 20260403, u'endDate': 20260507}, 100803: {u'beginDate': 20260403, u'endDate': 20260501}, 100708: {u'beginDate': 20260403, u'endDate': 20260501}}}, u'game.cn.1')
+[gm.cn.1 I 260403 07:58:18  web:1828] 200 POST /operation_config/yyhuodong (192.168.97.1) 169.83ms 
+[gm.cn.1 W 260403 07:58:32  gamerpc_client:45] gamemerge.cn.1 lost
+[gm.cn.1 I 260403 08:03:33  web:1828] 200 POST /operation_config/yyhuodong (192.168.97.1) 476336.37ms 
+[gm.cn.1 W 260403 08:08:32  gamerpc_client:45] gamemerge.cn.1 lost
+[gm.cn.1 W 260403 08:18:32  gamerpc_client:45] gamemerge.cn.1 lost
+[gm.cn.1 W 260403 08:28:32  gamerpc_client:45] gamemerge.cn.1 lost
+[gm.cn.1 W 260403 08:38:32  reader:535] [127.0.0.1:4150:chatMessage:gm.cn.1] connection closed
+[gm.cn.1 I 260403 08:38:32  reader:552] [127.0.0.1:4150:chatMessage:gm.cn.1] attempting to reconnect in 5s
+[gm.cn.1 W 260403 08:38:32  writer:212] [127.0.0.1:4150] connection closed
+[gm.cn.1 I 260403 08:38:32  writer:213] [127.0.0.1:4150] attempting to reconnect in 5.00s
+[gm.cn.1 W 260403 08:38:32  reader:535] [127.0.0.1:4150:RESP-c_gm.cn.1:0global_1rpc] connection closed
+[gm.cn.1 I 260403 08:38:32  reader:552] [127.0.0.1:4150:RESP-c_gm.cn.1:0global_1rpc] attempting to reconnect in 5s
+[gm.cn.1 W 260403 08:38:32  writer:212] [127.0.0.1:4150] connection closed
+[gm.cn.1 I 260403 08:38:32  writer:213] [127.0.0.1:4150] attempting to reconnect in 5.00s
+[gm.cn.1 W 260403 08:38:32  gamerpc_client:45] gamemerge.cn.1 lost
+[gm.cn.1 W 260403 08:38:32  client:141] topic REQ-gamemerge.cn.1 msgid 3010 method Hello attempting to resend in 5s
+[gm.cn.1 W 260403 08:38:32  client:141] topic REQ-game.cn.1 msgid 3011 method Hello attempting to resend in 5s
+[gm.cn.1 W 260403 08:38:32  client:141] topic REQ-game.cn.2 msgid 3012 method Hello attempting to resend in 5s
+[gm.cn.1 I 260403 08:38:37  reader:490] [127.0.0.1:4150:chatMessage:gm.cn.1] connecting to nsqd
+[gm.cn.1 I 260403 08:38:37  writer:189] [127.0.0.1:4150] connecting to nsqd
+[gm.cn.1 I 260403 08:38:37  reader:490] [127.0.0.1:4150:RESP-c_gm.cn.1:0global_1rpc] connecting to nsqd
+[gm.cn.1 I 260403 08:38:37  writer:189] [127.0.0.1:4150] connecting to nsqd
+[gm.cn.1 W 260403 08:38:37  reader:508] [127.0.0.1:4150:chatMessage:gm.cn.1] max RDY count 2500 < reader max in flight 10000, truncation possible
+[gm.cn.1 W 260403 08:38:37  reader:508] [127.0.0.1:4150:RESP-c_gm.cn.1:0global_1rpc] max RDY count 2500 < reader max in flight 10000, truncation possible
+[gm.cn.1 I 260403 08:38:37  gamerpc_client:50] game.cn.2 hello ack
+[gm.cn.1 I 260403 08:38:37  gamerpc_client:50] game.cn.1 hello ack
+[gm.cn.1 I 260403 08:39:44  web:1828] 200 GET /login (192.168.97.1) 57.70ms 
+[gm.cn.1 I 260403 08:39:50  web:1828] 302 POST /login (192.168.97.1) 7.44ms 
+[gm.cn.1 I 260403 08:39:50  web:1828] 200 GET / (192.168.97.1) 48.59ms 
+[gm.cn.1 I 260403 08:39:50  web:1828] 200 GET /statics/node_modules/bootstrap-table/dist/locale/bootstrap-table-vi-VN.min.js?v=ca4c3ab74f29bd9bcf437220620ffaad (192.168.97.1) 13.81ms 
+[gm.cn.1 I 260403 08:39:55  web:1828] 200 GET /operate_activity (192.168.97.1) 48.07ms 
+[gm.cn.1 I 260403 08:39:59  __init__:76] `admin` gmGetGameYYComfig (u'game.cn.1',)
+[gm.cn.1 I 260403 08:39:59  web:1828] 200 POST /operate_activity (192.168.97.1) 385.38ms 
+[gm.cn.1 I 260403 08:40:02  __init__:76] `admin` gmGetGameYYComfig (u'game.cn.1',)
+[gm.cn.1 I 260403 08:40:02  web:1828] 200 POST /operate_activity (192.168.97.1) 376.66ms 
+[gm.cn.1 I 260403 08:40:04  web:1828] 200 GET /placard_config (192.168.97.1) 36.23ms 
+[gm.cn.1 I 260403 08:40:36  web:1828] 200 POST /placard_config (192.168.97.1) 7.58ms 
+[gm.cn.1 I 260403 08:40:42  web:1828] 200 POST /placard_config (192.168.97.1) 6.83ms 
+[gm.cn.1 I 260403 08:40:45  web:1828] 200 GET /operate_activity (192.168.97.1) 5.95ms 
+[gm.cn.1 I 260403 08:40:49  __init__:76] `admin` gmGetGameYYComfig (u'game.cn.1',)
+[gm.cn.1 I 260403 08:40:50  web:1828] 200 POST /operate_activity (192.168.97.1) 608.98ms 
+[gm.cn.1 I 260403 08:40:52  web:1828] 200 GET /placard_config (192.168.97.1) 4.32ms 
+[gm.cn.1 I 260403 08:41:39  web:1828] 200 GET /statics/node_modules/x-editable/dist/bootstrap3-editable/img/loading.gif (192.168.97.1) 3.45ms 
+[gm.cn.1 I 260403 08:41:39  web:1828] 200 GET /statics/node_modules/x-editable/dist/bootstrap3-editable/img/clear.png (192.168.97.1) 2.01ms 
+[gm.cn.1 I 260403 08:42:31  __init__:92] `admin` gmSetGameYYComfig ({'yyhuodong': {1001: {u'beginDate': 20260401, u'endDate': 20260415}, 1002: {u'beginDate': 20260403, u'endDate': 20260415}}}, u'game.cn.1')
+[gm.cn.1 I 260403 08:42:31  web:1828] 200 POST /operation_config/yyhuodong (192.168.97.1) 176.63ms 
+[gm.cn.1 I 260403 08:44:10  __init__:92] `admin` gmSetGameYYComfig ({'yyhuodong': {1001: {u'beginDate': 20260401, u'endDate': 20260415}, 1002: {u'beginDate': 20260403, u'endDate': 20260415}}}, u'game.cn.1')
+[gm.cn.1 I 260403 08:44:10  web:1828] 200 POST /operation_config/yyhuodong (192.168.97.1) 169.53ms 
+[gm.cn.1 I 260403 08:44:58  web:1828] 200 GET /operate_activity (192.168.97.1) 20.62ms 
+[gm.cn.1 I 260403 08:45:01  __init__:76] `admin` gmGetGameYYComfig (u'game.cn.1',)
+[gm.cn.1 I 260403 08:45:02  web:1828] 200 POST /operate_activity (192.168.97.1) 395.97ms 
+[gm.cn.1 I 260403 08:46:05  __init__:92] `admin` gmSetGameYYComfig ({'yyhuodong': {1006: {u'beginDate': 20260403, u'endDate': 20260415}}}, u'game.cn.1')
+[gm.cn.1 I 260403 08:46:05  web:1828] 200 POST /operation_config/yyhuodong (192.168.97.1) 164.90ms 
+[gm.cn.1 I 260403 08:46:58  __init__:92] `admin` gmSetGameYYComfig ({'yyhuodong': {1006: {u'languages': ['vn'], u'beginDate': 20260403, u'endDate': 20260415}}}, u'game.cn.1')
+[gm.cn.1 I 260403 08:46:58  web:1828] 200 POST /operation_config/yyhuodong (192.168.97.1) 145.06ms 
+[gm.cn.1 W 260403 08:48:32  gamerpc_client:45] gamemerge.cn.1 lost
+[gm.cn.1 I 260403 08:48:46  __init__:92] `admin` gmSetGameYYComfig ({'yyhuodong': {1006: {u'languages': ['vn,cn,en'], u'leastLevel': 10, u'beginDate': 20260403, u'endDate': 20260415}}}, u'game.cn.1')
+[gm.cn.1 I 260403 08:48:46  web:1828] 200 POST /operation_config/yyhuodong (192.168.97.1) 165.29ms 
+[gm.cn.1 I 260403 08:49:34  __init__:92] `admin` gmSetGameYYComfig ({'yyhuodong': {}, 'placard': {}}, u'game.cn.1')
+[gm.cn.1 I 260403 08:49:35  web:1828] 200 POST /operation_config/reset (192.168.97.1) 167.78ms 
+[gm.cn.1 I 260403 08:49:36  __init__:76] `admin` gmGetGameYYComfig (u'game.cn.1',)
+[gm.cn.1 I 260403 08:49:37  web:1828] 200 POST /operate_activity (192.168.97.1) 364.08ms 
+[gm.cn.1 I 260403 08:51:44  web:1828] 200 GET /statics/node_modules/bootstrap/dist/css/bootstrap.min.css.map (192.168.97.1) 71.66ms 
+[gm.cn.1 I 260403 08:52:50  __init__:92] `admin` gmSetGameYYComfig ({'yyhuodong': {1004: {u'languages': ['vn'], u'leastLevel': 40, u'beginDate': 20260403, u'endDate': 20260405}, 100406: {u'beginDate': 20260403}}}, u'game.cn.1')
+[gm.cn.1 I 260403 08:52:50  web:1828] 200 POST /operation_config/yyhuodong (192.168.97.1) 164.61ms 
+[gm.cn.1 W 260403 08:53:32  gamerpc_client:45] gamemerge.cn.1 lost
+[gm.cn.1 I 260403 08:54:12  web:1828] 302 POST /login (192.168.97.1) 11.37ms 
+[gm.cn.1 W 260403 08:54:12  httputil:687] Unsupported Content-Encoding: gzip
+[gm.cn.1 I 260403 08:54:12  __init__:92] `admin` gmSendMail (u'game.cn.1', u'1', 2, u'\u0110o\xe0n V\u0103n Ng\u1ecdc', u'From GM', u'Ch\xfac b\u1ea1n ch\u01a1i game vui v\u1ebb!', {u'recharge_rmb': 99999999})
+[gm.cn.1 I 260403 08:54:12  web:1828] 200 POST /sendmail (192.168.97.1) 17.30ms 
+[gm.cn.1 I 260403 08:54:15  web:1828] 302 POST /login (192.168.97.1) 3.08ms 
+[gm.cn.1 W 260403 08:54:15  httputil:687] Unsupported Content-Encoding: gzip
+[gm.cn.1 I 260403 08:54:15  __init__:92] `admin` gmSendMail (u'game.cn.1', u'1', 2, u'\u0110o\xe0n V\u0103n Ng\u1ecdc', u'From GM', u'Ch\xfac b\u1ea1n ch\u01a1i game vui v\u1ebb!', {u'gold': 99999999})
+[gm.cn.1 I 260403 08:54:15  web:1828] 200 POST /sendmail (192.168.97.1) 9.41ms 
+[gm.cn.1 I 260403 08:54:18  web:1828] 302 POST /login (192.168.97.1) 4.69ms 
+[gm.cn.1 W 260403 08:54:18  httputil:687] Unsupported Content-Encoding: gzip
+[gm.cn.1 I 260403 08:54:18  __init__:92] `admin` gmSendMail (u'game.cn.1', u'1', 2, u'\u0110o\xe0n V\u0103n Ng\u1ecdc', u'From GM', u'Ch\xfac b\u1ea1n ch\u01a1i game vui v\u1ebb!', {u'role_exp': 99999999})
+[gm.cn.1 I 260403 08:54:18  web:1828] 200 POST /sendmail (192.168.97.1) 13.87ms 
+[gm.cn.1 W 260403 08:55:57  web:1421] 504 POST /operation_config/yyhuodong (192.168.97.1): TimeOut! Please Re-Login
+[gm.cn.1 E 260403 08:55:57  web:1828] 504 POST /operation_config/yyhuodong (192.168.97.1) 2.82ms 
+[gm.cn.1 I 260403 08:56:28  web:1828] 302 GET /logout (192.168.97.1) 2.42ms 
+[gm.cn.1 I 260403 08:56:28  web:1828] 200 GET /login (192.168.97.1) 9.90ms 
+[gm.cn.1 I 260403 08:56:31  web:1828] 302 POST /login (192.168.97.1) 3.91ms 
+[gm.cn.1 I 260403 08:56:31  web:1828] 304 GET / (192.168.97.1) 29.43ms 
+[gm.cn.1 I 260403 08:56:37  web:1828] 200 GET /operate_activity (192.168.97.1) 16.08ms 
+[gm.cn.1 I 260403 09:00:12  web:1828] 200 GET /sendmail (192.168.97.1) 80.04ms 
+[gm.cn.1 W 260403 09:03:32  gamerpc_client:45] gamemerge.cn.1 lost
+[gm.cn.1 W 260403 09:13:32  gamerpc_client:45] gamemerge.cn.1 lost
+[gm.cn.1 W 260403 09:23:32  gamerpc_client:45] gamemerge.cn.1 lost
+[gm.cn.1 W 260403 09:31:39  reader:535] [127.0.0.1:4150:chatMessage:gm.cn.1] connection closed
+[gm.cn.1 I 260403 09:31:39  reader:552] [127.0.0.1:4150:chatMessage:gm.cn.1] attempting to reconnect in 5s
+[gm.cn.1 W 260403 09:31:39  writer:212] [127.0.0.1:4150] connection closed
+[gm.cn.1 I 260403 09:31:39  writer:213] [127.0.0.1:4150] attempting to reconnect in 5.00s
+[gm.cn.1 W 260403 09:31:39  reader:535] [127.0.0.1:4150:RESP-c_gm.cn.1:0global_1rpc] connection closed
+[gm.cn.1 I 260403 09:31:39  reader:552] [127.0.0.1:4150:RESP-c_gm.cn.1:0global_1rpc] attempting to reconnect in 5s
+[gm.cn.1 W 260403 09:31:39  client:141] topic REQ-game.cn.1 msgid 6213 method Hello attempting to resend in 5s
+[gm.cn.1 W 260403 09:31:39  client:141] topic REQ-game.cn.2 msgid 6214 method Hello attempting to resend in 5s
+[gm.cn.1 W 260403 09:31:39  writer:212] [127.0.0.1:4150] connection closed
+[gm.cn.1 I 260403 09:31:39  writer:213] [127.0.0.1:4150] attempting to reconnect in 5.00s
+[gm.cn.1 I 260403 09:31:44  reader:490] [127.0.0.1:4150:chatMessage:gm.cn.1] connecting to nsqd
+[gm.cn.1 I 260403 09:31:44  writer:189] [127.0.0.1:4150] connecting to nsqd
+[gm.cn.1 I 260403 09:31:44  reader:490] [127.0.0.1:4150:RESP-c_gm.cn.1:0global_1rpc] connecting to nsqd
+[gm.cn.1 W 260403 09:31:44  client:141] topic REQ-game.cn.1 msgid 6213 method Hello attempting to resend in 5s
+[gm.cn.1 W 260403 09:31:44  client:141] topic REQ-game.cn.2 msgid 6214 method Hello attempting to resend in 5s
+[gm.cn.1 I 260403 09:31:44  writer:189] [127.0.0.1:4150] connecting to nsqd
+[gm.cn.1 W 260403 09:31:44  reader:508] [127.0.0.1:4150:chatMessage:gm.cn.1] max RDY count 2500 < reader max in flight 10000, truncation possible
+[gm.cn.1 W 260403 09:31:44  reader:508] [127.0.0.1:4150:RESP-c_gm.cn.1:0global_1rpc] max RDY count 2500 < reader max in flight 10000, truncation possible
+[gm.cn.1 I 260403 09:31:49  gamerpc_client:50] game.cn.1 hello ack
+[gm.cn.1 I 260403 09:31:49  gamerpc_client:50] game.cn.2 hello ack
+[gm.cn.1 W 260403 09:33:32  gamerpc_client:45] gamemerge.cn.1 lost
+[gm.cn.1 W 260403 09:43:32  gamerpc_client:45] gamemerge.cn.1 lost
+[gm.cn.1 W 260403 09:53:32  gamerpc_client:45] gamemerge.cn.1 lost
+[gm.cn.1 W 260403 10:03:32  gamerpc_client:45] gamemerge.cn.1 lost
+[gm.cn.1 W 260403 10:13:32  gamerpc_client:45] gamemerge.cn.1 lost
+[gm.cn.1 I 260403 10:17:11  web:1828] 302 GET /refreshcsv (192.168.97.1) 19.90ms 
+[gm.cn.1 I 260403 10:17:11  web:1828] 200 GET /login (192.168.97.1) 43.61ms 
+[gm.cn.1 I 260403 10:17:13  web:1828] 302 POST /login (192.168.97.1) 4.33ms 
+[gm.cn.1 I 260403 10:17:14  web:1828] 304 GET / (192.168.97.1) 45.91ms 
+[gm.cn.1 I 260403 10:17:16  web:1828] 200 GET /retention (192.168.97.1) 71.21ms 
+[gm.cn.1 I 260403 10:17:17  web:1828] 200 GET /daily (192.168.97.1) 41.98ms 
+[gm.cn.1 I 260403 10:17:19  web:1828] 200 GET /sendmail (192.168.97.1) 10.70ms 
+[gm.cn.1 I 260403 10:17:22  __init__:76] `admin` gmGetMailCsv (u'game.cn.1',)
+[gm.cn.1 I 260403 10:17:22  web:1828] 200 GET /sendmail/mail_template?servName=game.cn.1 (192.168.97.1) 40.81ms 
+[gm.cn.1 I 260403 10:17:27  web:1828] 200 GET /anomaly_detection_page (192.168.97.1) 62.04ms 
+[gm.cn.1 I 260403 10:17:34  __init__:92] `admin` gmScanDataAnomalies (u'game.cn.1', u'memory_db_diff', 100)
+[gm.cn.1 I 260403 10:17:34  web:1828] 200 GET /scan_anomalies?servName=game.cn.1&scanType=memory_db_diff&limit=100&_t=1775211454475 (192.168.97.1) 37.28ms 
+[gm.cn.1 I 260403 10:17:39  __init__:92] `admin` gmScanDataAnomalies (u'game.cn.1', u'value_abnormal', 100)
+[gm.cn.1 I 260403 10:17:39  web:1828] 200 GET /scan_anomalies?servName=game.cn.1&scanType=value_abnormal&limit=100&_t=1775211459204 (192.168.97.1) 20.04ms 
+[gm.cn.1 I 260403 10:17:47  __init__:92] `admin` gmScanDataAnomalies (u'game.cn.1', u'all', 100)
+[gm.cn.1 I 260403 10:17:47  web:1828] 200 GET /scan_anomalies?servName=game.cn.1&scanType=all&limit=100&_t=1775211467655 (192.168.97.1) 36.29ms 
+[gm.cn.1 I 260403 10:17:52  web:1828] 200 GET /account_migrate (192.168.97.1) 61.53ms 
+[gm.cn.1 I 260403 10:18:00  web:1828] 200 GET /refreshcsv (192.168.97.1) 44.34ms 
+[gm.cn.1 I 260403 10:18:09  __init__:76] `admin` gmGenRobots (u'game.cn.1',)
+[gm.cn.1 E 260403 10:18:09  web:1424] Uncaught exception POST /genrobots (192.168.97.1)
+    HTTPServerRequest(protocol='http', host='192.168.1.13:38088', method='POST', uri='/genrobots', version='HTTP/1.1', remote_ip='192.168.97.1', headers={'Origin': 'http://192.168.1.13:38088', 'Content-Length': '24', 'Accept-Language': 'vi,en-US;q=0.9,en;q=0.8,fr-FR;q=0.7,fr;q=0.6', 'Accept-Encoding': 'gzip, deflate', 'Host': '192.168.1.13:38088', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://192.168.1.13:38088/refreshcsv', 'Cookie': 'TJ_GM_SESSIONID="2|1:0|10:1775211433|15:TJ_GM_SESSIONID|48:YWRmNjljMzctMDMwNC01MDNjLTk5YjgtMGM4Yjg1NTk0NWYy|fa327c0348e29b8af1a4c7fa2a584b5fe67b30497ed3f6d97cbd61c2d3996035"', 'Content-Type': 'application/json'})
+    Traceback (most recent call last):
+      File "/mnt/pokemon/release/src/tornado/web.py", line 1348, in _execute
+        result = yield result
+      File "/mnt/pokemon/release/src/tornado/gen.py", line 807, in run
+        value = future.result()
+      File "/mnt/pokemon/release/src/tornado/concurrent.py", line 209, in result
+        raise_exc_info(self._exc_info)
+      File "/mnt/pokemon/release/src/tornado/gen.py", line 810, in run
+        yielded = self.gen.throw(*sys.exc_info())
+      File "/mnt/pokemon/release/src/gm/handler/_gm.py", line 1270, in post
+        ret = yield self.userGMRPC.gmGenRobots(self.session, servName)
+      File "/mnt/pokemon/release/src/tornado/gen.py", line 807, in run
+        value = future.result()
+      File "/mnt/pokemon/release/src/tornado/concurrent.py", line 209, in result
+        raise_exc_info(self._exc_info)
+      File "/mnt/pokemon/release/src/tornado/gen.py", line 810, in run
+        yielded = self.gen.throw(*sys.exc_info())
+      File "/mnt/pokemon/release/src/gm/task/console.py", line 228, in gmGenRobots
+        ret = yield self.gameAllRPCs[name].call_async('gmGenRobots')
+      File "/mnt/pokemon/release/src/tornado/gen.py", line 807, in run
+        value = future.result()
+      File "/mnt/pokemon/release/src/tornado/concurrent.py", line 209, in result
+        raise_exc_info(self._exc_info)
+      File "<string>", line 3, in raise_exc_info
+    CallError: 'NoneType' object does not support item assignment, topic gmGenRobots
+[gm.cn.1 E 260403 10:18:09  web:1828] 500 POST /genrobots (192.168.97.1) 200.34ms 
+[gm.cn.1 E 260403 10:18:14  web:1424] Uncaught exception GET /calattrs?servName=game.cn.1&role_uid=1 (192.168.97.1)
+    HTTPServerRequest(protocol='http', host='192.168.1.13:38088', method='GET', uri='/calattrs?servName=game.cn.1&role_uid=1', version='HTTP/1.1', remote_ip='192.168.97.1', headers={'Accept-Language': 'vi,en-US;q=0.9,en;q=0.8,fr-FR;q=0.7,fr;q=0.6', 'Accept-Encoding': 'gzip, deflate', 'X-Requested-With': 'XMLHttpRequest', 'Host': '192.168.1.13:38088', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://192.168.1.13:38088/refreshcsv', 'Cookie': 'TJ_GM_SESSIONID="2|1:0|10:1775211433|15:TJ_GM_SESSIONID|48:YWRmNjljMzctMDMwNC01MDNjLTk5YjgtMGM4Yjg1NTk0NWYy|fa327c0348e29b8af1a4c7fa2a584b5fe67b30497ed3f6d97cbd61c2d3996035"'})
+    Traceback (most recent call last):
+      File "/mnt/pokemon/release/src/tornado/web.py", line 1348, in _execute
+        result = yield result
+      File "/mnt/pokemon/release/src/tornado/gen.py", line 807, in run
+        value = future.result()
+      File "/mnt/pokemon/release/src/tornado/concurrent.py", line 209, in result
+        raise_exc_info(self._exc_info)
+      File "/mnt/pokemon/release/src/tornado/gen.py", line 812, in run
+        yielded = self.gen.send(value)
+      File "/mnt/pokemon/release/src/gm/handler/_gm.py", line 1301, in get
+        'data': cards, 'role': {'id': binascii.hexlify(ret['role']['id']), 'name': ret['role']['name']}})
+      File "/mnt/pokemon/release/src/tornado/web.py", line 657, in write
+        chunk = escape.json_encode(chunk)
+      File "/mnt/pokemon/release/src/tornado/escape.py", line 88, in json_encode
+        return json.dumps(value).replace("</", "<\\/")
+      File "/usr/lib64/python2.7/json/__init__.py", line 243, in dumps
+        return _default_encoder.encode(obj)
+      File "/usr/lib64/python2.7/json/encoder.py", line 207, in encode
+        chunks = self.iterencode(o, _one_shot=True)
+      File "/usr/lib64/python2.7/json/encoder.py", line 270, in iterencode
+        return _iterencode(o, 0)
+    UnicodeDecodeError: 'utf8' codec can't decode byte 0xcf in position 1: invalid continuation byte
+[gm.cn.1 E 260403 10:18:14  web:1828] 500 GET /calattrs?servName=game.cn.1&role_uid=1 (192.168.97.1) 32.82ms 
+[gm.cn.1 I 260403 10:19:03  web:1828] 200 GET /server_area_page (192.168.97.1) 67.47ms 
+[gm.cn.1 W 260403 10:19:04  reader:535] [127.0.0.1:4150:chatMessage:gm.cn.1] connection closed
+[gm.cn.1 I 260403 10:19:05  reader:552] [127.0.0.1:4150:chatMessage:gm.cn.1] attempting to reconnect in 5s
+[gm.cn.1 W 260403 10:19:05  writer:212] [127.0.0.1:4150] connection closed
+[gm.cn.1 I 260403 10:19:05  writer:213] [127.0.0.1:4150] attempting to reconnect in 5.00s
+[gm.cn.1 W 260403 10:19:05  reader:535] [127.0.0.1:4150:RESP-c_gm.cn.1:0global_1rpc] connection closed
+[gm.cn.1 I 260403 10:19:05  reader:552] [127.0.0.1:4150:RESP-c_gm.cn.1:0global_1rpc] attempting to reconnect in 5s
+[gm.cn.1 W 260403 10:19:05  client:141] topic REQ-game.cn.1 msgid 9060 method Hello attempting to resend in 5s
+[gm.cn.1 W 260403 10:19:05  client:141] topic REQ-game.cn.2 msgid 9061 method Hello attempting to resend in 5s
+[gm.cn.1 W 260403 10:19:05  writer:212] [127.0.0.1:4150] connection closed
+[gm.cn.1 I 260403 10:19:05  writer:213] [127.0.0.1:4150] attempting to reconnect in 5.00s
+[gm.cn.1 I 260403 10:19:05  web:1828] 200 GET /server_area/config?path=%2Fmnt%2Fpokemon%2Frelease%2Flogin%2Fconf%2Fgame.json (192.168.97.1) 9.56ms 
+[gm.cn.1 I 260403 10:19:10  reader:490] [127.0.0.1:4150:chatMessage:gm.cn.1] connecting to nsqd
+[gm.cn.1 I 260403 10:19:10  writer:189] [127.0.0.1:4150] connecting to nsqd
+[gm.cn.1 I 260403 10:19:10  reader:490] [127.0.0.1:4150:RESP-c_gm.cn.1:0global_1rpc] connecting to nsqd
+[gm.cn.1 W 260403 10:19:10  client:141] topic REQ-game.cn.1 msgid 9060 method Hello attempting to resend in 5s
+[gm.cn.1 W 260403 10:19:10  client:141] topic REQ-game.cn.2 msgid 9061 method Hello attempting to resend in 5s
+[gm.cn.1 I 260403 10:19:10  writer:189] [127.0.0.1:4150] connecting to nsqd
+[gm.cn.1 W 260403 10:19:10  reader:508] [127.0.0.1:4150:chatMessage:gm.cn.1] max RDY count 2500 < reader max in flight 10000, truncation possible
+[gm.cn.1 W 260403 10:19:10  reader:508] [127.0.0.1:4150:RESP-c_gm.cn.1:0global_1rpc] max RDY count 2500 < reader max in flight 10000, truncation possible
+[gm.cn.1 I 260403 10:19:15  gamerpc_client:50] game.cn.1 hello ack
+[gm.cn.1 I 260403 10:19:15  gamerpc_client:50] game.cn.2 hello ack
+[gm.cn.1 W 260403 10:23:32  gamerpc_client:45] gamemerge.cn.1 lost
+[gm.cn.1 I 260403 10:29:04  web:1828] 304 GET /refreshcsv (192.168.97.1) 45.28ms 
+[gm.cn.1 W 260403 10:33:32  gamerpc_client:45] gamemerge.cn.1 lost
+[gm.cn.1 I 260403 10:37:28  server:232] [gm.cn.1] GM Server onShutdown ...
+[gm.cn.1 I 260403 10:37:29 DBStreamProcess-1 stream:259] DBStreamProcess-1 3f9 7ffff79a69d0 End
+[gm.cn.1 I 260403 10:37:30  server:264] [gm.cn.1] GM Server onApplicationExit
+[gm.cn.1 I 260403 10:37:30  server:212] [gm.cn.1] GM Server Shutdown OK
+os.getcwd /mnt/pokemon/release
+os.getcwd /mnt/pokemon/release
+[gm.cn.1 I 260403 10:37:33  server:130] Added service to container: accountdb.cn.1 (type: Client)
+[gm.cn.1 I 260403 10:37:33  server:130] Added service to container: giftdb.cn.1 (type: Client)
+[gm.cn.1 I 260403 10:37:33  server:130] Added service to container: card_comment.cn.1 (type: Client)
+[gm.cn.1 I 260403 10:37:33  server:130] Added service to container: crossarena.cn.1 (type: Client)
+[gm.cn.1 I 260403 10:37:33  server:130] Added service to container: crossarena.cn.2 (type: Client)
+[gm.cn.1 I 260403 10:37:33  server:130] Added service to container: crossarena.cn.3 (type: Client)
+[gm.cn.1 I 260403 10:37:33  server:130] Added service to container: crossarena.cn.4 (type: Client)
+[gm.cn.1 I 260403 10:37:33  server:130] Added service to container: crossarena.cn.5 (type: Client)
+[gm.cn.1 I 260403 10:37:33  server:130] Added service to container: crossarena.cn.6 (type: Client)
+[gm.cn.1 I 260403 10:37:33  server:130] Added service to container: crossarena.cn.7 (type: Client)
+[gm.cn.1 I 260403 10:37:33  server:130] Added service to container: crossarena.cn.8 (type: Client)
+[gm.cn.1 I 260403 10:37:33  server:130] Added service to container: crossarena.cn.9 (type: Client)
+[gm.cn.1 I 260403 10:37:33  server:130] Added service to container: crossarena.cn.10 (type: Client)
+[gm.cn.1 I 260403 10:37:33  server:130] Added service to container: crosscraft.cn.1 (type: Client)
+[gm.cn.1 I 260403 10:37:33  server:130] Added service to container: crosscraft.cn.2 (type: Client)
+[gm.cn.1 I 260403 10:37:33  server:130] Added service to container: crosscraft.cn.3 (type: Client)
+[gm.cn.1 I 260403 10:37:33  server:130] Added service to container: crosscraft.cn.4 (type: Client)
+[gm.cn.1 I 260403 10:37:33  server:130] Added service to container: crosscraft.cn.5 (type: Client)
+[gm.cn.1 I 260403 10:37:33  server:130] Added service to container: crosscraft.cn.6 (type: Client)
+[gm.cn.1 I 260403 10:37:33  server:130] Added service to container: crosscraft.cn.7 (type: Client)
+[gm.cn.1 I 260403 10:37:33  server:130] Added service to container: crosscraft.cn.8 (type: Client)
+[gm.cn.1 I 260403 10:37:33  server:130] Added service to container: crosscraft.cn.9 (type: Client)
+[gm.cn.1 I 260403 10:37:33  server:130] Added service to container: crosscraft.cn.10 (type: Client)
+[gm.cn.1 I 260403 10:37:33  server:130] Added service to container: crossgym.cn.1 (type: Client)
+[gm.cn.1 I 260403 10:37:33  server:130] Added service to container: crossgym.cn.2 (type: Client)
+[gm.cn.1 I 260403 10:37:33  server:130] Added service to container: crossgym.cn.3 (type: Client)
+[gm.cn.1 I 260403 10:37:33  server:130] Added service to container: crossgym.cn.4 (type: Client)
+[gm.cn.1 I 260403 10:37:33  server:130] Added service to container: crossgym.cn.5 (type: Client)
+[gm.cn.1 I 260403 10:37:33  server:130] Added service to container: crossgym.cn.6 (type: Client)
+[gm.cn.1 I 260403 10:37:33  server:130] Added service to container: crossgym.cn.7 (type: Client)
+[gm.cn.1 I 260403 10:37:33  server:130] Added service to container: crossgym.cn.8 (type: Client)
+[gm.cn.1 I 260403 10:37:33  server:130] Added service to container: crossgym.cn.9 (type: Client)
+[gm.cn.1 I 260403 10:37:33  server:130] Added service to container: crossgym.cn.10 (type: Client)
+[gm.cn.1 I 260403 10:37:33  server:130] Added service to container: crossmine.cn.1 (type: Client)
+[gm.cn.1 I 260403 10:37:33  server:130] Added service to container: crossmine.cn.2 (type: Client)
+[gm.cn.1 I 260403 10:37:33  server:130] Added service to container: crossmine.cn.3 (type: Client)
+[gm.cn.1 I 260403 10:37:33  server:130] Added service to container: crossmine.cn.4 (type: Client)
+[gm.cn.1 I 260403 10:37:33  server:130] Added service to container: crossmine.cn.5 (type: Client)
+[gm.cn.1 I 260403 10:37:33  server:130] Added service to container: crossmine.cn.6 (type: Client)
+[gm.cn.1 I 260403 10:37:33  server:130] Added service to container: crossmine.cn.7 (type: Client)
+[gm.cn.1 I 260403 10:37:33  server:130] Added service to container: crossmine.cn.8 (type: Client)
+[gm.cn.1 I 260403 10:37:33  server:130] Added service to container: crossmine.cn.9 (type: Client)
+[gm.cn.1 I 260403 10:37:33  server:130] Added service to container: crossmine.cn.10 (type: Client)
+[gm.cn.1 I 260403 10:37:33  server:130] Added service to container: onlinefight.cn.1 (type: Client)
+[gm.cn.1 I 260403 10:37:33  server:130] Added service to container: onlinefight.cn.2 (type: Client)
+[gm.cn.1 I 260403 10:37:33  server:130] Added service to container: onlinefight.cn.3 (type: Client)
+[gm.cn.1 I 260403 10:37:33  server:130] Added service to container: onlinefight.cn.4 (type: Client)
+[gm.cn.1 I 260403 10:37:33  server:130] Added service to container: onlinefight.cn.5 (type: Client)
+[gm.cn.1 I 260403 10:37:33  server:130] Added service to container: onlinefight.cn.6 (type: Client)
+[gm.cn.1 I 260403 10:37:33  server:130] Added service to container: onlinefight.cn.7 (type: Client)
+[gm.cn.1 I 260403 10:37:33  server:130] Added service to container: onlinefight.cn.8 (type: Client)
+[gm.cn.1 I 260403 10:37:33  server:130] Added service to container: onlinefight.cn.9 (type: Client)
+[gm.cn.1 I 260403 10:37:33  server:130] Added service to container: onlinefight.cn.10 (type: Client)
+[gm.cn.1 I 260403 10:37:33  server:130] Added service to container: crossunionfight.cn.1 (type: Client)
+[gm.cn.1 I 260403 10:37:33  server:130] Added service to container: crossunionfight.cn.2 (type: Client)
+[gm.cn.1 I 260403 10:37:33  server:130] Added service to container: crossunionfight.cn.3 (type: Client)
+[gm.cn.1 I 260403 10:37:33  server:130] Added service to container: crossunionfight.cn.4 (type: Client)
+[gm.cn.1 I 260403 10:37:33  server:130] Added service to container: crossunionfight.cn.5 (type: Client)
+[gm.cn.1 I 260403 10:37:33  server:130] Added service to container: crossunionfight.cn.6 (type: Client)
+[gm.cn.1 I 260403 10:37:33  server:130] Added service to container: crossunionfight.cn.7 (type: Client)
+[gm.cn.1 I 260403 10:37:33  server:130] Added service to container: crossunionfight.cn.8 (type: Client)
+[gm.cn.1 I 260403 10:37:33  server:130] Added service to container: crossunionfight.cn.9 (type: Client)
+[gm.cn.1 I 260403 10:37:33  server:130] Added service to container: crossunionfight.cn.10 (type: Client)
+[gm.cn.1 I 260403 10:37:33  server:130] Added service to container: crossmatch.cn.1 (type: Client)
+[gm.cn.1 I 260403 10:37:33  server:130] Added service to container: crosschat.cn.1 (type: Client)
+[gm.cn.1 I 260403 10:37:33  server:130] Added service to container: crosschat.cn.2 (type: Client)
+[gm.cn.1 I 260403 10:37:33  server:130] Added service to container: crosschat.cn.3 (type: Client)
+[gm.cn.1 I 260403 10:37:33  server:130] Added service to container: crosschat.cn.4 (type: Client)
+[gm.cn.1 I 260403 10:37:33  server:130] Added service to container: crosschat.cn.5 (type: Client)
+[gm.cn.1 I 260403 10:37:33  server:130] Added service to container: crosschat.cn.6 (type: Client)
+[gm.cn.1 I 260403 10:37:33  server:130] Added service to container: crosschat.cn.7 (type: Client)
+[gm.cn.1 I 260403 10:37:33  server:130] Added service to container: crosschat.cn.8 (type: Client)
+[gm.cn.1 I 260403 10:37:33  server:130] Added service to container: crosschat.cn.9 (type: Client)
+[gm.cn.1 I 260403 10:37:33  server:130] Added service to container: crosschat.cn.10 (type: Client)
+[gm.cn.1 I 260403 10:37:33  server:130] Added service to container: gamemerge.cn.1 (type: GameRPClient)
+[gm.cn.1 I 260403 10:37:33  server:130] Added service to container: game.cn.1 (type: GameRPClient)
+[gm.cn.1 I 260403 10:37:33  server:130] Added service to container: game.cn.2 (type: GameRPClient)
+[gm.cn.1 I 260403 10:37:33  writer:110] starting writer...
+[gm.cn.1 I 260403 10:37:33  writer:189] [127.0.0.1:4150] connecting to nsqd
+[gm.cn.1 I 260403 10:37:33  reader:235] [RESP-c_gm.cn.1:0global_1rpc] starting reader for RESP-c_gm.cn.1/0global_1rpc...
+[gm.cn.1 I 260403 10:37:33  reader:490] [127.0.0.1:4150:RESP-c_gm.cn.1:0global_1rpc] connecting to nsqd
+[gm.cn.1 I 260403 10:37:33  writer:110] starting writer...
+[gm.cn.1 I 260403 10:37:33  writer:189] [127.0.0.1:4150] connecting to nsqd
+[gm.cn.1 W 260403 10:37:33  reader:508] [127.0.0.1:4150:RESP-c_gm.cn.1:0global_1rpc] max RDY count 2500 < reader max in flight 10000, truncation possible
+[gm.cn.1 I 260403 10:37:34  server:155] Cross service pattern ^crossarena found 10 services: ['crossarena.cn.10', 'crossarena.cn.9', 'crossarena.cn.8', 'crossarena.cn.3', 'crossarena.cn.2', 'crossarena.cn.1', 'crossarena.cn.7', 'crossarena.cn.6', 'crossarena.cn.5', 'crossarena.cn.4']
+[gm.cn.1 I 260403 10:37:34  server:155] Cross service pattern ^crosscraft found 10 services: ['crosscraft.cn.8', 'crosscraft.cn.9', 'crosscraft.cn.2', 'crosscraft.cn.3', 'crosscraft.cn.1', 'crosscraft.cn.6', 'crosscraft.cn.7', 'crosscraft.cn.4', 'crosscraft.cn.5', 'crosscraft.cn.10']
+[gm.cn.1 I 260403 10:37:34  server:155] Cross service pattern ^crossgym found 10 services: ['crossgym.cn.4', 'crossgym.cn.10', 'crossgym.cn.5', 'crossgym.cn.7', 'crossgym.cn.6', 'crossgym.cn.1', 'crossgym.cn.3', 'crossgym.cn.2', 'crossgym.cn.9', 'crossgym.cn.8']
+[gm.cn.1 I 260403 10:37:34  server:155] Cross service pattern ^crossmine found 10 services: ['crossmine.cn.8', 'crossmine.cn.4', 'crossmine.cn.10', 'crossmine.cn.9', 'crossmine.cn.5', 'crossmine.cn.6', 'crossmine.cn.7', 'crossmine.cn.2', 'crossmine.cn.3', 'crossmine.cn.1']
+[gm.cn.1 I 260403 10:37:34  server:155] Cross service pattern ^onlinefight found 10 services: ['onlinefight.cn.8', 'onlinefight.cn.9', 'onlinefight.cn.1', 'onlinefight.cn.2', 'onlinefight.cn.4', 'onlinefight.cn.5', 'onlinefight.cn.6', 'onlinefight.cn.3', 'onlinefight.cn.7', 'onlinefight.cn.10']
+[gm.cn.1 I 260403 10:37:34  server:155] Cross service pattern ^crossunionfight found 10 services: ['crossunionfight.cn.3', 'crossunionfight.cn.4', 'crossunionfight.cn.5', 'crossunionfight.cn.7', 'crossunionfight.cn.8', 'crossunionfight.cn.9', 'crossunionfight.cn.2', 'crossunionfight.cn.10', 'crossunionfight.cn.6', 'crossunionfight.cn.1']
+[gm.cn.1 I 260403 10:37:34  server:155] Cross service pattern ^crosschat found 10 services: ['crosschat.cn.10', 'crosschat.cn.8', 'crosschat.cn.5', 'crosschat.cn.2', 'crosschat.cn.9', 'crosschat.cn.7', 'crosschat.cn.6', 'crosschat.cn.4', 'crosschat.cn.3', 'crosschat.cn.1']
+[gm.cn.1 I 260403 10:37:34  server:155] Cross service pattern ^crossmatch found 1 services: ['crossmatch.cn.1']
+[gm.cn.1 I 260403 10:37:34  server:158] Total cross services: ['crossunionfight.cn.3', 'crosschat.cn.5', 'crossunionfight.cn.4', 'crossunionfight.cn.5', 'onlinefight.cn.8', 'onlinefight.cn.9', 'crossunionfight.cn.7', 'crossmine.cn.8', 'onlinefight.cn.1', 'crossmine.cn.10', 'onlinefight.cn.2', 'crossmine.cn.9', 'onlinefight.cn.4', 'onlinefight.cn.5', 'onlinefight.cn.6', 'onlinefight.cn.7', 'crossunionfight.cn.8', 'crossunionfight.cn.9', 'crosscraft.cn.8', 'crosscraft.cn.9', 'crossgym.cn.10', 'crosschat.cn.10', 'crosscraft.cn.2', 'crosscraft.cn.3', 'crossunionfight.cn.2', 'crosscraft.cn.1', 'crosscraft.cn.6', 'crosscraft.cn.7', 'crosscraft.cn.4', 'crosscraft.cn.5', 'onlinefight.cn.3', 'crossgym.cn.5', 'crossgym.cn.4', 'crossgym.cn.7', 'crossgym.cn.6', 'crossgym.cn.1', 'crossgym.cn.3', 'crossgym.cn.2', 'crossgym.cn.9', 'crosschat.cn.8', 'crosscraft.cn.10', 'crossgym.cn.8', 'crossarena.cn.10', 'crossmatch.cn.1', 'crossunionfight.cn.10', 'crossmine.cn.5', 'onlinefight.cn.10', 'crossmine.cn.6', 'crossmine.cn.7', 'crossarena.cn.9', 'crossarena.cn.8', 'crossmine.cn.2', 'crossmine.cn.3', 'crossmine.cn.1', 'crossarena.cn.3', 'crossarena.cn.2', 'crossarena.cn.1', 'crossarena.cn.7', 'crossarena.cn.6', 'crossarena.cn.5', 'crossarena.cn.4', 'crossunionfight.cn.6', 'crosschat.cn.9', 'crossunionfight.cn.1', 'crosschat.cn.7', 'crosschat.cn.6', 'crossmine.cn.4', 'crosschat.cn.4', 'crosschat.cn.3', 'crosschat.cn.2', 'crosschat.cn.1']
+It is release mode!
+Server UTC 8:00:00 Local UTC 00:00:00 Delta 0:00:00
+[gm.cn.1] GM Server listen at 0.0.0.0:38088 running ...
+[gm.cn.1 I 260403 10:37:34  server:225] [gm.cn.1] GM Server Start OK
+[gm.cn.1 I 260403 10:37:34  reader:235] [chatMessage:gm.cn.1] starting reader for chatMessage/gm.cn.1...
+[gm.cn.1 I 260403 10:37:34  reader:490] [127.0.0.1:4150:chatMessage:gm.cn.1] connecting to nsqd
+[gm.cn.1 I 260403 10:37:34 DBStreamProcess-1 __init__:45] DBStreamProcess-1 468 7ffff79a69d0 Start
+[gm.cn.1 W 260403 10:37:34  reader:508] [127.0.0.1:4150:chatMessage:gm.cn.1] max RDY count 2500 < reader max in flight 10000, truncation possible
+[gm.cn.1 I 260403 10:37:34 DBStreamProcess-1 stream:62] current cursor {'cur_account_time': 1775194263.0, 'cur_order_amount': 0.0, 'cur_login_time': 1775211655.0, 'cur_order_time': 0.0}
+[gm.cn.1 I 260403 10:37:35  gamerpc_client:50] game.cn.1 hello ack
+[gm.cn.1 I 260403 10:37:35  gamerpc_client:50] game.cn.2 hello ack
+[gm.cn.1 I 260403 10:38:50  server:232] [gm.cn.1] GM Server onShutdown ...
+[gm.cn.1 I 260403 10:38:50 DBStreamProcess-1 stream:259] DBStreamProcess-1 468 7ffff79a69d0 End
+[gm.cn.1 I 260403 10:38:50  server:264] [gm.cn.1] GM Server onApplicationExit
+[gm.cn.1 I 260403 10:38:50  server:212] [gm.cn.1] GM Server Shutdown OK
+[gm.cn.1 I 260403 10:38:54  server:130] Added service to container: accountdb.cn.1 (type: Client)
+[gm.cn.1 I 260403 10:38:54  server:130] Added service to container: giftdb.cn.1 (type: Client)
+[gm.cn.1 I 260403 10:38:54  server:130] Added service to container: card_comment.cn.1 (type: Client)
+[gm.cn.1 I 260403 10:38:54  server:130] Added service to container: crossarena.cn.1 (type: Client)
+[gm.cn.1 I 260403 10:38:54  server:130] Added service to container: crossarena.cn.2 (type: Client)
+[gm.cn.1 I 260403 10:38:54  server:130] Added service to container: crossarena.cn.3 (type: Client)
+[gm.cn.1 I 260403 10:38:54  server:130] Added service to container: crossarena.cn.4 (type: Client)
+[gm.cn.1 I 260403 10:38:54  server:130] Added service to container: crossarena.cn.5 (type: Client)
+[gm.cn.1 I 260403 10:38:54  server:130] Added service to container: crossarena.cn.6 (type: Client)
+[gm.cn.1 I 260403 10:38:54  server:130] Added service to container: crossarena.cn.7 (type: Client)
+[gm.cn.1 I 260403 10:38:54  server:130] Added service to container: crossarena.cn.8 (type: Client)
+[gm.cn.1 I 260403 10:38:54  server:130] Added service to container: crossarena.cn.9 (type: Client)
+[gm.cn.1 I 260403 10:38:54  server:130] Added service to container: crossarena.cn.10 (type: Client)
+[gm.cn.1 I 260403 10:38:54  server:130] Added service to container: crosscraft.cn.1 (type: Client)
+[gm.cn.1 I 260403 10:38:54  server:130] Added service to container: crosscraft.cn.2 (type: Client)
+[gm.cn.1 I 260403 10:38:54  server:130] Added service to container: crosscraft.cn.3 (type: Client)
+[gm.cn.1 I 260403 10:38:54  server:130] Added service to container: crosscraft.cn.4 (type: Client)
+[gm.cn.1 I 260403 10:38:54  server:130] Added service to container: crosscraft.cn.5 (type: Client)
+[gm.cn.1 I 260403 10:38:54  server:130] Added service to container: crosscraft.cn.6 (type: Client)
+[gm.cn.1 I 260403 10:38:54  server:130] Added service to container: crosscraft.cn.7 (type: Client)
+[gm.cn.1 I 260403 10:38:54  server:130] Added service to container: crosscraft.cn.8 (type: Client)
+[gm.cn.1 I 260403 10:38:54  server:130] Added service to container: crosscraft.cn.9 (type: Client)
+[gm.cn.1 I 260403 10:38:54  server:130] Added service to container: crosscraft.cn.10 (type: Client)
+[gm.cn.1 I 260403 10:38:54  server:130] Added service to container: crossgym.cn.1 (type: Client)
+[gm.cn.1 I 260403 10:38:54  server:130] Added service to container: crossgym.cn.2 (type: Client)
+[gm.cn.1 I 260403 10:38:54  server:130] Added service to container: crossgym.cn.3 (type: Client)
+[gm.cn.1 I 260403 10:38:54  server:130] Added service to container: crossgym.cn.4 (type: Client)
+[gm.cn.1 I 260403 10:38:54  server:130] Added service to container: crossgym.cn.5 (type: Client)
+[gm.cn.1 I 260403 10:38:54  server:130] Added service to container: crossgym.cn.6 (type: Client)
+[gm.cn.1 I 260403 10:38:54  server:130] Added service to container: crossgym.cn.7 (type: Client)
+[gm.cn.1 I 260403 10:38:54  server:130] Added service to container: crossgym.cn.8 (type: Client)
+[gm.cn.1 I 260403 10:38:54  server:130] Added service to container: crossgym.cn.9 (type: Client)
+[gm.cn.1 I 260403 10:38:54  server:130] Added service to container: crossgym.cn.10 (type: Client)
+[gm.cn.1 I 260403 10:38:54  server:130] Added service to container: crossmine.cn.1 (type: Client)
+[gm.cn.1 I 260403 10:38:54  server:130] Added service to container: crossmine.cn.2 (type: Client)
+[gm.cn.1 I 260403 10:38:54  server:130] Added service to container: crossmine.cn.3 (type: Client)
+[gm.cn.1 I 260403 10:38:54  server:130] Added service to container: crossmine.cn.4 (type: Client)
+[gm.cn.1 I 260403 10:38:54  server:130] Added service to container: crossmine.cn.5 (type: Client)
+[gm.cn.1 I 260403 10:38:54  server:130] Added service to container: crossmine.cn.6 (type: Client)
+[gm.cn.1 I 260403 10:38:54  server:130] Added service to container: crossmine.cn.7 (type: Client)
+[gm.cn.1 I 260403 10:38:54  server:130] Added service to container: crossmine.cn.8 (type: Client)
+[gm.cn.1 I 260403 10:38:54  server:130] Added service to container: crossmine.cn.9 (type: Client)
+[gm.cn.1 I 260403 10:38:54  server:130] Added service to container: crossmine.cn.10 (type: Client)
+[gm.cn.1 I 260403 10:38:54  server:130] Added service to container: onlinefight.cn.1 (type: Client)
+[gm.cn.1 I 260403 10:38:54  server:130] Added service to container: onlinefight.cn.2 (type: Client)
+[gm.cn.1 I 260403 10:38:54  server:130] Added service to container: onlinefight.cn.3 (type: Client)
+[gm.cn.1 I 260403 10:38:54  server:130] Added service to container: onlinefight.cn.4 (type: Client)
+[gm.cn.1 I 260403 10:38:54  server:130] Added service to container: onlinefight.cn.5 (type: Client)
+[gm.cn.1 I 260403 10:38:54  server:130] Added service to container: onlinefight.cn.6 (type: Client)
+[gm.cn.1 I 260403 10:38:54  server:130] Added service to container: onlinefight.cn.7 (type: Client)
+[gm.cn.1 I 260403 10:38:54  server:130] Added service to container: onlinefight.cn.8 (type: Client)
+[gm.cn.1 I 260403 10:38:54  server:130] Added service to container: onlinefight.cn.9 (type: Client)
+[gm.cn.1 I 260403 10:38:54  server:130] Added service to container: onlinefight.cn.10 (type: Client)
+[gm.cn.1 I 260403 10:38:54  server:130] Added service to container: crossunionfight.cn.1 (type: Client)
+[gm.cn.1 I 260403 10:38:54  server:130] Added service to container: crossunionfight.cn.2 (type: Client)
+[gm.cn.1 I 260403 10:38:54  server:130] Added service to container: crossunionfight.cn.3 (type: Client)
+[gm.cn.1 I 260403 10:38:54  server:130] Added service to container: crossunionfight.cn.4 (type: Client)
+[gm.cn.1 I 260403 10:38:54  server:130] Added service to container: crossunionfight.cn.5 (type: Client)
+[gm.cn.1 I 260403 10:38:54  server:130] Added service to container: crossunionfight.cn.6 (type: Client)
+[gm.cn.1 I 260403 10:38:54  server:130] Added service to container: crossunionfight.cn.7 (type: Client)
+[gm.cn.1 I 260403 10:38:54  server:130] Added service to container: crossunionfight.cn.8 (type: Client)
+[gm.cn.1 I 260403 10:38:54  server:130] Added service to container: crossunionfight.cn.9 (type: Client)
+[gm.cn.1 I 260403 10:38:54  server:130] Added service to container: crossunionfight.cn.10 (type: Client)
+[gm.cn.1 I 260403 10:38:54  server:130] Added service to container: crossmatch.cn.1 (type: Client)
+[gm.cn.1 I 260403 10:38:54  server:130] Added service to container: crosschat.cn.1 (type: Client)
+[gm.cn.1 I 260403 10:38:54  server:130] Added service to container: crosschat.cn.2 (type: Client)
+[gm.cn.1 I 260403 10:38:54  server:130] Added service to container: crosschat.cn.3 (type: Client)
+[gm.cn.1 I 260403 10:38:54  server:130] Added service to container: crosschat.cn.4 (type: Client)
+[gm.cn.1 I 260403 10:38:54  server:130] Added service to container: crosschat.cn.5 (type: Client)
+[gm.cn.1 I 260403 10:38:54  server:130] Added service to container: crosschat.cn.6 (type: Client)
+[gm.cn.1 I 260403 10:38:54  server:130] Added service to container: crosschat.cn.7 (type: Client)
+[gm.cn.1 I 260403 10:38:54  server:130] Added service to container: crosschat.cn.8 (type: Client)
+[gm.cn.1 I 260403 10:38:54  server:130] Added service to container: crosschat.cn.9 (type: Client)
+[gm.cn.1 I 260403 10:38:54  server:130] Added service to container: crosschat.cn.10 (type: Client)
+[gm.cn.1 I 260403 10:38:54  server:130] Added service to container: gamemerge.cn.1 (type: GameRPClient)
+[gm.cn.1 I 260403 10:38:54  server:130] Added service to container: game.cn.1 (type: GameRPClient)
+[gm.cn.1 I 260403 10:38:54  server:130] Added service to container: game.cn.2 (type: GameRPClient)
+[gm.cn.1 I 260403 10:38:54  writer:110] starting writer...
+[gm.cn.1 I 260403 10:38:54  writer:189] [127.0.0.1:4150] connecting to nsqd
+[gm.cn.1 I 260403 10:38:54  reader:235] [RESP-c_gm.cn.1:0global_1rpc] starting reader for RESP-c_gm.cn.1/0global_1rpc...
+[gm.cn.1 I 260403 10:38:54  reader:490] [127.0.0.1:4150:RESP-c_gm.cn.1:0global_1rpc] connecting to nsqd
+[gm.cn.1 I 260403 10:38:54  writer:110] starting writer...
+[gm.cn.1 I 260403 10:38:54  writer:189] [127.0.0.1:4150] connecting to nsqd
+[gm.cn.1 W 260403 10:38:54  reader:508] [127.0.0.1:4150:RESP-c_gm.cn.1:0global_1rpc] max RDY count 2500 < reader max in flight 10000, truncation possible
+[gm.cn.1 I 260403 10:38:55  server:155] Cross service pattern ^crossarena found 10 services: ['crossarena.cn.10', 'crossarena.cn.9', 'crossarena.cn.8', 'crossarena.cn.3', 'crossarena.cn.2', 'crossarena.cn.1', 'crossarena.cn.7', 'crossarena.cn.6', 'crossarena.cn.5', 'crossarena.cn.4']
+[gm.cn.1 I 260403 10:38:55  server:155] Cross service pattern ^crosscraft found 10 services: ['crosscraft.cn.8', 'crosscraft.cn.9', 'crosscraft.cn.2', 'crosscraft.cn.3', 'crosscraft.cn.1', 'crosscraft.cn.6', 'crosscraft.cn.7', 'crosscraft.cn.4', 'crosscraft.cn.5', 'crosscraft.cn.10']
+[gm.cn.1 I 260403 10:38:55  server:155] Cross service pattern ^crossgym found 10 services: ['crossgym.cn.4', 'crossgym.cn.10', 'crossgym.cn.5', 'crossgym.cn.7', 'crossgym.cn.6', 'crossgym.cn.1', 'crossgym.cn.3', 'crossgym.cn.2', 'crossgym.cn.9', 'crossgym.cn.8']
+[gm.cn.1 I 260403 10:38:55  server:155] Cross service pattern ^crossmine found 10 services: ['crossmine.cn.8', 'crossmine.cn.4', 'crossmine.cn.10', 'crossmine.cn.9', 'crossmine.cn.5', 'crossmine.cn.6', 'crossmine.cn.7', 'crossmine.cn.2', 'crossmine.cn.3', 'crossmine.cn.1']
+[gm.cn.1 I 260403 10:38:55  server:155] Cross service pattern ^onlinefight found 10 services: ['onlinefight.cn.8', 'onlinefight.cn.9', 'onlinefight.cn.1', 'onlinefight.cn.2', 'onlinefight.cn.4', 'onlinefight.cn.5', 'onlinefight.cn.6', 'onlinefight.cn.3', 'onlinefight.cn.7', 'onlinefight.cn.10']
+[gm.cn.1 I 260403 10:38:55  server:155] Cross service pattern ^crossunionfight found 10 services: ['crossunionfight.cn.3', 'crossunionfight.cn.4', 'crossunionfight.cn.5', 'crossunionfight.cn.7', 'crossunionfight.cn.8', 'crossunionfight.cn.9', 'crossunionfight.cn.2', 'crossunionfight.cn.10', 'crossunionfight.cn.6', 'crossunionfight.cn.1']
+[gm.cn.1 I 260403 10:38:55  server:155] Cross service pattern ^crosschat found 10 services: ['crosschat.cn.10', 'crosschat.cn.8', 'crosschat.cn.5', 'crosschat.cn.2', 'crosschat.cn.9', 'crosschat.cn.7', 'crosschat.cn.6', 'crosschat.cn.4', 'crosschat.cn.3', 'crosschat.cn.1']
+[gm.cn.1 I 260403 10:38:55  server:155] Cross service pattern ^crossmatch found 1 services: ['crossmatch.cn.1']
+[gm.cn.1 I 260403 10:38:55  server:158] Total cross services: ['crossunionfight.cn.3', 'crosschat.cn.5', 'crossunionfight.cn.4', 'crossunionfight.cn.5', 'onlinefight.cn.8', 'onlinefight.cn.9', 'crossunionfight.cn.7', 'crossmine.cn.8', 'onlinefight.cn.1', 'crossmine.cn.10', 'onlinefight.cn.2', 'crossmine.cn.9', 'onlinefight.cn.4', 'onlinefight.cn.5', 'onlinefight.cn.6', 'onlinefight.cn.7', 'crossunionfight.cn.8', 'crossunionfight.cn.9', 'crosscraft.cn.8', 'crosscraft.cn.9', 'crossgym.cn.10', 'crosschat.cn.10', 'crosscraft.cn.2', 'crosscraft.cn.3', 'crossunionfight.cn.2', 'crosscraft.cn.1', 'crosscraft.cn.6', 'crosscraft.cn.7', 'crosscraft.cn.4', 'crosscraft.cn.5', 'onlinefight.cn.3', 'crossgym.cn.5', 'crossgym.cn.4', 'crossgym.cn.7', 'crossgym.cn.6', 'crossgym.cn.1', 'crossgym.cn.3', 'crossgym.cn.2', 'crossgym.cn.9', 'crosschat.cn.8', 'crosscraft.cn.10', 'crossgym.cn.8', 'crossarena.cn.10', 'crossmatch.cn.1', 'crossunionfight.cn.10', 'crossmine.cn.5', 'onlinefight.cn.10', 'crossmine.cn.6', 'crossmine.cn.7', 'crossarena.cn.9', 'crossarena.cn.8', 'crossmine.cn.2', 'crossmine.cn.3', 'crossmine.cn.1', 'crossarena.cn.3', 'crossarena.cn.2', 'crossarena.cn.1', 'crossarena.cn.7', 'crossarena.cn.6', 'crossarena.cn.5', 'crossarena.cn.4', 'crossunionfight.cn.6', 'crosschat.cn.9', 'crossunionfight.cn.1', 'crosschat.cn.7', 'crosschat.cn.6', 'crossmine.cn.4', 'crosschat.cn.4', 'crosschat.cn.3', 'crosschat.cn.2', 'crosschat.cn.1']
+It is release mode!
+Server UTC 8:00:00 Local UTC 00:00:00 Delta 0:00:00
+[gm.cn.1] GM Server listen at 0.0.0.0:38088 running ...
+[gm.cn.1 I 260403 10:38:55  server:225] [gm.cn.1] GM Server Start OK
+[gm.cn.1 I 260403 10:38:55  reader:235] [chatMessage:gm.cn.1] starting reader for chatMessage/gm.cn.1...
+[gm.cn.1 I 260403 10:38:55 DBStreamProcess-1 __init__:45] DBStreamProcess-1 4aa 7ffff79a69d0 Start
+[gm.cn.1 I 260403 10:38:55  reader:490] [127.0.0.1:4150:chatMessage:gm.cn.1] connecting to nsqd
+[gm.cn.1 W 260403 10:38:55  reader:508] [127.0.0.1:4150:chatMessage:gm.cn.1] max RDY count 2500 < reader max in flight 10000, truncation possible
+[gm.cn.1 I 260403 10:38:55 DBStreamProcess-1 stream:62] current cursor {'cur_account_time': 1775194263.0, 'cur_order_amount': 0.0, 'cur_login_time': 1775212656.0, 'cur_order_time': 0.0}
+[gm.cn.1 I 260403 10:38:56  gamerpc_client:50] game.cn.2 hello ack
+[gm.cn.1 I 260403 10:38:56  gamerpc_client:50] game.cn.1 hello ack
+[gm.cn.1 W 260403 10:48:54  gamerpc_client:45] gamemerge.cn.1 lost
+[gm.cn.1 W 260403 10:58:54  gamerpc_client:45] gamemerge.cn.1 lost
+[gm.cn.1 W 260403 11:05:38  reader:535] [127.0.0.1:4150:chatMessage:gm.cn.1] connection closed
+[gm.cn.1 I 260403 11:05:38  reader:552] [127.0.0.1:4150:chatMessage:gm.cn.1] attempting to reconnect in 5s
+[gm.cn.1 W 260403 11:05:38  client:141] topic REQ-game.cn.1 msgid 1606 method Hello attempting to resend in 5s
+[gm.cn.1 W 260403 11:05:38  client:141] topic REQ-game.cn.2 msgid 1607 method Hello attempting to resend in 5s
+[gm.cn.1 W 260403 11:05:38  writer:212] [127.0.0.1:4150] connection closed
+[gm.cn.1 I 260403 11:05:38  writer:213] [127.0.0.1:4150] attempting to reconnect in 5.00s
+[gm.cn.1 W 260403 11:05:38  writer:212] [127.0.0.1:4150] connection closed
+[gm.cn.1 I 260403 11:05:38  writer:213] [127.0.0.1:4150] attempting to reconnect in 5.00s
+[gm.cn.1 W 260403 11:05:38  reader:535] [127.0.0.1:4150:RESP-c_gm.cn.1:0global_1rpc] connection closed
+[gm.cn.1 I 260403 11:05:38  reader:552] [127.0.0.1:4150:RESP-c_gm.cn.1:0global_1rpc] attempting to reconnect in 5s
+[gm.cn.1 I 260403 11:05:43  reader:490] [127.0.0.1:4150:chatMessage:gm.cn.1] connecting to nsqd
+[gm.cn.1 W 260403 11:05:43  client:141] topic REQ-game.cn.1 msgid 1606 method Hello attempting to resend in 5s
+[gm.cn.1 W 260403 11:05:43  client:141] topic REQ-game.cn.2 msgid 1607 method Hello attempting to resend in 5s
+[gm.cn.1 I 260403 11:05:43  writer:189] [127.0.0.1:4150] connecting to nsqd
+[gm.cn.1 I 260403 11:05:43  writer:189] [127.0.0.1:4150] connecting to nsqd
+[gm.cn.1 I 260403 11:05:43  reader:490] [127.0.0.1:4150:RESP-c_gm.cn.1:0global_1rpc] connecting to nsqd
+[gm.cn.1 W 260403 11:05:43  reader:508] [127.0.0.1:4150:RESP-c_gm.cn.1:0global_1rpc] max RDY count 2500 < reader max in flight 10000, truncation possible
+[gm.cn.1 W 260403 11:05:43  reader:508] [127.0.0.1:4150:chatMessage:gm.cn.1] max RDY count 2500 < reader max in flight 10000, truncation possible
+[gm.cn.1 I 260403 11:05:48  gamerpc_client:50] game.cn.1 hello ack
+[gm.cn.1 I 260403 11:05:48  gamerpc_client:50] game.cn.2 hello ack
+[gm.cn.1 W 260403 11:08:54  gamerpc_client:45] gamemerge.cn.1 lost
+[gm.cn.1 W 260403 11:18:54  gamerpc_client:45] gamemerge.cn.1 lost
+[gm.cn.1 W 260403 11:28:54  gamerpc_client:45] gamemerge.cn.1 lost
+[gm.cn.1 W 260403 11:38:54  gamerpc_client:45] gamemerge.cn.1 lost
+[gm.cn.1 W 260403 11:48:54  gamerpc_client:45] gamemerge.cn.1 lost
+[gm.cn.1 W 260403 11:50:07  writer:212] [127.0.0.1:4150] connection closed
+[gm.cn.1 I 260403 11:50:07  writer:213] [127.0.0.1:4150] attempting to reconnect in 5.00s
+[gm.cn.1 W 260403 11:50:07  reader:535] [127.0.0.1:4150:chatMessage:gm.cn.1] connection closed
+[gm.cn.1 I 260403 11:50:07  reader:552] [127.0.0.1:4150:chatMessage:gm.cn.1] attempting to reconnect in 5s
+[gm.cn.1 W 260403 11:50:07  writer:212] [127.0.0.1:4150] connection closed
+[gm.cn.1 I 260403 11:50:07  writer:213] [127.0.0.1:4150] attempting to reconnect in 5.00s
+[gm.cn.1 W 260403 11:50:07  reader:535] [127.0.0.1:4150:RESP-c_gm.cn.1:0global_1rpc] connection closed
+[gm.cn.1 I 260403 11:50:07  reader:552] [127.0.0.1:4150:RESP-c_gm.cn.1:0global_1rpc] attempting to reconnect in 5s
+[gm.cn.1 W 260403 11:50:08  client:141] topic REQ-game.cn.1 msgid 4271 method Hello attempting to resend in 5s
+[gm.cn.1 W 260403 11:50:08  client:141] topic REQ-game.cn.2 msgid 4272 method Hello attempting to resend in 5s
+[gm.cn.1 I 260403 11:50:12  writer:189] [127.0.0.1:4150] connecting to nsqd
+[gm.cn.1 I 260403 11:50:12  reader:490] [127.0.0.1:4150:chatMessage:gm.cn.1] connecting to nsqd
+[gm.cn.1 I 260403 11:50:12  writer:189] [127.0.0.1:4150] connecting to nsqd
+[gm.cn.1 I 260403 11:50:12  reader:490] [127.0.0.1:4150:RESP-c_gm.cn.1:0global_1rpc] connecting to nsqd
+[gm.cn.1 W 260403 11:50:12  reader:508] [127.0.0.1:4150:chatMessage:gm.cn.1] max RDY count 2500 < reader max in flight 10000, truncation possible
+[gm.cn.1 W 260403 11:50:12  reader:508] [127.0.0.1:4150:RESP-c_gm.cn.1:0global_1rpc] max RDY count 2500 < reader max in flight 10000, truncation possible
+[gm.cn.1 I 260403 11:50:13  gamerpc_client:50] game.cn.2 hello ack
+[gm.cn.1 I 260403 11:50:13  gamerpc_client:50] game.cn.1 hello ack
+[gm.cn.1 W 260403 11:58:54  gamerpc_client:45] gamemerge.cn.1 lost
+[gm.cn.1 W 260403 12:03:54  gamerpc_client:45] gamemerge.cn.1 lost
+[gm.cn.1 W 260403 12:13:54  gamerpc_client:45] gamemerge.cn.1 lost
+[gm.cn.1 I 260403 12:18:19  web:1828] 302 GET /refreshcsv (192.168.97.1) 26.69ms 
+[gm.cn.1 I 260403 12:18:19  web:1828] 200 GET /login (192.168.97.1) 46.20ms 
+[gm.cn.1 I 260403 12:18:21  web:1828] 302 POST /login (192.168.97.1) 7.24ms 
+[gm.cn.1 I 260403 12:18:21  web:1828] 200 GET / (192.168.97.1) 58.06ms 
+[gm.cn.1 I 260403 12:18:45  web:1828] 302 GET /lanauge_set?lang=vn (192.168.97.1) 2.19ms 
+[gm.cn.1 I 260403 12:18:45  web:1828] 200 GET / (192.168.97.1) 47.04ms 
+[gm.cn.1 I 260403 12:18:47  web:1828] 200 GET /operate_activity (192.168.97.1) 47.32ms 
+[gm.cn.1 I 260403 12:18:50  web:1828] 200 GET /refreshcsv (192.168.97.1) 58.39ms 
+[gm.cn.1 I 260403 12:18:59  __init__:76] `admin` gmGenRobots (u'game.cn.1',)
+[gm.cn.1 E 260403 12:18:59  web:1424] Uncaught exception POST /genrobots (192.168.97.1)
+    HTTPServerRequest(protocol='http', host='192.168.1.13:38088', method='POST', uri='/genrobots', version='HTTP/1.1', remote_ip='192.168.97.1', headers={'Origin': 'http://192.168.1.13:38088', 'Content-Length': '24', 'Accept-Language': 'vi,en-US;q=0.9,en;q=0.8,fr-FR;q=0.7,fr;q=0.6', 'Accept-Encoding': 'gzip, deflate', 'Host': '192.168.1.13:38088', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://192.168.1.13:38088/refreshcsv', 'Cookie': 'TJ_GM_SESSIONID="2|1:0|10:1775218701|15:TJ_GM_SESSIONID|48:ZDExZTQ4ZmQtYmM4NC01YmQ4LWJjMjUtMjJkMTU0MzM1YTEx|1bf94aaf2b04d8e497d4114a89e837d3f77543e7aadd0bc5b5540620c8fc4ed5"', 'Content-Type': 'application/json'})
+    Traceback (most recent call last):
+      File "/mnt/pokemon/release/src/tornado/web.py", line 1348, in _execute
+        result = yield result
+      File "/mnt/pokemon/release/src/tornado/gen.py", line 807, in run
+        value = future.result()
+      File "/mnt/pokemon/release/src/tornado/concurrent.py", line 209, in result
+        raise_exc_info(self._exc_info)
+      File "/mnt/pokemon/release/src/tornado/gen.py", line 810, in run
+        yielded = self.gen.throw(*sys.exc_info())
+      File "/mnt/pokemon/release/src/gm/handler/_gm.py", line 1270, in post
+        ret = yield self.userGMRPC.gmGenRobots(self.session, servName)
+      File "/mnt/pokemon/release/src/tornado/gen.py", line 807, in run
+        value = future.result()
+      File "/mnt/pokemon/release/src/tornado/concurrent.py", line 209, in result
+        raise_exc_info(self._exc_info)
+      File "/mnt/pokemon/release/src/tornado/gen.py", line 810, in run
+        yielded = self.gen.throw(*sys.exc_info())
+      File "/mnt/pokemon/release/src/gm/task/console.py", line 228, in gmGenRobots
+        ret = yield self.gameAllRPCs[name].call_async('gmGenRobots')
+      File "/mnt/pokemon/release/src/tornado/gen.py", line 807, in run
+        value = future.result()
+      File "/mnt/pokemon/release/src/tornado/concurrent.py", line 209, in result
+        raise_exc_info(self._exc_info)
+      File "<string>", line 3, in raise_exc_info
+    CallError: 'NoneType' object does not support item assignment, topic gmGenRobots
+[gm.cn.1 E 260403 12:18:59  web:1828] 500 POST /genrobots (192.168.97.1) 168.21ms 
+[gm.cn.1 I 260403 12:19:05  web:1828] 200 GET /calattrs?servName=game.cn.1&role_uid=1 (192.168.97.1) 71.05ms 
+[gm.cn.1 I 260403 12:19:37  __init__:92] `admin` gmStartCrossService (u'crossunionfight.cn.1',)
+[gm.cn.1 W 260403 12:20:08  console:763] gmStartCrossService crossunionfight.cn.1 failed: 6042 Request timed out
+[gm.cn.1 I 260403 12:20:08  web:1828] 200 POST /cross/service/start (192.168.97.1) 31011.88ms 
+[gm.cn.1 W 260403 12:23:39  reader:535] [127.0.0.1:4150:RESP-c_gm.cn.1:0global_1rpc] connection closed
+[gm.cn.1 I 260403 12:23:39  reader:552] [127.0.0.1:4150:RESP-c_gm.cn.1:0global_1rpc] attempting to reconnect in 5s
+[gm.cn.1 W 260403 12:23:39  writer:212] [127.0.0.1:4150] connection closed
+[gm.cn.1 I 260403 12:23:39  writer:213] [127.0.0.1:4150] attempting to reconnect in 5.00s
+[gm.cn.1 W 260403 12:23:39  reader:535] [127.0.0.1:4150:chatMessage:gm.cn.1] connection closed
+[gm.cn.1 I 260403 12:23:39  reader:552] [127.0.0.1:4150:chatMessage:gm.cn.1] attempting to reconnect in 5s
+[gm.cn.1 W 260403 12:23:39  writer:212] [127.0.0.1:4150] connection closed
+[gm.cn.1 I 260403 12:23:39  writer:213] [127.0.0.1:4150] attempting to reconnect in 5.00s
+[gm.cn.1 W 260403 12:23:40  client:141] topic REQ-game.cn.1 msgid 6285 method Hello attempting to resend in 5s
+[gm.cn.1 W 260403 12:23:40  client:141] topic REQ-game.cn.2 msgid 6286 method Hello attempting to resend in 5s
+[gm.cn.1 I 260403 12:23:44  reader:490] [127.0.0.1:4150:RESP-c_gm.cn.1:0global_1rpc] connecting to nsqd
+[gm.cn.1 I 260403 12:23:44  writer:189] [127.0.0.1:4150] connecting to nsqd
+[gm.cn.1 I 260403 12:23:44  reader:490] [127.0.0.1:4150:chatMessage:gm.cn.1] connecting to nsqd
+[gm.cn.1 I 260403 12:23:44  writer:189] [127.0.0.1:4150] connecting to nsqd
+[gm.cn.1 W 260403 12:23:44  reader:508] [127.0.0.1:4150:chatMessage:gm.cn.1] max RDY count 2500 < reader max in flight 10000, truncation possible
+[gm.cn.1 W 260403 12:23:44  reader:508] [127.0.0.1:4150:RESP-c_gm.cn.1:0global_1rpc] max RDY count 2500 < reader max in flight 10000, truncation possible
+[gm.cn.1 I 260403 12:23:45  gamerpc_client:50] game.cn.2 hello ack
+[gm.cn.1 I 260403 12:23:45  gamerpc_client:50] game.cn.1 hello ack
+[gm.cn.1 I 260403 12:23:53  web:1828] 304 GET /account_migrate (192.168.97.1) 64.90ms 
+[gm.cn.1 W 260403 12:23:54  gamerpc_client:45] gamemerge.cn.1 lost
+[gm.cn.1 I 260403 12:23:55  web:1828] 200 GET /gift_packs (192.168.97.1) 32.03ms 
+[gm.cn.1 I 260403 12:23:55  __init__:76] `admin` gmGetGiftCsv ()
+[gm.cn.1 I 260403 12:23:55  csv:105] CSV reload before, 375212733 140737150911664 140737150911664
+[gm.cn.1 I 260403 12:23:57  csv:113] CSV reload after, 375219036 140737373977128 140737373977128
+[gm.cn.1 I 260403 12:23:57  web:1828] 304 GET /gift_packs?page=1 (192.168.97.1) 1732.24ms 
+[gm.cn.1 I 260403 12:24:04  web:1828] 304 GET /sendmail (192.168.97.1) 58.81ms 
+[gm.cn.1 I 260403 12:24:07  __init__:76] `admin` gmGetMailCsv (u'game.cn.1',)
+[gm.cn.1 I 260403 12:24:07  web:1828] 304 GET /sendmail/mail_template?servName=game.cn.1 (192.168.97.1) 21.04ms 
+[gm.cn.1 I 260403 12:24:12  __init__:76] `admin` gmGetRoleInfo (u'game.cn.1', 1)
+[gm.cn.1 I 260403 12:24:12  web:1828] 200 GET /role_detail?servName=game.cn.1&roleSearch=1 (192.168.97.1) 35.87ms 
+[gm.cn.1 I 260403 12:24:14  __init__:76] `admin` gmGetRoleInfo (u'game.cn.1', 1)
+[gm.cn.1 I 260403 12:24:14  web:1828] 304 GET /role_detail?servName=game.cn.1&roleSearch=1 (192.168.97.1) 41.23ms 
+[gm.cn.1 I 260403 12:24:21  __init__:92] `admin` gmSendMail (u'game.cn.1', u'1', 3, u'\u7ade\u6280\u573a\u7ba1\u7406\u5458', u'\u7ade\u6280\u573a\u7ed3\u7b97\u5956\u52b1', u'\u4eb2\u7231\u7684\u5c0f\u4f19\u4f34:\n    \u60a8\u5728\u7ade\u6280\u573a\u4e2d\u7684\u8868\u73b0\u7cbe\u5f69\u7edd\u4f26\uff0c\u622a\u6b62\u5230\u4eca\u592921:00\uff0c\u60a8\u7684\u540d\u6b21\u662f%d\uff0c\u7ed3\u7b97\u5956\u52b1\u5df2\u968f\u90ae\u4ef6\u53d1\u9001\uff0c\u8bf7\u53ca\u65f6\u67e5\u6536\u3002\n    \u795d\u60a8\u6e38\u620f\u6109\u5feb!', {})
+[gm.cn.1 I 260403 12:24:21  web:1828] 200 POST /sendmail (192.168.97.1) 29.61ms 
+[gm.cn.1 I 260403 12:24:48  __init__:76] `admin` gmGetRoleInfo (u'game.cn.1', 1)
+[gm.cn.1 I 260403 12:24:48  web:1828] 200 GET /role_detail?servName=game.cn.1&roleSearch=1 (192.168.97.1) 36.01ms 
+[gm.cn.1 I 260403 12:24:49  __init__:76] `admin` gmGetRoleInfo (u'game.cn.1', 1)
+[gm.cn.1 I 260403 12:24:49  web:1828] 304 GET /role_detail?servName=game.cn.1&roleSearch=1 (192.168.97.1) 24.30ms 
+[gm.cn.1 I 260403 12:24:50  __init__:92] `admin` gmSendMail (u'game.cn.1', u'1', 18, u'\u5c0f\u79d8\u4e66', u'\u5c01\u6d4b\u5ef6\u957f\u767b\u9646\u5956\u52b1', u'\u4eb2\u7231\u7684\u5c0f\u4f19\u4f34:\n    \u611f\u8c22\u60a8\u4eca\u5929\u7684\u767b\u9646\uff0c\u5956\u52b1\u5df2\u968f\u90ae\u4ef6\u53d1\u9001\uff0c\u8bf7\u53ca\u65f6\u67e5\u6536\u3002\n    \u795d\u60a8\u6e38\u620f\u6109\u5feb!', {u'rmb': 3000, 21002: 30, u'vip': 9, u'gold': 600000})
+[gm.cn.1 I 260403 12:24:50  web:1828] 200 POST /sendmail (192.168.97.1) 33.43ms 

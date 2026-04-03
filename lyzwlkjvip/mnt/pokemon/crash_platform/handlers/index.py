@@ -39,9 +39,9 @@ class LoginHandler(BaseHandler):
 				self.set_secure_cookie(COOKIES_KEY, account.name, expires_days=None, expires=time.time() + COOKIES_TIME, httponly=True)
 				self.redirect("/")
 			else:
-				self.render("login.html", error="密码不正确！")
+				self.render("login.html", error="Mật khẩu không đúng!")
 		else:
-			self.render("login.html", error="用户不存在！")
+			self.render("login.html", error="Tài khoản không tồn tại!")
 
 
 class LogoutHandler(AuthedHandler):
@@ -53,13 +53,13 @@ class LogoutHandler(AuthedHandler):
 		self.redirect("/login")
 
 
-# 上传.so文件
+# Upload .so file
 class FileUploadHandler(AuthedHandler):
 	url = "/fileupload"
 
 	@coroutine
 	def get(self):
-		# 版本号判断
+		# Version check
 		version = self.get_argument("versionId")
 		package_name = self.get_argument("package_name")
 		game_name = self.get_argument("game_name")
@@ -71,7 +71,7 @@ class FileUploadHandler(AuthedHandler):
 		query = {"platform": platform, "package_name": package_name, "version": version, "game_name": game_name}
 		data = yield self.async_db_exec(SymbolFile.find, query)
 		if not data:
-			ret["msg"] = "注意：该版本数据库已存在，继续上传将替换原先版本号的内容！"
+			ret["msg"] = "Lưu ý: phiên bản này đã tồn tại trong cơ sở dữ liệu, tiếp tục tải lên sẽ ghi đè dữ liệu phiên bản cũ!"
 
 		self.write_json(ret)
 
@@ -106,10 +106,10 @@ class FileUploadHandler(AuthedHandler):
 		file_path = os.path.join(UPLOAD_PATH, file_path)
 		up["path"] = file_path
 
-		# 将文件写入磁盘
+		# Write file to disk
 		yield self.async_execute(write_file, file_path, file_content)
 
-		# 生成symbol file
+		# Generate symbol file
 		ret, nums = yield self.async_execute(generate_symbol_file, file_path, file_name)
 		if ret:
 			up["symbol_nums"] = nums
@@ -123,7 +123,7 @@ class FileUploadHandler(AuthedHandler):
 		self.write_json({"result": True, "msg": "success"})
 
 
-# 上传ios.sym文件
+# Upload ios.sym file
 class IOSFileUploadHandler(BaseHandler):
 	url = "/ios_upload"
 
@@ -165,7 +165,7 @@ class IOSFileUploadHandler(BaseHandler):
 		self.write_json({"result": True})
 
 
-# 接收.dmp文件
+# Receive .dmp file
 class FileDumpHandler(BaseHandler):
 	url = "/dump"
 
@@ -214,7 +214,7 @@ class FileDumpHandler(BaseHandler):
 			file_name = dmpName,
 			file_content = Binary(dmpContent),
 			game_name = deviceInfo.get("game_name", None),
-			# game_name = "libcocos2dlua.so", # dmp分析需要用到game_name
+			# game_name = "libcocos2dlua.so", # dmp analysis needs game_name
 			package_name = deviceInfo.get("package_name", "unknown"),
 			game_start_time = deviceInfo.get("game_start_time", "unknown"),
 			phone_name = deviceInfo.get("manufacturer", "unknown"),
@@ -235,7 +235,7 @@ class FileDumpHandler(BaseHandler):
 
 		yield self.async_db_exec(DmpRecord.insert_one, info)
 
-		# 统计
+		# Statistics
 		c = self.statCache.get("today_dmp_count") + 1
 		self.statCache.set("today_dmp_count", c)
 		self.statCache.get("dmp_imei").add(info['imei'])
@@ -263,7 +263,7 @@ class FileDumpHandler(BaseHandler):
 		return info
 
 
-# 接收异常
+# Receive exception
 ExceptionRepeatedCache = {}
 RepeatedCacheIntervalTime = time.time()
 class ExceptionHandler(BaseHandler):
@@ -300,7 +300,7 @@ class ExceptionHandler(BaseHandler):
 
 		if self.exceptionRepeatedCheck(info):
 			yield self.async_db_exec(ExcRecord.insert_one, info)
-			# 统计
+			# Statistics
 			if info["version"] not in self.versions:
 				self.versions.insert(0, info["version"])
 			c = self.statCache.get("today_exc_count") + 1
@@ -359,7 +359,7 @@ class ExceptionHandler(BaseHandler):
 		return True
 
 
-# 接收数码异常
+# Receive shuma exception
 class ShumaExceptionHandler(BaseHandler):
 	url = "/shumaexp"
 
@@ -376,7 +376,7 @@ class ShumaExceptionHandler(BaseHandler):
 		data = {
 			"error": error,
 			"report_time": datetime.datetime.now(),
-			# url传递的参数--------
+			# Params from URL --------
 			"channel": self.get_argument("channel", None),
 			"account": self.get_argument("account", None),
 			"role": role,
@@ -413,9 +413,9 @@ class RemoteDebugHandler(BaseHandler):
 		print "444", self.request.body
 
 		if not self.request.files.get("dump", None):
-			print "没有dump"
+			print "missing dump"
 		if not self.request.files.get("tj_device", None):
-			print "没有tj_device"
+			print "missing tj_device"
 
 class FeedBackHandler(BaseHandler):
 	url = "/feedback"
@@ -456,26 +456,26 @@ class FeedBackHandler(BaseHandler):
 			replay_info = {'replay_info': '{0},{1},{2},{3},{4}'.format(data['game_server'], data['role_id'], data['classify'], str(data['role_name']), str(data['issue']))}
 			replayURL = 'http://{0}/feedback/page?{1}'.format(self.request.host, urllib.urlencode(replay_info))
 			tpZhMap = {
-				"RechargeIssue": "充值问题",
-				"BattleIssue": "战斗问题",
-				"BugIssue": "BUG反馈",
-				"Recommand": "游戏建议"
+				"RechargeIssue": "Vấn đề nạp tiền",
+				"BattleIssue": "Vấn đề chiến đấu",
+				"BugIssue": "Phản hồi BUG",
+				"Recommand": "Góp ý game"
 			}
 			cc = tpZhMap.get(data['classify'], data['classify'])
 			data['issue'] = data['issue'] + '\n' + translate(data['issue'], self.language)
 			body = {
 				"msgtype": "markdown",
 				"markdown": {
-					"title": "[口袋]{0}".format(cc),
-					"text": "反馈时间: {0}\n\n问题类型: {8}\n\n区服: {1}\n\n角色名: {2}\n\n角色ID: {3}\n\n等级: {4}\n\nvip: {5}\n\n问题描述: {6}\n\n {7}".format(
-							str(data['time']), data['game_server'], data['role_name'], data['role_id'], data['grade'], data['vip'], data['issue'], "[回复邮件](%s)"% replayURL, cc
+					"title": "[Pokemon]{0}".format(cc),
+					"text": "Thời gian phản hồi: {0}\n\nLoại vấn đề: {8}\n\nMáy chủ: {1}\n\nTên nhân vật: {2}\n\nID nhân vật: {3}\n\nCấp độ: {4}\n\nVIP: {5}\n\nMô tả vấn đề: {6}\n\n {7}".format(
+							str(data['time']), data['game_server'], data['role_name'], data['role_id'], data['grade'], data['vip'], data['issue'], "[Trả lời email](%s)"% replayURL, cc
 						)
 				}
 			}
 			self.HttpClient.fetch(ddURL, method="POST", headers={"Content-Type": "application/json"}, body=json.dumps(body))
 
 
-# 反作弊error战报上传
+# Upload anti-cheat error battle report
 class BattleReportHandler(BaseHandler):
 	url = "/battle_report"
 
@@ -499,7 +499,7 @@ class BattleReportHandler(BaseHandler):
 		yield self.async_db_exec(BattleReport.insert_one, data)
 
 
-# 客户端异常战报上传
+# Upload client exception play report
 class PlayReportHandler(BaseHandler):
 	url = "/play_report"
 

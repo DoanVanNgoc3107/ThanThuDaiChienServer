@@ -1,0 +1,1018 @@
+[anti_cheat_server I 260403 07:13:58.344.001 document.go:151] register document default ok
+[anti_cheat_server I 260403 07:13:58.355.002 init.go:171] register document ok
+[anti_cheat_server D 260403 07:13:58.372.003 config.go:49] cwd in /mnt/pokemon/release/anti_cheat
+[anti_cheat_server D 260403 07:13:58.384.004 server.go:29] GetExtend service anticheat.cn.1 &anti_cheat.Option{Option:service.Option{Name:"anticheat.cn.1", Alias:[]string(nil), Dependent:[]string(nil)}, ErrorNotForceResult:true, TracebackReportUrl:""}
+[anti_cheat_server I 260403 07:13:58.384.005 config.go:60] agent.cn.1 config in defines.json
+[agent.cn.1 I 260403 07:13:58.387.006 main.go:35] &main.Define{ContainerOption:service.ContainerOption{Name:"@agent.cn.1", Debug:false, Addr:"", NSQLookupd:"http://127.0.0.1:4161/", Mainnsqd:"", NSQTcpAddresses:[]string{"127.0.0.1:4150"}, Shushu:false, Services:[]service.IOption{(*anti_cheat.Option)(0xc00031e5a0)}, ServicesRaw:[]json.RawMessage(nil)}}
+[agent.cn.1 I 260403 07:13:58.397.007 main.go:43] metrics listen: 192.168.97.6:2112
+[agent.cn.1 I 260403 07:13:58.515.010 rpcclient.go:292] create client consumer RESP-c_agent.cn.1/0global_1rpc
+[agent.cn.1 I 260403 07:13:58.516.011 consumer.go:1175] INF    2 [RESP-c_agent.cn.1/0global_1rpc] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 07:13:58.542.012 container.go:259] service anticheat.cn.1 start
+[agent.cn.1 I 260403 07:13:58.542.013 container.go:264] container @agent.cn.1 start
+[agent.cn.1 I 260403 07:13:58.542.014 server.go:29] server start ok
+[agent.cn.1 I 260403 07:13:58.548.016 rpcserver.go:349] create server consumer NewGateBattle/global
+[agent.cn.1 I 260403 07:13:58.550.018 rpcserver.go:349] create server consumer NewCrossUnionFightBattle/global
+[agent.cn.1 I 260403 07:13:58.564.022 rpcserver.go:349] create server consumer REQ-anticheat.cn.1/rpc
+[agent.cn.1 I 260403 07:13:58.564.024 rpcserver.go:349] create server consumer NewCraftBattle/global
+[agent.cn.1 I 260403 07:13:58.564.026 rpcserver.go:349] create server consumer NewUnionFightBattle/global
+[agent.cn.1 I 260403 07:13:58.564.028 rpcserver.go:349] create server consumer NewEndlessBattle/global
+[agent.cn.1 I 260403 07:13:58.564.030 rpcserver.go:349] create server consumer NewCrossMineBattle/global
+[agent.cn.1 I 260403 07:13:58.564.032 rpcserver.go:349] create server consumer NewCrossMineBossBattle/global
+[agent.cn.1 I 260403 07:13:58.564.034 rpcserver.go:349] create server consumer NewBraveChallengeBattle/global
+[agent.cn.1 I 260403 07:13:58.564.036 rpcserver.go:349] create server consumer NewHuntingBattle/global
+[agent.cn.1 I 260403 07:13:58.564.038 rpcserver.go:349] create server consumer NewSummerChallengeBattle/global
+[agent.cn.1 I 260403 07:13:58.564.040 rpcserver.go:349] create server consumer NewCrossArenaBattle/global
+[agent.cn.1 I 260403 07:13:58.564.042 rpcserver.go:349] create server consumer NewArenaBattle/global
+[agent.cn.1 I 260403 07:13:58.564.044 rpcserver.go:349] create server consumer NewCrossCraftBattle/global
+[agent.cn.1 I 260403 07:13:58.565.045 consumer.go:1175] INF    3 [NewGateBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 07:13:58.575.046 consumer.go:1175] INF    4 [NewCrossUnionFightBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 07:13:58.577.047 consumer.go:1175] INF    5 [REQ-anticheat.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 07:13:58.578.048 consumer.go:1175] INF    6 [NewCraftBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 07:13:58.579.049 consumer.go:1175] INF    7 [NewUnionFightBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 07:13:58.592.050 consumer.go:1175] INF    8 [NewEndlessBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 07:13:58.594.051 consumer.go:1175] INF    9 [NewCrossMineBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 07:13:58.596.052 consumer.go:1175] INF   10 [NewCrossMineBossBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 07:13:58.598.053 consumer.go:1175] INF   11 [NewBraveChallengeBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 07:13:58.600.054 consumer.go:1175] INF   12 [NewHuntingBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 07:13:58.602.055 consumer.go:1175] INF   13 [NewSummerChallengeBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 07:13:58.604.056 consumer.go:1175] INF   14 [NewCrossArenaBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 07:13:58.605.057 consumer.go:1175] INF   15 [NewArenaBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 07:13:58.606.058 consumer.go:1175] INF   16 [NewCrossCraftBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 07:43:39.836.059 consumer.go:1175] INF    4 [NewCrossUnionFightBattle/global] stopping...
+[agent.cn.1 I 260403 07:43:39.836.061 consumer.go:1175] INF    3 [NewGateBattle/global] stopping...
+[agent.cn.1 I 260403 07:43:39.836.062 producer.go:382] INF   17 stopping
+[agent.cn.1 I 260403 07:43:39.837.063 consumer.go:1175] INF   13 [NewSummerChallengeBattle/global] stopping...
+[agent.cn.1 I 260403 07:43:39.838.064 consumer.go:1175] INF    7 [NewUnionFightBattle/global] stopping...
+[agent.cn.1 I 260403 07:43:39.838.065 container.go:279] service anticheat.cn.1 stop
+[agent.cn.1 I 260403 07:43:39.838.066 container.go:286] container @agent.cn.1 stop
+[agent.cn.1 I 260403 07:43:39.838.067 consumer.go:1175] INF   11 [NewBraveChallengeBattle/global] stopping...
+[agent.cn.1 I 260403 07:43:39.838.068 server.go:49] server stop ok
+[anti_cheat_server I 260403 07:43:51.127.001 document.go:151] register document default ok
+[anti_cheat_server I 260403 07:43:51.134.002 init.go:171] register document ok
+[anti_cheat_server D 260403 07:43:51.138.003 config.go:49] cwd in /mnt/pokemon/release/anti_cheat
+[anti_cheat_server D 260403 07:43:51.149.004 server.go:29] GetExtend service anticheat.cn.1 &anti_cheat.Option{Option:service.Option{Name:"anticheat.cn.1", Alias:[]string(nil), Dependent:[]string(nil)}, ErrorNotForceResult:true, TracebackReportUrl:""}
+[anti_cheat_server I 260403 07:43:51.150.005 config.go:60] agent.cn.1 config in defines.json
+[agent.cn.1 I 260403 07:43:51.150.006 main.go:35] &main.Define{ContainerOption:service.ContainerOption{Name:"@agent.cn.1", Debug:false, Addr:"", NSQLookupd:"http://127.0.0.1:4161/", Mainnsqd:"", NSQTcpAddresses:[]string{"127.0.0.1:4150"}, Shushu:false, Services:[]service.IOption{(*anti_cheat.Option)(0xc000130360)}, ServicesRaw:[]json.RawMessage(nil)}}
+[agent.cn.1 I 260403 07:43:51.155.007 main.go:43] metrics listen: 192.168.97.6:2112
+[agent.cn.1 C 260403 07:43:51.188.008 rpcserver.go:280] nsqd http http://127.0.0.1:4151/stats?topic=RESP-c_agent.cn.1&channel=0global_1rpc&format=json get err: Get http://127.0.0.1:4151/stats?topic=RESP-c_agent.cn.1&channel=0global_1rpc&format=json: dial tcp 127.0.0.1:4151: connect: connection refused
+panic: nsqd http http://127.0.0.1:4151/stats?topic=RESP-c_agent.cn.1&channel=0global_1rpc&format=json get err: Get http://127.0.0.1:4151/stats?topic=RESP-c_agent.cn.1&channel=0global_1rpc&format=json: dial tcp 127.0.0.1:4151: connect: connection refused
+
+goroutine 1 [running]:
+github.com/op/go-logging.(*Logger).Panicf(0xc0002daab0, 0xd18bc0, 0x18, 0xc0002e7240, 0x2, 0x2)
+	/root/go/pkg/mod/github.com/op/go-logging@v0.0.0-20160315200505-970db520ece7/logger.go:194 +0x105
+tjgame/server_framework/tj/log.Panicf(...)
+	/mnt/hgfs/pokemon_server/gosrc/tjgame/server_framework/tj/log/log.go:138
+tjgame/server_framework/tj/nsq.getClientsNum(0xc0002e0490, 0xe, 0xc0002e4ce0, 0x11, 0xd10337, 0xc, 0x11)
+	/mnt/hgfs/pokemon_server/gosrc/tjgame/server_framework/tj/nsq/rpcserver.go:280 +0x1033
+tjgame/server_framework/tj/nsq.(*NSQRPCClient).initResponseConsumer(0xc00035c230, 0xc0002de388)
+	/mnt/hgfs/pokemon_server/gosrc/tjgame/server_framework/tj/nsq/rpcclient.go:283 +0x142
+tjgame/server_framework/tj/nsq.(*NSQRPCClient).Connect(0xc00035c230, 0xc0002dc8e0, 0x1, 0x1)
+	/mnt/hgfs/pokemon_server/gosrc/tjgame/server_framework/tj/nsq/rpcclient.go:111 +0xff
+tjgame/server_framework/tj/service.(*Container).Init(0xc0003380f0)
+	/mnt/hgfs/pokemon_server/gosrc/tjgame/server_framework/tj/service/container.go:228 +0x8b2
+main.(*Server).OnStart(0xc0002f8460, 0xc0002e83c0)
+	/mnt/hgfs/pokemon_server/gosrc/tjgame/anti_cheat/server.go:43 +0x32
+tjgame/server_framework/tj.(*ServerFramework).Start(0xc0002e6920)
+	/mnt/hgfs/pokemon_server/gosrc/tjgame/server_framework/tj/server.go:25 +0x38
+main.main()
+	/mnt/hgfs/pokemon_server/gosrc/tjgame/anti_cheat/main.go:47 +0x797
+[anti_cheat_server I 260403 07:43:52.375.001 document.go:151] register document default ok
+[anti_cheat_server I 260403 07:43:52.389.002 init.go:171] register document ok
+[anti_cheat_server D 260403 07:43:52.391.003 config.go:49] cwd in /mnt/pokemon/release/anti_cheat
+[anti_cheat_server D 260403 07:43:52.409.004 server.go:29] GetExtend service anticheat.cn.1 &anti_cheat.Option{Option:service.Option{Name:"anticheat.cn.1", Alias:[]string(nil), Dependent:[]string(nil)}, ErrorNotForceResult:true, TracebackReportUrl:""}
+[anti_cheat_server I 260403 07:43:52.409.005 config.go:60] agent.cn.1 config in defines.json
+[agent.cn.1 I 260403 07:43:52.410.006 main.go:35] &main.Define{ContainerOption:service.ContainerOption{Name:"@agent.cn.1", Debug:false, Addr:"", NSQLookupd:"http://127.0.0.1:4161/", Mainnsqd:"", NSQTcpAddresses:[]string{"127.0.0.1:4150"}, Shushu:false, Services:[]service.IOption{(*anti_cheat.Option)(0xc00031a600)}, ServicesRaw:[]json.RawMessage(nil)}}
+[agent.cn.1 I 260403 07:43:52.421.007 main.go:43] metrics listen: 192.168.97.6:2112
+[agent.cn.1 I 260403 07:43:52.484.010 rpcclient.go:292] create client consumer RESP-c_agent.cn.1/0global_1rpc
+[agent.cn.1 I 260403 07:43:52.486.011 consumer.go:1175] INF    2 [RESP-c_agent.cn.1/0global_1rpc] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 07:43:52.497.012 container.go:259] service anticheat.cn.1 start
+[agent.cn.1 I 260403 07:43:52.497.013 container.go:264] container @agent.cn.1 start
+[agent.cn.1 I 260403 07:43:52.497.014 server.go:29] server start ok
+[agent.cn.1 I 260403 07:43:52.497.016 rpcserver.go:349] create server consumer NewEndlessBattle/global
+[agent.cn.1 I 260403 07:43:52.498.018 rpcserver.go:349] create server consumer NewCrossMineBossBattle/global
+[agent.cn.1 I 260403 07:43:52.498.020 rpcserver.go:349] create server consumer NewGateBattle/global
+[agent.cn.1 I 260403 07:43:52.511.024 rpcserver.go:349] create server consumer REQ-anticheat.cn.1/rpc
+[agent.cn.1 I 260403 07:43:52.511.026 rpcserver.go:349] create server consumer NewBraveChallengeBattle/global
+[agent.cn.1 I 260403 07:43:52.511.028 rpcserver.go:349] create server consumer NewHuntingBattle/global
+[agent.cn.1 I 260403 07:43:52.511.030 rpcserver.go:349] create server consumer NewCrossMineBattle/global
+[agent.cn.1 I 260403 07:43:52.511.032 rpcserver.go:349] create server consumer NewCraftBattle/global
+[agent.cn.1 I 260403 07:43:52.511.034 rpcserver.go:349] create server consumer NewCrossArenaBattle/global
+[agent.cn.1 I 260403 07:43:52.511.036 rpcserver.go:349] create server consumer NewCrossUnionFightBattle/global
+[agent.cn.1 I 260403 07:43:52.512.038 rpcserver.go:349] create server consumer NewSummerChallengeBattle/global
+[agent.cn.1 I 260403 07:43:52.512.040 rpcserver.go:349] create server consumer NewArenaBattle/global
+[agent.cn.1 I 260403 07:43:52.512.042 rpcserver.go:349] create server consumer NewUnionFightBattle/global
+[agent.cn.1 I 260403 07:43:52.512.044 rpcserver.go:349] create server consumer NewCrossCraftBattle/global
+[agent.cn.1 I 260403 07:43:52.512.045 consumer.go:1175] INF    3 [NewEndlessBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 07:43:52.533.046 consumer.go:1175] INF    4 [NewCrossMineBossBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 07:43:52.545.047 consumer.go:1175] INF    5 [NewGateBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 07:43:52.548.048 consumer.go:1175] INF    6 [REQ-anticheat.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 07:43:52.549.049 consumer.go:1175] INF    7 [NewBraveChallengeBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 07:43:52.549.050 consumer.go:1175] INF    8 [NewHuntingBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 07:43:52.549.051 consumer.go:1175] INF    9 [NewCrossMineBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 07:43:52.550.052 consumer.go:1175] INF   10 [NewCraftBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 07:43:52.550.053 consumer.go:1175] INF   11 [NewCrossArenaBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 07:43:52.550.054 consumer.go:1175] INF   12 [NewCrossUnionFightBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 07:43:52.554.055 consumer.go:1175] INF   13 [NewSummerChallengeBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 07:43:52.554.056 consumer.go:1175] INF   14 [NewArenaBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 07:43:52.554.057 consumer.go:1175] INF   15 [NewUnionFightBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 07:43:52.555.058 consumer.go:1175] INF   16 [NewCrossCraftBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 E 260403 08:38:32.120.062 conn.go:731] ERR   10 [NewCraftBattle/global] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 E 260403 08:38:32.120.060 conn.go:731] ERR   15 [NewUnionFightBattle/global] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 E 260403 08:38:32.122.061 conn.go:731] ERR   11 [NewCrossArenaBattle/global] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 E 260403 08:38:32.123.059 conn.go:731] ERR   13 [NewSummerChallengeBattle/global] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 I 260403 08:38:32.126.063 conn.go:731] INF   13 [NewSummerChallengeBattle/global] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 08:38:32.126.064 conn.go:731] INF   11 [NewCrossArenaBattle/global] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 08:38:32.127.066 conn.go:731] INF   13 [NewSummerChallengeBattle/global] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 I 260403 08:38:32.127.067 conn.go:731] INF   11 [NewCrossArenaBattle/global] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 I 260403 08:38:32.127.068 conn.go:731] INF   15 [NewUnionFightBattle/global] (127.0.0.1:4150) beginning close
+[agent.cn.1 E 260403 08:38:32.127.069 conn.go:731] ERR   12 [NewCrossUnionFightBattle/global] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 I 260403 08:38:32.127.070 conn.go:731] INF   12 [NewCrossUnionFightBattle/global] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 08:38:32.127.072 conn.go:731] INF   12 [NewCrossUnionFightBattle/global] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 I 260403 08:38:32.127.071 conn.go:731] INF   15 [NewUnionFightBattle/global] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 I 260403 08:38:32.128.074 conn.go:731] INF   15 [NewUnionFightBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 08:38:32.126.065 conn.go:731] INF   10 [NewCraftBattle/global] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 08:38:32.128.075 conn.go:731] INF   15 [NewUnionFightBattle/global] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 I 260403 08:38:32.128.076 conn.go:731] INF   10 [NewCraftBattle/global] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 E 260403 08:38:32.128.077 conn.go:731] ERR   16 [NewCrossCraftBattle/global] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 I 260403 08:38:32.128.078 conn.go:731] INF   16 [NewCrossCraftBattle/global] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 08:38:32.128.079 conn.go:731] INF   16 [NewCrossCraftBattle/global] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 E 260403 08:38:32.128.081 conn.go:731] ERR    2 [RESP-c_agent.cn.1/0global_1rpc] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 I 260403 08:38:32.128.082 conn.go:731] INF   10 [NewCraftBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 08:38:32.128.084 conn.go:731] INF   10 [NewCraftBattle/global] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 I 260403 08:38:32.129.085 conn.go:731] INF   16 [NewCrossCraftBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 08:38:32.129.086 conn.go:731] INF   16 [NewCrossCraftBattle/global] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 E 260403 08:38:32.129.087 conn.go:731] ERR    5 [NewGateBattle/global] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 I 260403 08:38:32.129.088 conn.go:731] INF    5 [NewGateBattle/global] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 08:38:32.129.089 conn.go:731] INF    5 [NewGateBattle/global] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 E 260403 08:38:32.129.090 conn.go:731] ERR    6 [REQ-anticheat.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 I 260403 08:38:32.129.091 conn.go:731] INF    6 [REQ-anticheat.cn.1/rpc] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 08:38:32.129.092 conn.go:731] INF    6 [REQ-anticheat.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 I 260403 08:38:32.129.093 conn.go:731] INF    5 [NewGateBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 08:38:32.129.094 conn.go:731] INF    5 [NewGateBattle/global] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 I 260403 08:38:32.129.095 conn.go:731] INF    6 [REQ-anticheat.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 08:38:32.129.096 conn.go:731] INF    6 [REQ-anticheat.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 E 260403 08:38:32.129.097 conn.go:731] ERR    7 [NewBraveChallengeBattle/global] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 I 260403 08:38:32.129.098 conn.go:731] INF    7 [NewBraveChallengeBattle/global] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 08:38:32.129.099 conn.go:731] INF    7 [NewBraveChallengeBattle/global] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 E 260403 08:38:32.129.100 conn.go:731] ERR    8 [NewHuntingBattle/global] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 I 260403 08:38:32.129.101 conn.go:731] INF    8 [NewHuntingBattle/global] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 08:38:32.129.102 conn.go:731] INF    8 [NewHuntingBattle/global] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 I 260403 08:38:32.129.103 conn.go:731] INF    7 [NewBraveChallengeBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 08:38:32.129.104 conn.go:731] INF    7 [NewBraveChallengeBattle/global] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 I 260403 08:38:32.129.105 conn.go:731] INF    8 [NewHuntingBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 08:38:32.128.083 conn.go:731] INF    2 [RESP-c_agent.cn.1/0global_1rpc] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 08:38:32.129.107 conn.go:731] INF    2 [RESP-c_agent.cn.1/0global_1rpc] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 E 260403 08:38:32.129.108 conn.go:731] ERR    3 [NewEndlessBattle/global] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 I 260403 08:38:32.129.109 conn.go:731] INF    3 [NewEndlessBattle/global] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 08:38:32.129.110 conn.go:731] INF    3 [NewEndlessBattle/global] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 E 260403 08:38:32.129.111 conn.go:731] ERR    4 [NewCrossMineBossBattle/global] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 I 260403 08:38:32.129.112 conn.go:731] INF    4 [NewCrossMineBossBattle/global] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 08:38:32.129.113 conn.go:731] INF    4 [NewCrossMineBossBattle/global] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 I 260403 08:38:32.129.114 conn.go:731] INF    2 [RESP-c_agent.cn.1/0global_1rpc] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 08:38:32.129.115 conn.go:731] INF    2 [RESP-c_agent.cn.1/0global_1rpc] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 I 260403 08:38:32.129.106 conn.go:731] INF    8 [NewHuntingBattle/global] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 E 260403 08:38:32.129.117 conn.go:731] ERR    9 [NewCrossMineBattle/global] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 I 260403 08:38:32.129.118 conn.go:731] INF    9 [NewCrossMineBattle/global] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 08:38:32.129.119 conn.go:731] INF    9 [NewCrossMineBattle/global] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 I 260403 08:38:32.129.120 conn.go:731] INF    9 [NewCrossMineBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 08:38:32.129.121 conn.go:731] INF    9 [NewCrossMineBattle/global] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 I 260403 08:38:32.129.073 conn.go:731] INF   11 [NewCrossArenaBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 08:38:32.129.122 conn.go:731] INF    4 [NewCrossMineBossBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 08:38:32.129.123 conn.go:731] INF   11 [NewCrossArenaBattle/global] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 I 260403 08:38:32.130.124 conn.go:731] INF    4 [NewCrossMineBossBattle/global] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 I 260403 08:38:32.130.125 conn.go:731] INF   12 [NewCrossUnionFightBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 08:38:32.130.126 conn.go:731] INF   13 [NewSummerChallengeBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 08:38:32.130.128 conn.go:731] INF   13 [NewSummerChallengeBattle/global] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 I 260403 08:38:32.130.127 conn.go:731] INF   12 [NewCrossUnionFightBattle/global] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 I 260403 08:38:32.129.116 conn.go:731] INF    3 [NewEndlessBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 08:38:32.130.129 conn.go:731] INF    3 [NewEndlessBattle/global] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 E 260403 08:38:32.128.080 conn.go:731] ERR   14 [NewArenaBattle/global] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 I 260403 08:38:32.130.130 conn.go:731] INF   14 [NewArenaBattle/global] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 08:38:32.130.131 conn.go:731] INF   14 [NewArenaBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 08:38:32.130.132 conn.go:731] INF   14 [NewArenaBattle/global] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 I 260403 08:38:32.130.133 conn.go:731] INF   14 [NewArenaBattle/global] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 I 260403 08:38:32.228.134 conn.go:731] INF   15 [NewUnionFightBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 I 260403 08:38:32.228.135 conn.go:731] INF   15 [NewUnionFightBattle/global] (127.0.0.1:4150) clean close complete
+[agent.cn.1 W 260403 08:38:32.229.136 consumer.go:1175] WRN   15 [NewUnionFightBattle/global] there are 0 connections left alive
+[agent.cn.1 I 260403 08:38:32.229.137 consumer.go:1175] INF   15 [NewUnionFightBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 I 260403 08:38:32.229.138 conn.go:731] INF   16 [NewCrossCraftBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 I 260403 08:38:32.229.139 conn.go:731] INF    5 [NewGateBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 I 260403 08:38:32.229.140 conn.go:731] INF   16 [NewCrossCraftBattle/global] (127.0.0.1:4150) clean close complete
+[agent.cn.1 I 260403 08:38:32.229.141 conn.go:731] INF   10 [NewCraftBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 W 260403 08:38:32.229.142 consumer.go:1175] WRN   16 [NewCrossCraftBattle/global] there are 0 connections left alive
+[agent.cn.1 I 260403 08:38:32.229.143 conn.go:731] INF   10 [NewCraftBattle/global] (127.0.0.1:4150) clean close complete
+[agent.cn.1 I 260403 08:38:32.229.144 consumer.go:1175] INF   16 [NewCrossCraftBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 I 260403 08:38:32.229.146 conn.go:731] INF    6 [REQ-anticheat.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 W 260403 08:38:32.229.145 consumer.go:1175] WRN   10 [NewCraftBattle/global] there are 0 connections left alive
+[agent.cn.1 I 260403 08:38:32.230.147 conn.go:731] INF    6 [REQ-anticheat.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[agent.cn.1 I 260403 08:38:32.230.148 consumer.go:1175] INF   10 [NewCraftBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 W 260403 08:38:32.230.149 consumer.go:1175] WRN    6 [REQ-anticheat.cn.1/rpc] there are 0 connections left alive
+[agent.cn.1 I 260403 08:38:32.230.151 consumer.go:1175] INF    6 [REQ-anticheat.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 I 260403 08:38:32.230.150 conn.go:731] INF    7 [NewBraveChallengeBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 I 260403 08:38:32.230.152 conn.go:731] INF    7 [NewBraveChallengeBattle/global] (127.0.0.1:4150) clean close complete
+[agent.cn.1 W 260403 08:38:32.230.153 consumer.go:1175] WRN    7 [NewBraveChallengeBattle/global] there are 0 connections left alive
+[agent.cn.1 I 260403 08:38:32.230.154 consumer.go:1175] INF    7 [NewBraveChallengeBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 I 260403 08:38:32.230.155 conn.go:731] INF    5 [NewGateBattle/global] (127.0.0.1:4150) clean close complete
+[agent.cn.1 I 260403 08:38:32.230.156 conn.go:731] INF   13 [NewSummerChallengeBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 W 260403 08:38:32.230.157 consumer.go:1175] WRN    5 [NewGateBattle/global] there are 0 connections left alive
+[agent.cn.1 I 260403 08:38:32.230.158 consumer.go:1175] INF    5 [NewGateBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 I 260403 08:38:32.230.159 conn.go:731] INF   13 [NewSummerChallengeBattle/global] (127.0.0.1:4150) clean close complete
+[agent.cn.1 I 260403 08:38:32.230.161 conn.go:731] INF    3 [NewEndlessBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 I 260403 08:38:32.230.162 conn.go:731] INF    3 [NewEndlessBattle/global] (127.0.0.1:4150) clean close complete
+[agent.cn.1 W 260403 08:38:32.230.163 consumer.go:1175] WRN    3 [NewEndlessBattle/global] there are 0 connections left alive
+[agent.cn.1 I 260403 08:38:32.230.164 consumer.go:1175] INF    3 [NewEndlessBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 I 260403 08:38:32.230.165 conn.go:731] INF    2 [RESP-c_agent.cn.1/0global_1rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 I 260403 08:38:32.230.166 conn.go:731] INF    2 [RESP-c_agent.cn.1/0global_1rpc] (127.0.0.1:4150) clean close complete
+[agent.cn.1 W 260403 08:38:32.230.167 consumer.go:1175] WRN    2 [RESP-c_agent.cn.1/0global_1rpc] there are 0 connections left alive
+[agent.cn.1 I 260403 08:38:32.230.168 consumer.go:1175] INF    2 [RESP-c_agent.cn.1/0global_1rpc] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 I 260403 08:38:32.230.169 conn.go:731] INF   12 [NewCrossUnionFightBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 I 260403 08:38:32.230.170 conn.go:731] INF   12 [NewCrossUnionFightBattle/global] (127.0.0.1:4150) clean close complete
+[agent.cn.1 W 260403 08:38:32.230.171 consumer.go:1175] WRN   12 [NewCrossUnionFightBattle/global] there are 0 connections left alive
+[agent.cn.1 I 260403 08:38:32.230.172 consumer.go:1175] INF   12 [NewCrossUnionFightBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 I 260403 08:38:32.230.173 conn.go:731] INF   11 [NewCrossArenaBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 I 260403 08:38:32.230.174 conn.go:731] INF   11 [NewCrossArenaBattle/global] (127.0.0.1:4150) clean close complete
+[agent.cn.1 W 260403 08:38:32.230.175 consumer.go:1175] WRN   11 [NewCrossArenaBattle/global] there are 0 connections left alive
+[agent.cn.1 I 260403 08:38:32.230.176 consumer.go:1175] INF   11 [NewCrossArenaBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 I 260403 08:38:32.230.177 conn.go:731] INF    9 [NewCrossMineBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 I 260403 08:38:32.230.178 conn.go:731] INF    9 [NewCrossMineBattle/global] (127.0.0.1:4150) clean close complete
+[agent.cn.1 W 260403 08:38:32.230.179 consumer.go:1175] WRN    9 [NewCrossMineBattle/global] there are 0 connections left alive
+[agent.cn.1 I 260403 08:38:32.230.180 consumer.go:1175] INF    9 [NewCrossMineBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 I 260403 08:38:32.230.181 conn.go:731] INF    8 [NewHuntingBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 I 260403 08:38:32.230.182 conn.go:731] INF    8 [NewHuntingBattle/global] (127.0.0.1:4150) clean close complete
+[agent.cn.1 W 260403 08:38:32.230.183 consumer.go:1175] WRN    8 [NewHuntingBattle/global] there are 0 connections left alive
+[agent.cn.1 I 260403 08:38:32.230.184 consumer.go:1175] INF    8 [NewHuntingBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 I 260403 08:38:32.230.185 conn.go:731] INF    4 [NewCrossMineBossBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 I 260403 08:38:32.230.186 conn.go:731] INF    4 [NewCrossMineBossBattle/global] (127.0.0.1:4150) clean close complete
+[agent.cn.1 W 260403 08:38:32.230.187 consumer.go:1175] WRN    4 [NewCrossMineBossBattle/global] there are 0 connections left alive
+[agent.cn.1 I 260403 08:38:32.230.188 consumer.go:1175] INF    4 [NewCrossMineBossBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 I 260403 08:38:32.230.189 conn.go:731] INF   14 [NewArenaBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 I 260403 08:38:32.230.190 conn.go:731] INF   14 [NewArenaBattle/global] (127.0.0.1:4150) clean close complete
+[agent.cn.1 W 260403 08:38:32.230.191 consumer.go:1175] WRN   14 [NewArenaBattle/global] there are 0 connections left alive
+[agent.cn.1 I 260403 08:38:32.230.192 consumer.go:1175] INF   14 [NewArenaBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 W 260403 08:38:32.230.160 consumer.go:1175] WRN   13 [NewSummerChallengeBattle/global] there are 0 connections left alive
+[agent.cn.1 I 260403 08:38:32.230.193 consumer.go:1175] INF   13 [NewSummerChallengeBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 I 260403 08:38:37.230.194 consumer.go:1175] INF   15 [NewUnionFightBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 08:38:37.230.196 consumer.go:1175] INF    7 [NewBraveChallengeBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 08:38:37.230.195 consumer.go:1175] INF   10 [NewCraftBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 08:38:37.231.197 consumer.go:1175] INF   14 [NewArenaBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 08:38:37.232.198 consumer.go:1175] INF    5 [NewGateBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 08:38:37.232.199 consumer.go:1175] INF    2 [RESP-c_agent.cn.1/0global_1rpc] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 08:38:37.232.200 consumer.go:1175] INF   12 [NewCrossUnionFightBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 08:38:37.234.202 consumer.go:1175] INF    6 [REQ-anticheat.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 08:38:37.234.203 consumer.go:1175] INF   11 [NewCrossArenaBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 08:38:37.234.204 consumer.go:1175] INF   16 [NewCrossCraftBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 08:38:37.234.205 consumer.go:1175] INF    9 [NewCrossMineBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 08:38:37.235.206 consumer.go:1175] INF    8 [NewHuntingBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 08:38:37.235.208 consumer.go:1175] INF    4 [NewCrossMineBossBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 08:38:37.232.201 consumer.go:1175] INF   13 [NewSummerChallengeBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 08:38:37.235.207 consumer.go:1175] INF    3 [NewEndlessBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 E 260403 09:31:39.406.210 conn.go:731] ERR   13 [NewSummerChallengeBattle/global] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 I 260403 09:31:39.406.211 conn.go:731] INF   13 [NewSummerChallengeBattle/global] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 09:31:39.407.212 conn.go:731] INF   13 [NewSummerChallengeBattle/global] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 I 260403 09:31:39.407.213 conn.go:731] INF   13 [NewSummerChallengeBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 09:31:39.407.214 conn.go:731] INF   13 [NewSummerChallengeBattle/global] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 E 260403 09:31:39.407.215 conn.go:731] ERR   15 [NewUnionFightBattle/global] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 I 260403 09:31:39.407.216 conn.go:731] INF   15 [NewUnionFightBattle/global] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 09:31:39.407.217 conn.go:731] INF   15 [NewUnionFightBattle/global] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 I 260403 09:31:39.407.218 conn.go:731] INF   15 [NewUnionFightBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 09:31:39.407.219 conn.go:731] INF   15 [NewUnionFightBattle/global] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 E 260403 09:31:39.408.220 conn.go:731] ERR   14 [NewArenaBattle/global] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 I 260403 09:31:39.408.221 conn.go:731] INF   14 [NewArenaBattle/global] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 09:31:39.408.222 conn.go:731] INF   14 [NewArenaBattle/global] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 E 260403 09:31:39.408.223 conn.go:731] ERR    7 [NewBraveChallengeBattle/global] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 I 260403 09:31:39.408.224 conn.go:731] INF    7 [NewBraveChallengeBattle/global] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 09:31:39.408.225 conn.go:731] INF    7 [NewBraveChallengeBattle/global] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 E 260403 09:31:39.408.226 conn.go:731] ERR   10 [NewCraftBattle/global] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 I 260403 09:31:39.408.227 conn.go:731] INF   10 [NewCraftBattle/global] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 09:31:39.408.228 conn.go:731] INF   10 [NewCraftBattle/global] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 I 260403 09:31:39.408.229 conn.go:731] INF   14 [NewArenaBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 09:31:39.408.230 conn.go:731] INF   14 [NewArenaBattle/global] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 I 260403 09:31:39.408.231 conn.go:731] INF    7 [NewBraveChallengeBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 09:31:39.408.232 conn.go:731] INF    7 [NewBraveChallengeBattle/global] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 I 260403 09:31:39.408.233 conn.go:731] INF   10 [NewCraftBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 09:31:39.408.234 conn.go:731] INF   10 [NewCraftBattle/global] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 E 260403 09:31:39.408.235 conn.go:731] ERR    5 [NewGateBattle/global] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 I 260403 09:31:39.408.236 conn.go:731] INF    5 [NewGateBattle/global] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 09:31:39.408.237 conn.go:731] INF    5 [NewGateBattle/global] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 E 260403 09:31:39.408.238 conn.go:731] ERR   12 [NewCrossUnionFightBattle/global] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 I 260403 09:31:39.408.239 conn.go:731] INF   12 [NewCrossUnionFightBattle/global] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 09:31:39.408.240 conn.go:731] INF   12 [NewCrossUnionFightBattle/global] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 E 260403 09:31:39.408.241 conn.go:731] ERR    6 [REQ-anticheat.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 I 260403 09:31:39.408.242 conn.go:731] INF    6 [REQ-anticheat.cn.1/rpc] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 09:31:39.408.243 conn.go:731] INF    6 [REQ-anticheat.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 I 260403 09:31:39.408.244 conn.go:731] INF    5 [NewGateBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 09:31:39.408.245 conn.go:731] INF    5 [NewGateBattle/global] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 I 260403 09:31:39.408.246 conn.go:731] INF   12 [NewCrossUnionFightBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 09:31:39.408.247 conn.go:731] INF   12 [NewCrossUnionFightBattle/global] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 I 260403 09:31:39.408.248 conn.go:731] INF    6 [REQ-anticheat.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 09:31:39.408.249 conn.go:731] INF    6 [REQ-anticheat.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 E 260403 09:31:39.408.250 conn.go:731] ERR   11 [NewCrossArenaBattle/global] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 I 260403 09:31:39.408.251 conn.go:731] INF   11 [NewCrossArenaBattle/global] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 09:31:39.408.252 conn.go:731] INF   11 [NewCrossArenaBattle/global] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 E 260403 09:31:39.408.253 conn.go:731] ERR   16 [NewCrossCraftBattle/global] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 I 260403 09:31:39.409.254 conn.go:731] INF   16 [NewCrossCraftBattle/global] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 09:31:39.409.255 conn.go:731] INF   16 [NewCrossCraftBattle/global] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 I 260403 09:31:39.409.256 conn.go:731] INF   11 [NewCrossArenaBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 09:31:39.409.257 conn.go:731] INF   11 [NewCrossArenaBattle/global] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 E 260403 09:31:39.409.259 conn.go:731] ERR    4 [NewCrossMineBossBattle/global] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 I 260403 09:31:39.409.260 conn.go:731] INF    4 [NewCrossMineBossBattle/global] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 09:31:39.409.261 conn.go:731] INF    4 [NewCrossMineBossBattle/global] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 I 260403 09:31:39.409.262 conn.go:731] INF    4 [NewCrossMineBossBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 09:31:39.409.263 conn.go:731] INF    4 [NewCrossMineBossBattle/global] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 E 260403 09:31:39.409.264 conn.go:731] ERR    9 [NewCrossMineBattle/global] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 I 260403 09:31:39.409.265 conn.go:731] INF    9 [NewCrossMineBattle/global] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 09:31:39.409.266 conn.go:731] INF    9 [NewCrossMineBattle/global] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 I 260403 09:31:39.410.267 conn.go:731] INF    9 [NewCrossMineBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 09:31:39.410.268 conn.go:731] INF    9 [NewCrossMineBattle/global] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 E 260403 09:31:39.410.269 conn.go:731] ERR    2 [RESP-c_agent.cn.1/0global_1rpc] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 I 260403 09:31:39.410.270 conn.go:731] INF    2 [RESP-c_agent.cn.1/0global_1rpc] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 09:31:39.410.271 conn.go:731] INF    2 [RESP-c_agent.cn.1/0global_1rpc] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 I 260403 09:31:39.410.272 conn.go:731] INF    2 [RESP-c_agent.cn.1/0global_1rpc] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 09:31:39.410.273 conn.go:731] INF    2 [RESP-c_agent.cn.1/0global_1rpc] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 E 260403 09:31:39.410.274 conn.go:731] ERR    8 [NewHuntingBattle/global] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 I 260403 09:31:39.410.275 conn.go:731] INF    8 [NewHuntingBattle/global] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 09:31:39.410.276 conn.go:731] INF    8 [NewHuntingBattle/global] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 I 260403 09:31:39.410.277 conn.go:731] INF    8 [NewHuntingBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 09:31:39.410.278 conn.go:731] INF    8 [NewHuntingBattle/global] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 I 260403 09:31:39.409.258 conn.go:731] INF   16 [NewCrossCraftBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 09:31:39.411.279 conn.go:731] INF   16 [NewCrossCraftBattle/global] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 E 260403 09:31:39.405.209 conn.go:731] ERR    3 [NewEndlessBattle/global] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 I 260403 09:31:39.411.280 conn.go:731] INF    3 [NewEndlessBattle/global] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 09:31:39.411.281 conn.go:731] INF    3 [NewEndlessBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 09:31:39.411.282 conn.go:731] INF    3 [NewEndlessBattle/global] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 I 260403 09:31:39.411.283 conn.go:731] INF    3 [NewEndlessBattle/global] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 I 260403 09:31:39.509.284 conn.go:731] INF   11 [NewCrossArenaBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 I 260403 09:31:39.509.285 conn.go:731] INF   11 [NewCrossArenaBattle/global] (127.0.0.1:4150) clean close complete
+[agent.cn.1 W 260403 09:31:39.509.286 consumer.go:1175] WRN   11 [NewCrossArenaBattle/global] there are 0 connections left alive
+[agent.cn.1 I 260403 09:31:39.509.287 consumer.go:1175] INF   11 [NewCrossArenaBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 I 260403 09:31:39.509.288 conn.go:731] INF   13 [NewSummerChallengeBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 I 260403 09:31:39.509.290 conn.go:731] INF    4 [NewCrossMineBossBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 I 260403 09:31:39.509.291 conn.go:731] INF    4 [NewCrossMineBossBattle/global] (127.0.0.1:4150) clean close complete
+[agent.cn.1 W 260403 09:31:39.509.292 consumer.go:1175] WRN    4 [NewCrossMineBossBattle/global] there are 0 connections left alive
+[agent.cn.1 I 260403 09:31:39.509.293 consumer.go:1175] INF    4 [NewCrossMineBossBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 I 260403 09:31:39.509.294 conn.go:731] INF   10 [NewCraftBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 I 260403 09:31:39.509.295 conn.go:731] INF   10 [NewCraftBattle/global] (127.0.0.1:4150) clean close complete
+[agent.cn.1 W 260403 09:31:39.509.296 consumer.go:1175] WRN   10 [NewCraftBattle/global] there are 0 connections left alive
+[agent.cn.1 I 260403 09:31:39.509.297 consumer.go:1175] INF   10 [NewCraftBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 I 260403 09:31:39.510.298 conn.go:731] INF   15 [NewUnionFightBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 I 260403 09:31:39.510.299 conn.go:731] INF   15 [NewUnionFightBattle/global] (127.0.0.1:4150) clean close complete
+[agent.cn.1 W 260403 09:31:39.510.300 consumer.go:1175] WRN   15 [NewUnionFightBattle/global] there are 0 connections left alive
+[agent.cn.1 I 260403 09:31:39.510.301 consumer.go:1175] INF   15 [NewUnionFightBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 I 260403 09:31:39.510.302 conn.go:731] INF   14 [NewArenaBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 I 260403 09:31:39.510.303 conn.go:731] INF   14 [NewArenaBattle/global] (127.0.0.1:4150) clean close complete
+[agent.cn.1 W 260403 09:31:39.510.304 consumer.go:1175] WRN   14 [NewArenaBattle/global] there are 0 connections left alive
+[agent.cn.1 I 260403 09:31:39.510.305 consumer.go:1175] INF   14 [NewArenaBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 I 260403 09:31:39.510.306 conn.go:731] INF    7 [NewBraveChallengeBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 I 260403 09:31:39.510.307 conn.go:731] INF    7 [NewBraveChallengeBattle/global] (127.0.0.1:4150) clean close complete
+[agent.cn.1 W 260403 09:31:39.510.308 consumer.go:1175] WRN    7 [NewBraveChallengeBattle/global] there are 0 connections left alive
+[agent.cn.1 I 260403 09:31:39.510.309 consumer.go:1175] INF    7 [NewBraveChallengeBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 I 260403 09:31:39.510.310 conn.go:731] INF   12 [NewCrossUnionFightBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 I 260403 09:31:39.510.311 conn.go:731] INF   12 [NewCrossUnionFightBattle/global] (127.0.0.1:4150) clean close complete
+[agent.cn.1 W 260403 09:31:39.510.312 consumer.go:1175] WRN   12 [NewCrossUnionFightBattle/global] there are 0 connections left alive
+[agent.cn.1 I 260403 09:31:39.510.313 consumer.go:1175] INF   12 [NewCrossUnionFightBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 I 260403 09:31:39.510.314 conn.go:731] INF    5 [NewGateBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 I 260403 09:31:39.510.315 conn.go:731] INF    5 [NewGateBattle/global] (127.0.0.1:4150) clean close complete
+[agent.cn.1 W 260403 09:31:39.510.316 consumer.go:1175] WRN    5 [NewGateBattle/global] there are 0 connections left alive
+[agent.cn.1 I 260403 09:31:39.510.317 consumer.go:1175] INF    5 [NewGateBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 I 260403 09:31:39.510.318 conn.go:731] INF    6 [REQ-anticheat.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 I 260403 09:31:39.510.319 conn.go:731] INF    6 [REQ-anticheat.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[agent.cn.1 W 260403 09:31:39.510.320 consumer.go:1175] WRN    6 [REQ-anticheat.cn.1/rpc] there are 0 connections left alive
+[agent.cn.1 I 260403 09:31:39.510.321 consumer.go:1175] INF    6 [REQ-anticheat.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 I 260403 09:31:39.510.322 conn.go:731] INF    2 [RESP-c_agent.cn.1/0global_1rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 I 260403 09:31:39.510.323 conn.go:731] INF    2 [RESP-c_agent.cn.1/0global_1rpc] (127.0.0.1:4150) clean close complete
+[agent.cn.1 W 260403 09:31:39.510.324 consumer.go:1175] WRN    2 [RESP-c_agent.cn.1/0global_1rpc] there are 0 connections left alive
+[agent.cn.1 I 260403 09:31:39.510.325 consumer.go:1175] INF    2 [RESP-c_agent.cn.1/0global_1rpc] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 I 260403 09:31:39.510.326 conn.go:731] INF    9 [NewCrossMineBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 I 260403 09:31:39.510.327 conn.go:731] INF    9 [NewCrossMineBattle/global] (127.0.0.1:4150) clean close complete
+[agent.cn.1 W 260403 09:31:39.510.328 consumer.go:1175] WRN    9 [NewCrossMineBattle/global] there are 0 connections left alive
+[agent.cn.1 I 260403 09:31:39.511.330 conn.go:731] INF    8 [NewHuntingBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 I 260403 09:31:39.511.331 conn.go:731] INF    8 [NewHuntingBattle/global] (127.0.0.1:4150) clean close complete
+[agent.cn.1 W 260403 09:31:39.511.332 consumer.go:1175] WRN    8 [NewHuntingBattle/global] there are 0 connections left alive
+[agent.cn.1 I 260403 09:31:39.511.333 consumer.go:1175] INF    8 [NewHuntingBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 I 260403 09:31:39.511.334 conn.go:731] INF   16 [NewCrossCraftBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 I 260403 09:31:39.511.335 conn.go:731] INF   16 [NewCrossCraftBattle/global] (127.0.0.1:4150) clean close complete
+[agent.cn.1 W 260403 09:31:39.511.336 consumer.go:1175] WRN   16 [NewCrossCraftBattle/global] there are 0 connections left alive
+[agent.cn.1 I 260403 09:31:39.511.337 consumer.go:1175] INF   16 [NewCrossCraftBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 I 260403 09:31:39.510.329 consumer.go:1175] INF    9 [NewCrossMineBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 I 260403 09:31:39.512.338 conn.go:731] INF    3 [NewEndlessBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 I 260403 09:31:39.512.339 conn.go:731] INF    3 [NewEndlessBattle/global] (127.0.0.1:4150) clean close complete
+[agent.cn.1 W 260403 09:31:39.512.340 consumer.go:1175] WRN    3 [NewEndlessBattle/global] there are 0 connections left alive
+[agent.cn.1 I 260403 09:31:39.512.341 consumer.go:1175] INF    3 [NewEndlessBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 I 260403 09:31:39.509.289 conn.go:731] INF   13 [NewSummerChallengeBattle/global] (127.0.0.1:4150) clean close complete
+[agent.cn.1 W 260403 09:31:39.512.342 consumer.go:1175] WRN   13 [NewSummerChallengeBattle/global] there are 0 connections left alive
+[agent.cn.1 I 260403 09:31:39.513.343 consumer.go:1175] INF   13 [NewSummerChallengeBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 I 260403 09:31:44.511.344 consumer.go:1175] INF   14 [NewArenaBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 09:31:44.513.345 consumer.go:1175] INF    2 [RESP-c_agent.cn.1/0global_1rpc] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 09:31:44.514.346 consumer.go:1175] INF   11 [NewCrossArenaBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 09:31:44.514.347 consumer.go:1175] INF   10 [NewCraftBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 09:31:44.519.349 consumer.go:1175] INF   16 [NewCrossCraftBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 09:31:44.519.348 consumer.go:1175] INF    7 [NewBraveChallengeBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 09:31:44.525.350 consumer.go:1175] INF   12 [NewCrossUnionFightBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 09:31:44.526.351 consumer.go:1175] INF    5 [NewGateBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 09:31:44.526.352 consumer.go:1175] INF   15 [NewUnionFightBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 09:31:44.527.354 consumer.go:1175] INF   13 [NewSummerChallengeBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 09:31:44.527.355 consumer.go:1175] INF    6 [REQ-anticheat.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 09:31:44.527.353 consumer.go:1175] INF    3 [NewEndlessBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 09:31:44.529.357 consumer.go:1175] INF    8 [NewHuntingBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 09:31:44.529.356 consumer.go:1175] INF    4 [NewCrossMineBossBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 09:31:44.531.358 consumer.go:1175] INF    9 [NewCrossMineBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 E 260403 10:19:05.001.360 conn.go:731] ERR   12 [NewCrossUnionFightBattle/global] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 I 260403 10:19:05.002.361 conn.go:731] INF   12 [NewCrossUnionFightBattle/global] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 10:19:05.002.362 conn.go:731] INF   12 [NewCrossUnionFightBattle/global] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 E 260403 10:19:05.002.363 conn.go:731] ERR   16 [NewCrossCraftBattle/global] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 I 260403 10:19:05.003.364 conn.go:731] INF   16 [NewCrossCraftBattle/global] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 10:19:05.003.365 conn.go:731] INF   16 [NewCrossCraftBattle/global] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 E 260403 10:19:05.003.366 conn.go:731] ERR   15 [NewUnionFightBattle/global] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 I 260403 10:19:05.003.367 conn.go:731] INF   15 [NewUnionFightBattle/global] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 10:19:05.003.368 conn.go:731] INF   15 [NewUnionFightBattle/global] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 E 260403 10:19:05.000.359 conn.go:731] ERR    2 [RESP-c_agent.cn.1/0global_1rpc] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 I 260403 10:19:05.004.369 conn.go:731] INF    2 [RESP-c_agent.cn.1/0global_1rpc] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 10:19:05.004.370 conn.go:731] INF    2 [RESP-c_agent.cn.1/0global_1rpc] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 E 260403 10:19:05.004.371 conn.go:731] ERR   11 [NewCrossArenaBattle/global] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 I 260403 10:19:05.004.372 conn.go:731] INF   11 [NewCrossArenaBattle/global] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 10:19:05.004.373 conn.go:731] INF   11 [NewCrossArenaBattle/global] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 E 260403 10:19:05.004.374 conn.go:731] ERR   10 [NewCraftBattle/global] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 I 260403 10:19:05.004.375 conn.go:731] INF   10 [NewCraftBattle/global] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 10:19:05.005.376 conn.go:731] INF   10 [NewCraftBattle/global] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 E 260403 10:19:05.005.377 conn.go:731] ERR    7 [NewBraveChallengeBattle/global] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 I 260403 10:19:05.005.378 conn.go:731] INF    7 [NewBraveChallengeBattle/global] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 10:19:05.005.379 conn.go:731] INF    7 [NewBraveChallengeBattle/global] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 E 260403 10:19:05.007.380 conn.go:731] ERR    5 [NewGateBattle/global] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 I 260403 10:19:05.007.381 conn.go:731] INF    5 [NewGateBattle/global] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 10:19:05.007.382 conn.go:731] INF    5 [NewGateBattle/global] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 E 260403 10:19:05.007.383 conn.go:731] ERR   13 [NewSummerChallengeBattle/global] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 I 260403 10:19:05.007.384 conn.go:731] INF   13 [NewSummerChallengeBattle/global] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 10:19:05.007.385 conn.go:731] INF   13 [NewSummerChallengeBattle/global] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 E 260403 10:19:05.007.386 conn.go:731] ERR    6 [REQ-anticheat.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 I 260403 10:19:05.008.387 conn.go:731] INF    6 [REQ-anticheat.cn.1/rpc] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 10:19:05.008.388 conn.go:731] INF    6 [REQ-anticheat.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 E 260403 10:19:05.008.389 conn.go:731] ERR   14 [NewArenaBattle/global] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 I 260403 10:19:05.008.390 conn.go:731] INF   14 [NewArenaBattle/global] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 10:19:05.008.391 conn.go:731] INF   14 [NewArenaBattle/global] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 I 260403 10:19:05.008.392 conn.go:731] INF   14 [NewArenaBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 10:19:05.008.393 conn.go:731] INF   14 [NewArenaBattle/global] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 E 260403 10:19:05.009.394 conn.go:731] ERR    3 [NewEndlessBattle/global] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 I 260403 10:19:05.009.395 conn.go:731] INF    3 [NewEndlessBattle/global] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 10:19:05.009.396 conn.go:731] INF    3 [NewEndlessBattle/global] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 E 260403 10:19:05.009.397 conn.go:731] ERR    8 [NewHuntingBattle/global] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 I 260403 10:19:05.009.398 conn.go:731] INF    8 [NewHuntingBattle/global] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 10:19:05.009.399 conn.go:731] INF    8 [NewHuntingBattle/global] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 I 260403 10:19:05.009.400 conn.go:731] INF    3 [NewEndlessBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 10:19:05.009.401 conn.go:731] INF    3 [NewEndlessBattle/global] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 I 260403 10:19:05.009.402 conn.go:731] INF    8 [NewHuntingBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 10:19:05.009.403 conn.go:731] INF    8 [NewHuntingBattle/global] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 E 260403 10:19:05.009.404 conn.go:731] ERR    4 [NewCrossMineBossBattle/global] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 I 260403 10:19:05.010.405 conn.go:731] INF    4 [NewCrossMineBossBattle/global] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 10:19:05.010.406 conn.go:731] INF    4 [NewCrossMineBossBattle/global] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 I 260403 10:19:05.010.407 conn.go:731] INF    4 [NewCrossMineBossBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 10:19:05.010.408 conn.go:731] INF    4 [NewCrossMineBossBattle/global] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 E 260403 10:19:05.010.409 conn.go:731] ERR    9 [NewCrossMineBattle/global] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 I 260403 10:19:05.010.410 conn.go:731] INF    9 [NewCrossMineBattle/global] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 10:19:05.010.411 conn.go:731] INF    9 [NewCrossMineBattle/global] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 I 260403 10:19:05.010.412 conn.go:731] INF    9 [NewCrossMineBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 10:19:05.010.413 conn.go:731] INF    9 [NewCrossMineBattle/global] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 I 260403 10:19:05.010.414 conn.go:731] INF   10 [NewCraftBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 10:19:05.010.415 conn.go:731] INF   10 [NewCraftBattle/global] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 I 260403 10:19:05.010.416 conn.go:731] INF   11 [NewCrossArenaBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 10:19:05.010.417 conn.go:731] INF   11 [NewCrossArenaBattle/global] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 I 260403 10:19:05.011.419 conn.go:731] INF    5 [NewGateBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 10:19:05.011.420 conn.go:731] INF    5 [NewGateBattle/global] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 I 260403 10:19:05.011.421 conn.go:731] INF    6 [REQ-anticheat.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 10:19:05.011.422 conn.go:731] INF    6 [REQ-anticheat.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 I 260403 10:19:05.011.423 conn.go:731] INF    7 [NewBraveChallengeBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 10:19:05.011.424 conn.go:731] INF    7 [NewBraveChallengeBattle/global] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 I 260403 10:19:05.011.425 conn.go:731] INF   16 [NewCrossCraftBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 10:19:05.011.426 conn.go:731] INF   16 [NewCrossCraftBattle/global] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 I 260403 10:19:05.011.427 conn.go:731] INF   15 [NewUnionFightBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 10:19:05.011.428 conn.go:731] INF   15 [NewUnionFightBattle/global] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 I 260403 10:19:05.011.429 conn.go:731] INF   12 [NewCrossUnionFightBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 10:19:05.012.430 conn.go:731] INF   12 [NewCrossUnionFightBattle/global] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 I 260403 10:19:05.012.431 conn.go:731] INF    2 [RESP-c_agent.cn.1/0global_1rpc] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 10:19:05.012.432 conn.go:731] INF    2 [RESP-c_agent.cn.1/0global_1rpc] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 I 260403 10:19:05.010.418 conn.go:731] INF   13 [NewSummerChallengeBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 10:19:05.012.433 conn.go:731] INF   13 [NewSummerChallengeBattle/global] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 I 260403 10:19:05.109.434 conn.go:731] INF   14 [NewArenaBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 I 260403 10:19:05.109.435 conn.go:731] INF   14 [NewArenaBattle/global] (127.0.0.1:4150) clean close complete
+[agent.cn.1 I 260403 10:19:05.110.436 conn.go:731] INF    4 [NewCrossMineBossBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 I 260403 10:19:05.110.437 conn.go:731] INF    4 [NewCrossMineBossBattle/global] (127.0.0.1:4150) clean close complete
+[agent.cn.1 I 260403 10:19:05.110.438 conn.go:731] INF    9 [NewCrossMineBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 I 260403 10:19:05.110.439 conn.go:731] INF    9 [NewCrossMineBattle/global] (127.0.0.1:4150) clean close complete
+[agent.cn.1 W 260403 10:19:05.110.440 consumer.go:1175] WRN    9 [NewCrossMineBattle/global] there are 0 connections left alive
+[agent.cn.1 I 260403 10:19:05.111.441 conn.go:731] INF    5 [NewGateBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 I 260403 10:19:05.111.442 conn.go:731] INF    5 [NewGateBattle/global] (127.0.0.1:4150) clean close complete
+[agent.cn.1 W 260403 10:19:05.111.443 consumer.go:1175] WRN    5 [NewGateBattle/global] there are 0 connections left alive
+[agent.cn.1 I 260403 10:19:05.111.444 consumer.go:1175] INF    5 [NewGateBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 I 260403 10:19:05.111.445 conn.go:731] INF   11 [NewCrossArenaBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 I 260403 10:19:05.111.446 conn.go:731] INF   11 [NewCrossArenaBattle/global] (127.0.0.1:4150) clean close complete
+[agent.cn.1 W 260403 10:19:05.111.447 consumer.go:1175] WRN   11 [NewCrossArenaBattle/global] there are 0 connections left alive
+[agent.cn.1 I 260403 10:19:05.111.448 consumer.go:1175] INF   11 [NewCrossArenaBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 I 260403 10:19:05.111.449 conn.go:731] INF    3 [NewEndlessBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 I 260403 10:19:05.111.450 conn.go:731] INF    3 [NewEndlessBattle/global] (127.0.0.1:4150) clean close complete
+[agent.cn.1 W 260403 10:19:05.111.451 consumer.go:1175] WRN    3 [NewEndlessBattle/global] there are 0 connections left alive
+[agent.cn.1 I 260403 10:19:05.111.452 consumer.go:1175] INF    3 [NewEndlessBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 I 260403 10:19:05.111.453 conn.go:731] INF    8 [NewHuntingBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 I 260403 10:19:05.111.454 conn.go:731] INF    8 [NewHuntingBattle/global] (127.0.0.1:4150) clean close complete
+[agent.cn.1 W 260403 10:19:05.111.455 consumer.go:1175] WRN    8 [NewHuntingBattle/global] there are 0 connections left alive
+[agent.cn.1 I 260403 10:19:05.111.456 consumer.go:1175] INF    8 [NewHuntingBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 W 260403 10:19:05.111.457 consumer.go:1175] WRN   14 [NewArenaBattle/global] there are 0 connections left alive
+[agent.cn.1 I 260403 10:19:05.111.458 consumer.go:1175] INF   14 [NewArenaBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 I 260403 10:19:05.111.459 conn.go:731] INF   15 [NewUnionFightBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 I 260403 10:19:05.112.460 conn.go:731] INF   15 [NewUnionFightBattle/global] (127.0.0.1:4150) clean close complete
+[agent.cn.1 W 260403 10:19:05.112.461 consumer.go:1175] WRN   15 [NewUnionFightBattle/global] there are 0 connections left alive
+[agent.cn.1 I 260403 10:19:05.112.462 consumer.go:1175] INF   15 [NewUnionFightBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 I 260403 10:19:05.112.463 conn.go:731] INF    6 [REQ-anticheat.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 I 260403 10:19:05.112.464 conn.go:731] INF    6 [REQ-anticheat.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[agent.cn.1 W 260403 10:19:05.112.466 consumer.go:1175] WRN    4 [NewCrossMineBossBattle/global] there are 0 connections left alive
+[agent.cn.1 I 260403 10:19:05.112.467 consumer.go:1175] INF    4 [NewCrossMineBossBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 I 260403 10:19:05.112.468 conn.go:731] INF   12 [NewCrossUnionFightBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 I 260403 10:19:05.112.469 conn.go:731] INF   12 [NewCrossUnionFightBattle/global] (127.0.0.1:4150) clean close complete
+[agent.cn.1 W 260403 10:19:05.112.470 consumer.go:1175] WRN   12 [NewCrossUnionFightBattle/global] there are 0 connections left alive
+[agent.cn.1 I 260403 10:19:05.112.471 consumer.go:1175] INF   12 [NewCrossUnionFightBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 I 260403 10:19:05.112.472 conn.go:731] INF   16 [NewCrossCraftBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 I 260403 10:19:05.112.473 conn.go:731] INF   16 [NewCrossCraftBattle/global] (127.0.0.1:4150) clean close complete
+[agent.cn.1 W 260403 10:19:05.112.474 consumer.go:1175] WRN   16 [NewCrossCraftBattle/global] there are 0 connections left alive
+[agent.cn.1 I 260403 10:19:05.112.475 consumer.go:1175] INF   16 [NewCrossCraftBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 I 260403 10:19:05.112.476 conn.go:731] INF   10 [NewCraftBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 I 260403 10:19:05.112.477 conn.go:731] INF   10 [NewCraftBattle/global] (127.0.0.1:4150) clean close complete
+[agent.cn.1 W 260403 10:19:05.112.478 consumer.go:1175] WRN   10 [NewCraftBattle/global] there are 0 connections left alive
+[agent.cn.1 I 260403 10:19:05.112.479 consumer.go:1175] INF   10 [NewCraftBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 I 260403 10:19:05.112.480 conn.go:731] INF    7 [NewBraveChallengeBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 I 260403 10:19:05.112.481 conn.go:731] INF    7 [NewBraveChallengeBattle/global] (127.0.0.1:4150) clean close complete
+[agent.cn.1 W 260403 10:19:05.112.482 consumer.go:1175] WRN    7 [NewBraveChallengeBattle/global] there are 0 connections left alive
+[agent.cn.1 I 260403 10:19:05.112.483 consumer.go:1175] INF    7 [NewBraveChallengeBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 I 260403 10:19:05.112.484 conn.go:731] INF    2 [RESP-c_agent.cn.1/0global_1rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 I 260403 10:19:05.112.485 conn.go:731] INF    2 [RESP-c_agent.cn.1/0global_1rpc] (127.0.0.1:4150) clean close complete
+[agent.cn.1 W 260403 10:19:05.112.486 consumer.go:1175] WRN    2 [RESP-c_agent.cn.1/0global_1rpc] there are 0 connections left alive
+[agent.cn.1 I 260403 10:19:05.112.487 consumer.go:1175] INF    2 [RESP-c_agent.cn.1/0global_1rpc] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 W 260403 10:19:05.112.465 consumer.go:1175] WRN    6 [REQ-anticheat.cn.1/rpc] there are 0 connections left alive
+[agent.cn.1 I 260403 10:19:05.112.488 consumer.go:1175] INF    6 [REQ-anticheat.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 I 260403 10:19:05.112.489 consumer.go:1175] INF    9 [NewCrossMineBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 I 260403 10:19:05.113.490 conn.go:731] INF   13 [NewSummerChallengeBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 I 260403 10:19:05.113.491 conn.go:731] INF   13 [NewSummerChallengeBattle/global] (127.0.0.1:4150) clean close complete
+[agent.cn.1 W 260403 10:19:05.113.492 consumer.go:1175] WRN   13 [NewSummerChallengeBattle/global] there are 0 connections left alive
+[agent.cn.1 I 260403 10:19:05.113.493 consumer.go:1175] INF   13 [NewSummerChallengeBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 I 260403 10:19:10.113.494 consumer.go:1175] INF    5 [NewGateBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 10:19:10.113.495 consumer.go:1175] INF    2 [RESP-c_agent.cn.1/0global_1rpc] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 10:19:10.113.496 consumer.go:1175] INF   16 [NewCrossCraftBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 10:19:10.113.497 consumer.go:1175] INF   14 [NewArenaBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 10:19:10.117.499 consumer.go:1175] INF   10 [NewCraftBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 10:19:10.116.498 consumer.go:1175] INF   15 [NewUnionFightBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 10:19:10.119.500 consumer.go:1175] INF    7 [NewBraveChallengeBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 10:19:10.119.501 consumer.go:1175] INF    4 [NewCrossMineBossBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 10:19:10.120.502 consumer.go:1175] INF    8 [NewHuntingBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 10:19:10.122.503 consumer.go:1175] INF   11 [NewCrossArenaBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 10:19:10.122.504 consumer.go:1175] INF    6 [REQ-anticheat.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 10:19:10.123.505 consumer.go:1175] INF    9 [NewCrossMineBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 10:19:10.123.506 consumer.go:1175] INF    3 [NewEndlessBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 10:19:10.123.508 consumer.go:1175] INF   13 [NewSummerChallengeBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 10:19:10.123.507 consumer.go:1175] INF   12 [NewCrossUnionFightBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 E 260403 11:05:38.523.510 conn.go:731] ERR    2 [RESP-c_agent.cn.1/0global_1rpc] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 I 260403 11:05:38.524.511 conn.go:731] INF    2 [RESP-c_agent.cn.1/0global_1rpc] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 11:05:38.524.512 conn.go:731] INF    2 [RESP-c_agent.cn.1/0global_1rpc] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 E 260403 11:05:38.524.513 conn.go:731] ERR   16 [NewCrossCraftBattle/global] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 I 260403 11:05:38.524.514 conn.go:731] INF   16 [NewCrossCraftBattle/global] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 11:05:38.524.515 conn.go:731] INF   16 [NewCrossCraftBattle/global] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 E 260403 11:05:38.524.516 conn.go:731] ERR   14 [NewArenaBattle/global] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 I 260403 11:05:38.524.517 conn.go:731] INF   14 [NewArenaBattle/global] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 11:05:38.524.518 conn.go:731] INF   14 [NewArenaBattle/global] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 E 260403 11:05:38.524.519 conn.go:731] ERR   10 [NewCraftBattle/global] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 I 260403 11:05:38.524.520 conn.go:731] INF   10 [NewCraftBattle/global] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 11:05:38.524.521 conn.go:731] INF   10 [NewCraftBattle/global] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 I 260403 11:05:38.524.522 conn.go:731] INF    2 [RESP-c_agent.cn.1/0global_1rpc] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 11:05:38.524.523 conn.go:731] INF    2 [RESP-c_agent.cn.1/0global_1rpc] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 I 260403 11:05:38.525.524 conn.go:731] INF   16 [NewCrossCraftBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 11:05:38.525.525 conn.go:731] INF   16 [NewCrossCraftBattle/global] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 I 260403 11:05:38.525.526 conn.go:731] INF   14 [NewArenaBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 11:05:38.525.527 conn.go:731] INF   14 [NewArenaBattle/global] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 I 260403 11:05:38.525.528 conn.go:731] INF   10 [NewCraftBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 11:05:38.525.529 conn.go:731] INF   10 [NewCraftBattle/global] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 E 260403 11:05:38.525.530 conn.go:731] ERR   15 [NewUnionFightBattle/global] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 I 260403 11:05:38.525.531 conn.go:731] INF   15 [NewUnionFightBattle/global] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 11:05:38.525.532 conn.go:731] INF   15 [NewUnionFightBattle/global] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 E 260403 11:05:38.525.533 conn.go:731] ERR    7 [NewBraveChallengeBattle/global] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 I 260403 11:05:38.525.534 conn.go:731] INF    7 [NewBraveChallengeBattle/global] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 11:05:38.525.535 conn.go:731] INF    7 [NewBraveChallengeBattle/global] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 E 260403 11:05:38.525.536 conn.go:731] ERR    8 [NewHuntingBattle/global] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 I 260403 11:05:38.525.537 conn.go:731] INF    8 [NewHuntingBattle/global] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 11:05:38.525.538 conn.go:731] INF    8 [NewHuntingBattle/global] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 E 260403 11:05:38.525.539 conn.go:731] ERR    4 [NewCrossMineBossBattle/global] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 I 260403 11:05:38.525.540 conn.go:731] INF    4 [NewCrossMineBossBattle/global] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 11:05:38.525.541 conn.go:731] INF    4 [NewCrossMineBossBattle/global] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 I 260403 11:05:38.525.542 conn.go:731] INF   15 [NewUnionFightBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 11:05:38.525.543 conn.go:731] INF   15 [NewUnionFightBattle/global] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 I 260403 11:05:38.525.544 conn.go:731] INF    7 [NewBraveChallengeBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 11:05:38.525.545 conn.go:731] INF    7 [NewBraveChallengeBattle/global] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 I 260403 11:05:38.525.546 conn.go:731] INF    8 [NewHuntingBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 11:05:38.525.547 conn.go:731] INF    8 [NewHuntingBattle/global] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 I 260403 11:05:38.525.548 conn.go:731] INF    4 [NewCrossMineBossBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 11:05:38.525.549 conn.go:731] INF    4 [NewCrossMineBossBattle/global] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 E 260403 11:05:38.525.550 conn.go:731] ERR   11 [NewCrossArenaBattle/global] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 I 260403 11:05:38.525.551 conn.go:731] INF   11 [NewCrossArenaBattle/global] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 11:05:38.525.552 conn.go:731] INF   11 [NewCrossArenaBattle/global] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 E 260403 11:05:38.525.553 conn.go:731] ERR    6 [REQ-anticheat.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 I 260403 11:05:38.525.554 conn.go:731] INF    6 [REQ-anticheat.cn.1/rpc] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 11:05:38.525.555 conn.go:731] INF    6 [REQ-anticheat.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 I 260403 11:05:38.525.556 conn.go:731] INF   11 [NewCrossArenaBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 11:05:38.526.557 conn.go:731] INF   11 [NewCrossArenaBattle/global] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 I 260403 11:05:38.526.558 conn.go:731] INF    6 [REQ-anticheat.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 11:05:38.526.559 conn.go:731] INF    6 [REQ-anticheat.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 E 260403 11:05:38.526.560 conn.go:731] ERR    9 [NewCrossMineBattle/global] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 I 260403 11:05:38.526.561 conn.go:731] INF    9 [NewCrossMineBattle/global] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 11:05:38.526.562 conn.go:731] INF    9 [NewCrossMineBattle/global] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 E 260403 11:05:38.526.563 conn.go:731] ERR    3 [NewEndlessBattle/global] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 I 260403 11:05:38.526.564 conn.go:731] INF    3 [NewEndlessBattle/global] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 11:05:38.526.565 conn.go:731] INF    3 [NewEndlessBattle/global] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 E 260403 11:05:38.526.566 conn.go:731] ERR   13 [NewSummerChallengeBattle/global] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 E 260403 11:05:38.522.509 conn.go:731] ERR    5 [NewGateBattle/global] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 I 260403 11:05:38.526.568 conn.go:731] INF   13 [NewSummerChallengeBattle/global] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 11:05:38.526.569 conn.go:731] INF    5 [NewGateBattle/global] (127.0.0.1:4150) beginning close
+[agent.cn.1 E 260403 11:05:38.526.571 conn.go:731] ERR   12 [NewCrossUnionFightBattle/global] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 I 260403 11:05:38.526.572 conn.go:731] INF    5 [NewGateBattle/global] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 I 260403 11:05:38.526.573 conn.go:731] INF   12 [NewCrossUnionFightBattle/global] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 11:05:38.526.574 conn.go:731] INF    5 [NewGateBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 11:05:38.526.575 conn.go:731] INF    5 [NewGateBattle/global] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 I 260403 11:05:38.526.576 conn.go:731] INF   12 [NewCrossUnionFightBattle/global] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 I 260403 11:05:38.526.577 conn.go:731] INF   12 [NewCrossUnionFightBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 11:05:38.526.578 conn.go:731] INF   12 [NewCrossUnionFightBattle/global] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 I 260403 11:05:38.526.579 conn.go:731] INF   13 [NewSummerChallengeBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 11:05:38.526.580 conn.go:731] INF   13 [NewSummerChallengeBattle/global] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 I 260403 11:05:38.526.570 conn.go:731] INF   13 [NewSummerChallengeBattle/global] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 I 260403 11:05:38.526.567 conn.go:731] INF    9 [NewCrossMineBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 11:05:38.526.581 conn.go:731] INF    3 [NewEndlessBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 11:05:38.526.582 conn.go:731] INF    9 [NewCrossMineBattle/global] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 I 260403 11:05:38.526.583 conn.go:731] INF    3 [NewEndlessBattle/global] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 I 260403 11:05:38.625.584 conn.go:731] INF    2 [RESP-c_agent.cn.1/0global_1rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 I 260403 11:05:38.626.586 conn.go:731] INF   16 [NewCrossCraftBattle/global] (127.0.0.1:4150) clean close complete
+[agent.cn.1 I 260403 11:05:38.626.587 conn.go:731] INF    2 [RESP-c_agent.cn.1/0global_1rpc] (127.0.0.1:4150) clean close complete
+[agent.cn.1 W 260403 11:05:38.626.589 consumer.go:1175] WRN    2 [RESP-c_agent.cn.1/0global_1rpc] there are 0 connections left alive
+[agent.cn.1 I 260403 11:05:38.626.585 conn.go:731] INF   16 [NewCrossCraftBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 W 260403 11:05:38.626.588 consumer.go:1175] WRN   16 [NewCrossCraftBattle/global] there are 0 connections left alive
+[agent.cn.1 I 260403 11:05:38.626.591 conn.go:731] INF   14 [NewArenaBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 I 260403 11:05:38.626.592 consumer.go:1175] INF   16 [NewCrossCraftBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 I 260403 11:05:38.626.593 conn.go:731] INF    6 [REQ-anticheat.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 I 260403 11:05:38.626.594 conn.go:731] INF    6 [REQ-anticheat.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[agent.cn.1 W 260403 11:05:38.626.595 consumer.go:1175] WRN    6 [REQ-anticheat.cn.1/rpc] there are 0 connections left alive
+[agent.cn.1 I 260403 11:05:38.626.596 conn.go:731] INF    7 [NewBraveChallengeBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 I 260403 11:05:38.627.597 consumer.go:1175] INF    6 [REQ-anticheat.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 I 260403 11:05:38.627.598 conn.go:731] INF    8 [NewHuntingBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 I 260403 11:05:38.627.590 consumer.go:1175] INF    2 [RESP-c_agent.cn.1/0global_1rpc] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 I 260403 11:05:38.627.600 conn.go:731] INF    8 [NewHuntingBattle/global] (127.0.0.1:4150) clean close complete
+[agent.cn.1 I 260403 11:05:38.627.601 conn.go:731] INF    7 [NewBraveChallengeBattle/global] (127.0.0.1:4150) clean close complete
+[agent.cn.1 I 260403 11:05:38.627.599 conn.go:731] INF   13 [NewSummerChallengeBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 W 260403 11:05:38.627.602 consumer.go:1175] WRN    8 [NewHuntingBattle/global] there are 0 connections left alive
+[agent.cn.1 I 260403 11:05:38.627.604 conn.go:731] INF   13 [NewSummerChallengeBattle/global] (127.0.0.1:4150) clean close complete
+[agent.cn.1 I 260403 11:05:38.627.605 consumer.go:1175] INF    8 [NewHuntingBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 W 260403 11:05:38.627.606 consumer.go:1175] WRN   13 [NewSummerChallengeBattle/global] there are 0 connections left alive
+[agent.cn.1 W 260403 11:05:38.627.603 consumer.go:1175] WRN    7 [NewBraveChallengeBattle/global] there are 0 connections left alive
+[agent.cn.1 I 260403 11:05:38.627.607 conn.go:731] INF    4 [NewCrossMineBossBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 I 260403 11:05:38.627.608 consumer.go:1175] INF   13 [NewSummerChallengeBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 I 260403 11:05:38.627.609 consumer.go:1175] INF    7 [NewBraveChallengeBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 I 260403 11:05:38.628.611 conn.go:731] INF   14 [NewArenaBattle/global] (127.0.0.1:4150) clean close complete
+[agent.cn.1 I 260403 11:05:38.628.610 conn.go:731] INF    4 [NewCrossMineBossBattle/global] (127.0.0.1:4150) clean close complete
+[agent.cn.1 I 260403 11:05:38.629.612 conn.go:731] INF   10 [NewCraftBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 I 260403 11:05:38.629.613 conn.go:731] INF    5 [NewGateBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 W 260403 11:05:38.629.614 consumer.go:1175] WRN   14 [NewArenaBattle/global] there are 0 connections left alive
+[agent.cn.1 I 260403 11:05:38.629.616 conn.go:731] INF    5 [NewGateBattle/global] (127.0.0.1:4150) clean close complete
+[agent.cn.1 I 260403 11:05:38.629.617 consumer.go:1175] INF   14 [NewArenaBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 W 260403 11:05:38.629.615 consumer.go:1175] WRN    4 [NewCrossMineBossBattle/global] there are 0 connections left alive
+[agent.cn.1 I 260403 11:05:38.629.618 conn.go:731] INF   10 [NewCraftBattle/global] (127.0.0.1:4150) clean close complete
+[agent.cn.1 W 260403 11:05:38.629.619 consumer.go:1175] WRN    5 [NewGateBattle/global] there are 0 connections left alive
+[agent.cn.1 I 260403 11:05:38.629.620 consumer.go:1175] INF    4 [NewCrossMineBossBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 W 260403 11:05:38.629.621 consumer.go:1175] WRN   10 [NewCraftBattle/global] there are 0 connections left alive
+[agent.cn.1 I 260403 11:05:38.629.622 consumer.go:1175] INF    5 [NewGateBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 I 260403 11:05:38.629.623 conn.go:731] INF    9 [NewCrossMineBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 I 260403 11:05:38.629.624 conn.go:731] INF   11 [NewCrossArenaBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 I 260403 11:05:38.629.625 consumer.go:1175] INF   10 [NewCraftBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 I 260403 11:05:38.629.626 conn.go:731] INF    9 [NewCrossMineBattle/global] (127.0.0.1:4150) clean close complete
+[agent.cn.1 I 260403 11:05:38.629.627 conn.go:731] INF   11 [NewCrossArenaBattle/global] (127.0.0.1:4150) clean close complete
+[agent.cn.1 I 260403 11:05:38.629.628 conn.go:731] INF   15 [NewUnionFightBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 I 260403 11:05:38.629.629 conn.go:731] INF    3 [NewEndlessBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 W 260403 11:05:38.629.630 consumer.go:1175] WRN    9 [NewCrossMineBattle/global] there are 0 connections left alive
+[agent.cn.1 I 260403 11:05:38.629.634 consumer.go:1175] INF    9 [NewCrossMineBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 I 260403 11:05:38.629.635 conn.go:731] INF   12 [NewCrossUnionFightBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 I 260403 11:05:38.629.636 conn.go:731] INF   12 [NewCrossUnionFightBattle/global] (127.0.0.1:4150) clean close complete
+[agent.cn.1 W 260403 11:05:38.629.637 consumer.go:1175] WRN   12 [NewCrossUnionFightBattle/global] there are 0 connections left alive
+[agent.cn.1 I 260403 11:05:38.629.638 consumer.go:1175] INF   12 [NewCrossUnionFightBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 I 260403 11:05:38.629.633 conn.go:731] INF    3 [NewEndlessBattle/global] (127.0.0.1:4150) clean close complete
+[agent.cn.1 W 260403 11:05:38.629.639 consumer.go:1175] WRN    3 [NewEndlessBattle/global] there are 0 connections left alive
+[agent.cn.1 I 260403 11:05:38.629.640 consumer.go:1175] INF    3 [NewEndlessBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 I 260403 11:05:38.629.632 conn.go:731] INF   15 [NewUnionFightBattle/global] (127.0.0.1:4150) clean close complete
+[agent.cn.1 W 260403 11:05:38.629.641 consumer.go:1175] WRN   15 [NewUnionFightBattle/global] there are 0 connections left alive
+[agent.cn.1 W 260403 11:05:38.629.631 consumer.go:1175] WRN   11 [NewCrossArenaBattle/global] there are 0 connections left alive
+[agent.cn.1 I 260403 11:05:38.629.643 consumer.go:1175] INF   11 [NewCrossArenaBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 I 260403 11:05:38.629.642 consumer.go:1175] INF   15 [NewUnionFightBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 I 260403 11:05:43.627.644 consumer.go:1175] INF   16 [NewCrossCraftBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 11:05:43.628.645 consumer.go:1175] INF    6 [REQ-anticheat.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 11:05:43.628.646 consumer.go:1175] INF    8 [NewHuntingBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 11:05:43.630.647 consumer.go:1175] INF    4 [NewCrossMineBossBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 11:05:43.630.648 consumer.go:1175] INF    9 [NewCrossMineBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 11:05:43.630.649 consumer.go:1175] INF    2 [RESP-c_agent.cn.1/0global_1rpc] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 11:05:43.632.650 consumer.go:1175] INF    3 [NewEndlessBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 11:05:43.632.651 consumer.go:1175] INF   11 [NewCrossArenaBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 11:05:43.632.652 consumer.go:1175] INF   14 [NewArenaBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 11:05:43.633.653 consumer.go:1175] INF   15 [NewUnionFightBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 11:05:43.633.654 consumer.go:1175] INF   12 [NewCrossUnionFightBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 11:05:43.633.655 consumer.go:1175] INF   13 [NewSummerChallengeBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 11:05:43.635.656 consumer.go:1175] INF    5 [NewGateBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 11:05:43.635.657 consumer.go:1175] INF    7 [NewBraveChallengeBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 11:05:43.636.658 consumer.go:1175] INF   10 [NewCraftBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 E 260403 11:50:07.271.659 conn.go:731] ERR    6 [REQ-anticheat.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 I 260403 11:50:07.272.660 conn.go:731] INF    6 [REQ-anticheat.cn.1/rpc] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 11:50:07.272.661 conn.go:731] INF    6 [REQ-anticheat.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 E 260403 11:50:07.272.662 conn.go:731] ERR    8 [NewHuntingBattle/global] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 I 260403 11:50:07.272.663 conn.go:731] INF    8 [NewHuntingBattle/global] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 11:50:07.273.664 conn.go:731] INF    8 [NewHuntingBattle/global] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 E 260403 11:50:07.273.665 conn.go:731] ERR    2 [RESP-c_agent.cn.1/0global_1rpc] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 E 260403 11:50:07.274.667 conn.go:731] ERR   16 [NewCrossCraftBattle/global] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 E 260403 11:50:07.274.666 conn.go:731] ERR   14 [NewArenaBattle/global] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 E 260403 11:50:07.274.668 conn.go:731] ERR    4 [NewCrossMineBossBattle/global] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 I 260403 11:50:07.274.670 conn.go:731] INF   16 [NewCrossCraftBattle/global] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 11:50:07.274.669 conn.go:731] INF    2 [RESP-c_agent.cn.1/0global_1rpc] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 11:50:07.275.672 conn.go:731] INF    4 [NewCrossMineBossBattle/global] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 11:50:07.275.675 conn.go:731] INF    4 [NewCrossMineBossBattle/global] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 E 260403 11:50:07.275.676 conn.go:731] ERR    9 [NewCrossMineBattle/global] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 I 260403 11:50:07.275.677 conn.go:731] INF    9 [NewCrossMineBattle/global] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 11:50:07.275.678 conn.go:731] INF    9 [NewCrossMineBattle/global] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 I 260403 11:50:07.275.679 conn.go:731] INF    6 [REQ-anticheat.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 11:50:07.275.680 conn.go:731] INF    6 [REQ-anticheat.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 I 260403 11:50:07.275.673 conn.go:731] INF   16 [NewCrossCraftBattle/global] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 I 260403 11:50:07.275.671 conn.go:731] INF   14 [NewArenaBattle/global] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 11:50:07.275.681 conn.go:731] INF   16 [NewCrossCraftBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 11:50:07.275.682 conn.go:731] INF   16 [NewCrossCraftBattle/global] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 I 260403 11:50:07.275.674 conn.go:731] INF    2 [RESP-c_agent.cn.1/0global_1rpc] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 I 260403 11:50:07.275.684 conn.go:731] INF    8 [NewHuntingBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 E 260403 11:50:07.275.685 conn.go:731] ERR    3 [NewEndlessBattle/global] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 I 260403 11:50:07.276.686 conn.go:731] INF    8 [NewHuntingBattle/global] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 I 260403 11:50:07.276.687 conn.go:731] INF    3 [NewEndlessBattle/global] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 11:50:07.276.688 conn.go:731] INF    3 [NewEndlessBattle/global] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 E 260403 11:50:07.276.689 conn.go:731] ERR   11 [NewCrossArenaBattle/global] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 I 260403 11:50:07.276.690 conn.go:731] INF   11 [NewCrossArenaBattle/global] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 11:50:07.276.691 conn.go:731] INF   11 [NewCrossArenaBattle/global] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 I 260403 11:50:07.276.692 conn.go:731] INF    2 [RESP-c_agent.cn.1/0global_1rpc] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 11:50:07.276.693 conn.go:731] INF    2 [RESP-c_agent.cn.1/0global_1rpc] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 I 260403 11:50:07.276.694 conn.go:731] INF    3 [NewEndlessBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 11:50:07.276.695 conn.go:731] INF    3 [NewEndlessBattle/global] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 I 260403 11:50:07.276.696 conn.go:731] INF   11 [NewCrossArenaBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 11:50:07.276.697 conn.go:731] INF   11 [NewCrossArenaBattle/global] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 E 260403 11:50:07.276.698 conn.go:731] ERR   12 [NewCrossUnionFightBattle/global] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 I 260403 11:50:07.276.699 conn.go:731] INF   12 [NewCrossUnionFightBattle/global] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 11:50:07.276.700 conn.go:731] INF   12 [NewCrossUnionFightBattle/global] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 E 260403 11:50:07.276.701 conn.go:731] ERR   13 [NewSummerChallengeBattle/global] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 I 260403 11:50:07.276.702 conn.go:731] INF   13 [NewSummerChallengeBattle/global] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 11:50:07.276.703 conn.go:731] INF   13 [NewSummerChallengeBattle/global] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 I 260403 11:50:07.276.704 conn.go:731] INF   12 [NewCrossUnionFightBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 11:50:07.276.705 conn.go:731] INF   12 [NewCrossUnionFightBattle/global] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 E 260403 11:50:07.276.706 conn.go:731] ERR    5 [NewGateBattle/global] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 I 260403 11:50:07.276.707 conn.go:731] INF    5 [NewGateBattle/global] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 11:50:07.276.708 conn.go:731] INF    5 [NewGateBattle/global] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 I 260403 11:50:07.276.709 conn.go:731] INF   13 [NewSummerChallengeBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 11:50:07.276.710 conn.go:731] INF   13 [NewSummerChallengeBattle/global] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 I 260403 11:50:07.276.711 conn.go:731] INF    5 [NewGateBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 11:50:07.276.713 conn.go:731] INF    5 [NewGateBattle/global] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 E 260403 11:50:07.276.712 conn.go:731] ERR    7 [NewBraveChallengeBattle/global] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 I 260403 11:50:07.276.714 conn.go:731] INF    4 [NewCrossMineBossBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 11:50:07.276.715 conn.go:731] INF    7 [NewBraveChallengeBattle/global] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 11:50:07.276.716 conn.go:731] INF    4 [NewCrossMineBossBattle/global] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 I 260403 11:50:07.276.717 conn.go:731] INF    7 [NewBraveChallengeBattle/global] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 E 260403 11:50:07.276.718 conn.go:731] ERR   10 [NewCraftBattle/global] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 I 260403 11:50:07.276.719 conn.go:731] INF   10 [NewCraftBattle/global] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 11:50:07.276.720 conn.go:731] INF    9 [NewCrossMineBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 11:50:07.276.721 conn.go:731] INF    9 [NewCrossMineBattle/global] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 I 260403 11:50:07.275.683 conn.go:731] INF   14 [NewArenaBattle/global] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 I 260403 11:50:07.276.722 conn.go:731] INF   10 [NewCraftBattle/global] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 E 260403 11:50:07.276.723 conn.go:731] ERR   15 [NewUnionFightBattle/global] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 I 260403 11:50:07.276.725 conn.go:731] INF   15 [NewUnionFightBattle/global] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 11:50:07.276.724 conn.go:731] INF    7 [NewBraveChallengeBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 11:50:07.276.726 conn.go:731] INF   15 [NewUnionFightBattle/global] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 I 260403 11:50:07.276.727 conn.go:731] INF   10 [NewCraftBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 11:50:07.277.728 conn.go:731] INF    7 [NewBraveChallengeBattle/global] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 I 260403 11:50:07.277.729 conn.go:731] INF   14 [NewArenaBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 11:50:07.277.732 conn.go:731] INF   14 [NewArenaBattle/global] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 I 260403 11:50:07.277.730 conn.go:731] INF   10 [NewCraftBattle/global] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 I 260403 11:50:07.277.731 conn.go:731] INF   15 [NewUnionFightBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 11:50:07.277.733 conn.go:731] INF   15 [NewUnionFightBattle/global] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 I 260403 11:50:07.376.734 conn.go:731] INF    2 [RESP-c_agent.cn.1/0global_1rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 I 260403 11:50:07.376.735 conn.go:731] INF    2 [RESP-c_agent.cn.1/0global_1rpc] (127.0.0.1:4150) clean close complete
+[agent.cn.1 W 260403 11:50:07.377.736 consumer.go:1175] WRN    2 [RESP-c_agent.cn.1/0global_1rpc] there are 0 connections left alive
+[agent.cn.1 I 260403 11:50:07.377.737 conn.go:731] INF    3 [NewEndlessBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 I 260403 11:50:07.377.738 conn.go:731] INF    3 [NewEndlessBattle/global] (127.0.0.1:4150) clean close complete
+[agent.cn.1 I 260403 11:50:07.377.739 consumer.go:1175] INF    2 [RESP-c_agent.cn.1/0global_1rpc] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 W 260403 11:50:07.377.740 consumer.go:1175] WRN    3 [NewEndlessBattle/global] there are 0 connections left alive
+[agent.cn.1 I 260403 11:50:07.377.741 consumer.go:1175] INF    3 [NewEndlessBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 I 260403 11:50:07.377.742 conn.go:731] INF   11 [NewCrossArenaBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 I 260403 11:50:07.377.743 conn.go:731] INF    9 [NewCrossMineBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 I 260403 11:50:07.377.744 conn.go:731] INF   11 [NewCrossArenaBattle/global] (127.0.0.1:4150) clean close complete
+[agent.cn.1 I 260403 11:50:07.377.745 conn.go:731] INF   15 [NewUnionFightBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 I 260403 11:50:07.377.746 conn.go:731] INF    9 [NewCrossMineBattle/global] (127.0.0.1:4150) clean close complete
+[agent.cn.1 I 260403 11:50:07.377.747 conn.go:731] INF   15 [NewUnionFightBattle/global] (127.0.0.1:4150) clean close complete
+[agent.cn.1 W 260403 11:50:07.377.748 consumer.go:1175] WRN    9 [NewCrossMineBattle/global] there are 0 connections left alive
+[agent.cn.1 W 260403 11:50:07.377.749 consumer.go:1175] WRN   15 [NewUnionFightBattle/global] there are 0 connections left alive
+[agent.cn.1 W 260403 11:50:07.377.750 consumer.go:1175] WRN   11 [NewCrossArenaBattle/global] there are 0 connections left alive
+[agent.cn.1 I 260403 11:50:07.378.751 consumer.go:1175] INF    9 [NewCrossMineBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 I 260403 11:50:07.378.752 consumer.go:1175] INF   15 [NewUnionFightBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 I 260403 11:50:07.378.753 consumer.go:1175] INF   11 [NewCrossArenaBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 I 260403 11:50:07.380.754 conn.go:731] INF    7 [NewBraveChallengeBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 I 260403 11:50:07.380.755 conn.go:731] INF    6 [REQ-anticheat.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 I 260403 11:50:07.380.756 conn.go:731] INF   16 [NewCrossCraftBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 I 260403 11:50:07.380.757 conn.go:731] INF    7 [NewBraveChallengeBattle/global] (127.0.0.1:4150) clean close complete
+[agent.cn.1 I 260403 11:50:07.380.758 conn.go:731] INF    6 [REQ-anticheat.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[agent.cn.1 I 260403 11:50:07.380.759 conn.go:731] INF   16 [NewCrossCraftBattle/global] (127.0.0.1:4150) clean close complete
+[agent.cn.1 W 260403 11:50:07.380.760 consumer.go:1175] WRN    7 [NewBraveChallengeBattle/global] there are 0 connections left alive
+[agent.cn.1 W 260403 11:50:07.380.761 consumer.go:1175] WRN    6 [REQ-anticheat.cn.1/rpc] there are 0 connections left alive
+[agent.cn.1 W 260403 11:50:07.380.762 consumer.go:1175] WRN   16 [NewCrossCraftBattle/global] there are 0 connections left alive
+[agent.cn.1 I 260403 11:50:07.380.764 consumer.go:1175] INF    6 [REQ-anticheat.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 I 260403 11:50:07.380.765 consumer.go:1175] INF   16 [NewCrossCraftBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 I 260403 11:50:07.381.767 conn.go:731] INF    8 [NewHuntingBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 I 260403 11:50:07.381.768 conn.go:731] INF   10 [NewCraftBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 I 260403 11:50:07.381.769 conn.go:731] INF    8 [NewHuntingBattle/global] (127.0.0.1:4150) clean close complete
+[agent.cn.1 I 260403 11:50:07.381.770 conn.go:731] INF   10 [NewCraftBattle/global] (127.0.0.1:4150) clean close complete
+[agent.cn.1 W 260403 11:50:07.381.771 consumer.go:1175] WRN    8 [NewHuntingBattle/global] there are 0 connections left alive
+[agent.cn.1 W 260403 11:50:07.381.772 consumer.go:1175] WRN   10 [NewCraftBattle/global] there are 0 connections left alive
+[agent.cn.1 I 260403 11:50:07.381.773 consumer.go:1175] INF    8 [NewHuntingBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 I 260403 11:50:07.381.774 consumer.go:1175] INF   10 [NewCraftBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 I 260403 11:50:07.381.775 conn.go:731] INF   12 [NewCrossUnionFightBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 I 260403 11:50:07.381.776 conn.go:731] INF    4 [NewCrossMineBossBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 I 260403 11:50:07.381.777 conn.go:731] INF   12 [NewCrossUnionFightBattle/global] (127.0.0.1:4150) clean close complete
+[agent.cn.1 W 260403 11:50:07.381.778 consumer.go:1175] WRN   12 [NewCrossUnionFightBattle/global] there are 0 connections left alive
+[agent.cn.1 I 260403 11:50:07.381.779 conn.go:731] INF    4 [NewCrossMineBossBattle/global] (127.0.0.1:4150) clean close complete
+[agent.cn.1 I 260403 11:50:07.381.780 consumer.go:1175] INF   12 [NewCrossUnionFightBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 I 260403 11:50:07.381.781 conn.go:731] INF   14 [NewArenaBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 W 260403 11:50:07.381.782 consumer.go:1175] WRN    4 [NewCrossMineBossBattle/global] there are 0 connections left alive
+[agent.cn.1 I 260403 11:50:07.381.783 conn.go:731] INF   14 [NewArenaBattle/global] (127.0.0.1:4150) clean close complete
+[agent.cn.1 I 260403 11:50:07.381.784 consumer.go:1175] INF    4 [NewCrossMineBossBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 W 260403 11:50:07.381.785 consumer.go:1175] WRN   14 [NewArenaBattle/global] there are 0 connections left alive
+[agent.cn.1 I 260403 11:50:07.381.786 conn.go:731] INF   13 [NewSummerChallengeBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 I 260403 11:50:07.381.787 consumer.go:1175] INF   14 [NewArenaBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 I 260403 11:50:07.381.788 conn.go:731] INF   13 [NewSummerChallengeBattle/global] (127.0.0.1:4150) clean close complete
+[agent.cn.1 I 260403 11:50:07.380.763 consumer.go:1175] INF    7 [NewBraveChallengeBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 W 260403 11:50:07.381.789 consumer.go:1175] WRN   13 [NewSummerChallengeBattle/global] there are 0 connections left alive
+[agent.cn.1 I 260403 11:50:07.381.790 consumer.go:1175] INF   13 [NewSummerChallengeBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 I 260403 11:50:07.381.791 conn.go:731] INF    5 [NewGateBattle/global] (127.0.0.1:4150) clean close complete
+[agent.cn.1 I 260403 11:50:07.381.766 conn.go:731] INF    5 [NewGateBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 W 260403 11:50:07.381.792 consumer.go:1175] WRN    5 [NewGateBattle/global] there are 0 connections left alive
+[agent.cn.1 I 260403 11:50:07.381.793 consumer.go:1175] INF    5 [NewGateBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 I 260403 11:50:12.378.794 consumer.go:1175] INF    3 [NewEndlessBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 11:50:12.378.795 consumer.go:1175] INF    2 [RESP-c_agent.cn.1/0global_1rpc] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 11:50:12.380.796 consumer.go:1175] INF    9 [NewCrossMineBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 11:50:12.380.797 consumer.go:1175] INF   11 [NewCrossArenaBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 11:50:12.381.798 consumer.go:1175] INF    7 [NewBraveChallengeBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 11:50:12.381.799 consumer.go:1175] INF   13 [NewSummerChallengeBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 11:50:12.381.800 consumer.go:1175] INF    6 [REQ-anticheat.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 11:50:12.381.801 consumer.go:1175] INF    8 [NewHuntingBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 11:50:12.382.802 consumer.go:1175] INF    4 [NewCrossMineBossBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 11:50:12.382.803 consumer.go:1175] INF    5 [NewGateBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 11:50:12.382.804 consumer.go:1175] INF   10 [NewCraftBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 11:50:12.382.805 consumer.go:1175] INF   12 [NewCrossUnionFightBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 11:50:12.382.806 consumer.go:1175] INF   15 [NewUnionFightBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 11:50:12.382.807 consumer.go:1175] INF   14 [NewArenaBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 11:50:12.382.808 consumer.go:1175] INF   16 [NewCrossCraftBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 E 260403 12:23:39.754.811 conn.go:731] ERR   12 [NewCrossUnionFightBattle/global] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 I 260403 12:23:39.754.812 conn.go:731] INF   12 [NewCrossUnionFightBattle/global] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 12:23:39.755.813 conn.go:731] INF   12 [NewCrossUnionFightBattle/global] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 E 260403 12:23:39.755.814 conn.go:731] ERR   15 [NewUnionFightBattle/global] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 I 260403 12:23:39.755.815 conn.go:731] INF   15 [NewUnionFightBattle/global] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 12:23:39.755.816 conn.go:731] INF   15 [NewUnionFightBattle/global] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 E 260403 12:23:39.756.817 conn.go:731] ERR   16 [NewCrossCraftBattle/global] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 I 260403 12:23:39.756.818 conn.go:731] INF   16 [NewCrossCraftBattle/global] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 12:23:39.756.820 conn.go:731] INF   16 [NewCrossCraftBattle/global] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 I 260403 12:23:39.756.819 conn.go:731] INF   12 [NewCrossUnionFightBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 12:23:39.756.821 conn.go:731] INF   16 [NewCrossCraftBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 12:23:39.756.822 conn.go:731] INF   12 [NewCrossUnionFightBattle/global] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 I 260403 12:23:39.756.823 conn.go:731] INF   16 [NewCrossCraftBattle/global] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 E 260403 12:23:39.749.810 conn.go:731] ERR   14 [NewArenaBattle/global] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 I 260403 12:23:39.756.824 conn.go:731] INF   14 [NewArenaBattle/global] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 12:23:39.756.825 conn.go:731] INF   14 [NewArenaBattle/global] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 I 260403 12:23:39.757.827 conn.go:731] INF   15 [NewUnionFightBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 12:23:39.757.828 conn.go:731] INF   15 [NewUnionFightBattle/global] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 I 260403 12:23:39.756.826 conn.go:731] INF   14 [NewArenaBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 12:23:39.757.829 conn.go:731] INF   14 [NewArenaBattle/global] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 E 260403 12:23:39.757.830 conn.go:731] ERR    3 [NewEndlessBattle/global] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 I 260403 12:23:39.757.832 conn.go:731] INF    3 [NewEndlessBattle/global] (127.0.0.1:4150) beginning close
+[agent.cn.1 E 260403 12:23:39.757.831 conn.go:731] ERR    2 [RESP-c_agent.cn.1/0global_1rpc] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 I 260403 12:23:39.757.833 conn.go:731] INF    3 [NewEndlessBattle/global] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 E 260403 12:23:39.757.835 conn.go:731] ERR    9 [NewCrossMineBattle/global] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 I 260403 12:23:39.757.834 conn.go:731] INF    2 [RESP-c_agent.cn.1/0global_1rpc] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 12:23:39.757.836 conn.go:731] INF    9 [NewCrossMineBattle/global] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 12:23:39.757.837 conn.go:731] INF    9 [NewCrossMineBattle/global] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 I 260403 12:23:39.757.838 conn.go:731] INF    2 [RESP-c_agent.cn.1/0global_1rpc] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 E 260403 12:23:39.757.839 conn.go:731] ERR   11 [NewCrossArenaBattle/global] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 I 260403 12:23:39.757.840 conn.go:731] INF   11 [NewCrossArenaBattle/global] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 12:23:39.757.842 conn.go:731] INF   11 [NewCrossArenaBattle/global] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 I 260403 12:23:39.757.841 conn.go:731] INF    2 [RESP-c_agent.cn.1/0global_1rpc] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 E 260403 12:23:39.748.809 conn.go:731] ERR   10 [NewCraftBattle/global] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 I 260403 12:23:39.758.844 conn.go:731] INF    2 [RESP-c_agent.cn.1/0global_1rpc] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 I 260403 12:23:39.758.845 conn.go:731] INF   10 [NewCraftBattle/global] (127.0.0.1:4150) beginning close
+[agent.cn.1 E 260403 12:23:39.758.846 conn.go:731] ERR    7 [NewBraveChallengeBattle/global] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 I 260403 12:23:39.758.847 conn.go:731] INF   10 [NewCraftBattle/global] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 E 260403 12:23:39.758.849 conn.go:731] ERR    8 [NewHuntingBattle/global] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 I 260403 12:23:39.759.853 conn.go:731] INF    8 [NewHuntingBattle/global] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 12:23:39.759.854 conn.go:731] INF    8 [NewHuntingBattle/global] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 I 260403 12:23:39.758.850 conn.go:731] INF   10 [NewCraftBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 12:23:39.759.855 conn.go:731] INF   10 [NewCraftBattle/global] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 I 260403 12:23:39.757.843 conn.go:731] INF    3 [NewEndlessBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 12:23:39.759.856 conn.go:731] INF    8 [NewHuntingBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 12:23:39.759.858 conn.go:731] INF    8 [NewHuntingBattle/global] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 E 260403 12:23:39.758.851 conn.go:731] ERR    4 [NewCrossMineBossBattle/global] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 I 260403 12:23:39.759.857 conn.go:731] INF    3 [NewEndlessBattle/global] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 I 260403 12:23:39.759.859 conn.go:731] INF    4 [NewCrossMineBossBattle/global] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 12:23:39.759.861 conn.go:731] INF    4 [NewCrossMineBossBattle/global] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 I 260403 12:23:39.759.862 conn.go:731] INF    4 [NewCrossMineBossBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 12:23:39.759.863 conn.go:731] INF    4 [NewCrossMineBossBattle/global] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 I 260403 12:23:39.759.860 conn.go:731] INF    9 [NewCrossMineBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 12:23:39.759.864 conn.go:731] INF    9 [NewCrossMineBattle/global] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 E 260403 12:23:39.758.852 conn.go:731] ERR    5 [NewGateBattle/global] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 E 260403 12:23:39.759.865 conn.go:731] ERR   13 [NewSummerChallengeBattle/global] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 I 260403 12:23:39.759.848 conn.go:731] INF    7 [NewBraveChallengeBattle/global] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 12:23:39.759.867 conn.go:731] INF    5 [NewGateBattle/global] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 12:23:39.759.869 conn.go:731] INF    7 [NewBraveChallengeBattle/global] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 I 260403 12:23:39.759.866 conn.go:731] INF   11 [NewCrossArenaBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 12:23:39.759.870 conn.go:731] INF    5 [NewGateBattle/global] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 I 260403 12:23:39.759.868 conn.go:731] INF   13 [NewSummerChallengeBattle/global] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 12:23:39.760.872 conn.go:731] INF   11 [NewCrossArenaBattle/global] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 I 260403 12:23:39.760.874 conn.go:731] INF    5 [NewGateBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 12:23:39.760.875 conn.go:731] INF    5 [NewGateBattle/global] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 I 260403 12:23:39.760.877 conn.go:731] INF   13 [NewSummerChallengeBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 12:23:39.760.878 conn.go:731] INF   13 [NewSummerChallengeBattle/global] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 I 260403 12:23:39.760.876 conn.go:731] INF    7 [NewBraveChallengeBattle/global] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 12:23:39.760.879 conn.go:731] INF    7 [NewBraveChallengeBattle/global] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 I 260403 12:23:39.760.873 conn.go:731] INF   13 [NewSummerChallengeBattle/global] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 E 260403 12:23:39.760.871 conn.go:731] ERR    6 [REQ-anticheat.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[agent.cn.1 I 260403 12:23:39.760.880 conn.go:731] INF    6 [REQ-anticheat.cn.1/rpc] (127.0.0.1:4150) beginning close
+[agent.cn.1 I 260403 12:23:39.760.881 conn.go:731] INF    6 [REQ-anticheat.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[agent.cn.1 I 260403 12:23:39.760.882 conn.go:731] INF    6 [REQ-anticheat.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[agent.cn.1 I 260403 12:23:39.760.883 conn.go:731] INF    6 [REQ-anticheat.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[agent.cn.1 I 260403 12:23:39.858.886 conn.go:731] INF   15 [NewUnionFightBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 I 260403 12:23:39.858.888 conn.go:731] INF   15 [NewUnionFightBattle/global] (127.0.0.1:4150) clean close complete
+[agent.cn.1 W 260403 12:23:39.858.889 consumer.go:1175] WRN   15 [NewUnionFightBattle/global] there are 0 connections left alive
+[agent.cn.1 I 260403 12:23:39.858.890 consumer.go:1175] INF   15 [NewUnionFightBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 I 260403 12:23:39.859.891 conn.go:731] INF   16 [NewCrossCraftBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 I 260403 12:23:39.859.892 conn.go:731] INF   16 [NewCrossCraftBattle/global] (127.0.0.1:4150) clean close complete
+[agent.cn.1 W 260403 12:23:39.859.893 consumer.go:1175] WRN   16 [NewCrossCraftBattle/global] there are 0 connections left alive
+[agent.cn.1 I 260403 12:23:39.859.894 consumer.go:1175] INF   16 [NewCrossCraftBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 I 260403 12:23:39.859.895 conn.go:731] INF    2 [RESP-c_agent.cn.1/0global_1rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 I 260403 12:23:39.859.896 conn.go:731] INF    2 [RESP-c_agent.cn.1/0global_1rpc] (127.0.0.1:4150) clean close complete
+[agent.cn.1 W 260403 12:23:39.859.897 consumer.go:1175] WRN    2 [RESP-c_agent.cn.1/0global_1rpc] there are 0 connections left alive
+[agent.cn.1 I 260403 12:23:39.859.898 consumer.go:1175] INF    2 [RESP-c_agent.cn.1/0global_1rpc] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 I 260403 12:23:39.859.899 conn.go:731] INF   10 [NewCraftBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 I 260403 12:23:39.859.900 conn.go:731] INF   10 [NewCraftBattle/global] (127.0.0.1:4150) clean close complete
+[agent.cn.1 I 260403 12:23:39.858.885 conn.go:731] INF   12 [NewCrossUnionFightBattle/global] (127.0.0.1:4150) clean close complete
+[agent.cn.1 W 260403 12:23:39.859.901 consumer.go:1175] WRN   10 [NewCraftBattle/global] there are 0 connections left alive
+[agent.cn.1 I 260403 12:23:39.859.903 consumer.go:1175] INF   10 [NewCraftBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 I 260403 12:23:39.859.887 conn.go:731] INF   14 [NewArenaBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 W 260403 12:23:39.859.902 consumer.go:1175] WRN   12 [NewCrossUnionFightBattle/global] there are 0 connections left alive
+[agent.cn.1 I 260403 12:23:39.859.904 conn.go:731] INF   14 [NewArenaBattle/global] (127.0.0.1:4150) clean close complete
+[agent.cn.1 I 260403 12:23:39.859.905 consumer.go:1175] INF   12 [NewCrossUnionFightBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 I 260403 12:23:39.857.884 conn.go:731] INF   12 [NewCrossUnionFightBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 I 260403 12:23:39.859.907 conn.go:731] INF    3 [NewEndlessBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 W 260403 12:23:39.859.906 consumer.go:1175] WRN   14 [NewArenaBattle/global] there are 0 connections left alive
+[agent.cn.1 I 260403 12:23:39.859.908 conn.go:731] INF    3 [NewEndlessBattle/global] (127.0.0.1:4150) clean close complete
+[agent.cn.1 I 260403 12:23:39.859.909 consumer.go:1175] INF   14 [NewArenaBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 W 260403 12:23:39.859.910 consumer.go:1175] WRN    3 [NewEndlessBattle/global] there are 0 connections left alive
+[agent.cn.1 I 260403 12:23:39.859.911 consumer.go:1175] INF    3 [NewEndlessBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 I 260403 12:23:39.859.912 conn.go:731] INF    9 [NewCrossMineBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 I 260403 12:23:39.859.913 conn.go:731] INF    8 [NewHuntingBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 I 260403 12:23:39.859.914 conn.go:731] INF    8 [NewHuntingBattle/global] (127.0.0.1:4150) clean close complete
+[agent.cn.1 W 260403 12:23:39.859.915 consumer.go:1175] WRN    8 [NewHuntingBattle/global] there are 0 connections left alive
+[agent.cn.1 I 260403 12:23:39.859.916 consumer.go:1175] INF    8 [NewHuntingBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 I 260403 12:23:39.859.917 conn.go:731] INF    9 [NewCrossMineBattle/global] (127.0.0.1:4150) clean close complete
+[agent.cn.1 W 260403 12:23:39.859.918 consumer.go:1175] WRN    9 [NewCrossMineBattle/global] there are 0 connections left alive
+[agent.cn.1 I 260403 12:23:39.859.919 consumer.go:1175] INF    9 [NewCrossMineBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 I 260403 12:23:39.859.920 conn.go:731] INF    4 [NewCrossMineBossBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 I 260403 12:23:39.859.921 conn.go:731] INF    4 [NewCrossMineBossBattle/global] (127.0.0.1:4150) clean close complete
+[agent.cn.1 W 260403 12:23:39.859.922 consumer.go:1175] WRN    4 [NewCrossMineBossBattle/global] there are 0 connections left alive
+[agent.cn.1 I 260403 12:23:39.860.923 consumer.go:1175] INF    4 [NewCrossMineBossBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 I 260403 12:23:39.861.924 conn.go:731] INF    5 [NewGateBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 I 260403 12:23:39.861.925 conn.go:731] INF   13 [NewSummerChallengeBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 I 260403 12:23:39.861.926 conn.go:731] INF    5 [NewGateBattle/global] (127.0.0.1:4150) clean close complete
+[agent.cn.1 W 260403 12:23:39.861.928 consumer.go:1175] WRN    5 [NewGateBattle/global] there are 0 connections left alive
+[agent.cn.1 I 260403 12:23:39.862.930 consumer.go:1175] INF    5 [NewGateBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 I 260403 12:23:39.862.929 conn.go:731] INF    7 [NewBraveChallengeBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 I 260403 12:23:39.862.931 conn.go:731] INF   13 [NewSummerChallengeBattle/global] (127.0.0.1:4150) clean close complete
+[agent.cn.1 I 260403 12:23:39.862.927 conn.go:731] INF    6 [REQ-anticheat.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 W 260403 12:23:39.862.933 consumer.go:1175] WRN   13 [NewSummerChallengeBattle/global] there are 0 connections left alive
+[agent.cn.1 I 260403 12:23:39.862.932 conn.go:731] INF    7 [NewBraveChallengeBattle/global] (127.0.0.1:4150) clean close complete
+[agent.cn.1 I 260403 12:23:39.862.934 conn.go:731] INF   11 [NewCrossArenaBattle/global] (127.0.0.1:4150) finished draining, cleanup exiting
+[agent.cn.1 I 260403 12:23:39.862.936 consumer.go:1175] INF   13 [NewSummerChallengeBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 I 260403 12:23:39.862.935 conn.go:731] INF    6 [REQ-anticheat.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[agent.cn.1 W 260403 12:23:39.862.937 consumer.go:1175] WRN    6 [REQ-anticheat.cn.1/rpc] there are 0 connections left alive
+[agent.cn.1 I 260403 12:23:39.862.938 consumer.go:1175] INF    6 [REQ-anticheat.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 W 260403 12:23:39.862.939 consumer.go:1175] WRN    7 [NewBraveChallengeBattle/global] there are 0 connections left alive
+[agent.cn.1 I 260403 12:23:39.862.940 consumer.go:1175] INF    7 [NewBraveChallengeBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 I 260403 12:23:39.862.941 conn.go:731] INF   11 [NewCrossArenaBattle/global] (127.0.0.1:4150) clean close complete
+[agent.cn.1 W 260403 12:23:39.862.942 consumer.go:1175] WRN   11 [NewCrossArenaBattle/global] there are 0 connections left alive
+[agent.cn.1 I 260403 12:23:39.862.943 consumer.go:1175] INF   11 [NewCrossArenaBattle/global] (127.0.0.1:4150) re-connecting in 5s
+[agent.cn.1 I 260403 12:23:44.859.944 consumer.go:1175] INF   10 [NewCraftBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 12:23:44.859.946 consumer.go:1175] INF    2 [RESP-c_agent.cn.1/0global_1rpc] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 12:23:44.859.945 consumer.go:1175] INF   16 [NewCrossCraftBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 12:23:44.861.947 consumer.go:1175] INF   12 [NewCrossUnionFightBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 12:23:44.863.948 consumer.go:1175] INF   15 [NewUnionFightBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 12:23:44.863.949 consumer.go:1175] INF    6 [REQ-anticheat.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 12:23:44.863.950 consumer.go:1175] INF   13 [NewSummerChallengeBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 12:23:44.863.951 consumer.go:1175] INF   14 [NewArenaBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 12:23:44.864.953 consumer.go:1175] INF    5 [NewGateBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 12:23:44.863.952 consumer.go:1175] INF   11 [NewCrossArenaBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 12:23:44.864.956 consumer.go:1175] INF    3 [NewEndlessBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 12:23:44.864.955 consumer.go:1175] INF    9 [NewCrossMineBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 12:23:44.865.957 consumer.go:1175] INF    4 [NewCrossMineBossBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 12:23:44.866.958 consumer.go:1175] INF    7 [NewBraveChallengeBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 12:23:44.864.954 consumer.go:1175] INF    8 [NewHuntingBattle/global] (127.0.0.1:4150) connecting to nsqd

@@ -13,12 +13,12 @@
                    <span class="icon-bar"></span>
                    <span class="icon-bar"></span>
                 </button>
-				<a class="navbar-brand" href="/">TJ 崩溃平台</a>
+				<a class="navbar-brand" href="/">TJ Quản trị Crash</a>
 			</div>
 			<div id="navbar-top-collapse" class="navbar-collapse collapse">
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="#">{{ name }}</a></li>
-					<li><a href="/logout">退出</a></li>
+					<li><a href="/logout">Đăng xuất</a></li>
 				</ul>
 			</div>
 		</div>
@@ -28,51 +28,51 @@
     	<div id="app-logo">
     		<img src="/statics/logo_icon.png">
     		{% if tag == 'shuma' %}
-    			<div>数码大冒险</div>
+	    		<div>Digimon Adventure</div>
     		{% else %}
-    			<div>口袋妖怪</div>
+	    		<div>Pokemon</div>
     		{% end %}
     	</div>
 	    <ul class="nav">
 	        <li>
 	        	<a id="my-dashboard-show" href="/" class="s-active">
-	        		<span class="glyphicon glyphicon-home"></span>  崩溃主页
+	        		<span class="glyphicon glyphicon-home"></span>  Trang tổng quan crash
 	        	</a>
 	        </li>
 	        <li>
 	        	<a id="query-page" href="/querypage">
-		        	<span class="glyphicon glyphicon-search"></span>  崩溃查询
+		        	<span class="glyphicon glyphicon-search"></span>  Tra cứu crash
 		        </a>
 	        </li>
 	        <li>
 	        	<a id="feedback-page" href="/feedback/page">
-		        	<span class="glyphicon glyphicon-search"></span>  反馈查询
+		        	<span class="glyphicon glyphicon-search"></span>  Tra cứu phản hồi
 		        </a>
 	        </li>
 	        <li>
 	        	<a id="battle-show" href="/battle_log">
-		        	<span class="glyphicon glyphicon-search"></span>  反作弊战报查询
+		        	<span class="glyphicon glyphicon-search"></span>  Tra cứu báo cáo chống gian lận
 		        </a>
 	        </li>
 	        <li>
 	        	<a id="play-show" href="/play_report/query">
-		        	<span class="glyphicon glyphicon-search"></span>  客户端战报查询
+		        	<span class="glyphicon glyphicon-search"></span>  Tra cứu báo cáo client
 		        </a>
 	        </li>
 	        <li>
 	        	<a id="my-tables-show" href="/dbview">
-		        	<span class="glyphicon glyphicon-list"></span>  数据视图
+		        	<span class="glyphicon glyphicon-list"></span>  Xem dữ liệu
 		        </a>
 	        </li>
 	        <li>
 	        	<a href="#file-upload-modal" data-toggle="modal">
-	        		<span class="glyphicon glyphicon-upload"></span>  文件上传
+	        		<span class="glyphicon glyphicon-upload"></span>  Tải tệp lên
 	        	</a>
 	        </li>
 	    </ul>
 	</div>
 
-	<!--文件上传模态框-->
+	<!-- Modal tải tệp -->
 	<div class="modal fade" id="file-upload-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-content">
@@ -84,8 +84,8 @@
 						</button>
 						<div>
 			        		<ul class="nav nav-tabs">
-							    <li class="active"><a href="#so-b" data-toggle="tab">symbols 文件上传</a></li>
-								<li><a href="#dmp-b" data-toggle="tab">dmp 文件上传</a></li>
+							    <li class="active"><a href="#so-b" data-toggle="tab">Tải tệp symbols</a></li>
+								<li><a href="#dmp-b" data-toggle="tab">Tải tệp dmp</a></li>
 							</ul>
 			        	</div>
 					</div>
@@ -95,7 +95,7 @@
 								<div class="margin-top-sm" style='margin-top: 8px;'>
 									<form class="form-inline">
 										<div class="form-group">
-											<label style="min-width: 108px;">平台</label>
+											<label style="min-width: 108px;">Nền tảng</label>
 											<select id="phone-sys" class="form-control" style="min-width: 196px;">
 												<option>Android</option>
 								        		<option>IOS</option>
@@ -106,33 +106,33 @@
 								<div class="margin-top-xs" style='margin-top: 8px;'>
 									<form class="form-inline">
 										<div class="form-group">
-											<label class="fixed-width" style="min-width: 108px;">App版本号</label>
-											<input id="fileupload-versionid" class="form-control" placeholder="请输入对应App版本号"/>
+											<label class="fixed-width" style="min-width: 108px;">Phiên bản App</label>
+											<input id="fileupload-versionid" class="form-control" placeholder="Nhập phiên bản App tương ứng"/>
 										</div>
 									</form>
 								</div>
 								<div class="margin-top-xs" style='margin-top: 8px;'>
 									<form class="form-inline">
 										<div class="form-group">
-											<label class="fixed-width" style="min-width: 108px;">App包名</label>
-											<input id="fileupload-package" class="form-control" placeholder="请输入对应App包名"/>
+											<label class="fixed-width" style="min-width: 108px;">Gói App</label>
+											<input id="fileupload-package" class="form-control" placeholder="Nhập gói App tương ứng"/>
 										</div>
 									</form>
 								</div>
 								<div class="margin-top-xs" style='margin-top: 8px;'>
 									<form class="form-inline">
 										<div class="form-group">
-											<label class="fixed-width" style="min-width: 108px;">App游戏名</label>
-											<input id="fileupload-game_name" class="form-control" placeholder="请输入对应App游戏名"/>
+											<label class="fixed-width" style="min-width: 108px;">Tên game App</label>
+											<input id="fileupload-game_name" class="form-control" placeholder="Nhập tên game App tương ứng"/>
 										</div>
 									</form>
 								</div>
 								<div class="margin-top-sm" style="border-top: 2px solid #e7eaec; padding-top: 8px; margin-top: 8px;">
 									<div style="display: inline-block;">
-										<input id="location" class="form-control" style="min-width: 300px;" placeholder="请选择需要上传的文件" disabled>
+										<input id="location" class="form-control" style="min-width: 300px;" placeholder="Chọn tệp cần tải lên" disabled>
 									</div>
 									<div style="display: inline-block;">
-										<input type="button" value="浏览" class="btn btn-primary" onclick="$('#i-file').click();">
+										<input type="button" value="Chọn file" class="btn btn-primary" onclick="$('#i-file').click();">
 									</div>
 									<input type="file" id='i-file' onchange="$('#location').val($('#i-file').val());" style="display: none">
 									<progress id="progressBar" style="display: none;"></progress>
@@ -143,26 +143,26 @@
 							</div>
 						</div>
 						<div class="modal-footer">
-							<!-- <button type="button" class="btn btn-primary" data-dismiss="modal">关闭</button> -->
-							<button id="upload_file" type="button" class="btn btn-success">开始上传</button>
+							<!-- <button type="button" class="btn btn-primary" data-dismiss="modal">Đóng</button> -->
+							<button id="upload_file" type="button" class="btn btn-success">Bắt đầu tải lên</button>
 						</div>
 					</div>
 					<div class="tab-pane fade" id="dmp-b">
 						<div class="modal-body">
-							<div style="color: red;"><i>请选择一个想要上传的 dmp 文件。</i></div>
+							<div style="color: red;"><i>Hãy chọn một tệp dmp để tải lên.</i></div>
 							<div class="margin-top-sm" style="padding-top: 8px; margin-top: 8px;">
 								<div style="display: inline-block;">
-									<input id="location2" class="form-control" style="min-width: 300px;" placeholder="请选择需要上传的文件" disabled>
+									<input id="location2" class="form-control" style="min-width: 300px;" placeholder="Chọn tệp cần tải lên" disabled>
 								</div>
 								<div style="display: inline-block;">
-									<input type="button" value="浏览" class="btn btn-primary" onclick="$('#i-file2').click();">
+									<input type="button" value="Chọn file" class="btn btn-primary" onclick="$('#i-file2').click();">
 								</div>
 								<input type="file" id='i-file2' onchange="$('#location2').val($('#i-file2').val());" style="display: none">
 								<progress id="progressBar2" style="display: none;"></progress>
 							</div>
 						</div>
 						<div class="modal-footer">
-							<button id="dmp_upload" type="button" class="btn btn-success">开始上传</button>
+							<button id="dmp_upload" type="button" class="btn btn-success">Bắt đầu tải lên</button>
 						</div>
 					</div>
 				</div>
@@ -174,17 +174,17 @@
 	<div class="container-fluid container-fluid-bc">
 		{% block main %}
 			<div class="row m-head">
-				<div class="col-lg-2 col-md-2 col-sm-3 col-xs-3"><h4>崩溃数据分析<h4></div>
+				<div class="col-lg-2 col-md-2 col-sm-3 col-xs-3"><h4>Phân tích dữ liệu crash<h4></div>
 			</div>
 
 			<div class="well">
 				<div>
 					<ul class="nav nav-tabs">
 						<li class="active">
-							<a href="#today-crash-data" data-toggle="tab">今日实时崩溃数据</a>
+							<a href="#today-crash-data" data-toggle="tab">Dữ liệu crash thời gian thực hôm nay</a>
 						</li>
 						<li>
-							<a href="#today-exception-data" data-toggle="tab">今日实时异常数据</a>
+							<a href="#today-exception-data" data-toggle="tab">Dữ liệu ngoại lệ thời gian thực hôm nay</a>
 						</li>
 					</ul>
 				</div>
@@ -193,19 +193,19 @@
 						<div class="row">
 							<div class="col-lg-3 col-md-3">
 								<span class="glyphicon glyphicon-align-left"></span>
-								崩溃次数:  {{ dump_count }}
+								Số lần crash:  {{ dump_count }}
 							</div>
 							<div class="col-lg-3 col-md-3">
 								<span class="glyphicon glyphicon-stats"></span>
-								崩溃率:  xxx
+								Tỷ lệ crash:  xxx
 							</div>
 							<div class="col-lg-3 col-md-3">
 								<span class="glyphicon glyphicon-align-left"></span>
-								崩溃影响用户:  {{ crash_user }}
+								Người dùng bị ảnh hưởng:  {{ crash_user }}
 							</div>
 							<div class="col-lg-3 col-md-3">
 								<span class="glyphicon glyphicon-stats"></span>
-								启动用户:  xxx
+								Người dùng khởi động:  xxx
 							</div>
 						</div>
 					</div>
@@ -214,19 +214,19 @@
 						<div class="row">
 							<div class="col-lg-3 col-md-3">
 								<span class="glyphicon glyphicon-align-left"></span>
-								异常次数:  {{ exception_count }}
+								Số lần ngoại lệ:  {{ exception_count }}
 							</div>
 							<div class="col-lg-3 col-md-3">
 								<span class="glyphicon glyphicon-stats"></span>
-								异常率:  xxx
+								Tỷ lệ ngoại lệ:  xxx
 							</div>
 							<div class="col-lg-3 col-md-3">
 								<span class="glyphicon glyphicon-align-left"></span>
-								异常影响用户:  {{ exception_user }}
+								Người dùng bị ảnh hưởng:  {{ exception_user }}
 							</div>
 							<div class="col-lg-3 col-md-3">
 								<span class="glyphicon glyphicon-stats"></span>
-								启动用户:  xxx
+								Người dùng khởi động:  xxx
 							</div>
 						</div>
 					</div>
@@ -236,15 +236,15 @@
 			<div class="well">
 				<div>
 					<div style="display: inline-block;">
-						<span>崩溃实时趋势图</span>
+						<span>Biểu đồ xu hướng crash thời gian thực</span>
 					</div>
 					<div style="display: inline-block; float: right;">
 						<form role="form">
 						  <div class="form-group">
 						    <select params="0" class="form-control input-sm">
-						      <option option_value=24>24小时</option>
-						      <option option_value=7>7天</option>
-						      <option option_value=30>30天</option>
+						      <option option_value=24>24 giờ</option>
+						      <option option_value=7>7 ngày</option>
+						      <option option_value=30>30 ngày</option>
 						    </select>
 						  </div>
 						</form>
@@ -252,10 +252,10 @@
 					<div class="row">
 						<div id="chart-btn" class="col-lg-3 col-md-4 col-sm-5">
 							<div class="btn-group btn-group-xs btn-block btn-group-justified">
-								<a class="btn btn-info" href="javascript:;" btn-param="1">次数</a>
-								<a class="btn" href="javascript:;" btn-param="2">比率</a>
-								<a class="btn" href="javascript:;" btn-param="3">影响用户</a>
-								<a class="btn" href="javascript:;" btn-param="4">启动用户</a>
+								<a class="btn btn-info" href="javascript:;" btn-param="1">Số lần</a>
+								<a class="btn" href="javascript:;" btn-param="2">Tỷ lệ</a>
+								<a class="btn" href="javascript:;" btn-param="3">Người dùng ảnh hưởng</a>
+								<a class="btn" href="javascript:;" btn-param="4">Người dùng khởi động</a>
 							</div>
 						</div>
 					</div>
@@ -269,7 +269,7 @@
 				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 					<div class="well">
 						<div>
-							<span>今日问题统计</span>
+							<span>Thống kê vấn đề hôm nay</span>
 						</div>
 						<div class="row">
 							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
@@ -284,10 +284,10 @@
 				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 					<div class="well">
 						<div style="overflow: hidden;">
-							<div style="float: left; padding-top: 7px;">今日Top3问题</div>
+							<div style="float: left; padding-top: 7px;">Top 3 vấn đề hôm nay</div>
 							<div style="float: right; width: 125px;">
 								<div class="form-group">
-								  	<input id="show-time-period-ss" type="text" placeholder="选择今日时间段" class="form-control input-sm" readonly="readonly">
+								  	<input id="show-time-period-ss" type="text" placeholder="Chọn khung giờ hôm nay" class="form-control input-sm" readonly="readonly">
 								    <select id="time-period-ss" class="form-control" size=6>
 								    </select>
 								  </div>
@@ -301,18 +301,18 @@
 			<div class="well" style="margin-bottom: 50px;" >
 				<div class="row search-group">
 					<div>
-						<span>崩溃数据统计</span>
+						<span>Thống kê dữ liệu crash</span>
 					</div>
 					<div>
 						<form role="form">
 						  <div class="form-group">
 						    <select params=1 class="form-control input-sm">
-						    	<option option_value=7>一周内</option>
-						        <option option_value=1>一天内</option>
-						        <option option_value=3>三天内</option>
-						        <option option_value=30>30天内</option>
-						        <option option_value=60>60天内</option>
-						        <option option_value=0>所有</option>
+						    	<option option_value=7>7 ngày gần đây</option>
+						        <option option_value=1>1 ngày gần đây</option>
+						        <option option_value=3>3 ngày gần đây</option>
+						        <option option_value=30>30 ngày gần đây</option>
+						        <option option_value=60>60 ngày gần đây</option>
+						        <option option_value=0>Tất cả</option>
 						    </select>
 						  </div>
 						</form>
@@ -321,9 +321,9 @@
 						<form role="form">
 						  <div class="form-group">
 						    <select params=2 class="form-control input-sm">
-						    	<option option_value=0>所有状态</option>
-						        <option option_value=-1>未处理状态</option>
-						        <option option_value=1>已处理状态</option>
+						    	<option option_value=0>Tất cả trạng thái</option>
+						        <option option_value=-1>Chưa xử lý</option>
+						        <option option_value=1>Đã xử lý</option>
 						    </select>
 						  </div>
 						</form>
@@ -332,9 +332,9 @@
 						<form role="form">
 						  <div class="form-group">
 						    <select params=3 class="form-control input-sm">
-						    	<option option_value=0>所有错误</option>
-						        <option option_value=-1>崩溃错误</option>
-						        <option option_value=1>异常错误</option>
+						    	<option option_value=0>Tất cả lỗi</option>
+						        <option option_value=-1>Lỗi crash</option>
+						        <option option_value=1>Lỗi ngoại lệ</option>
 						    </select>
 						  </div>
 						</form>
@@ -342,9 +342,9 @@
 					<div>
 						<form role="form">
 						  <div class="form-group">
-						  	<input id="show-version-ss" type="text" placeholder="选择错误上报版本号" class="form-control input-sm" readonly="readonly">
+						  	<input id="show-version-ss" type="text" placeholder="Chọn phiên bản báo lỗi" class="form-control input-sm" readonly="readonly">
 						    <select id="version-ss" class="form-control" params=4 size=6>
-						        <option>所有版本</option>
+						        <option>Tất cả phiên bản</option>
 						        {% for version in versionL%}
 							    	<option>{{ version }}</option>
 							    {% end %}

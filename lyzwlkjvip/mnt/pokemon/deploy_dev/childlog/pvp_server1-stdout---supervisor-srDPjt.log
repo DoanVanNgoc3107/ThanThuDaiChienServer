@@ -1,0 +1,1397 @@
+[host_server I 260403 07:13:58.389.001 document.go:151] register document default ok
+[host_server I 260403 07:13:58.395.002 init.go:171] register document ok
+[host_server D 260403 07:13:58.403.003 config.go:49] cwd in /mnt/pokemon/release/pvp
+[host_server D 260403 07:13:58.414.004 config.go:23] GetExtend service pvp.cn.1 &service.Option{Name:"pvp.cn.1", Alias:[]string(nil), Dependent:[]string{"storage.cn.1"}}
+[host_server D 260403 07:13:58.416.005 config.go:23] GetExtend service clone.cn.1 &service.Option{Name:"clone.cn.1", Alias:[]string(nil), Dependent:[]string{"storage.cn.1"}}
+[host_server D 260403 07:13:58.416.006 config.go:23] GetExtend service arena.cn.1 &service.Option{Name:"arena.cn.1", Alias:[]string(nil), Dependent:[]string{"storage.cn.1"}}
+[host_server D 260403 07:13:58.416.007 config.go:23] GetExtend service union.cn.1 &service.Option{Name:"union.cn.1", Alias:[]string(nil), Dependent:[]string{"storage.cn.1"}}
+[host_server D 260403 07:13:58.416.008 config.go:23] GetExtend service union_fight.cn.1 &service.Option{Name:"union_fight.cn.1", Alias:[]string(nil), Dependent:[]string{"storage.cn.1", "game.cn.1", "anticheat"}}
+[host_server D 260403 07:13:58.416.009 config.go:23] GetExtend service craft.cn.1 &service.Option{Name:"craft.cn.1", Alias:[]string(nil), Dependent:[]string{"storage.cn.1", "game.cn.1", "anticheat"}}
+[host_server D 260403 07:13:58.416.010 config.go:23] GetExtend service yyhuodong.cn.1 &service.Option{Name:"yyhuodong.cn.1", Alias:[]string(nil), Dependent:[]string{"storage.cn.1"}}
+[host_server D 260403 07:13:58.416.011 config.go:23] GetExtend service card_fight.cn.1 &service.Option{Name:"card_fight.cn.1", Alias:[]string(nil), Dependent:[]string{"storage.cn.1"}}
+[host_server D 260403 07:13:58.416.012 config.go:23] GetExtend service gym.cn.1 &service.Option{Name:"gym.cn.1", Alias:[]string(nil), Dependent:[]string{"storage.cn.1", "game.cn.1"}}
+[host_server D 260403 07:13:58.416.013 config.go:23] GetExtend service hunting.cn.1 &service.Option{Name:"hunting.cn.1", Alias:[]string(nil), Dependent:[]string{"storage.cn.1"}}
+[host_server I 260403 07:13:58.416.014 config.go:60] pvp.cn.1 config in defines.json
+[pvp.cn.1 I 260403 07:13:58.417.015 main.go:44] &services.Define{ContainerOption:service.ContainerOption{Name:"@pvp.cn.1", Debug:false, Addr:"", NSQLookupd:"http://127.0.0.1:4161/", Mainnsqd:"", NSQTcpAddresses:[]string{"127.0.0.1:4150"}, Shushu:true, Services:[]service.IOption{(*service.Option)(0xc0000a64c0), (*service.Option)(0xc0000a6600), (*service.Option)(0xc0000a6740), (*service.Option)(0xc0000a6880), (*service.Option)(0xc0000a69c0), (*service.Option)(0xc0000a6b00), (*service.Option)(0xc0000a6c40), (*service.Option)(0xc0000a6d80), (*service.Option)(0xc0000a6ec0), (*service.Option)(0xc0000a7000)}, ServicesRaw:[]json.RawMessage(nil)}}
+[pvp.cn.1 I 260403 07:14:03.690.019 rpcclient.go:292] create client consumer RESP-c_pvp.cn.1/0global_1rpc
+[pvp.cn.1 I 260403 07:14:03.691.020 consumer.go:1175] INF    2 [RESP-c_pvp.cn.1/0global_1rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 07:14:03.699.021 thinkingdata.go:29] thinkingdata log directory /mnt/logbus_data/@pvp.cn.1
+[pvp.cn.1 I 260403 07:14:03.700.022 container.go:250] remote service storage.cn.1 start
+[pvp.cn.1 I 260403 07:14:03.700.023 container.go:259] service pvp.cn.1 start
+[pvp.cn.1 I 260403 07:14:03.703.024 producer.go:382] INF    1 (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 07:14:04.701.025 service.go:100] CloneRoom Used: 0, Free: 0
+[pvp.cn.1 I 260403 07:14:04.702.026 container.go:259] service clone.cn.1 start
+[pvp.cn.1 I 260403 07:14:04.727.027 service.go:85] load game.cn.1 arena, rank max 0
+[pvp.cn.1 I 260403 07:14:04.752.028 service.go:97] ArenaGlobalHistory from 26030415 to 26040315 has 0
+[pvp.cn.1 I 260403 07:14:04.752.029 container.go:259] service arena.cn.1 start
+[pvp.cn.1 I 260403 07:14:04.779.031 service.go:194] load unions done, count 0
+[pvp.cn.1 I 260403 07:14:04.807.032 service.go:270] load union training count 0
+[pvp.cn.1 I 260403 07:14:04.826.033 service.go:309] RedPacket Used: 0, Free: 0
+[pvp.cn.1 I 260403 07:14:04.826.034 service.go:220] loading unions cost 73ms
+[pvp.cn.1 I 260403 07:14:04.826.035 container.go:259] service union.cn.1 start
+[pvp.cn.1 I 260403 07:14:04.826.036 container.go:250] remote service game.cn.1 start
+[pvp.cn.1 I 260403 07:14:04.826.037 container.go:250] remote service anticheat start
+[pvp.cn.1 I 260403 07:14:04.855.038 service.go:47] load game.cn.1 union fight round 'closed'
+[pvp.cn.1 I 260403 07:14:04.855.039 service.go:53] Union Fight isAllOver True
+[pvp.cn.1 I 260403 07:14:04.855.040 container.go:259] service union_fight.cn.1 start
+[pvp.cn.1 I 260403 07:14:04.878.041 service.go:67] load game.cn.1 craft round closed
+[pvp.cn.1 I 260403 07:14:04.879.042 service.go:73] Craft isAllOver True
+[pvp.cn.1 I 260403 07:14:04.879.043 container.go:259] service craft.cn.1 start
+[pvp.cn.1 I 260403 07:14:04.903.044 service.go:63] load game.cn.1 worldBoss global
+[pvp.cn.1 I 260403 07:14:04.903.045 container.go:259] service yyhuodong.cn.1 start
+[pvp.cn.1 I 260403 07:14:04.932.046 container.go:259] service card_fight.cn.1 start
+[pvp.cn.1 I 260403 07:14:04.952.047 service.go:47] load gym.cn.1 gym global
+[pvp.cn.1 I 260403 07:14:04.952.048 container.go:259] service gym.cn.1 start
+[pvp.cn.1 I 260403 07:14:04.952.049 container.go:259] service hunting.cn.1 start
+[pvp.cn.1 I 260403 07:14:04.952.050 container.go:264] container @pvp.cn.1 start
+[pvp.cn.1 I 260403 07:14:04.952.051 server.go:29] server start ok
+[pvp.cn.1 I 260403 07:14:04.955.052 gym.go:167] Gym.ResetToday key gym.cn.1 round start monday 20260330
+[pvp.cn.1 I 260403 07:14:04.956.053 gym.go:188] Restart round start next closed time delta 54h30m55.044071s
+[pvp.cn.1 I 260403 07:14:04.958.057 rpcserver.go:349] create server consumer REQ-pvp.cn.1/rpc
+[pvp.cn.1 I 260403 07:14:04.960.093 rpcserver.go:349] create server consumer REQ-clone.cn.1/rpc
+[pvp.cn.1 I 260403 07:14:04.962.122 rpcserver.go:349] create server consumer REQ-union.cn.1/rpc
+[pvp.cn.1 I 260403 07:14:04.964.182 rpcserver.go:349] create server consumer REQ-card_fight.cn.1/rpc
+[pvp.cn.1 I 260403 07:14:04.965.188 rpcserver.go:349] create server consumer REQ-gym.cn.1/rpc
+[pvp.cn.1 I 260403 07:14:04.966.212 rpcserver.go:349] create server consumer REQ-arena.cn.1/rpc
+[pvp.cn.1 I 260403 07:14:04.966.227 rpcserver.go:457] create server consumer NotifyGenHuntingCards/arena.cn.1
+[pvp.cn.1 I 260403 07:14:04.967.238 rpcserver.go:349] create server consumer REQ-union_fight.cn.1/rpc
+[pvp.cn.1 I 260403 07:14:04.968.260 rpcserver.go:349] create server consumer REQ-craft.cn.1/rpc
+[pvp.cn.1 I 260403 07:14:04.970.285 rpcserver.go:349] create server consumer REQ-yyhuodong.cn.1/rpc
+[pvp.cn.1 I 260403 07:14:04.972.319 rpcserver.go:349] create server consumer REQ-hunting.cn.1/rpc
+[pvp.cn.1 I 260403 07:14:04.973.340 consumer.go:1175] INF    3 [REQ-pvp.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 07:14:04.976.341 consumer.go:1175] INF    4 [REQ-clone.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 07:14:04.978.342 consumer.go:1175] INF    5 [REQ-union.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 07:14:04.979.343 consumer.go:1175] INF    6 [REQ-card_fight.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 07:14:04.979.344 consumer.go:1175] INF    7 [REQ-gym.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 07:14:04.981.345 consumer.go:1175] INF    8 [REQ-arena.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 07:14:04.982.346 consumer.go:1175] INF    9 [NotifyGenHuntingCards/arena.cn.1] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 07:14:04.985.347 consumer.go:1175] INF   10 [REQ-union_fight.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 07:14:04.986.348 consumer.go:1175] INF   11 [REQ-craft.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 07:14:04.987.349 consumer.go:1175] INF   12 [REQ-yyhuodong.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 07:14:04.988.350 consumer.go:1175] INF   13 [REQ-hunting.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 07:14:05.348.351 framework.go:536] NOTIFY arena.cn.1.NotifyGenHuntingCards [0xc014a91fe0]
+[pvp.cn.1 I 260403 07:14:05.350.353 container.go:118] remote service crosshunting.cn.1 start
+[pvp.cn.1 I 260403 07:14:13.670.354 framework.go:534] REQ yyhuodong.cn.1.BraveChallengeYYStart 1 [0xc0005c1498]
+[pvp.cn.1 I 260403 07:14:14.296.355 framework.go:534] REQ union.cn.1.GetCacheModel 2 []
+[pvp.cn.1 I 260403 07:14:14.297.356 rpcserver.go:622] RESP union.cn.1.GetCacheModel 2 1B 549µs from c_game.cn.1
+[pvp.cn.1 I 260403 07:14:14.297.357 producer.go:382] INF   14 (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 07:14:20.645.358 common.go:140] brave_challenge start runBattleAgentVerify
+
+[pvp.cn.1 I 260403 07:14:20.658.359 rpcserver.go:622] RESP yyhuodong.cn.1.BraveChallengeYYStart 1 1B 6.988218s from c_game.cn.1
+[pvp.cn.1 I 260403 07:14:21.573.360 framework.go:534] REQ craft.cn.1.GetCraftBattleCards 3 [IDHex("69cf5b1136908d001b1ee34d")]
+[pvp.cn.1 I 260403 07:14:21.576.361 rpcserver.go:622] RESP craft.cn.1.GetCraftBattleCards 3 131B 3.534ms from c_game.cn.1
+[pvp.cn.1 I 260403 07:14:21.595.362 framework.go:534] REQ pvp.cn.1.GetCrossCraftBattleCards 4 [IDHex("69cf5b1136908d001b1ee34e")]
+[pvp.cn.1 I 260403 07:14:21.601.363 rpcserver.go:622] RESP pvp.cn.1.GetCrossCraftBattleCards 4 157B 6.36ms from c_game.cn.1
+[pvp.cn.1 I 260403 07:14:21.620.364 framework.go:534] REQ union_fight.cn.1.GetUnionFightBattleCards 5 [IDHex("69cf5b1136908d001b1ee34f")]
+[pvp.cn.1 I 260403 07:14:21.628.365 rpcserver.go:622] RESP union_fight.cn.1.GetUnionFightBattleCards 5 501B 8.119ms from c_game.cn.1
+[pvp.cn.1 I 260403 07:14:21.698.366 framework.go:534] REQ union.cn.1.OnLogin 6 [IDHex("69cf57bc36908d001b1ee319") 0xc000897a40 0xc014753a40]
+[pvp.cn.1 I 260403 07:14:21.699.367 rpcserver.go:622] RESP union.cn.1.OnLogin 6 143B 740µs from c_game.cn.1
+[pvp.cn.1 I 260403 07:14:23.729.368 manager.go:250] process dirty, count 2 success 2 fail 0 cost 26.865ms, dirty 0, lru 0, chan 0
+[pvp.cn.1 I 260403 07:14:30.403.369 framework.go:534] REQ card_fight.cn.1.CardFightUpdate 7 [0xc0024c61e0 0xc010359e10]
+[pvp.cn.1 I 260403 07:14:30.404.370 rpcserver.go:622] RESP card_fight.cn.1.CardFightUpdate 7 395B 1.329ms from c_game.cn.1
+[pvp.cn.1 I 260403 07:14:32.152.371 framework.go:534] REQ card_fight.cn.1.CardFightUpdate 8 [0xc0024c6370 0xc010359e58]
+[pvp.cn.1 I 260403 07:14:32.153.372 rpcserver.go:622] RESP card_fight.cn.1.CardFightUpdate 8 395B 512µs from c_game.cn.1
+[pvp.cn.1 I 260403 07:14:33.597.373 framework.go:534] REQ card_fight.cn.1.CardFightUpdate 9 [0xc0024c6500 0xc010359e88]
+[pvp.cn.1 I 260403 07:14:33.597.374 rpcserver.go:622] RESP card_fight.cn.1.CardFightUpdate 9 395B 530µs from c_game.cn.1
+[pvp.cn.1 I 260403 07:14:43.709.375 manager.go:250] process dirty, count 1 success 1 fail 0 cost 5.569ms, dirty 0, lru 0, chan 0
+[pvp.cn.1 I 260403 07:16:45.879.376 framework.go:534] REQ yyhuodong.cn.1.BraveChallengeYYStart 10 [0xc0177fc4f8]
+[pvp.cn.1 I 260403 07:16:45.879.377 rpcserver.go:622] RESP yyhuodong.cn.1.BraveChallengeYYStart 10 1B 142µs from c_game.cn.1
+[pvp.cn.1 I 260403 07:19:05.351.379 framework.go:536] NOTIFY arena.cn.1.NotifyGenHuntingCards [0xc01489e060]
+[pvp.cn.1 I 260403 07:24:05.355.381 framework.go:536] NOTIFY arena.cn.1.NotifyGenHuntingCards [0xc0148d0050]
+[pvp.cn.1 I 260403 07:28:43.600.382 framework.go:534] REQ union.cn.1.OnLogin 11 [IDHex("69cf57bc36908d001b1ee319") 0xc00047a230 0xc01473e160]
+[pvp.cn.1 I 260403 07:28:43.601.383 rpcserver.go:622] RESP union.cn.1.OnLogin 11 143B 1.05ms from c_game.cn.1
+[pvp.cn.1 I 260403 07:29:05.360.385 framework.go:536] NOTIFY arena.cn.1.NotifyGenHuntingCards [0xc01488c680]
+[pvp.cn.1 I 260403 07:34:05.364.387 framework.go:536] NOTIFY arena.cn.1.NotifyGenHuntingCards [0xc01489e060]
+[pvp.cn.1 I 260403 07:37:18.475.388 framework.go:534] REQ union.cn.1.OnLogin 12 [IDHex("69cf57bc36908d001b1ee319") 0xc0175abbd0 0xc0145e2140]
+[pvp.cn.1 I 260403 07:37:18.476.389 rpcserver.go:622] RESP union.cn.1.OnLogin 12 143B 824µs from c_game.cn.1
+[pvp.cn.1 I 260403 07:39:05.364.391 framework.go:536] NOTIFY arena.cn.1.NotifyGenHuntingCards [0xc0148d0040]
+[pvp.cn.1 I 260403 07:43:39.812.392 producer.go:382] INF   14 stopping
+[pvp.cn.1 I 260403 07:43:39.820.393 consumer.go:1175] INF    8 [REQ-arena.cn.1/rpc] stopping...
+[pvp.cn.1 I 260403 07:43:39.820.394 consumer.go:1175] INF   11 [REQ-craft.cn.1/rpc] stopping...
+[pvp.cn.1 I 260403 07:43:39.822.396 consumer.go:1175] INF    9 [NotifyGenHuntingCards/arena.cn.1] stopping...
+[pvp.cn.1 I 260403 07:43:39.822.397 consumer.go:1175] INF   10 [REQ-union_fight.cn.1/rpc] stopping...
+[pvp.cn.1 I 260403 07:43:39.823.398 conn.go:731] INF   14 (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 07:43:39.824.399 conn.go:731] INF   14 (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 I 260403 07:43:39.824.400 conn.go:731] INF   14 (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 07:43:39.824.401 conn.go:731] INF   14 (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 I 260403 07:43:39.824.402 consumer.go:1175] INF    5 [REQ-union.cn.1/rpc] stopping...
+[pvp.cn.1 I 260403 07:43:39.824.403 consumer.go:1175] INF    3 [REQ-pvp.cn.1/rpc] stopping...
+[pvp.cn.1 I 260403 07:43:39.824.405 consumer.go:1175] INF    4 [REQ-clone.cn.1/rpc] stopping...
+[pvp.cn.1 I 260403 07:43:39.824.404 consumer.go:1175] INF   13 [REQ-hunting.cn.1/rpc] stopping...
+[pvp.cn.1 I 260403 07:43:39.824.406 producer.go:382] INF   14 exiting router
+[pvp.cn.1 I 260403 07:43:39.822.395 consumer.go:1175] INF   12 [REQ-yyhuodong.cn.1/rpc] stopping...
+[pvp.cn.1 I 260403 07:43:39.825.407 consumer.go:1175] INF    6 [REQ-card_fight.cn.1/rpc] stopping...
+[pvp.cn.1 I 260403 07:43:39.831.408 consumer.go:1175] INF    7 [REQ-gym.cn.1/rpc] stopping...
+[pvp.cn.1 I 260403 07:43:39.832.409 container.go:279] service pvp.cn.1 stop
+[pvp.cn.1 I 260403 07:43:39.833.410 container.go:279] service clone.cn.1 stop
+[pvp.cn.1 I 260403 07:43:39.833.411 container.go:279] service arena.cn.1 stop
+[pvp.cn.1 I 260403 07:43:39.853.412 consumer.go:1175] INF   11 [REQ-craft.cn.1/rpc] (127.0.0.1:4150) received CLOSE_WAIT from nsqd
+[pvp.cn.1 I 260403 07:43:39.854.413 conn.go:731] INF   11 [REQ-craft.cn.1/rpc] (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 07:43:39.854.414 conn.go:731] INF   11 [REQ-craft.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 I 260403 07:43:39.854.415 conn.go:731] INF   11 [REQ-craft.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 07:43:39.854.416 conn.go:731] INF   11 [REQ-craft.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 I 260403 07:43:39.854.417 consumer.go:1175] INF    4 [REQ-clone.cn.1/rpc] (127.0.0.1:4150) received CLOSE_WAIT from nsqd
+[pvp.cn.1 I 260403 07:43:39.854.419 consumer.go:1175] INF    9 [NotifyGenHuntingCards/arena.cn.1] (127.0.0.1:4150) received CLOSE_WAIT from nsqd
+[pvp.cn.1 I 260403 07:43:39.854.418 conn.go:731] INF    4 [REQ-clone.cn.1/rpc] (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 07:43:39.854.420 conn.go:731] INF    4 [REQ-clone.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 I 260403 07:43:39.854.422 consumer.go:1175] INF    8 [REQ-arena.cn.1/rpc] (127.0.0.1:4150) received CLOSE_WAIT from nsqd
+[pvp.cn.1 I 260403 07:43:39.854.421 conn.go:731] INF    9 [NotifyGenHuntingCards/arena.cn.1] (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 07:43:39.854.423 consumer.go:1175] INF    7 [REQ-gym.cn.1/rpc] (127.0.0.1:4150) received CLOSE_WAIT from nsqd
+[pvp.cn.1 I 260403 07:43:39.854.424 conn.go:731] INF    8 [REQ-arena.cn.1/rpc] (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 07:43:39.855.425 conn.go:731] INF    9 [NotifyGenHuntingCards/arena.cn.1] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 I 260403 07:43:39.855.427 conn.go:731] INF    8 [REQ-arena.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 I 260403 07:43:39.855.428 conn.go:731] INF    9 [NotifyGenHuntingCards/arena.cn.1] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 07:43:39.855.429 conn.go:731] INF    4 [REQ-clone.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 07:43:39.855.430 conn.go:731] INF    9 [NotifyGenHuntingCards/arena.cn.1] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 I 260403 07:43:39.855.431 consumer.go:1175] INF    3 [REQ-pvp.cn.1/rpc] (127.0.0.1:4150) received CLOSE_WAIT from nsqd
+[pvp.cn.1 I 260403 07:43:39.855.432 conn.go:731] INF    4 [REQ-clone.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 I 260403 07:43:39.856.433 conn.go:731] INF    3 [REQ-pvp.cn.1/rpc] (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 07:43:39.856.434 conn.go:731] INF    8 [REQ-arena.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 07:43:39.856.435 conn.go:731] INF    3 [REQ-pvp.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 I 260403 07:43:39.856.436 consumer.go:1175] INF    6 [REQ-card_fight.cn.1/rpc] (127.0.0.1:4150) received CLOSE_WAIT from nsqd
+[pvp.cn.1 I 260403 07:43:39.856.437 conn.go:731] INF    8 [REQ-arena.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 I 260403 07:43:39.856.438 conn.go:731] INF    3 [REQ-pvp.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 07:43:39.856.439 conn.go:731] INF    6 [REQ-card_fight.cn.1/rpc] (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 07:43:39.856.440 conn.go:731] INF    3 [REQ-pvp.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 I 260403 07:43:39.856.441 conn.go:731] INF    6 [REQ-card_fight.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 I 260403 07:43:39.855.426 conn.go:731] INF    7 [REQ-gym.cn.1/rpc] (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 07:43:39.857.443 conn.go:731] INF    7 [REQ-gym.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 I 260403 07:43:39.857.444 consumer.go:1175] INF    5 [REQ-union.cn.1/rpc] (127.0.0.1:4150) received CLOSE_WAIT from nsqd
+[pvp.cn.1 I 260403 07:43:39.858.446 conn.go:731] INF    5 [REQ-union.cn.1/rpc] (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 07:43:39.858.448 conn.go:731] INF    5 [REQ-union.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 I 260403 07:43:39.858.449 conn.go:731] INF    5 [REQ-union.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 07:43:39.858.450 conn.go:731] INF    5 [REQ-union.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 I 260403 07:43:39.858.447 consumer.go:1175] INF   12 [REQ-yyhuodong.cn.1/rpc] (127.0.0.1:4150) received CLOSE_WAIT from nsqd
+[pvp.cn.1 I 260403 07:43:39.858.451 conn.go:731] INF   12 [REQ-yyhuodong.cn.1/rpc] (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 07:43:39.858.453 conn.go:731] INF   12 [REQ-yyhuodong.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 07:43:39.858.454 conn.go:731] INF   12 [REQ-yyhuodong.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 I 260403 07:43:39.858.452 conn.go:731] INF   12 [REQ-yyhuodong.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 I 260403 07:43:39.859.445 conn.go:731] INF    7 [REQ-gym.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 07:43:39.857.442 conn.go:731] INF    6 [REQ-card_fight.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 07:43:39.859.455 conn.go:731] INF    7 [REQ-gym.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 I 260403 07:43:39.859.456 conn.go:731] INF    6 [REQ-card_fight.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 I 260403 07:43:39.862.457 consumer.go:1175] INF   10 [REQ-union_fight.cn.1/rpc] (127.0.0.1:4150) received CLOSE_WAIT from nsqd
+[pvp.cn.1 I 260403 07:43:39.862.458 conn.go:731] INF   10 [REQ-union_fight.cn.1/rpc] (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 07:43:39.862.460 conn.go:731] INF   10 [REQ-union_fight.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 07:43:39.862.459 conn.go:731] INF   10 [REQ-union_fight.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 I 260403 07:43:39.863.461 conn.go:731] INF   10 [REQ-union_fight.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 I 260403 07:43:39.864.462 consumer.go:1175] INF   13 [REQ-hunting.cn.1/rpc] (127.0.0.1:4150) received CLOSE_WAIT from nsqd
+[pvp.cn.1 I 260403 07:43:39.865.463 conn.go:731] INF   13 [REQ-hunting.cn.1/rpc] (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 07:43:39.865.465 conn.go:731] INF   13 [REQ-hunting.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 07:43:39.866.464 conn.go:731] INF   13 [REQ-hunting.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 I 260403 07:43:39.866.466 conn.go:731] INF   13 [REQ-hunting.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 I 260403 07:43:39.925.467 conn.go:731] INF   14 (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 07:43:39.925.468 conn.go:731] INF   14 (127.0.0.1:4150) clean close complete
+[pvp.cn.1 I 260403 07:43:39.955.470 conn.go:731] INF   11 [REQ-craft.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 W 260403 07:43:39.955.471 consumer.go:1175] WRN   11 [REQ-craft.cn.1/rpc] there are 0 connections left alive
+[pvp.cn.1 I 260403 07:43:39.955.472 consumer.go:1175] INF   11 [REQ-craft.cn.1/rpc] stopping handlers
+[pvp.cn.1 I 260403 07:43:39.955.473 consumer.go:1175] INF   11 [REQ-craft.cn.1/rpc] rdyLoop exiting
+[pvp.cn.1 I 260403 07:43:39.955.469 conn.go:731] INF   11 [REQ-craft.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 07:43:39.956.474 conn.go:731] INF    8 [REQ-arena.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 07:43:39.956.475 conn.go:731] INF    8 [REQ-arena.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 W 260403 07:43:39.956.476 consumer.go:1175] WRN    8 [REQ-arena.cn.1/rpc] there are 0 connections left alive
+[pvp.cn.1 I 260403 07:43:39.956.477 consumer.go:1175] INF    8 [REQ-arena.cn.1/rpc] stopping handlers
+[pvp.cn.1 I 260403 07:43:39.957.478 conn.go:731] INF    4 [REQ-clone.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 07:43:39.957.479 conn.go:731] INF    4 [REQ-clone.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 W 260403 07:43:39.957.480 consumer.go:1175] WRN    4 [REQ-clone.cn.1/rpc] there are 0 connections left alive
+[pvp.cn.1 I 260403 07:43:39.957.481 consumer.go:1175] INF    4 [REQ-clone.cn.1/rpc] stopping handlers
+[pvp.cn.1 I 260403 07:43:39.957.482 consumer.go:1175] INF    8 [REQ-arena.cn.1/rpc] rdyLoop exiting
+[pvp.cn.1 I 260403 07:43:39.957.483 consumer.go:1175] INF    4 [REQ-clone.cn.1/rpc] rdyLoop exiting
+[pvp.cn.1 I 260403 07:43:39.957.484 conn.go:731] INF    9 [NotifyGenHuntingCards/arena.cn.1] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 07:43:39.957.485 conn.go:731] INF    9 [NotifyGenHuntingCards/arena.cn.1] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 W 260403 07:43:39.957.486 consumer.go:1175] WRN    9 [NotifyGenHuntingCards/arena.cn.1] there are 0 connections left alive
+[pvp.cn.1 I 260403 07:43:39.957.489 consumer.go:1175] INF    9 [NotifyGenHuntingCards/arena.cn.1] stopping handlers
+[pvp.cn.1 I 260403 07:43:39.957.487 conn.go:731] INF    3 [REQ-pvp.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 07:43:39.957.488 conn.go:731] INF    3 [REQ-pvp.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 W 260403 07:43:39.958.490 consumer.go:1175] WRN    3 [REQ-pvp.cn.1/rpc] there are 0 connections left alive
+[pvp.cn.1 I 260403 07:43:39.958.491 consumer.go:1175] INF    3 [REQ-pvp.cn.1/rpc] stopping handlers
+[pvp.cn.1 I 260403 07:43:39.958.492 consumer.go:1175] INF    9 [NotifyGenHuntingCards/arena.cn.1] rdyLoop exiting
+[pvp.cn.1 I 260403 07:43:39.958.493 consumer.go:1175] INF    3 [REQ-pvp.cn.1/rpc] rdyLoop exiting
+[pvp.cn.1 I 260403 07:43:39.958.494 conn.go:731] INF    5 [REQ-union.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 07:43:39.959.495 conn.go:731] INF    5 [REQ-union.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 W 260403 07:43:39.959.496 consumer.go:1175] WRN    5 [REQ-union.cn.1/rpc] there are 0 connections left alive
+[pvp.cn.1 I 260403 07:43:39.959.497 consumer.go:1175] INF    5 [REQ-union.cn.1/rpc] stopping handlers
+[pvp.cn.1 I 260403 07:43:39.959.498 consumer.go:1175] INF    5 [REQ-union.cn.1/rpc] rdyLoop exiting
+[pvp.cn.1 I 260403 07:43:39.959.499 conn.go:731] INF   12 [REQ-yyhuodong.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 07:43:39.959.500 conn.go:731] INF   12 [REQ-yyhuodong.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 W 260403 07:43:39.959.501 consumer.go:1175] WRN   12 [REQ-yyhuodong.cn.1/rpc] there are 0 connections left alive
+[pvp.cn.1 I 260403 07:43:39.959.502 consumer.go:1175] INF   12 [REQ-yyhuodong.cn.1/rpc] stopping handlers
+[pvp.cn.1 I 260403 07:43:39.959.503 consumer.go:1175] INF   12 [REQ-yyhuodong.cn.1/rpc] rdyLoop exiting
+[pvp.cn.1 I 260403 07:43:39.959.504 conn.go:731] INF    7 [REQ-gym.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 07:43:39.959.505 conn.go:731] INF    7 [REQ-gym.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 W 260403 07:43:39.959.506 consumer.go:1175] WRN    7 [REQ-gym.cn.1/rpc] there are 0 connections left alive
+[pvp.cn.1 I 260403 07:43:39.959.507 consumer.go:1175] INF    7 [REQ-gym.cn.1/rpc] stopping handlers
+[pvp.cn.1 I 260403 07:43:39.959.508 consumer.go:1175] INF    7 [REQ-gym.cn.1/rpc] rdyLoop exiting
+[pvp.cn.1 I 260403 07:43:39.959.509 conn.go:731] INF    6 [REQ-card_fight.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 07:43:39.959.510 conn.go:731] INF    6 [REQ-card_fight.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 W 260403 07:43:39.959.511 consumer.go:1175] WRN    6 [REQ-card_fight.cn.1/rpc] there are 0 connections left alive
+[pvp.cn.1 I 260403 07:43:39.959.512 consumer.go:1175] INF    6 [REQ-card_fight.cn.1/rpc] stopping handlers
+[pvp.cn.1 I 260403 07:43:39.959.513 consumer.go:1175] INF    6 [REQ-card_fight.cn.1/rpc] rdyLoop exiting
+[pvp.cn.1 I 260403 07:43:39.963.514 conn.go:731] INF   10 [REQ-union_fight.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 07:43:39.963.515 conn.go:731] INF   10 [REQ-union_fight.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 W 260403 07:43:39.963.516 consumer.go:1175] WRN   10 [REQ-union_fight.cn.1/rpc] there are 0 connections left alive
+[pvp.cn.1 I 260403 07:43:39.963.517 consumer.go:1175] INF   10 [REQ-union_fight.cn.1/rpc] stopping handlers
+[pvp.cn.1 I 260403 07:43:39.963.518 consumer.go:1175] INF   10 [REQ-union_fight.cn.1/rpc] rdyLoop exiting
+[pvp.cn.1 I 260403 07:43:39.967.519 conn.go:731] INF   13 [REQ-hunting.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 07:43:39.967.520 conn.go:731] INF   13 [REQ-hunting.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 W 260403 07:43:39.967.521 consumer.go:1175] WRN   13 [REQ-hunting.cn.1/rpc] there are 0 connections left alive
+[pvp.cn.1 I 260403 07:43:39.967.522 consumer.go:1175] INF   13 [REQ-hunting.cn.1/rpc] stopping handlers
+[pvp.cn.1 I 260403 07:43:39.967.523 consumer.go:1175] INF   13 [REQ-hunting.cn.1/rpc] rdyLoop exiting
+[pvp.cn.1 E 260403 07:43:40.300.524 conn.go:731] ERR    2 [RESP-c_pvp.cn.1/0global_1rpc] (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 I 260403 07:43:40.300.525 conn.go:731] INF    2 [RESP-c_pvp.cn.1/0global_1rpc] (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 07:43:40.300.526 conn.go:731] INF    2 [RESP-c_pvp.cn.1/0global_1rpc] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 07:43:40.300.527 conn.go:731] INF    2 [RESP-c_pvp.cn.1/0global_1rpc] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 I 260403 07:43:40.300.528 conn.go:731] INF    2 [RESP-c_pvp.cn.1/0global_1rpc] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 I 260403 07:43:40.404.529 conn.go:731] INF    2 [RESP-c_pvp.cn.1/0global_1rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 07:43:40.404.530 conn.go:731] INF    2 [RESP-c_pvp.cn.1/0global_1rpc] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 W 260403 07:43:40.404.531 consumer.go:1175] WRN    2 [RESP-c_pvp.cn.1/0global_1rpc] there are 0 connections left alive
+[pvp.cn.1 I 260403 07:43:40.405.532 consumer.go:1175] INF    2 [RESP-c_pvp.cn.1/0global_1rpc] (127.0.0.1:4150) re-connecting in 5s
+[pvp.cn.1 E 260403 07:43:42.439.533 conn.go:731] ERR    1 (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 I 260403 07:43:42.439.534 conn.go:731] INF    1 (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 07:43:42.439.535 conn.go:731] INF    1 (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 I 260403 07:43:42.439.536 conn.go:731] INF    1 (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 07:43:42.439.537 conn.go:731] INF    1 (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 I 260403 07:43:42.544.538 conn.go:731] INF    1 (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 07:43:42.544.539 conn.go:731] INF    1 (127.0.0.1:4150) clean close complete
+[pvp.cn.1 I 260403 07:43:42.545.540 producer.go:382] INF    1 exiting router
+[pvp.cn.1 W 260403 07:43:42.545.541 rpcclient.go:145] msg 60 pub error not connected
+[pvp.cn.1 I 260403 07:43:44.548.542 producer.go:382] INF    1 (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 E 260403 07:43:44.551.543 producer.go:382] ERR    1 (127.0.0.1:4150) error connecting to nsqd - dial tcp 127.0.0.1:4150: connect: connection refused
+[pvp.cn.1 W 260403 07:43:44.551.544 rpcclient.go:219] msg 60 request err: dial tcp 127.0.0.1:4150: connect: connection refused
+[pvp.cn.1 I 260403 07:43:44.551.545 producer.go:56] 127.0.0.1:4150 attempting to reconnect in 5s
+[pvp.cn.1 I 260403 07:43:45.407.546 consumer.go:1175] INF    2 [RESP-c_pvp.cn.1/0global_1rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 E 260403 07:43:45.408.547 consumer.go:1175] ERR    2 [RESP-c_pvp.cn.1/0global_1rpc] (127.0.0.1:4150) error connecting to nsqd - dial tcp 127.0.0.1:4150: connect: connection refused
+[pvp.cn.1 I 260403 07:43:45.408.548 consumer.go:1175] INF    2 [RESP-c_pvp.cn.1/0global_1rpc] (127.0.0.1:4150) re-connecting in 5s
+[pvp.cn.1 W 260403 07:43:46.555.549 rpcclient.go:219] msg 60 request err: no producer
+[pvp.cn.1 W 260403 07:43:48.556.550 rpcclient.go:219] msg 60 request err: no producer
+2026/04/03 07:43:49 INF   15 (127.0.0.1:4150) connecting to nsqd
+2026/04/03 07:43:49 ERR   15 (127.0.0.1:4150) error connecting to nsqd - dial tcp 127.0.0.1:4150: connect: connection refused
+[pvp.cn.1 W 260403 07:43:49.559.551 producer.go:63] reconnect 127.0.0.1:4150, error <nil>
+[pvp.cn.1 I 260403 07:43:49.559.552 producer.go:56] 127.0.0.1:4150 attempting to reconnect in 5s
+[host_server I 260403 07:43:51.250.001 document.go:151] register document default ok
+[host_server I 260403 07:43:51.255.002 init.go:171] register document ok
+[host_server D 260403 07:43:51.271.003 config.go:49] cwd in /mnt/pokemon/release/pvp
+[host_server D 260403 07:43:51.283.004 config.go:23] GetExtend service pvp.cn.1 &service.Option{Name:"pvp.cn.1", Alias:[]string(nil), Dependent:[]string{"storage.cn.1"}}
+[host_server D 260403 07:43:51.288.005 config.go:23] GetExtend service clone.cn.1 &service.Option{Name:"clone.cn.1", Alias:[]string(nil), Dependent:[]string{"storage.cn.1"}}
+[host_server D 260403 07:43:51.288.006 config.go:23] GetExtend service arena.cn.1 &service.Option{Name:"arena.cn.1", Alias:[]string(nil), Dependent:[]string{"storage.cn.1"}}
+[host_server D 260403 07:43:51.288.007 config.go:23] GetExtend service union.cn.1 &service.Option{Name:"union.cn.1", Alias:[]string(nil), Dependent:[]string{"storage.cn.1"}}
+[host_server D 260403 07:43:51.288.008 config.go:23] GetExtend service union_fight.cn.1 &service.Option{Name:"union_fight.cn.1", Alias:[]string(nil), Dependent:[]string{"storage.cn.1", "game.cn.1", "anticheat"}}
+[host_server D 260403 07:43:51.288.009 config.go:23] GetExtend service craft.cn.1 &service.Option{Name:"craft.cn.1", Alias:[]string(nil), Dependent:[]string{"storage.cn.1", "game.cn.1", "anticheat"}}
+[host_server D 260403 07:43:51.288.010 config.go:23] GetExtend service yyhuodong.cn.1 &service.Option{Name:"yyhuodong.cn.1", Alias:[]string(nil), Dependent:[]string{"storage.cn.1"}}
+[host_server D 260403 07:43:51.288.011 config.go:23] GetExtend service card_fight.cn.1 &service.Option{Name:"card_fight.cn.1", Alias:[]string(nil), Dependent:[]string{"storage.cn.1"}}
+[host_server D 260403 07:43:51.288.012 config.go:23] GetExtend service gym.cn.1 &service.Option{Name:"gym.cn.1", Alias:[]string(nil), Dependent:[]string{"storage.cn.1", "game.cn.1"}}
+[host_server D 260403 07:43:51.288.013 config.go:23] GetExtend service hunting.cn.1 &service.Option{Name:"hunting.cn.1", Alias:[]string(nil), Dependent:[]string{"storage.cn.1"}}
+[host_server I 260403 07:43:51.288.014 config.go:60] pvp.cn.1 config in defines.json
+[pvp.cn.1 I 260403 07:43:51.288.015 main.go:44] &services.Define{ContainerOption:service.ContainerOption{Name:"@pvp.cn.1", Debug:false, Addr:"", NSQLookupd:"http://127.0.0.1:4161/", Mainnsqd:"", NSQTcpAddresses:[]string{"127.0.0.1:4150"}, Shushu:true, Services:[]service.IOption{(*service.Option)(0xc00032a480), (*service.Option)(0xc00032a5c0), (*service.Option)(0xc00032a700), (*service.Option)(0xc00032a840), (*service.Option)(0xc00032a980), (*service.Option)(0xc00032aac0), (*service.Option)(0xc00032ac00), (*service.Option)(0xc00032ad40), (*service.Option)(0xc00032ae80), (*service.Option)(0xc00032afc0)}, ServicesRaw:[]json.RawMessage(nil)}}
+[pvp.cn.1 I 260403 07:43:57.541.019 rpcclient.go:292] create client consumer RESP-c_pvp.cn.1/0global_1rpc
+[pvp.cn.1 I 260403 07:43:57.542.020 consumer.go:1175] INF    2 [RESP-c_pvp.cn.1/0global_1rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 07:43:57.554.021 thinkingdata.go:29] thinkingdata log directory /mnt/logbus_data/@pvp.cn.1
+[pvp.cn.1 I 260403 07:43:57.554.022 container.go:250] remote service storage.cn.1 start
+[pvp.cn.1 I 260403 07:43:57.554.023 container.go:259] service pvp.cn.1 start
+[pvp.cn.1 I 260403 07:43:57.559.024 producer.go:382] INF    1 (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 07:43:57.625.025 service.go:100] CloneRoom Used: 0, Free: 0
+[pvp.cn.1 I 260403 07:43:57.625.026 container.go:259] service clone.cn.1 start
+[pvp.cn.1 I 260403 07:43:57.650.027 service.go:85] load game.cn.1 arena, rank max 0
+[pvp.cn.1 I 260403 07:43:57.674.028 service.go:97] ArenaGlobalHistory from 26030415 to 26040315 has 0
+[pvp.cn.1 I 260403 07:43:57.674.029 container.go:259] service arena.cn.1 start
+[pvp.cn.1 I 260403 07:43:57.699.031 service.go:194] load unions done, count 0
+[pvp.cn.1 I 260403 07:43:57.725.032 service.go:270] load union training count 0
+[pvp.cn.1 I 260403 07:43:57.749.033 service.go:309] RedPacket Used: 0, Free: 0
+[pvp.cn.1 I 260403 07:43:57.749.034 service.go:220] loading unions cost 75ms
+[pvp.cn.1 I 260403 07:43:57.749.035 container.go:259] service union.cn.1 start
+[pvp.cn.1 I 260403 07:43:57.750.036 container.go:250] remote service game.cn.1 start
+[pvp.cn.1 I 260403 07:43:57.750.037 container.go:250] remote service anticheat start
+[pvp.cn.1 I 260403 07:43:57.775.038 service.go:47] load game.cn.1 union fight round 'closed'
+[pvp.cn.1 I 260403 07:43:57.776.039 service.go:53] Union Fight isAllOver True
+[pvp.cn.1 I 260403 07:43:57.776.040 container.go:259] service union_fight.cn.1 start
+[pvp.cn.1 I 260403 07:43:57.800.041 service.go:67] load game.cn.1 craft round closed
+[pvp.cn.1 I 260403 07:43:57.800.042 service.go:73] Craft isAllOver True
+[pvp.cn.1 I 260403 07:43:57.800.043 container.go:259] service craft.cn.1 start
+[pvp.cn.1 I 260403 07:43:57.826.044 service.go:63] load game.cn.1 worldBoss global
+[pvp.cn.1 I 260403 07:43:57.827.045 container.go:259] service yyhuodong.cn.1 start
+[pvp.cn.1 I 260403 07:43:57.854.046 container.go:259] service card_fight.cn.1 start
+[pvp.cn.1 I 260403 07:43:57.875.047 service.go:47] load gym.cn.1 gym global
+[pvp.cn.1 I 260403 07:43:57.875.048 container.go:259] service gym.cn.1 start
+[pvp.cn.1 I 260403 07:43:57.876.049 container.go:259] service hunting.cn.1 start
+[pvp.cn.1 I 260403 07:43:57.876.050 container.go:264] container @pvp.cn.1 start
+[pvp.cn.1 I 260403 07:43:57.876.051 server.go:29] server start ok
+[pvp.cn.1 I 260403 07:43:57.877.053 gym.go:167] Gym.ResetToday key gym.cn.1 round start monday 20260330
+[pvp.cn.1 I 260403 07:43:57.877.054 gym.go:188] Restart round start next closed time delta 54h1m2.122636s
+[pvp.cn.1 I 260403 07:43:57.878.057 rpcserver.go:349] create server consumer REQ-craft.cn.1/rpc
+[pvp.cn.1 I 260403 07:43:57.881.082 rpcserver.go:349] create server consumer REQ-yyhuodong.cn.1/rpc
+[pvp.cn.1 I 260403 07:43:57.884.116 rpcserver.go:349] create server consumer REQ-gym.cn.1/rpc
+[pvp.cn.1 I 260403 07:43:57.885.140 rpcserver.go:349] create server consumer REQ-arena.cn.1/rpc
+[pvp.cn.1 I 260403 07:43:57.886.146 rpcserver.go:457] create server consumer NotifyGenHuntingCards/arena.cn.1
+[pvp.cn.1 I 260403 07:43:57.887.166 rpcserver.go:349] create server consumer REQ-clone.cn.1/rpc
+[pvp.cn.1 I 260403 07:43:57.888.195 rpcserver.go:349] create server consumer REQ-union.cn.1/rpc
+[pvp.cn.1 I 260403 07:43:57.890.255 rpcserver.go:349] create server consumer REQ-union_fight.cn.1/rpc
+[pvp.cn.1 I 260403 07:43:57.891.277 rpcserver.go:349] create server consumer REQ-card_fight.cn.1/rpc
+[pvp.cn.1 I 260403 07:43:57.893.283 rpcserver.go:349] create server consumer REQ-hunting.cn.1/rpc
+[pvp.cn.1 I 260403 07:43:57.894.307 rpcserver.go:349] create server consumer REQ-pvp.cn.1/rpc
+[pvp.cn.1 I 260403 07:43:57.895.340 consumer.go:1175] INF    3 [REQ-craft.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 07:43:57.897.341 consumer.go:1175] INF    4 [REQ-yyhuodong.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 07:43:57.898.342 consumer.go:1175] INF    5 [REQ-gym.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 07:43:57.899.343 consumer.go:1175] INF    6 [REQ-arena.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 07:43:57.900.344 consumer.go:1175] INF    7 [NotifyGenHuntingCards/arena.cn.1] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 07:43:57.901.345 consumer.go:1175] INF    8 [REQ-clone.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 07:43:57.903.346 consumer.go:1175] INF    9 [REQ-union.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 07:43:57.905.347 consumer.go:1175] INF   10 [REQ-union_fight.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 07:43:57.906.348 consumer.go:1175] INF   11 [REQ-card_fight.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 07:43:57.907.349 consumer.go:1175] INF   12 [REQ-hunting.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 07:43:57.908.350 consumer.go:1175] INF   13 [REQ-pvp.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 07:43:57.928.351 framework.go:536] NOTIFY arena.cn.1.NotifyGenHuntingCards [0xc014a228f0]
+[pvp.cn.1 I 260403 07:43:57.932.353 container.go:118] remote service crosshunting.cn.1 start
+[pvp.cn.1 I 260403 07:44:05.791.354 framework.go:534] REQ yyhuodong.cn.1.BraveChallengeYYStart 1 [0xc0004f9258]
+[pvp.cn.1 I 260403 07:44:06.397.355 framework.go:534] REQ union.cn.1.GetCacheModel 2 []
+[pvp.cn.1 I 260403 07:44:06.398.356 rpcserver.go:622] RESP union.cn.1.GetCacheModel 2 1B 518µs from c_game.cn.1
+[pvp.cn.1 I 260403 07:44:06.398.357 producer.go:382] INF   14 (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 07:44:07.579.358 manager.go:250] process dirty, count 2 success 2 fail 0 cost 23.043ms, dirty 0, lru 0, chan 0
+[pvp.cn.1 I 260403 07:44:12.730.359 common.go:140] brave_challenge start runBattleAgentVerify
+
+[pvp.cn.1 I 260403 07:44:12.753.360 rpcserver.go:622] RESP yyhuodong.cn.1.BraveChallengeYYStart 1 1B 6.961985s from c_game.cn.1
+[pvp.cn.1 I 260403 07:46:50.858.361 framework.go:534] REQ craft.cn.1.GetCraftBattleCards 3 [IDHex("69cf5b1136908d001b1ee34d")]
+[pvp.cn.1 I 260403 07:46:50.873.362 rpcserver.go:622] RESP craft.cn.1.GetCraftBattleCards 3 131B 15.029ms from c_game.cn.1
+[pvp.cn.1 I 260403 07:46:50.880.363 framework.go:534] REQ pvp.cn.1.GetCrossCraftBattleCards 4 [IDHex("69cf5b1136908d001b1ee34e")]
+[pvp.cn.1 I 260403 07:46:50.898.364 rpcserver.go:622] RESP pvp.cn.1.GetCrossCraftBattleCards 4 157B 18.337ms from c_game.cn.1
+[pvp.cn.1 I 260403 07:46:50.905.365 framework.go:534] REQ union_fight.cn.1.GetUnionFightBattleCards 5 [IDHex("69cf5b1136908d001b1ee34f")]
+[pvp.cn.1 I 260403 07:46:50.925.366 rpcserver.go:622] RESP union_fight.cn.1.GetUnionFightBattleCards 5 501B 20.305ms from c_game.cn.1
+[pvp.cn.1 I 260403 07:46:50.979.367 framework.go:534] REQ union.cn.1.OnLogin 6 [IDHex("69cf57bc36908d001b1ee319") 0xc0003cee10 0xc0147393c0]
+[pvp.cn.1 I 260403 07:46:50.981.368 rpcserver.go:622] RESP union.cn.1.OnLogin 6 143B 1.732ms from c_game.cn.1
+[pvp.cn.1 I 260403 07:47:40.915.369 framework.go:534] REQ card_fight.cn.1.CardFightUpdate 7 [0xc017531cc0 0xc014548988]
+[pvp.cn.1 I 260403 07:47:40.918.370 rpcserver.go:622] RESP card_fight.cn.1.CardFightUpdate 7 395B 3.9ms from c_game.cn.1
+[pvp.cn.1 I 260403 07:47:50.708.371 framework.go:534] REQ yyhuodong.cn.1.BraveChallengeCreateRecord 8 [IDHex("69cf57bc36908d001b1ee319") 0xc0004f9238]
+[pvp.cn.1 I 260403 07:47:50.750.372 rpcserver.go:622] RESP yyhuodong.cn.1.BraveChallengeCreateRecord 8 425B 41.71ms from c_game.cn.1
+[pvp.cn.1 I 260403 07:47:57.561.373 manager.go:250] process dirty, count 1 success 1 fail 0 cost 1.714ms, dirty 0, lru 0, chan 0
+[pvp.cn.1 I 260403 07:48:57.636.374 framework.go:536] NOTIFY arena.cn.1.NotifyGenHuntingCards [0xc014984010]
+[pvp.cn.1 I 260403 07:51:46.777.376 framework.go:534] REQ union.cn.1.OnLogin 9 [IDHex("69cf57bc36908d001b1ee319") 0xc00042a230 0xc01474c180]
+[pvp.cn.1 I 260403 07:51:46.778.377 rpcserver.go:622] RESP union.cn.1.OnLogin 9 143B 449µs from c_game.cn.1
+[pvp.cn.1 I 260403 07:52:25.306.378 framework.go:534] REQ card_fight.cn.1.CardFightUpdate 10 [0xc00042a230 0xc005fa6128]
+[pvp.cn.1 I 260403 07:52:25.306.379 rpcserver.go:622] RESP card_fight.cn.1.CardFightUpdate 10 409B 610µs from c_game.cn.1
+[pvp.cn.1 I 260403 07:52:29.906.380 framework.go:534] REQ card_fight.cn.1.CardFightUpdate 11 [0xc0003ce050 0xc014548380]
+[pvp.cn.1 I 260403 07:52:29.906.381 rpcserver.go:622] RESP card_fight.cn.1.CardFightUpdate 11 409B 284µs from c_game.cn.1
+[pvp.cn.1 I 260403 07:52:37.564.382 manager.go:250] process dirty, count 1 success 1 fail 0 cost 8.211ms, dirty 0, lru 0, chan 0
+[pvp.cn.1 I 260403 07:53:57.639.383 framework.go:536] NOTIFY arena.cn.1.NotifyGenHuntingCards [0xc014994040]
+[pvp.cn.1 I 260403 07:55:32.866.385 framework.go:534] REQ yyhuodong.cn.1.BraveChallengeYYStart 12 [0xc017236048]
+[pvp.cn.1 I 260403 07:55:32.866.386 rpcserver.go:622] RESP yyhuodong.cn.1.BraveChallengeYYStart 12 1B 263µs from c_game.cn.1
+[pvp.cn.1 I 260403 07:56:11.431.387 framework.go:534] REQ card_fight.cn.1.CardFightUpdate 13 [0xc017531bd0 0xc0000104b8]
+[pvp.cn.1 I 260403 07:56:11.431.388 rpcserver.go:622] RESP card_fight.cn.1.CardFightUpdate 13 409B 609µs from c_game.cn.1
+[pvp.cn.1 I 260403 07:56:27.563.389 manager.go:250] process dirty, count 1 success 1 fail 0 cost 7.917ms, dirty 0, lru 0, chan 0
+[pvp.cn.1 I 260403 07:58:18.998.390 framework.go:534] REQ yyhuodong.cn.1.BraveChallengeYYStart 14 [0xc017902148]
+[pvp.cn.1 I 260403 07:58:18.998.391 rpcserver.go:622] RESP yyhuodong.cn.1.BraveChallengeYYStart 14 1B 298µs from c_game.cn.1
+[pvp.cn.1 I 260403 07:58:57.642.392 framework.go:536] NOTIFY arena.cn.1.NotifyGenHuntingCards [0xc014984010]
+[pvp.cn.1 I 260403 08:03:33.029.394 framework.go:534] REQ yyhuodong.cn.1.BraveChallengeYYStart 15 [0xc0177d9438]
+[pvp.cn.1 I 260403 08:03:33.030.395 rpcserver.go:622] RESP yyhuodong.cn.1.BraveChallengeYYStart 15 1B 998µs from c_game.cn.1
+[pvp.cn.1 I 260403 08:03:57.645.396 framework.go:536] NOTIFY arena.cn.1.NotifyGenHuntingCards [0xc01490e570]
+[pvp.cn.1 I 260403 08:08:57.650.398 framework.go:536] NOTIFY arena.cn.1.NotifyGenHuntingCards [0xc01490e040]
+[pvp.cn.1 I 260403 08:13:57.655.400 framework.go:536] NOTIFY arena.cn.1.NotifyGenHuntingCards [0xc01490e040]
+[pvp.cn.1 I 260403 08:18:57.657.402 framework.go:536] NOTIFY arena.cn.1.NotifyGenHuntingCards [0xc01490e040]
+[pvp.cn.1 I 260403 08:23:57.659.404 framework.go:536] NOTIFY arena.cn.1.NotifyGenHuntingCards [0xc01490e040]
+[pvp.cn.1 I 260403 08:28:57.662.406 framework.go:536] NOTIFY arena.cn.1.NotifyGenHuntingCards [0xc01490e040]
+[pvp.cn.1 I 260403 08:33:57.670.408 framework.go:536] NOTIFY arena.cn.1.NotifyGenHuntingCards [0xc01490e040]
+[pvp.cn.1 I 260403 08:34:00.179.410 framework.go:534] REQ craft.cn.1.Deploy 16 [IDHex("69cf5b1136908d001b1ee34d") 0xc0004865c0 0xc0003cd410]
+[pvp.cn.1 I 260403 08:34:00.182.411 rpcserver.go:622] RESP craft.cn.1.Deploy 16 1B 3.792ms from c_game.cn.1
+[pvp.cn.1 I 260403 08:34:00.207.412 framework.go:534] REQ union_fight.cn.1.Deploy 17 [IDHex("69cf5b1136908d001b1ee34f") 0xc000480ff0 0xc014714b60]
+[pvp.cn.1 I 260403 08:34:00.208.413 rpcserver.go:622] RESP union_fight.cn.1.Deploy 17 1B 2.019ms from c_game.cn.1
+[pvp.cn.1 I 260403 08:34:00.244.414 framework.go:534] REQ pvp.cn.1.CrossCraftDeploy 18 [IDHex("69cf5b1136908d001b1ee34e") 0xc0004871c0 0xc000561bf0 0xc014995950 0xc000565bb8]
+[pvp.cn.1 I 260403 08:34:00.245.415 rpcserver.go:622] RESP pvp.cn.1.CrossCraftDeploy 18 1B 957µs from c_game.cn.1
+[pvp.cn.1 I 260403 08:34:17.575.416 manager.go:250] process dirty, count 3 success 3 fail 0 cost 19.217ms, dirty 0, lru 0, chan 0
+[pvp.cn.1 E 260403 08:38:32.109.419 conn.go:731] ERR    9 [REQ-union.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 E 260403 08:38:32.109.418 conn.go:731] ERR    6 [REQ-arena.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 E 260403 08:38:32.114.420 conn.go:731] ERR    1 (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 I 260403 08:38:32.115.422 conn.go:731] INF    6 [REQ-arena.cn.1/rpc] (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 08:38:32.115.423 conn.go:731] INF    1 (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 08:38:32.115.424 conn.go:731] INF    6 [REQ-arena.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 I 260403 08:38:32.115.425 conn.go:731] INF    1 (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 E 260403 08:38:32.115.426 conn.go:731] ERR    7 [NotifyGenHuntingCards/arena.cn.1] (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 E 260403 08:38:32.115.427 conn.go:731] ERR    3 [REQ-craft.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 I 260403 08:38:32.115.428 conn.go:731] INF    7 [NotifyGenHuntingCards/arena.cn.1] (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 08:38:32.115.429 conn.go:731] INF    3 [REQ-craft.cn.1/rpc] (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 08:38:32.115.430 conn.go:731] INF    7 [NotifyGenHuntingCards/arena.cn.1] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 I 260403 08:38:32.115.431 conn.go:731] INF    3 [REQ-craft.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 E 260403 08:38:32.115.433 conn.go:731] ERR    4 [REQ-yyhuodong.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 I 260403 08:38:32.115.434 conn.go:731] INF    4 [REQ-yyhuodong.cn.1/rpc] (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 08:38:32.115.435 conn.go:731] INF    4 [REQ-yyhuodong.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 E 260403 08:38:32.115.436 conn.go:731] ERR    5 [REQ-gym.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 I 260403 08:38:32.115.437 conn.go:731] INF    5 [REQ-gym.cn.1/rpc] (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 08:38:32.115.438 conn.go:731] INF    5 [REQ-gym.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 I 260403 08:38:32.116.439 conn.go:731] INF    1 (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 08:38:32.116.440 conn.go:731] INF    1 (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 I 260403 08:38:32.116.441 conn.go:731] INF    3 [REQ-craft.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 08:38:32.116.442 conn.go:731] INF    3 [REQ-craft.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 I 260403 08:38:32.116.443 conn.go:731] INF    4 [REQ-yyhuodong.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 08:38:32.116.444 conn.go:731] INF    4 [REQ-yyhuodong.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 I 260403 08:38:32.116.445 conn.go:731] INF    5 [REQ-gym.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 08:38:32.116.446 conn.go:731] INF    5 [REQ-gym.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 E 260403 08:38:32.116.447 conn.go:731] ERR   11 [REQ-card_fight.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 I 260403 08:38:32.116.448 conn.go:731] INF   11 [REQ-card_fight.cn.1/rpc] (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 08:38:32.116.449 conn.go:731] INF   11 [REQ-card_fight.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 E 260403 08:38:32.116.450 conn.go:731] ERR   12 [REQ-hunting.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 I 260403 08:38:32.116.451 conn.go:731] INF   12 [REQ-hunting.cn.1/rpc] (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 08:38:32.116.452 conn.go:731] INF   12 [REQ-hunting.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 I 260403 08:38:32.116.453 conn.go:731] INF   11 [REQ-card_fight.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 08:38:32.116.454 conn.go:731] INF   11 [REQ-card_fight.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 I 260403 08:38:32.116.455 conn.go:731] INF   12 [REQ-hunting.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 08:38:32.116.456 conn.go:731] INF   12 [REQ-hunting.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 E 260403 08:38:32.116.457 conn.go:731] ERR   13 [REQ-pvp.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 I 260403 08:38:32.116.458 conn.go:731] INF   13 [REQ-pvp.cn.1/rpc] (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 08:38:32.116.459 conn.go:731] INF   13 [REQ-pvp.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 I 260403 08:38:32.116.460 conn.go:731] INF   13 [REQ-pvp.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 08:38:32.116.461 conn.go:731] INF   13 [REQ-pvp.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 E 260403 08:38:32.116.462 conn.go:731] ERR   14 (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 I 260403 08:38:32.116.463 conn.go:731] INF   14 (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 08:38:32.116.464 conn.go:731] INF   14 (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 I 260403 08:38:32.116.465 conn.go:731] INF   14 (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 08:38:32.116.466 conn.go:731] INF   14 (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 I 260403 08:38:32.116.467 conn.go:731] INF    6 [REQ-arena.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 08:38:32.117.468 conn.go:731] INF    6 [REQ-arena.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 I 260403 08:38:32.117.469 conn.go:731] INF    7 [NotifyGenHuntingCards/arena.cn.1] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 08:38:32.117.470 conn.go:731] INF    7 [NotifyGenHuntingCards/arena.cn.1] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 E 260403 08:38:32.117.471 conn.go:731] ERR   10 [REQ-union_fight.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 I 260403 08:38:32.117.472 conn.go:731] INF   10 [REQ-union_fight.cn.1/rpc] (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 08:38:32.117.473 conn.go:731] INF   10 [REQ-union_fight.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 I 260403 08:38:32.117.474 conn.go:731] INF   10 [REQ-union_fight.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 08:38:32.117.475 conn.go:731] INF   10 [REQ-union_fight.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 E 260403 08:38:32.115.432 conn.go:731] ERR    8 [REQ-clone.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 I 260403 08:38:32.117.476 conn.go:731] INF    8 [REQ-clone.cn.1/rpc] (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 08:38:32.117.477 conn.go:731] INF    8 [REQ-clone.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 I 260403 08:38:32.117.478 conn.go:731] INF    8 [REQ-clone.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 08:38:32.117.479 conn.go:731] INF    8 [REQ-clone.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 I 260403 08:38:32.115.421 conn.go:731] INF    9 [REQ-union.cn.1/rpc] (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 08:38:32.117.480 conn.go:731] INF    9 [REQ-union.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 I 260403 08:38:32.117.481 conn.go:731] INF    9 [REQ-union.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 E 260403 08:38:32.109.417 conn.go:731] ERR    2 [RESP-c_pvp.cn.1/0global_1rpc] (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 I 260403 08:38:32.117.483 conn.go:731] INF    2 [RESP-c_pvp.cn.1/0global_1rpc] (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 08:38:32.117.482 conn.go:731] INF    9 [REQ-union.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 I 260403 08:38:32.117.484 conn.go:731] INF    2 [RESP-c_pvp.cn.1/0global_1rpc] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 I 260403 08:38:32.117.485 conn.go:731] INF    2 [RESP-c_pvp.cn.1/0global_1rpc] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 08:38:32.117.486 conn.go:731] INF    2 [RESP-c_pvp.cn.1/0global_1rpc] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 I 260403 08:38:32.216.487 conn.go:731] INF    1 (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 08:38:32.216.488 conn.go:731] INF    1 (127.0.0.1:4150) clean close complete
+[pvp.cn.1 I 260403 08:38:32.216.490 conn.go:731] INF    4 [REQ-yyhuodong.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 08:38:32.216.491 conn.go:731] INF    4 [REQ-yyhuodong.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 W 260403 08:38:32.216.492 consumer.go:1175] WRN    4 [REQ-yyhuodong.cn.1/rpc] there are 0 connections left alive
+[pvp.cn.1 I 260403 08:38:32.217.493 consumer.go:1175] INF    4 [REQ-yyhuodong.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[pvp.cn.1 I 260403 08:38:32.216.489 conn.go:731] INF    3 [REQ-craft.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 08:38:32.217.494 conn.go:731] INF    7 [NotifyGenHuntingCards/arena.cn.1] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 08:38:32.217.496 conn.go:731] INF    7 [NotifyGenHuntingCards/arena.cn.1] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 I 260403 08:38:32.217.495 conn.go:731] INF    3 [REQ-craft.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 W 260403 08:38:32.217.498 consumer.go:1175] WRN    7 [NotifyGenHuntingCards/arena.cn.1] there are 0 connections left alive
+[pvp.cn.1 W 260403 08:38:32.217.497 consumer.go:1175] WRN    3 [REQ-craft.cn.1/rpc] there are 0 connections left alive
+[pvp.cn.1 I 260403 08:38:32.217.499 consumer.go:1175] INF    7 [NotifyGenHuntingCards/arena.cn.1] (127.0.0.1:4150) re-connecting in 5s
+[pvp.cn.1 I 260403 08:38:32.217.500 conn.go:731] INF   11 [REQ-card_fight.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 08:38:32.217.501 consumer.go:1175] INF    3 [REQ-craft.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[pvp.cn.1 I 260403 08:38:32.217.502 conn.go:731] INF   11 [REQ-card_fight.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 W 260403 08:38:32.218.503 consumer.go:1175] WRN   11 [REQ-card_fight.cn.1/rpc] there are 0 connections left alive
+[pvp.cn.1 I 260403 08:38:32.218.504 consumer.go:1175] INF   11 [REQ-card_fight.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[pvp.cn.1 I 260403 08:38:32.218.505 conn.go:731] INF   14 (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 08:38:32.218.507 conn.go:731] INF   14 (127.0.0.1:4150) clean close complete
+[pvp.cn.1 I 260403 08:38:32.218.508 conn.go:731] INF    5 [REQ-gym.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 08:38:32.218.509 conn.go:731] INF    5 [REQ-gym.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 W 260403 08:38:32.219.512 consumer.go:1175] WRN    5 [REQ-gym.cn.1/rpc] there are 0 connections left alive
+[pvp.cn.1 I 260403 08:38:32.219.513 consumer.go:1175] INF    5 [REQ-gym.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[pvp.cn.1 I 260403 08:38:32.218.511 producer.go:382] INF    1 exiting router
+[pvp.cn.1 I 260403 08:38:32.218.510 producer.go:382] INF   14 exiting router
+[pvp.cn.1 I 260403 08:38:32.219.514 conn.go:731] INF   12 [REQ-hunting.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 08:38:32.218.506 conn.go:731] INF    6 [REQ-arena.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 08:38:32.219.515 conn.go:731] INF    2 [RESP-c_pvp.cn.1/0global_1rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 08:38:32.219.516 conn.go:731] INF    6 [REQ-arena.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 I 260403 08:38:32.219.517 conn.go:731] INF    8 [REQ-clone.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 08:38:32.219.518 conn.go:731] INF    2 [RESP-c_pvp.cn.1/0global_1rpc] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 I 260403 08:38:32.219.522 conn.go:731] INF    8 [REQ-clone.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 W 260403 08:38:32.219.523 consumer.go:1175] WRN    8 [REQ-clone.cn.1/rpc] there are 0 connections left alive
+[pvp.cn.1 I 260403 08:38:32.219.524 consumer.go:1175] INF    8 [REQ-clone.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[pvp.cn.1 I 260403 08:38:32.219.525 conn.go:731] INF   13 [REQ-pvp.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 08:38:32.219.526 conn.go:731] INF   13 [REQ-pvp.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 W 260403 08:38:32.219.521 consumer.go:1175] WRN    2 [RESP-c_pvp.cn.1/0global_1rpc] there are 0 connections left alive
+[pvp.cn.1 I 260403 08:38:32.220.527 consumer.go:1175] INF    2 [RESP-c_pvp.cn.1/0global_1rpc] (127.0.0.1:4150) re-connecting in 5s
+[pvp.cn.1 I 260403 08:38:32.220.528 conn.go:731] INF    9 [REQ-union.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 08:38:32.220.529 conn.go:731] INF    9 [REQ-union.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 I 260403 08:38:32.220.520 conn.go:731] INF   12 [REQ-hunting.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 W 260403 08:38:32.219.519 consumer.go:1175] WRN    6 [REQ-arena.cn.1/rpc] there are 0 connections left alive
+[pvp.cn.1 W 260403 08:38:32.220.530 consumer.go:1175] WRN    9 [REQ-union.cn.1/rpc] there are 0 connections left alive
+[pvp.cn.1 I 260403 08:38:32.220.532 consumer.go:1175] INF    6 [REQ-arena.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[pvp.cn.1 I 260403 08:38:32.221.533 consumer.go:1175] INF    9 [REQ-union.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[pvp.cn.1 W 260403 08:38:32.221.534 consumer.go:1175] WRN   13 [REQ-pvp.cn.1/rpc] there are 0 connections left alive
+[pvp.cn.1 I 260403 08:38:32.221.535 conn.go:731] INF   10 [REQ-union_fight.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 08:38:32.221.537 conn.go:731] INF   10 [REQ-union_fight.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 W 260403 08:38:32.221.538 consumer.go:1175] WRN   10 [REQ-union_fight.cn.1/rpc] there are 0 connections left alive
+[pvp.cn.1 I 260403 08:38:32.221.539 consumer.go:1175] INF   10 [REQ-union_fight.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[pvp.cn.1 I 260403 08:38:32.221.536 consumer.go:1175] INF   13 [REQ-pvp.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[pvp.cn.1 W 260403 08:38:32.220.531 consumer.go:1175] WRN   12 [REQ-hunting.cn.1/rpc] there are 0 connections left alive
+[pvp.cn.1 I 260403 08:38:32.221.540 consumer.go:1175] INF   12 [REQ-hunting.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[pvp.cn.1 I 260403 08:38:37.217.542 consumer.go:1175] INF    7 [NotifyGenHuntingCards/arena.cn.1] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 08:38:37.217.541 consumer.go:1175] INF    4 [REQ-yyhuodong.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 08:38:37.220.544 consumer.go:1175] INF    3 [REQ-craft.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 08:38:37.219.543 consumer.go:1175] INF   11 [REQ-card_fight.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 08:38:37.222.545 consumer.go:1175] INF   13 [REQ-pvp.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 08:38:37.222.546 consumer.go:1175] INF    5 [REQ-gym.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 08:38:37.223.547 consumer.go:1175] INF    9 [REQ-union.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 08:38:37.223.548 consumer.go:1175] INF    2 [RESP-c_pvp.cn.1/0global_1rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 08:38:37.224.549 consumer.go:1175] INF   12 [REQ-hunting.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 08:38:37.224.550 consumer.go:1175] INF   10 [REQ-union_fight.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 08:38:37.225.552 consumer.go:1175] INF    8 [REQ-clone.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 08:38:37.224.551 consumer.go:1175] INF    6 [REQ-arena.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 08:38:56.599.553 framework.go:534] REQ craft.cn.1.GetCraftBattleCards 19 [IDHex("69cf5b1136908d001b1ee34d")]
+[pvp.cn.1 I 260403 08:38:56.600.554 rpcserver.go:622] RESP craft.cn.1.GetCraftBattleCards 19 131B 2.352ms from c_game.cn.1
+[pvp.cn.1 I 260403 08:38:56.600.555 producer.go:382] INF   14 (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 08:38:56.618.556 framework.go:534] REQ pvp.cn.1.GetCrossCraftBattleCards 20 [IDHex("69cf5b1136908d001b1ee34e")]
+[pvp.cn.1 I 260403 08:38:56.618.557 rpcserver.go:622] RESP pvp.cn.1.GetCrossCraftBattleCards 20 157B 221µs from c_game.cn.1
+[pvp.cn.1 I 260403 08:38:56.643.558 framework.go:534] REQ union_fight.cn.1.GetUnionFightBattleCards 21 [IDHex("69cf5b1136908d001b1ee34f")]
+[pvp.cn.1 I 260403 08:38:56.644.559 rpcserver.go:622] RESP union_fight.cn.1.GetUnionFightBattleCards 21 501B 969µs from c_game.cn.1
+[pvp.cn.1 I 260403 08:38:56.725.560 framework.go:534] REQ union.cn.1.OnLogin 22 [IDHex("69cf57bc36908d001b1ee319") 0xc000480640 0xc0147aca80]
+[pvp.cn.1 I 260403 08:38:56.725.561 rpcserver.go:622] RESP union.cn.1.OnLogin 22 143B 331µs from c_game.cn.1
+[pvp.cn.1 I 260403 08:38:57.673.562 framework.go:536] NOTIFY arena.cn.1.NotifyGenHuntingCards [0xc014994040]
+[pvp.cn.1 I 260403 08:38:57.674.563 producer.go:382] INF    1 (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 08:39:25.017.565 framework.go:534] REQ card_fight.cn.1.CardFightUpdate 23 [0xc0004b4960 0xc0000105d0]
+[pvp.cn.1 I 260403 08:39:25.018.566 rpcserver.go:622] RESP card_fight.cn.1.CardFightUpdate 23 409B 775µs from c_game.cn.1
+[pvp.cn.1 I 260403 08:39:37.562.567 manager.go:250] process dirty, count 1 success 1 fail 0 cost 5.062ms, dirty 0, lru 0, chan 0
+[pvp.cn.1 I 260403 08:42:31.660.568 framework.go:534] REQ yyhuodong.cn.1.BraveChallengeYYStart 24 [0xc0008ecac8]
+[pvp.cn.1 I 260403 08:42:31.661.569 rpcserver.go:622] RESP yyhuodong.cn.1.BraveChallengeYYStart 24 1B 397µs from c_game.cn.1
+[pvp.cn.1 I 260403 08:43:04.953.570 framework.go:534] REQ union.cn.1.OnLogin 25 [IDHex("69cf57bc36908d001b1ee319") 0xc0003ce050 0xc01474cfa0]
+[pvp.cn.1 I 260403 08:43:04.953.571 rpcserver.go:622] RESP union.cn.1.OnLogin 25 143B 330µs from c_game.cn.1
+[pvp.cn.1 I 260403 08:43:57.669.572 framework.go:536] NOTIFY arena.cn.1.NotifyGenHuntingCards [0xc0149a6090]
+[pvp.cn.1 I 260403 08:44:10.502.574 framework.go:534] REQ yyhuodong.cn.1.BraveChallengeYYStart 26 [0xc01795a898]
+[pvp.cn.1 I 260403 08:44:10.502.575 rpcserver.go:622] RESP yyhuodong.cn.1.BraveChallengeYYStart 26 1B 194µs from c_game.cn.1
+[pvp.cn.1 I 260403 08:46:05.375.576 framework.go:534] REQ yyhuodong.cn.1.BraveChallengeYYStart 27 [0xc00b8873d8]
+[pvp.cn.1 I 260403 08:46:05.375.577 rpcserver.go:622] RESP yyhuodong.cn.1.BraveChallengeYYStart 27 1B 156µs from c_game.cn.1
+[pvp.cn.1 I 260403 08:46:58.223.578 framework.go:534] REQ yyhuodong.cn.1.BraveChallengeYYStart 28 [0xc01795ac48]
+[pvp.cn.1 I 260403 08:46:58.223.579 rpcserver.go:622] RESP yyhuodong.cn.1.BraveChallengeYYStart 28 1B 450µs from c_game.cn.1
+[pvp.cn.1 I 260403 08:47:38.168.580 framework.go:534] REQ card_fight.cn.1.CardFightUpdate 29 [0xc0004b4140 0xc0148c6300]
+[pvp.cn.1 I 260403 08:47:38.168.581 rpcserver.go:622] RESP card_fight.cn.1.CardFightUpdate 29 521B 738µs from c_game.cn.1
+[pvp.cn.1 I 260403 08:47:57.566.582 manager.go:250] process dirty, count 1 success 1 fail 0 cost 4.929ms, dirty 0, lru 0, chan 0
+[pvp.cn.1 I 260403 08:48:46.601.583 framework.go:534] REQ yyhuodong.cn.1.BraveChallengeYYStart 30 [0xc01795aa78]
+[pvp.cn.1 I 260403 08:48:46.601.584 rpcserver.go:622] RESP yyhuodong.cn.1.BraveChallengeYYStart 30 1B 198µs from c_game.cn.1
+[pvp.cn.1 I 260403 08:48:57.670.585 framework.go:536] NOTIFY arena.cn.1.NotifyGenHuntingCards [0xc0149a60a0]
+[pvp.cn.1 I 260403 08:49:12.542.587 framework.go:534] REQ union.cn.1.OnLogin 31 [IDHex("69cf57bc36908d001b1ee319") 0xc0003ce050 0xc01474cfa0]
+[pvp.cn.1 I 260403 08:49:12.543.588 rpcserver.go:622] RESP union.cn.1.OnLogin 31 143B 610µs from c_game.cn.1
+[pvp.cn.1 I 260403 08:49:35.033.589 framework.go:534] REQ yyhuodong.cn.1.BraveChallengeYYStart 32 [0xc0004ea708]
+[pvp.cn.1 I 260403 08:49:35.033.590 rpcserver.go:622] RESP yyhuodong.cn.1.BraveChallengeYYStart 32 1B 136µs from c_game.cn.1
+[pvp.cn.1 I 260403 08:52:50.476.591 framework.go:534] REQ yyhuodong.cn.1.BraveChallengeYYStart 33 [0xc0004ea748]
+[pvp.cn.1 I 260403 08:52:50.476.592 rpcserver.go:622] RESP yyhuodong.cn.1.BraveChallengeYYStart 33 1B 515µs from c_game.cn.1
+[pvp.cn.1 I 260403 08:53:57.678.593 framework.go:536] NOTIFY arena.cn.1.NotifyGenHuntingCards [0xc01490e040]
+[pvp.cn.1 I 260403 08:54:24.692.595 framework.go:534] REQ card_fight.cn.1.CardFightUpdate 34 [0xc0003ce190 0xc0148c6458]
+[pvp.cn.1 I 260403 08:54:24.693.596 rpcserver.go:622] RESP card_fight.cn.1.CardFightUpdate 34 521B 638µs from c_game.cn.1
+[pvp.cn.1 I 260403 08:54:37.564.597 manager.go:250] process dirty, count 1 success 1 fail 0 cost 4.751ms, dirty 0, lru 0, chan 0
+[pvp.cn.1 I 260403 08:54:41.417.598 framework.go:534] REQ card_fight.cn.1.CardFightUpdate 35 [0xc017531bd0 0xc000010680]
+[pvp.cn.1 I 260403 08:54:41.418.599 rpcserver.go:622] RESP card_fight.cn.1.CardFightUpdate 35 521B 437µs from c_game.cn.1
+[pvp.cn.1 I 260403 08:54:57.564.600 manager.go:250] process dirty, count 1 success 1 fail 0 cost 4.228ms, dirty 0, lru 0, chan 0
+[pvp.cn.1 I 260403 08:58:57.681.601 framework.go:536] NOTIFY arena.cn.1.NotifyGenHuntingCards [0xc0149a6040]
+[pvp.cn.1 I 260403 09:03:57.685.603 framework.go:536] NOTIFY arena.cn.1.NotifyGenHuntingCards [0xc014984020]
+[pvp.cn.1 I 260403 09:08:57.688.605 framework.go:536] NOTIFY arena.cn.1.NotifyGenHuntingCards [0xc014984010]
+[pvp.cn.1 I 260403 09:13:57.690.607 framework.go:536] NOTIFY arena.cn.1.NotifyGenHuntingCards [0xc014984010]
+[pvp.cn.1 I 260403 09:18:42.251.609 framework.go:534] REQ card_fight.cn.1.CardFightUpdate 36 [0xc0003ce050 0xc005fa60d0]
+[pvp.cn.1 I 260403 09:18:42.253.610 rpcserver.go:622] RESP card_fight.cn.1.CardFightUpdate 36 437B 4.146ms from c_game.cn.1
+[pvp.cn.1 I 260403 09:18:57.563.611 manager.go:250] process dirty, count 1 success 1 fail 0 cost 5.711ms, dirty 0, lru 0, chan 0
+[pvp.cn.1 I 260403 09:18:57.687.612 framework.go:536] NOTIFY arena.cn.1.NotifyGenHuntingCards [0xc0149ba3d0]
+[pvp.cn.1 I 260403 09:21:49.464.614 framework.go:534] REQ union.cn.1.OnLogin 37 [IDHex("69cf57bc36908d001b1ee319") 0xc017531c20 0xc014714180]
+[pvp.cn.1 I 260403 09:21:49.465.615 rpcserver.go:622] RESP union.cn.1.OnLogin 37 143B 1.7ms from c_game.cn.1
+[pvp.cn.1 I 260403 09:23:57.691.616 framework.go:536] NOTIFY arena.cn.1.NotifyGenHuntingCards [0xc01490e040]
+[pvp.cn.1 I 260403 09:28:57.697.618 framework.go:536] NOTIFY arena.cn.1.NotifyGenHuntingCards [0xc014984010]
+[pvp.cn.1 I 260403 09:31:22.326.620 framework.go:534] REQ union.cn.1.OnLogin 38 [IDHex("69cf57bc36908d001b1ee319") 0xc017531bd0 0xc014714180]
+[pvp.cn.1 I 260403 09:31:22.327.621 rpcserver.go:622] RESP union.cn.1.OnLogin 38 143B 694µs from c_game.cn.1
+[pvp.cn.1 E 260403 09:31:39.403.622 conn.go:731] ERR    1 (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 E 260403 09:31:39.403.623 conn.go:731] ERR   14 (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 I 260403 09:31:39.411.624 conn.go:731] INF   14 (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 09:31:39.411.626 conn.go:731] INF   14 (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 I 260403 09:31:39.411.625 conn.go:731] INF    1 (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 09:31:39.411.627 conn.go:731] INF   14 (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 09:31:39.411.628 conn.go:731] INF    1 (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 I 260403 09:31:39.411.629 conn.go:731] INF   14 (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 I 260403 09:31:39.412.630 conn.go:731] INF    1 (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 E 260403 09:31:39.412.632 conn.go:731] ERR    4 [REQ-yyhuodong.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 E 260403 09:31:39.412.633 conn.go:731] ERR    7 [NotifyGenHuntingCards/arena.cn.1] (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 E 260403 09:31:39.413.634 conn.go:731] ERR    5 [REQ-gym.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 I 260403 09:31:39.413.635 conn.go:731] INF    4 [REQ-yyhuodong.cn.1/rpc] (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 09:31:39.413.638 conn.go:731] INF    4 [REQ-yyhuodong.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 I 260403 09:31:39.412.631 conn.go:731] INF    1 (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 I 260403 09:31:39.414.639 conn.go:731] INF    4 [REQ-yyhuodong.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 09:31:39.414.641 conn.go:731] INF    4 [REQ-yyhuodong.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 E 260403 09:31:39.414.642 conn.go:731] ERR    8 [REQ-clone.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 I 260403 09:31:39.414.643 conn.go:731] INF    8 [REQ-clone.cn.1/rpc] (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 09:31:39.414.644 conn.go:731] INF    8 [REQ-clone.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 E 260403 09:31:39.414.645 conn.go:731] ERR    6 [REQ-arena.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 I 260403 09:31:39.414.646 conn.go:731] INF    6 [REQ-arena.cn.1/rpc] (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 09:31:39.414.647 conn.go:731] INF    6 [REQ-arena.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 I 260403 09:31:39.413.637 conn.go:731] INF    5 [REQ-gym.cn.1/rpc] (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 09:31:39.414.649 conn.go:731] INF    5 [REQ-gym.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 E 260403 09:31:39.414.650 conn.go:731] ERR    9 [REQ-union.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 I 260403 09:31:39.414.651 conn.go:731] INF    9 [REQ-union.cn.1/rpc] (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 09:31:39.414.652 conn.go:731] INF    9 [REQ-union.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 I 260403 09:31:39.414.636 conn.go:731] INF    7 [NotifyGenHuntingCards/arena.cn.1] (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 09:31:39.414.654 conn.go:731] INF    7 [NotifyGenHuntingCards/arena.cn.1] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 E 260403 09:31:39.414.655 conn.go:731] ERR   11 [REQ-card_fight.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 I 260403 09:31:39.414.656 conn.go:731] INF   11 [REQ-card_fight.cn.1/rpc] (127.0.0.1:4150) beginning close
+[pvp.cn.1 E 260403 09:31:39.414.640 conn.go:731] ERR   12 [REQ-hunting.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 I 260403 09:31:39.415.657 conn.go:731] INF   12 [REQ-hunting.cn.1/rpc] (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 09:31:39.415.658 conn.go:731] INF   12 [REQ-hunting.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 E 260403 09:31:39.415.659 conn.go:731] ERR   10 [REQ-union_fight.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 I 260403 09:31:39.415.660 conn.go:731] INF   10 [REQ-union_fight.cn.1/rpc] (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 09:31:39.415.661 conn.go:731] INF   10 [REQ-union_fight.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 I 260403 09:31:39.415.662 conn.go:731] INF   12 [REQ-hunting.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 09:31:39.415.663 conn.go:731] INF   12 [REQ-hunting.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 I 260403 09:31:39.415.664 conn.go:731] INF   10 [REQ-union_fight.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 09:31:39.415.665 conn.go:731] INF   10 [REQ-union_fight.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 I 260403 09:31:39.414.648 conn.go:731] INF    8 [REQ-clone.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 09:31:39.415.666 conn.go:731] INF    8 [REQ-clone.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 I 260403 09:31:39.415.667 conn.go:731] INF    6 [REQ-arena.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 09:31:39.415.668 conn.go:731] INF    6 [REQ-arena.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 I 260403 09:31:39.415.670 conn.go:731] INF    9 [REQ-union.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 09:31:39.415.671 conn.go:731] INF    9 [REQ-union.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 I 260403 09:31:39.415.669 conn.go:731] INF    5 [REQ-gym.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 E 260403 09:31:39.415.672 conn.go:731] ERR   13 [REQ-pvp.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 I 260403 09:31:39.415.673 conn.go:731] INF    5 [REQ-gym.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 I 260403 09:31:39.416.674 conn.go:731] INF   13 [REQ-pvp.cn.1/rpc] (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 09:31:39.416.675 conn.go:731] INF   13 [REQ-pvp.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 I 260403 09:31:39.416.676 conn.go:731] INF   13 [REQ-pvp.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 E 260403 09:31:39.416.677 conn.go:731] ERR    3 [REQ-craft.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 I 260403 09:31:39.416.678 conn.go:731] INF   13 [REQ-pvp.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 I 260403 09:31:39.416.679 conn.go:731] INF    3 [REQ-craft.cn.1/rpc] (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 09:31:39.416.680 conn.go:731] INF    3 [REQ-craft.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 I 260403 09:31:39.416.681 conn.go:731] INF    3 [REQ-craft.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 09:31:39.416.682 conn.go:731] INF    3 [REQ-craft.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 I 260403 09:31:39.416.683 conn.go:731] INF    7 [NotifyGenHuntingCards/arena.cn.1] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 09:31:39.416.684 conn.go:731] INF    7 [NotifyGenHuntingCards/arena.cn.1] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 E 260403 09:31:39.414.653 conn.go:731] ERR    2 [RESP-c_pvp.cn.1/0global_1rpc] (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 I 260403 09:31:39.416.685 conn.go:731] INF    2 [RESP-c_pvp.cn.1/0global_1rpc] (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 09:31:39.416.686 conn.go:731] INF   11 [REQ-card_fight.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 09:31:39.416.687 conn.go:731] INF   11 [REQ-card_fight.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 I 260403 09:31:39.416.688 conn.go:731] INF    2 [RESP-c_pvp.cn.1/0global_1rpc] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 09:31:39.416.689 conn.go:731] INF    2 [RESP-c_pvp.cn.1/0global_1rpc] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 I 260403 09:31:39.416.690 conn.go:731] INF    2 [RESP-c_pvp.cn.1/0global_1rpc] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 I 260403 09:31:39.418.691 conn.go:731] INF   11 [REQ-card_fight.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 I 260403 09:31:39.512.692 conn.go:731] INF   14 (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 09:31:39.512.693 conn.go:731] INF   14 (127.0.0.1:4150) clean close complete
+[pvp.cn.1 I 260403 09:31:39.512.694 producer.go:382] INF   14 exiting router
+[pvp.cn.1 I 260403 09:31:39.514.695 conn.go:731] INF    1 (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 09:31:39.514.696 conn.go:731] INF    1 (127.0.0.1:4150) clean close complete
+[pvp.cn.1 I 260403 09:31:39.514.697 producer.go:382] INF    1 exiting router
+[pvp.cn.1 I 260403 09:31:39.514.698 conn.go:731] INF    4 [REQ-yyhuodong.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 09:31:39.514.699 conn.go:731] INF    4 [REQ-yyhuodong.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 W 260403 09:31:39.514.700 consumer.go:1175] WRN    4 [REQ-yyhuodong.cn.1/rpc] there are 0 connections left alive
+[pvp.cn.1 I 260403 09:31:39.514.701 consumer.go:1175] INF    4 [REQ-yyhuodong.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[pvp.cn.1 I 260403 09:31:39.515.702 conn.go:731] INF   10 [REQ-union_fight.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 09:31:39.516.703 conn.go:731] INF   10 [REQ-union_fight.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 W 260403 09:31:39.516.704 consumer.go:1175] WRN   10 [REQ-union_fight.cn.1/rpc] there are 0 connections left alive
+[pvp.cn.1 I 260403 09:31:39.516.705 consumer.go:1175] INF   10 [REQ-union_fight.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[pvp.cn.1 I 260403 09:31:39.516.706 conn.go:731] INF   12 [REQ-hunting.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 09:31:39.516.707 conn.go:731] INF   12 [REQ-hunting.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 W 260403 09:31:39.516.708 consumer.go:1175] WRN   12 [REQ-hunting.cn.1/rpc] there are 0 connections left alive
+[pvp.cn.1 I 260403 09:31:39.516.709 consumer.go:1175] INF   12 [REQ-hunting.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[pvp.cn.1 I 260403 09:31:39.516.710 conn.go:731] INF    5 [REQ-gym.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 09:31:39.516.711 conn.go:731] INF    5 [REQ-gym.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 W 260403 09:31:39.516.712 consumer.go:1175] WRN    5 [REQ-gym.cn.1/rpc] there are 0 connections left alive
+[pvp.cn.1 I 260403 09:31:39.516.713 consumer.go:1175] INF    5 [REQ-gym.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[pvp.cn.1 I 260403 09:31:39.516.714 conn.go:731] INF    7 [NotifyGenHuntingCards/arena.cn.1] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 09:31:39.516.717 conn.go:731] INF    7 [NotifyGenHuntingCards/arena.cn.1] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 I 260403 09:31:39.516.716 conn.go:731] INF    3 [REQ-craft.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 W 260403 09:31:39.516.719 consumer.go:1175] WRN    7 [NotifyGenHuntingCards/arena.cn.1] there are 0 connections left alive
+[pvp.cn.1 I 260403 09:31:39.516.720 conn.go:731] INF    3 [REQ-craft.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 I 260403 09:31:39.516.721 consumer.go:1175] INF    7 [NotifyGenHuntingCards/arena.cn.1] (127.0.0.1:4150) re-connecting in 5s
+[pvp.cn.1 W 260403 09:31:39.516.722 consumer.go:1175] WRN    3 [REQ-craft.cn.1/rpc] there are 0 connections left alive
+[pvp.cn.1 I 260403 09:31:39.516.723 conn.go:731] INF    8 [REQ-clone.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 09:31:39.516.724 consumer.go:1175] INF    3 [REQ-craft.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[pvp.cn.1 I 260403 09:31:39.516.718 conn.go:731] INF    9 [REQ-union.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 09:31:39.516.725 conn.go:731] INF    6 [REQ-arena.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 09:31:39.516.727 conn.go:731] INF    6 [REQ-arena.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 I 260403 09:31:39.516.728 conn.go:731] INF    9 [REQ-union.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 W 260403 09:31:39.516.729 consumer.go:1175] WRN    6 [REQ-arena.cn.1/rpc] there are 0 connections left alive
+[pvp.cn.1 I 260403 09:31:39.516.731 consumer.go:1175] INF    6 [REQ-arena.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[pvp.cn.1 I 260403 09:31:39.516.726 conn.go:731] INF    8 [REQ-clone.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 W 260403 09:31:39.516.732 consumer.go:1175] WRN    8 [REQ-clone.cn.1/rpc] there are 0 connections left alive
+[pvp.cn.1 I 260403 09:31:39.516.733 consumer.go:1175] INF    8 [REQ-clone.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[pvp.cn.1 I 260403 09:31:39.516.715 conn.go:731] INF   13 [REQ-pvp.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 09:31:39.516.734 conn.go:731] INF   13 [REQ-pvp.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 W 260403 09:31:39.516.735 consumer.go:1175] WRN   13 [REQ-pvp.cn.1/rpc] there are 0 connections left alive
+[pvp.cn.1 I 260403 09:31:39.516.736 consumer.go:1175] INF   13 [REQ-pvp.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[pvp.cn.1 W 260403 09:31:39.516.730 consumer.go:1175] WRN    9 [REQ-union.cn.1/rpc] there are 0 connections left alive
+[pvp.cn.1 I 260403 09:31:39.516.737 consumer.go:1175] INF    9 [REQ-union.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[pvp.cn.1 I 260403 09:31:39.517.738 conn.go:731] INF    2 [RESP-c_pvp.cn.1/0global_1rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 09:31:39.517.739 conn.go:731] INF    2 [RESP-c_pvp.cn.1/0global_1rpc] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 W 260403 09:31:39.517.740 consumer.go:1175] WRN    2 [RESP-c_pvp.cn.1/0global_1rpc] there are 0 connections left alive
+[pvp.cn.1 I 260403 09:31:39.517.741 consumer.go:1175] INF    2 [RESP-c_pvp.cn.1/0global_1rpc] (127.0.0.1:4150) re-connecting in 5s
+[pvp.cn.1 I 260403 09:31:39.518.742 conn.go:731] INF   11 [REQ-card_fight.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 09:31:39.518.743 conn.go:731] INF   11 [REQ-card_fight.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 W 260403 09:31:39.518.744 consumer.go:1175] WRN   11 [REQ-card_fight.cn.1/rpc] there are 0 connections left alive
+[pvp.cn.1 I 260403 09:31:39.518.745 consumer.go:1175] INF   11 [REQ-card_fight.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[pvp.cn.1 I 260403 09:31:44.520.746 consumer.go:1175] INF    8 [REQ-clone.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 09:31:44.521.747 consumer.go:1175] INF    5 [REQ-gym.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 09:31:44.523.749 consumer.go:1175] INF   11 [REQ-card_fight.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 09:31:44.523.750 consumer.go:1175] INF   10 [REQ-union_fight.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 09:31:44.523.751 consumer.go:1175] INF   12 [REQ-hunting.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 09:31:44.523.752 consumer.go:1175] INF    9 [REQ-union.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 09:31:44.524.753 consumer.go:1175] INF    2 [RESP-c_pvp.cn.1/0global_1rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 09:31:44.525.754 consumer.go:1175] INF   13 [REQ-pvp.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 09:31:44.525.755 consumer.go:1175] INF    4 [REQ-yyhuodong.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 09:31:44.525.756 consumer.go:1175] INF    3 [REQ-craft.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 09:31:44.526.757 consumer.go:1175] INF    6 [REQ-arena.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 09:31:44.522.748 consumer.go:1175] INF    7 [NotifyGenHuntingCards/arena.cn.1] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 09:33:57.698.758 framework.go:536] NOTIFY arena.cn.1.NotifyGenHuntingCards [0xc01491a010]
+[pvp.cn.1 I 260403 09:33:57.699.759 producer.go:382] INF    1 (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 09:35:37.981.761 framework.go:534] REQ craft.cn.1.Deploy 39 [IDHex("69cf5b1136908d001b1ee34d") 0xc000436200 0xc0178eb8c0]
+[pvp.cn.1 I 260403 09:35:37.983.762 rpcserver.go:622] RESP craft.cn.1.Deploy 39 1B 3.403ms from c_game.cn.1
+[pvp.cn.1 I 260403 09:35:37.983.763 producer.go:382] INF   14 (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 09:35:37.990.764 framework.go:534] REQ craft.cn.1.GetCraftView 40 [IDHex("69cf57bc36908d001b1ee319") IDHex("69cf5b1136908d001b1ee34d")]
+[pvp.cn.1 I 260403 09:35:38.029.765 rpcserver.go:622] RESP craft.cn.1.GetCraftView 40 12900B 38.834ms from c_game.cn.1
+[pvp.cn.1 I 260403 09:35:40.135.766 framework.go:534] REQ craft.cn.1.DeployHold 41 [IDHex("69cf5b1136908d001b1ee34d") 0xc000436f80 0xc0007f7020]
+[pvp.cn.1 I 260403 09:35:40.137.767 rpcserver.go:622] RESP craft.cn.1.DeployHold 41 1B 1.775ms from c_game.cn.1
+[pvp.cn.1 I 260403 09:35:40.140.768 framework.go:534] REQ craft.cn.1.GetCraftView 42 [IDHex("69cf57bc36908d001b1ee319") IDHex("69cf5b1136908d001b1ee34d")]
+[pvp.cn.1 I 260403 09:35:40.140.769 rpcserver.go:622] RESP craft.cn.1.GetCraftView 42 12900B 599µs from c_game.cn.1
+[pvp.cn.1 I 260403 09:35:45.049.770 framework.go:534] REQ craft.cn.1.DeployHold 43 [IDHex("69cf5b1136908d001b1ee34d") 0xc0003be440 0xc000501050]
+[pvp.cn.1 I 260403 09:35:45.049.771 rpcserver.go:622] RESP craft.cn.1.DeployHold 43 1B 1.195ms from c_game.cn.1
+[pvp.cn.1 I 260403 09:35:45.064.772 framework.go:534] REQ craft.cn.1.GetCraftView 44 [IDHex("69cf57bc36908d001b1ee319") IDHex("69cf5b1136908d001b1ee34d")]
+[pvp.cn.1 I 260403 09:35:45.065.773 rpcserver.go:622] RESP craft.cn.1.GetCraftView 44 12908B 765µs from c_game.cn.1
+[pvp.cn.1 I 260403 09:35:47.560.774 manager.go:250] process dirty, count 1 success 1 fail 0 cost 4.095ms, dirty 0, lru 0, chan 0
+[pvp.cn.1 I 260403 09:35:56.599.775 framework.go:534] REQ craft.cn.1.GetBetInfo 45 []
+[pvp.cn.1 I 260403 09:35:56.600.776 rpcserver.go:622] RESP craft.cn.1.GetBetInfo 45 1B 1.086ms from c_game.cn.1
+[pvp.cn.1 I 260403 09:38:19.025.777 framework.go:534] REQ union.cn.1.OnLogin 46 [IDHex("69cf57bc36908d001b1ee319") 0xc017531bd0 0xc01474cfa0]
+[pvp.cn.1 I 260403 09:38:19.025.778 rpcserver.go:622] RESP union.cn.1.OnLogin 46 143B 260µs from c_game.cn.1
+[pvp.cn.1 I 260403 09:38:57.698.779 framework.go:536] NOTIFY arena.cn.1.NotifyGenHuntingCards [0xc014994040]
+[pvp.cn.1 I 260403 09:43:57.699.781 framework.go:536] NOTIFY arena.cn.1.NotifyGenHuntingCards [0xc014994040]
+[pvp.cn.1 I 260403 09:48:57.702.783 framework.go:536] NOTIFY arena.cn.1.NotifyGenHuntingCards [0xc014994040]
+[pvp.cn.1 I 260403 09:52:47.717.785 framework.go:534] REQ card_fight.cn.1.CardFightUpdate 47 [0xc0003ce050 0xc014548540]
+[pvp.cn.1 I 260403 09:52:47.718.786 rpcserver.go:622] RESP card_fight.cn.1.CardFightUpdate 47 423B 771µs from c_game.cn.1
+[pvp.cn.1 I 260403 09:52:57.566.787 manager.go:250] process dirty, count 1 success 1 fail 0 cost 11.485ms, dirty 0, lru 0, chan 0
+[pvp.cn.1 I 260403 09:53:06.267.788 framework.go:534] REQ card_fight.cn.1.CardFightUpdate 48 [0xc0004b4140 0xc0148c64b8]
+[pvp.cn.1 I 260403 09:53:06.268.789 rpcserver.go:622] RESP card_fight.cn.1.CardFightUpdate 48 535B 1.1ms from c_game.cn.1
+[pvp.cn.1 I 260403 09:53:17.565.790 manager.go:250] process dirty, count 1 success 1 fail 0 cost 9.462ms, dirty 0, lru 0, chan 0
+[pvp.cn.1 I 260403 09:53:51.601.791 framework.go:534] REQ card_fight.cn.1.CardFightUpdate 49 [0xc0003ce2d0 0xc014548b00]
+[pvp.cn.1 I 260403 09:53:51.601.792 rpcserver.go:622] RESP card_fight.cn.1.CardFightUpdate 49 15B 566µs from c_game.cn.1
+[pvp.cn.1 I 260403 09:53:57.707.793 framework.go:536] NOTIFY arena.cn.1.NotifyGenHuntingCards [0xc014995ed0]
+[pvp.cn.1 I 260403 09:54:07.560.795 manager.go:250] process dirty, count 1 success 1 fail 0 cost 3.898ms, dirty 0, lru 0, chan 0
+[pvp.cn.1 I 260403 09:54:39.992.796 framework.go:534] REQ card_fight.cn.1.CardFightUpdate 50 [0xc0004b41e0 0xc0145484a0]
+[pvp.cn.1 I 260403 09:54:39.992.797 rpcserver.go:622] RESP card_fight.cn.1.CardFightUpdate 50 15B 217µs from c_game.cn.1
+[pvp.cn.1 I 260403 09:54:57.564.798 manager.go:250] process dirty, count 1 success 1 fail 0 cost 8.534ms, dirty 0, lru 0, chan 0
+[pvp.cn.1 I 260403 09:55:07.241.799 framework.go:534] REQ card_fight.cn.1.CardFightUpdate 51 [0xc0004b4af0 0xc0145486f8]
+[pvp.cn.1 I 260403 09:55:07.242.800 rpcserver.go:622] RESP card_fight.cn.1.CardFightUpdate 51 15B 273µs from c_game.cn.1
+[pvp.cn.1 I 260403 09:55:17.564.801 manager.go:250] process dirty, count 1 success 1 fail 0 cost 9.385ms, dirty 0, lru 0, chan 0
+[pvp.cn.1 I 260403 09:58:04.717.802 framework.go:534] REQ card_fight.cn.1.CardFightUpdate 52 [0xc0003ce050 0xc005fa62e8]
+[pvp.cn.1 I 260403 09:58:04.717.803 rpcserver.go:622] RESP card_fight.cn.1.CardFightUpdate 52 15B 552µs from c_game.cn.1
+[pvp.cn.1 I 260403 09:58:17.566.804 manager.go:250] process dirty, count 1 success 1 fail 0 cost 10.395ms, dirty 0, lru 0, chan 0
+[pvp.cn.1 I 260403 09:58:57.707.805 framework.go:536] NOTIFY arena.cn.1.NotifyGenHuntingCards [0xc01490e040]
+[pvp.cn.1 I 260403 09:59:50.780.807 framework.go:534] REQ card_fight.cn.1.CardFightRank 53 [0xc0003ce1e0 0xc014cbe8f8 0xc013f90c70 0xc013f90c78]
+[pvp.cn.1 I 260403 09:59:50.788.808 rpcserver.go:622] RESP card_fight.cn.1.CardFightRank 53 178B 7.914ms from c_game.cn.1
+[pvp.cn.1 I 260403 10:00:07.565.809 manager.go:250] process dirty, count 1 success 1 fail 0 cost 9.549ms, dirty 0, lru 0, chan 0
+[pvp.cn.1 I 260403 10:03:57.715.810 framework.go:536] NOTIFY arena.cn.1.NotifyGenHuntingCards [0xc014994040]
+[pvp.cn.1 I 260403 10:08:57.717.812 framework.go:536] NOTIFY arena.cn.1.NotifyGenHuntingCards [0xc014994040]
+[pvp.cn.1 I 260403 10:13:57.718.814 framework.go:536] NOTIFY arena.cn.1.NotifyGenHuntingCards [0xc01491a0a0]
+[pvp.cn.1 I 260403 10:18:09.070.816 framework.go:534] REQ arena.cn.1.GetRankRange 54 [0xc0177d8630 0xc0177d8638]
+[pvp.cn.1 I 260403 10:18:09.072.817 rpcserver.go:622] RESP arena.cn.1.GetRankRange 54 18B 2.657ms from c_game.cn.1
+[pvp.cn.1 I 260403 10:18:57.723.818 framework.go:536] NOTIFY arena.cn.1.NotifyGenHuntingCards [0xc0149ba030]
+[pvp.cn.1 E 260403 10:19:04.992.821 conn.go:731] ERR   14 (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 I 260403 10:19:04.993.822 conn.go:731] INF   14 (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 10:19:04.993.823 conn.go:731] INF   14 (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 E 260403 10:19:04.993.824 conn.go:731] ERR    8 [REQ-clone.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 I 260403 10:19:04.993.825 conn.go:731] INF    8 [REQ-clone.cn.1/rpc] (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 10:19:04.993.826 conn.go:731] INF   14 (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 10:19:04.994.828 conn.go:731] INF   14 (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 I 260403 10:19:04.993.827 conn.go:731] INF    8 [REQ-clone.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 E 260403 10:19:04.994.829 conn.go:731] ERR    5 [REQ-gym.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 I 260403 10:19:04.994.830 conn.go:731] INF    5 [REQ-gym.cn.1/rpc] (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 10:19:04.994.831 conn.go:731] INF    5 [REQ-gym.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 I 260403 10:19:04.994.832 conn.go:731] INF    8 [REQ-clone.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 E 260403 10:19:04.994.833 conn.go:731] ERR   11 [REQ-card_fight.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 I 260403 10:19:04.994.835 conn.go:731] INF   11 [REQ-card_fight.cn.1/rpc] (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 10:19:04.994.834 conn.go:731] INF    8 [REQ-clone.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 I 260403 10:19:04.994.836 conn.go:731] INF   11 [REQ-card_fight.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 E 260403 10:19:04.994.837 conn.go:731] ERR   10 [REQ-union_fight.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 I 260403 10:19:04.994.838 conn.go:731] INF   10 [REQ-union_fight.cn.1/rpc] (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 10:19:04.994.840 conn.go:731] INF   10 [REQ-union_fight.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 E 260403 10:19:04.994.839 conn.go:731] ERR   12 [REQ-hunting.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 I 260403 10:19:04.994.841 conn.go:731] INF    5 [REQ-gym.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 10:19:04.994.842 conn.go:731] INF   12 [REQ-hunting.cn.1/rpc] (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 10:19:04.994.843 conn.go:731] INF    5 [REQ-gym.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 I 260403 10:19:04.994.844 conn.go:731] INF   12 [REQ-hunting.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 I 260403 10:19:04.994.845 conn.go:731] INF   11 [REQ-card_fight.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 10:19:04.994.846 conn.go:731] INF   11 [REQ-card_fight.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 I 260403 10:19:04.994.848 conn.go:731] INF   10 [REQ-union_fight.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 E 260403 10:19:04.994.847 conn.go:731] ERR    9 [REQ-union.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 I 260403 10:19:04.994.849 conn.go:731] INF   10 [REQ-union_fight.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 I 260403 10:19:04.994.850 conn.go:731] INF    9 [REQ-union.cn.1/rpc] (127.0.0.1:4150) beginning close
+[pvp.cn.1 E 260403 10:19:04.994.851 conn.go:731] ERR   13 [REQ-pvp.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 I 260403 10:19:04.995.853 conn.go:731] INF   13 [REQ-pvp.cn.1/rpc] (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 10:19:04.995.852 conn.go:731] INF    9 [REQ-union.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 I 260403 10:19:04.995.854 conn.go:731] INF   13 [REQ-pvp.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 E 260403 10:19:04.995.856 conn.go:731] ERR    4 [REQ-yyhuodong.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 E 260403 10:19:04.995.855 conn.go:731] ERR    2 [RESP-c_pvp.cn.1/0global_1rpc] (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 I 260403 10:19:04.995.857 conn.go:731] INF    4 [REQ-yyhuodong.cn.1/rpc] (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 10:19:04.995.858 conn.go:731] INF    2 [RESP-c_pvp.cn.1/0global_1rpc] (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 10:19:04.995.859 conn.go:731] INF    4 [REQ-yyhuodong.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 I 260403 10:19:04.995.861 conn.go:731] INF   13 [REQ-pvp.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 10:19:04.995.860 conn.go:731] INF    2 [RESP-c_pvp.cn.1/0global_1rpc] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 I 260403 10:19:04.995.863 conn.go:731] INF   12 [REQ-hunting.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 10:19:04.995.864 conn.go:731] INF   12 [REQ-hunting.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 E 260403 10:19:04.995.865 conn.go:731] ERR    3 [REQ-craft.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 I 260403 10:19:04.995.866 conn.go:731] INF    3 [REQ-craft.cn.1/rpc] (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 10:19:04.995.867 conn.go:731] INF    3 [REQ-craft.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 I 260403 10:19:04.995.868 conn.go:731] INF    9 [REQ-union.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 10:19:04.995.869 conn.go:731] INF    9 [REQ-union.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 I 260403 10:19:04.995.870 conn.go:731] INF    2 [RESP-c_pvp.cn.1/0global_1rpc] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 10:19:04.995.871 conn.go:731] INF    2 [RESP-c_pvp.cn.1/0global_1rpc] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 I 260403 10:19:04.995.872 conn.go:731] INF    3 [REQ-craft.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 10:19:04.995.873 conn.go:731] INF    3 [REQ-craft.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 E 260403 10:19:04.996.874 conn.go:731] ERR    6 [REQ-arena.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 I 260403 10:19:04.996.875 conn.go:731] INF    6 [REQ-arena.cn.1/rpc] (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 10:19:04.996.876 conn.go:731] INF    6 [REQ-arena.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 I 260403 10:19:04.996.877 conn.go:731] INF    6 [REQ-arena.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 10:19:04.996.878 conn.go:731] INF    6 [REQ-arena.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 E 260403 10:19:04.996.879 conn.go:731] ERR    7 [NotifyGenHuntingCards/arena.cn.1] (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 I 260403 10:19:04.995.862 conn.go:731] INF   13 [REQ-pvp.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 I 260403 10:19:04.997.881 conn.go:731] INF    4 [REQ-yyhuodong.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 10:19:04.997.882 conn.go:731] INF    4 [REQ-yyhuodong.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 E 260403 10:19:04.992.820 conn.go:731] ERR    1 (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 I 260403 10:19:04.998.883 conn.go:731] INF    1 (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 10:19:04.998.884 conn.go:731] INF    1 (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 I 260403 10:19:04.998.885 conn.go:731] INF    1 (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 10:19:04.998.886 conn.go:731] INF    1 (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 I 260403 10:19:04.996.880 conn.go:731] INF    7 [NotifyGenHuntingCards/arena.cn.1] (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 10:19:04.999.888 conn.go:731] INF    7 [NotifyGenHuntingCards/arena.cn.1] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 10:19:04.999.887 conn.go:731] INF    7 [NotifyGenHuntingCards/arena.cn.1] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 I 260403 10:19:05.000.889 conn.go:731] INF    7 [NotifyGenHuntingCards/arena.cn.1] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 I 260403 10:19:05.095.890 conn.go:731] INF   14 (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 10:19:05.095.891 conn.go:731] INF   14 (127.0.0.1:4150) clean close complete
+[pvp.cn.1 I 260403 10:19:05.095.892 producer.go:382] INF   14 exiting router
+[pvp.cn.1 I 260403 10:19:05.095.893 conn.go:731] INF    8 [REQ-clone.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 W 260403 10:19:05.095.894 consumer.go:1175] WRN    8 [REQ-clone.cn.1/rpc] there are 0 connections left alive
+[pvp.cn.1 I 260403 10:19:05.095.895 consumer.go:1175] INF    8 [REQ-clone.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[pvp.cn.1 I 260403 10:19:05.096.896 conn.go:731] INF    2 [RESP-c_pvp.cn.1/0global_1rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 10:19:05.096.897 conn.go:731] INF   12 [REQ-hunting.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 10:19:05.096.898 conn.go:731] INF   12 [REQ-hunting.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 I 260403 10:19:05.096.899 conn.go:731] INF    2 [RESP-c_pvp.cn.1/0global_1rpc] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 W 260403 10:19:05.096.900 consumer.go:1175] WRN   12 [REQ-hunting.cn.1/rpc] there are 0 connections left alive
+[pvp.cn.1 W 260403 10:19:05.096.901 consumer.go:1175] WRN    2 [RESP-c_pvp.cn.1/0global_1rpc] there are 0 connections left alive
+[pvp.cn.1 I 260403 10:19:05.096.902 consumer.go:1175] INF   12 [REQ-hunting.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[pvp.cn.1 I 260403 10:19:05.096.903 consumer.go:1175] INF    2 [RESP-c_pvp.cn.1/0global_1rpc] (127.0.0.1:4150) re-connecting in 5s
+[pvp.cn.1 I 260403 10:19:05.096.904 conn.go:731] INF    9 [REQ-union.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 10:19:05.096.905 conn.go:731] INF    9 [REQ-union.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 W 260403 10:19:05.096.906 consumer.go:1175] WRN    9 [REQ-union.cn.1/rpc] there are 0 connections left alive
+[pvp.cn.1 I 260403 10:19:05.096.907 conn.go:731] INF    6 [REQ-arena.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 10:19:05.096.908 consumer.go:1175] INF    9 [REQ-union.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[pvp.cn.1 I 260403 10:19:05.096.909 conn.go:731] INF    6 [REQ-arena.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 I 260403 10:19:05.096.910 conn.go:731] INF    3 [REQ-craft.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 10:19:05.096.912 conn.go:731] INF    3 [REQ-craft.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 W 260403 10:19:05.096.913 consumer.go:1175] WRN    3 [REQ-craft.cn.1/rpc] there are 0 connections left alive
+[pvp.cn.1 I 260403 10:19:05.096.914 consumer.go:1175] INF    3 [REQ-craft.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[pvp.cn.1 I 260403 10:19:05.097.915 conn.go:731] INF    8 [REQ-clone.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 W 260403 10:19:05.096.911 consumer.go:1175] WRN    6 [REQ-arena.cn.1/rpc] there are 0 connections left alive
+[pvp.cn.1 I 260403 10:19:05.097.916 consumer.go:1175] INF    6 [REQ-arena.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[pvp.cn.1 I 260403 10:19:05.102.917 conn.go:731] INF   11 [REQ-card_fight.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 10:19:05.102.918 conn.go:731] INF    5 [REQ-gym.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 10:19:05.102.919 conn.go:731] INF    4 [REQ-yyhuodong.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 10:19:05.102.920 conn.go:731] INF   10 [REQ-union_fight.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 10:19:05.102.921 conn.go:731] INF   11 [REQ-card_fight.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 I 260403 10:19:05.102.922 conn.go:731] INF    5 [REQ-gym.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 I 260403 10:19:05.102.923 conn.go:731] INF    4 [REQ-yyhuodong.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 W 260403 10:19:05.102.925 consumer.go:1175] WRN   11 [REQ-card_fight.cn.1/rpc] there are 0 connections left alive
+[pvp.cn.1 W 260403 10:19:05.102.926 consumer.go:1175] WRN    5 [REQ-gym.cn.1/rpc] there are 0 connections left alive
+[pvp.cn.1 W 260403 10:19:05.102.927 consumer.go:1175] WRN    4 [REQ-yyhuodong.cn.1/rpc] there are 0 connections left alive
+[pvp.cn.1 I 260403 10:19:05.102.928 consumer.go:1175] INF   11 [REQ-card_fight.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[pvp.cn.1 I 260403 10:19:05.102.929 consumer.go:1175] INF    5 [REQ-gym.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[pvp.cn.1 I 260403 10:19:05.102.930 consumer.go:1175] INF    4 [REQ-yyhuodong.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[pvp.cn.1 I 260403 10:19:05.103.931 conn.go:731] INF   13 [REQ-pvp.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 10:19:05.103.932 conn.go:731] INF    7 [NotifyGenHuntingCards/arena.cn.1] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 10:19:05.103.933 conn.go:731] INF    1 (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 10:19:05.103.934 conn.go:731] INF   13 [REQ-pvp.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 I 260403 10:19:05.103.935 conn.go:731] INF    7 [NotifyGenHuntingCards/arena.cn.1] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 I 260403 10:19:05.103.936 conn.go:731] INF    1 (127.0.0.1:4150) clean close complete
+[pvp.cn.1 W 260403 10:19:05.103.937 consumer.go:1175] WRN   13 [REQ-pvp.cn.1/rpc] there are 0 connections left alive
+[pvp.cn.1 W 260403 10:19:05.103.938 consumer.go:1175] WRN    7 [NotifyGenHuntingCards/arena.cn.1] there are 0 connections left alive
+[pvp.cn.1 I 260403 10:19:05.103.939 producer.go:382] INF    1 exiting router
+[pvp.cn.1 I 260403 10:19:05.103.940 consumer.go:1175] INF   13 [REQ-pvp.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[pvp.cn.1 I 260403 10:19:05.103.941 consumer.go:1175] INF    7 [NotifyGenHuntingCards/arena.cn.1] (127.0.0.1:4150) re-connecting in 5s
+[pvp.cn.1 I 260403 10:19:05.102.924 conn.go:731] INF   10 [REQ-union_fight.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 W 260403 10:19:05.103.942 consumer.go:1175] WRN   10 [REQ-union_fight.cn.1/rpc] there are 0 connections left alive
+[pvp.cn.1 I 260403 10:19:05.103.943 consumer.go:1175] INF   10 [REQ-union_fight.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[pvp.cn.1 I 260403 10:19:10.097.945 consumer.go:1175] INF    8 [REQ-clone.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 10:19:10.097.944 consumer.go:1175] INF    2 [RESP-c_pvp.cn.1/0global_1rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 10:19:10.098.946 consumer.go:1175] INF   12 [REQ-hunting.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 10:19:10.098.947 consumer.go:1175] INF    3 [REQ-craft.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 10:19:10.100.948 consumer.go:1175] INF    9 [REQ-union.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 10:19:10.101.949 consumer.go:1175] INF    6 [REQ-arena.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 10:19:10.105.950 consumer.go:1175] INF    7 [NotifyGenHuntingCards/arena.cn.1] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 10:19:10.106.951 consumer.go:1175] INF   13 [REQ-pvp.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 10:19:10.107.952 consumer.go:1175] INF    4 [REQ-yyhuodong.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 10:19:10.108.953 consumer.go:1175] INF    5 [REQ-gym.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 10:19:10.109.954 consumer.go:1175] INF   11 [REQ-card_fight.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 10:19:10.109.955 consumer.go:1175] INF   10 [REQ-union_fight.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 10:20:56.176.956 framework.go:534] REQ union.cn.1.OnLogin 55 [IDHex("69cf57bc36908d001b1ee319") 0xc000480640 0xc0147aca80]
+[pvp.cn.1 I 260403 10:20:56.177.957 rpcserver.go:622] RESP union.cn.1.OnLogin 55 143B 626µs from c_game.cn.1
+[pvp.cn.1 I 260403 10:20:56.177.958 producer.go:382] INF   14 (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 10:23:57.726.959 framework.go:536] NOTIFY arena.cn.1.NotifyGenHuntingCards [0xc014994040]
+[pvp.cn.1 I 260403 10:23:57.727.960 producer.go:382] INF    1 (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 10:28:57.722.962 framework.go:536] NOTIFY arena.cn.1.NotifyGenHuntingCards [0xc014994040]
+[pvp.cn.1 I 260403 10:30:06.278.964 framework.go:534] REQ card_fight.cn.1.CardFightUpdate 56 [0xc00042a370 0xc005fa62d0]
+[pvp.cn.1 I 260403 10:30:06.282.965 rpcserver.go:622] RESP card_fight.cn.1.CardFightUpdate 56 549B 5ms from c_game.cn.1
+[pvp.cn.1 I 260403 10:30:17.569.966 manager.go:250] process dirty, count 1 success 1 fail 0 cost 12.949ms, dirty 0, lru 0, chan 0
+[pvp.cn.1 I 260403 10:33:57.723.967 framework.go:536] NOTIFY arena.cn.1.NotifyGenHuntingCards [0xc0149ce020]
+[pvp.cn.1 I 260403 10:37:36.254.969 framework.go:534] REQ union.cn.1.OnLogin 57 [IDHex("69cf57bc36908d001b1ee319") 0xc00042a230 0xc014788340]
+[pvp.cn.1 I 260403 10:37:36.256.970 rpcserver.go:622] RESP union.cn.1.OnLogin 57 143B 3.798ms from c_game.cn.1
+[pvp.cn.1 I 260403 10:38:57.731.971 framework.go:536] NOTIFY arena.cn.1.NotifyGenHuntingCards [0xc014994060]
+[pvp.cn.1 I 260403 10:43:57.735.973 framework.go:536] NOTIFY arena.cn.1.NotifyGenHuntingCards [0xc0149ce020]
+[pvp.cn.1 I 260403 10:45:25.373.975 framework.go:534] REQ card_fight.cn.1.CardFightUpdate 58 [0xc00042a230 0xc000010540]
+[pvp.cn.1 I 260403 10:45:25.373.976 rpcserver.go:622] RESP card_fight.cn.1.CardFightUpdate 58 563B 1.069ms from c_game.cn.1
+[pvp.cn.1 I 260403 10:45:37.567.977 manager.go:250] process dirty, count 1 success 1 fail 0 cost 9.509ms, dirty 0, lru 0, chan 0
+[pvp.cn.1 I 260403 10:48:04.731.978 framework.go:534] REQ union.cn.1.OnLogin 59 [IDHex("69cf57bc36908d001b1ee319") 0xc00042a230 0xc01474cfa0]
+[pvp.cn.1 I 260403 10:48:04.732.979 rpcserver.go:622] RESP union.cn.1.OnLogin 59 143B 682µs from c_game.cn.1
+[pvp.cn.1 I 260403 10:48:57.738.980 framework.go:536] NOTIFY arena.cn.1.NotifyGenHuntingCards [0xc014a00020]
+[pvp.cn.1 I 260403 10:53:57.739.982 framework.go:536] NOTIFY arena.cn.1.NotifyGenHuntingCards [0xc01491a0b0]
+[pvp.cn.1 I 260403 10:58:57.747.984 framework.go:536] NOTIFY arena.cn.1.NotifyGenHuntingCards [0xc01491a0a0]
+[pvp.cn.1 I 260403 11:03:57.748.986 framework.go:536] NOTIFY arena.cn.1.NotifyGenHuntingCards [0xc0149ce060]
+[pvp.cn.1 E 260403 11:05:38.514.988 conn.go:731] ERR   14 (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 I 260403 11:05:38.515.989 conn.go:731] INF   14 (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 11:05:38.515.990 conn.go:731] INF   14 (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 I 260403 11:05:38.515.991 conn.go:731] INF   14 (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 11:05:38.515.992 conn.go:731] INF   14 (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 E 260403 11:05:38.515.993 conn.go:731] ERR    1 (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 I 260403 11:05:38.515.994 conn.go:731] INF    1 (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 11:05:38.515.995 conn.go:731] INF    1 (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 I 260403 11:05:38.515.996 conn.go:731] INF    1 (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 11:05:38.515.997 conn.go:731] INF    1 (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 E 260403 11:05:38.515.998 conn.go:731] ERR    8 [REQ-clone.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 I 260403 11:05:38.515.999 conn.go:731] INF    8 [REQ-clone.cn.1/rpc] (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 11:05:38.515.000 conn.go:731] INF    8 [REQ-clone.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 I 260403 11:05:38.515.001 conn.go:731] INF    8 [REQ-clone.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 11:05:38.515.002 conn.go:731] INF    8 [REQ-clone.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 E 260403 11:05:38.515.003 conn.go:731] ERR    2 [RESP-c_pvp.cn.1/0global_1rpc] (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 I 260403 11:05:38.515.004 conn.go:731] INF    2 [RESP-c_pvp.cn.1/0global_1rpc] (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 11:05:38.515.005 conn.go:731] INF    2 [RESP-c_pvp.cn.1/0global_1rpc] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 E 260403 11:05:38.515.006 conn.go:731] ERR   12 [REQ-hunting.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 I 260403 11:05:38.515.007 conn.go:731] INF   12 [REQ-hunting.cn.1/rpc] (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 11:05:38.515.008 conn.go:731] INF   12 [REQ-hunting.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 E 260403 11:05:38.516.009 conn.go:731] ERR    3 [REQ-craft.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 I 260403 11:05:38.516.010 conn.go:731] INF    3 [REQ-craft.cn.1/rpc] (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 11:05:38.516.011 conn.go:731] INF    3 [REQ-craft.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 I 260403 11:05:38.516.012 conn.go:731] INF    2 [RESP-c_pvp.cn.1/0global_1rpc] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 11:05:38.516.013 conn.go:731] INF    2 [RESP-c_pvp.cn.1/0global_1rpc] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 I 260403 11:05:38.516.014 conn.go:731] INF   12 [REQ-hunting.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 11:05:38.516.015 conn.go:731] INF   12 [REQ-hunting.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 I 260403 11:05:38.516.016 conn.go:731] INF    3 [REQ-craft.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 11:05:38.516.017 conn.go:731] INF    3 [REQ-craft.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 E 260403 11:05:38.516.018 conn.go:731] ERR    9 [REQ-union.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 I 260403 11:05:38.516.019 conn.go:731] INF    9 [REQ-union.cn.1/rpc] (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 11:05:38.516.020 conn.go:731] INF    9 [REQ-union.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 E 260403 11:05:38.516.021 conn.go:731] ERR    6 [REQ-arena.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 I 260403 11:05:38.516.022 conn.go:731] INF    6 [REQ-arena.cn.1/rpc] (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 11:05:38.516.023 conn.go:731] INF    6 [REQ-arena.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 E 260403 11:05:38.516.024 conn.go:731] ERR   13 [REQ-pvp.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 I 260403 11:05:38.517.025 conn.go:731] INF   13 [REQ-pvp.cn.1/rpc] (127.0.0.1:4150) beginning close
+[pvp.cn.1 E 260403 11:05:38.517.027 conn.go:731] ERR    7 [NotifyGenHuntingCards/arena.cn.1] (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 I 260403 11:05:38.517.028 conn.go:731] INF    7 [NotifyGenHuntingCards/arena.cn.1] (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 11:05:38.517.029 conn.go:731] INF    7 [NotifyGenHuntingCards/arena.cn.1] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 E 260403 11:05:38.517.030 conn.go:731] ERR    5 [REQ-gym.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 I 260403 11:05:38.517.031 conn.go:731] INF    5 [REQ-gym.cn.1/rpc] (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 11:05:38.517.032 conn.go:731] INF    5 [REQ-gym.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 E 260403 11:05:38.517.033 conn.go:731] ERR    4 [REQ-yyhuodong.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 I 260403 11:05:38.517.034 conn.go:731] INF    4 [REQ-yyhuodong.cn.1/rpc] (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 11:05:38.518.035 conn.go:731] INF    4 [REQ-yyhuodong.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 I 260403 11:05:38.518.036 conn.go:731] INF    7 [NotifyGenHuntingCards/arena.cn.1] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 11:05:38.518.037 conn.go:731] INF    7 [NotifyGenHuntingCards/arena.cn.1] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 I 260403 11:05:38.518.038 conn.go:731] INF    5 [REQ-gym.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 11:05:38.518.039 conn.go:731] INF    5 [REQ-gym.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 I 260403 11:05:38.518.040 conn.go:731] INF    4 [REQ-yyhuodong.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 11:05:38.518.041 conn.go:731] INF    4 [REQ-yyhuodong.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 E 260403 11:05:38.518.042 conn.go:731] ERR   11 [REQ-card_fight.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 I 260403 11:05:38.518.043 conn.go:731] INF   11 [REQ-card_fight.cn.1/rpc] (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 11:05:38.518.044 conn.go:731] INF   11 [REQ-card_fight.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 I 260403 11:05:38.518.045 conn.go:731] INF   11 [REQ-card_fight.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 11:05:38.518.046 conn.go:731] INF   11 [REQ-card_fight.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 E 260403 11:05:38.518.047 conn.go:731] ERR   10 [REQ-union_fight.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 I 260403 11:05:38.518.048 conn.go:731] INF   10 [REQ-union_fight.cn.1/rpc] (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 11:05:38.518.049 conn.go:731] INF   10 [REQ-union_fight.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 I 260403 11:05:38.518.050 conn.go:731] INF   10 [REQ-union_fight.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 11:05:38.518.051 conn.go:731] INF   10 [REQ-union_fight.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 I 260403 11:05:38.518.052 conn.go:731] INF    6 [REQ-arena.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 11:05:38.518.053 conn.go:731] INF    6 [REQ-arena.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 I 260403 11:05:38.519.054 conn.go:731] INF    9 [REQ-union.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 11:05:38.519.055 conn.go:731] INF    9 [REQ-union.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 I 260403 11:05:38.517.026 conn.go:731] INF   13 [REQ-pvp.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 I 260403 11:05:38.519.056 conn.go:731] INF   13 [REQ-pvp.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 11:05:38.519.057 conn.go:731] INF   13 [REQ-pvp.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 I 260403 11:05:38.615.058 conn.go:731] INF   14 (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 11:05:38.615.059 conn.go:731] INF   14 (127.0.0.1:4150) clean close complete
+[pvp.cn.1 I 260403 11:05:38.615.060 producer.go:382] INF   14 exiting router
+[pvp.cn.1 I 260403 11:05:38.615.061 conn.go:731] INF    1 (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 11:05:38.615.062 conn.go:731] INF    1 (127.0.0.1:4150) clean close complete
+[pvp.cn.1 I 260403 11:05:38.615.063 producer.go:382] INF    1 exiting router
+[pvp.cn.1 I 260403 11:05:38.616.064 conn.go:731] INF    8 [REQ-clone.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 11:05:38.616.065 conn.go:731] INF    8 [REQ-clone.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 W 260403 11:05:38.616.066 consumer.go:1175] WRN    8 [REQ-clone.cn.1/rpc] there are 0 connections left alive
+[pvp.cn.1 I 260403 11:05:38.616.067 consumer.go:1175] INF    8 [REQ-clone.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[pvp.cn.1 I 260403 11:05:38.616.068 conn.go:731] INF   12 [REQ-hunting.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 11:05:38.616.069 conn.go:731] INF   12 [REQ-hunting.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 W 260403 11:05:38.616.070 consumer.go:1175] WRN   12 [REQ-hunting.cn.1/rpc] there are 0 connections left alive
+[pvp.cn.1 I 260403 11:05:38.616.071 consumer.go:1175] INF   12 [REQ-hunting.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[pvp.cn.1 I 260403 11:05:38.616.073 conn.go:731] INF    2 [RESP-c_pvp.cn.1/0global_1rpc] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 W 260403 11:05:38.616.074 consumer.go:1175] WRN    2 [RESP-c_pvp.cn.1/0global_1rpc] there are 0 connections left alive
+[pvp.cn.1 I 260403 11:05:38.616.075 consumer.go:1175] INF    2 [RESP-c_pvp.cn.1/0global_1rpc] (127.0.0.1:4150) re-connecting in 5s
+[pvp.cn.1 I 260403 11:05:38.616.076 conn.go:731] INF    3 [REQ-craft.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 11:05:38.616.077 conn.go:731] INF    3 [REQ-craft.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 W 260403 11:05:38.616.078 consumer.go:1175] WRN    3 [REQ-craft.cn.1/rpc] there are 0 connections left alive
+[pvp.cn.1 I 260403 11:05:38.616.079 consumer.go:1175] INF    3 [REQ-craft.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[pvp.cn.1 I 260403 11:05:38.616.072 conn.go:731] INF    2 [RESP-c_pvp.cn.1/0global_1rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 11:05:38.618.080 conn.go:731] INF    7 [NotifyGenHuntingCards/arena.cn.1] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 11:05:38.618.081 conn.go:731] INF    7 [NotifyGenHuntingCards/arena.cn.1] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 W 260403 11:05:38.618.082 consumer.go:1175] WRN    7 [NotifyGenHuntingCards/arena.cn.1] there are 0 connections left alive
+[pvp.cn.1 I 260403 11:05:38.618.083 consumer.go:1175] INF    7 [NotifyGenHuntingCards/arena.cn.1] (127.0.0.1:4150) re-connecting in 5s
+[pvp.cn.1 I 260403 11:05:38.618.084 conn.go:731] INF    5 [REQ-gym.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 11:05:38.618.085 conn.go:731] INF    5 [REQ-gym.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 W 260403 11:05:38.618.086 consumer.go:1175] WRN    5 [REQ-gym.cn.1/rpc] there are 0 connections left alive
+[pvp.cn.1 I 260403 11:05:38.618.087 consumer.go:1175] INF    5 [REQ-gym.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[pvp.cn.1 I 260403 11:05:38.618.088 conn.go:731] INF    4 [REQ-yyhuodong.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 11:05:38.618.089 conn.go:731] INF    4 [REQ-yyhuodong.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 W 260403 11:05:38.618.090 consumer.go:1175] WRN    4 [REQ-yyhuodong.cn.1/rpc] there are 0 connections left alive
+[pvp.cn.1 I 260403 11:05:38.618.091 consumer.go:1175] INF    4 [REQ-yyhuodong.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[pvp.cn.1 I 260403 11:05:38.618.092 conn.go:731] INF   10 [REQ-union_fight.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 11:05:38.618.093 conn.go:731] INF   10 [REQ-union_fight.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 W 260403 11:05:38.618.094 consumer.go:1175] WRN   10 [REQ-union_fight.cn.1/rpc] there are 0 connections left alive
+[pvp.cn.1 I 260403 11:05:38.618.095 consumer.go:1175] INF   10 [REQ-union_fight.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[pvp.cn.1 I 260403 11:05:38.618.096 conn.go:731] INF   11 [REQ-card_fight.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 11:05:38.619.097 conn.go:731] INF   11 [REQ-card_fight.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 W 260403 11:05:38.619.098 consumer.go:1175] WRN   11 [REQ-card_fight.cn.1/rpc] there are 0 connections left alive
+[pvp.cn.1 I 260403 11:05:38.619.099 consumer.go:1175] INF   11 [REQ-card_fight.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[pvp.cn.1 I 260403 11:05:38.619.100 conn.go:731] INF    6 [REQ-arena.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 11:05:38.619.101 conn.go:731] INF    6 [REQ-arena.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 W 260403 11:05:38.619.102 consumer.go:1175] WRN    6 [REQ-arena.cn.1/rpc] there are 0 connections left alive
+[pvp.cn.1 I 260403 11:05:38.619.103 consumer.go:1175] INF    6 [REQ-arena.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[pvp.cn.1 I 260403 11:05:38.619.105 conn.go:731] INF   13 [REQ-pvp.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 11:05:38.619.106 conn.go:731] INF   13 [REQ-pvp.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 I 260403 11:05:38.619.107 conn.go:731] INF    9 [REQ-union.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 I 260403 11:05:38.619.104 conn.go:731] INF    9 [REQ-union.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 W 260403 11:05:38.619.109 consumer.go:1175] WRN    9 [REQ-union.cn.1/rpc] there are 0 connections left alive
+[pvp.cn.1 I 260403 11:05:38.619.110 consumer.go:1175] INF    9 [REQ-union.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[pvp.cn.1 W 260403 11:05:38.619.108 consumer.go:1175] WRN   13 [REQ-pvp.cn.1/rpc] there are 0 connections left alive
+[pvp.cn.1 I 260403 11:05:38.619.111 consumer.go:1175] INF   13 [REQ-pvp.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[pvp.cn.1 I 260403 11:05:43.617.114 consumer.go:1175] INF    3 [REQ-craft.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 11:05:43.616.112 consumer.go:1175] INF   12 [REQ-hunting.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 11:05:43.618.113 consumer.go:1175] INF    8 [REQ-clone.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 11:05:43.620.115 consumer.go:1175] INF    2 [RESP-c_pvp.cn.1/0global_1rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 11:05:43.621.116 consumer.go:1175] INF   13 [REQ-pvp.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 11:05:43.621.117 consumer.go:1175] INF    9 [REQ-union.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 11:05:43.625.119 consumer.go:1175] INF    5 [REQ-gym.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 11:05:43.624.118 consumer.go:1175] INF    7 [NotifyGenHuntingCards/arena.cn.1] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 11:05:43.625.120 consumer.go:1175] INF    6 [REQ-arena.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 11:05:43.625.121 consumer.go:1175] INF   10 [REQ-union_fight.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 11:05:43.630.123 consumer.go:1175] INF    4 [REQ-yyhuodong.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 11:05:43.630.122 consumer.go:1175] INF   11 [REQ-card_fight.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 11:08:57.756.124 framework.go:536] NOTIFY arena.cn.1.NotifyGenHuntingCards [0xc0149ce020]
+[pvp.cn.1 I 260403 11:08:57.758.125 producer.go:382] INF    1 (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 11:13:57.752.127 framework.go:536] NOTIFY arena.cn.1.NotifyGenHuntingCards [0xc01491a0a0]
+[pvp.cn.1 I 260403 11:18:57.752.129 framework.go:536] NOTIFY arena.cn.1.NotifyGenHuntingCards [0xc01491a0a0]
+[pvp.cn.1 I 260403 11:19:00.182.131 framework.go:534] REQ craft.cn.1.Deploy 60 [IDHex("69cf5b1136908d001b1ee34d") 0xc0003be180 0xc000500270]
+[pvp.cn.1 I 260403 11:19:00.183.132 rpcserver.go:622] RESP craft.cn.1.Deploy 60 1B 1.933ms from c_game.cn.1
+[pvp.cn.1 I 260403 11:19:00.183.133 producer.go:382] INF   14 (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 11:19:00.209.134 framework.go:534] REQ union_fight.cn.1.Deploy 61 [IDHex("69cf5b1136908d001b1ee34f") 0xc00042a4b0 0xc014798000]
+[pvp.cn.1 I 260403 11:19:00.210.135 rpcserver.go:622] RESP union_fight.cn.1.Deploy 61 1B 588µs from c_game.cn.1
+[pvp.cn.1 I 260403 11:19:00.239.136 framework.go:534] REQ pvp.cn.1.CrossCraftDeploy 62 [IDHex("69cf5b1136908d001b1ee34e") 0xc000506900 0xc00b90eff0 0xc01491b700 0xc0005b0868]
+[pvp.cn.1 I 260403 11:19:00.239.137 rpcserver.go:622] RESP pvp.cn.1.CrossCraftDeploy 62 1B 368µs from c_game.cn.1
+[pvp.cn.1 I 260403 11:19:17.592.138 manager.go:250] process dirty, count 3 success 3 fail 0 cost 36.064ms, dirty 0, lru 0, chan 0
+[pvp.cn.1 I 260403 11:23:57.753.139 framework.go:536] NOTIFY arena.cn.1.NotifyGenHuntingCards [0xc0149ce020]
+[pvp.cn.1 I 260403 11:28:57.761.141 framework.go:536] NOTIFY arena.cn.1.NotifyGenHuntingCards [0xc0149ce020]
+[pvp.cn.1 I 260403 11:33:57.759.143 framework.go:536] NOTIFY arena.cn.1.NotifyGenHuntingCards [0xc0149ce020]
+[pvp.cn.1 I 260403 11:38:57.767.145 framework.go:536] NOTIFY arena.cn.1.NotifyGenHuntingCards [0xc0149ce020]
+[pvp.cn.1 I 260403 11:43:57.766.147 framework.go:536] NOTIFY arena.cn.1.NotifyGenHuntingCards [0xc0149ce020]
+[pvp.cn.1 I 260403 11:48:57.776.149 framework.go:536] NOTIFY arena.cn.1.NotifyGenHuntingCards [0xc014994040]
+[pvp.cn.1 I 260403 11:50:00.024.151 framework.go:534] REQ craft.cn.1.StartCraft 63 [0xc014798140 0xc017111f28]
+[pvp.cn.1 I 260403 11:50:00.032.152 craft.go:224] Craft Clean 0 closed
+[pvp.cn.1 I 260403 11:50:00.038.153 craft.go:212] Craft Reset 0 closed, 20260403
+[pvp.cn.1 I 260403 11:50:00.038.154 craft.go:349] Craft.onStartPrepare prepare
+[pvp.cn.1 I 260403 11:50:00.039.155 rpcserver.go:622] RESP craft.cn.1.StartCraft 63 1B 15.893ms from c_game.cn.1
+[pvp.cn.1 I 260403 11:50:06.245.156 framework.go:534] REQ craft.cn.1.CreateRobotCraftRecordBulk 64 [0xc014799340]
+[pvp.cn.1 E 260403 11:50:07.263.157 conn.go:731] ERR   14 (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 I 260403 11:50:07.264.158 conn.go:731] INF   14 (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 11:50:07.264.159 conn.go:731] INF   14 (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 I 260403 11:50:07.264.160 conn.go:731] INF   14 (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 11:50:07.264.161 conn.go:731] INF   14 (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 E 260403 11:50:07.264.162 conn.go:731] ERR    8 [REQ-clone.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 E 260403 11:50:07.264.163 conn.go:731] ERR    3 [REQ-craft.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 I 260403 11:50:07.264.164 conn.go:731] INF    8 [REQ-clone.cn.1/rpc] (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 11:50:07.264.166 conn.go:731] INF    8 [REQ-clone.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 I 260403 11:50:07.264.165 conn.go:731] INF    3 [REQ-craft.cn.1/rpc] (127.0.0.1:4150) beginning close
+[pvp.cn.1 E 260403 11:50:07.264.167 conn.go:731] ERR   13 [REQ-pvp.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 E 260403 11:50:07.271.168 conn.go:731] ERR    9 [REQ-union.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 I 260403 11:50:07.271.171 conn.go:731] INF   13 [REQ-pvp.cn.1/rpc] (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 11:50:07.271.172 conn.go:731] INF    9 [REQ-union.cn.1/rpc] (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 11:50:07.271.174 conn.go:731] INF    9 [REQ-union.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 E 260403 11:50:07.271.175 conn.go:731] ERR    7 [NotifyGenHuntingCards/arena.cn.1] (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 I 260403 11:50:07.271.176 conn.go:731] INF    7 [NotifyGenHuntingCards/arena.cn.1] (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 11:50:07.271.177 conn.go:731] INF    7 [NotifyGenHuntingCards/arena.cn.1] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 E 260403 11:50:07.271.178 conn.go:731] ERR    6 [REQ-arena.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 I 260403 11:50:07.271.179 conn.go:731] INF    6 [REQ-arena.cn.1/rpc] (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 11:50:07.271.180 conn.go:731] INF    6 [REQ-arena.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 I 260403 11:50:07.271.181 conn.go:731] INF    9 [REQ-union.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 11:50:07.271.182 conn.go:731] INF    9 [REQ-union.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 I 260403 11:50:07.271.183 conn.go:731] INF    7 [NotifyGenHuntingCards/arena.cn.1] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 11:50:07.271.184 conn.go:731] INF    7 [NotifyGenHuntingCards/arena.cn.1] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 I 260403 11:50:07.271.185 conn.go:731] INF    6 [REQ-arena.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 11:50:07.271.186 conn.go:731] INF    6 [REQ-arena.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 E 260403 11:50:07.271.187 conn.go:731] ERR    4 [REQ-yyhuodong.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 I 260403 11:50:07.271.188 conn.go:731] INF    4 [REQ-yyhuodong.cn.1/rpc] (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 11:50:07.271.189 conn.go:731] INF    4 [REQ-yyhuodong.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 E 260403 11:50:07.271.190 conn.go:731] ERR   11 [REQ-card_fight.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 I 260403 11:50:07.271.191 conn.go:731] INF   11 [REQ-card_fight.cn.1/rpc] (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 11:50:07.271.192 conn.go:731] INF   11 [REQ-card_fight.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 I 260403 11:50:07.271.193 conn.go:731] INF    4 [REQ-yyhuodong.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 11:50:07.272.194 conn.go:731] INF    4 [REQ-yyhuodong.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 I 260403 11:50:07.272.195 conn.go:731] INF   11 [REQ-card_fight.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 11:50:07.272.196 conn.go:731] INF   11 [REQ-card_fight.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 E 260403 11:50:07.272.197 conn.go:731] ERR    1 (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 I 260403 11:50:07.272.198 conn.go:731] INF    1 (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 11:50:07.272.199 conn.go:731] INF    1 (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 I 260403 11:50:07.272.200 conn.go:731] INF    1 (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 11:50:07.272.201 conn.go:731] INF    1 (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 I 260403 11:50:07.271.173 conn.go:731] INF   13 [REQ-pvp.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 E 260403 11:50:07.272.203 conn.go:731] ERR    2 [RESP-c_pvp.cn.1/0global_1rpc] (127.0.0.1:4150) IO error - unexpected EOF
+[pvp.cn.1 I 260403 11:50:07.272.204 conn.go:731] INF    2 [RESP-c_pvp.cn.1/0global_1rpc] (127.0.0.1:4150) beginning close
+[pvp.cn.1 E 260403 11:50:07.272.169 conn.go:731] ERR    5 [REQ-gym.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 I 260403 11:50:07.272.205 conn.go:731] INF    2 [RESP-c_pvp.cn.1/0global_1rpc] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 I 260403 11:50:07.272.206 conn.go:731] INF    8 [REQ-clone.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 11:50:07.272.208 conn.go:731] INF    8 [REQ-clone.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 I 260403 11:50:07.272.207 conn.go:731] INF    5 [REQ-gym.cn.1/rpc] (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 11:50:07.272.210 conn.go:731] INF    2 [RESP-c_pvp.cn.1/0global_1rpc] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 11:50:07.272.209 conn.go:731] INF    5 [REQ-gym.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 I 260403 11:50:07.272.211 conn.go:731] INF    2 [RESP-c_pvp.cn.1/0global_1rpc] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 E 260403 11:50:07.272.212 conn.go:731] ERR   10 [REQ-union_fight.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 I 260403 11:50:07.272.213 conn.go:731] INF    3 [REQ-craft.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 11:50:07.272.214 conn.go:731] INF   10 [REQ-union_fight.cn.1/rpc] (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 11:50:07.272.216 conn.go:731] INF   10 [REQ-union_fight.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 E 260403 11:50:07.272.202 conn.go:731] ERR   12 [REQ-hunting.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 I 260403 11:50:07.272.217 conn.go:731] INF   12 [REQ-hunting.cn.1/rpc] (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 11:50:07.271.170 conn.go:731] INF    3 [REQ-craft.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 I 260403 11:50:07.272.215 conn.go:731] INF    3 [REQ-craft.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 I 260403 11:50:07.272.218 conn.go:731] INF    5 [REQ-gym.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 11:50:07.273.219 conn.go:731] INF   12 [REQ-hunting.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 I 260403 11:50:07.273.220 conn.go:731] INF    5 [REQ-gym.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 I 260403 11:50:07.273.222 conn.go:731] INF   10 [REQ-union_fight.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 11:50:07.273.223 conn.go:731] INF   13 [REQ-pvp.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 11:50:07.273.224 conn.go:731] INF   10 [REQ-union_fight.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 I 260403 11:50:07.273.225 conn.go:731] INF   13 [REQ-pvp.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 I 260403 11:50:07.273.221 conn.go:731] INF   12 [REQ-hunting.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 11:50:07.273.226 conn.go:731] INF   12 [REQ-hunting.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 I 260403 11:50:07.365.227 conn.go:731] INF   14 (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 11:50:07.366.228 conn.go:731] INF   14 (127.0.0.1:4150) clean close complete
+[pvp.cn.1 I 260403 11:50:07.366.229 producer.go:382] INF   14 exiting router
+[pvp.cn.1 I 260403 11:50:07.372.231 conn.go:731] INF    6 [REQ-arena.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 11:50:07.372.233 conn.go:731] INF    6 [REQ-arena.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 I 260403 11:50:07.372.230 conn.go:731] INF    7 [NotifyGenHuntingCards/arena.cn.1] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 11:50:07.372.232 conn.go:731] INF   11 [REQ-card_fight.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 W 260403 11:50:07.372.235 consumer.go:1175] WRN    6 [REQ-arena.cn.1/rpc] there are 0 connections left alive
+[pvp.cn.1 I 260403 11:50:07.372.238 conn.go:731] INF    4 [REQ-yyhuodong.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 11:50:07.373.240 consumer.go:1175] INF    6 [REQ-arena.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[pvp.cn.1 I 260403 11:50:07.373.241 conn.go:731] INF    9 [REQ-union.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 I 260403 11:50:07.373.242 conn.go:731] INF    4 [REQ-yyhuodong.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 I 260403 11:50:07.372.236 conn.go:731] INF    7 [NotifyGenHuntingCards/arena.cn.1] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 W 260403 11:50:07.373.244 consumer.go:1175] WRN    4 [REQ-yyhuodong.cn.1/rpc] there are 0 connections left alive
+[pvp.cn.1 I 260403 11:50:07.373.239 conn.go:731] INF    2 [RESP-c_pvp.cn.1/0global_1rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 W 260403 11:50:07.373.245 consumer.go:1175] WRN    7 [NotifyGenHuntingCards/arena.cn.1] there are 0 connections left alive
+[pvp.cn.1 W 260403 11:50:07.373.243 consumer.go:1175] WRN    9 [REQ-union.cn.1/rpc] there are 0 connections left alive
+[pvp.cn.1 I 260403 11:50:07.373.246 consumer.go:1175] INF    4 [REQ-yyhuodong.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[pvp.cn.1 I 260403 11:50:07.373.247 conn.go:731] INF    2 [RESP-c_pvp.cn.1/0global_1rpc] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 I 260403 11:50:07.372.237 conn.go:731] INF   11 [REQ-card_fight.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 I 260403 11:50:07.373.249 consumer.go:1175] INF    9 [REQ-union.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[pvp.cn.1 I 260403 11:50:07.373.248 consumer.go:1175] INF    7 [NotifyGenHuntingCards/arena.cn.1] (127.0.0.1:4150) re-connecting in 5s
+[pvp.cn.1 W 260403 11:50:07.373.250 consumer.go:1175] WRN    2 [RESP-c_pvp.cn.1/0global_1rpc] there are 0 connections left alive
+[pvp.cn.1 I 260403 11:50:07.372.234 conn.go:731] INF    9 [REQ-union.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 W 260403 11:50:07.373.251 consumer.go:1175] WRN   11 [REQ-card_fight.cn.1/rpc] there are 0 connections left alive
+[pvp.cn.1 I 260403 11:50:07.373.253 consumer.go:1175] INF   11 [REQ-card_fight.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[pvp.cn.1 I 260403 11:50:07.374.254 conn.go:731] INF   13 [REQ-pvp.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 11:50:07.374.256 conn.go:731] INF   13 [REQ-pvp.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 W 260403 11:50:07.374.257 consumer.go:1175] WRN   13 [REQ-pvp.cn.1/rpc] there are 0 connections left alive
+[pvp.cn.1 I 260403 11:50:07.374.258 conn.go:731] INF   12 [REQ-hunting.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 11:50:07.374.252 consumer.go:1175] INF    2 [RESP-c_pvp.cn.1/0global_1rpc] (127.0.0.1:4150) re-connecting in 5s
+[pvp.cn.1 I 260403 11:50:07.374.259 consumer.go:1175] INF   13 [REQ-pvp.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[pvp.cn.1 I 260403 11:50:07.374.260 conn.go:731] INF   12 [REQ-hunting.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 I 260403 11:50:07.374.261 conn.go:731] INF    1 (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 W 260403 11:50:07.374.262 consumer.go:1175] WRN   12 [REQ-hunting.cn.1/rpc] there are 0 connections left alive
+[pvp.cn.1 I 260403 11:50:07.374.263 conn.go:731] INF    8 [REQ-clone.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 11:50:07.374.264 conn.go:731] INF    1 (127.0.0.1:4150) clean close complete
+[pvp.cn.1 I 260403 11:50:07.374.265 consumer.go:1175] INF   12 [REQ-hunting.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[pvp.cn.1 I 260403 11:50:07.374.266 producer.go:382] INF    1 exiting router
+[pvp.cn.1 I 260403 11:50:07.374.267 conn.go:731] INF    3 [REQ-craft.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 11:50:07.374.268 conn.go:731] INF    3 [REQ-craft.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 I 260403 11:50:07.374.269 conn.go:731] INF   10 [REQ-union_fight.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 W 260403 11:50:07.374.270 consumer.go:1175] WRN    3 [REQ-craft.cn.1/rpc] there are 0 connections left alive
+[pvp.cn.1 I 260403 11:50:07.374.271 conn.go:731] INF   10 [REQ-union_fight.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 I 260403 11:50:07.374.272 conn.go:731] INF    5 [REQ-gym.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 W 260403 11:50:07.374.274 consumer.go:1175] WRN   10 [REQ-union_fight.cn.1/rpc] there are 0 connections left alive
+[pvp.cn.1 W 260403 11:50:07.374.275 consumer.go:1175] WRN    5 [REQ-gym.cn.1/rpc] there are 0 connections left alive
+[pvp.cn.1 I 260403 11:50:07.374.276 consumer.go:1175] INF   10 [REQ-union_fight.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[pvp.cn.1 I 260403 11:50:07.374.277 consumer.go:1175] INF    5 [REQ-gym.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[pvp.cn.1 I 260403 11:50:07.374.273 consumer.go:1175] INF    3 [REQ-craft.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[pvp.cn.1 I 260403 11:50:07.374.278 conn.go:731] INF    8 [REQ-clone.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 W 260403 11:50:07.374.279 consumer.go:1175] WRN    8 [REQ-clone.cn.1/rpc] there are 0 connections left alive
+[pvp.cn.1 I 260403 11:50:07.374.280 consumer.go:1175] INF    8 [REQ-clone.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[pvp.cn.1 I 260403 11:50:07.374.255 conn.go:731] INF    5 [REQ-gym.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 11:50:12.373.281 consumer.go:1175] INF    6 [REQ-arena.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 11:50:12.374.282 consumer.go:1175] INF    2 [RESP-c_pvp.cn.1/0global_1rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 11:50:12.374.283 consumer.go:1175] INF    7 [NotifyGenHuntingCards/arena.cn.1] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 11:50:12.374.284 consumer.go:1175] INF   13 [REQ-pvp.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 11:50:12.375.285 consumer.go:1175] INF    3 [REQ-craft.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 11:50:12.375.286 consumer.go:1175] INF    9 [REQ-union.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 11:50:12.375.287 consumer.go:1175] INF   11 [REQ-card_fight.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 11:50:12.375.288 consumer.go:1175] INF    4 [REQ-yyhuodong.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 11:50:12.376.290 consumer.go:1175] INF    5 [REQ-gym.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 11:50:12.376.291 consumer.go:1175] INF    8 [REQ-clone.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 11:50:12.376.292 consumer.go:1175] INF   10 [REQ-union_fight.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 11:50:12.377.289 consumer.go:1175] INF   12 [REQ-hunting.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 11:50:17.557.293 producer.go:382] INF    1 (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 11:50:17.560.294 manager.go:250] process dirty, count 1 success 1 fail 0 cost 3.95ms, dirty 0, lru 0, chan 0
+[pvp.cn.1 I 260403 11:53:57.775.295 framework.go:536] NOTIFY arena.cn.1.NotifyGenHuntingCards [0xc014a00020]
+[pvp.cn.1 I 260403 11:58:57.778.297 framework.go:536] NOTIFY arena.cn.1.NotifyGenHuntingCards [0xc014a00020]
+[pvp.cn.1 W 260403 11:58:59.121.299 craft.go:1334] CraftEvent prepare response error zombie timeout
+[pvp.cn.1 W 260403 11:58:59.127.300 craft.go:355] may be some error happened
+[pvp.cn.1 I 260403 12:02:08.128.301 framework.go:534] REQ craft.cn.1.GetCraftBattleCards 65 [IDHex("69cf5b1136908d001b1ee34d")]
+[pvp.cn.1 I 260403 12:02:08.129.302 rpcserver.go:622] RESP craft.cn.1.GetCraftBattleCards 65 131B 701µs from c_game.cn.1
+[pvp.cn.1 I 260403 12:02:08.129.303 producer.go:382] INF   14 (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 12:02:08.151.304 framework.go:534] REQ pvp.cn.1.GetCrossCraftBattleCards 66 [IDHex("69cf5b1136908d001b1ee34e")]
+[pvp.cn.1 I 260403 12:02:08.151.305 rpcserver.go:622] RESP pvp.cn.1.GetCrossCraftBattleCards 66 157B 400µs from c_game.cn.1
+[pvp.cn.1 I 260403 12:02:08.175.306 framework.go:534] REQ union_fight.cn.1.GetUnionFightBattleCards 67 [IDHex("69cf5b1136908d001b1ee34f")]
+[pvp.cn.1 I 260403 12:02:08.176.307 rpcserver.go:622] RESP union_fight.cn.1.GetUnionFightBattleCards 67 501B 330µs from c_game.cn.1
+[pvp.cn.1 I 260403 12:02:08.298.308 framework.go:534] REQ union.cn.1.OnLogin 68 [IDHex("69cf57bc36908d001b1ee319") 0xc0004f6500 0xc014771a20]
+[pvp.cn.1 I 260403 12:02:08.299.309 rpcserver.go:622] RESP union.cn.1.OnLogin 68 143B 356µs from c_game.cn.1
+[pvp.cn.1 I 260403 12:03:57.775.310 framework.go:536] NOTIFY arena.cn.1.NotifyGenHuntingCards [0xc014a012a0]
+[pvp.cn.1 I 260403 12:08:57.779.312 framework.go:536] NOTIFY arena.cn.1.NotifyGenHuntingCards [0xc0149ce020]
+[pvp.cn.1 I 260403 12:12:10.991.314 framework.go:534] REQ union.cn.1.OnLogin 69 [IDHex("69cf57bc36908d001b1ee319") 0xc0003ce050 0xc014770c80]
+[pvp.cn.1 I 260403 12:12:10.992.315 rpcserver.go:622] RESP union.cn.1.OnLogin 69 143B 805µs from c_game.cn.1
+[pvp.cn.1 I 260403 12:13:57.780.316 framework.go:536] NOTIFY arena.cn.1.NotifyGenHuntingCards [0xc014a00020]
+[pvp.cn.1 I 260403 12:14:37.771.318 framework.go:534] REQ union.cn.1.OnLogin 70 [IDHex("69cf57bc36908d001b1ee319") 0xc000480640 0xc014770c80]
+[pvp.cn.1 I 260403 12:14:37.772.319 rpcserver.go:622] RESP union.cn.1.OnLogin 70 143B 521µs from c_game.cn.1
+[pvp.cn.1 I 260403 12:18:57.792.320 framework.go:536] NOTIFY arena.cn.1.NotifyGenHuntingCards [0xc0149ce020]
+[pvp.cn.1 I 260403 12:18:59.204.322 framework.go:534] REQ arena.cn.1.GetRankRange 71 [0xc000b01840 0xc000b01848]
+[pvp.cn.1 I 260403 12:18:59.204.323 rpcserver.go:622] RESP arena.cn.1.GetRankRange 71 18B 755µs from c_game.cn.1
+[pvp.cn.1 E 260403 12:23:39.745.324 conn.go:731] ERR   14 (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 I 260403 12:23:39.746.325 conn.go:731] INF   14 (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 12:23:39.746.326 conn.go:731] INF   14 (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 I 260403 12:23:39.746.327 conn.go:731] INF   14 (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 12:23:39.746.328 conn.go:731] INF   14 (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 E 260403 12:23:39.747.329 conn.go:731] ERR    6 [REQ-arena.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 I 260403 12:23:39.747.330 conn.go:731] INF    6 [REQ-arena.cn.1/rpc] (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 12:23:39.747.332 conn.go:731] INF    6 [REQ-arena.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 E 260403 12:23:39.747.331 conn.go:731] ERR    7 [NotifyGenHuntingCards/arena.cn.1] (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 I 260403 12:23:39.747.333 conn.go:731] INF    7 [NotifyGenHuntingCards/arena.cn.1] (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 12:23:39.747.334 conn.go:731] INF    6 [REQ-arena.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 12:23:39.747.336 conn.go:731] INF    6 [REQ-arena.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 I 260403 12:23:39.747.335 conn.go:731] INF    7 [NotifyGenHuntingCards/arena.cn.1] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 E 260403 12:23:39.747.337 conn.go:731] ERR    9 [REQ-union.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 E 260403 12:23:39.747.338 conn.go:731] ERR    2 [RESP-c_pvp.cn.1/0global_1rpc] (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 I 260403 12:23:39.747.339 conn.go:731] INF    9 [REQ-union.cn.1/rpc] (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 12:23:39.747.340 conn.go:731] INF    2 [RESP-c_pvp.cn.1/0global_1rpc] (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 12:23:39.747.341 conn.go:731] INF    9 [REQ-union.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 E 260403 12:23:39.748.342 conn.go:731] ERR   11 [REQ-card_fight.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 I 260403 12:23:39.748.343 conn.go:731] INF    2 [RESP-c_pvp.cn.1/0global_1rpc] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 I 260403 12:23:39.748.344 conn.go:731] INF   11 [REQ-card_fight.cn.1/rpc] (127.0.0.1:4150) beginning close
+[pvp.cn.1 E 260403 12:23:39.748.345 conn.go:731] ERR   13 [REQ-pvp.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 I 260403 12:23:39.748.346 conn.go:731] INF   11 [REQ-card_fight.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 E 260403 12:23:39.748.348 conn.go:731] ERR    4 [REQ-yyhuodong.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 I 260403 12:23:39.748.347 conn.go:731] INF   13 [REQ-pvp.cn.1/rpc] (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 12:23:39.748.349 conn.go:731] INF    4 [REQ-yyhuodong.cn.1/rpc] (127.0.0.1:4150) beginning close
+[pvp.cn.1 E 260403 12:23:39.751.350 conn.go:731] ERR    5 [REQ-gym.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 I 260403 12:23:39.753.353 conn.go:731] INF    4 [REQ-yyhuodong.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 I 260403 12:23:39.753.355 conn.go:731] INF    9 [REQ-union.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 12:23:39.753.356 conn.go:731] INF    9 [REQ-union.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 I 260403 12:23:39.753.357 conn.go:731] INF   11 [REQ-card_fight.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 12:23:39.753.358 conn.go:731] INF   11 [REQ-card_fight.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 I 260403 12:23:39.753.359 conn.go:731] INF    4 [REQ-yyhuodong.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 12:23:39.753.360 conn.go:731] INF    4 [REQ-yyhuodong.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 E 260403 12:23:39.754.361 conn.go:731] ERR   12 [REQ-hunting.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 I 260403 12:23:39.754.362 conn.go:731] INF   12 [REQ-hunting.cn.1/rpc] (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 12:23:39.754.363 conn.go:731] INF   12 [REQ-hunting.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 I 260403 12:23:39.754.364 conn.go:731] INF   12 [REQ-hunting.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 12:23:39.754.365 conn.go:731] INF   12 [REQ-hunting.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 E 260403 12:23:39.754.366 conn.go:731] ERR    1 (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 I 260403 12:23:39.754.367 conn.go:731] INF    1 (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 12:23:39.754.368 conn.go:731] INF    1 (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 I 260403 12:23:39.754.369 conn.go:731] INF    1 (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 12:23:39.754.370 conn.go:731] INF    1 (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 I 260403 12:23:39.755.371 conn.go:731] INF    2 [RESP-c_pvp.cn.1/0global_1rpc] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 12:23:39.755.372 conn.go:731] INF    2 [RESP-c_pvp.cn.1/0global_1rpc] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 E 260403 12:23:39.755.373 conn.go:731] ERR    3 [REQ-craft.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 I 260403 12:23:39.755.374 conn.go:731] INF    3 [REQ-craft.cn.1/rpc] (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 12:23:39.755.375 conn.go:731] INF    3 [REQ-craft.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 I 260403 12:23:39.755.376 conn.go:731] INF    7 [NotifyGenHuntingCards/arena.cn.1] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 12:23:39.755.377 conn.go:731] INF    7 [NotifyGenHuntingCards/arena.cn.1] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 I 260403 12:23:39.755.378 conn.go:731] INF    3 [REQ-craft.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 12:23:39.755.379 conn.go:731] INF    3 [REQ-craft.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 E 260403 12:23:39.756.380 conn.go:731] ERR    8 [REQ-clone.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 I 260403 12:23:39.756.381 conn.go:731] INF    8 [REQ-clone.cn.1/rpc] (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 12:23:39.756.382 conn.go:731] INF    8 [REQ-clone.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 I 260403 12:23:39.756.383 conn.go:731] INF    8 [REQ-clone.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 12:23:39.756.384 conn.go:731] INF    8 [REQ-clone.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 I 260403 12:23:39.756.385 conn.go:731] INF   13 [REQ-pvp.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 12:23:39.756.386 conn.go:731] INF   13 [REQ-pvp.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 I 260403 12:23:39.756.351 conn.go:731] INF   13 [REQ-pvp.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 I 260403 12:23:39.756.354 conn.go:731] INF    5 [REQ-gym.cn.1/rpc] (127.0.0.1:4150) beginning close
+[pvp.cn.1 E 260403 12:23:39.752.352 conn.go:731] ERR   10 [REQ-union_fight.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[pvp.cn.1 I 260403 12:23:39.757.387 conn.go:731] INF   10 [REQ-union_fight.cn.1/rpc] (127.0.0.1:4150) beginning close
+[pvp.cn.1 I 260403 12:23:39.757.388 conn.go:731] INF    5 [REQ-gym.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 I 260403 12:23:39.757.389 conn.go:731] INF   10 [REQ-union_fight.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[pvp.cn.1 I 260403 12:23:39.757.391 conn.go:731] INF    5 [REQ-gym.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 12:23:39.757.392 conn.go:731] INF    5 [REQ-gym.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 I 260403 12:23:39.757.390 conn.go:731] INF   10 [REQ-union_fight.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[pvp.cn.1 I 260403 12:23:39.757.393 conn.go:731] INF   10 [REQ-union_fight.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[pvp.cn.1 I 260403 12:23:39.848.395 conn.go:731] INF   14 (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 12:23:39.848.397 conn.go:731] INF    6 [REQ-arena.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 W 260403 12:23:39.848.398 consumer.go:1175] WRN    6 [REQ-arena.cn.1/rpc] there are 0 connections left alive
+[pvp.cn.1 I 260403 12:23:39.848.399 consumer.go:1175] INF    6 [REQ-arena.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[pvp.cn.1 I 260403 12:23:39.848.396 conn.go:731] INF   14 (127.0.0.1:4150) clean close complete
+[pvp.cn.1 I 260403 12:23:39.848.400 producer.go:382] INF   14 exiting router
+[pvp.cn.1 I 260403 12:23:39.847.394 conn.go:731] INF    6 [REQ-arena.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 12:23:39.854.402 conn.go:731] INF    9 [REQ-union.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 12:23:39.854.403 conn.go:731] INF    9 [REQ-union.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 W 260403 12:23:39.854.404 consumer.go:1175] WRN    9 [REQ-union.cn.1/rpc] there are 0 connections left alive
+[pvp.cn.1 I 260403 12:23:39.854.405 consumer.go:1175] INF    9 [REQ-union.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[pvp.cn.1 I 260403 12:23:39.854.406 conn.go:731] INF   11 [REQ-card_fight.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 12:23:39.854.407 conn.go:731] INF   11 [REQ-card_fight.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 W 260403 12:23:39.854.408 consumer.go:1175] WRN   11 [REQ-card_fight.cn.1/rpc] there are 0 connections left alive
+[pvp.cn.1 I 260403 12:23:39.854.409 consumer.go:1175] INF   11 [REQ-card_fight.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[pvp.cn.1 I 260403 12:23:39.854.410 conn.go:731] INF    4 [REQ-yyhuodong.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 I 260403 12:23:39.854.401 conn.go:731] INF    4 [REQ-yyhuodong.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 12:23:39.854.412 conn.go:731] INF   12 [REQ-hunting.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 12:23:39.854.413 conn.go:731] INF   12 [REQ-hunting.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 W 260403 12:23:39.854.414 consumer.go:1175] WRN   12 [REQ-hunting.cn.1/rpc] there are 0 connections left alive
+[pvp.cn.1 I 260403 12:23:39.855.415 consumer.go:1175] INF   12 [REQ-hunting.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[pvp.cn.1 I 260403 12:23:39.855.416 conn.go:731] INF    1 (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 12:23:39.855.417 conn.go:731] INF    1 (127.0.0.1:4150) clean close complete
+[pvp.cn.1 I 260403 12:23:39.855.418 producer.go:382] INF    1 exiting router
+[pvp.cn.1 W 260403 12:23:39.854.411 consumer.go:1175] WRN    4 [REQ-yyhuodong.cn.1/rpc] there are 0 connections left alive
+[pvp.cn.1 I 260403 12:23:39.855.419 consumer.go:1175] INF    4 [REQ-yyhuodong.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[pvp.cn.1 I 260403 12:23:39.856.420 conn.go:731] INF    7 [NotifyGenHuntingCards/arena.cn.1] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 12:23:39.856.421 conn.go:731] INF    7 [NotifyGenHuntingCards/arena.cn.1] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 I 260403 12:23:39.856.423 conn.go:731] INF    3 [REQ-craft.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 W 260403 12:23:39.856.424 consumer.go:1175] WRN    3 [REQ-craft.cn.1/rpc] there are 0 connections left alive
+[pvp.cn.1 I 260403 12:23:39.856.425 consumer.go:1175] INF    3 [REQ-craft.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[pvp.cn.1 W 260403 12:23:39.856.422 consumer.go:1175] WRN    7 [NotifyGenHuntingCards/arena.cn.1] there are 0 connections left alive
+[pvp.cn.1 I 260403 12:23:39.856.426 consumer.go:1175] INF    7 [NotifyGenHuntingCards/arena.cn.1] (127.0.0.1:4150) re-connecting in 5s
+[pvp.cn.1 I 260403 12:23:39.856.427 conn.go:731] INF    3 [REQ-craft.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 12:23:39.856.428 conn.go:731] INF    8 [REQ-clone.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 12:23:39.856.429 conn.go:731] INF    8 [REQ-clone.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 W 260403 12:23:39.856.430 consumer.go:1175] WRN    8 [REQ-clone.cn.1/rpc] there are 0 connections left alive
+[pvp.cn.1 I 260403 12:23:39.857.431 consumer.go:1175] INF    8 [REQ-clone.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[pvp.cn.1 I 260403 12:23:39.857.432 conn.go:731] INF    5 [REQ-gym.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 12:23:39.857.433 conn.go:731] INF    5 [REQ-gym.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 W 260403 12:23:39.857.434 consumer.go:1175] WRN    5 [REQ-gym.cn.1/rpc] there are 0 connections left alive
+[pvp.cn.1 I 260403 12:23:39.857.435 consumer.go:1175] INF    5 [REQ-gym.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[pvp.cn.1 I 260403 12:23:39.857.436 conn.go:731] INF    2 [RESP-c_pvp.cn.1/0global_1rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 12:23:39.857.438 conn.go:731] INF    2 [RESP-c_pvp.cn.1/0global_1rpc] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 I 260403 12:23:39.858.439 conn.go:731] INF   13 [REQ-pvp.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 W 260403 12:23:39.858.440 consumer.go:1175] WRN    2 [RESP-c_pvp.cn.1/0global_1rpc] there are 0 connections left alive
+[pvp.cn.1 W 260403 12:23:39.858.441 consumer.go:1175] WRN   13 [REQ-pvp.cn.1/rpc] there are 0 connections left alive
+[pvp.cn.1 I 260403 12:23:39.858.442 consumer.go:1175] INF    2 [RESP-c_pvp.cn.1/0global_1rpc] (127.0.0.1:4150) re-connecting in 5s
+[pvp.cn.1 I 260403 12:23:39.858.443 consumer.go:1175] INF   13 [REQ-pvp.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[pvp.cn.1 I 260403 12:23:39.857.437 conn.go:731] INF   13 [REQ-pvp.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 12:23:39.858.444 conn.go:731] INF   10 [REQ-union_fight.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[pvp.cn.1 I 260403 12:23:39.858.445 conn.go:731] INF   10 [REQ-union_fight.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[pvp.cn.1 W 260403 12:23:39.859.446 consumer.go:1175] WRN   10 [REQ-union_fight.cn.1/rpc] there are 0 connections left alive
+[pvp.cn.1 I 260403 12:23:39.859.447 consumer.go:1175] INF   10 [REQ-union_fight.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[pvp.cn.1 I 260403 12:23:44.851.448 consumer.go:1175] INF    6 [REQ-arena.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 12:23:44.856.449 consumer.go:1175] INF   12 [REQ-hunting.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 12:23:44.856.450 consumer.go:1175] INF   11 [REQ-card_fight.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 12:23:44.856.451 consumer.go:1175] INF    9 [REQ-union.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 12:23:44.856.452 consumer.go:1175] INF    4 [REQ-yyhuodong.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 12:23:44.858.453 consumer.go:1175] INF    7 [NotifyGenHuntingCards/arena.cn.1] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 12:23:44.861.454 consumer.go:1175] INF   13 [REQ-pvp.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 12:23:44.863.455 consumer.go:1175] INF    2 [RESP-c_pvp.cn.1/0global_1rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 12:23:44.865.456 consumer.go:1175] INF   10 [REQ-union_fight.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 12:23:44.867.457 consumer.go:1175] INF    5 [REQ-gym.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 12:23:44.867.458 consumer.go:1175] INF    3 [REQ-craft.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 12:23:44.869.459 consumer.go:1175] INF    8 [REQ-clone.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 12:23:57.793.460 framework.go:536] NOTIFY arena.cn.1.NotifyGenHuntingCards [0xc0149536a0]
+[pvp.cn.1 I 260403 12:23:57.794.461 producer.go:382] INF    1 (127.0.0.1:4150) connecting to nsqd

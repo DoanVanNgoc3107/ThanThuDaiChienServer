@@ -10,7 +10,7 @@ from object.cache import SimpleLRUCache
 from object.scheme import *
 
 
-# 缓存查询过的信息
+# Cache queried information
 CrashInfoCache = SimpleLRUCache(100)
 
 class CrashInfoHandler(AuthedHandler):
@@ -224,12 +224,12 @@ class DetailCrashInfo(AuthedHandler):
 			with open(ret["app_debug"], "rb") as f:
 				app_debug = f.read()
 		else:
-			app_debug = "无玩家运行日志"
+			app_debug = "Không có nhật ký chạy của người chơi"
 
 		try:
 			app_debug.decode("utf-8")
 		except:
-			app_debug = "存在不可序列化字符串"
+			app_debug = "Có chuỗi không thể tuần tự hóa"
 
 		if style == -1:
 			crashAll = ret["stack_result"]
@@ -264,16 +264,16 @@ class DetailCrashInfo(AuthedHandler):
 				"crashCon": stack,
 			}
 
-		htmlText = u"<tr><td>设备机型</td><td>" + self.get_web_value(ret, "phone_name") + u"</td></tr>"
-		htmlText += u"<tr><td>系统版本</td><td>" + self.get_web_value(ret, "phone_sys") + u"</td></tr>"
-		htmlText += u"<tr><td>启动时间</td><td>" + self.get_web_value(ret["device_info"], "game_start_time") + "</td></tr>"
-		htmlText += u"<tr><td>上报时间</td><td>" + self.get_web_value(ret, "report_time")[:19] + u"</td></tr>"
+		htmlText = u"<tr><td>Mẫu thiết bị</td><td>" + self.get_web_value(ret, "phone_name") + u"</td></tr>"
+		htmlText += u"<tr><td>Phiên bản hệ điều hành</td><td>" + self.get_web_value(ret, "phone_sys") + u"</td></tr>"
+		htmlText += u"<tr><td>Thời gian khởi động</td><td>" + self.get_web_value(ret["device_info"], "game_start_time") + "</td></tr>"
+		htmlText += u"<tr><td>Thời gian báo lỗi</td><td>" + self.get_web_value(ret, "report_time")[:19] + u"</td></tr>"
 		htmlText += u"<tr><td>IMEI</td><td>" + self.get_web_value(ret, "imei") + u"</td></tr>"
-		htmlText += u"<tr><td>版本号</td><td>" + self.get_web_value(ret, "version") + u"</td></tr>"
-		htmlText += u"<tr><td>cpu型号</td><td>" + self.get_web_value(ret["device_info"], "cpu_name") + u"</td></tr>"
-		htmlText += u"<tr><td>包名</td><td>" + self.get_web_value(ret["device_info"], "package_name") + u"</td></tr>"
-		htmlText += u"<tr><td>可用存储空间</td><td>" + self.get_web_value(ret["device_info"], "available_memory") + "</td></tr>"
-		# htmlText += u"<tr><td>cpu使用率</td><td>" + self.get_web_value(ret["device_info"], "cpu_total_rate") + u"</td></tr>"
+		htmlText += u"<tr><td>Phiên bản</td><td>" + self.get_web_value(ret, "version") + u"</td></tr>"
+		htmlText += u"<tr><td>Mẫu CPU</td><td>" + self.get_web_value(ret["device_info"], "cpu_name") + u"</td></tr>"
+		htmlText += u"<tr><td>Tên gói</td><td>" + self.get_web_value(ret["device_info"], "package_name") + u"</td></tr>"
+		htmlText += u"<tr><td>Dung lượng trống</td><td>" + self.get_web_value(ret["device_info"], "available_memory") + "</td></tr>"
+		# htmlText += u"<tr><td>CPU usage</td><td>" + self.get_web_value(ret["device_info"], "cpu_total_rate") + u"</td></tr>"
 		htmlText += u"<tr><td>sdk</td><td>" + self.get_web_value(ret["device_info"], "sdk") + u"</td></tr>"
 
 		# htmlText += u"<tr><td>url</td><td>" + self.get_web_value(ret, "url") + u"</td></tr>"

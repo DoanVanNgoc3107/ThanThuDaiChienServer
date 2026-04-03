@@ -10,7 +10,7 @@ $quarr = array (
   "pswd" =>"admin",
   "zoneid"=>1,
   "srv_name"=>"game.cn.1",
-  "name"=>"阿泽源码网1区",
+  "name"=>"Server 1",
     "url"=>"http://192.168.1.13:38088",
   "hidde"=>false
  )
@@ -20,7 +20,7 @@ $quarr = array (
   "pswd" =>"admin",
   "zoneid"=>2,
   "srv_name"=>"game.cn.2",
-  "name"=>"阿泽源码网2区",
+  "name"=>"Server 2",
     "url"=>"http://192.168.1.13:38088",
   "hidde"=>false
  )

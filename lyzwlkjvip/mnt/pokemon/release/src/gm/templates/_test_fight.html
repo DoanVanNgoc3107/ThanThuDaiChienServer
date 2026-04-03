@@ -11,7 +11,7 @@
 {% block main %}
 	<div class="container-fluid main">
 		<div class="row">
-			<div class="title"><h4>战斗测试</h4></div>
+            <div class="title"><h4>Kiểm tra chiến đấu</h4></div>
 		</div>
         <div class="well">
         	<div class="row">
@@ -19,7 +19,7 @@
         			<div role="form" class="form-inline t">
 					  	<div class="form-group">
 						  	<label></label>
-						  	<button id='test-fight' class="form-control btn-primary input-sm">开始战斗测试</button>
+                          	<button id='test-fight' class="form-control btn-primary input-sm">Bắt đầu kiểm tra chiến đấu</button>
 					  	</div>
 					</div>
         		</div>
@@ -88,19 +88,19 @@
                     'sortable': true,
                 }],
                 data: [{
-                    'item': '跨服王者',
+                    'item': 'Vua liên server',
                     'key': 'cross_craft'
                 }, {
-                    'item': '竞技场',
+                    'item': 'Đấu trường',
                     'key': 'arena'
                 }, {
-                    'item': '王者',
+                    'item': 'Vua',
                     'key': 'craft'
                 }, {
-                    'item': '跨服竞技场',
+                    'item': 'Đấu trường liên server',
                     'key': 'cross_arena'
                 }, {
-                    'item': '公会战',
+                    'item': 'Chiến bang hội',
                     'key': 'union_fight'
                 }],
                 showFooter: true
@@ -115,11 +115,11 @@
                     }
                 },{
                     'field': 'result',
-                    'title': '结果',
+					'title': 'Kết quả',
                     'sortable': true,
                 }, {
                     'field': 'dict',
-                    'title': '详细',
+					'title': 'Chi tiết',
                 }],
             });
             $("#testLog").bootstrapTable('hideColumn', 'key');
@@ -192,7 +192,7 @@
                     formatter: function(value, row, index) {
                             let url = `/test_fight/download?playid=${row.playid}&type=${row.type}`;
                             let fileName = JSON.stringify(row.playid) + ".play";
-                            return `<a href='${url}' download='${fileName}'>下载</a>`;
+            							return `<a href='${url}' download='${fileName}'>Tải xuống</a>`;
                         },
                 }],
                 // detailView: true,
@@ -249,19 +249,19 @@
 	                success(result){
 	                    updater.start();
 	                    $table.bootstrapTable('load', [{
-	                            'item': '跨服王者',
+                                'item': 'Vua liên server',
 	                            'key': 'cross_craft'
 	                        }, {
-	                            'item': '竞技场',
+                                'item': 'Đấu trường',
 	                            'key': 'arena'
 	                        }, {
-	                            'item': '王者',
+                                'item': 'Vua',
 	                            'key': 'craft'
 	                        }, {
-	                            'item': '跨服竞技场',
+                                'item': 'Đấu trường liên server',
 	                            'key': 'cross_arena'
 	                        }, {
-	                            'item': '公会战',
+                                'item': 'Chiến bang hội',
 	                            'key': 'union_fight'
 	                        }]);
 

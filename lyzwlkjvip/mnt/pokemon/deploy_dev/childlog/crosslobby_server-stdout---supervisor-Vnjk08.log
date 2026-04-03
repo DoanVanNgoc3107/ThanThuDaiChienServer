@@ -1,0 +1,151 @@
+[host_server I 260403 07:13:58.402.001 document.go:151] register document default ok
+[host_server I 260403 07:13:58.405.002 init.go:171] register document ok
+[host_server D 260403 07:13:58.432.003 config.go:49] cwd in /mnt/pokemon/release/crosslobby
+[host_server D 260403 07:13:58.481.004 config.go:23] GetExtend service crosslobby.cn.1 &service.Option{Name:"crosslobby.cn.1", Alias:[]string(nil), Dependent:[]string{}}
+[host_server I 260403 07:13:58.482.005 config.go:60] crosslobby.cn.1 config in defines.json
+[crosslobby.cn.1 I 260403 07:13:58.482.006 main.go:44] &services.Define{ContainerOption:service.ContainerOption{Name:"@crosslobby.cn.1", Debug:false, Addr:"", NSQLookupd:"http://127.0.0.1:4161/", Mainnsqd:"", NSQTcpAddresses:[]string{"127.0.0.1:4150"}, Shushu:false, Services:[]service.IOption{(*service.Option)(0xc000346380)}, ServicesRaw:[]json.RawMessage(nil)}}
+[crosslobby.cn.1 I 260403 07:14:04.841.010 rpcclient.go:292] create client consumer RESP-c_crosslobby.cn.1/0global_1rpc
+[crosslobby.cn.1 I 260403 07:14:04.843.011 consumer.go:1175] INF    2 [RESP-c_crosslobby.cn.1/0global_1rpc] (127.0.0.1:4150) connecting to nsqd
+[crosslobby.cn.1 I 260403 07:14:04.847.012 container.go:259] service crosslobby.cn.1 start
+[crosslobby.cn.1 I 260403 07:14:04.847.013 container.go:264] container @crosslobby.cn.1 start
+[crosslobby.cn.1 I 260403 07:14:04.847.014 server.go:29] server start ok
+[crosslobby.cn.1 I 260403 07:14:04.849.018 rpcserver.go:349] create server consumer REQ-crosslobby.cn.1/rpc
+[crosslobby.cn.1 I 260403 07:14:04.849.021 consumer.go:1175] INF    3 [REQ-crosslobby.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[crosslobby.cn.1 I 260403 07:43:39.822.022 producer.go:382] INF    4 stopping
+[crosslobby.cn.1 I 260403 07:43:39.822.023 consumer.go:1175] INF    3 [REQ-crosslobby.cn.1/rpc] stopping...
+[crosslobby.cn.1 I 260403 07:43:39.824.024 container.go:279] service crosslobby.cn.1 stop
+[crosslobby.cn.1 I 260403 07:43:39.824.025 container.go:286] container @crosslobby.cn.1 stop
+[crosslobby.cn.1 I 260403 07:43:39.825.026 server.go:49] server stop ok
+[host_server I 260403 07:43:51.266.001 document.go:151] register document default ok
+[host_server I 260403 07:43:51.268.002 init.go:171] register document ok
+[host_server D 260403 07:43:51.273.003 config.go:49] cwd in /mnt/pokemon/release/crosslobby
+[host_server D 260403 07:43:51.280.004 config.go:23] GetExtend service crosslobby.cn.1 &service.Option{Name:"crosslobby.cn.1", Alias:[]string(nil), Dependent:[]string{}}
+[host_server I 260403 07:43:51.281.005 config.go:60] crosslobby.cn.1 config in defines.json
+[crosslobby.cn.1 I 260403 07:43:51.281.006 main.go:44] &services.Define{ContainerOption:service.ContainerOption{Name:"@crosslobby.cn.1", Debug:false, Addr:"", NSQLookupd:"http://127.0.0.1:4161/", Mainnsqd:"", NSQTcpAddresses:[]string{"127.0.0.1:4150"}, Shushu:false, Services:[]service.IOption{(*service.Option)(0xc0001ab3c0)}, ServicesRaw:[]json.RawMessage(nil)}}
+[crosslobby.cn.1 I 260403 07:43:57.628.010 rpcclient.go:292] create client consumer RESP-c_crosslobby.cn.1/0global_1rpc
+[crosslobby.cn.1 I 260403 07:43:57.629.011 consumer.go:1175] INF    2 [RESP-c_crosslobby.cn.1/0global_1rpc] (127.0.0.1:4150) connecting to nsqd
+[crosslobby.cn.1 I 260403 07:43:57.635.012 container.go:259] service crosslobby.cn.1 start
+[crosslobby.cn.1 I 260403 07:43:57.635.013 container.go:264] container @crosslobby.cn.1 start
+[crosslobby.cn.1 I 260403 07:43:57.635.014 server.go:29] server start ok
+[crosslobby.cn.1 I 260403 07:43:57.636.018 rpcserver.go:349] create server consumer REQ-crosslobby.cn.1/rpc
+[crosslobby.cn.1 I 260403 07:43:57.636.021 consumer.go:1175] INF    3 [REQ-crosslobby.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[crosslobby.cn.1 E 260403 08:38:32.112.022 conn.go:731] ERR    2 [RESP-c_crosslobby.cn.1/0global_1rpc] (127.0.0.1:4150) IO error - EOF
+[crosslobby.cn.1 I 260403 08:38:32.113.023 conn.go:731] INF    2 [RESP-c_crosslobby.cn.1/0global_1rpc] (127.0.0.1:4150) beginning close
+[crosslobby.cn.1 I 260403 08:38:32.113.024 conn.go:731] INF    2 [RESP-c_crosslobby.cn.1/0global_1rpc] (127.0.0.1:4150) readLoop exiting
+[crosslobby.cn.1 I 260403 08:38:32.114.025 conn.go:731] INF    2 [RESP-c_crosslobby.cn.1/0global_1rpc] (127.0.0.1:4150) breaking out of writeLoop
+[crosslobby.cn.1 I 260403 08:38:32.114.026 conn.go:731] INF    2 [RESP-c_crosslobby.cn.1/0global_1rpc] (127.0.0.1:4150) writeLoop exiting
+[crosslobby.cn.1 E 260403 08:38:32.124.027 conn.go:731] ERR    3 [REQ-crosslobby.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[crosslobby.cn.1 I 260403 08:38:32.125.028 conn.go:731] INF    3 [REQ-crosslobby.cn.1/rpc] (127.0.0.1:4150) beginning close
+[crosslobby.cn.1 I 260403 08:38:32.126.029 conn.go:731] INF    3 [REQ-crosslobby.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[crosslobby.cn.1 I 260403 08:38:32.126.030 conn.go:731] INF    3 [REQ-crosslobby.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[crosslobby.cn.1 I 260403 08:38:32.126.031 conn.go:731] INF    3 [REQ-crosslobby.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[crosslobby.cn.1 I 260403 08:38:32.216.032 conn.go:731] INF    2 [RESP-c_crosslobby.cn.1/0global_1rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[crosslobby.cn.1 I 260403 08:38:32.216.033 conn.go:731] INF    2 [RESP-c_crosslobby.cn.1/0global_1rpc] (127.0.0.1:4150) clean close complete
+[crosslobby.cn.1 W 260403 08:38:32.217.034 consumer.go:1175] WRN    2 [RESP-c_crosslobby.cn.1/0global_1rpc] there are 0 connections left alive
+[crosslobby.cn.1 I 260403 08:38:32.217.035 consumer.go:1175] INF    2 [RESP-c_crosslobby.cn.1/0global_1rpc] (127.0.0.1:4150) re-connecting in 5s
+[crosslobby.cn.1 I 260403 08:38:32.226.036 conn.go:731] INF    3 [REQ-crosslobby.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[crosslobby.cn.1 I 260403 08:38:32.226.037 conn.go:731] INF    3 [REQ-crosslobby.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[crosslobby.cn.1 W 260403 08:38:32.226.038 consumer.go:1175] WRN    3 [REQ-crosslobby.cn.1/rpc] there are 0 connections left alive
+[crosslobby.cn.1 I 260403 08:38:32.226.039 consumer.go:1175] INF    3 [REQ-crosslobby.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[crosslobby.cn.1 I 260403 08:38:37.218.040 consumer.go:1175] INF    2 [RESP-c_crosslobby.cn.1/0global_1rpc] (127.0.0.1:4150) connecting to nsqd
+[crosslobby.cn.1 I 260403 08:38:37.227.041 consumer.go:1175] INF    3 [REQ-crosslobby.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[crosslobby.cn.1 E 260403 09:31:39.412.042 conn.go:731] ERR    3 [REQ-crosslobby.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[crosslobby.cn.1 I 260403 09:31:39.413.043 conn.go:731] INF    3 [REQ-crosslobby.cn.1/rpc] (127.0.0.1:4150) beginning close
+[crosslobby.cn.1 E 260403 09:31:39.413.045 conn.go:731] ERR    2 [RESP-c_crosslobby.cn.1/0global_1rpc] (127.0.0.1:4150) IO error - EOF
+[crosslobby.cn.1 I 260403 09:31:39.413.044 conn.go:731] INF    3 [REQ-crosslobby.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[crosslobby.cn.1 I 260403 09:31:39.413.046 conn.go:731] INF    2 [RESP-c_crosslobby.cn.1/0global_1rpc] (127.0.0.1:4150) beginning close
+[crosslobby.cn.1 I 260403 09:31:39.413.047 conn.go:731] INF    2 [RESP-c_crosslobby.cn.1/0global_1rpc] (127.0.0.1:4150) readLoop exiting
+[crosslobby.cn.1 I 260403 09:31:39.414.048 conn.go:731] INF    2 [RESP-c_crosslobby.cn.1/0global_1rpc] (127.0.0.1:4150) breaking out of writeLoop
+[crosslobby.cn.1 I 260403 09:31:39.414.049 conn.go:731] INF    2 [RESP-c_crosslobby.cn.1/0global_1rpc] (127.0.0.1:4150) writeLoop exiting
+[crosslobby.cn.1 I 260403 09:31:39.415.050 conn.go:731] INF    3 [REQ-crosslobby.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[crosslobby.cn.1 I 260403 09:31:39.415.051 conn.go:731] INF    3 [REQ-crosslobby.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[crosslobby.cn.1 I 260403 09:31:39.515.052 conn.go:731] INF    3 [REQ-crosslobby.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[crosslobby.cn.1 I 260403 09:31:39.515.053 conn.go:731] INF    2 [RESP-c_crosslobby.cn.1/0global_1rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[crosslobby.cn.1 I 260403 09:31:39.515.054 conn.go:731] INF    3 [REQ-crosslobby.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[crosslobby.cn.1 W 260403 09:31:39.515.055 consumer.go:1175] WRN    3 [REQ-crosslobby.cn.1/rpc] there are 0 connections left alive
+[crosslobby.cn.1 I 260403 09:31:39.516.056 consumer.go:1175] INF    3 [REQ-crosslobby.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[crosslobby.cn.1 I 260403 09:31:39.516.057 conn.go:731] INF    2 [RESP-c_crosslobby.cn.1/0global_1rpc] (127.0.0.1:4150) clean close complete
+[crosslobby.cn.1 W 260403 09:31:39.516.058 consumer.go:1175] WRN    2 [RESP-c_crosslobby.cn.1/0global_1rpc] there are 0 connections left alive
+[crosslobby.cn.1 I 260403 09:31:39.516.059 consumer.go:1175] INF    2 [RESP-c_crosslobby.cn.1/0global_1rpc] (127.0.0.1:4150) re-connecting in 5s
+[crosslobby.cn.1 I 260403 09:31:44.516.060 consumer.go:1175] INF    3 [REQ-crosslobby.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[crosslobby.cn.1 I 260403 09:31:44.518.061 consumer.go:1175] INF    2 [RESP-c_crosslobby.cn.1/0global_1rpc] (127.0.0.1:4150) connecting to nsqd
+[crosslobby.cn.1 E 260403 10:19:04.994.062 conn.go:731] ERR    3 [REQ-crosslobby.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[crosslobby.cn.1 I 260403 10:19:04.995.063 conn.go:731] INF    3 [REQ-crosslobby.cn.1/rpc] (127.0.0.1:4150) beginning close
+[crosslobby.cn.1 I 260403 10:19:04.995.064 conn.go:731] INF    3 [REQ-crosslobby.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[crosslobby.cn.1 I 260403 10:19:04.996.065 conn.go:731] INF    3 [REQ-crosslobby.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[crosslobby.cn.1 I 260403 10:19:04.996.066 conn.go:731] INF    3 [REQ-crosslobby.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[crosslobby.cn.1 E 260403 10:19:04.996.067 conn.go:731] ERR    2 [RESP-c_crosslobby.cn.1/0global_1rpc] (127.0.0.1:4150) IO error - EOF
+[crosslobby.cn.1 I 260403 10:19:04.996.068 conn.go:731] INF    2 [RESP-c_crosslobby.cn.1/0global_1rpc] (127.0.0.1:4150) beginning close
+[crosslobby.cn.1 I 260403 10:19:04.996.069 conn.go:731] INF    2 [RESP-c_crosslobby.cn.1/0global_1rpc] (127.0.0.1:4150) readLoop exiting
+[crosslobby.cn.1 I 260403 10:19:04.996.070 conn.go:731] INF    2 [RESP-c_crosslobby.cn.1/0global_1rpc] (127.0.0.1:4150) breaking out of writeLoop
+[crosslobby.cn.1 I 260403 10:19:04.996.071 conn.go:731] INF    2 [RESP-c_crosslobby.cn.1/0global_1rpc] (127.0.0.1:4150) writeLoop exiting
+[crosslobby.cn.1 I 260403 10:19:05.096.072 conn.go:731] INF    3 [REQ-crosslobby.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[crosslobby.cn.1 I 260403 10:19:05.097.073 conn.go:731] INF    3 [REQ-crosslobby.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[crosslobby.cn.1 W 260403 10:19:05.097.074 consumer.go:1175] WRN    3 [REQ-crosslobby.cn.1/rpc] there are 0 connections left alive
+[crosslobby.cn.1 I 260403 10:19:05.097.075 consumer.go:1175] INF    3 [REQ-crosslobby.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[crosslobby.cn.1 I 260403 10:19:05.097.076 conn.go:731] INF    2 [RESP-c_crosslobby.cn.1/0global_1rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[crosslobby.cn.1 I 260403 10:19:05.097.077 conn.go:731] INF    2 [RESP-c_crosslobby.cn.1/0global_1rpc] (127.0.0.1:4150) clean close complete
+[crosslobby.cn.1 W 260403 10:19:05.097.078 consumer.go:1175] WRN    2 [RESP-c_crosslobby.cn.1/0global_1rpc] there are 0 connections left alive
+[crosslobby.cn.1 I 260403 10:19:05.097.079 consumer.go:1175] INF    2 [RESP-c_crosslobby.cn.1/0global_1rpc] (127.0.0.1:4150) re-connecting in 5s
+[crosslobby.cn.1 I 260403 10:19:10.097.080 consumer.go:1175] INF    3 [REQ-crosslobby.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[crosslobby.cn.1 I 260403 10:19:10.099.081 consumer.go:1175] INF    2 [RESP-c_crosslobby.cn.1/0global_1rpc] (127.0.0.1:4150) connecting to nsqd
+[crosslobby.cn.1 E 260403 11:05:38.519.082 conn.go:731] ERR    3 [REQ-crosslobby.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[crosslobby.cn.1 I 260403 11:05:38.519.083 conn.go:731] INF    3 [REQ-crosslobby.cn.1/rpc] (127.0.0.1:4150) beginning close
+[crosslobby.cn.1 I 260403 11:05:38.520.084 conn.go:731] INF    3 [REQ-crosslobby.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[crosslobby.cn.1 I 260403 11:05:38.520.085 conn.go:731] INF    3 [REQ-crosslobby.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[crosslobby.cn.1 I 260403 11:05:38.520.086 conn.go:731] INF    3 [REQ-crosslobby.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[crosslobby.cn.1 E 260403 11:05:38.520.087 conn.go:731] ERR    2 [RESP-c_crosslobby.cn.1/0global_1rpc] (127.0.0.1:4150) IO error - EOF
+[crosslobby.cn.1 I 260403 11:05:38.520.088 conn.go:731] INF    2 [RESP-c_crosslobby.cn.1/0global_1rpc] (127.0.0.1:4150) beginning close
+[crosslobby.cn.1 I 260403 11:05:38.520.089 conn.go:731] INF    2 [RESP-c_crosslobby.cn.1/0global_1rpc] (127.0.0.1:4150) readLoop exiting
+[crosslobby.cn.1 I 260403 11:05:38.520.090 conn.go:731] INF    2 [RESP-c_crosslobby.cn.1/0global_1rpc] (127.0.0.1:4150) breaking out of writeLoop
+[crosslobby.cn.1 I 260403 11:05:38.520.091 conn.go:731] INF    2 [RESP-c_crosslobby.cn.1/0global_1rpc] (127.0.0.1:4150) writeLoop exiting
+[crosslobby.cn.1 I 260403 11:05:38.620.092 conn.go:731] INF    3 [REQ-crosslobby.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[crosslobby.cn.1 I 260403 11:05:38.621.093 conn.go:731] INF    3 [REQ-crosslobby.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[crosslobby.cn.1 I 260403 11:05:38.621.094 conn.go:731] INF    2 [RESP-c_crosslobby.cn.1/0global_1rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[crosslobby.cn.1 W 260403 11:05:38.621.096 consumer.go:1175] WRN    3 [REQ-crosslobby.cn.1/rpc] there are 0 connections left alive
+[crosslobby.cn.1 I 260403 11:05:38.621.097 consumer.go:1175] INF    3 [REQ-crosslobby.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[crosslobby.cn.1 I 260403 11:05:38.621.095 conn.go:731] INF    2 [RESP-c_crosslobby.cn.1/0global_1rpc] (127.0.0.1:4150) clean close complete
+[crosslobby.cn.1 W 260403 11:05:38.621.098 consumer.go:1175] WRN    2 [RESP-c_crosslobby.cn.1/0global_1rpc] there are 0 connections left alive
+[crosslobby.cn.1 I 260403 11:05:38.621.099 consumer.go:1175] INF    2 [RESP-c_crosslobby.cn.1/0global_1rpc] (127.0.0.1:4150) re-connecting in 5s
+[crosslobby.cn.1 I 260403 11:05:43.622.100 consumer.go:1175] INF    3 [REQ-crosslobby.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[crosslobby.cn.1 I 260403 11:05:43.622.101 consumer.go:1175] INF    2 [RESP-c_crosslobby.cn.1/0global_1rpc] (127.0.0.1:4150) connecting to nsqd
+[crosslobby.cn.1 E 260403 11:50:07.265.102 conn.go:731] ERR    3 [REQ-crosslobby.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[crosslobby.cn.1 I 260403 11:50:07.266.103 conn.go:731] INF    3 [REQ-crosslobby.cn.1/rpc] (127.0.0.1:4150) beginning close
+[crosslobby.cn.1 I 260403 11:50:07.266.104 conn.go:731] INF    3 [REQ-crosslobby.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[crosslobby.cn.1 I 260403 11:50:07.266.105 conn.go:731] INF    3 [REQ-crosslobby.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[crosslobby.cn.1 I 260403 11:50:07.266.106 conn.go:731] INF    3 [REQ-crosslobby.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[crosslobby.cn.1 E 260403 11:50:07.267.107 conn.go:731] ERR    2 [RESP-c_crosslobby.cn.1/0global_1rpc] (127.0.0.1:4150) IO error - EOF
+[crosslobby.cn.1 I 260403 11:50:07.267.108 conn.go:731] INF    2 [RESP-c_crosslobby.cn.1/0global_1rpc] (127.0.0.1:4150) beginning close
+[crosslobby.cn.1 I 260403 11:50:07.267.109 conn.go:731] INF    2 [RESP-c_crosslobby.cn.1/0global_1rpc] (127.0.0.1:4150) readLoop exiting
+[crosslobby.cn.1 I 260403 11:50:07.267.110 conn.go:731] INF    2 [RESP-c_crosslobby.cn.1/0global_1rpc] (127.0.0.1:4150) breaking out of writeLoop
+[crosslobby.cn.1 I 260403 11:50:07.267.111 conn.go:731] INF    2 [RESP-c_crosslobby.cn.1/0global_1rpc] (127.0.0.1:4150) writeLoop exiting
+[crosslobby.cn.1 I 260403 11:50:07.367.112 conn.go:731] INF    3 [REQ-crosslobby.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[crosslobby.cn.1 I 260403 11:50:07.367.113 conn.go:731] INF    3 [REQ-crosslobby.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[crosslobby.cn.1 W 260403 11:50:07.367.114 consumer.go:1175] WRN    3 [REQ-crosslobby.cn.1/rpc] there are 0 connections left alive
+[crosslobby.cn.1 I 260403 11:50:07.367.115 consumer.go:1175] INF    3 [REQ-crosslobby.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[crosslobby.cn.1 I 260403 11:50:07.368.116 conn.go:731] INF    2 [RESP-c_crosslobby.cn.1/0global_1rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[crosslobby.cn.1 I 260403 11:50:07.368.117 conn.go:731] INF    2 [RESP-c_crosslobby.cn.1/0global_1rpc] (127.0.0.1:4150) clean close complete
+[crosslobby.cn.1 W 260403 11:50:07.368.118 consumer.go:1175] WRN    2 [RESP-c_crosslobby.cn.1/0global_1rpc] there are 0 connections left alive
+[crosslobby.cn.1 I 260403 11:50:07.368.119 consumer.go:1175] INF    2 [RESP-c_crosslobby.cn.1/0global_1rpc] (127.0.0.1:4150) re-connecting in 5s
+[crosslobby.cn.1 I 260403 11:50:12.369.120 consumer.go:1175] INF    3 [REQ-crosslobby.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[crosslobby.cn.1 I 260403 11:50:12.369.121 consumer.go:1175] INF    2 [RESP-c_crosslobby.cn.1/0global_1rpc] (127.0.0.1:4150) connecting to nsqd
+[crosslobby.cn.1 E 260403 12:23:39.747.122 conn.go:731] ERR    3 [REQ-crosslobby.cn.1/rpc] (127.0.0.1:4150) IO error - EOF
+[crosslobby.cn.1 I 260403 12:23:39.748.123 conn.go:731] INF    3 [REQ-crosslobby.cn.1/rpc] (127.0.0.1:4150) beginning close
+[crosslobby.cn.1 I 260403 12:23:39.748.125 conn.go:731] INF    3 [REQ-crosslobby.cn.1/rpc] (127.0.0.1:4150) readLoop exiting
+[crosslobby.cn.1 E 260403 12:23:39.748.124 conn.go:731] ERR    2 [RESP-c_crosslobby.cn.1/0global_1rpc] (127.0.0.1:4150) IO error - EOF
+[crosslobby.cn.1 I 260403 12:23:39.749.126 conn.go:731] INF    3 [REQ-crosslobby.cn.1/rpc] (127.0.0.1:4150) breaking out of writeLoop
+[crosslobby.cn.1 I 260403 12:23:39.749.127 conn.go:731] INF    3 [REQ-crosslobby.cn.1/rpc] (127.0.0.1:4150) writeLoop exiting
+[crosslobby.cn.1 I 260403 12:23:39.749.128 conn.go:731] INF    2 [RESP-c_crosslobby.cn.1/0global_1rpc] (127.0.0.1:4150) beginning close
+[crosslobby.cn.1 I 260403 12:23:39.750.129 conn.go:731] INF    2 [RESP-c_crosslobby.cn.1/0global_1rpc] (127.0.0.1:4150) readLoop exiting
+[crosslobby.cn.1 I 260403 12:23:39.751.130 conn.go:731] INF    2 [RESP-c_crosslobby.cn.1/0global_1rpc] (127.0.0.1:4150) breaking out of writeLoop
+[crosslobby.cn.1 I 260403 12:23:39.751.131 conn.go:731] INF    2 [RESP-c_crosslobby.cn.1/0global_1rpc] (127.0.0.1:4150) writeLoop exiting
+[crosslobby.cn.1 I 260403 12:23:39.849.132 conn.go:731] INF    3 [REQ-crosslobby.cn.1/rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[crosslobby.cn.1 I 260403 12:23:39.849.133 conn.go:731] INF    3 [REQ-crosslobby.cn.1/rpc] (127.0.0.1:4150) clean close complete
+[crosslobby.cn.1 W 260403 12:23:39.849.134 consumer.go:1175] WRN    3 [REQ-crosslobby.cn.1/rpc] there are 0 connections left alive
+[crosslobby.cn.1 I 260403 12:23:39.849.135 consumer.go:1175] INF    3 [REQ-crosslobby.cn.1/rpc] (127.0.0.1:4150) re-connecting in 5s
+[crosslobby.cn.1 I 260403 12:23:39.852.136 conn.go:731] INF    2 [RESP-c_crosslobby.cn.1/0global_1rpc] (127.0.0.1:4150) finished draining, cleanup exiting
+[crosslobby.cn.1 I 260403 12:23:39.852.137 conn.go:731] INF    2 [RESP-c_crosslobby.cn.1/0global_1rpc] (127.0.0.1:4150) clean close complete
+[crosslobby.cn.1 W 260403 12:23:39.852.138 consumer.go:1175] WRN    2 [RESP-c_crosslobby.cn.1/0global_1rpc] there are 0 connections left alive
+[crosslobby.cn.1 I 260403 12:23:39.852.139 consumer.go:1175] INF    2 [RESP-c_crosslobby.cn.1/0global_1rpc] (127.0.0.1:4150) re-connecting in 5s
+[crosslobby.cn.1 I 260403 12:23:44.851.140 consumer.go:1175] INF    3 [REQ-crosslobby.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[crosslobby.cn.1 I 260403 12:23:44.852.141 consumer.go:1175] INF    2 [RESP-c_crosslobby.cn.1/0global_1rpc] (127.0.0.1:4150) connecting to nsqd

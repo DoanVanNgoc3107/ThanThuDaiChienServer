@@ -134,7 +134,7 @@ class DashBoardChartEfectUser(AuthedHandler):
 
 
 class TodayIssueStatistics1(AuthedHandler):
-	# 今日新问题
+	# Vấn đề mới trong hôm nay
 	url = "/dashboard/issuestatistics1"
 
 	@coroutine
@@ -152,14 +152,14 @@ class TodayIssueStatistics1(AuthedHandler):
 		issueSum = result[2] + result[3]
 
 		ret = {
-			"labels": ["今日新发现问题: %d"% issueNew, "今日总问题: %d"% issueSum],
+			"labels": ["Vấn đề mới phát hiện hôm nay: %d"% issueNew, "Tổng vấn đề hôm nay: %d"% issueSum],
 			"datas": [issueNew, issueSum - issueNew],
 			"today_time": str(today[0])
 		}
 		self.write_json(ret)
 
 class TodayIssueStatistics2(AuthedHandler):
-	# 今日已修复问题
+	# Vấn đề đã xử lý trong hôm nay
 	url = "/dashboard/issuestatistics2"
 
 	@coroutine
@@ -177,7 +177,7 @@ class TodayIssueStatistics2(AuthedHandler):
 		issueSum = result[2] + result[3]
 
 		ret = {
-			"labels": ["今日已修复问题: %d"% issueHas, "今日总问题: %d"% issueSum],
+			"labels": ["Vấn đề đã xử lý hôm nay: %d"% issueHas, "Tổng vấn đề hôm nay: %d"% issueSum],
 			"datas": [issueHas, issueSum - issueHas],
 			"today_time": str(today[0])
 		}

@@ -25,16 +25,16 @@ DashboardChart.prototype.init = function(params) {
         data: {
             labels: responseData.xAex,
             datasets: [{
-                label: "崩溃",
+                label: "Crash",
                 data: responseData.xDumpData,
-                // lineTension: 2, 线条弯曲度
+                // lineTension: 2, line curvature
                 backgroundColor: 'transparent',
                 borderColor: '#007bff',
                 borderWidth: 2,
                 pointBackgroundColor: '#fff'
             },
             {
-                label: "异常",
+                label: "Ngoại lệ",
                 fill: true,
                 borderColor: "rgba(200,187,205,1)",
                 pointBackgroundColor: "#fff",
@@ -48,7 +48,7 @@ DashboardChart.prototype.init = function(params) {
             },
             title: {
                 display: false,
-                text: '趋势图',
+                text: 'Biểu đồ xu hướng',
                 // fontSize: 20,
             },
             scales: {
@@ -75,9 +75,9 @@ DashboardChart.prototype.init = function(params) {
                     var label = this.data.datasets[point._datasetIndex].label;
                     var hide_style;
                     var url;
-                    if (label === "崩溃") {
+                    if (label === "Crash") {
                         hide_style = -1;
-                    } else if (label == "异常") {
+                    } else if (label == "Ngoại lệ") {
                         hide_style = 1;
                     };
                     url = "/dashboard/datashow?hide_time=" + encodeURIComponent(hide_time) + "&hide_style=" + encodeURIComponent(hide_style);
@@ -157,27 +157,27 @@ $(document).ready(function() {
                         }
                     }
                     if (data.length === 0) {
-                        htmlText = '<span>暂无数据可展示</span>'
+                        htmlText = '<span>Không có dữ liệu để hiển thị</span>'
                     } else if (data.length === 1) {
                         data = data[0]
                         var a1 = '<a href="/crashinfo?ident='+encodeURIComponent(data[0])+'&type='+encodeURIComponent(data[2])+'" target="_blank">'+data[1]+'</a>';
-                        htmlText = '<table class="table"><tbody><tr><td>1</td><td>' + a1 + '</td><td>' + data[3] + '次</td></tr></tbody></table>';
+                        htmlText = '<table class="table"><tbody><tr><td>1</td><td>' + a1 + '</td><td>' + data[3] + ' lần</td></tr></tbody></table>';
                     } else if (data.length === 2) {
                         var a1 = '<a href="/crashinfo?ident='+encodeURIComponent(data[0][0])+'&type='+encodeURIComponent(data[0][2])+'" target="_blank">'+data[0][1]+'</a>';
                         var a2 = '<a href="/crashinfo?ident='+encodeURIComponent(data[1][0])+'&type='+encodeURIComponent(data[1][2])+'" target="_blank">'+data[1][1]+'</a>';
-                        htmlText = '<table class="table"><tbody><tr><td>1</td><td>' + a1 + '</td><td>' + data[0][3] + '次</td></tr><tr><td>2</td><td>';
-                        htmlText += a2 + '</td><td>' + data[1][3] + '次</td></tr></tbody></table>';
+                        htmlText = '<table class="table"><tbody><tr><td>1</td><td>' + a1 + '</td><td>' + data[0][3] + ' lần</td></tr><tr><td>2</td><td>';
+                        htmlText += a2 + '</td><td>' + data[1][3] + ' lần</td></tr></tbody></table>';
                     } else {
                         var a1 = '<a href="/crashinfo?ident='+encodeURIComponent(data[0][0])+'&type='+encodeURIComponent(data[0][2])+'" target="_blank">'+data[0][1]+'</a>';
                         var a2 = '<a href="/crashinfo?ident='+encodeURIComponent(data[1][0])+'&type='+encodeURIComponent(data[1][2])+'" target="_blank">'+data[1][1]+'</a>';
                         var a3 = '<a href="/crashinfo?ident='+encodeURIComponent(data[2][0])+'&type='+encodeURIComponent(data[2][2])+'" target="_blank">'+data[2][1]+'</a>';
-                        htmlText = '<table class="table"><tbody><tr><td>1</td><td>' + a1 + '</td><td>' + data[0][3] + '次</td></tr><tr><td>2</td><td>';
-                        htmlText += a2 + '</td><td>' + data[1][3] + '次</td></tr><tr><td>3</td><td>' + a3 + '</td><td>' + data[2][3] + '次</td></tr></tbody></table>';
+                        htmlText = '<table class="table"><tbody><tr><td>1</td><td>' + a1 + '</td><td>' + data[0][3] + ' lần</td></tr><tr><td>2</td><td>';
+                        htmlText += a2 + '</td><td>' + data[1][3] + ' lần</td></tr><tr><td>3</td><td>' + a3 + '</td><td>' + data[2][3] + ' lần</td></tr></tbody></table>';
                     }
                     $("#top3").html(htmlText)
                 },
                 error: function () {
-                    alert("top3 请求失败！")
+                    alert("Yêu cầu top3 thất bại!")
                 },
             })
         }
@@ -240,19 +240,19 @@ $(document).ready(function() {
         classes: "table table-hover table-no-bordered",
         queryParams: queryType.queryParams,
         columns: [
-             {field: 'type', title: '错误类型', align: 'center',
+             {field: 'type', title: 'Loại lỗi', align: 'center',
                 formatter: function(value, row, index) {
                     if (value === -1) {
-                        return '崩溃';
+                        return 'Crash';
                     } else if (value === 1) {
-                        return '异常';
+                        return 'Ngoại lệ';
                     } else {
                         return '??';
                     }
                 }
             },
-            {field: 'id', title: '编号', align: 'center'},
-            {field: 'feature', title: '错误描述', align: 'center',
+            {field: 'id', title: 'Mã', align: 'center'},
+            {field: 'feature', title: 'Mô tả lỗi', align: 'center',
                 formatter: function(value, row, index) {
                     if (value.length > 135) {
                         value = value.substr(0, 130) + "~~~";
@@ -263,16 +263,16 @@ $(document).ready(function() {
                     return '<a href="/crashinfo?_id=' + encodeURIComponent(row.id)+'&type='+encodeURIComponent(row['type'])+'" target="_blank">' + value + '</a>'
                 }
             },
-            {field: 'firsttime', title: '首次上报时间', align: 'center', sortable: true},
-            {field: 'lasttime', title: '最后上报时间', align: 'center', sortable: true},
-            {field: 'count', title: '上报次数', align: 'center', sortable: true},
-            {field: 'imei_member', title: '影响用户', align: 'center', sortable: true},
-            {field: 'status', title: '状态', align: 'center',
+            {field: 'firsttime', title: 'Thời gian báo đầu tiên', align: 'center', sortable: true},
+            {field: 'lasttime', title: 'Thời gian báo gần nhất', align: 'center', sortable: true},
+            {field: 'count', title: 'Số lần báo', align: 'center', sortable: true},
+            {field: 'imei_member', title: 'Người dùng bị ảnh hưởng', align: 'center', sortable: true},
+            {field: 'status', title: 'Trạng thái', align: 'center',
                 formatter: function(value, row, index) {
                     if (value === false)
-                        var display = "未处理";
+                        var display = "Chưa xử lý";
                     else
-                        var display = "已处理";
+                        var display = "Đã xử lý";
                     var d = new Date(row.lasttime);
                     var ds = new Date(row.firsttime);
                     var dc = new Date(todayTime);
@@ -292,7 +292,7 @@ $(document).ready(function() {
         ],
     });
 
-    // 滚动select
+    // Scrollable select
     var show_ss1 = document.getElementById("show-version-ss");
     var ss1 = document.getElementById("version-ss");
     show_ss1.onclick = function(e){
@@ -322,7 +322,7 @@ $(document).ready(function() {
                 break;
                 case 4:
                     var v = $(ele).val();
-                    if (v === "所有版本") {
+                    if (v === "Tất cả phiên bản") {
                         queryType.queryParams.version = "";
                     } else {
                         queryType.queryParams.version = v;

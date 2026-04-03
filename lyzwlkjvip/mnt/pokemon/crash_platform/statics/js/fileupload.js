@@ -1,5 +1,5 @@
 $(function () {
-    // 文件上传
+    // File upload
     function uploadFile() {
 
     }
@@ -11,7 +11,7 @@ $(function () {
         } else if (phoneSys === "IOS") {
             url = "/ios_upload";
         } else {
-            alert("平台不存在？")
+            alert("Không xác định nền tảng?")
             return
         }
         var versionId = $("#fileupload-versionid").val();
@@ -20,10 +20,10 @@ $(function () {
         var file = $("#i-file").prop('files')[0];
 
         if (versionId === "" | package === "" | game_name === "") {
-            alert("文件的版本号和包名不能为空");
+            alert("Phiên bản và gói ứng dụng không được để trống");
             return
         } else if ((file.size === 0) || (!file)) {
-            alert("上传文件不能为空");
+            alert("Tệp tải lên không được để trống");
             return
         } else {
             var form = new FormData();
@@ -61,11 +61,11 @@ $(function () {
                 success: function(ret) {
                     var ret = JSON.parse(ret);
                     if (!ret.result) {
-                        alert("上传失败！");
+                        alert("Tải lên thất bại!");
                         console.log(ret.msg);
                         return;
                     }
-                    alert("上传成功！");
+                    alert("Tải lên thành công!");
                     $("#fileupload-versionid").val("");
                     $("#fileupload-package").val("");
                     $("#fileupload-game_name").val("");
@@ -74,13 +74,13 @@ $(function () {
                     $("#version-error").text("");
                 },
                 error: function() {
-                    alert("上传失败！")
+                    alert("Tải lên thất bại!")
                 }
             })
         }
     })
 
-    // 版本号动态验证
+    // Dynamic version validation
     var authFunc = function() {
         var datas = {
             "versionId": $("#fileupload-versionid").val(),
@@ -97,7 +97,7 @@ $(function () {
                 $("#version-error").text(response.msg)
             },
             error: function(response) {
-                alert("fail")
+                alert("Kiểm tra thất bại")
             }
         })
     };
@@ -110,7 +110,7 @@ $(function () {
         console.log(file2)
 
         if ((file2.size === 0) || (!file2)) {
-            alert("上传文件不能为空");
+            alert("Tệp tải lên không được để trống");
             return
         } else {
             var form2 = new FormData();
@@ -135,16 +135,16 @@ $(function () {
                     console.log(ret)
                     // var ret = JSON.parse(ret);
                     if (!ret.result) {
-                        alert("上传失败！");
+                        alert("Tải lên thất bại!");
                         console.log(ret.msg);
                         return;
                     }
-                    alert("上传成功！");
+                    alert("Tải lên thành công!");
                     $("#location2").val("");
                     $("#i-file2").val("");
                 },
                 error: function() {
-                    alert("上传失败！")
+                    alert("Tải lên thất bại!")
                 }
             })
         }

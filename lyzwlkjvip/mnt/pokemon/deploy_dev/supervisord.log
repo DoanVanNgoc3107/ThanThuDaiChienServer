@@ -1484,3 +1484,289 @@
 2026-04-03 06:01:03,233 INFO success: login_server1 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
 2026-04-03 06:01:03,236 INFO spawned: 'login_server2' with pid 496
 2026-04-03 06:01:04,250 INFO success: login_server2 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-04-03 06:49:18,738 INFO exited: nsqd (terminated by SIGKILL; not expected)
+2026-04-03 06:49:18,752 INFO spawned: 'nsqd' with pid 695
+2026-04-03 06:49:19,776 INFO success: nsqd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-04-03 07:13:45,006 WARN received SIGTERM indicating exit request
+2026-04-03 07:13:45,006 INFO waiting for cross_server, crosslobby_server, anti_cheat_server, payment_server, storage_server2, pvp_server2, pvp_server1, storage_server1, transfer_daemon, login_server1, nsqd, disable_word_check_server, gm_server, game_server1, commentdb_server, comment_server, autochess_room_server, crash_platform_server, online_fight_forward_server, crossdb_server, nsqadmin, login_server2, account_db_server, nsqlookupd, game_server2 to die
+2026-04-03 07:13:45,087 INFO stopped: transfer_daemon (terminated by SIGTERM)
+2026-04-03 07:13:45,100 INFO stopped: login_server2 (exit status 0)
+2026-04-03 07:13:45,109 INFO stopped: login_server1 (exit status 0)
+2026-04-03 07:13:48,075 INFO waiting for cross_server, crosslobby_server, anti_cheat_server, payment_server, storage_server2, pvp_server2, pvp_server1, storage_server1, nsqd, disable_word_check_server, gm_server, game_server1, commentdb_server, comment_server, autochess_room_server, crash_platform_server, online_fight_forward_server, crossdb_server, nsqadmin, account_db_server, nsqlookupd, game_server2 to die
+2026-04-03 07:13:48,497 INFO stopped: crash_platform_server (exit status 0)
+2026-04-03 07:13:50,868 INFO stopped: gm_server (exit status 0)
+2026-04-03 07:13:51,375 INFO waiting for cross_server, crosslobby_server, anti_cheat_server, payment_server, storage_server2, pvp_server2, pvp_server1, storage_server1, nsqd, disable_word_check_server, game_server1, commentdb_server, comment_server, autochess_room_server, online_fight_forward_server, crossdb_server, nsqadmin, account_db_server, nsqlookupd, game_server2 to die
+2026-04-03 07:13:51,410 INFO stopped: game_server2 (exit status 0)
+2026-04-03 07:13:52,034 INFO stopped: game_server1 (exit status 0)
+2026-04-03 07:13:52,085 INFO stopped: payment_server (exit status 0)
+2026-04-03 07:13:52,121 INFO stopped: autochess_room_server (exit status 0)
+2026-04-03 07:13:52,186 INFO stopped: pvp_server1 (exit status 0)
+2026-04-03 07:13:52,233 INFO stopped: pvp_server2 (exit status 0)
+2026-04-03 07:13:52,261 INFO stopped: crosslobby_server (exit status 0)
+2026-04-03 07:13:52,318 INFO stopped: cross_server (exit status 0)
+2026-04-03 07:13:52,382 INFO stopped: account_db_server (exit status 2)
+2026-04-03 07:13:52,450 INFO stopped: crossdb_server (exit status 2)
+2026-04-03 07:13:52,480 INFO stopped: online_fight_forward_server (exit status 0)
+2026-04-03 07:13:52,509 INFO stopped: comment_server (exit status 0)
+2026-04-03 07:13:52,566 INFO stopped: commentdb_server (exit status 2)
+2026-04-03 07:13:52,579 INFO stopped: disable_word_check_server (terminated by SIGTERM)
+2026-04-03 07:13:52,656 INFO stopped: storage_server1 (exit status 2)
+2026-04-03 07:13:52,689 INFO stopped: storage_server2 (exit status 2)
+2026-04-03 07:13:52,704 INFO stopped: anti_cheat_server (exit status 0)
+2026-04-03 07:13:52,704 INFO reaped unknown pid 279
+2026-04-03 07:13:52,713 INFO stopped: nsqadmin (exit status 0)
+2026-04-03 07:13:54,380 INFO waiting for nsqd, nsqlookupd to die
+2026-04-03 07:13:57,118 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2026-04-03 07:13:57,119 INFO Included extra file "/mnt/pokemon/deploy_dev/./supervisord.dir/account_db_server.ini" during parsing
+2026-04-03 07:13:57,119 INFO Included extra file "/mnt/pokemon/deploy_dev/./supervisord.dir/anti_cheat_server.ini" during parsing
+2026-04-03 07:13:57,119 INFO Included extra file "/mnt/pokemon/deploy_dev/./supervisord.dir/autochess_room_server.ini" during parsing
+2026-04-03 07:13:57,119 INFO Included extra file "/mnt/pokemon/deploy_dev/./supervisord.dir/comment_server.ini" during parsing
+2026-04-03 07:13:57,119 INFO Included extra file "/mnt/pokemon/deploy_dev/./supervisord.dir/commentdb_server.ini" during parsing
+2026-04-03 07:13:57,119 INFO Included extra file "/mnt/pokemon/deploy_dev/./supervisord.dir/crash_platform_server.ini" during parsing
+2026-04-03 07:13:57,119 INFO Included extra file "/mnt/pokemon/deploy_dev/./supervisord.dir/cross_db_server.ini" during parsing
+2026-04-03 07:13:57,119 INFO Included extra file "/mnt/pokemon/deploy_dev/./supervisord.dir/cross_server.ini" during parsing
+2026-04-03 07:13:57,119 INFO Included extra file "/mnt/pokemon/deploy_dev/./supervisord.dir/crosslobby_server.ini" during parsing
+2026-04-03 07:13:57,119 INFO Included extra file "/mnt/pokemon/deploy_dev/./supervisord.dir/disable_word_check_server.ini" during parsing
+2026-04-03 07:13:57,119 INFO Included extra file "/mnt/pokemon/deploy_dev/./supervisord.dir/game_server_1.ini" during parsing
+2026-04-03 07:13:57,119 INFO Included extra file "/mnt/pokemon/deploy_dev/./supervisord.dir/game_server_2.ini" during parsing
+2026-04-03 07:13:57,119 INFO Included extra file "/mnt/pokemon/deploy_dev/./supervisord.dir/gm_server.ini" during parsing
+2026-04-03 07:13:57,119 INFO Included extra file "/mnt/pokemon/deploy_dev/./supervisord.dir/login_server_1.ini" during parsing
+2026-04-03 07:13:57,119 INFO Included extra file "/mnt/pokemon/deploy_dev/./supervisord.dir/login_server_2.ini" during parsing
+2026-04-03 07:13:57,119 INFO Included extra file "/mnt/pokemon/deploy_dev/./supervisord.dir/mongodb_server.ini" during parsing
+2026-04-03 07:13:57,119 INFO Included extra file "/mnt/pokemon/deploy_dev/./supervisord.dir/nsqadmin.ini" during parsing
+2026-04-03 07:13:57,119 INFO Included extra file "/mnt/pokemon/deploy_dev/./supervisord.dir/nsqd.ini" during parsing
+2026-04-03 07:13:57,119 INFO Included extra file "/mnt/pokemon/deploy_dev/./supervisord.dir/nsqlookupd.ini" during parsing
+2026-04-03 07:13:57,119 INFO Included extra file "/mnt/pokemon/deploy_dev/./supervisord.dir/online_fight_forward_server.ini" during parsing
+2026-04-03 07:13:57,119 INFO Included extra file "/mnt/pokemon/deploy_dev/./supervisord.dir/payment_server.ini" during parsing
+2026-04-03 07:13:57,119 INFO Included extra file "/mnt/pokemon/deploy_dev/./supervisord.dir/pvp_server_1.ini" during parsing
+2026-04-03 07:13:57,119 INFO Included extra file "/mnt/pokemon/deploy_dev/./supervisord.dir/pvp_server_2.ini" during parsing
+2026-04-03 07:13:57,119 INFO Included extra file "/mnt/pokemon/deploy_dev/./supervisord.dir/storage_server_1.ini" during parsing
+2026-04-03 07:13:57,119 INFO Included extra file "/mnt/pokemon/deploy_dev/./supervisord.dir/storage_server_2.ini" during parsing
+2026-04-03 07:13:57,119 INFO Included extra file "/mnt/pokemon/deploy_dev/./supervisord.dir/transfer_daemon.ini" during parsing
+2026-04-03 07:13:57,135 INFO RPC interface 'supervisor' initialized
+2026-04-03 07:13:57,135 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2026-04-03 07:13:57,135 INFO supervisord started with pid 1
+2026-04-03 07:13:58,145 INFO spawned: 'nsqlookupd' with pid 22
+2026-04-03 07:13:58,152 INFO spawned: 'nsqd' with pid 23
+2026-04-03 07:13:58,157 INFO spawned: 'nsqadmin' with pid 24
+2026-04-03 07:13:58,162 INFO spawned: 'anti_cheat_server' with pid 25
+2026-04-03 07:13:58,168 INFO spawned: 'storage_server2' with pid 26
+2026-04-03 07:13:58,172 INFO spawned: 'storage_server1' with pid 27
+2026-04-03 07:13:58,175 INFO spawned: 'disable_word_check_server' with pid 28
+2026-04-03 07:13:58,177 INFO spawned: 'commentdb_server' with pid 30
+2026-04-03 07:13:58,179 INFO spawned: 'comment_server' with pid 32
+2026-04-03 07:13:58,180 INFO spawned: 'online_fight_forward_server' with pid 36
+2026-04-03 07:13:58,182 INFO spawned: 'crossdb_server' with pid 37
+2026-04-03 07:13:58,184 INFO spawned: 'account_db_server' with pid 39
+2026-04-03 07:13:58,185 INFO spawned: 'cross_server' with pid 41
+2026-04-03 07:13:58,187 INFO spawned: 'crosslobby_server' with pid 44
+2026-04-03 07:13:58,188 INFO spawned: 'pvp_server2' with pid 45
+2026-04-03 07:13:58,190 INFO spawned: 'pvp_server1' with pid 46
+2026-04-03 07:13:58,192 INFO spawned: 'autochess_room_server' with pid 48
+2026-04-03 07:13:58,193 INFO spawned: 'payment_server' with pid 49
+2026-04-03 07:13:58,195 INFO spawned: 'game_server1' with pid 50
+2026-04-03 07:13:58,197 INFO spawned: 'game_server2' with pid 52
+2026-04-03 07:13:58,202 INFO spawned: 'gm_server' with pid 59
+2026-04-03 07:13:58,207 INFO spawned: 'crash_platform_server' with pid 63
+2026-04-03 07:13:58,209 INFO spawned: 'login_server1' with pid 64
+2026-04-03 07:13:58,216 INFO spawned: 'login_server2' with pid 67
+2026-04-03 07:13:58,221 INFO spawned: 'transfer_daemon' with pid 70
+2026-04-03 07:13:58,523 INFO exited: online_fight_forward_server (exit status 2; not expected)
+2026-04-03 07:13:59,360 INFO success: nsqlookupd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-04-03 07:13:59,363 INFO success: nsqd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-04-03 07:13:59,363 INFO success: nsqadmin entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-04-03 07:13:59,369 INFO success: anti_cheat_server entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-04-03 07:13:59,371 INFO success: storage_server2 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-04-03 07:13:59,372 INFO success: storage_server1 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-04-03 07:13:59,372 INFO success: disable_word_check_server entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-04-03 07:13:59,373 INFO success: commentdb_server entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-04-03 07:13:59,373 INFO success: comment_server entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-04-03 07:13:59,373 INFO success: crossdb_server entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-04-03 07:13:59,373 INFO success: account_db_server entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-04-03 07:13:59,373 INFO success: cross_server entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-04-03 07:13:59,373 INFO success: crosslobby_server entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-04-03 07:13:59,373 INFO success: pvp_server2 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-04-03 07:13:59,373 INFO success: pvp_server1 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-04-03 07:13:59,373 INFO success: autochess_room_server entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-04-03 07:13:59,373 INFO success: payment_server entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-04-03 07:13:59,374 INFO success: game_server1 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-04-03 07:13:59,374 INFO success: game_server2 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-04-03 07:13:59,374 INFO success: gm_server entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-04-03 07:13:59,374 INFO success: crash_platform_server entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-04-03 07:13:59,374 INFO success: login_server1 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-04-03 07:13:59,374 INFO success: login_server2 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-04-03 07:13:59,374 INFO success: transfer_daemon entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-04-03 07:13:59,528 INFO spawned: 'online_fight_forward_server' with pid 255
+2026-04-03 07:14:00,564 INFO success: online_fight_forward_server entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-04-03 07:35:45,150 INFO waiting for gm_server to stop
+2026-04-03 07:35:47,061 INFO stopped: gm_server (exit status 0)
+2026-04-03 07:35:47,071 INFO spawned: 'gm_server' with pid 412
+2026-04-03 07:35:48,075 INFO success: gm_server entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-04-03 07:42:22,801 INFO waiting for gm_server to stop
+2026-04-03 07:42:24,192 INFO stopped: gm_server (exit status 0)
+2026-04-03 07:42:24,197 INFO spawned: 'gm_server' with pid 485
+2026-04-03 07:42:25,201 INFO success: gm_server entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-04-03 07:43:39,805 INFO waiting for nsqlookupd to stop
+2026-04-03 07:43:39,805 INFO waiting for nsqd to stop
+2026-04-03 07:43:39,805 INFO waiting for nsqadmin to stop
+2026-04-03 07:43:39,805 INFO waiting for anti_cheat_server to stop
+2026-04-03 07:43:39,806 INFO waiting for storage_server2 to stop
+2026-04-03 07:43:39,806 INFO waiting for storage_server1 to stop
+2026-04-03 07:43:39,806 INFO waiting for disable_word_check_server to stop
+2026-04-03 07:43:39,806 INFO waiting for commentdb_server to stop
+2026-04-03 07:43:39,806 INFO waiting for comment_server to stop
+2026-04-03 07:43:39,806 INFO waiting for online_fight_forward_server to stop
+2026-04-03 07:43:39,806 INFO waiting for crossdb_server to stop
+2026-04-03 07:43:39,806 INFO waiting for account_db_server to stop
+2026-04-03 07:43:39,806 INFO waiting for cross_server to stop
+2026-04-03 07:43:39,808 INFO waiting for crosslobby_server to stop
+2026-04-03 07:43:39,810 INFO waiting for pvp_server2 to stop
+2026-04-03 07:43:39,810 INFO waiting for pvp_server1 to stop
+2026-04-03 07:43:39,810 INFO waiting for autochess_room_server to stop
+2026-04-03 07:43:39,810 INFO waiting for payment_server to stop
+2026-04-03 07:43:39,810 INFO waiting for game_server1 to stop
+2026-04-03 07:43:39,811 INFO waiting for game_server2 to stop
+2026-04-03 07:43:39,811 INFO waiting for gm_server to stop
+2026-04-03 07:43:39,811 INFO waiting for crash_platform_server to stop
+2026-04-03 07:43:39,811 INFO waiting for login_server1 to stop
+2026-04-03 07:43:39,811 INFO waiting for login_server2 to stop
+2026-04-03 07:43:39,811 INFO waiting for transfer_daemon to stop
+2026-04-03 07:43:39,839 INFO stopped: nsqadmin (exit status 0)
+2026-04-03 07:43:39,842 INFO stopped: nsqlookupd (exit status 0)
+2026-04-03 07:43:39,858 INFO stopped: anti_cheat_server (exit status 0)
+2026-04-03 07:43:39,859 INFO stopped: disable_word_check_server (terminated by SIGTERM)
+2026-04-03 07:43:39,859 INFO stopped: login_server1 (exit status 0)
+2026-04-03 07:43:39,859 INFO stopped: login_server2 (exit status 0)
+2026-04-03 07:43:39,859 INFO reaped unknown pid 190
+2026-04-03 07:43:39,880 INFO stopped: transfer_daemon (terminated by SIGTERM)
+2026-04-03 07:43:39,903 INFO stopped: crosslobby_server (exit status 0)
+2026-04-03 07:43:39,907 INFO stopped: online_fight_forward_server (exit status 0)
+2026-04-03 07:43:39,911 INFO stopped: commentdb_server (exit status 2)
+2026-04-03 07:43:39,911 INFO stopped: account_db_server (exit status 2)
+2026-04-03 07:43:39,914 INFO stopped: storage_server1 (exit status 2)
+2026-04-03 07:43:39,922 INFO stopped: autochess_room_server (exit status 0)
+2026-04-03 07:43:39,925 INFO stopped: comment_server (exit status 0)
+2026-04-03 07:43:39,925 INFO stopped: crossdb_server (exit status 2)
+2026-04-03 07:43:39,934 INFO stopped: storage_server2 (exit status 2)
+2026-04-03 07:43:39,950 INFO stopped: cross_server (exit status 0)
+2026-04-03 07:43:41,189 INFO stopped: gm_server (exit status 0)
+2026-04-03 07:43:41,834 INFO waiting for nsqd to stop
+2026-04-03 07:43:41,834 INFO waiting for pvp_server2 to stop
+2026-04-03 07:43:41,835 INFO waiting for pvp_server1 to stop
+2026-04-03 07:43:41,835 INFO waiting for payment_server to stop
+2026-04-03 07:43:41,836 INFO waiting for game_server1 to stop
+2026-04-03 07:43:41,836 INFO waiting for game_server2 to stop
+2026-04-03 07:43:41,836 INFO waiting for crash_platform_server to stop
+2026-04-03 07:43:42,148 INFO stopped: crash_platform_server (exit status 0)
+2026-04-03 07:43:42,439 INFO stopped: nsqd (exit status 0)
+2026-04-03 07:43:44,551 INFO waiting for pvp_server2 to stop
+2026-04-03 07:43:44,551 INFO waiting for pvp_server1 to stop
+2026-04-03 07:43:44,551 INFO waiting for payment_server to stop
+2026-04-03 07:43:44,551 INFO waiting for game_server1 to stop
+2026-04-03 07:43:44,552 INFO waiting for game_server2 to stop
+2026-04-03 07:43:46,558 INFO waiting for pvp_server2 to stop
+2026-04-03 07:43:46,559 INFO waiting for pvp_server1 to stop
+2026-04-03 07:43:46,559 INFO waiting for payment_server to stop
+2026-04-03 07:43:46,559 INFO waiting for game_server1 to stop
+2026-04-03 07:43:46,559 INFO waiting for game_server2 to stop
+2026-04-03 07:43:48,560 INFO waiting for pvp_server2 to stop
+2026-04-03 07:43:48,560 INFO waiting for pvp_server1 to stop
+2026-04-03 07:43:48,560 INFO waiting for payment_server to stop
+2026-04-03 07:43:48,560 INFO waiting for game_server1 to stop
+2026-04-03 07:43:48,560 INFO waiting for game_server2 to stop
+2026-04-03 07:43:49,898 WARN killing 'pvp_server2' (45) with SIGKILL
+2026-04-03 07:43:49,899 WARN killing 'pvp_server1' (46) with SIGKILL
+2026-04-03 07:43:49,899 WARN killing 'payment_server' (49) with SIGKILL
+2026-04-03 07:43:49,900 WARN killing 'game_server1' (50) with SIGKILL
+2026-04-03 07:43:49,900 WARN killing 'game_server2' (52) with SIGKILL
+2026-04-03 07:43:49,947 INFO stopped: payment_server (terminated by SIGKILL)
+2026-04-03 07:43:49,988 INFO stopped: pvp_server1 (terminated by SIGKILL)
+2026-04-03 07:43:49,989 INFO stopped: pvp_server2 (terminated by SIGKILL)
+2026-04-03 07:43:50,001 INFO stopped: game_server1 (terminated by SIGKILL)
+2026-04-03 07:43:50,004 INFO stopped: game_server2 (terminated by SIGKILL)
+2026-04-03 07:43:51,033 INFO spawned: 'nsqlookupd' with pid 536
+2026-04-03 07:43:51,038 INFO spawned: 'nsqd' with pid 537
+2026-04-03 07:43:51,042 INFO spawned: 'nsqadmin' with pid 538
+2026-04-03 07:43:51,045 INFO spawned: 'anti_cheat_server' with pid 539
+2026-04-03 07:43:51,048 INFO spawned: 'storage_server2' with pid 540
+2026-04-03 07:43:51,051 INFO spawned: 'storage_server1' with pid 541
+2026-04-03 07:43:51,053 INFO spawned: 'disable_word_check_server' with pid 542
+2026-04-03 07:43:51,057 INFO spawned: 'commentdb_server' with pid 543
+2026-04-03 07:43:51,060 INFO spawned: 'comment_server' with pid 549
+2026-04-03 07:43:51,071 INFO spawned: 'online_fight_forward_server' with pid 557
+2026-04-03 07:43:51,077 INFO spawned: 'crossdb_server' with pid 565
+2026-04-03 07:43:51,085 INFO spawned: 'account_db_server' with pid 576
+2026-04-03 07:43:51,097 INFO spawned: 'cross_server' with pid 594
+2026-04-03 07:43:51,100 INFO spawned: 'crosslobby_server' with pid 598
+2026-04-03 07:43:51,105 INFO spawned: 'pvp_server2' with pid 601
+2026-04-03 07:43:51,113 INFO spawned: 'pvp_server1' with pid 604
+2026-04-03 07:43:51,115 INFO spawned: 'autochess_room_server' with pid 607
+2026-04-03 07:43:51,120 INFO spawned: 'payment_server' with pid 608
+2026-04-03 07:43:51,125 INFO spawned: 'game_server1' with pid 609
+2026-04-03 07:43:51,129 INFO spawned: 'game_server2' with pid 613
+2026-04-03 07:43:51,136 INFO spawned: 'gm_server' with pid 623
+2026-04-03 07:43:51,139 INFO spawned: 'crash_platform_server' with pid 632
+2026-04-03 07:43:51,141 INFO spawned: 'login_server1' with pid 636
+2026-04-03 07:43:51,145 INFO spawned: 'login_server2' with pid 638
+2026-04-03 07:43:51,151 INFO spawned: 'transfer_daemon' with pid 642
+2026-04-03 07:43:51,209 INFO exited: anti_cheat_server (exit status 2; not expected)
+2026-04-03 07:43:51,400 INFO exited: online_fight_forward_server (exit status 2; not expected)
+2026-04-03 07:43:52,059 INFO success: nsqlookupd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-04-03 07:43:52,059 INFO success: nsqd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-04-03 07:43:52,059 INFO success: nsqadmin entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-04-03 07:43:52,059 INFO success: storage_server2 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-04-03 07:43:52,059 INFO success: storage_server1 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-04-03 07:43:52,059 INFO success: disable_word_check_server entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-04-03 07:43:52,059 INFO success: commentdb_server entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-04-03 07:43:52,059 INFO success: comment_server entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-04-03 07:43:52,087 INFO success: crossdb_server entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-04-03 07:43:52,087 INFO success: account_db_server entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-04-03 07:43:52,097 INFO success: cross_server entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-04-03 07:43:52,100 INFO success: crosslobby_server entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-04-03 07:43:52,122 INFO success: pvp_server2 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-04-03 07:43:52,122 INFO success: pvp_server1 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-04-03 07:43:52,122 INFO success: autochess_room_server entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-04-03 07:43:52,126 INFO success: payment_server entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-04-03 07:43:52,126 INFO success: game_server1 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-04-03 07:43:52,126 INFO success: game_server2 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-04-03 07:43:52,132 INFO success: gm_server entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-04-03 07:43:52,140 INFO success: crash_platform_server entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-04-03 07:43:52,141 INFO success: login_server1 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-04-03 07:43:52,151 INFO success: login_server2 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-04-03 07:43:52,155 INFO success: transfer_daemon entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-04-03 07:43:52,224 INFO spawned: 'anti_cheat_server' with pid 760
+2026-04-03 07:43:52,428 INFO spawned: 'online_fight_forward_server' with pid 776
+2026-04-03 07:43:53,231 INFO success: anti_cheat_server entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-04-03 07:43:53,559 INFO success: online_fight_forward_server entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-04-03 07:48:28,055 INFO waiting for gm_server to stop
+2026-04-03 07:48:30,055 INFO waiting for gm_server to stop
+2026-04-03 07:48:30,133 INFO stopped: gm_server (exit status 0)
+2026-04-03 07:48:30,138 INFO spawned: 'gm_server' with pid 987
+2026-04-03 07:48:31,141 INFO success: gm_server entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-04-03 08:38:32,126 INFO exited: nsqd (terminated by SIGKILL; not expected)
+2026-04-03 08:38:32,134 INFO spawned: 'nsqd' with pid 1054
+2026-04-03 08:38:33,880 INFO success: nsqd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-04-03 09:31:39,414 INFO exited: nsqd (terminated by SIGKILL; not expected)
+2026-04-03 09:31:39,428 INFO spawned: 'nsqd' with pid 1072
+2026-04-03 09:31:40,959 INFO success: nsqd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-04-03 10:19:05,010 INFO exited: nsqd (terminated by SIGKILL; not expected)
+2026-04-03 10:19:05,020 INFO spawned: 'nsqd' with pid 1088
+2026-04-03 10:19:06,442 INFO success: nsqd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-04-03 10:37:28,621 INFO waiting for gm_server to stop
+2026-04-03 10:37:30,621 INFO waiting for gm_server to stop
+2026-04-03 10:37:30,988 INFO stopped: gm_server (exit status 0)
+2026-04-03 10:37:31,029 INFO spawned: 'gm_server' with pid 1112
+2026-04-03 10:37:32,036 INFO success: gm_server entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-04-03 10:38:50,007 INFO waiting for gm_server to stop
+2026-04-03 10:38:51,482 INFO stopped: gm_server (exit status 0)
+2026-04-03 10:38:51,490 INFO spawned: 'gm_server' with pid 1178
+2026-04-03 10:38:53,378 INFO success: gm_server entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-04-03 11:05:38,530 INFO exited: nsqd (terminated by SIGKILL; not expected)
+2026-04-03 11:05:38,538 INFO spawned: 'nsqd' with pid 1243
+2026-04-03 11:05:39,750 INFO success: nsqd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-04-03 11:50:07,267 INFO exited: nsqd (terminated by SIGKILL; not expected)
+2026-04-03 11:50:07,279 INFO spawned: 'nsqd' with pid 1262
+2026-04-03 11:50:08,272 INFO success: nsqd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-04-03 12:23:39,761 INFO exited: nsqd (terminated by SIGKILL; not expected)
+2026-04-03 12:23:39,774 INFO spawned: 'nsqd' with pid 1280
+2026-04-03 12:23:41,390 INFO success: nsqd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)

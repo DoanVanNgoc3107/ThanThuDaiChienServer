@@ -3,11 +3,11 @@
     var regChrome = /chrome\/[\d]+/i;
     var c = userAgent.match(regChrome);
     if (c === null) {
-        alert("请使用chrome浏览器！")
+        alert("Vui lòng sử dụng trình duyệt Chrome!")
     } else {
         var a = c[0].split("/");
         if (parseInt(a[1]) < 60) {
-            alert("请升级您的浏览器版本！")
+            alert("Vui lòng nâng cấp phiên bản trình duyệt!")
         }
     };
 })()
@@ -109,7 +109,7 @@ function paddingInputDate($ele, days=0) {
     $ele.val(f)
 }
 
-// 请求异常处理
+// Xử lý lỗi request
 $(document).ajaxError(function(event, xhr, options, exc) {
     console.log(event, xhr, options, exc);
     alert("Error: " + xhr.status + "  " + xhr.statusText);

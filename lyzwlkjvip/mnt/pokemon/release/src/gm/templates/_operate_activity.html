@@ -33,7 +33,7 @@
 {% block main %}
 	<div class="container-fluid main">
 		<div class="row">
-			<div class="title"><h4>运营活动配置</h4></div>
+			<div class="title"><h4>{{ _(u"运营活动配置") }}</h4></div>
 		</div>
         <div class="well">
         	<div class="row">
@@ -78,8 +78,8 @@
 								<button id="save-placard-all-btn" class="btn btn-primary btn-sm">{{ _(u"保存当前公告配置")}}</button>
 							</div>
 							<div class="">
-								<div id="placardTextarea" style="max-width: 990px;"><strong><i>请先获取当前公告，再进行修改。</i></strong></div>
-								<!-- <textarea id="placardTextarea"><strong><i>请先获取当前公告，再进行修改。</i></strong></textarea> -->
+								<div id="placardTextarea" style="max-width: 990px;"><strong><i>{{ _(u"请先获取当前公告，再进行修改。") }}</i></strong></div>
+								<!-- <textarea id="placardTextarea"><strong><i>{{ _(u"请先获取当前公告，再进行修改。") }}</i></strong></textarea> -->
 							</div>
 							<div class="clear"></div>
 						</div>
@@ -137,7 +137,7 @@
 				servName = name;
 			}
 			if (!servName) {
-				alert("Please Select Server");
+				alert('{{ _(u"请选择服务器") }}');
 				return;
 			}
 			GlobalServName = servName;
@@ -198,7 +198,7 @@
 			// 重置配置
 			$("#reset-yy-btn").on('click', function() {
 				if (GlobalServName === null) {
-					alert('Please query first');
+						alert('{{ _(u"请先查询") }}');
 					return;
 				}
 
@@ -209,7 +209,7 @@
 					contentType: 'application/json',
 					data: JSON.stringify({servName: GlobalServName}),
 					success: function(rep) {
-						alert('success');
+						alert('{{ _(u"成功") }}');
 						console.log(rep.result);
 						yyhuodong_click(GlobalServName);
 					}
@@ -268,7 +268,7 @@
 				let diff = modifyDiff(current);
 				console.log(diff)
 				if ($.isEmptyObject(diff)) {
-					alert('yyhuodong.csv not be modified');
+					alert('{{ _(u"yyhuodong.csv未修改") }}');
 					return;
 				}
 
@@ -280,7 +280,7 @@
 					data: JSON.stringify({servName: GlobalServName, diffDB: diff}),
 					success: function(rep) {
 						console.log(rep.result);
-						alert('yyhuodong.csv save success');
+						alert('{{ _(u"yyhuodong.csv保存成功") }}');
 					}
 				})
 			})
@@ -290,7 +290,7 @@
 				let diff = modifyDiff(current);
 				console.log(diff);
 				if ($.isEmptyObject(diff)) {
-					alert('yyhuodong.csv not be modified');
+					alert('{{ _(u"yyhuodong.csv未修改") }}');
 					return;
 				}
 
@@ -302,7 +302,7 @@
 					data: JSON.stringify({diffDB: diff}),
 					success: function(rep) {
 						console.log(rep.result);
-						alert('yyhuodong.csv save success');
+						alert('{{ _(u"yyhuodong.csv保存成功") }}');
 					}
 				})
 			})
@@ -316,7 +316,7 @@
 					contentType: 'application/json',
 					success: function(rep) {
 						console.log(rep);
-						let html = "<pre contenteditable='true'>" + prettyJSON(JSON.stringify(rep)) + "</rep>";
+						let html = "<pre contenteditable='true'>" + prettyJSON(JSON.stringify(rep)) + "</pre>";
 						$('#placardTextarea').html(html);
 					}
 				})
@@ -335,7 +335,7 @@
 							console.log(rep)
 							if (rep.result) {
 								alert('保存成功！');
-								$('#placardTextarea').html("<strong><i>请先获取当前公告，再进行修改。</i>");
+								$('#placardTextarea').html("<strong><i>{{ _(u"请先获取当前公告，再进行修改。") }}</i></strong>");
 							} else {
 								alert(`失败：${rep.msg}`);
 							}

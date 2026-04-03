@@ -35,7 +35,7 @@ class ManualAnalysis(AuthedHandler):
 		else:
 			ret = {
 					"ret": False,
-					"error": "解析失败，请刷新！"
+					"error": "Phân tích thất bại, vui lòng làm mới!"
 				}
 
 		self.write_json(ret)

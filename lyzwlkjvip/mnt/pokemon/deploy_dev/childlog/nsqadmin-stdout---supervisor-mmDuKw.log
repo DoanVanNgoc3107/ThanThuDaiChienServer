@@ -1,0 +1,5 @@
+[nsqadmin] 2026/04/03 07:13:58.246941 nsqadmin v1.0.0-compat (built w/go1.8)
+[nsqadmin] 2026/04/03 07:13:58.252028 HTTP: listening on [::]:4171
+[nsqadmin] 2026/04/03 07:43:39.827910 HTTP: closing [::]:4171
+[nsqadmin] 2026/04/03 07:43:51.100299 nsqadmin v1.0.0-compat (built w/go1.8)
+[nsqadmin] 2026/04/03 07:43:51.109065 HTTP: listening on [::]:4171

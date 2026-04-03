@@ -25,13 +25,13 @@
 {% block main %}
 	<div class="container-fluid main">
 		<div class="row">
-			<div class="title"><h4>服务器配置</h4></div>
+			<div class="title"><h4>Cấu hình máy chủ</h4></div>
 		</div>
 		<div class="well">
 			<div class="row">
 	        	<div class="col-lg-6 col-md-6 border-left">
 	        		<div>
-	        			<button id='save-setting' class='btn btn-primary'>保存配置</button>
+	        			<button id='save-setting' class='btn btn-primary'>Lưu cấu hình</button>
 	        		</div>
 	        		<table id="t1"></table>
 	        	</div>
@@ -40,7 +40,7 @@
 	        			<div>
 	        				<form class="form-inline">
 		        				<div class="form-group">
-		        					<label>当前服务器时间</label>
+		        					<label>Thời gian máy chủ hiện tại</label>
 		        					<div id="show-serv-time" class="form-control">{{ internal_server_time }}</div>
 		        				</div>
 		        			</form>
@@ -48,17 +48,17 @@
 	        			<div>
 	        				<form class="form-inline">
 		        				<div class="form-group">
-		        					<label>更改服务器时间</label>
+		        					<label>Thay đổi thời gian máy chủ</label>
 		        					<input id="w-serv-time" type="datetime-local" class="form-control">
-		        					<input id="submit-serv-time" type="button" class="form-control btn btn-primary" value="确认更改">
+		        					<input id="submit-serv-time" type="button" class="form-control btn btn-primary" value="Xác nhận thay đổi">
 		        				</div>
 		        			</form>
 	        			</div>
 	        			<div>
 	        				<form class="form-inline">
 		        				<div class="form-group">
-		        					<label>重启所选区服</label>
-		        					<input id="restart-serv" type="button" class="form-control btn btn-primary" value="开始重启">
+		        					<label>Khởi động lại server đã chọn</label>
+		        					<input id="restart-serv" type="button" class="form-control btn btn-primary" value="Bắt đầu khởi động lại">
 		        					<div id="restart-serv-display" class="form-control hidden"></div>
 		        				</div>
 		        			</form>
@@ -83,7 +83,7 @@
     			data: JSON.stringify([id]),
     			success: function(rep) {
 					$('#t1').bootstrapTable('refresh');
-					alert("success.");
+					alert("Thành công.");
     			}
     		})
 		}
@@ -120,14 +120,14 @@
 			// servTable 字段配置
 			const servTableColumns = [
 				{field: 'checked', checkbox: true, align: 'center', valign: 'middle',},
-	        	{field: 'id', title: '区服', align: 'center',},
-	            {field: 'dev', title: '名称', align: 'center',},
-	            {field: 'openDate', title: '开服时间', align: 'center', 'editable': {'type': 'text',}},
-	            {field: 'language', title: '语言', align: 'center', 'editable': {'type': 'text',}},
-	            {field: 'status', title: '状态', align: 'center',},
+	        	{field: 'id', title: 'Server', align: 'center',},
+	            {field: 'dev', title: 'Tên', align: 'center',},
+	            {field: 'openDate', title: 'Thời gian mở server', align: 'center', 'editable': {'type': 'text',}},
+	            {field: 'language', title: 'Ngôn ngữ', align: 'center', 'editable': {'type': 'text',}},
+	            {field: 'status', title: 'Trạng thái', align: 'center',},
 	            {field: 'op', title: '', align: 'center',
 		            formatter: function(value, row, index) {
-		            	let btn = `<button class="btn btn-primary btn-xs" onclick="restartServ('${row.id}')">重启</button>`
+		            	let btn = `<button class="btn btn-primary btn-xs" onclick="restartServ('${row.id}')">Khởi động lại</button>`
 	                	return btn;
 					}
 				}
@@ -191,7 +191,7 @@
 			$("#submit-serv-time").on("click", function() {
 				var t = $("#w-serv-time").val();
 				if (t === "") {
-					alert("请填写完整时间！");
+					alert("Vui lòng nhập đầy đủ thời gian!");
 				} else {
 					self = $(this);
 					self.addClass("disabled");
@@ -207,7 +207,7 @@
 						data: JSON.stringify({"time": t}),
 						success: function(rep) {
 							if (rep.ret === "invalid") {
-								alert("超时，请重新登录！");
+								alert("Phiên đăng nhập hết hạn, vui lòng đăng nhập lại!");
 								return;
 							}
 							if (rep.ret) {
@@ -226,7 +226,7 @@
 				var selected = $('#t1').bootstrapTable('getSelections');
 		    	var area = new Array();
 		    	if (selected.length === 0) {
-		    		alert("未选中区服");
+		    		alert("Chưa chọn server nào");
 		    	} else {
 		    		self = $(this);
 		    		self.addClass("disabled");
@@ -242,12 +242,12 @@
 		    			data: JSON.stringify(area),
 		    			success: function(rep) {
 		    				if (rep.ret === "invalid") {
-								alert("超时，请重新登录！");
+								alert("Phiên đăng nhập hết hạn, vui lòng đăng nhập lại!");
 								return;
 							}
 							if (rep.ret) {
 								$('#t1').bootstrapTable('refresh');
-								alert("重启成功.");
+								alert("Khởi động lại thành công.");
 								self.removeClass("disabled");
 							}
 		    			}
@@ -267,7 +267,7 @@
 					contentType: 'application/json',
 					data: JSON.stringify(m),
 					success: function(result) {
-						alert('success')
+						alert('Thành công')
 					}
 				})
 			})

@@ -15,7 +15,7 @@ import framework
 from framework import *
 from framework.log import logger
 
-from ..object.session import Session, SESSION_KEY
+from ..object.session import Session, SESSION_KEY, LOCALE_NAMES
 from ..object.db import *
 from ..object.account import DBAccount
 from ..object.archive import DBArchive, DBDailyArchive
@@ -92,7 +92,7 @@ class BaseHandler(RequestHandler):
                 user = self.current_user,
                 servs = self.servsList,
                 channels = self.channelList,
-                userLocale = self.language,
+                userLocale = self.pageLocale,
                 debug = self.debug,
                 **kwargs
             )
@@ -110,22 +110,46 @@ class BaseHandler(RequestHandler):
         return {}
 
     def setLocalColumns(self, columns):
-        locale  = self.language
+        locale = self.pageLocale
 
-        if locale == 'en':
-            for c in columns:
-                titleEN = c['field'].replace('_', '')
-                c['title'] = titleEN.upper()
-        elif locale == 'vn':
-            for c in columns:
-                c['title'] = self.translate(unicode(c['title']))
-                if '' == c['title']:
-                    c['title'] = c['field'].replace('_', '').upper()
+        if locale in ('cn', 'zh_CN'):
+            return columns
+
+        def _title_to_unicode(v):
+            if isinstance(v, unicode):
+                return v
+            if isinstance(v, str):
+                try:
+                    return v.decode('utf-8')
+                except Exception:
+                    return v.decode('utf-8', 'ignore')
+            return unicode(v)
+
+        for c in columns:
+            title = _title_to_unicode(c.get('title', '')).strip()
+            translated = self.translate(title) if title else u''
+
+            if translated and translated != title:
+                c['title'] = translated
+            elif locale == 'en':
+                c['title'] = c['field'].replace('_', '').upper()
+            elif title:
+                c['title'] = title
+            else:
+                c['title'] = c['field'].replace('_', '').upper()
         return columns
 
     @property
     def language(self):
         return framework.__language__
+
+    @property
+    def pageLocale(self):
+        if self.current_user and self.current_user.language:
+            for short_name, locale_name in LOCALE_NAMES.items():
+                if locale_name == self.current_user.language:
+                    return short_name
+        return self.language
 
     @property
     def channelCache(self):

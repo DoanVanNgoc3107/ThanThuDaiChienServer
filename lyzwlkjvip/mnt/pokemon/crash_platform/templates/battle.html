@@ -10,26 +10,26 @@
 
 {% block main %}
 	<div class="row m-head">
-		<div class="col-lg-2 col-md-2 col-sm-3 col-xs-3"><h4>战报查询<h4></div>
+		<div class="col-lg-2 col-md-2 col-sm-3 col-xs-3"><h4>Tra cứu báo cáo trận đấu<h4></div>
 	</div>
 
 	<div class="well">
 		<div class="row">
 			<div class="form-group col-lg-2 col-md-3 col-sm-4">
 				<div class="input-group date form-date">
-					<input id="s-time" type="text" class="form-control input-sm" placeholder="开始时间选择">
+					<input id="s-time" type="text" class="form-control input-sm" placeholder="Chọn thời gian bắt đầu">
 					<span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
 		        </div>
 			</div>
-			<span class="pull-left"><strong>至</strong></span>
+			<span class="pull-left"><strong>đến</strong></span>
 			<div class="form-group col-lg-2 col-md-3 col-sm-4">
 				<div class="input-group date form-date">
-					<input id="e-time" type="text" class="form-control input-sm" placeholder="结束时间选择">
+					<input id="e-time" type="text" class="form-control input-sm" placeholder="Chọn thời gian kết thúc">
 					<span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
 		        </div>
 			</div>
 			<div class="pull-left p" style="width: 51px;">
-				<button id="query" class="form-control input-sm btn-success" type="button">查询</button>
+				<button id="query" class="form-control input-sm btn-success" type="button">Tra cứu</button>
 			</div>			
 		</div>
 	</div>
@@ -47,14 +47,14 @@
 {% block foot %}
 	<script>
 		var Columns = [
-			{field: "id", title: "序号"},
-			{field: "serv_key", title: "区服"},
+			{field: "id", title: "STT"},
+			{field: "serv_key", title: "Máy chủ"},
 			{field: "play_id", title: "PlayId"},
 			{field: "type", title: "Type"},
-			{field: "ident", title: "错误描述"},
-			{field: "report_time", title: "上报时间"},
+			{field: "ident", title: "Mô tả lỗi"},
+			{field: "report_time", title: "Thời gian báo lỗi"},
 			{field: "op", title: "", formatter: function(value, row, index) {
-				return `<a href="/battle_log?type=download&play_id=${row.play_id}" download="${row.type}_${row.play_id}.play">下载</a>`
+				return `<a href="/battle_log?type=download&play_id=${row.play_id}" download="${row.type}_${row.play_id}.play">Tải về</a>`
 			}},
 		]
 
@@ -71,7 +71,7 @@
 	    		var stime = $('#s-time').val();
 		    	var etime = $('#e-time').val();
 		    	if (!stime || !etime) {
-		    		alert('请确定一个时间段。');
+		    		alert('Vui lòng chọn khoảng thời gian.');
 		    		return;
 		    	}
 

@@ -11,20 +11,20 @@
 
 {% block main %}
 	<div class="row m-head">
-		<div class="col-lg-2 col-md-2 col-sm-3 col-xs-3"><h4>崩溃数据查询<h4></div>
+		<div class="col-lg-2 col-md-2 col-sm-3 col-xs-3"><h4>Tra cứu dữ liệu crash<h4></div>
 	</div>
 
 	<div class="well">
 		<div class="row">
-			<div class="well-caption">角色上报查询</div>
+			<div class="well-caption">Tra cứu báo lỗi theo nhân vật</div>
 		</div>
 		<div class="row">
 			<div class="col-lg-3 col-md-3 col-sm-3">
 				<div>
 				    <form class="bs-example bs-example-form" role="form">
 				        <div class="input-group">
-				            <span class="input-group-addon">区服选择</span>
-				            <input id="query-server" list="query-server-list" class="form-control" placeholder="可输入区服或进行选择"/>
+				            <span class="input-group-addon">Chọn máy chủ</span>
+				            <input id="query-server" list="query-server-list" class="form-control" placeholder="Có thể nhập hoặc chọn máy chủ"/>
 				            <datalist id="query-server-list">
 				            	{% for serv in servers %}
 				            		<option value="{{ serv }}" />
@@ -33,24 +33,24 @@
 				        </div>
 				        <br />
 				        <div class="input-group">
-				            <span class="input-group-addon">角色账户</span>
-				            <input id="query-role" type="text" class="form-control" placeholder="可输入角色ID或account"/>
+				            <span class="input-group-addon">Tài khoản nhân vật</span>
+				            <input id="query-role" type="text" class="form-control" placeholder="Có thể nhập ID nhân vật hoặc account"/>
 				        </div>
 				        <br />
 				        <div class="input-group">
-				        	<span class="input-group-addon">时间范围</span>
-							<input id="query-datetime" list="query-time-list" class="form-control" placeholder="可直接输入天数或进行选择"/>
+			        	<span class="input-group-addon">Khoảng thời gian</span>
+							<input id="query-datetime" list="query-time-list" class="form-control" placeholder="Có thể nhập trực tiếp số ngày hoặc chọn"/>
 							<datalist id="query-time-list">
-						    	<option value="今天" />
-						    	<option value="三天内" />
-						    	<option value="一周内" />
-						    	<option value="一个月内" />
-						    	<option value="所有" />
+						    	<option value="Hôm nay" />
+						    	<option value="Trong 3 ngày" />
+						    	<option value="Trong 1 tuần" />
+						    	<option value="Trong 1 tháng" />
+						    	<option value="Tất cả" />
 							</datalist>
 						</div>
 					    <br />
 				        <div>
-				            <input id="qr" type="button" class="form-control btn-success" value="查 询">
+				            <input id="qr" type="button" class="form-control btn-success" value="Tra cứu">
 				        </div>
 				    </form>
 				</div>
@@ -72,11 +72,11 @@
 	    });
 	    $("#query-page").addClass("s-active");
 	    var QueryTimeCompare = {
-	    	"今天": 1,
-	    	"三天内": 3,
-	    	"一周内": 4,
-	    	"一个月内": 5,
-	    	"所有": 0,
+	    	"Hôm nay": 1,
+	    	"Trong 3 ngày": 3,
+	    	"Trong 1 tuần": 4,
+	    	"Trong 1 tháng": 5,
+	    	"Tất cả": 0,
 	    };
 
 	    $("#qr").on("click", function() {
@@ -84,7 +84,7 @@
 	    	var role = $("#query-role").val();
 	    	var datetime = $("#query-datetime").val();
 	    	if (server == "" || role == "") {
-	    		alert("server 和 role 不可以为空！");
+	    		alert("server và role không được để trống!");
 	    	} else {
 	    		if (datetime in QueryTimeCompare) {
 	    			datetime = QueryTimeCompare[datetime];
@@ -107,10 +107,10 @@
 			        data: queryData,
 			        success: function (rep) {
 			            console.log(rep);
-			            var h = "<span>server-" + server + " role-" + role + " 共上报" + " " + rep.sumReport + " 次"+ "</span>";
+			            var h = "<span>server-" + server + " role-" + role + " đã báo " + rep.sumReport + " lần</span>";
 			            var h2 = "";
 			            if (rep.sumReport === 0) {
-			            	h2 = "暂无数据！";
+			            	h2 = "Chưa có dữ liệu!";
 			            } else {
 			            	var sl = rep.stackIdent
 				            for (var stack in sl) {
@@ -121,7 +121,7 @@
 				            	if (feature.length > 135) {
 				            		feature = feature.substr(0, 130) + "~~~";
 				            	}
-				            	h2 += '<div><div>'+firstTime+' - '+lastTime+'</div><div><a href="/crashinfo?ident='+encodeURIComponent(stack)+'&type=1'+'" target="_blank">'+feature+'</a><span> '+count+'次</span></div></div><br />';
+				            	h2 += '<div><div>'+firstTime+' - '+lastTime+'</div><div><a href="/crashinfo?ident='+encodeURIComponent(stack)+'&type=1'+'" target="_blank">'+feature+'</a><span> '+count+' lần</span></div></div><br />';
 				            }
 			            }
 			            $("#query-summary").html(h);

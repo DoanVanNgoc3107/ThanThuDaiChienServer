@@ -3,14 +3,14 @@ error_reporting(1);
 session_start();
 date_default_timezone_set('PRC');
 header("Content-type: text/html; charset=utf-8");
-$gmcode='lyzwlkj.vip';
+$gmcode='a';
 $quarr = array (
  "1" => array (
   "user" =>"admin",
   "pswd" =>"admin",
   "zoneid"=>1,
   "srv_name"=>"game.cn.1",
-  "name"=>"阿泽源码网1区",
+  "name"=>"Server 1",
     "url"=>"http://192.168.1.13:38088",
   "hidde"=>false
  )
@@ -20,7 +20,7 @@ $quarr = array (
   "pswd" =>"admin",
   "zoneid"=>2,
   "srv_name"=>"game.cn.2",
-  "name"=>"阿泽源码网2区",
+  "name"=>"Server 2",
     "url"=>"http://192.168.1.13:38088",
   "hidde"=>false
  )
@@ -44,7 +44,7 @@ function StopAttack($StrFiltKey,$StrFiltValue,$ArrFiltReq){
 		$StrFiltValue=implode($StrFiltValue);
 	}
 	if (preg_match("/".$ArrFiltReq."/is",$StrFiltValue)==1){
-		print "非法操作!";
+		print "非法操作!"; // Việt nam
 		exit();
 	}
 }
@@ -129,15 +129,15 @@ function loginGetCookie($url,$user,$pswd){
 function sendMail($url,$rid,$cookie,$itema,$num,$srv_name,$title="",$content=""){
 
     $mailApiUrl =$url."/sendmail";//API的位置
-	$title == "" && $title="GM邮件";
-	$content == "" && $content="提示您：你有新的道具，请查收";
+	$title == "" && $title="From GM";
+	$content == "" && $content="Chúc bạn chơi game vui vẻ!";
 	$items=array($itema=>(int)$num);
 	$meta = array();
 	$meta['servName'] = $srv_name;
 	$meta['receive'] =  $rid;  
 	$meta['mailTemp'] = "2";
 	$meta['mailType'] = "role";
-	$meta['sender'] = "GM";
+	$meta['sender'] = "Đoàn Văn Ngọc";
 	$meta['subject'] = $title;
 	$meta['content'] = $content;
 	$meta['attachs'] = json_encode($items,JSON_UNESCAPED_UNICODE);

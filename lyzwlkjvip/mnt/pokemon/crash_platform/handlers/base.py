@@ -21,7 +21,7 @@ def datetimeSet(time_str): # time_str: 2016-06-07 09:00:00
     elif len(time_strL) == 2:
         return datetime.datetime.strptime(time_str, "%Y-%m-%d %H:%M:%S")
 
-# 解决无法json化python的date，datetime对象问题
+# Fix JSON serialization for python date/datetime objects
 class DatetimeEncoder(json.JSONEncoder):
     def default(self, obj):
         if isinstance(obj, datetime.datetime):
@@ -36,9 +36,9 @@ class BaseHandler(RequestHandler):
     executor = ThreadPoolExecutor(5)
 
     ErrStatus = {
-        0: "all", # "所有状态的错误",
-        -1: False, # "未处理状态的错误",
-        1: True, # "已处理状态的错误",
+        0: "all", # all status
+        -1: False, # unprocessed
+        1: True, # processed
     }
 
     PymongoOrder = {

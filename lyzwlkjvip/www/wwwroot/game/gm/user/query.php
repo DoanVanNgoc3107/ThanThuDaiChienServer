@@ -4,55 +4,54 @@ if ($_SESSION['lasttime'] == '') {
     $_SESSION['lasttime'] = time();
 } else {
     if (time() - $_SESSION['lasttime'] < 1) {
-        exit('刷太快了1秒一次');
+        exit('Nhập quá nhanh, vui lòng chờ một chút!'); 
     } else {
         $_SESSION['lasttime'] = time();
     }
 }
 
 if ($_POST) {
-	/*
-	 "1" => array (
+    /*
+     "1" => array (
   "user" =>"admin",
   "pswd" =>"admin",
   "zoneid"=>1,
   "srv_name"=>"game.dev.1",
-  "name"=>"阿泽源码网1区",
+  "name"=>"Khu 1 (A Trạch Source)",
   "url"=>"http://127.0.0.1:39081",
   "hidde"=>false
  )
  
-	*/
+    */
     $quid      =  trim(poststr('qu'));
     $qu        =  $quarr[$quid];
     $uid       =  trim(poststr('uid'));
     $url       =  $qu['url'];
     $srv_name  =  $qu['srv_name'];
     $adm_user  =  $qu['user'];
-	$adm_pswd  =  $qu['pswd'];
+    $adm_pswd  =  $qu['pswd'];
     
-	$cookie    =  loginGetCookie($url,$adm_user,$adm_pswd);
-	
-	
-	$pwd = trim(poststr('pwd'));
-	
-	
-	//参数处理
-	
-	
-		
+    $cookie    =  loginGetCookie($url,$adm_user,$adm_pswd);
+    
+    
+    $pwd = trim(poststr('pwd'));
+    
+    
+    // Xử lý tham số
+    
+    
+        
         $time = time();
-		
-	//参数处理	
-	
-	
+        
+    // Xử lý tham số  
+    
     if ($quid >= 1) {
         if ($uid != '') {
             if ($_POST['type']) {
                 $type = trim($_POST['type']);
                 $pswd = trim($_POST['pswd']);
                 if ($pwd == '') {
-                    exit('设置密码不能为空');
+                    exit('');
                 }
                 $vipfile = 'Q32838727-' . $quid . '.json';
                 $fp = fopen($vipfile, "a+");
@@ -67,21 +66,21 @@ if ($_POST) {
                     $vipjson = array();
                 }
                 if (!$vipjson[$uid]) {
-                    exit('卡密失效 你没有后台权限 请重新获取卡密激活.。');
+                    exit('Mã thẻ đã hết hạn, bạn không có quyền quản trị.');
                 } elseif ($vipjson[$uid]['pwd'] != $pwd) {
-                    exit('用户设置密码不匹配.');
+                    exit('Mật khẩu người dùng thiết lập không khớp.');
                 }
                 if ($vipjson[$uid]['quid'] != $quid) {
-                    exit('设置用户与当前选择大区不匹配.');
+                    exit('Người dùng đã thiết lập không khớp với khu vực (server) hiện tại.');
                 }
                 $viplevel = intval($vipjson[$uid]['level']);
                 switch ($type) {
                     case 'charge':
-				
+                
                         $chargetype = trim(poststr('chargetype'));
                         $chargenum = trim(poststr('chargenum'));
                         if ($chargetype == '') {
-                                exit('充值ID错误');
+                                exit('ID nạp tiền không hợp lệ');
                             }
                             $find = false;
                             $file = fopen("../charge.txt", "r");
@@ -94,25 +93,25 @@ if ($_POST) {
                             }
                             fclose($file);
                             if ($find == false) {
-                                exit('充值ID错误');
+                                exit('ID nạp tiền không hợp lệ');
                             }
                             $chargenum = trim(poststr('chargenum'));
                             if ($chargenum == '' || $chargenum < 0 || $chargenum > 999999999) {
-                                exit('发送数量错误1-999999999');
+                                exit('Số lượng gửi không hợp lệ (1-999999999)');
                             }
                         
-						     $result = sendMail($url,$uid,$cookie,$chargetype,$chargenum,$srv_name);
-							 
-							 exit('充值成功 邮件领取！');
+                             $result = sendMail($url,$uid,$cookie,$chargetype,$chargenum,$srv_name);
+                             
+                             exit('Nạp tiền thành công, vui lòng nhận trong thư!');
                
                     break;
                     
                     case 'charge1':
-				
+                
                         $chargetype1 = trim(poststr('chargetype1'));
                         $chargenum1 = trim(poststr('chargenum1'));
                         if ($chargetype1 == '') {
-                                exit('充值ID错误');
+                                exit('ID nạp tiền không hợp lệ');
                             }
                             $find = false;
                             $file = fopen("../charge1.txt", "r");
@@ -125,25 +124,25 @@ if ($_POST) {
                             }
                             fclose($file);
                             if ($find == false) {
-                                exit('充值ID错误');
+                                exit('ID nạp tiền không hợp lệ');
                             }
                             $chargenum1 = trim(poststr('chargenum1'));
                             if ($chargenum1 == '' || $chargenum1 < 0 || $chargenum1 > 1) {
-                                exit('发送数量错误1-1');
+                                exit('Số lượng gửi không hợp lệ (1-1)');
                             }
                         
-						     $result = sendMail($url,$uid,$cookie,$chargetype1,$chargenum1,$srv_name);
-							 
-							 exit('发送成功 邮件领取！');
+                             $result = sendMail($url,$uid,$cookie,$chargetype1,$chargenum1,$srv_name);
+                             
+                             exit('Gửi thành công, vui lòng nhận trong thư!');
                
                     break;
                     
                     case 'charge2':
-				
+                
                         $chargetype2 = trim(poststr('chargetype2'));
                         $chargenum2 = trim(poststr('chargenum2'));
                         if ($chargetype2 == '') {
-                                exit('充值ID错误');
+                                exit('ID nạp tiền không hợp lệ');
                             }
                             $find = false;
                             $file = fopen("../charge2.txt", "r");
@@ -156,25 +155,25 @@ if ($_POST) {
                             }
                             fclose($file);
                             if ($find == false) {
-                                exit('充值ID错误');
+                                exit('ID nạp tiền không hợp lệ');
                             }
                             $chargenum2 = trim(poststr('chargenum2'));
                             if ($chargenum2 == '' || $chargenum2 < 0 || $chargenum2 > 9999) {
-                                exit('发送数量错误1-9999');
+                                exit('Số lượng gửi không hợp lệ (1-9999)');
                             }
                         
-						     $result = sendMail($url,$uid,$cookie,$chargetype2,$chargenum2,$srv_name);
-							 
-							 exit('发送成功 邮件领取！');
+                             $result = sendMail($url,$uid,$cookie,$chargetype2,$chargenum2,$srv_name);
+                             
+                             exit('Gửi thành công, vui lòng nhận trong thư!');
                
                     break;
                     
                     case 'charge3':
-				
+                
                         $chargetype3 = trim(poststr('chargetype3'));
                         $chargenum3 = trim(poststr('chargenum3'));
                         if ($chargetype3 == '') {
-                                exit('充值ID错误');
+                                exit('ID nạp tiền không hợp lệ');
                             }
                             $find = false;
                             $file = fopen("../charge3.txt", "r");
@@ -187,25 +186,25 @@ if ($_POST) {
                             }
                             fclose($file);
                             if ($find == false) {
-                                exit('充值ID错误');
+                                exit('ID nạp tiền không hợp lệ');
                             }
                             $chargenum3 = trim(poststr('chargenum3'));
                             if ($chargenum3 == '' || $chargenum3 < 0 || $chargenum3 > 999999) {
-                                exit('发送数量错误1-999999');
+                                exit('Số lượng gửi không hợp lệ (1-999999)');
                             }
                         
-						     $result = sendMail($url,$uid,$cookie,$chargetype3,$chargenum3,$srv_name);
-							 
-							 exit('发送成功 邮件领取！');
+                             $result = sendMail($url,$uid,$cookie,$chargetype3,$chargenum3,$srv_name);
+                             
+                             exit('Gửi thành công, vui lòng nhận trong thư!');
                
                     break;
                     
                     case 'charge4':
-				
+                
                         $chargetype4 = trim(poststr('chargetype4'));
                         $chargenum4 = trim(poststr('chargenum4'));
                         if ($chargetype4 == '') {
-                                exit('充值ID错误');
+                                exit('ID nạp tiền không hợp lệ');
                             }
                             $find = false;
                             $file = fopen("../charge4.txt", "r");
@@ -218,25 +217,25 @@ if ($_POST) {
                             }
                             fclose($file);
                             if ($find == false) {
-                                exit('充值ID错误');
+                                exit('ID nạp tiền không hợp lệ');
                             }
                             $chargenum4 = trim(poststr('chargenum4'));
                             if ($chargenum4 == '' || $chargenum4 < 0 || $chargenum4 > 999) {
-                                exit('发送数量错误1-999');
+                                exit('Số lượng gửi không hợp lệ (1-999)');
                             }
                         
-						     $result = sendMail($url,$uid,$cookie,$chargetype4,$chargenum4,$srv_name);
-							 
-							 exit('发送成功 邮件领取！');
+                             $result = sendMail($url,$uid,$cookie,$chargetype4,$chargenum4,$srv_name);
+                             
+                             exit('Gửi thành công, vui lòng nhận trong thư!');
                
                     break;
                     
                     case 'charge5':
-				
+                
                         $chargetype5 = trim(poststr('chargetype5'));
                         $chargenum5 = trim(poststr('chargenum5'));
                         if ($chargetype5 == '') {
-                                exit('充值ID错误');
+                                exit('ID nạp tiền không hợp lệ');
                             }
                             $find = false;
                             $file = fopen("../charge5.txt", "r");
@@ -249,29 +248,29 @@ if ($_POST) {
                             }
                             fclose($file);
                             if ($find == false) {
-                                exit('充值ID错误');
+                                exit('ID nạp tiền không hợp lệ');
                             }
                             $chargenum5 = trim(poststr('chargenum5'));
                             if ($chargenum5 == '' || $chargenum5 < 0 || $chargenum5 > 1) {
-                                exit('发送数量错误1-1');
+                                exit('Số lượng gửi không hợp lệ (1-1)');
                             }
                         
-						     $result = sendMail($url,$uid,$cookie,$chargetype5,$chargenum5,$srv_name);
-							 
-							 exit('发送成功 邮件领取！');
+                             $result = sendMail($url,$uid,$cookie,$chargetype5,$chargenum5,$srv_name);
+                             
+                             exit('Gửi thành công, vui lòng nhận trong thư!');
                
                     break;
                     
                     case 'daoju':
-					
-					
-							
+                    
+                    
+                            
                         if ($viplevel < 1) {
-                            exit('VIP权限不足');
+                            exit('Không đủ quyền hạn VIP');
                         }
                             $mailid = trim(poststr('item'));
                             if ($mailid == '') {
-                                exit('物品ID错误');
+                                exit('Lỗi ID vật phẩm');
                             }
                             $find = false;
                             $file = fopen("../item.txt", "r");
@@ -284,16 +283,16 @@ if ($_POST) {
                             }
                             fclose($file);
                             if ($find == false) {
-                                exit('物品ID不存在');
+                                exit('ID vật phẩm không tồn tại');
                             }
                             $mailnum = trim(poststr('num'));
                             if ($mailnum == '' || $mailnum < 0 || $mailnum > 9999) {
-                                exit('发送数量错误');
+                                exit('Số lượng gửi không hợp lệ');
                             }
-                           //防止f12
-						$mailid = trim(poststr('item'));
+                           // Chống F12 (sửa code phía client)
+                        $mailid = trim(poststr('item'));
                             if ($mailid == '') {
-                                exit('物品ID错误');
+                                exit('Lỗi ID vật phẩm');
                             }
                             $find = false;
                             $file = fopen("../xmitem.txt", "r");
@@ -306,37 +305,37 @@ if ($_POST) {
                             }
                             fclose($file);
                             if ($find == false) {
-                                exit('物品ID不存在');
+                                exit('ID vật phẩm không tồn tại');
                             }
                             $mailnum = trim(poststr('num'));
                             if ($mailnum == '' || $mailnum < 0 || $mailnum > 9999) {
-                                exit('发送数量太大，不允许哦，人家受不鸟啦~！');
+                                exit('Số lượng gửi quá lớn, không được phép đâu nha!');
                             }
-						//防止f12
+                        // Chống F12
                             $item = trim($_POST['item']);
-							$itemnum = trim($_POST['num']);
-							$title =  trim($_POST['title']);
-							$content = trim($_POST['content']);
-							
-							
-							sendMail($url,$uid,$cookie,$item,$itemnum,$srv_name,$title,$content);
-							 
-							 
-							 exit('发送成功！');
+                            $itemnum = trim($_POST['num']);
+                            $title =  trim($_POST['title']);
+                            $content = trim($_POST['content']);
+                            
+                            
+                            sendMail($url,$uid,$cookie,$item,$itemnum,$srv_name,$title,$content);
+                             
+                             
+                             exit('Gửi thành công!');
                     break;
                     default:
-                        exit('系统异常，请重试!');
+                        exit('Hệ thống bất thường, vui lòng thử lại!');
                     break;
                 }
             } else {
-                exit('抓尼玛呢！');
+                exit('Định bắt gói tin hả!');
             }
         } else {
-            exit('角色名错误');
+            exit('Tên nhân vật không đúng');
         }
     } else {
-        exit('区号错误');
+        exit('Lỗi ID khu vực (Server)');
     }
 } else {
-    exit('非法请求!请自重');
+    exit('Yêu cầu không hợp lệ! Vui lòng tự trọng.');
 }

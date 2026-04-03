@@ -1,0 +1,104 @@
+[payment.cn.1 I 260403 07:13:58  server:150] {'test': {'appsecret': 'uS5QjKDtKXnFlqUW'}}
+[payment.cn.1 I 260403 07:13:58  writer:110] starting writer...
+[payment.cn.1 I 260403 07:13:58  writer:189] [127.0.0.1:4150] connecting to nsqd
+[payment.cn.1 I 260403 07:13:58  reader:235] [RESP-c_payment.cn.1:0global_1rpc] starting reader for RESP-c_payment.cn.1/0global_1rpc...
+[payment.cn.1 I 260403 07:13:58  reader:490] [127.0.0.1:4150:RESP-c_payment.cn.1:0global_1rpc] connecting to nsqd
+[payment.cn.1 I 260403 07:13:58  writer:110] starting writer...
+[payment.cn.1 I 260403 07:13:58  writer:189] [127.0.0.1:4150] connecting to nsqd
+[payment.cn.1 W 260403 07:13:58  reader:508] [127.0.0.1:4150:RESP-c_payment.cn.1:0global_1rpc] max RDY count 2500 < reader max in flight 10000, truncation possible
+[payment.cn.1 I 260403 07:14:04  server:166] [payment.cn.1] Payment Server 0/0 My Orders Left Last Time
+[payment.cn.1 I 260403 07:14:04  server:181] [payment.cn.1] Payment Server 0/0 Orders Left Last Time
+[payment.cn.1 I 260403 07:14:04  server:114] [payment.cn.1] Payment Server Start OK
+[payment.cn.1 I 260403 07:43:39  server:120] [payment.cn.1] Payment Server Stop ...
+[payment.cn.1 I 260403 07:43:39  server:191] [payment.cn.1] Payment Server 0 My Orders Left
+[payment.cn.1 W 260403 07:43:39  reader:535] [127.0.0.1:4150:RESP-c_payment.cn.1:0global_1rpc] connection closed
+[payment.cn.1 I 260403 07:43:39  reader:552] [127.0.0.1:4150:RESP-c_payment.cn.1:0global_1rpc] attempting to reconnect in 5s
+[payment.cn.1 W 260403 07:43:42  client:141] topic REQ-paymentdb.cn.1 msgid 3 method MyPayOrderCreate attempting to resend in 5s
+[payment.cn.1 W 260403 07:43:42  writer:212] [127.0.0.1:4150] connection closed
+[payment.cn.1 I 260403 07:43:42  writer:213] [127.0.0.1:4150] attempting to reconnect in 5.00s
+[payment.cn.1 W 260403 07:43:42  writer:212] [127.0.0.1:4150] connection closed
+[payment.cn.1 I 260403 07:43:42  writer:213] [127.0.0.1:4150] attempting to reconnect in 5.00s
+[payment.cn.1 I 260403 07:43:44  reader:490] [127.0.0.1:4150:RESP-c_payment.cn.1:0global_1rpc] connecting to nsqd
+[payment.cn.1 W 260403 07:43:44  reader:535] [127.0.0.1:4150:RESP-c_payment.cn.1:0global_1rpc] connection closed
+[payment.cn.1 I 260403 07:43:44  reader:552] [127.0.0.1:4150:RESP-c_payment.cn.1:0global_1rpc] attempting to reconnect in 5s
+[payment.cn.1 W 260403 07:43:47  client:141] topic REQ-paymentdb.cn.1 msgid 3 method MyPayOrderCreate attempting to resend in 5s
+[payment.cn.1 I 260403 07:43:47  writer:189] [127.0.0.1:4150] connecting to nsqd
+[payment.cn.1 I 260403 07:43:47  writer:189] [127.0.0.1:4150] connecting to nsqd
+[payment.cn.1 W 260403 07:43:47  writer:212] [127.0.0.1:4150] connection closed
+[payment.cn.1 I 260403 07:43:47  writer:213] [127.0.0.1:4150] attempting to reconnect in 5.00s
+[payment.cn.1 W 260403 07:43:47  writer:212] [127.0.0.1:4150] connection closed
+[payment.cn.1 I 260403 07:43:47  writer:213] [127.0.0.1:4150] attempting to reconnect in 5.00s
+[payment.cn.1 I 260403 07:43:49  reader:490] [127.0.0.1:4150:RESP-c_payment.cn.1:0global_1rpc] connecting to nsqd
+[payment.cn.1 W 260403 07:43:49  reader:535] [127.0.0.1:4150:RESP-c_payment.cn.1:0global_1rpc] connection closed
+[payment.cn.1 I 260403 07:43:49  reader:552] [127.0.0.1:4150:RESP-c_payment.cn.1:0global_1rpc] attempting to reconnect in 5s
+[payment.cn.1 I 260403 07:43:51  server:150] {'test': {'appsecret': 'uS5QjKDtKXnFlqUW'}}
+[payment.cn.1 I 260403 07:43:51  writer:110] starting writer...
+[payment.cn.1 I 260403 07:43:51  writer:189] [127.0.0.1:4150] connecting to nsqd
+[payment.cn.1 I 260403 07:43:51  reader:235] [RESP-c_payment.cn.1:0global_1rpc] starting reader for RESP-c_payment.cn.1/0global_1rpc...
+[payment.cn.1 I 260403 07:43:51  reader:490] [127.0.0.1:4150:RESP-c_payment.cn.1:0global_1rpc] connecting to nsqd
+[payment.cn.1 I 260403 07:43:51  writer:110] starting writer...
+[payment.cn.1 I 260403 07:43:51  writer:189] [127.0.0.1:4150] connecting to nsqd
+[payment.cn.1 W 260403 07:43:51  reader:508] [127.0.0.1:4150:RESP-c_payment.cn.1:0global_1rpc] max RDY count 2500 < reader max in flight 10000, truncation possible
+[payment.cn.1 I 260403 07:43:57  server:166] [payment.cn.1] Payment Server 0/0 My Orders Left Last Time
+[payment.cn.1 I 260403 07:43:57  server:181] [payment.cn.1] Payment Server 0/0 Orders Left Last Time
+[payment.cn.1 I 260403 07:43:57  server:114] [payment.cn.1] Payment Server Start OK
+[payment.cn.1 W 260403 08:38:32  reader:535] [127.0.0.1:4150:RESP-c_payment.cn.1:0global_1rpc] connection closed
+[payment.cn.1 I 260403 08:38:32  reader:552] [127.0.0.1:4150:RESP-c_payment.cn.1:0global_1rpc] attempting to reconnect in 5s
+[payment.cn.1 W 260403 08:38:32  writer:212] [127.0.0.1:4150] connection closed
+[payment.cn.1 I 260403 08:38:32  writer:213] [127.0.0.1:4150] attempting to reconnect in 5.00s
+[payment.cn.1 W 260403 08:38:32  writer:212] [127.0.0.1:4150] connection closed
+[payment.cn.1 I 260403 08:38:32  writer:213] [127.0.0.1:4150] attempting to reconnect in 5.00s
+[payment.cn.1 I 260403 08:38:37  reader:490] [127.0.0.1:4150:RESP-c_payment.cn.1:0global_1rpc] connecting to nsqd
+[payment.cn.1 I 260403 08:38:37  writer:189] [127.0.0.1:4150] connecting to nsqd
+[payment.cn.1 I 260403 08:38:37  writer:189] [127.0.0.1:4150] connecting to nsqd
+[payment.cn.1 W 260403 08:38:37  reader:508] [127.0.0.1:4150:RESP-c_payment.cn.1:0global_1rpc] max RDY count 2500 < reader max in flight 10000, truncation possible
+[payment.cn.1 W 260403 09:31:39  writer:212] [127.0.0.1:4150] connection closed
+[payment.cn.1 I 260403 09:31:39  writer:213] [127.0.0.1:4150] attempting to reconnect in 5.00s
+[payment.cn.1 W 260403 09:31:39  writer:212] [127.0.0.1:4150] connection closed
+[payment.cn.1 I 260403 09:31:39  writer:213] [127.0.0.1:4150] attempting to reconnect in 5.00s
+[payment.cn.1 W 260403 09:31:39  reader:535] [127.0.0.1:4150:RESP-c_payment.cn.1:0global_1rpc] connection closed
+[payment.cn.1 I 260403 09:31:39  reader:552] [127.0.0.1:4150:RESP-c_payment.cn.1:0global_1rpc] attempting to reconnect in 5s
+[payment.cn.1 I 260403 09:31:44  writer:189] [127.0.0.1:4150] connecting to nsqd
+[payment.cn.1 I 260403 09:31:44  writer:189] [127.0.0.1:4150] connecting to nsqd
+[payment.cn.1 I 260403 09:31:44  reader:490] [127.0.0.1:4150:RESP-c_payment.cn.1:0global_1rpc] connecting to nsqd
+[payment.cn.1 W 260403 09:31:44  reader:508] [127.0.0.1:4150:RESP-c_payment.cn.1:0global_1rpc] max RDY count 2500 < reader max in flight 10000, truncation possible
+[payment.cn.1 W 260403 10:19:05  writer:212] [127.0.0.1:4150] connection closed
+[payment.cn.1 I 260403 10:19:05  writer:213] [127.0.0.1:4150] attempting to reconnect in 5.00s
+[payment.cn.1 W 260403 10:19:05  reader:535] [127.0.0.1:4150:RESP-c_payment.cn.1:0global_1rpc] connection closed
+[payment.cn.1 I 260403 10:19:05  reader:552] [127.0.0.1:4150:RESP-c_payment.cn.1:0global_1rpc] attempting to reconnect in 5s
+[payment.cn.1 W 260403 10:19:05  writer:212] [127.0.0.1:4150] connection closed
+[payment.cn.1 I 260403 10:19:05  writer:213] [127.0.0.1:4150] attempting to reconnect in 5.00s
+[payment.cn.1 I 260403 10:19:10  writer:189] [127.0.0.1:4150] connecting to nsqd
+[payment.cn.1 I 260403 10:19:10  reader:490] [127.0.0.1:4150:RESP-c_payment.cn.1:0global_1rpc] connecting to nsqd
+[payment.cn.1 I 260403 10:19:10  writer:189] [127.0.0.1:4150] connecting to nsqd
+[payment.cn.1 W 260403 10:19:10  reader:508] [127.0.0.1:4150:RESP-c_payment.cn.1:0global_1rpc] max RDY count 2500 < reader max in flight 10000, truncation possible
+[payment.cn.1 W 260403 11:05:38  reader:535] [127.0.0.1:4150:RESP-c_payment.cn.1:0global_1rpc] connection closed
+[payment.cn.1 I 260403 11:05:38  reader:552] [127.0.0.1:4150:RESP-c_payment.cn.1:0global_1rpc] attempting to reconnect in 5s
+[payment.cn.1 W 260403 11:05:38  writer:212] [127.0.0.1:4150] connection closed
+[payment.cn.1 I 260403 11:05:38  writer:213] [127.0.0.1:4150] attempting to reconnect in 5.00s
+[payment.cn.1 W 260403 11:05:38  writer:212] [127.0.0.1:4150] connection closed
+[payment.cn.1 I 260403 11:05:38  writer:213] [127.0.0.1:4150] attempting to reconnect in 5.00s
+[payment.cn.1 I 260403 11:05:43  reader:490] [127.0.0.1:4150:RESP-c_payment.cn.1:0global_1rpc] connecting to nsqd
+[payment.cn.1 I 260403 11:05:43  writer:189] [127.0.0.1:4150] connecting to nsqd
+[payment.cn.1 I 260403 11:05:43  writer:189] [127.0.0.1:4150] connecting to nsqd
+[payment.cn.1 W 260403 11:05:43  reader:508] [127.0.0.1:4150:RESP-c_payment.cn.1:0global_1rpc] max RDY count 2500 < reader max in flight 10000, truncation possible
+[payment.cn.1 W 260403 11:50:07  writer:212] [127.0.0.1:4150] connection closed
+[payment.cn.1 I 260403 11:50:07  writer:213] [127.0.0.1:4150] attempting to reconnect in 5.00s
+[payment.cn.1 W 260403 11:50:07  writer:212] [127.0.0.1:4150] connection closed
+[payment.cn.1 I 260403 11:50:07  writer:213] [127.0.0.1:4150] attempting to reconnect in 5.00s
+[payment.cn.1 W 260403 11:50:07  reader:535] [127.0.0.1:4150:RESP-c_payment.cn.1:0global_1rpc] connection closed
+[payment.cn.1 I 260403 11:50:07  reader:552] [127.0.0.1:4150:RESP-c_payment.cn.1:0global_1rpc] attempting to reconnect in 5s
+[payment.cn.1 I 260403 11:50:12  writer:189] [127.0.0.1:4150] connecting to nsqd
+[payment.cn.1 I 260403 11:50:12  writer:189] [127.0.0.1:4150] connecting to nsqd
+[payment.cn.1 I 260403 11:50:12  reader:490] [127.0.0.1:4150:RESP-c_payment.cn.1:0global_1rpc] connecting to nsqd
+[payment.cn.1 W 260403 11:50:12  reader:508] [127.0.0.1:4150:RESP-c_payment.cn.1:0global_1rpc] max RDY count 2500 < reader max in flight 10000, truncation possible
+[payment.cn.1 W 260403 12:23:39  writer:212] [127.0.0.1:4150] connection closed
+[payment.cn.1 I 260403 12:23:39  writer:213] [127.0.0.1:4150] attempting to reconnect in 5.00s
+[payment.cn.1 W 260403 12:23:39  reader:535] [127.0.0.1:4150:RESP-c_payment.cn.1:0global_1rpc] connection closed
+[payment.cn.1 I 260403 12:23:39  reader:552] [127.0.0.1:4150:RESP-c_payment.cn.1:0global_1rpc] attempting to reconnect in 5s
+[payment.cn.1 W 260403 12:23:39  writer:212] [127.0.0.1:4150] connection closed
+[payment.cn.1 I 260403 12:23:39  writer:213] [127.0.0.1:4150] attempting to reconnect in 5.00s
+[payment.cn.1 I 260403 12:23:44  writer:189] [127.0.0.1:4150] connecting to nsqd
+[payment.cn.1 I 260403 12:23:44  reader:490] [127.0.0.1:4150:RESP-c_payment.cn.1:0global_1rpc] connecting to nsqd
+[payment.cn.1 I 260403 12:23:44  writer:189] [127.0.0.1:4150] connecting to nsqd
+[payment.cn.1 W 260403 12:23:44  reader:508] [127.0.0.1:4150:RESP-c_payment.cn.1:0global_1rpc] max RDY count 2500 < reader max in flight 10000, truncation possible

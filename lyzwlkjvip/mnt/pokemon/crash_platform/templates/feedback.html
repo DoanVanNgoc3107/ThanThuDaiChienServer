@@ -34,29 +34,29 @@
 
 {% block main %}
 	<div class="row m-head">
-		<div class="col-lg-2 col-md-2 col-sm-3 col-xs-3"><h4>玩家反馈查询<h4></div>
+		<div class="col-lg-2 col-md-2 col-sm-3 col-xs-3"><h4>Tra cứu phản hồi người chơi<h4></div>
 	</div>
 
 	<div class="well">
 		<div class="row">
 			<div class="form-group col-lg-2 col-md-3 col-sm-4">
 				<div class="input-group date form-date">
-					<input id="s-time" type="text" class="form-control input-sm" placeholder="开始时间选择">
+					<input id="s-time" type="text" class="form-control input-sm" placeholder="Chọn thời gian bắt đầu">
 					<span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
 					<!-- <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span> -->
 		        </div>
 			</div>
-			<span class="pull-left"><strong>至</strong></span>
+			<span class="pull-left"><strong>đến</strong></span>
 			<div class="form-group col-lg-2 col-md-3 col-sm-4">
 				<div class="input-group date form-date">
-					<input id="e-time" type="text" class="form-control input-sm" placeholder="结束时间选择">
+					<input id="e-time" type="text" class="form-control input-sm" placeholder="Chọn thời gian kết thúc">
 					<span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
 					<!-- <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span> -->
 		        </div>
 			</div>
 			<div class="pull-left" style="width: 148px;">
 				<div class="input-group">
-		            <input id="query-server" list="query-server-list" class="form-control input-sm" placeholder="区服选择" />
+		            <input id="query-server" list="query-server-list" class="form-control input-sm" placeholder="Chọn máy chủ" />
 		            <datalist id="query-server-list">
 		            	{% for serv in servers %}
 		            		<option value="{{ serv }}" />
@@ -65,29 +65,29 @@
 		        </div>
 			</div>
 			<div class="pull-left p" style="width: 148px;">
-				<input id="role-search" type="text" class="form-control input-sm" placeholder="角色名、角色ID">
+				<input id="role-search" type="text" class="form-control input-sm" placeholder="Tên nhân vật hoặc ID nhân vật">
 			</div>
 			<div class="pull-left p" style="width: 98px;">
 			    <select id="type-select" class="form-control input-sm">
-			    	<option value=0>问题类型</option>
+			    	<option value=0>Loại vấn đề</option>
 			    </select>
 			</div>
 			<div class="pull-left p" style="width: 71px;">
 			    <select id="status-select" class="form-control input-sm" value="asdasd">
-			    	<option value=0>状态</option>
-			    	<option value=1>已知</option>
-			    	<option value=-1>未知</option>
+			    	<option value=0>Trạng thái</option>
+			    	<option value=1>Đã biết</option>
+			    	<option value=-1>Chưa biết</option>
 			    </select>
 			</div>
 			<!-- <div class="p">
 				<form role="form">
 				  <div class="form-group">
-				   <input id="query-key" type="text" class="form-control input-sm" placeholder="关键字过滤">
+				   <input id="query-key" type="text" class="form-control input-sm" placeholder="Lọc theo từ khóa">
 				  </div>
 				</form>
 			</div> -->
 			<div class="pull-left p" style="width: 51px;">
-				<button id="filter" class="form-control input-sm btn-success" type="button">查询</button>
+				<button id="filter" class="form-control input-sm btn-success" type="button">Tra cứu</button>
 			</div>
 		</div>
 
@@ -103,40 +103,40 @@
 	        <div class="modal-content">
 	            <div class="modal-header">
 	                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-	                <h4 class="modal-title" id="ttt">玩家反馈邮件</h4>
+	                <h4 class="modal-title" id="ttt">Email phản hồi người chơi</h4>
 	            </div>
 	            <div class="modal-body">
 	            	<div id="constant-mc"></div>
 	            	<div>
 	            		<div class="form-inline">
 		        			<div class="form-group">
-		        				<label>发邮件人</label>
-		        				<input id="mail-sender" type="text" class="form-control" placeholder="默认为 小秘书">
+		        				<label>Người gửi</label>
+		        				<input id="mail-sender" type="text" class="form-control" placeholder="Mặc định: Trợ lý game">
 		        			</div>
 		        		</div>
 		        		<div class="form-inline">
 		        			<div class="form-group">
-		        				<label>邮件标题</label>
-		        				<input id="mail-title" type="text" class="form-control" placeholder="默认为 系统邮件">
+		        				<label>Tiêu đề email</label>
+		        				<input id="mail-title" type="text" class="form-control" placeholder="Mặc định: Thư hệ thống">
 		        			</div>
 		        		</div>
 		        		<div class="form-inline">
 		        			<div class="form-group">
-		        				<label>邮件内容</label>
+		        				<label>Nội dung email</label>
 		        				<textarea id="mail-content" class="form-control"></textarea>
 		        			</div>
 		        		</div>
 		        		<div class="form-inline">
 		        			<div class="form-group">
-		        				<label>邮件附件</label>
+		        				<label>Tệp đính kèm</label>
 		        				<textarea id="mail-annex" class="form-control" disabled="true"></textarea>
 		        			</div>
 		        		</div>
 	            	</div>
 	            </div>
 	            <div class="modal-footer">
-	                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-	                <button id="sm-btn" type="button" class="btn btn-primary">发送</button>
+	                <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+	                <button id="sm-btn" type="button" class="btn btn-primary">Gửi</button>
 	            </div>
 	        </div>
 	    </div>
@@ -147,10 +147,10 @@
 {% block foot %}
 	<script>
 		var mailTempMap = {
-			1: "系统邮件"
+			1: "Thư hệ thống"
 		}
 		var mailTypeMap = {
-			role: "玩家邮件"
+			role: "Thư người chơi"
 		}
 		function checkAnnex(annex) {
 			let result = null;
@@ -168,10 +168,10 @@
 			return result;
 		}
 		function sendRepMail(serv, role_id, issue, classify, role_name, index) {
-			$("#constant-mc").html(`<div><strong>区服:&nbsp&nbsp${serv};&nbsp&nbsp&nbsp&nbsp收件人:&nbsp&nbsp${role_name};</strong></div><div><strong>邮件模板:&nbsp&nbsp系统邮件;&nbsp&nbsp&nbsp&nbsp邮件类型:&nbsp&nbsp玩家邮件;</strong></div>`)
+			$("#constant-mc").html(`<div><strong>Máy chủ:&nbsp&nbsp${serv};&nbsp&nbsp&nbsp&nbspNgười nhận:&nbsp&nbsp${role_name};</strong></div><div><strong>Mẫu thư:&nbsp&nbspThư hệ thống;&nbsp&nbsp&nbsp&nbspLoại thư:&nbsp&nbspThư người chơi;</strong></div>`)
 			if (issue.length > 16)
 				issue = issue.substr(0, 16) + "..."
-			let mc = `针对您反馈的${tpZhMap[classify]} “${issue}”;`
+			let mc = `Phản hồi về ${tpZhMap[classify]} "${issue}";`
 			$("#mail-content").val(mc)
 			$("#mail-annex").val("{}")
 			$("#sm-btn").attr('onclick', `_send("${serv}", "${role_id}", "${role_name}", ${index}, "role", 1)`)
@@ -181,22 +181,22 @@
 			let sm = $("#mail-sender").val();
 			let mt = $("#mail-title").val();
 			if (!sm)
-				sm = "小秘书";
+				sm = "Trợ lý game";
 			if (!mt)
-				mt = "系统邮件";
+				mt = "Thư hệ thống";
 			let mc = $("#mail-content").val();
 			if (!mc) {
-				alert("内容不能为空")
+				alert("Nội dung không được để trống")
 				return;
 			}
 			let ma = $("#mail-annex").val()
 			ma = checkAnnex(ma)
 			if (ma === false) {
-				alert("附件内容不正确")
+				alert("Nội dung tệp đính kèm không hợp lệ")
 				return;
 			}
 			let mas = JSON.stringify(ma)
-			let msg = `将要发送以下内容，请确认：\n\n区服: ${serv};\n玩家: ${role_name};\n发件人: ${sm};\n邮件标题: ${mt};\n邮件内容: ${mc};\n邮件附件: ${mas};`
+			let msg = `Sắp gửi nội dung sau, vui lòng xác nhận:\n\nMáy chủ: ${serv};\nNgười chơi: ${role_name};\nNgười gửi: ${sm};\nTiêu đề email: ${mt};\nNội dung email: ${mc};\nTệp đính kèm: ${mas};`
 			$("#sm-btn").attr("disabled", "true")
 			if (confirm(msg)) {
 				$.ajax({
@@ -218,7 +218,7 @@
 						let rep = JSON.parse(r)
 						if (rep.result === "fail") {
 							console.log(rep.msg)
-							alert("发送失败，" + rep.msg)
+							alert("Gửi thất bại: " + rep.msg)
 						} else {
 							if (index !== 999999) {
 								if ($(`#mark-${index}-btn`).attr('mtag') === 'know') {
@@ -226,7 +226,7 @@
 								}
 							}
 							$('#send-mail').modal('hide')
-							alert("发送成功")
+							alert("Gửi thành công")
 						}
 					},
 					complete: function() {
@@ -248,11 +248,11 @@
 	    			rep = JSON.parse(r);
 	    			row = rep.data;
 	    			if (rep.ret) {
-	    				// alert("标记成功");
+	    				// alert("Đánh dấu thành công");
 	    				$('#feedback-table').bootstrapTable('updateRow', {index: index, row: row})
 
 	    			} else {
-	    				alert("标记失败");
+		    			alert("Đánh dấu thất bại");
 	    			}
 	    		}
 			})
@@ -265,10 +265,10 @@
 	    	'4': 'Recommand'
 	    };
 	    var tpZhMap = {
-        	RechargeIssue: "充值问题",
-        	BattleIssue: "战斗问题",
-        	BugIssue: "BUG反馈",
-        	Recommand: "游戏建议"
+	        	RechargeIssue: "Vấn đề nạp tiền",
+	        	BattleIssue: "Vấn đề chiến đấu",
+	        	BugIssue: "Báo lỗi BUG",
+	        	Recommand: "Góp ý game"
         };
 	    $(function() {
 	    	$("div.sidebar ul.nav a").each(function(){
@@ -279,7 +279,7 @@
 	    	paddingInputDate($("#s-time"));
 	    	paddingInputDate($("#e-time"));
 
-	    	let ih = "<option value=0>问题类型</option>";
+	    	let ih = "<option value=0>Loại vấn đề</option>";
 	    	let c = 1;
 	    	for (let i in tpZhMap) {
 	    		ih += `<option value=${c}>${tpZhMap[i]}</option>`;
@@ -291,7 +291,7 @@
 		    	var stime = $('#s-time').val();
 		    	var etime = $('#e-time').val();
 		    	if (!stime || !etime) {
-		    		alert('请确定一个时间段。');
+		    		alert('Vui lòng chọn khoảng thời gian.');
 		    		return;
 		    	}
 
@@ -300,40 +300,40 @@
 		    	var type = typeMap[$('#type-select').val()];
 		    	var status = $('#status-select').val();   	
 		    	var columns = [
-		    		{field: '_id', title: 'DB序号'},
-		    		{field: 'time', title: '反馈时间', sortable: true},
-		        	{field: 'game_server', title: '区服',},
-		        	{field: 'account_id', title: '账号id',},
-		        	{field: 'role_id', title: '角色id',},
-		        	{field: 'role_name', title: '角色名',},
-		        	{field: 'role_uid', title: '角色uid',},
-		        	{field: 'grade', title: '等级',},
+		    		{field: '_id', title: 'Mã DB'},
+		    		{field: 'time', title: 'Thời gian phản hồi', sortable: true},
+		        	{field: 'game_server', title: 'Máy chủ',},
+		        	{field: 'account_id', title: 'ID tài khoản',},
+		        	{field: 'role_id', title: 'ID nhân vật',},
+		        	{field: 'role_name', title: 'Tên nhân vật',},
+		        	{field: 'role_uid', title: 'UID nhân vật',},
+		        	{field: 'grade', title: 'Cấp độ',},
 		        	{field: 'vip', title: 'vip',},
-		            {field: 'classify', title: '问题类型', formatter: function(value, row, index) {
+		            {field: 'classify', title: 'Loại vấn đề', formatter: function(value, row, index) {
 		            	if (!(value in tpZhMap))
 		            		return value
 		            	else
 		            		return tpZhMap[value]
 		            }},
-		            {field: 'issue', title: '问题描述', formatter: function(value, row, index) {
+		            {field: 'issue', title: 'Mô tả vấn đề', formatter: function(value, row, index) {
 		            	if (row.status === false) {
 		            		return value;
 		            	} else {
 		            		return `<s><i>${value}</i></s>`;
 		            	}
 		            }},
-		            {field: 'status', title: '状态'},
+		            {field: 'status', title: 'Trạng thái'},
 		            {field: 'op', title: '', align: 'center', formatter: function(value, row, index) {
 		            	let h = null;
 		            	if (row.status === false) {
-		            		h = `<button id="mark-${index}-btn" mtag="know" class="btn btn-xs btn-primary" onclick="mark_k(this, ${index}, '${row._id}', 1)">标记为已知</a>`;
+		            		h = `<button id="mark-${index}-btn" mtag="know" class="btn btn-xs btn-primary" onclick="mark_k(this, ${index}, '${row._id}', 1)">Đánh dấu đã biết</a>`;
 		            	} else {
-		            		h = `<button id="mark-${index}-btn" mtag="unknow" class="btn btn-xs btn-success" onclick="mark_k(this, ${index}, '${row._id}', -1)">标记为未知</a>`;
+		            		h = `<button id="mark-${index}-btn" mtag="unknow" class="btn btn-xs btn-success" onclick="mark_k(this, ${index}, '${row._id}', -1)">Đánh dấu chưa biết</a>`;
 		            	}
 		            	return h;
 		            }},
 		            {field: 'send', title: '', align: 'center', formatter: function(value, row, index) {
-		            	return `<button class="btn btn-xs" onclick="sendRepMail('${row.game_server}','${row.role_id}', '${row.issue}', '${row.classify}', '${row.role_name}', ${index})">发送反馈邮件</button>`;
+		            	return `<button class="btn btn-xs" onclick="sendRepMail('${row.game_server}','${row.role_id}', '${row.issue}', '${row.classify}', '${row.role_name}', ${index})">Gửi email phản hồi</button>`;
 		            }},
 		        ]
 		    	$.ajax({
