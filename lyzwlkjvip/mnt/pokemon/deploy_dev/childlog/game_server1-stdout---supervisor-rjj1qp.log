@@ -1,0 +1,712 @@
+[game.cn.1 I 260403 05:53:52  patch:26] patch_framework ok !
+[game.cn.1 W 260403 05:53:53  __init__:130] url /yy/rmbgold/return nonstandard
+[game.cn.1 W 260403 05:53:53  __init__:130] url /cross/mine/boss/times/buy nonstandard
+[game.cn.1 W 260403 05:53:53  __init__:130] url /cross/mine/buff/feed nonstandard
+[game.cn.1 W 260403 05:53:53  __init__:130] url /cross/mine/times/buy nonstandard
+[game.cn.1 W 260403 05:53:53  __init__:130] url /unionadventure/input nonstandard
+[game.cn.1 W 260403 05:53:53  __init__:130] url /town/adventure/done nonstandard
+[game.cn.1 W 260403 05:53:53  __init__:130] url /town/adventure/recall nonstandard
+[game.cn.1 W 260403 05:53:53  __init__:130] url /town/adventure/setout nonstandard
+[game.cn.1 W 260403 05:53:53  __init__:130] url /town/adventure/task/award nonstandard
+[game.cn.1 W 260403 05:53:53  __init__:130] url /town/building/finish/atonce nonstandard
+[game.cn.1 W 260403 05:53:53  __init__:130] url /town/building/level/up nonstandard
+[game.cn.1 W 260403 05:53:53  __init__:130] url /town/building/refresh nonstandard
+[game.cn.1 W 260403 05:53:53  __init__:130] url /town/continuous/card/place nonstandard
+[game.cn.1 W 260403 05:53:53  __init__:130] url /town/continuous/card/remove nonstandard
+[game.cn.1 W 260403 05:53:53  __init__:130] url /town/continuous/receive nonstandard
+[game.cn.1 W 260403 05:53:53  __init__:130] url /town/explorer/skill/upgrade nonstandard
+[game.cn.1 W 260403 05:53:53  __init__:130] url /town/get nonstandard
+[game.cn.1 W 260403 05:53:53  __init__:130] url /town/home/card/remove nonstandard
+[game.cn.1 W 260403 05:53:53  __init__:130] url /town/home/card/rest nonstandard
+[game.cn.1 W 260403 05:53:53  __init__:130] url /town/home/layout/apply nonstandard
+[game.cn.1 W 260403 05:53:53  __init__:130] url /town/home/layout/delete nonstandard
+[game.cn.1 W 260403 05:53:53  __init__:130] url /town/home/layout/rename nonstandard
+[game.cn.1 W 260403 05:53:53  __init__:130] url /town/home/layout/save nonstandard
+[game.cn.1 W 260403 05:53:53  __init__:130] url /town/home/layout/update nonstandard
+[game.cn.1 W 260403 05:53:53  __init__:130] url /town/home/rename nonstandard
+[game.cn.1 W 260403 05:53:53  __init__:130] url /town/home/shop/buy nonstandard
+[game.cn.1 W 260403 05:53:53  __init__:130] url /town/order/cancel nonstandard
+[game.cn.1 W 260403 05:53:53  __init__:130] url /town/order/card/place nonstandard
+[game.cn.1 W 260403 05:53:53  __init__:130] url /town/order/card/remove nonstandard
+[game.cn.1 W 260403 05:53:53  __init__:130] url /town/order/place nonstandard
+[game.cn.1 W 260403 05:53:53  __init__:130] url /town/order/receive nonstandard
+[game.cn.1 W 260403 05:53:53  __init__:130] url /town/relic/buff/refresh nonstandard
+[game.cn.1 I 260403 05:53:53  server:123] GameServOpenDatetime 2025-07-11 10:00:00
+[game.cn.1 I 260403 05:53:53  thinkingdata:40] tjta init, path /mnt/logbus_data/game.cn.1
+[game.cn.1 I 260403 05:53:53  server:155] dependent ['anticheat', 'chat_monitor', 'giftdb.cn.1', 'card_comment.cn.1', 'card_score.cn.1', 'storage.cn.1', 'arena.cn.1', 'union.cn.1', 'craft.cn.1', 'clone.cn.1', 'pvp.cn.1', 'union_fight.cn.1', 'yyhuodong.cn.1', 'card_fight.cn.1', 'gym.cn.1', 'hunting.cn.1']
+[game.cn.1 I 260403 05:53:53  writer:110] starting writer...
+[game.cn.1 I 260403 05:53:53  writer:189] [127.0.0.1:4150] connecting to nsqd
+[game.cn.1 I 260403 05:53:53  reader:235] [RESP-c_game.cn.1:0global_1rpc] starting reader for RESP-c_game.cn.1/0global_1rpc...
+[game.cn.1 I 260403 05:53:53  reader:490] [127.0.0.1:4150:RESP-c_game.cn.1:0global_1rpc] connecting to nsqd
+[game.cn.1 I 260403 05:53:53  writer:110] starting writer...
+[game.cn.1 I 260403 05:53:53  writer:189] [127.0.0.1:4150] connecting to nsqd
+[game.cn.1 W 260403 05:53:53  reader:508] [127.0.0.1:4150:RESP-c_game.cn.1:0global_1rpc] max RDY count 2500 < reader max in flight 10000, truncation possible
+[game.cn.1 I 260403 05:53:54  session:87] localtime 2026-04-03 05:53:54.763411 servertime 2026-04-03 13:53:54.763411
+[game.cn.1 I 260403 05:53:54  server:248] initGM OK
+[game.cn.1 I 260403 05:53:54  servrecord:52] ObjectServerGlobalRecord.half_period_keys {}
+[game.cn.1 I 260403 05:53:54  server:709] CrossUnionQA Round closed
+[game.cn.1 I 260403 05:53:54  server:252] initServerGlobal OK
+[game.cn.1 I 260403 05:53:54  server:256] VIPLevelMax 20
+[game.cn.1 I 260403 05:53:55  card:305] [StarSkillAttr] Loading card_star_skill_attr.csv...
+[game.cn.1 I 260403 05:53:55  card:340] [StarSkillAttr] Loaded 3000 entries into StarSkillAttrCache
+[game.cn.1 I 260403 05:54:00  yyhuodong:8803] RoundFlop GrandPrizeMap loaded: [23601]
+[game.cn.1 I 260403 05:54:00  huodong:395] delta 1 金币副本 True 15:06:05.236589
+[game.cn.1 I 260403 05:54:00  huodong:395] delta 2 经验副本 True 15:06:05.236589
+[game.cn.1 I 260403 05:54:00  huodong:395] delta 3 礼物副本 True 15:06:05.236589
+[game.cn.1 I 260403 05:54:00  huodong:395] delta 4 碎片副本 True 15:06:05.236589
+[game.cn.1 I 260403 05:54:00  huodong:395] delta 20 契约副本 True 10:06:05.236589
+[game.cn.1 I 260403 05:54:00  yyhuodong:10125] delta 1 宝芙蕾 False 16:06:05.236589
+[game.cn.1 I 260403 05:54:00  yyhuodong:10125] delta 2 宝芙蕾 True 1:06:05.236589
+[game.cn.1 I 260403 05:54:00  yyhuodong:10125] delta 3 宝芙蕾 False 4:06:05.236589
+[game.cn.1 I 260403 05:54:00  yyhuodong:10125] delta 4 宝芙蕾 False 7:06:05.236589
+[game.cn.1 I 260403 05:54:00  yyhuodong:10125] delta 5 宝芙蕾 True 26570 days, 15:06:05.236589
+[game.cn.1 I 260403 05:54:00  yyhuodong:10125] delta 7 每日登陆奖励 True 26570 days, 15:06:05.236589
+[game.cn.1 I 260403 05:54:00  yyhuodong:10125] delta 11 月卡 True 15:06:05.236589
+[game.cn.1 I 260403 05:54:00  yyhuodong:10125] delta 12 至尊月卡 True 15:06:05.236589
+[game.cn.1 I 260403 05:54:00  yyhuodong:10125] delta 21 正式-梦幻海报 True 26570 days, 15:06:05.236589
+[game.cn.1 I 260403 05:54:00  yyhuodong:10125] delta 23 正式-限时礼包 True 26570 days, 15:06:05.236589
+[game.cn.1 I 260403 05:54:00  yyhuodong:10125] delta 24 登录送十连抽 True 26570 days, 15:06:05.236589
+[game.cn.1 I 260403 05:54:00  yyhuodong:10125] delta 35 开服嘉年华 True 26570 days, 15:06:05.236589
+[game.cn.1 I 260403 05:54:00  yyhuodong:10125] delta 40 直购礼包 True 26570 days, 15:06:05.236589
+[game.cn.1 I 260403 05:54:00  yyhuodong:10125] delta 41 直购礼包 True 26570 days, 15:06:05.236589
+[game.cn.1 I 260403 05:54:00  yyhuodong:10125] delta 75 新手福利 True 26570 days, 15:06:05.236589
+[game.cn.1 I 260403 05:54:00  yyhuodong:10125] delta 106 金币副本次数增加 True 26570 days, 15:06:05.236589
+[game.cn.1 I 260403 05:54:00  yyhuodong:10125] delta 107 冒险之路扫荡双倍 True 26570 days, 15:06:05.236589
+[game.cn.1 I 260403 05:54:00  yyhuodong:10125] delta 108 礼物副本次数增加 True 26570 days, 15:06:05.236589
+[game.cn.1 I 260403 05:54:00  yyhuodong:10125] delta 109 碎片副本次数增加 True 26570 days, 15:06:05.236589
+[game.cn.1 I 260403 05:54:00  yyhuodong:10125] delta 110 金币副本双倍掉落 True 26570 days, 15:06:05.236589
+[game.cn.1 I 260403 05:54:00  yyhuodong:10125] delta 111 礼物副本双倍掉落 True 26570 days, 15:06:05.236589
+[game.cn.1 I 260403 05:54:00  yyhuodong:10125] delta 112 普通关卡双倍掉落 True 26570 days, 15:06:05.236589
+[game.cn.1 I 260403 05:54:00  yyhuodong:10125] delta 113 困难关卡双倍掉落 True 26570 days, 15:06:05.236589
+[game.cn.1 I 260403 05:54:00  yyhuodong:10125] delta 114 聚宝双倍 True 26570 days, 15:06:05.236589
+[game.cn.1 I 260403 05:54:00  yyhuodong:10125] delta 115 体力购买双倍 True 26570 days, 15:06:05.236589
+[game.cn.1 I 260403 05:54:00  yyhuodong:10125] delta 116 以太乐园金币双倍 True 26570 days, 15:06:05.236589
+[game.cn.1 I 260403 05:54:00  yyhuodong:10125] delta 117 金币副本次数增加 True 26570 days, 15:06:05.236589
+[game.cn.1 I 260403 05:54:00  yyhuodong:10125] delta 118 冒险之路扫荡双倍 True 26570 days, 15:06:05.236589
+[game.cn.1 I 260403 05:54:00  yyhuodong:10125] delta 119 礼物副本次数增加 True 26570 days, 15:06:05.236589
+[game.cn.1 I 260403 05:54:00  yyhuodong:10125] delta 120 聚宝双倍 True 26570 days, 15:06:05.236589
+[game.cn.1 I 260403 05:54:00  yyhuodong:10125] delta 121 碎片副本次数增加 True 26570 days, 15:06:05.236589
+[game.cn.1 I 260403 05:54:00  yyhuodong:10125] delta 122 金币副本双倍掉落 True 26570 days, 15:06:05.236589
+[game.cn.1 I 260403 05:54:00  yyhuodong:10125] delta 123 礼物副本双倍掉落 True 26570 days, 15:06:05.236589
+[game.cn.1 I 260403 05:54:00  yyhuodong:10125] delta 124 普通关卡双倍掉落 True 26570 days, 15:06:05.236589
+[game.cn.1 I 260403 05:54:00  yyhuodong:10125] delta 125 困难关卡双倍掉落 True 26570 days, 15:06:05.236589
+[game.cn.1 I 260403 05:54:00  yyhuodong:10125] delta 126 体力购买双倍 True 26570 days, 15:06:05.236589
+[game.cn.1 I 260403 05:54:00  yyhuodong:10125] delta 127 以太乐园金币双倍 True 26570 days, 15:06:05.236589
+[game.cn.1 I 260403 05:54:00  yyhuodong:10125] delta 131 纸飞机掉落 True 26570 days, 15:06:05.236589
+[game.cn.1 I 260403 05:54:00  yyhuodong:10125] delta 132 纸飞机兑换 True 26570 days, 15:06:05.236589
+[game.cn.1 I 260403 05:54:00  yyhuodong:10125] delta 133 限时掉落六一 True 26570 days, 15:06:05.236589
+[game.cn.1 I 260403 05:54:00  yyhuodong:10125] delta 100101 口袋新纪元重磅福利 True 26570 days, 15:06:05.236589
+[game.cn.1 I 260403 05:54:00  yyhuodong:10125] delta 100102 口袋新纪元重磅福利 True 26570 days, 15:06:05.236589
+[game.cn.1 I 260403 05:54:00  yyhuodong:10125] delta 100103 口袋新纪元重磅福利 True 26570 days, 15:06:05.236589
+[game.cn.1 I 260403 05:54:00  yyhuodong:10125] delta 100104 口袋新纪元重磅福利 True 26570 days, 15:06:05.236589
+[game.cn.1 I 260403 05:54:00  yyhuodong:10125] delta 100105 口袋新纪元重磅福利 True 26570 days, 15:06:05.236589
+[game.cn.1 I 260403 05:54:00  yyhuodong:10125] delta 100106 口袋新纪元重磅福利 True 26570 days, 15:06:05.236589
+[game.cn.1 I 260403 05:54:00  yyhuodong:10125] delta 100107 口袋新纪元重磅福利 True 26570 days, 15:06:05.236589
+[game.cn.1 I 260403 05:54:00  yyhuodong:10125] delta 100108 口袋新纪元重磅福利 True 26570 days, 15:06:05.236589
+[game.cn.1 I 260403 05:54:00  yyhuodong:10125] delta 100109 口袋新纪元重磅福利 True 26570 days, 15:06:05.236589
+[game.cn.1 I 260403 05:54:00  yyhuodong:10125] delta 100110 口袋新纪元重磅福利 True 26570 days, 15:06:05.236589
+[game.cn.1 I 260403 05:54:00  yyhuodong:10125] delta 100302 首充活动 True 26570 days, 15:06:05.236589
+[game.cn.1 I 260403 05:54:00  yyhuodong:10125] delta 100303 首充活动 True 26570 days, 15:06:05.236589
+[game.cn.1 I 260403 05:54:00  yyhuodong:10125] delta 100402 每日特惠 True 26570 days, 15:06:05.236589
+[game.cn.1 I 260403 05:54:00  yyhuodong:10125] delta 100406 限定形象 True 26570 days, 15:06:05.236589
+[game.cn.1 I 260403 05:54:00  yyhuodong:10125] delta 100409 助战商店 True 26570 days, 15:06:05.236589
+[game.cn.1 I 260403 05:54:00  yyhuodong:10125] delta 100410 携带商城 True 26570 days, 15:06:05.236589
+[game.cn.1 I 260403 05:54:00  yyhuodong:10125] delta 100411 精灵商城 True 26570 days, 15:06:05.236589
+[game.cn.1 I 260403 05:54:00  yyhuodong:10125] delta 100412 超进化商城 True 26570 days, 15:06:05.236589
+[game.cn.1 I 260403 05:54:00  yyhuodong:10125] delta 100504 勇者挑战 True 26570 days, 15:06:05.236589
+[game.cn.1 I 260403 05:54:00  yyhuodong:10125] delta 100505 礼券商店 True 26570 days, 15:06:05.236589
+[game.cn.1 I 260403 05:54:00  yyhuodong:10125] delta 101007 护符精华兑换 True 26570 days, 15:06:05.236589
+[game.cn.1 I 260403 05:54:00  yyhuodong:10125] delta 101008 护符兑换 True 26570 days, 15:06:05.236589
+[game.cn.1 I 260403 05:54:00  yyhuodong:10125] delta 101009 特殊兑换 True 26570 days, 15:06:05.236589
+[game.cn.1 I 260403 05:54:00  yyhuodong:10125] delta 101603 永久充值回馈 True 26570 days, 15:06:05.236589
+[game.cn.1 I 260403 05:54:00  yyhuodong:10125] delta 101614 每日充值回馈 True 26570 days, 15:06:05.236589
+[game.cn.1 I 260403 05:54:00  yyhuodong:10125] delta 102001 携带兑换 True 245 days, 15:06:05.236589
+[game.cn.1 I 260403 05:54:00  yyhuodong:10125] delta 102002 助战兑换 True 26570 days, 15:06:05.236589
+[game.cn.1 I 260403 05:54:00  yyhuodong:10125] delta 102003 助战兑换 True 26570 days, 15:06:05.236589
+[game.cn.1 I 260403 05:54:00  session:561] _huodongRefresh 10:06:05.236589; 1:06:05.236589
+[game.cn.1 I 260403 05:54:01  server:260] initAllClass OK
+[game.cn.1 I 260403 05:54:01  server:264] initMail OK
+[game.cn.1 I 260403 05:54:01  server:623] Union count:0
+[game.cn.1 I 260403 05:54:01  server:268] initUnion OK
+[game.cn.1 I 260403 05:54:01  server:272] initRank OK
+[game.cn.1 I 260403 05:54:01  server:276] initShop OK
+[game.cn.1 I 260403 05:54:01  server:280] initMessage OK
+[game.cn.1 I 260403 05:54:01  server:765] Society RoleCache Size: 0
+[game.cn.1 I 260403 05:54:01  server:284] initSociety OK
+[game.cn.1 I 260403 05:54:01  craft:214] Craft Init AutoSign Roles 0
+[game.cn.1 I 260403 05:54:02  server:785] Craft Before Init Status signup
+[game.cn.1 W 260403 05:54:02  craft:347] Craft already in signup
+[game.cn.1 I 260403 05:54:02  server:799] Craft Now Status signup
+[game.cn.1 I 260403 05:54:02  server:288] initCraft OK
+[game.cn.1 I 260403 05:54:02  union_fight:309] UnionFight Init AutoSign Roles 0
+[game.cn.1 I 260403 05:54:02  server:1022] UnionFight Last AwardTime 0, opendate 2025-07-24 05:00:00
+[game.cn.1 I 260403 05:54:02  union_fight:288] ObjectUnionFightGlobal.onStartSignUp
+[game.cn.1 I 260403 05:54:02  server:1033] UnionFight Now Status signup
+[game.cn.1 I 260403 05:54:02  server:292] initUnionFight OK
+[game.cn.1 I 260403 05:54:02  server:832] Cross Craft Befroe Init  0 signup 0
+[game.cn.1 I 260403 05:54:02  cross_craft:148] Cross Craft Reset  0 closed
+[game.cn.1 I 260403 05:54:02  server:841] game.cn.1 Cross Craft key: , Cross Craft Now Status closed
+[game.cn.1 I 260403 05:54:02  cross_craft:169] Cross Craft Init AutoSign Roles 0
+[game.cn.1 I 260403 05:54:02  server:296] initCrossCraft OK
+[game.cn.1 I 260403 05:54:02  server:300] initEndlessTower OK
+[game.cn.1 I 260403 05:54:02  server:1083] game.cn.1 Cross OnlineFight key: , Cross OnlineFight Now Status closed
+[game.cn.1 I 260403 05:54:02  server:304] initCrossOnlineFight OK
+[game.cn.1 I 260403 05:54:02  server:868] game.cn.1 Cross Arena key: , Now Status closed
+[game.cn.1 I 260403 05:54:02  server:308] initCrossArena OK
+[game.cn.1 I 260403 05:54:02  server:893] game.cn.1 Cross Supremacy key: , Now Status closed
+[game.cn.1 I 260403 05:54:02  server:312] initCrossSupremacy OK
+[game.cn.1 I 260403 05:54:02  cross_fishing:170] Cross fishing Init crossfishing.cn.1 20260403 start
+[game.cn.1 I 260403 05:54:02  server:918] game.cn.1 Cross fishing key: crossfishing.cn.1, Cross fishing Now Status start
+[game.cn.1 I 260403 05:54:02  server:316] initCrossFishing OK
+[game.cn.1 I 260403 05:54:02  server:944] game.cn.1 Cross mimicry key: , Cross mimicry Now Status closed
+[game.cn.1 I 260403 05:54:02  server:320] initCrossMimicry OK
+[game.cn.1 I 260403 05:54:02  server:970] game.cn.1 Cross auto chess key: , Cross auto chess Now Status closed
+[game.cn.1 I 260403 05:54:02  server:324] initCrossAutoChess OK
+[game.cn.1 I 260403 05:54:02  server:1003] game.cn.1 Cross town party waiting for match, round=closed
+[game.cn.1 I 260403 05:54:02  server:328] initCrossTownParty OK
+[game.cn.1 I 260403 05:54:02  gym:266] ObjectGymGameGlobal.initCrossData
+[game.cn.1 I 260403 05:54:02  server:1059] game.cn.1 Cross Gym key: , Gym Now Status start
+[game.cn.1 I 260403 05:54:02  server:332] initGym OK
+[game.cn.1 I 260403 05:54:02  server:1109] game.cn.1 Cross Mine key: , Now Status closed
+[game.cn.1 I 260403 05:54:02  server:336] initCrossMine OK
+[game.cn.1 I 260403 05:54:02  server:1135] game.cn.1 Cross Union Fight key: , Now Status closed
+[game.cn.1 I 260403 05:54:02  server:340] initCrossUnionFight OK
+[game.cn.1 I 260403 05:54:02  server:367] [game.cn.1] Game Server Start OK
+[game.cn.1 I 260403 05:54:02  reader:235] [REQ-game.cn.1:rpc] starting reader for REQ-game.cn.1/rpc...
+[game.cn.1 I 260403 05:54:02  reader:490] [127.0.0.1:4150:REQ-game.cn.1:rpc] connecting to nsqd
+[game.cn.1 I 260403 05:54:02  reader:235] [CrossMatchServerCheck:game.cn.1] starting reader for CrossMatchServerCheck/game.cn.1...
+[game.cn.1 I 260403 05:54:02  reader:490] [127.0.0.1:4150:CrossMatchServerCheck:game.cn.1] connecting to nsqd
+[game.cn.1 W 260403 05:54:02  reader:508] [127.0.0.1:4150:CrossMatchServerCheck:game.cn.1] max RDY count 2500 < reader max in flight 10000, truncation possible
+[game.cn.1 W 260403 05:54:02  reader:508] [127.0.0.1:4150:REQ-game.cn.1:rpc] max RDY count 2500 < reader max in flight 10000, truncation possible
+[game.cn.1 I 260403 05:54:02  rpc:2137] game.cn.1 openDays 266
+[game.cn.1 I 260403 05:55:13  rpc:107] admin123 69cf509793eec200226c8ed1 from none coming 1
+[game.cn.1 I 260403 05:55:13 192.168.97.1 server:578] Conn Close, WANetClientConn size 0, Session size 1
+[game.cn.1 W 260403 05:55:13  wnet:413] readBody error! flag: <framework.wnet.WANetTaskFlag object at 0x7fffcaa74610> ok_ack 0 err_ack 0 heart_syn 0 zip_flag 1 long_len_flag 0 ack_flag 0 url_flag 1, url: /game/login, len 144, recvLen 144, dataLen: 144
+[game.cn.1 E 260403 05:55:13  iostream:545] Uncaught exception, closing connection().
+    Traceback (most recent call last):
+      File "/mnt/pokemon/release/src/tornado/iostream.py", line 541, in wrapper
+        return callback(*args)
+      File "/mnt/pokemon/release/src/tornado/stack_context.py", line 275, in null_wrapper
+        return fn(*args, **kwargs)
+      File "/mnt/pokemon/release/src/framework/wnet.py", line 404, in readBody
+        data = lz4.uncompress(data)
+    AttributeError: 'module' object has no attribute 'uncompress'
+[game.cn.1 E 260403 05:55:13  ioloop:608] Exception in callback <functools.partial object at 0x7fffcae7f368>
+    Traceback (most recent call last):
+      File "/mnt/pokemon/release/src/tornado/ioloop.py", line 588, in _run_callback
+        ret = callback()
+      File "/mnt/pokemon/release/src/tornado/stack_context.py", line 275, in null_wrapper
+        return fn(*args, **kwargs)
+      File "/mnt/pokemon/release/src/tornado/iostream.py", line 541, in wrapper
+        return callback(*args)
+      File "/mnt/pokemon/release/src/tornado/stack_context.py", line 275, in null_wrapper
+        return fn(*args, **kwargs)
+      File "/mnt/pokemon/release/src/framework/wnet.py", line 404, in readBody
+        data = lz4.uncompress(data)
+    AttributeError: 'module' object has no attribute 'uncompress'
+[game.cn.1 I 260403 05:55:15 192.168.97.1 server:578] Conn Close, WANetClientConn size 0, Session size 1
+[game.cn.1 W 260403 05:55:15  wnet:413] readBody error! flag: <framework.wnet.WANetTaskFlag object at 0x7fffcac4a590> ok_ack 0 err_ack 0 heart_syn 0 zip_flag 1 long_len_flag 0 ack_flag 0 url_flag 1, url: /game/login, len 144, recvLen 144, dataLen: 144
+[game.cn.1 E 260403 05:55:15  iostream:545] Uncaught exception, closing connection().
+    Traceback (most recent call last):
+      File "/mnt/pokemon/release/src/tornado/iostream.py", line 541, in wrapper
+        return callback(*args)
+      File "/mnt/pokemon/release/src/tornado/stack_context.py", line 275, in null_wrapper
+        return fn(*args, **kwargs)
+      File "/mnt/pokemon/release/src/framework/wnet.py", line 404, in readBody
+        data = lz4.uncompress(data)
+    AttributeError: 'module' object has no attribute 'uncompress'
+[game.cn.1 E 260403 05:55:15  ioloop:608] Exception in callback <functools.partial object at 0x7fffcad8b100>
+    Traceback (most recent call last):
+      File "/mnt/pokemon/release/src/tornado/ioloop.py", line 588, in _run_callback
+        ret = callback()
+      File "/mnt/pokemon/release/src/tornado/stack_context.py", line 275, in null_wrapper
+        return fn(*args, **kwargs)
+      File "/mnt/pokemon/release/src/tornado/iostream.py", line 541, in wrapper
+        return callback(*args)
+      File "/mnt/pokemon/release/src/tornado/stack_context.py", line 275, in null_wrapper
+        return fn(*args, **kwargs)
+      File "/mnt/pokemon/release/src/framework/wnet.py", line 404, in readBody
+        data = lz4.uncompress(data)
+    AttributeError: 'module' object has no attribute 'uncompress'
+[game.cn.1 I 260403 05:55:17 192.168.97.1 server:578] Conn Close, WANetClientConn size 0, Session size 1
+[game.cn.1 W 260403 05:55:17  wnet:413] readBody error! flag: <framework.wnet.WANetTaskFlag object at 0x7fffcac4a5d0> ok_ack 0 err_ack 0 heart_syn 0 zip_flag 1 long_len_flag 0 ack_flag 0 url_flag 1, url: /game/login, len 144, recvLen 144, dataLen: 144
+[game.cn.1 E 260403 05:55:17  iostream:545] Uncaught exception, closing connection().
+    Traceback (most recent call last):
+      File "/mnt/pokemon/release/src/tornado/iostream.py", line 541, in wrapper
+        return callback(*args)
+      File "/mnt/pokemon/release/src/tornado/stack_context.py", line 275, in null_wrapper
+        return fn(*args, **kwargs)
+      File "/mnt/pokemon/release/src/framework/wnet.py", line 404, in readBody
+        data = lz4.uncompress(data)
+    AttributeError: 'module' object has no attribute 'uncompress'
+[game.cn.1 E 260403 05:55:17  ioloop:608] Exception in callback <functools.partial object at 0x7fffcaf10c00>
+    Traceback (most recent call last):
+      File "/mnt/pokemon/release/src/tornado/ioloop.py", line 588, in _run_callback
+        ret = callback()
+      File "/mnt/pokemon/release/src/tornado/stack_context.py", line 275, in null_wrapper
+        return fn(*args, **kwargs)
+      File "/mnt/pokemon/release/src/tornado/iostream.py", line 541, in wrapper
+        return callback(*args)
+      File "/mnt/pokemon/release/src/tornado/stack_context.py", line 275, in null_wrapper
+        return fn(*args, **kwargs)
+      File "/mnt/pokemon/release/src/framework/wnet.py", line 404, in readBody
+        data = lz4.uncompress(data)
+    AttributeError: 'module' object has no attribute 'uncompress'
+[game.cn.1 I 260403 05:55:55 192.168.97.1 server:578] Conn Close, WANetClientConn size 0, Session size 1
+[game.cn.1 I 260403 05:56:18  rpc:107] admin123 69cf509793eec200226c8ed1 from none coming 1
+[game.cn.1 I 260403 05:56:18 192.168.97.1 server:578] Conn Close, WANetClientConn size 0, Session size 1
+[game.cn.1 W 260403 05:56:18  wnet:413] readBody error! flag: <framework.wnet.WANetTaskFlag object at 0x7fffcac4a590> ok_ack 0 err_ack 0 heart_syn 0 zip_flag 1 long_len_flag 0 ack_flag 0 url_flag 1, url: /game/login, len 144, recvLen 144, dataLen: 144
+[game.cn.1 E 260403 05:56:18  iostream:545] Uncaught exception, closing connection().
+    Traceback (most recent call last):
+      File "/mnt/pokemon/release/src/tornado/iostream.py", line 541, in wrapper
+        return callback(*args)
+      File "/mnt/pokemon/release/src/tornado/stack_context.py", line 275, in null_wrapper
+        return fn(*args, **kwargs)
+      File "/mnt/pokemon/release/src/framework/wnet.py", line 404, in readBody
+        data = lz4.uncompress(data)
+    AttributeError: 'module' object has no attribute 'uncompress'
+[game.cn.1 E 260403 05:56:18  ioloop:608] Exception in callback <functools.partial object at 0x7fffe902b0a8>
+    Traceback (most recent call last):
+      File "/mnt/pokemon/release/src/tornado/ioloop.py", line 588, in _run_callback
+        ret = callback()
+      File "/mnt/pokemon/release/src/tornado/stack_context.py", line 275, in null_wrapper
+        return fn(*args, **kwargs)
+      File "/mnt/pokemon/release/src/tornado/iostream.py", line 541, in wrapper
+        return callback(*args)
+      File "/mnt/pokemon/release/src/tornado/stack_context.py", line 275, in null_wrapper
+        return fn(*args, **kwargs)
+      File "/mnt/pokemon/release/src/framework/wnet.py", line 404, in readBody
+        data = lz4.uncompress(data)
+    AttributeError: 'module' object has no attribute 'uncompress'
+[game.cn.1 I 260403 05:56:20 192.168.97.1 server:578] Conn Close, WANetClientConn size 0, Session size 1
+[game.cn.1 W 260403 05:56:20  wnet:413] readBody error! flag: <framework.wnet.WANetTaskFlag object at 0x7fffcab108d0> ok_ack 0 err_ack 0 heart_syn 0 zip_flag 1 long_len_flag 0 ack_flag 0 url_flag 1, url: /game/login, len 144, recvLen 144, dataLen: 144
+[game.cn.1 E 260403 05:56:20  iostream:545] Uncaught exception, closing connection().
+    Traceback (most recent call last):
+      File "/mnt/pokemon/release/src/tornado/iostream.py", line 541, in wrapper
+        return callback(*args)
+      File "/mnt/pokemon/release/src/tornado/stack_context.py", line 275, in null_wrapper
+        return fn(*args, **kwargs)
+      File "/mnt/pokemon/release/src/framework/wnet.py", line 404, in readBody
+        data = lz4.uncompress(data)
+    AttributeError: 'module' object has no attribute 'uncompress'
+[game.cn.1 E 260403 05:56:20  ioloop:608] Exception in callback <functools.partial object at 0x7fffcaf10f18>
+    Traceback (most recent call last):
+      File "/mnt/pokemon/release/src/tornado/ioloop.py", line 588, in _run_callback
+        ret = callback()
+      File "/mnt/pokemon/release/src/tornado/stack_context.py", line 275, in null_wrapper
+        return fn(*args, **kwargs)
+      File "/mnt/pokemon/release/src/tornado/iostream.py", line 541, in wrapper
+        return callback(*args)
+      File "/mnt/pokemon/release/src/tornado/stack_context.py", line 275, in null_wrapper
+        return fn(*args, **kwargs)
+      File "/mnt/pokemon/release/src/framework/wnet.py", line 404, in readBody
+        data = lz4.uncompress(data)
+    AttributeError: 'module' object has no attribute 'uncompress'
+[game.cn.1 I 260403 05:58:31 192.168.97.1 server:578] Conn Close, WANetClientConn size 0, Session size 1
+[game.cn.1 W 260403 05:58:31  wnet:413] readBody error! flag: <framework.wnet.WANetTaskFlag object at 0x7fffcab5d910> ok_ack 0 err_ack 0 heart_syn 0 zip_flag 1 long_len_flag 0 ack_flag 0 url_flag 1, url: /game/login, len 144, recvLen 144, dataLen: 144
+[game.cn.1 E 260403 05:58:31  iostream:545] Uncaught exception, closing connection().
+    Traceback (most recent call last):
+      File "/mnt/pokemon/release/src/tornado/iostream.py", line 541, in wrapper
+        return callback(*args)
+      File "/mnt/pokemon/release/src/tornado/stack_context.py", line 275, in null_wrapper
+        return fn(*args, **kwargs)
+      File "/mnt/pokemon/release/src/framework/wnet.py", line 404, in readBody
+        data = lz4.uncompress(data)
+    AttributeError: 'module' object has no attribute 'uncompress'
+[game.cn.1 E 260403 05:58:31  ioloop:608] Exception in callback <functools.partial object at 0x7fffe902b0a8>
+    Traceback (most recent call last):
+      File "/mnt/pokemon/release/src/tornado/ioloop.py", line 588, in _run_callback
+        ret = callback()
+      File "/mnt/pokemon/release/src/tornado/stack_context.py", line 275, in null_wrapper
+        return fn(*args, **kwargs)
+      File "/mnt/pokemon/release/src/tornado/iostream.py", line 541, in wrapper
+        return callback(*args)
+      File "/mnt/pokemon/release/src/tornado/stack_context.py", line 275, in null_wrapper
+        return fn(*args, **kwargs)
+      File "/mnt/pokemon/release/src/framework/wnet.py", line 404, in readBody
+        data = lz4.uncompress(data)
+    AttributeError: 'module' object has no attribute 'uncompress'
+[game.cn.1 I 260403 05:58:32 192.168.97.1 server:578] Conn Close, WANetClientConn size 0, Session size 1
+[game.cn.1 W 260403 05:58:32  wnet:413] readBody error! flag: <framework.wnet.WANetTaskFlag object at 0x7fffcdc952d0> ok_ack 0 err_ack 0 heart_syn 0 zip_flag 1 long_len_flag 0 ack_flag 0 url_flag 1, url: /game/login, len 144, recvLen 144, dataLen: 144
+[game.cn.1 E 260403 05:58:32  iostream:545] Uncaught exception, closing connection().
+    Traceback (most recent call last):
+      File "/mnt/pokemon/release/src/tornado/iostream.py", line 541, in wrapper
+        return callback(*args)
+      File "/mnt/pokemon/release/src/tornado/stack_context.py", line 275, in null_wrapper
+        return fn(*args, **kwargs)
+      File "/mnt/pokemon/release/src/framework/wnet.py", line 404, in readBody
+        data = lz4.uncompress(data)
+    AttributeError: 'module' object has no attribute 'uncompress'
+[game.cn.1 E 260403 05:58:32  ioloop:608] Exception in callback <functools.partial object at 0x7fffcad8bd08>
+    Traceback (most recent call last):
+      File "/mnt/pokemon/release/src/tornado/ioloop.py", line 588, in _run_callback
+        ret = callback()
+      File "/mnt/pokemon/release/src/tornado/stack_context.py", line 275, in null_wrapper
+        return fn(*args, **kwargs)
+      File "/mnt/pokemon/release/src/tornado/iostream.py", line 541, in wrapper
+        return callback(*args)
+      File "/mnt/pokemon/release/src/tornado/stack_context.py", line 275, in null_wrapper
+        return fn(*args, **kwargs)
+      File "/mnt/pokemon/release/src/framework/wnet.py", line 404, in readBody
+        data = lz4.uncompress(data)
+    AttributeError: 'module' object has no attribute 'uncompress'
+[game.cn.1 I 260403 05:58:33 192.168.97.1 server:578] Conn Close, WANetClientConn size 0, Session size 1
+[game.cn.1 W 260403 05:58:33  wnet:413] readBody error! flag: <framework.wnet.WANetTaskFlag object at 0x7fffcab10950> ok_ack 0 err_ack 0 heart_syn 0 zip_flag 1 long_len_flag 0 ack_flag 0 url_flag 1, url: /game/login, len 144, recvLen 144, dataLen: 144
+[game.cn.1 E 260403 05:58:33  iostream:545] Uncaught exception, closing connection().
+    Traceback (most recent call last):
+      File "/mnt/pokemon/release/src/tornado/iostream.py", line 541, in wrapper
+        return callback(*args)
+      File "/mnt/pokemon/release/src/tornado/stack_context.py", line 275, in null_wrapper
+        return fn(*args, **kwargs)
+      File "/mnt/pokemon/release/src/framework/wnet.py", line 404, in readBody
+        data = lz4.uncompress(data)
+    AttributeError: 'module' object has no attribute 'uncompress'
+[game.cn.1 E 260403 05:58:33  ioloop:608] Exception in callback <functools.partial object at 0x7fffcad8bd08>
+    Traceback (most recent call last):
+      File "/mnt/pokemon/release/src/tornado/ioloop.py", line 588, in _run_callback
+        ret = callback()
+      File "/mnt/pokemon/release/src/tornado/stack_context.py", line 275, in null_wrapper
+        return fn(*args, **kwargs)
+      File "/mnt/pokemon/release/src/tornado/iostream.py", line 541, in wrapper
+        return callback(*args)
+      File "/mnt/pokemon/release/src/tornado/stack_context.py", line 275, in null_wrapper
+        return fn(*args, **kwargs)
+      File "/mnt/pokemon/release/src/framework/wnet.py", line 404, in readBody
+        data = lz4.uncompress(data)
+    AttributeError: 'module' object has no attribute 'uncompress'
+[game.cn.1 I 260403 05:58:34 192.168.97.1 server:578] Conn Close, WANetClientConn size 0, Session size 1
+[game.cn.1 W 260403 05:58:34  wnet:413] readBody error! flag: <framework.wnet.WANetTaskFlag object at 0x7fffcab108d0> ok_ack 0 err_ack 0 heart_syn 0 zip_flag 1 long_len_flag 0 ack_flag 0 url_flag 1, url: /game/login, len 144, recvLen 144, dataLen: 144
+[game.cn.1 E 260403 05:58:34  iostream:545] Uncaught exception, closing connection().
+    Traceback (most recent call last):
+      File "/mnt/pokemon/release/src/tornado/iostream.py", line 541, in wrapper
+        return callback(*args)
+      File "/mnt/pokemon/release/src/tornado/stack_context.py", line 275, in null_wrapper
+        return fn(*args, **kwargs)
+      File "/mnt/pokemon/release/src/framework/wnet.py", line 404, in readBody
+        data = lz4.uncompress(data)
+    AttributeError: 'module' object has no attribute 'uncompress'
+[game.cn.1 E 260403 05:58:34  ioloop:608] Exception in callback <functools.partial object at 0x7fffcad8bd08>
+    Traceback (most recent call last):
+      File "/mnt/pokemon/release/src/tornado/ioloop.py", line 588, in _run_callback
+        ret = callback()
+      File "/mnt/pokemon/release/src/tornado/stack_context.py", line 275, in null_wrapper
+        return fn(*args, **kwargs)
+      File "/mnt/pokemon/release/src/tornado/iostream.py", line 541, in wrapper
+        return callback(*args)
+      File "/mnt/pokemon/release/src/tornado/stack_context.py", line 275, in null_wrapper
+        return fn(*args, **kwargs)
+      File "/mnt/pokemon/release/src/framework/wnet.py", line 404, in readBody
+        data = lz4.uncompress(data)
+    AttributeError: 'module' object has no attribute 'uncompress'
+[game.cn.1 I 260403 05:58:35 192.168.97.1 server:578] Conn Close, WANetClientConn size 0, Session size 1
+[game.cn.1 W 260403 05:58:35  wnet:413] readBody error! flag: <framework.wnet.WANetTaskFlag object at 0x7fffcab10910> ok_ack 0 err_ack 0 heart_syn 0 zip_flag 1 long_len_flag 0 ack_flag 0 url_flag 1, url: /game/login, len 144, recvLen 144, dataLen: 144
+[game.cn.1 E 260403 05:58:35  iostream:545] Uncaught exception, closing connection().
+    Traceback (most recent call last):
+      File "/mnt/pokemon/release/src/tornado/iostream.py", line 541, in wrapper
+        return callback(*args)
+      File "/mnt/pokemon/release/src/tornado/stack_context.py", line 275, in null_wrapper
+        return fn(*args, **kwargs)
+      File "/mnt/pokemon/release/src/framework/wnet.py", line 404, in readBody
+        data = lz4.uncompress(data)
+    AttributeError: 'module' object has no attribute 'uncompress'
+[game.cn.1 E 260403 05:58:35  ioloop:608] Exception in callback <functools.partial object at 0x7fffec135b50>
+    Traceback (most recent call last):
+      File "/mnt/pokemon/release/src/tornado/ioloop.py", line 588, in _run_callback
+        ret = callback()
+      File "/mnt/pokemon/release/src/tornado/stack_context.py", line 275, in null_wrapper
+        return fn(*args, **kwargs)
+      File "/mnt/pokemon/release/src/tornado/iostream.py", line 541, in wrapper
+        return callback(*args)
+      File "/mnt/pokemon/release/src/tornado/stack_context.py", line 275, in null_wrapper
+        return fn(*args, **kwargs)
+      File "/mnt/pokemon/release/src/framework/wnet.py", line 404, in readBody
+        data = lz4.uncompress(data)
+    AttributeError: 'module' object has no attribute 'uncompress'
+[game.cn.1 I 260403 05:58:52  rpc:2137] game.cn.1 openDays 266
+[game.cn.1 I 260403 06:00:59  server:411] [game.cn.1] Game Server onShutdown ...
+[game.cn.1 I 260403 06:00:59  server:372] [game.cn.1] Game Server Session clear over, left 0
+[game.cn.1 I 260403 06:00:59  server:375] [game.cn.1] Game Server MailJoinableQueue join over, left 0
+[game.cn.1 I 260403 06:00:59  server:378] [game.cn.1] Game Server DBJoinableQueue join over, left 0
+[game.cn.1 I 260403 06:00:59  server:372] [game.cn.1] Game Server Session clear over, left 0
+[game.cn.1 I 260403 06:00:59  server:375] [game.cn.1] Game Server MailJoinableQueue join over, left 0
+[game.cn.1 I 260403 06:00:59  server:378] [game.cn.1] Game Server DBJoinableQueue join over, left 0
+[game.cn.1 I 260403 06:00:59  server:402] [game.cn.1] Game Server close PVP Server over
+[game.cn.1 I 260403 06:00:59  server:435] [game.cn.1] Game Server 29001 closed
+[game.cn.1 I 260403 06:00:59  server:447] [game.cn.1] Game Server run loop stop
+It is release mode!
+Server UTC 8:00:00 Local UTC 00:00:00 Delta 0:00:00
+who set error ID, 0 0 <class 'cn_config_csv.__csv_scene_conf_'>
+who set error ID, 0 0 <class 'cn_config_csv.__csv_talent_cost_'>
+who set error ID, 0 0 <class 'cn_config_csv.__csv_base_attribute__skill_level_'>
+who set error ID, 0 0 <class 'cn_config_csv.__csv_base_attribute__equip_star_'>
+who set error ID, 0 0 <class 'cn_config_csv.__csv_base_attribute__equip_awake_'>
+who set error ID, 0 0 <class 'cn_config_csv.__csv_base_attribute__equip_ability_'>
+who set error ID, 0 0 <class 'cn_config_csv.__csv_base_attribute__equip_signet_'>
+who set error ID, 0 0 <class 'cn_config_csv.__csv_base_attribute__equip_signet_advance_cost_'>
+who set error ID, 0 0 <class 'cn_config_csv.__csv_base_attribute__equip_awake_ability_'>
+who set error ID, 0 0 <class 'cn_config_csv.__csv_gym__talent_cost_'>
+[game.cn.1] Server 29001 running ...
+MailJoinableQueue joining 0
+DBJoinableQueue joining 0
+MailJoinableQueue joining 0
+DBJoinableQueue joining 0
+[game.cn.1 I 260403 06:01:02  patch:26] patch_framework ok !
+[game.cn.1 W 260403 06:01:02  __init__:130] url /yy/rmbgold/return nonstandard
+[game.cn.1 W 260403 06:01:02  __init__:130] url /cross/mine/boss/times/buy nonstandard
+[game.cn.1 W 260403 06:01:02  __init__:130] url /cross/mine/buff/feed nonstandard
+[game.cn.1 W 260403 06:01:02  __init__:130] url /cross/mine/times/buy nonstandard
+[game.cn.1 W 260403 06:01:02  __init__:130] url /unionadventure/input nonstandard
+[game.cn.1 W 260403 06:01:02  __init__:130] url /town/adventure/done nonstandard
+[game.cn.1 W 260403 06:01:02  __init__:130] url /town/adventure/recall nonstandard
+[game.cn.1 W 260403 06:01:02  __init__:130] url /town/adventure/setout nonstandard
+[game.cn.1 W 260403 06:01:02  __init__:130] url /town/adventure/task/award nonstandard
+[game.cn.1 W 260403 06:01:02  __init__:130] url /town/building/finish/atonce nonstandard
+[game.cn.1 W 260403 06:01:02  __init__:130] url /town/building/level/up nonstandard
+[game.cn.1 W 260403 06:01:02  __init__:130] url /town/building/refresh nonstandard
+[game.cn.1 W 260403 06:01:02  __init__:130] url /town/continuous/card/place nonstandard
+[game.cn.1 W 260403 06:01:02  __init__:130] url /town/continuous/card/remove nonstandard
+[game.cn.1 W 260403 06:01:02  __init__:130] url /town/continuous/receive nonstandard
+[game.cn.1 W 260403 06:01:02  __init__:130] url /town/explorer/skill/upgrade nonstandard
+[game.cn.1 W 260403 06:01:02  __init__:130] url /town/get nonstandard
+[game.cn.1 W 260403 06:01:02  __init__:130] url /town/home/card/remove nonstandard
+[game.cn.1 W 260403 06:01:02  __init__:130] url /town/home/card/rest nonstandard
+[game.cn.1 W 260403 06:01:02  __init__:130] url /town/home/layout/apply nonstandard
+[game.cn.1 W 260403 06:01:02  __init__:130] url /town/home/layout/delete nonstandard
+[game.cn.1 W 260403 06:01:02  __init__:130] url /town/home/layout/rename nonstandard
+[game.cn.1 W 260403 06:01:02  __init__:130] url /town/home/layout/save nonstandard
+[game.cn.1 W 260403 06:01:02  __init__:130] url /town/home/layout/update nonstandard
+[game.cn.1 W 260403 06:01:02  __init__:130] url /town/home/rename nonstandard
+[game.cn.1 W 260403 06:01:02  __init__:130] url /town/home/shop/buy nonstandard
+[game.cn.1 W 260403 06:01:02  __init__:130] url /town/order/cancel nonstandard
+[game.cn.1 W 260403 06:01:02  __init__:130] url /town/order/card/place nonstandard
+[game.cn.1 W 260403 06:01:02  __init__:130] url /town/order/card/remove nonstandard
+[game.cn.1 W 260403 06:01:02  __init__:130] url /town/order/place nonstandard
+[game.cn.1 W 260403 06:01:02  __init__:130] url /town/order/receive nonstandard
+[game.cn.1 W 260403 06:01:02  __init__:130] url /town/relic/buff/refresh nonstandard
+[game.cn.1 I 260403 06:01:02  server:123] GameServOpenDatetime 2025-07-11 10:00:00
+[game.cn.1 I 260403 06:01:03  thinkingdata:40] tjta init, path /mnt/logbus_data/game.cn.1
+[game.cn.1 I 260403 06:01:03  server:155] dependent ['anticheat', 'chat_monitor', 'giftdb.cn.1', 'card_comment.cn.1', 'card_score.cn.1', 'storage.cn.1', 'arena.cn.1', 'union.cn.1', 'craft.cn.1', 'clone.cn.1', 'pvp.cn.1', 'union_fight.cn.1', 'yyhuodong.cn.1', 'card_fight.cn.1', 'gym.cn.1', 'hunting.cn.1']
+[game.cn.1 I 260403 06:01:03  writer:110] starting writer...
+[game.cn.1 I 260403 06:01:03  writer:189] [127.0.0.1:4150] connecting to nsqd
+[game.cn.1 I 260403 06:01:03  reader:235] [RESP-c_game.cn.1:0global_1rpc] starting reader for RESP-c_game.cn.1/0global_1rpc...
+[game.cn.1 I 260403 06:01:03  reader:490] [127.0.0.1:4150:RESP-c_game.cn.1:0global_1rpc] connecting to nsqd
+[game.cn.1 I 260403 06:01:03  writer:110] starting writer...
+[game.cn.1 I 260403 06:01:03  writer:189] [127.0.0.1:4150] connecting to nsqd
+[game.cn.1 W 260403 06:01:03  reader:508] [127.0.0.1:4150:RESP-c_game.cn.1:0global_1rpc] max RDY count 2500 < reader max in flight 10000, truncation possible
+[game.cn.1 I 260403 06:01:04  session:87] localtime 2026-04-03 06:01:04.249990 servertime 2026-04-03 14:01:04.249990
+[game.cn.1 I 260403 06:01:04  server:248] initGM OK
+[game.cn.1 I 260403 06:01:04  servrecord:52] ObjectServerGlobalRecord.half_period_keys {}
+[game.cn.1 I 260403 06:01:04  server:252] initServerGlobal OK
+[game.cn.1 I 260403 06:01:04  server:256] VIPLevelMax 20
+[game.cn.1 I 260403 06:01:04  card:305] [StarSkillAttr] Loading card_star_skill_attr.csv...
+[game.cn.1 I 260403 06:01:04  card:340] [StarSkillAttr] Loaded 3000 entries into StarSkillAttrCache
+[game.cn.1 I 260403 06:01:09  yyhuodong:8803] RoundFlop GrandPrizeMap loaded: [23601]
+[game.cn.1 I 260403 06:01:09  huodong:395] delta 1 金币副本 True 14:58:55.750010
+[game.cn.1 I 260403 06:01:09  huodong:395] delta 2 经验副本 True 14:58:55.750010
+[game.cn.1 I 260403 06:01:09  huodong:395] delta 3 礼物副本 True 14:58:55.750010
+[game.cn.1 I 260403 06:01:09  huodong:395] delta 4 碎片副本 True 14:58:55.750010
+[game.cn.1 I 260403 06:01:09  huodong:395] delta 20 契约副本 True 9:58:55.750010
+[game.cn.1 I 260403 06:01:09  yyhuodong:10125] delta 1 宝芙蕾 False 15:58:55.750010
+[game.cn.1 I 260403 06:01:09  yyhuodong:10125] delta 2 宝芙蕾 True 0:58:55.750010
+[game.cn.1 I 260403 06:01:09  yyhuodong:10125] delta 3 宝芙蕾 False 3:58:55.750010
+[game.cn.1 I 260403 06:01:09  yyhuodong:10125] delta 4 宝芙蕾 False 6:58:55.750010
+[game.cn.1 I 260403 06:01:09  yyhuodong:10125] delta 5 宝芙蕾 True 26570 days, 14:58:55.750010
+[game.cn.1 I 260403 06:01:09  yyhuodong:10125] delta 7 每日登陆奖励 True 26570 days, 14:58:55.750010
+[game.cn.1 I 260403 06:01:09  yyhuodong:10125] delta 11 月卡 True 14:58:55.750010
+[game.cn.1 I 260403 06:01:09  yyhuodong:10125] delta 12 至尊月卡 True 14:58:55.750010
+[game.cn.1 I 260403 06:01:09  yyhuodong:10125] delta 21 正式-梦幻海报 True 26570 days, 14:58:55.750010
+[game.cn.1 I 260403 06:01:09  yyhuodong:10125] delta 23 正式-限时礼包 True 26570 days, 14:58:55.750010
+[game.cn.1 I 260403 06:01:09  yyhuodong:10125] delta 24 登录送十连抽 True 26570 days, 14:58:55.750010
+[game.cn.1 I 260403 06:01:09  yyhuodong:10125] delta 35 开服嘉年华 True 26570 days, 14:58:55.750010
+[game.cn.1 I 260403 06:01:09  yyhuodong:10125] delta 40 直购礼包 True 26570 days, 14:58:55.750010
+[game.cn.1 I 260403 06:01:09  yyhuodong:10125] delta 41 直购礼包 True 26570 days, 14:58:55.750010
+[game.cn.1 I 260403 06:01:09  yyhuodong:10125] delta 75 新手福利 True 26570 days, 14:58:55.750010
+[game.cn.1 I 260403 06:01:09  yyhuodong:10125] delta 106 金币副本次数增加 True 26570 days, 14:58:55.750010
+[game.cn.1 I 260403 06:01:09  yyhuodong:10125] delta 107 冒险之路扫荡双倍 True 26570 days, 14:58:55.750010
+[game.cn.1 I 260403 06:01:09  yyhuodong:10125] delta 108 礼物副本次数增加 True 26570 days, 14:58:55.750010
+[game.cn.1 I 260403 06:01:09  yyhuodong:10125] delta 109 碎片副本次数增加 True 26570 days, 14:58:55.750010
+[game.cn.1 I 260403 06:01:09  yyhuodong:10125] delta 110 金币副本双倍掉落 True 26570 days, 14:58:55.750010
+[game.cn.1 I 260403 06:01:09  yyhuodong:10125] delta 111 礼物副本双倍掉落 True 26570 days, 14:58:55.750010
+[game.cn.1 I 260403 06:01:09  yyhuodong:10125] delta 112 普通关卡双倍掉落 True 26570 days, 14:58:55.750010
+[game.cn.1 I 260403 06:01:09  yyhuodong:10125] delta 113 困难关卡双倍掉落 True 26570 days, 14:58:55.750010
+[game.cn.1 I 260403 06:01:09  yyhuodong:10125] delta 114 聚宝双倍 True 26570 days, 14:58:55.750010
+[game.cn.1 I 260403 06:01:09  yyhuodong:10125] delta 115 体力购买双倍 True 26570 days, 14:58:55.750010
+[game.cn.1 I 260403 06:01:09  yyhuodong:10125] delta 116 以太乐园金币双倍 True 26570 days, 14:58:55.750010
+[game.cn.1 I 260403 06:01:09  yyhuodong:10125] delta 117 金币副本次数增加 True 26570 days, 14:58:55.750010
+[game.cn.1 I 260403 06:01:09  yyhuodong:10125] delta 118 冒险之路扫荡双倍 True 26570 days, 14:58:55.750010
+[game.cn.1 I 260403 06:01:09  yyhuodong:10125] delta 119 礼物副本次数增加 True 26570 days, 14:58:55.750010
+[game.cn.1 I 260403 06:01:09  yyhuodong:10125] delta 120 聚宝双倍 True 26570 days, 14:58:55.750010
+[game.cn.1 I 260403 06:01:09  yyhuodong:10125] delta 121 碎片副本次数增加 True 26570 days, 14:58:55.750010
+[game.cn.1 I 260403 06:01:09  yyhuodong:10125] delta 122 金币副本双倍掉落 True 26570 days, 14:58:55.750010
+[game.cn.1 I 260403 06:01:09  yyhuodong:10125] delta 123 礼物副本双倍掉落 True 26570 days, 14:58:55.750010
+[game.cn.1 I 260403 06:01:09  yyhuodong:10125] delta 124 普通关卡双倍掉落 True 26570 days, 14:58:55.750010
+[game.cn.1 I 260403 06:01:09  yyhuodong:10125] delta 125 困难关卡双倍掉落 True 26570 days, 14:58:55.750010
+[game.cn.1 I 260403 06:01:09  yyhuodong:10125] delta 126 体力购买双倍 True 26570 days, 14:58:55.750010
+[game.cn.1 I 260403 06:01:09  yyhuodong:10125] delta 127 以太乐园金币双倍 True 26570 days, 14:58:55.750010
+[game.cn.1 I 260403 06:01:09  yyhuodong:10125] delta 131 纸飞机掉落 True 26570 days, 14:58:55.750010
+[game.cn.1 I 260403 06:01:09  yyhuodong:10125] delta 132 纸飞机兑换 True 26570 days, 14:58:55.750010
+[game.cn.1 I 260403 06:01:09  yyhuodong:10125] delta 133 限时掉落六一 True 26570 days, 14:58:55.750010
+[game.cn.1 I 260403 06:01:09  yyhuodong:10125] delta 100101 口袋新纪元重磅福利 True 26570 days, 14:58:55.750010
+[game.cn.1 I 260403 06:01:09  yyhuodong:10125] delta 100102 口袋新纪元重磅福利 True 26570 days, 14:58:55.750010
+[game.cn.1 I 260403 06:01:09  yyhuodong:10125] delta 100103 口袋新纪元重磅福利 True 26570 days, 14:58:55.750010
+[game.cn.1 I 260403 06:01:09  yyhuodong:10125] delta 100104 口袋新纪元重磅福利 True 26570 days, 14:58:55.750010
+[game.cn.1 I 260403 06:01:09  yyhuodong:10125] delta 100105 口袋新纪元重磅福利 True 26570 days, 14:58:55.750010
+[game.cn.1 I 260403 06:01:09  yyhuodong:10125] delta 100106 口袋新纪元重磅福利 True 26570 days, 14:58:55.750010
+[game.cn.1 I 260403 06:01:09  yyhuodong:10125] delta 100107 口袋新纪元重磅福利 True 26570 days, 14:58:55.750010
+[game.cn.1 I 260403 06:01:09  yyhuodong:10125] delta 100108 口袋新纪元重磅福利 True 26570 days, 14:58:55.750010
+[game.cn.1 I 260403 06:01:09  yyhuodong:10125] delta 100109 口袋新纪元重磅福利 True 26570 days, 14:58:55.750010
+[game.cn.1 I 260403 06:01:09  yyhuodong:10125] delta 100110 口袋新纪元重磅福利 True 26570 days, 14:58:55.750010
+[game.cn.1 I 260403 06:01:09  yyhuodong:10125] delta 100302 首充活动 True 26570 days, 14:58:55.750010
+[game.cn.1 I 260403 06:01:09  yyhuodong:10125] delta 100303 首充活动 True 26570 days, 14:58:55.750010
+[game.cn.1 I 260403 06:01:09  yyhuodong:10125] delta 100402 每日特惠 True 26570 days, 14:58:55.750010
+[game.cn.1 I 260403 06:01:09  yyhuodong:10125] delta 100406 限定形象 True 26570 days, 14:58:55.750010
+[game.cn.1 I 260403 06:01:09  yyhuodong:10125] delta 100409 助战商店 True 26570 days, 14:58:55.750010
+[game.cn.1 I 260403 06:01:09  yyhuodong:10125] delta 100410 携带商城 True 26570 days, 14:58:55.750010
+[game.cn.1 I 260403 06:01:09  yyhuodong:10125] delta 100411 精灵商城 True 26570 days, 14:58:55.750010
+[game.cn.1 I 260403 06:01:09  yyhuodong:10125] delta 100412 超进化商城 True 26570 days, 14:58:55.750010
+[game.cn.1 I 260403 06:01:09  yyhuodong:10125] delta 100504 勇者挑战 True 26570 days, 14:58:55.750010
+[game.cn.1 I 260403 06:01:09  yyhuodong:10125] delta 100505 礼券商店 True 26570 days, 14:58:55.750010
+[game.cn.1 I 260403 06:01:09  yyhuodong:10125] delta 101007 护符精华兑换 True 26570 days, 14:58:55.750010
+[game.cn.1 I 260403 06:01:09  yyhuodong:10125] delta 101008 护符兑换 True 26570 days, 14:58:55.750010
+[game.cn.1 I 260403 06:01:09  yyhuodong:10125] delta 101009 特殊兑换 True 26570 days, 14:58:55.750010
+[game.cn.1 I 260403 06:01:09  yyhuodong:10125] delta 101603 永久充值回馈 True 26570 days, 14:58:55.750010
+[game.cn.1 I 260403 06:01:09  yyhuodong:10125] delta 101614 每日充值回馈 True 26570 days, 14:58:55.750010
+[game.cn.1 I 260403 06:01:09  yyhuodong:10125] delta 102001 携带兑换 True 245 days, 14:58:55.750010
+[game.cn.1 I 260403 06:01:09  yyhuodong:10125] delta 102002 助战兑换 True 26570 days, 14:58:55.750010
+[game.cn.1 I 260403 06:01:09  yyhuodong:10125] delta 102003 助战兑换 True 26570 days, 14:58:55.750010
+[game.cn.1 I 260403 06:01:09  session:561] _huodongRefresh 9:58:55.750010; 0:58:55.750010
+[game.cn.1 I 260403 06:01:10  server:260] initAllClass OK
+[game.cn.1 I 260403 06:01:10  server:264] initMail OK
+[game.cn.1 I 260403 06:01:10  server:623] Union count:0
+[game.cn.1 I 260403 06:01:10  server:268] initUnion OK
+[game.cn.1 I 260403 06:01:10  server:272] initRank OK
+[game.cn.1 I 260403 06:01:10  server:276] initShop OK
+[game.cn.1 I 260403 06:01:10  server:280] initMessage OK
+[game.cn.1 I 260403 06:01:10  server:765] Society RoleCache Size: 0
+[game.cn.1 I 260403 06:01:10  server:284] initSociety OK
+[game.cn.1 I 260403 06:01:11  craft:214] Craft Init AutoSign Roles 0
+[game.cn.1 I 260403 06:01:11  server:785] Craft Before Init Status signup
+[game.cn.1 W 260403 06:01:11  craft:347] Craft already in signup
+[game.cn.1 I 260403 06:01:11  server:799] Craft Now Status signup
+[game.cn.1 I 260403 06:01:11  server:288] initCraft OK
+[game.cn.1 I 260403 06:01:11  union_fight:309] UnionFight Init AutoSign Roles 0
+[game.cn.1 I 260403 06:01:11  server:1022] UnionFight Last AwardTime 0, opendate 2025-07-24 05:00:00
+[game.cn.1 I 260403 06:01:11  union_fight:288] ObjectUnionFightGlobal.onStartSignUp
+[game.cn.1 I 260403 06:01:11  server:1033] UnionFight Now Status signup
+[game.cn.1 I 260403 06:01:11  server:292] initUnionFight OK
+[game.cn.1 I 260403 06:01:11  server:832] Cross Craft Befroe Init  0 signup 0
+[game.cn.1 I 260403 06:01:11  cross_craft:148] Cross Craft Reset  0 closed
+[game.cn.1 I 260403 06:01:11  server:841] game.cn.1 Cross Craft key: , Cross Craft Now Status closed
+[game.cn.1 I 260403 06:01:11  cross_craft:169] Cross Craft Init AutoSign Roles 0
+[game.cn.1 I 260403 06:01:11  server:296] initCrossCraft OK
+[game.cn.1 I 260403 06:01:11  server:300] initEndlessTower OK
+[game.cn.1 I 260403 06:01:11  server:1083] game.cn.1 Cross OnlineFight key: , Cross OnlineFight Now Status closed
+[game.cn.1 I 260403 06:01:11  server:304] initCrossOnlineFight OK
+[game.cn.1 I 260403 06:01:11  server:868] game.cn.1 Cross Arena key: , Now Status closed
+[game.cn.1 I 260403 06:01:11  server:308] initCrossArena OK
+[game.cn.1 I 260403 06:01:11  server:893] game.cn.1 Cross Supremacy key: , Now Status closed
+[game.cn.1 I 260403 06:01:11  server:312] initCrossSupremacy OK
+[game.cn.1 I 260403 06:01:11  cross_fishing:170] Cross fishing Init crossfishing.cn.1 20260403 start
+[game.cn.1 I 260403 06:01:11  server:918] game.cn.1 Cross fishing key: crossfishing.cn.1, Cross fishing Now Status start
+[game.cn.1 I 260403 06:01:11  server:316] initCrossFishing OK
+[game.cn.1 I 260403 06:01:11  server:944] game.cn.1 Cross mimicry key: , Cross mimicry Now Status closed
+[game.cn.1 I 260403 06:01:11  server:320] initCrossMimicry OK
+[game.cn.1 I 260403 06:01:11  server:970] game.cn.1 Cross auto chess key: , Cross auto chess Now Status closed
+[game.cn.1 I 260403 06:01:11  server:324] initCrossAutoChess OK
+[game.cn.1 I 260403 06:01:11  server:1003] game.cn.1 Cross town party waiting for match, round=closed
+[game.cn.1 I 260403 06:01:11  server:328] initCrossTownParty OK
+[game.cn.1 I 260403 06:01:11  gym:266] ObjectGymGameGlobal.initCrossData
+[game.cn.1 I 260403 06:01:11  server:1059] game.cn.1 Cross Gym key: , Gym Now Status start
+[game.cn.1 I 260403 06:01:11  server:332] initGym OK
+[game.cn.1 I 260403 06:01:11  server:1109] game.cn.1 Cross Mine key: , Now Status closed
+[game.cn.1 I 260403 06:01:11  server:336] initCrossMine OK
+[game.cn.1 I 260403 06:01:11  server:1135] game.cn.1 Cross Union Fight key: , Now Status closed
+[game.cn.1 I 260403 06:01:11  server:340] initCrossUnionFight OK
+[game.cn.1 I 260403 06:01:11  server:367] [game.cn.1] Game Server Start OK
+[game.cn.1 I 260403 06:01:11  reader:235] [REQ-game.cn.1:rpc] starting reader for REQ-game.cn.1/rpc...
+[game.cn.1 I 260403 06:01:11  reader:490] [127.0.0.1:4150:REQ-game.cn.1:rpc] connecting to nsqd
+[game.cn.1 I 260403 06:01:11  reader:235] [CrossMatchServerCheck:game.cn.1] starting reader for CrossMatchServerCheck/game.cn.1...
+[game.cn.1 I 260403 06:01:11  reader:490] [127.0.0.1:4150:CrossMatchServerCheck:game.cn.1] connecting to nsqd
+[game.cn.1 W 260403 06:01:11  reader:508] [127.0.0.1:4150:CrossMatchServerCheck:game.cn.1] max RDY count 2500 < reader max in flight 10000, truncation possible
+[game.cn.1 W 260403 06:01:11  reader:508] [127.0.0.1:4150:REQ-game.cn.1:rpc] max RDY count 2500 < reader max in flight 10000, truncation possible
+[game.cn.1 W 260403 06:01:12 192.168.97.1 task:246] AuthError session not existed for game.cn.1 (1, 'i\xcfP\x97\x93\xee\xc2\x00"l\x8e\xd1')
+[game.cn.1 I 260403 06:01:12 192.168.97.1 task:578] ERR /game/login 144B 4.73ms 0.81ms 6.44ms {'tag': 'none', 'language': 'vn', 'channel': 'none'} auth_error
+[game.cn.1 I 260403 06:01:14 192.168.97.1 server:578] Conn Close, WANetClientConn size 0, Session size 0
+[game.cn.1 I 260403 06:01:32  rpc:107] admin123 69cf509793eec200226c8ed1 from none coming 1
+[game.cn.1 I 260403 06:01:32  role:686] [YYHuoDong] Fixed yyID=101614, added empty info field
+[game.cn.1 I 260403 06:01:32  hellRandomTower:199] [HellRandomTower.set] Getting current theme for role i�W�6�� �
+[game.cn.1 I 260403 06:01:32  hellRandomTower:201] [HellRandomTower.set] Current theme = 1
+[game.cn.1 I 260403 06:01:32  town:783] _initBuildings: snowKey=16 lavaKey=17 desertLevel=0 mountainousLevel=0 snowInBuildings=False lavaInBuildings=False
+[game.cn.1 I 260403 06:01:32  _game:1214] new role channel none account 69cf509793eec200226c8ed1 role 1 69cf57bc36908d001b1ee319 level 1 vip 18 gold 50000 rmb 0 stamina 60 battle 0 top6 0
+[game.cn.1 I 260403 06:01:32  _game:331] getPlayEndSyncInfo result keys: [], has_data: False
+[game.cn.1 I 260403 06:01:32 192.168.97.1 task:578] REQ 1 69cf57bc36908d001b1ee319 /game/login 144B 1.10ms 513.00ms 514.76ms {'tag': 'none', 'language': 'vn', 'channel': 'none'} 
+[game.cn.1 I 260403 06:01:35 192.168.97.1 task:578] REQ 1 69cf57bc36908d001b1ee319 /game/role/guide/newbie 144B 1.15ms 13.49ms 15.68ms {'guideID': -1} 
+[game.cn.1 I 260403 06:01:35  inl_mail:125] send mail 69cf57bf36908d001b1ee327 to online role 69cf57bc36908d001b1ee319, 106 欢迎您来到口袋精灵世界 {'rmb': 50, 11: 50, 'gold': 20000}
+[game.cn.1 I 260403 06:01:35  inl_mail:125] send mail 69cf57bf36908d001b1ee328 to online role 69cf57bc36908d001b1ee319, 134 开局精灵福利-1 {'cards': ({'id': 761}, {'id': 3241}, {'id': 3221}, {'id': 3211}, {'id': 1961}, {'id': 1971}, {'id': 1981}, {'id': 3631}, {'id': 1271}, {'id': 2351}, {'id': 1261}, {'id': 2361})}
+[game.cn.1 I 260403 06:01:35  inl_mail:125] send mail 69cf57bf36908d001b1ee329 to online role 69cf57bc36908d001b1ee319, 135 开局精灵福利-2 {'cards': ({'id': 2461}, {'id': 2381}, {'id': 2431}, {'id': 3611}, {'id': 2441}, {'id': 4601}, {'id': 2421}, {'id': 4161}, {'id': 3621}, {'id': 3261}, {'id': 3641}, {'id': 3651}, {'id': 1991}, {'id': 4121})}
+[game.cn.1 I 260403 06:01:35  inl_mail:125] send mail 69cf57bf36908d001b1ee32a to online role 69cf57bc36908d001b1ee319, 136 开局皮肤福利-1 {8134: 1, 8144: 1, 8082: 1, 8084: 1, 8150: 1, 8090: 1, 8092: 1, 8154: 1, 8158: 1, 8036: 1, 8018: 1, 8046: 1}
+[game.cn.1 I 260403 06:01:35  inl_mail:125] send mail 69cf57bf36908d001b1ee32b to online role 69cf57bc36908d001b1ee319, 137 开局皮肤福利-2 {8070: 1, 8000: 1, 8002: 1, 8004: 1, 8006: 1, 8008: 1, 8010: 1, 8012: 1, 8014: 1, 8016: 1, 8020: 1, 8024: 1, 8028: 1, 8032: 1, 8038: 1, 8040: 1, 8042: 1, 8044: 1, 8048: 1, 8050: 1, 8052: 1, 8056: 1, 8062: 1}
+[game.cn.1 I 260403 06:01:35  inl_mail:125] send mail 69cf57bf36908d001b1ee32c to online role 69cf57bc36908d001b1ee319, 138 开局资源福利-1 {'gold': 1000000000, 519: 666, 521: 2888, 526: 666, 16: 18888, 531: 666, 'role_exp': 88888, 537: 666, 'rmb': 5880000, 500: 888, 502: 5888, 503: 666}
+[game.cn.1 I 260403 06:01:35  inl_mail:125] send mail 69cf57bf36908d001b1ee32d to online role 69cf57bc36908d001b1ee319, 139 开局资源福利-2 {19: 888, 850: 18888, 851: 8888, 452: 8888, 453: 1888, 902: 888, 2103: 1888, 451: 18888}
+[game.cn.1 I 260403 06:01:35  inl_mail:125] send mail 69cf57bf36908d001b1ee32e to online role 69cf57bc36908d001b1ee319, 140 开局资源福利-3 {5000: 18888, 529: 88888, 411: 18888, 412: 18888, 161: 8888, 100: 1888, 422: 18888, 'coin6': 18888, 111: 8888, 112: 2888, 123: 8888, 124: 2888}
+[game.cn.1 I 260403 06:01:35  inl_mail:125] send mail 69cf57bf36908d001b1ee32f to online role 69cf57bc36908d001b1ee319, 141 开局资源福利-4 {994: 10, 7371: 10, 7372: 10, 7373: 10, 945: 10, 6104: 5, 7325: 10}
+[game.cn.1 I 260403 06:01:35  inl_mail:125] send mail 69cf57bf36908d001b1ee330 to online role 69cf57bc36908d001b1ee319, 142 开局资源福利-5 {4000: 88888, 2152: 10, 132: 1888, 133: 888, 2153: 10, 151: 88888, 152: 1888, 121: 888}
+[game.cn.1 I 260403 06:01:35  inl_mail:125] send mail 69cf57bf36908d001b1ee331 to online role 69cf57bc36908d001b1ee319, 143 开局资源福利-6 {6051: 20, 6100: 30, 6101: 20, 6102: 20, 6054: 20, 937: 5, 6052: 20, 6053: 20}
+[game.cn.1 I 260403 06:01:37 192.168.97.1 task:578] REQ 1 69cf57bc36908d001b1ee319 /game/role/newbie/init 128B 1.31ms 19.61ms 21.69ms {'guideID': 1, 'name': 'Ng\xc3\xb4 Qu\xe1\xbb\xb3nh Y', 'figure': 1} 
+[game.cn.1 I 260403 06:01:40 192.168.97.1 task:578] REQ 1 69cf57bc36908d001b1ee319 /game/role/newbie/card/choose 144B 1.56ms 175.55ms 178.03ms {'guideID': 2, 'cardID': 11} 
+[game.cn.1 I 260403 06:01:43 192.168.97.1 task:578] REQ 1 69cf57bc36908d001b1ee319 /game/role/city/sprite/active 96B 1.03ms 14.33ms 16.19ms {'type': 1} 
+[game.cn.1 I 260403 06:01:43 192.168.97.1 task:578] REQ 1 69cf57bc36908d001b1ee319 /game/role/sign_in 128B 1.08ms 17.40ms 19.29ms {} 
+[game.cn.1 I 260403 06:01:47 192.168.97.1 task:578] REQ 1 69cf57bc36908d001b1ee319 /game/role/city/sprite/active 96B 0.96ms 5.38ms 6.84ms {'type': 2} 
+[game.cn.1 I 260403 06:01:47 192.168.97.1 task:578] REQ 1 69cf57bc36908d001b1ee319 /game/yy/active/get 128B 0.62ms 34.70ms 35.83ms {} 
+[game.cn.1 I 260403 06:01:50 192.168.97.1 task:578] REQ 1 69cf57bc36908d001b1ee319 /game/yy/award/get 112B 0.82ms 11.67ms 13.16ms {'csvID': 1001, 'yyID': 75} 
+[game.cn.1 I 260403 06:01:55 192.168.97.1 task:578] REQ 1 69cf57bc36908d001b1ee319 /game/sponsor/info 128B 1.15ms 18.68ms 20.67ms {} 
+[game.cn.1 I 260403 06:02:15 192.168.97.1 task:578] REQ 1 69cf57bc36908d001b1ee319 /game/sponsor/info 96B 0.99ms 31.45ms 33.33ms {} 
+[game.cn.1 I 260403 06:03:52  rpc:2137] game.cn.1 openDays 266
+[game.cn.1 I 260403 06:08:52  rpc:2137] game.cn.1 openDays 266
+[game.cn.1 I 260403 06:10:12 192.168.97.1 task:578] REQ 1 69cf57bc36908d001b1ee319 /game/yy/active/get 128B 3.11ms 30.20ms 34.31ms {} 
+[game.cn.1 I 260403 06:10:16 192.168.97.1 task:578] REQ 1 69cf57bc36908d001b1ee319 /game/yy/award/canbuy 112B 0.82ms 10.18ms 11.77ms {'csvID': 101225, 'yyID': 100412} 
+[game.cn.1 I 260403 06:10:16 192.168.97.1 task:578] REQ 1 69cf57bc36908d001b1ee319 /game/role/recharge/buy 160B 0.83ms 73.67ms 75.20ms {'rechargeID': 106, 'csvID': 101225, 'yyID': 100412} 
+[game.cn.1 I 260403 06:10:16 192.168.97.1 task:578] REQ 1 69cf57bc36908d001b1ee319 /game/sync 96B 1.04ms 16.67ms 18.61ms {} 
+[game.cn.1 I 260403 06:10:16 192.168.97.1 task:578] REQ 1 69cf57bc36908d001b1ee319 /game/sync 128B 0.79ms 13.02ms 14.43ms {} 
+[game.cn.1 I 260403 06:10:20 192.168.97.1 task:578] REQ 1 69cf57bc36908d001b1ee319 /game/sponsor/info 96B 0.91ms 13.84ms 15.35ms {} 
+[game.cn.1 I 260403 06:10:22 192.168.97.1 task:578] REQ 1 69cf57bc36908d001b1ee319 /game/sync 128B 0.18ms 2.66ms 3.04ms {} 
+[game.cn.1 I 260403 06:10:24 192.168.97.1 task:578] REQ 1 69cf57bc36908d001b1ee319 /game/role/mail/read/all 96B 0.76ms 751.44ms 752.75ms {} 
+[game.cn.1 I 260403 06:10:35 192.168.97.1 server:578] Conn Close, WANetClientConn size 0, Session size 1
+[game.cn.1 I 260403 06:13:52  rpc:2137] game.cn.1 openDays 266
+[game.cn.1 I 260403 06:15:45  rpc:107] admin123 69cf509793eec200226c8ed1 from none coming 1
+[game.cn.1 I 260403 06:15:45  role:686] [YYHuoDong] Fixed yyID=100302, added empty info field
+[game.cn.1 I 260403 06:15:45  hellRandomTower:199] [HellRandomTower.set] Getting current theme for role i�W�6�� �
+[game.cn.1 I 260403 06:15:45  hellRandomTower:201] [HellRandomTower.set] Current theme = 1
+[game.cn.1 I 260403 06:15:45  town:783] _initBuildings: snowKey=16 lavaKey=17 desertLevel=0 mountainousLevel=0 snowInBuildings=False lavaInBuildings=False
+[game.cn.1 I 260403 06:15:45  _game:1214] channel none account 69cf509793eec200226c8ed1 role 1 69cf57bc36908d001b1ee319 level 66 vip 19 gold 1000070000 rmb 5940050 stamina 3000 battle 887 top6 21435
+[game.cn.1 I 260403 06:15:45  _game:331] getPlayEndSyncInfo result keys: [], has_data: False
+[game.cn.1 I 260403 06:15:45 192.168.97.1 task:578] REQ 1 69cf57bc36908d001b1ee319 /game/login 144B 4.27ms 367.43ms 373.62ms {'tag': 'none', 'language': 'vn', 'channel': 'none'} 
+[game.cn.1 I 260403 06:16:08 192.168.97.1 task:578] REQ 1 69cf57bc36908d001b1ee319 /game/sponsor/info 128B 1.15ms 39.38ms 41.08ms {} 
+[game.cn.1 I 260403 06:18:14 192.168.97.1 task:578] REQ 1 69cf57bc36908d001b1ee319 /game/card/comment/list 112B 2.64ms 126.68ms 130.18ms {'size': 20, 'cardID': 2421, 'offset': 0} 
+[game.cn.1 I 260403 06:18:14 192.168.97.1 task:578] REQ 1 69cf57bc36908d001b1ee319 /game/card/score/get 144B 0.21ms 8.18ms 8.55ms {'cardID': 2421} 
+[game.cn.1 I 260403 06:18:38 192.168.97.1 task:578] REQ 1 69cf57bc36908d001b1ee319 /game/card/comment/send 160B 1.08ms 74.44ms 76.18ms {'content': 'Haha con p\xc3\xa9t n\xc3\xa0y bu\xe1\xbb\x93n c\xc6\xb0\xe1\xbb\x9di v\xc3\xa3i!!!', 'cardID': 2421} 
+[game.cn.1 I 260403 06:18:38 192.168.97.1 task:578] REQ 1 69cf57bc36908d001b1ee319 /game/card/comment/list 160B 0.22ms 6.87ms 7.25ms {'size': 0, 'cardID': 2421, 'offset': 0} 
+[game.cn.1 I 260403 06:18:41 192.168.97.1 task:578] REQ 1 69cf57bc36908d001b1ee319 /game/card/comment/evaluate 144B 0.71ms 15.64ms 16.86ms {'commentID': 'i\xcf[\xbe6\x90\x8d\x00\x1d]\xb5\xfa', 'evaluateType': 'like'} 
+[game.cn.1 I 260403 06:18:52  rpc:2137] game.cn.1 openDays 266
+[game.cn.1 I 260403 06:19:48 192.168.97.1 task:578] REQ 1 69cf57bc36908d001b1ee319 /game/card/locked/switch 144B 3.01ms 12.34ms 16.90ms {'cardID': 'i\xcfY\xd06\x90\x8d\x00\x1b\x1e\xe3:'} 
+[game.cn.1 I 260403 06:19:49 192.168.97.1 task:578] REQ 1 69cf57bc36908d001b1ee319 /game/card/locked/switch 112B 0.75ms 17.02ms 18.67ms {'cardID': 'i\xcfY\xd06\x90\x8d\x00\x1b\x1e\xe3:'} 
+[game.cn.1 I 260403 06:21:08 192.168.97.1 task:578] REQ 1 69cf57bc36908d001b1ee319 /game/sponsor/info 128B 1.83ms 45.14ms 48.29ms {} 
+[game.cn.1 I 260403 06:23:52  rpc:2137] game.cn.1 openDays 266
+[game.cn.1 I 260403 06:26:43 192.168.97.1 task:578] REQ 1 69cf57bc36908d001b1ee319 /game/yy/award/get 96B 3.04ms 323.30ms 327.86ms {'yyID': 100302} 
+[game.cn.1 I 260403 06:26:50 192.168.97.1 task:578] REQ 1 69cf57bc36908d001b1ee319 /game/role/city/sprite/active 128B 1.40ms 16.74ms 19.59ms {'type': 2} 
+[game.cn.1 I 260403 06:26:50 192.168.97.1 task:578] REQ 1 69cf57bc36908d001b1ee319 /game/sponsor/info 96B 0.98ms 19.35ms 21.20ms {} 
+[game.cn.1 I 260403 06:27:02 192.168.97.1 task:578] REQ 1 69cf57bc36908d001b1ee319 /game/role/city/scene/switch 144B 1.08ms 17.82ms 19.95ms {'sceneID': 6} 
+[game.cn.1 I 260403 06:27:05 192.168.97.1 task:578] REQ 1 69cf57bc36908d001b1ee319 /game/sponsor/info 96B 1.17ms 34.46ms 36.36ms {} 
+[game.cn.1 I 260403 06:27:11 192.168.97.1 task:578] REQ 1 69cf57bc36908d001b1ee319 /game/fishing/prepare 160B 1.09ms 17.54ms 19.79ms {'itemID': 999, 'itemType': 'scene'} 
+[game.cn.1 I 260403 06:27:11 192.168.97.1 task:578] REQ 1 69cf57bc36908d001b1ee319 /game/cross/fishing/rank 96B 0.66ms 16.80ms 18.14ms {} 
+[game.cn.1 I 260403 06:27:20 192.168.97.1 task:578] REQ 1 69cf57bc36908d001b1ee319 /game/fishing/bait/buy 144B 1.29ms 20.19ms 22.48ms {'count': 1, 'baitID': 7} 
+[game.cn.1 I 260403 06:27:22 192.168.97.1 task:578] REQ 1 69cf57bc36908d001b1ee319 /game/fishing/prepare 112B 1.06ms 17.16ms 19.11ms {'itemID': 7, 'itemType': 'bait'} 
+[game.cn.1 I 260403 06:27:36 192.168.97.1 task:578] REQ 1 69cf57bc36908d001b1ee319 /game/fishing/item/unlock 144B 1.16ms 20.42ms 22.44ms {'itemID': 1, 'itemType': 'rod'} 
+[game.cn.1 I 260403 06:27:41 192.168.97.1 task:578] REQ 1 69cf57bc36908d001b1ee319 /game/fishing/prepare 112B 1.01ms 18.40ms 20.28ms {'itemID': 1, 'itemType': 'rod'} 
+[game.cn.1 I 260403 06:27:45 192.168.97.1 task:578] REQ 1 69cf57bc36908d001b1ee319 /game/fishing/once/start 128B 0.81ms 13.62ms 15.14ms {} 
+[game.cn.1 I 260403 06:27:51 192.168.97.1 task:578] REQ 1 69cf57bc36908d001b1ee319 /game/fishing/once/doing 96B 1.13ms 20.45ms 22.40ms {'fish': 10} 
+[game.cn.1 I 260403 06:27:59 192.168.97.1 task:578] REQ 1 69cf57bc36908d001b1ee319 /game/fishing/once/end 144B 1.23ms 19.07ms 21.78ms {'fish': 10, 'result': 'fail'} 
+[game.cn.1 I 260403 06:28:03 192.168.97.1 task:578] REQ 1 69cf57bc36908d001b1ee319 /game/fishing/shop/get 96B 1.12ms 68.38ms 70.27ms {} 
+[game.cn.1 I 260403 06:28:12 192.168.97.1 task:578] REQ 1 69cf57bc36908d001b1ee319 /game/role/city/sprite/active 128B 1.17ms 15.52ms 17.49ms {'type': 1} 
+[game.cn.1 I 260403 06:28:12 192.168.97.1 task:578] REQ 1 69cf57bc36908d001b1ee319 /game/sponsor/info 96B 0.61ms 21.46ms 22.57ms {} 
+[game.cn.1 I 260403 06:28:52  rpc:2137] game.cn.1 openDays 266

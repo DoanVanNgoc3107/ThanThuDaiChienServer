@@ -1,0 +1,116 @@
+[host_server I 260403 05:53:46.829.001 document.go:151] register document default ok
+[host_server I 260403 05:53:46.843.002 init.go:171] register document ok
+[host_server D 260403 05:53:46.857.003 config.go:49] cwd in /mnt/pokemon/release/pvp
+[host_server D 260403 05:53:46.898.004 config.go:23] GetExtend service pvp.cn.1 &service.Option{Name:"pvp.cn.1", Alias:[]string(nil), Dependent:[]string{"storage.cn.1"}}
+[host_server D 260403 05:53:46.899.005 config.go:23] GetExtend service clone.cn.1 &service.Option{Name:"clone.cn.1", Alias:[]string(nil), Dependent:[]string{"storage.cn.1"}}
+[host_server D 260403 05:53:46.899.006 config.go:23] GetExtend service arena.cn.1 &service.Option{Name:"arena.cn.1", Alias:[]string(nil), Dependent:[]string{"storage.cn.1"}}
+[host_server D 260403 05:53:46.899.007 config.go:23] GetExtend service union.cn.1 &service.Option{Name:"union.cn.1", Alias:[]string(nil), Dependent:[]string{"storage.cn.1"}}
+[host_server D 260403 05:53:46.899.008 config.go:23] GetExtend service union_fight.cn.1 &service.Option{Name:"union_fight.cn.1", Alias:[]string(nil), Dependent:[]string{"storage.cn.1", "game.cn.1", "anticheat"}}
+[host_server D 260403 05:53:46.899.009 config.go:23] GetExtend service craft.cn.1 &service.Option{Name:"craft.cn.1", Alias:[]string(nil), Dependent:[]string{"storage.cn.1", "game.cn.1", "anticheat"}}
+[host_server D 260403 05:53:46.899.010 config.go:23] GetExtend service yyhuodong.cn.1 &service.Option{Name:"yyhuodong.cn.1", Alias:[]string(nil), Dependent:[]string{"storage.cn.1"}}
+[host_server D 260403 05:53:46.901.011 config.go:23] GetExtend service card_fight.cn.1 &service.Option{Name:"card_fight.cn.1", Alias:[]string(nil), Dependent:[]string{"storage.cn.1"}}
+[host_server D 260403 05:53:46.901.012 config.go:23] GetExtend service gym.cn.1 &service.Option{Name:"gym.cn.1", Alias:[]string(nil), Dependent:[]string{"storage.cn.1", "game.cn.1"}}
+[host_server D 260403 05:53:46.901.013 config.go:23] GetExtend service hunting.cn.1 &service.Option{Name:"hunting.cn.1", Alias:[]string(nil), Dependent:[]string{"storage.cn.1"}}
+[host_server I 260403 05:53:46.901.014 config.go:60] pvp.cn.1 config in defines.json
+[pvp.cn.1 I 260403 05:53:46.901.015 main.go:44] &services.Define{ContainerOption:service.ContainerOption{Name:"@pvp.cn.1", Debug:false, Addr:"", NSQLookupd:"http://127.0.0.1:4161/", Mainnsqd:"", NSQTcpAddresses:[]string{"127.0.0.1:4150"}, Shushu:true, Services:[]service.IOption{(*service.Option)(0xc00012b9c0), (*service.Option)(0xc00012bb00), (*service.Option)(0xc00012bc40), (*service.Option)(0xc00012bd80), (*service.Option)(0xc00012bec0), (*service.Option)(0xc00035c000), (*service.Option)(0xc00035c140), (*service.Option)(0xc00035c280), (*service.Option)(0xc00035c3c0), (*service.Option)(0xc00035c500)}, ServicesRaw:[]json.RawMessage(nil)}}
+[pvp.cn.1 I 260403 05:53:52.473.019 rpcclient.go:292] create client consumer RESP-c_pvp.cn.1/0global_1rpc
+[pvp.cn.1 I 260403 05:53:52.475.020 consumer.go:1175] INF    2 [RESP-c_pvp.cn.1/0global_1rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 05:53:52.485.021 thinkingdata.go:29] thinkingdata log directory /mnt/logbus_data/@pvp.cn.1
+[pvp.cn.1 I 260403 05:53:52.485.022 container.go:250] remote service storage.cn.1 start
+[pvp.cn.1 I 260403 05:53:52.485.023 container.go:259] service pvp.cn.1 start
+[pvp.cn.1 I 260403 05:53:52.499.024 producer.go:382] INF    1 (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 05:53:52.892.025 service.go:100] CloneRoom Used: 0, Free: 0
+[pvp.cn.1 I 260403 05:53:52.892.026 container.go:259] service clone.cn.1 start
+[pvp.cn.1 I 260403 05:53:52.919.027 service.go:85] load game.cn.1 arena, rank max 0
+[pvp.cn.1 I 260403 05:53:52.942.028 service.go:97] ArenaGlobalHistory from 26030413 to 26040313 has 0
+[pvp.cn.1 I 260403 05:53:52.942.029 container.go:259] service arena.cn.1 start
+[pvp.cn.1 I 260403 05:53:52.971.031 service.go:194] load unions done, count 0
+[pvp.cn.1 I 260403 05:53:52.995.032 service.go:270] load union training count 0
+[pvp.cn.1 I 260403 05:53:53.019.033 service.go:309] RedPacket Used: 0, Free: 0
+[pvp.cn.1 I 260403 05:53:53.019.034 service.go:220] loading unions cost 76ms
+[pvp.cn.1 I 260403 05:53:53.019.035 container.go:259] service union.cn.1 start
+[pvp.cn.1 I 260403 05:53:53.019.036 container.go:250] remote service game.cn.1 start
+[pvp.cn.1 I 260403 05:53:53.019.037 container.go:250] remote service anticheat start
+[pvp.cn.1 I 260403 05:53:53.059.038 service.go:47] load game.cn.1 union fight round 'closed'
+[pvp.cn.1 I 260403 05:53:53.059.039 service.go:53] Union Fight isAllOver True
+[pvp.cn.1 I 260403 05:53:53.059.040 container.go:259] service union_fight.cn.1 start
+[pvp.cn.1 I 260403 05:53:53.079.041 service.go:67] load game.cn.1 craft round closed
+[pvp.cn.1 I 260403 05:53:53.079.042 service.go:73] Craft isAllOver True
+[pvp.cn.1 I 260403 05:53:53.079.043 container.go:259] service craft.cn.1 start
+[pvp.cn.1 I 260403 05:53:53.097.044 service.go:63] load game.cn.1 worldBoss global
+[pvp.cn.1 I 260403 05:53:53.097.045 container.go:259] service yyhuodong.cn.1 start
+[pvp.cn.1 I 260403 05:53:53.119.046 container.go:259] service card_fight.cn.1 start
+[pvp.cn.1 I 260403 05:53:53.143.047 service.go:47] load gym.cn.1 gym global
+[pvp.cn.1 I 260403 05:53:53.143.048 container.go:259] service gym.cn.1 start
+[pvp.cn.1 I 260403 05:53:53.143.049 gym.go:167] Gym.ResetToday key gym.cn.1 round start monday 20260330
+[pvp.cn.1 I 260403 05:53:53.143.050 gym.go:188] Restart round start next closed time delta 55h51m6.856246s
+[pvp.cn.1 I 260403 05:53:53.144.051 container.go:259] service hunting.cn.1 start
+[pvp.cn.1 I 260403 05:53:53.144.052 container.go:264] container @pvp.cn.1 start
+[pvp.cn.1 I 260403 05:53:53.145.054 server.go:29] server start ok
+[pvp.cn.1 I 260403 05:53:53.146.057 rpcserver.go:349] create server consumer REQ-pvp.cn.1/rpc
+[pvp.cn.1 I 260403 05:53:53.147.093 rpcserver.go:349] create server consumer REQ-arena.cn.1/rpc
+[pvp.cn.1 I 260403 05:53:53.147.105 rpcserver.go:457] create server consumer NotifyGenHuntingCards/arena.cn.1
+[pvp.cn.1 I 260403 05:53:53.148.119 rpcserver.go:349] create server consumer REQ-craft.cn.1/rpc
+[pvp.cn.1 I 260403 05:53:53.149.144 rpcserver.go:349] create server consumer REQ-hunting.cn.1/rpc
+[pvp.cn.1 I 260403 05:53:53.151.168 rpcserver.go:349] create server consumer REQ-union.cn.1/rpc
+[pvp.cn.1 I 260403 05:53:53.153.228 rpcserver.go:349] create server consumer REQ-clone.cn.1/rpc
+[pvp.cn.1 I 260403 05:53:53.154.257 rpcserver.go:349] create server consumer REQ-union_fight.cn.1/rpc
+[pvp.cn.1 I 260403 05:53:53.155.279 rpcserver.go:349] create server consumer REQ-yyhuodong.cn.1/rpc
+[pvp.cn.1 I 260403 05:53:53.156.313 rpcserver.go:349] create server consumer REQ-card_fight.cn.1/rpc
+[pvp.cn.1 I 260403 05:53:53.158.319 rpcserver.go:349] create server consumer REQ-gym.cn.1/rpc
+[pvp.cn.1 I 260403 05:53:53.160.340 consumer.go:1175] INF    3 [REQ-pvp.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 05:53:53.161.341 consumer.go:1175] INF    4 [REQ-arena.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 05:53:53.162.342 consumer.go:1175] INF    5 [NotifyGenHuntingCards/arena.cn.1] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 05:53:53.163.343 consumer.go:1175] INF    6 [REQ-craft.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 05:53:53.164.344 consumer.go:1175] INF    7 [REQ-hunting.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 05:53:53.165.345 consumer.go:1175] INF    8 [REQ-union.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 05:53:53.169.346 consumer.go:1175] INF    9 [REQ-clone.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 05:53:53.171.347 consumer.go:1175] INF   10 [REQ-union_fight.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 05:53:53.172.348 consumer.go:1175] INF   11 [REQ-yyhuodong.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 05:53:53.174.349 consumer.go:1175] INF   12 [REQ-card_fight.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 05:53:53.175.350 consumer.go:1175] INF   13 [REQ-gym.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 05:53:53.191.351 framework.go:536] NOTIFY arena.cn.1.NotifyGenHuntingCards [0xc014257600]
+[pvp.cn.1 I 260403 05:53:53.196.353 container.go:118] remote service crosshunting.cn.1 start
+[pvp.cn.1 I 260403 05:54:00.648.354 framework.go:534] REQ yyhuodong.cn.1.BraveChallengeYYStart 1 [0xc0004c3858]
+[pvp.cn.1 I 260403 05:54:01.253.355 framework.go:534] REQ union.cn.1.GetCacheModel 2 []
+[pvp.cn.1 I 260403 05:54:01.254.356 producer.go:382] INF   14 (127.0.0.1:4150) connecting to nsqd
+[pvp.cn.1 I 260403 05:54:01.254.357 rpcserver.go:622] RESP union.cn.1.GetCacheModel 2 1B -ms
+[pvp.cn.1 I 260403 05:54:07.563.358 common.go:140] brave_challenge start runBattleAgentVerify
+
+[pvp.cn.1 I 260403 05:54:07.580.359 rpcserver.go:622] RESP yyhuodong.cn.1.BraveChallengeYYStart 1 1B 6.931667s from c_game.cn.1
+[pvp.cn.1 I 260403 05:54:12.534.360 manager.go:250] process dirty, count 2 success 2 fail 0 cost 34.057ms, dirty 0, lru 0, chan 0
+[pvp.cn.1 I 260403 05:58:52.813.361 framework.go:536] NOTIFY arena.cn.1.NotifyGenHuntingCards [0xc0003255d0]
+[pvp.cn.1 I 260403 06:00:59.318.363 framework.go:534] REQ arena.cn.1.Flush 3 []
+[pvp.cn.1 I 260403 06:00:59.319.364 rpcserver.go:622] RESP arena.cn.1.Flush 3 1B 857µs from c_game.cn.1
+[pvp.cn.1 I 260403 06:01:09.715.365 framework.go:534] REQ yyhuodong.cn.1.BraveChallengeYYStart 4 [0xc017601da8]
+[pvp.cn.1 I 260403 06:01:09.715.366 rpcserver.go:622] RESP yyhuodong.cn.1.BraveChallengeYYStart 4 1B 146µs from c_game.cn.1
+[pvp.cn.1 I 260403 06:01:10.291.367 framework.go:534] REQ union.cn.1.GetCacheModel 5 []
+[pvp.cn.1 I 260403 06:01:10.291.368 rpcserver.go:622] RESP union.cn.1.GetCacheModel 5 1B 112µs from c_game.cn.1
+[pvp.cn.1 I 260403 06:01:40.417.369 framework.go:534] REQ card_fight.cn.1.CardFightUpdate 6 [0xc017597bd0 0xc01076a4a8]
+[pvp.cn.1 I 260403 06:01:40.420.370 rpcserver.go:622] RESP card_fight.cn.1.CardFightUpdate 6 15B 2.773ms from c_game.cn.1
+[pvp.cn.1 I 260403 06:01:52.504.371 manager.go:250] process dirty, count 1 success 1 fail 0 cost 6.685ms, dirty 0, lru 0, chan 0
+[pvp.cn.1 I 260403 06:03:52.815.372 framework.go:536] NOTIFY arena.cn.1.NotifyGenHuntingCards [0xc013476060]
+[pvp.cn.1 I 260403 06:08:52.816.374 framework.go:536] NOTIFY arena.cn.1.NotifyGenHuntingCards [0xc0134820e0]
+[pvp.cn.1 I 260403 06:10:16.270.376 framework.go:534] REQ card_fight.cn.1.CardFightUpdate 7 [0xc017597bd0 0xc013eda078]
+[pvp.cn.1 I 260403 06:10:16.271.377 rpcserver.go:622] RESP card_fight.cn.1.CardFightUpdate 7 15B 955µs from c_game.cn.1
+[pvp.cn.1 I 260403 06:10:24.867.378 framework.go:534] REQ card_fight.cn.1.CardFightUpdate 8 [0xc00037a050 0xc01076a040]
+[pvp.cn.1 I 260403 06:10:24.867.379 rpcserver.go:622] RESP card_fight.cn.1.CardFightUpdate 8 381B 772µs from c_game.cn.1
+[pvp.cn.1 I 260403 06:10:32.511.380 manager.go:250] process dirty, count 1 success 1 fail 0 cost 10.504ms, dirty 0, lru 0, chan 0
+[pvp.cn.1 I 260403 06:13:52.827.381 framework.go:536] NOTIFY arena.cn.1.NotifyGenHuntingCards [0xc013476060]
+[pvp.cn.1 I 260403 06:15:45.467.383 framework.go:534] REQ craft.cn.1.CreateCraftRecord 9 [0xc0003e4000 0xc014b8e720]
+[pvp.cn.1 I 260403 06:15:45.487.384 rpcserver.go:622] RESP craft.cn.1.CreateCraftRecord 9 13B 22.214ms from c_game.cn.1
+[pvp.cn.1 I 260403 06:15:45.518.385 framework.go:534] REQ pvp.cn.1.CreateCrossCraftRecord 10 [0xc0004c4680 0xc00049ec60]
+[pvp.cn.1 I 260403 06:15:45.532.386 rpcserver.go:622] RESP pvp.cn.1.CreateCrossCraftRecord 10 13B 14.739ms from c_game.cn.1
+[pvp.cn.1 I 260403 06:15:45.580.387 framework.go:534] REQ union_fight.cn.1.CreateUnionFightRoleRecord 11 [0xc00037a2d0 0xc013fae420]
+[pvp.cn.1 I 260403 06:15:45.588.388 rpcserver.go:622] RESP union_fight.cn.1.CreateUnionFightRoleRecord 11 13B 9.531ms from c_game.cn.1
+[pvp.cn.1 I 260403 06:15:45.589.389 framework.go:534] REQ union.cn.1.OnLogin 12 [IDHex("69cf57bc36908d001b1ee319") 0xc0003d45a0 0xc013fc8360]
+[pvp.cn.1 I 260403 06:15:45.592.390 rpcserver.go:622] RESP union.cn.1.OnLogin 12 143B 2.855ms from c_game.cn.1
+[pvp.cn.1 I 260403 06:16:08.986.391 framework.go:534] REQ card_fight.cn.1.CardFightUpdate 13 [0xc017597bd0 0xc0142f06e8]
+[pvp.cn.1 I 260403 06:16:08.987.392 rpcserver.go:622] RESP card_fight.cn.1.CardFightUpdate 13 381B 1.014ms from c_game.cn.1
+[pvp.cn.1 I 260403 06:16:22.506.393 manager.go:250] process dirty, count 1 success 1 fail 0 cost 7.699ms, dirty 0, lru 0, chan 0
+[pvp.cn.1 I 260403 06:18:52.830.394 framework.go:536] NOTIFY arena.cn.1.NotifyGenHuntingCards [0xc0003255d0]
+[pvp.cn.1 I 260403 06:23:52.835.396 framework.go:536] NOTIFY arena.cn.1.NotifyGenHuntingCards [0xc0003255d0]
+[pvp.cn.1 I 260403 06:26:43.392.398 framework.go:534] REQ card_fight.cn.1.CardFightUpdate 14 [0xc00037a050 0xc013eda1d8]
+[pvp.cn.1 I 260403 06:26:43.393.399 rpcserver.go:622] RESP card_fight.cn.1.CardFightUpdate 14 395B 1.084ms from c_game.cn.1
+[pvp.cn.1 I 260403 06:27:02.509.400 manager.go:250] process dirty, count 1 success 1 fail 0 cost 10.687ms, dirty 0, lru 0, chan 0
+[pvp.cn.1 I 260403 06:28:52.835.401 framework.go:536] NOTIFY arena.cn.1.NotifyGenHuntingCards [0xc0003255d0]

@@ -1,0 +1,300 @@
+[host_server I 260403 05:53:46.858.001 document.go:151] register document default ok
+[host_server I 260403 05:53:46.870.002 init.go:171] register document ok
+[host_server D 260403 05:53:46.893.003 config.go:49] cwd in /mnt/pokemon/release/cross
+[host_server D 260403 05:53:46.904.004 config.go:23] GetExtend service crossmatch.cn.1 &service.Option{Name:"crossmatch.cn.1", Alias:[]string(nil), Dependent:[]string{"crossdb.cn.1"}}
+[host_server D 260403 05:53:46.905.005 config.go:23] GetExtend service crosscraft.cn.1 &service.Option{Name:"crosscraft.cn.1", Alias:[]string(nil), Dependent:[]string{"anticheat", "crossdb.cn.1"}}
+[host_server D 260403 05:53:46.905.006 config.go:23] GetExtend service crossfishing.cn.1 &service.Option{Name:"crossfishing.cn.1", Alias:[]string(nil), Dependent:[]string{"crossdb.cn.1"}}
+[host_server D 260403 05:53:46.905.007 config.go:23] GetExtend service huodongboss.cn.1 &service.Option{Name:"huodongboss.cn.1", Alias:[]string(nil), Dependent:[]string{"crossdb.cn.1"}}
+[host_server D 260403 05:53:46.905.008 config.go:23] GetExtend service crossarena.cn.1 &service.Option{Name:"crossarena.cn.1", Alias:[]string(nil), Dependent:[]string{"anticheat", "crossdb.cn.1"}}
+[host_server D 260403 05:53:46.905.009 config.go:23] GetExtend service onlinefight.cn.1 &service.Option{Name:"onlinefight.cn.1", Alias:[]string(nil), Dependent:[]string{"online_fight_forward", "crosslobby.cn.1", "crossdb.cn.1"}}
+[host_server D 260403 05:53:46.905.010 config.go:23] GetExtend service crossgym.cn.1 &service.Option{Name:"crossgym.cn.1", Alias:[]string(nil), Dependent:[]string{"anticheat", "crossdb.cn.1"}}
+[host_server D 260403 05:53:46.905.011 config.go:23] GetExtend service crossmine.cn.1 &service.Option{Name:"crossmine.cn.1", Alias:[]string(nil), Dependent:[]string{"anticheat", "crossdb.cn.1"}}
+[host_server D 260403 05:53:46.907.012 config.go:23] GetExtend service crossunionqa.cn.1 &service.Option{Name:"crossunionqa.cn.1", Alias:[]string(nil), Dependent:[]string{"crossdb.cn.1"}}
+[host_server D 260403 05:53:46.907.013 config.go:23] GetExtend service skyscraper.cn.1 &service.Option{Name:"skyscraper.cn.1", Alias:[]string(nil), Dependent:[]string{"crossdb.cn.1"}}
+[host_server D 260403 05:53:46.907.014 config.go:23] GetExtend service crossredpacket.cn.1 &service.Option{Name:"crossredpacket.cn.1", Alias:[]string(nil), Dependent:[]string{"crossdb.cn.1"}}
+[host_server D 260403 05:53:46.907.015 config.go:23] GetExtend service crossranking.cn.1 &service.Option{Name:"crossranking.cn.1", Alias:[]string(nil), Dependent:[]string{"crossdb.cn.1"}}
+[host_server D 260403 05:53:46.907.016 config.go:23] GetExtend service crosshunting.cn.1 &service.Option{Name:"crosshunting.cn.1", Alias:[]string(nil), Dependent:[]string{"crossdb.cn.1"}}
+[host_server D 260403 05:53:46.907.017 config.go:23] GetExtend service crosschat.cn.1 &service.Option{Name:"crosschat.cn.1", Alias:[]string(nil), Dependent:[]string{"crossdb.cn.1"}}
+[host_server D 260403 05:53:46.907.018 config.go:23] GetExtend service crossmimicry.cn.1 &service.Option{Name:"crossmimicry.cn.1", Alias:[]string(nil), Dependent:[]string{"crossdb.cn.1"}}
+[host_server D 260403 05:53:46.907.019 config.go:23] GetExtend service crossautochess.cn.1 &service.Option{Name:"crossautochess.cn.1", Alias:[]string(nil), Dependent:[]string{"autochess_room.cn.1", "crossdb.cn.1"}}
+[host_server D 260403 05:53:46.907.020 config.go:23] GetExtend service autochess_lobby.cn.1 &service.Option{Name:"autochess_lobby.cn.1", Alias:[]string(nil), Dependent:[]string{}}
+[host_server D 260403 05:53:46.907.021 config.go:23] GetExtend service crosstownparty.cn.1 &service.Option{Name:"crosstownparty.cn.1", Alias:[]string(nil), Dependent:[]string{"crossdb.cn.1"}}
+[host_server D 260403 05:53:46.907.022 config.go:23] GetExtend service crosssupremacy.cn.1 &service.Option{Name:"crosssupremacy.cn.1", Alias:[]string(nil), Dependent:[]string{"crossdb.cn.1"}}
+[host_server I 260403 05:53:46.907.023 config.go:60] cross.cn.1 config in defines.json
+[cross.cn.1 I 260403 05:53:46.907.024 main.go:44] &services.Define{ContainerOption:service.ContainerOption{Name:"@cross.cn.1", Debug:false, Addr:"", NSQLookupd:"http://127.0.0.1:4161/", Mainnsqd:"", NSQTcpAddresses:[]string{"127.0.0.1:4150"}, Shushu:true, Services:[]service.IOption{(*service.Option)(0xc00031e440), (*service.Option)(0xc00031e580), (*service.Option)(0xc00031e6c0), (*service.Option)(0xc00031e800), (*service.Option)(0xc00031e940), (*service.Option)(0xc00031ea80), (*service.Option)(0xc00031ebc0), (*service.Option)(0xc00031ed00), (*service.Option)(0xc00031ee40), (*service.Option)(0xc00031ef80), (*service.Option)(0xc00031f0c0), (*service.Option)(0xc00031f200), (*service.Option)(0xc00031f340), (*service.Option)(0xc00031f480), (*service.Option)(0xc00031f5c0), (*service.Option)(0xc00031f700), (*service.Option)(0xc00031f800), (*service.Option)(0xc00031f900), (*service.Option)(0xc00031fa40)}, ServicesRaw:[]json.RawMessage(nil)}}
+[cross.cn.1 I 260403 05:53:52.415.026 fix.go:71] fix attr last date 20201222
+[cross.cn.1 I 260403 05:53:52.428.027 service.go:65] watch patch file ../online_fight_forward/cn_patch
+[cross.cn.1 I 260403 05:53:52.428.028 service.go:72] set least patch 914
+[cross.cn.1 I 260403 05:53:52.437.029 service.go:89] CrossAutoChess Service Init success, name=crossautochess.cn.1
+[cross.cn.1 I 260403 05:53:52.442.030 service.go:48] [AutoChessLobby] created lobby 1
+[cross.cn.1 I 260403 05:53:52.442.031 service.go:50] [AutoChessLobby] Init complete, lobbies=1
+[cross.cn.1 I 260403 05:53:52.467.034 rpcclient.go:292] create client consumer RESP-c_cross.cn.1/0global_1rpc
+[cross.cn.1 I 260403 05:53:52.468.035 consumer.go:1175] INF    2 [RESP-c_cross.cn.1/0global_1rpc] (127.0.0.1:4150) connecting to nsqd
+[cross.cn.1 I 260403 05:53:52.476.036 thinkingdata.go:29] thinkingdata log directory /mnt/logbus_data/@cross.cn.1
+[cross.cn.1 I 260403 05:53:52.477.037 container.go:250] remote service crossdb.cn.1 start
+[cross.cn.1 I 260403 05:53:52.479.038 producer.go:382] INF    1 (127.0.0.1:4150) connecting to nsqd
+[cross.cn.1 I 260403 05:53:52.512.039 container.go:259] service crossmatch.cn.1 start
+[cross.cn.1 I 260403 05:53:52.513.040 container.go:250] remote service anticheat start
+[cross.cn.1 I 260403 05:53:52.513.041 match.go:88] CrossMatch onServerCheckStart
+[cross.cn.1 I 260403 05:53:52.513.042 match.go:112] CrossMatch crontab service crossfishing period start, today=20260403, startDate=20241227, periodDays=14
+[cross.cn.1 I 260403 05:53:52.522.043 service.go:63] load crosscraft.cn.1 cross craft round closed
+[cross.cn.1 I 260403 05:53:52.523.044 service.go:71] Cross Craft is AllOver True
+[cross.cn.1 I 260403 05:53:52.523.045 crosscraft.go:345] Cross Craft Clean 0 closed
+[cross.cn.1 I 260403 05:53:52.523.046 container.go:259] service crosscraft.cn.1 start
+[cross.cn.1 I 260403 05:53:52.524.047 skeleton.go:64] onNewDayInClock5 20260403
+[cross.cn.1 I 260403 05:53:52.524.048 check.go:44] crosscraft.cn.1 transaction crosscraft OnServiceCheck 20260403
+[cross.cn.1 I 260403 05:53:52.524.049 check.go:88] onServiceCheck finished, no matching config
+[cross.cn.1 I 260403 05:53:52.524.050 skeleton.go:59] next 15h6m7.47604s, crosscraft.cn.1 onServiceCheck
+[cross.cn.1 I 260403 05:53:52.548.052 container.go:118] remote service game.cn.1 start
+[cross.cn.1 I 260403 05:53:52.549.054 container.go:118] remote service game.cn.2 start
+[cross.cn.1 I 260403 05:53:52.549.055 crossfishing.go:164] CrossFishing key crossfishing.cn.1 group 1 Start next closed delta 9h6m7.450809s
+[cross.cn.1 I 260403 05:53:52.560.056 container.go:259] service crossfishing.cn.1 start
+[cross.cn.1 I 260403 05:53:52.571.057 container.go:259] service huodongboss.cn.1 start
+[cross.cn.1 I 260403 05:53:52.596.058 service.go:77] load crossarena.cn.1 cross arena round closed
+[cross.cn.1 I 260403 05:53:52.596.059 service.go:85] Cross Arena is AllOver True
+[cross.cn.1 I 260403 05:53:52.596.060 crossarena.go:329] Cross Arena Clean 0 closed
+[cross.cn.1 I 260403 05:53:52.596.061 skeleton.go:64] onNewDayInClock5 20260403
+[cross.cn.1 I 260403 05:53:52.596.062 service.go:107] watch patch file ../online_fight_forward/cn_patch
+[cross.cn.1 I 260403 05:53:52.596.063 check.go:44] crossarena.cn.1 transaction crossarena OnServiceCheck 20260403
+[cross.cn.1 I 260403 05:53:52.596.064 check.go:88] onServiceCheck finished, no matching config
+[cross.cn.1 I 260403 05:53:52.596.065 skeleton.go:59] next 15h6m7.403431s, crossarena.cn.1 onServiceCheck
+[cross.cn.1 I 260403 05:53:52.596.066 service.go:114] set least patch 914
+[cross.cn.1 I 260403 05:53:52.597.067 container.go:259] service crossarena.cn.1 start
+[cross.cn.1 I 260403 05:53:52.597.068 container.go:250] remote service online_fight_forward start
+[cross.cn.1 I 260403 05:53:52.597.069 container.go:250] remote service crosslobby.cn.1 start
+[cross.cn.1 I 260403 05:53:52.622.070 service.go:125] Cross OnlineBattle is isAllOver True
+[cross.cn.1 I 260403 05:53:52.622.071 onlinefight.go:375] Cross OnlineFight Clean 0 closed
+[cross.cn.1 I 260403 05:53:52.622.072 container.go:259] service onlinefight.cn.1 start
+[cross.cn.1 I 260403 05:53:52.622.073 skeleton.go:64] onNewDayInClock5 20260403
+[cross.cn.1 I 260403 05:53:52.622.074 check.go:44] onlinefight.cn.1 transaction onlinefight OnServiceCheck 20260403
+[cross.cn.1 I 260403 05:53:52.623.075 check.go:88] onServiceCheck finished, no matching config
+[cross.cn.1 I 260403 05:53:52.623.076 skeleton.go:59] next 15h6m7.377088s, onlinefight.cn.1 onServiceCheck
+[cross.cn.1 I 260403 05:53:52.647.077 service.go:61] load crossgym.cn.1 cross gym round closed
+[cross.cn.1 I 260403 05:53:52.647.078 service.go:69] Cross Arena is AllOver True
+[cross.cn.1 I 260403 05:53:52.647.079 crossgym.go:268] CrossGym Clean 0 closed
+[cross.cn.1 I 260403 05:53:52.647.080 container.go:259] service crossgym.cn.1 start
+[cross.cn.1 I 260403 05:53:52.648.081 skeleton.go:64] onNewDayInClock5 20260403
+[cross.cn.1 I 260403 05:53:52.648.082 check.go:44] crossgym.cn.1 transaction crossgym OnServiceCheck 20260403
+[cross.cn.1 I 260403 05:53:52.648.083 check.go:88] onServiceCheck finished, no matching config
+[cross.cn.1 I 260403 05:53:52.648.084 skeleton.go:59] next 15h6m7.351802s, crossgym.cn.1 onServiceCheck
+[cross.cn.1 I 260403 05:53:52.671.085 crossmine.go:1870] CrossMine start runBossBattleAgentVerify
+[cross.cn.1 I 260403 05:53:52.672.086 service.go:74] load crossmine.cn.1 cross mine round closed
+[cross.cn.1 I 260403 05:53:52.672.087 service.go:80] CrossMine is AllOver True
+[cross.cn.1 I 260403 05:53:52.672.088 crossmine.go:400] CrossMrena Clean 0 closed
+[cross.cn.1 I 260403 05:53:52.672.089 service.go:102] watch patch file ../online_fight_forward/cn_patch
+[cross.cn.1 I 260403 05:53:52.672.090 skeleton.go:64] onNewDayInClock5 20260403
+[cross.cn.1 I 260403 05:53:52.672.091 check.go:44] crossmine.cn.1 transaction crossmine OnServiceCheck 20260403
+[cross.cn.1 I 260403 05:53:52.672.092 check.go:88] onServiceCheck finished, no matching config
+[cross.cn.1 I 260403 05:53:52.672.093 skeleton.go:59] next 15h6m7.327693s, crossmine.cn.1 onServiceCheck
+[cross.cn.1 I 260403 05:53:52.672.094 service.go:109] set least patch 914
+[cross.cn.1 I 260403 05:53:52.672.095 container.go:259] service crossmine.cn.1 start
+[cross.cn.1 I 260403 05:53:52.698.096 container.go:259] service crossunionqa.cn.1 start
+[cross.cn.1 I 260403 05:53:52.721.097 container.go:259] service skyscraper.cn.1 start
+[cross.cn.1 I 260403 05:53:52.751.098 container.go:259] service crossredpacket.cn.1 start
+[cross.cn.1 I 260403 05:53:52.771.099 container.go:259] service crossranking.cn.1 start
+[cross.cn.1 I 260403 05:53:52.796.100 service.go:52] load crosshunting.cn.1 hunting global
+[cross.cn.1 I 260403 05:53:52.796.101 container.go:259] service crosshunting.cn.1 start
+[cross.cn.1 I 260403 05:53:52.797.102 crosshunting.go:310] CrossHunting.cleanDefenceRecordCount
+[cross.cn.1 I 260403 05:53:52.797.103 crosshunting.go:84] CrossHunting refresh battleCards delta 5m0s
+[cross.cn.1 I 260403 05:53:52.797.104 crosshunting.go:109] CrossHunting start runAcceptBattleCards
+[cross.cn.1 I 260403 05:53:52.798.105 crosshunting.go:318] CrossHunting next cleanDefenceRecordCount delta 63h6m7.201979s
+[cross.cn.1 I 260403 05:53:52.821.106 service.go:66] CrossChat.Start loading 1 instances from database
+[cross.cn.1 I 260403 05:53:52.821.107 service.go:72] CrossChat.Start play key=crosschat.cn.1 group=1 status=start servers=[game.cn.1 game.cn.2 game.cn.3 game.cn.4 game.cn.5 game.cn.6 game.cn.7 game.cn.8 game.cn.9 game.cn.10 game.cn.11 game.cn.12] isOver=false
+[cross.cn.1 I 260403 05:53:52.821.109 container.go:118] remote service game.cn.3 start
+[cross.cn.1 I 260403 05:53:52.821.111 container.go:118] remote service game.cn.4 start
+[cross.cn.1 I 260403 05:53:52.821.113 container.go:118] remote service game.cn.5 start
+[cross.cn.1 I 260403 05:53:52.821.115 container.go:118] remote service game.cn.6 start
+[cross.cn.1 I 260403 05:53:52.822.117 container.go:118] remote service game.cn.7 start
+[cross.cn.1 I 260403 05:53:52.822.119 container.go:118] remote service game.cn.8 start
+[cross.cn.1 I 260403 05:53:52.822.121 container.go:118] remote service game.cn.9 start
+[cross.cn.1 I 260403 05:53:52.822.123 container.go:118] remote service game.cn.10 start
+[cross.cn.1 I 260403 05:53:52.822.125 container.go:118] remote service game.cn.11 start
+[cross.cn.1 I 260403 05:53:52.822.127 container.go:118] remote service game.cn.12 start
+[cross.cn.1 I 260403 05:53:52.822.128 service.go:84] CrossChat.Start play is not over, calling resetToday
+[cross.cn.1 I 260403 05:53:52.822.129 chat.go:189] CrossChat key=crosschat.cn.1 group=1 reset, status=start
+[cross.cn.1 I 260403 05:53:52.822.130 container.go:259] service crosschat.cn.1 start
+[cross.cn.1 I 260403 05:53:52.822.131 service.go:94] CrossMimicry getConfigFromCrontab from CSV: periodDays=7, durationDay=5
+[cross.cn.1 I 260403 05:53:52.846.132 container.go:259] service crossmimicry.cn.1 start
+[cross.cn.1 I 260403 05:53:52.846.133 container.go:250] remote service autochess_room.cn.1 start
+[cross.cn.1 I 260403 05:53:52.846.134 service.go:160] CrossAutoChess getConfigFromCrontab from CSV: periodDays=42, durationDay=40
+[cross.cn.1 I 260403 05:53:52.871.135 service.go:140] CrossAutoChess Service Start, name=crossautochess.cn.1
+[cross.cn.1 I 260403 05:53:52.871.136 container.go:259] service crossautochess.cn.1 start
+[cross.cn.1 I 260403 05:53:52.871.137 container.go:259] service autochess_lobby.cn.1 start
+[cross.cn.1 I 260403 05:53:52.871.138 service.go:95] CrossTownParty getConfigFromCrontab from CSV: periodDays=7, durationDay=2
+[cross.cn.1 I 260403 05:53:52.896.139 container.go:259] service crosstownparty.cn.1 start
+[cross.cn.1 I 260403 05:53:52.921.140 manager.go:46] CrossSupremacyManager loadPlays key=crosssupremacy.cn.1 count=0
+[cross.cn.1 I 260403 05:53:52.921.141 container.go:259] service crosssupremacy.cn.1 start
+[cross.cn.1 I 260403 05:53:52.921.142 container.go:264] container @cross.cn.1 start
+[cross.cn.1 I 260403 05:53:52.921.143 server.go:29] server start ok
+[cross.cn.1 I 260403 05:53:52.922.147 rpcserver.go:349] create server consumer REQ-crossautochess.cn.1/rpc
+[cross.cn.1 I 260403 05:53:52.924.160 rpcserver.go:457] create server consumer CrossMatchServerCheck/crossautochess.cn.1
+[cross.cn.1 I 260403 05:53:52.925.165 rpcserver.go:349] create server consumer REQ-onlinefight.cn.1/rpc
+[cross.cn.1 I 260403 05:53:52.926.192 rpcserver.go:349] create server consumer REQ-crosschat.cn.1/rpc
+[cross.cn.1 I 260403 05:53:52.926.198 rpcserver.go:457] create server consumer CrossMatchServerCheck/crosschat.cn.1
+[cross.cn.1 I 260403 05:53:52.926.205 rpcserver.go:349] create server consumer REQ-crosstownparty.cn.1/rpc
+[cross.cn.1 I 260403 05:53:52.927.208 rpcserver.go:457] create server consumer CrossMatchServerCheck/crosstownparty.cn.1
+[cross.cn.1 I 260403 05:53:52.927.230 rpcserver.go:349] create server consumer REQ-crossmatch.cn.1/rpc
+[cross.cn.1 I 260403 05:53:52.928.239 rpcserver.go:349] create server consumer REQ-crossarena.cn.1/rpc
+[cross.cn.1 I 260403 05:53:52.928.257 rpcserver.go:349] create server consumer REQ-crossgym.cn.1/rpc
+[cross.cn.1 I 260403 05:53:52.928.273 rpcserver.go:349] create server consumer REQ-crossredpacket.cn.1/rpc
+[cross.cn.1 I 260403 05:53:52.928.282 rpcserver.go:457] create server consumer CrossMatchServerCheck/crossredpacket.cn.1
+[cross.cn.1 I 260403 05:53:52.929.286 rpcserver.go:349] create server consumer REQ-crosshunting.cn.1/rpc
+[cross.cn.1 I 260403 05:53:52.929.297 rpcserver.go:349] create server consumer REQ-crossmimicry.cn.1/rpc
+[cross.cn.1 I 260403 05:53:52.929.300 rpcserver.go:457] create server consumer CrossMatchServerCheck/crossmimicry.cn.1
+[cross.cn.1 I 260403 05:53:52.930.309 rpcserver.go:349] create server consumer REQ-autochess_lobby.cn.1/rpc
+[cross.cn.1 I 260403 05:53:52.930.317 rpcserver.go:349] create server consumer REQ-crosssupremacy.cn.1/rpc
+[cross.cn.1 I 260403 05:53:52.930.324 rpcserver.go:457] create server consumer CrossMatchServerCheck/crosssupremacy.cn.1
+[cross.cn.1 I 260403 05:53:52.931.332 rpcserver.go:349] create server consumer REQ-crosscraft.cn.1/rpc
+[cross.cn.1 I 260403 05:53:52.931.357 rpcserver.go:349] create server consumer REQ-huodongboss.cn.1/rpc
+[cross.cn.1 I 260403 05:53:52.931.364 rpcserver.go:457] create server consumer CrossMatchServerCheck/huodongboss.cn.1
+[cross.cn.1 I 260403 05:53:52.932.371 rpcserver.go:349] create server consumer REQ-crossmine.cn.1/rpc
+[cross.cn.1 I 260403 05:53:52.932.399 rpcserver.go:457] create server consumer CrossMatchServerCheck/crossunionqa.cn.1
+[cross.cn.1 I 260403 05:53:52.933.403 rpcserver.go:349] create server consumer REQ-crossunionqa.cn.1/rpc
+[cross.cn.1 I 260403 05:53:52.933.415 rpcserver.go:349] create server consumer REQ-skyscraper.cn.1/rpc
+[cross.cn.1 I 260403 05:53:52.934.422 rpcserver.go:457] create server consumer CrossMatchServerCheck/skyscraper.cn.1
+[cross.cn.1 I 260403 05:53:52.934.427 rpcserver.go:349] create server consumer REQ-crossranking.cn.1/rpc
+[cross.cn.1 I 260403 05:53:52.934.432 rpcserver.go:457] create server consumer CrossMatchServerCheck/crossranking.cn.1
+[cross.cn.1 I 260403 05:53:52.934.439 rpcserver.go:349] create server consumer REQ-crossfishing.cn.1/rpc
+[cross.cn.1 I 260403 05:53:52.934.443 rpcserver.go:457] create server consumer CrossMatchServerCheck/crossfishing.cn.1
+[cross.cn.1 I 260403 05:53:52.935.448 consumer.go:1175] INF    3 [REQ-crossautochess.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[cross.cn.1 I 260403 05:53:52.936.449 consumer.go:1175] INF    4 [CrossMatchServerCheck/crossautochess.cn.1] (127.0.0.1:4150) connecting to nsqd
+[cross.cn.1 I 260403 05:53:52.937.450 consumer.go:1175] INF    5 [REQ-onlinefight.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[cross.cn.1 I 260403 05:53:52.937.451 consumer.go:1175] INF    6 [REQ-crosschat.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[cross.cn.1 I 260403 05:53:52.938.452 consumer.go:1175] INF    7 [CrossMatchServerCheck/crosschat.cn.1] (127.0.0.1:4150) connecting to nsqd
+[cross.cn.1 I 260403 05:53:52.939.453 consumer.go:1175] INF    8 [REQ-crosstownparty.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[cross.cn.1 I 260403 05:53:52.940.454 consumer.go:1175] INF    9 [CrossMatchServerCheck/crosstownparty.cn.1] (127.0.0.1:4150) connecting to nsqd
+[cross.cn.1 I 260403 05:53:52.941.455 consumer.go:1175] INF   10 [REQ-crossmatch.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[cross.cn.1 I 260403 05:53:52.941.456 consumer.go:1175] INF   11 [REQ-crossarena.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[cross.cn.1 I 260403 05:53:52.942.457 consumer.go:1175] INF   12 [REQ-crossgym.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[cross.cn.1 I 260403 05:53:52.943.458 consumer.go:1175] INF   13 [REQ-crossredpacket.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[cross.cn.1 I 260403 05:53:52.944.459 consumer.go:1175] INF   14 [CrossMatchServerCheck/crossredpacket.cn.1] (127.0.0.1:4150) connecting to nsqd
+[cross.cn.1 I 260403 05:53:52.945.460 consumer.go:1175] INF   15 [REQ-crosshunting.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[cross.cn.1 I 260403 05:53:52.946.461 consumer.go:1175] INF   16 [REQ-crossmimicry.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[cross.cn.1 I 260403 05:53:52.947.462 consumer.go:1175] INF   17 [CrossMatchServerCheck/crossmimicry.cn.1] (127.0.0.1:4150) connecting to nsqd
+[cross.cn.1 I 260403 05:53:52.947.463 consumer.go:1175] INF   18 [REQ-autochess_lobby.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[cross.cn.1 I 260403 05:53:52.948.464 consumer.go:1175] INF   19 [REQ-crosssupremacy.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[cross.cn.1 I 260403 05:53:52.948.465 consumer.go:1175] INF   20 [CrossMatchServerCheck/crosssupremacy.cn.1] (127.0.0.1:4150) connecting to nsqd
+[cross.cn.1 I 260403 05:53:52.949.466 consumer.go:1175] INF   21 [REQ-crosscraft.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[cross.cn.1 I 260403 05:53:52.949.467 consumer.go:1175] INF   22 [REQ-huodongboss.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[cross.cn.1 I 260403 05:53:52.950.468 consumer.go:1175] INF   23 [CrossMatchServerCheck/huodongboss.cn.1] (127.0.0.1:4150) connecting to nsqd
+[cross.cn.1 I 260403 05:53:52.951.469 consumer.go:1175] INF   24 [REQ-crossmine.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[cross.cn.1 I 260403 05:53:52.951.470 consumer.go:1175] INF   25 [CrossMatchServerCheck/crossunionqa.cn.1] (127.0.0.1:4150) connecting to nsqd
+[cross.cn.1 I 260403 05:53:52.952.471 consumer.go:1175] INF   26 [REQ-crossunionqa.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[cross.cn.1 I 260403 05:53:52.952.472 consumer.go:1175] INF   27 [REQ-skyscraper.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[cross.cn.1 I 260403 05:53:52.953.473 consumer.go:1175] INF   28 [CrossMatchServerCheck/skyscraper.cn.1] (127.0.0.1:4150) connecting to nsqd
+[cross.cn.1 I 260403 05:53:52.954.474 consumer.go:1175] INF   29 [REQ-crossranking.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[cross.cn.1 I 260403 05:53:52.954.475 consumer.go:1175] INF   30 [CrossMatchServerCheck/crossranking.cn.1] (127.0.0.1:4150) connecting to nsqd
+[cross.cn.1 I 260403 05:53:52.955.476 consumer.go:1175] INF   31 [REQ-crossfishing.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[cross.cn.1 I 260403 05:53:52.955.477 consumer.go:1175] INF   32 [CrossMatchServerCheck/crossfishing.cn.1] (127.0.0.1:4150) connecting to nsqd
+[cross.cn.1 I 260403 05:53:53.015.478 match.go:142] CrossMatch onServerCheckStart Notify sent
+[cross.cn.1 I 260403 05:53:53.015.479 match.go:83] CrossMatch next 15h6m7.486509s, onServiceCheck
+[cross.cn.1 I 260403 05:53:53.017.480 framework.go:536] NOTIFY crossunionqa.cn.1.CrossMatchServerCheck [0xc014d4fe30 0xc000d62a90]
+[cross.cn.1 I 260403 05:53:53.019.482 framework.go:536] NOTIFY crossfishing.cn.1.CrossMatchServerCheck [0xc014d2a050 0xc000d62b60]
+[cross.cn.1 I 260403 05:53:53.019.484 framework.go:536] NOTIFY crossredpacket.cn.1.CrossMatchServerCheck [0xc014d2a220 0xc000d62c50]
+[cross.cn.1 I 260403 05:53:53.019.486 framework.go:536] NOTIFY crosschat.cn.1.CrossMatchServerCheck [0xc014d2a4c0 0xc000d62d40]
+[cross.cn.1 I 260403 05:53:53.020.488 framework.go:536] NOTIFY skyscraper.cn.1.CrossMatchServerCheck [0xc014d2a6c0 0xc000d62e20]
+[cross.cn.1 I 260403 05:53:53.020.490 framework.go:536] NOTIFY crosssupremacy.cn.1.CrossMatchServerCheck [0xc014d2a900 0xc000d62f00]
+[cross.cn.1 I 260403 05:53:53.020.492 framework.go:536] NOTIFY crosstownparty.cn.1.CrossMatchServerCheck [0xc014d2aac0 0xc000d62fe0]
+[cross.cn.1 I 260403 05:53:53.020.493 service.go:150] [CrossTownParty] CrossMatchServerCheck: crossKey=crossmatch.cn.1
+[cross.cn.1 I 260403 05:53:53.023.494 framework.go:536] NOTIFY crossmimicry.cn.1.CrossMatchServerCheck [0xc014d41040 0xc00094db20]
+[cross.cn.1 I 260403 05:53:53.023.495 service.go:175] [CrossMimicry] CrossMatchServerCheck received: crossKey=crossmatch.cn.1, serviceName=crossmimicry.cn.1
+[cross.cn.1 I 260403 05:53:53.023.496 framework.go:536] NOTIFY crossautochess.cn.1.CrossMatchServerCheck [0xc014d76ef0 0xc000b294c0]
+[cross.cn.1 I 260403 05:53:53.023.497 framework.go:536] NOTIFY huodongboss.cn.1.CrossMatchServerCheck [0xc014dc1040 0xc000dd20d8]
+[cross.cn.1 I 260403 05:53:53.023.498 service.go:281] [CrossAutoChess] CrossMatchServerCheck received: crossKey=crossmatch.cn.1, serviceName=crossautochess.cn.1
+[cross.cn.1 I 260403 05:53:53.023.500 service.go:189] [CrossMimicry] CrossMatchServerCheck success, registered to crossmatch.cn.1
+[cross.cn.1 I 260403 05:53:53.023.502 framework.go:536] NOTIFY crossranking.cn.1.CrossMatchServerCheck [0xc014dc11b0 0xc000dd2180]
+[cross.cn.1 I 260403 05:53:53.023.505 service.go:295] [CrossAutoChess] CrossMatchServerCheck success, registered to crossmatch.cn.1
+[cross.cn.1 I 260403 05:53:54.597.507 framework.go:534] REQ crossunionqa.cn.1.CrossUnionQAJoin 1 [0xc014d41660]
+[cross.cn.1 W 260403 05:53:54.597.508 service.go:91] CrossUnionQA CrossUnionQAJoin key game.cn.2 error groupPlayNotExist
+[cross.cn.1 I 260403 05:53:54.598.509 producer.go:382] INF   33 (127.0.0.1:4150) connecting to nsqd
+[cross.cn.1 I 260403 05:53:54.599.510 rpcserver.go:622] RESP crossunionqa.cn.1.CrossUnionQAJoin 1 1B -ms
+[cross.cn.1 I 260403 05:53:54.820.511 framework.go:534] REQ crossunionqa.cn.1.CrossUnionQAJoin 2 [0xc014d2b4e0]
+[cross.cn.1 W 260403 05:53:54.820.512 service.go:91] CrossUnionQA CrossUnionQAJoin key game.cn.1 error groupPlayNotExist
+[cross.cn.1 I 260403 05:53:54.820.513 rpcserver.go:622] RESP crossunionqa.cn.1.CrossUnionQAJoin 2 1B 520µs from c_game.cn.1
+[cross.cn.1 I 260403 05:54:02.331.514 framework.go:534] REQ crossfishing.cn.1.CrossFishingJoin 3 [0xc014d77250]
+[cross.cn.1 I 260403 05:54:02.332.515 rpcserver.go:622] RESP crossfishing.cn.1.CrossFishingJoin 3 59B 1.789ms from c_game.cn.2
+[cross.cn.1 I 260403 05:54:02.381.516 framework.go:534] REQ crossfishing.cn.1.CrossFishingJoin 4 [0xc014dc1440]
+[cross.cn.1 I 260403 05:54:02.381.517 rpcserver.go:622] RESP crossfishing.cn.1.CrossFishingJoin 4 59B 366µs from c_game.cn.1
+[cross.cn.1 I 260403 05:54:02.546.518 manager.go:250] process dirty, count 8 success 8 fail 0 cost 66.816ms, dirty 0, lru 0, chan 0
+[cross.cn.1 I 260403 05:54:02.823.519 service.go:98] CrossChat.Start calling TransactionCommit for servers=[game.cn.1 game.cn.2 game.cn.3 game.cn.4 game.cn.5 game.cn.6 game.cn.7 game.cn.8 game.cn.9 game.cn.10 game.cn.11 game.cn.12]
+[cross.cn.1 I 260403 05:54:02.866.520 framework.go:534] REQ crossmatch.cn.1.ServiceCheckBack 5 [0xc014d1aaf0 0xc0147c7980 0xc000d63878]
+[cross.cn.1 I 260403 05:54:02.867.522 rpcserver.go:622] RESP crossmatch.cn.1.ServiceCheckBack 5 1B -ms
+[cross.cn.1 I 260403 05:54:02.893.523 framework.go:534] REQ crossmatch.cn.1.ServiceCheckBack 6 [0xc014d1ad50 0xc0147c7c60 0xc000d63a38]
+[cross.cn.1 I 260403 05:54:02.893.525 rpcserver.go:622] RESP crossmatch.cn.1.ServiceCheckBack 6 1B 239µs from c_game.cn.1
+[cross.cn.1 I 260403 05:54:02.913.526 framework.go:534] REQ crosshunting.cn.1.GenHuntingBattleCards 7 [0xc014d1af00 <nil>]
+[cross.cn.1 I 260403 05:54:02.913.527 crosshunting.go:163] CrossHunting.onGenBattleCards serverKey game.cn.2 size 0
+[cross.cn.1 I 260403 05:54:02.913.528 rpcserver.go:622] RESP crosshunting.cn.1.GenHuntingBattleCards 7 1B 382µs from c_pvp.cn.2
+[cross.cn.1 I 260403 05:54:02.935.529 framework.go:534] REQ crosshunting.cn.1.GenHuntingBattleCards 8 [0xc014dc1ee0 <nil>]
+[cross.cn.1 I 260403 05:54:02.935.530 crosshunting.go:163] CrossHunting.onGenBattleCards serverKey game.cn.1 size 0
+[cross.cn.1 I 260403 05:54:02.935.531 rpcserver.go:622] RESP crosshunting.cn.1.GenHuntingBattleCards 8 1B 471µs from c_pvp.cn.1
+[cross.cn.1 I 260403 05:54:08.017.532 match.go:166] CrossMatch.onMatchStart date 20260403
+[cross.cn.1 I 260403 05:54:08.019.533 match.go:229] CrossMatch.onMatchStart automatch count=0, matched=map[]
+[cross.cn.1 I 260403 05:54:08.020.534 match.go:385] CrossMatch.onMatchFinish
+[cross.cn.1 I 260403 05:58:52.805.536 crosshunting.go:84] CrossHunting refresh battleCards delta 5m0s
+[cross.cn.1 I 260403 05:58:52.804.535 crosshunting.go:109] CrossHunting start runAcceptBattleCards
+[cross.cn.1 I 260403 05:58:52.825.537 framework.go:534] REQ crosshunting.cn.1.GenHuntingBattleCards 9 [0xc014d40170 <nil>]
+[cross.cn.1 I 260403 05:58:52.825.538 crosshunting.go:163] CrossHunting.onGenBattleCards serverKey game.cn.1 size 0
+[cross.cn.1 I 260403 05:58:52.826.539 rpcserver.go:622] RESP crosshunting.cn.1.GenHuntingBattleCards 9 1B 432µs from c_pvp.cn.1
+[cross.cn.1 I 260403 05:58:52.847.540 framework.go:534] REQ crosshunting.cn.1.GenHuntingBattleCards 10 [0xc014d40560 <nil>]
+[cross.cn.1 I 260403 05:58:52.847.541 crosshunting.go:163] CrossHunting.onGenBattleCards serverKey game.cn.2 size 0
+[cross.cn.1 I 260403 05:58:52.847.542 rpcserver.go:622] RESP crosshunting.cn.1.GenHuntingBattleCards 10 1B 365µs from c_pvp.cn.2
+[cross.cn.1 I 260403 05:59:02.502.543 manager.go:250] process dirty, count 1 success 1 fail 0 cost 20.969ms, dirty 0, lru 0, chan 0
+[cross.cn.1 I 260403 06:01:11.415.544 framework.go:534] REQ crossfishing.cn.1.CrossFishingJoin 11 [0xc014d40030]
+[cross.cn.1 I 260403 06:01:11.415.545 rpcserver.go:622] RESP crossfishing.cn.1.CrossFishingJoin 11 59B 171µs from c_game.cn.1
+[cross.cn.1 I 260403 06:01:12.376.546 framework.go:534] REQ crossfishing.cn.1.CrossFishingJoin 12 [0xc014d640b0]
+[cross.cn.1 I 260403 06:01:12.376.547 rpcserver.go:622] RESP crossfishing.cn.1.CrossFishingJoin 12 59B 507µs from c_game.cn.2
+[cross.cn.1 I 260403 06:03:52.810.548 crosshunting.go:109] CrossHunting start runAcceptBattleCards
+[cross.cn.1 I 260403 06:03:52.810.549 crosshunting.go:84] CrossHunting refresh battleCards delta 5m0s
+[cross.cn.1 I 260403 06:03:52.825.550 framework.go:534] REQ crosshunting.cn.1.GenHuntingBattleCards 13 [0xc014d640c0 <nil>]
+[cross.cn.1 I 260403 06:03:52.825.551 crosshunting.go:163] CrossHunting.onGenBattleCards serverKey game.cn.1 size 0
+[cross.cn.1 I 260403 06:03:52.826.552 rpcserver.go:622] RESP crosshunting.cn.1.GenHuntingBattleCards 13 1B 733µs from c_pvp.cn.1
+[cross.cn.1 I 260403 06:03:52.847.553 framework.go:534] REQ crosshunting.cn.1.GenHuntingBattleCards 14 [0xc014d402d0 <nil>]
+[cross.cn.1 I 260403 06:03:52.847.554 crosshunting.go:163] CrossHunting.onGenBattleCards serverKey game.cn.2 size 0
+[cross.cn.1 I 260403 06:03:52.847.555 rpcserver.go:622] RESP crosshunting.cn.1.GenHuntingBattleCards 14 1B 349µs from c_pvp.cn.2
+[cross.cn.1 I 260403 06:04:02.482.556 manager.go:250] process dirty, count 1 success 1 fail 0 cost 3.719ms, dirty 0, lru 0, chan 0
+[cross.cn.1 I 260403 06:08:52.811.557 crosshunting.go:84] CrossHunting refresh battleCards delta 5m0s
+[cross.cn.1 I 260403 06:08:52.812.558 crosshunting.go:109] CrossHunting start runAcceptBattleCards
+[cross.cn.1 I 260403 06:08:52.828.559 framework.go:534] REQ crosshunting.cn.1.GenHuntingBattleCards 15 [0xc014d4e090 <nil>]
+[cross.cn.1 I 260403 06:08:52.828.560 crosshunting.go:163] CrossHunting.onGenBattleCards serverKey game.cn.1 size 0
+[cross.cn.1 I 260403 06:08:52.829.561 rpcserver.go:622] RESP crosshunting.cn.1.GenHuntingBattleCards 15 1B 935µs from c_pvp.cn.1
+[cross.cn.1 I 260403 06:08:52.847.562 framework.go:534] REQ crosshunting.cn.1.GenHuntingBattleCards 16 [0xc014d640b0 <nil>]
+[cross.cn.1 I 260403 06:08:52.847.563 crosshunting.go:163] CrossHunting.onGenBattleCards serverKey game.cn.2 size 0
+[cross.cn.1 I 260403 06:08:52.847.564 rpcserver.go:622] RESP crosshunting.cn.1.GenHuntingBattleCards 16 1B 348µs from c_pvp.cn.2
+[cross.cn.1 I 260403 06:09:02.487.565 manager.go:250] process dirty, count 1 success 1 fail 0 cost 8.178ms, dirty 0, lru 0, chan 0
+[cross.cn.1 I 260403 06:13:52.824.567 crosshunting.go:84] CrossHunting refresh battleCards delta 5m0s
+[cross.cn.1 I 260403 06:13:52.824.566 crosshunting.go:109] CrossHunting start runAcceptBattleCards
+[cross.cn.1 I 260403 06:13:52.838.568 framework.go:534] REQ crosshunting.cn.1.GenHuntingBattleCards 17 [0xc014d4e120 <nil>]
+[cross.cn.1 I 260403 06:13:52.839.569 crosshunting.go:163] CrossHunting.onGenBattleCards serverKey game.cn.1 size 0
+[cross.cn.1 I 260403 06:13:52.839.570 rpcserver.go:622] RESP crosshunting.cn.1.GenHuntingBattleCards 17 1B 1.882ms from c_pvp.cn.1
+[cross.cn.1 I 260403 06:13:52.846.571 framework.go:534] REQ crosshunting.cn.1.GenHuntingBattleCards 18 [0xc014d4e4d0 <nil>]
+[cross.cn.1 I 260403 06:13:52.846.572 crosshunting.go:163] CrossHunting.onGenBattleCards serverKey game.cn.2 size 0
+[cross.cn.1 I 260403 06:13:52.846.573 rpcserver.go:622] RESP crosshunting.cn.1.GenHuntingBattleCards 18 1B 248µs from c_pvp.cn.2
+[cross.cn.1 I 260403 06:14:02.491.574 manager.go:250] process dirty, count 1 success 1 fail 0 cost 10.03ms, dirty 0, lru 0, chan 0
+[cross.cn.1 I 260403 06:18:52.825.575 crosshunting.go:84] CrossHunting refresh battleCards delta 5m0s
+[cross.cn.1 I 260403 06:18:52.826.576 crosshunting.go:109] CrossHunting start runAcceptBattleCards
+[cross.cn.1 I 260403 06:18:52.841.577 framework.go:534] REQ crosshunting.cn.1.GenHuntingBattleCards 19 [0xc014d400d0 <nil>]
+[cross.cn.1 I 260403 06:18:52.842.578 crosshunting.go:163] CrossHunting.onGenBattleCards serverKey game.cn.1 size 0
+[cross.cn.1 I 260403 06:18:52.842.579 rpcserver.go:622] RESP crosshunting.cn.1.GenHuntingBattleCards 19 1B 1.639ms from c_pvp.cn.1
+[cross.cn.1 I 260403 06:18:52.846.580 framework.go:534] REQ crosshunting.cn.1.GenHuntingBattleCards 20 [0xc014d2a210 <nil>]
+[cross.cn.1 I 260403 06:18:52.847.581 crosshunting.go:163] CrossHunting.onGenBattleCards serverKey game.cn.2 size 0
+[cross.cn.1 I 260403 06:18:52.847.582 rpcserver.go:622] RESP crosshunting.cn.1.GenHuntingBattleCards 20 1B 487µs from c_pvp.cn.2
+[cross.cn.1 I 260403 06:19:02.485.583 manager.go:250] process dirty, count 1 success 1 fail 0 cost 6.725ms, dirty 0, lru 0, chan 0
+[cross.cn.1 I 260403 06:23:52.831.585 crosshunting.go:84] CrossHunting refresh battleCards delta 5m0s
+[cross.cn.1 I 260403 06:23:52.831.584 crosshunting.go:109] CrossHunting start runAcceptBattleCards
+[cross.cn.1 I 260403 06:23:52.847.586 framework.go:534] REQ crosshunting.cn.1.GenHuntingBattleCards 21 [0xc014d4e1b0 <nil>]
+[cross.cn.1 I 260403 06:23:52.847.587 framework.go:534] REQ crosshunting.cn.1.GenHuntingBattleCards 22 [0xc014d4e340 <nil>]
+[cross.cn.1 I 260403 06:23:52.848.588 crosshunting.go:163] CrossHunting.onGenBattleCards serverKey game.cn.1 size 0
+[cross.cn.1 I 260403 06:23:52.848.589 rpcserver.go:622] RESP crosshunting.cn.1.GenHuntingBattleCards 22 1B 450µs from c_pvp.cn.1
+[cross.cn.1 I 260403 06:23:52.848.590 crosshunting.go:163] CrossHunting.onGenBattleCards serverKey game.cn.2 size 0
+[cross.cn.1 I 260403 06:23:52.848.591 rpcserver.go:622] RESP crosshunting.cn.1.GenHuntingBattleCards 21 1B 1.698ms from c_pvp.cn.2
+[cross.cn.1 I 260403 06:24:02.519.592 manager.go:250] process dirty, count 1 success 1 fail 0 cost 6.305ms, dirty 0, lru 0, chan 0
+[cross.cn.1 I 260403 06:27:11.149.593 framework.go:534] REQ crossfishing.cn.1.CrossFishingRankInfo 23 [0xc014d2a010 IDHex("69cf57bc36908d001b1ee319")]
+[cross.cn.1 I 260403 06:27:11.155.594 rpcserver.go:622] RESP crossfishing.cn.1.CrossFishingRankInfo 23 39B 6.74ms from c_game.cn.1
+[cross.cn.1 I 260403 06:28:52.833.595 crosshunting.go:109] CrossHunting start runAcceptBattleCards
+[cross.cn.1 I 260403 06:28:52.833.596 crosshunting.go:84] CrossHunting refresh battleCards delta 5m0s
+[cross.cn.1 I 260403 06:28:52.843.597 framework.go:534] REQ crosshunting.cn.1.GenHuntingBattleCards 24 [0xc014d40230 <nil>]
+[cross.cn.1 I 260403 06:28:52.844.598 crosshunting.go:163] CrossHunting.onGenBattleCards serverKey game.cn.1 size 0
+[cross.cn.1 I 260403 06:28:52.844.599 rpcserver.go:622] RESP crosshunting.cn.1.GenHuntingBattleCards 24 1B 815µs from c_pvp.cn.1
+[cross.cn.1 I 260403 06:28:52.847.600 framework.go:534] REQ crosshunting.cn.1.GenHuntingBattleCards 25 [0xc014d405f0 <nil>]
+[cross.cn.1 I 260403 06:28:52.847.601 crosshunting.go:163] CrossHunting.onGenBattleCards serverKey game.cn.2 size 0
+[cross.cn.1 I 260403 06:28:52.847.602 rpcserver.go:622] RESP crosshunting.cn.1.GenHuntingBattleCards 25 1B 312µs from c_pvp.cn.2

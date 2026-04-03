@@ -1,0 +1,35 @@
+hardware_concurrency 8 thread_pool_count 4
+
+{
+	gl.supports_OES_map_buffer: false
+	gl.supports_vertex_array_object: true
+	cocos2d.x.version: cocos2d-x-3.17
+	gl.vendor: Qualcomm
+	gl.supports_PVRTC: false
+	gl.renderer: Adreno (TM) 650
+	gl.supports_OES_compressed_paletted_texture: false
+	cocos2d.x.compiled_with_profiler: false
+	cocos2d.x.build_type: RELEASE
+	cocos2d.x.compiled_with_gl_state_cache: true
+	gl.max_texture_size: 16384
+	gl.supports_ETC1: true
+	gl.supports_BGRA8888: false
+	gl.max_texture_units: 96
+	gl.supports_OES_packed_depth_stencil: true
+	gl.supports_ATITC: true
+	gl.supports_discard_framebuffer: true
+	gl.supports_NPOT: true
+	gl.version: OpenGL ES 3.2 V@0501.0 (GIT@3571974a10, I64bd74b5bd, 1599817271) (Date:09/11/20)
+	gl.supports_S3TC: false
+	gl.supports_OES_depth24: true
+}
+
+
+report url http://59.153.167.98:1104
+android x64 4 8 8
+Construct DownloaderAndroid: 0xb40000738fd8b550
+android downloader: jObj: 0x35, _impl: 0x28d6
+loadFileMappingFromFile 16252 in repo from repository/repo.mapping
+cocos2d: fullPathForFilename: No file found at repository/obb.repo.mapping. Possible missing file.
+cocos2d: fullPathForFilename: No file found at updater/main.lua. Possible missing file.
+dump be generated 250904-02:26:32 /data/user/0/com.kdjx.android/files//25eee360-0e29-4658-e922188a-94551de3.dmp

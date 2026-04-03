@@ -1,0 +1,69 @@
+[anti_cheat_server I 260403 05:53:46.766.001 document.go:151] register document default ok
+[anti_cheat_server I 260403 05:53:46.777.002 init.go:171] register document ok
+[anti_cheat_server D 260403 05:53:46.782.003 config.go:49] cwd in /mnt/pokemon/release/anti_cheat
+[anti_cheat_server D 260403 05:53:46.800.004 server.go:29] GetExtend service anticheat.cn.1 &anti_cheat.Option{Option:service.Option{Name:"anticheat.cn.1", Alias:[]string(nil), Dependent:[]string(nil)}, ErrorNotForceResult:true, TracebackReportUrl:""}
+[anti_cheat_server I 260403 05:53:46.803.005 config.go:60] agent.cn.1 config in defines.json
+[agent.cn.1 I 260403 05:53:46.804.006 main.go:35] &main.Define{ContainerOption:service.ContainerOption{Name:"@agent.cn.1", Debug:false, Addr:"", NSQLookupd:"http://127.0.0.1:4161/", Mainnsqd:"", NSQTcpAddresses:[]string{"127.0.0.1:4150"}, Shushu:false, Services:[]service.IOption{(*anti_cheat.Option)(0xc00012a1e0)}, ServicesRaw:[]json.RawMessage(nil)}}
+[agent.cn.1 I 260403 05:53:46.811.007 main.go:43] metrics listen: 192.168.97.6:2112
+[agent.cn.1 C 260403 05:53:46.839.008 rpcserver.go:280] nsqd http http://127.0.0.1:4151/stats?topic=RESP-c_agent.cn.1&channel=0global_1rpc&format=json get err: Get http://127.0.0.1:4151/stats?topic=RESP-c_agent.cn.1&channel=0global_1rpc&format=json: dial tcp 127.0.0.1:4151: connect: connection refused
+panic: nsqd http http://127.0.0.1:4151/stats?topic=RESP-c_agent.cn.1&channel=0global_1rpc&format=json get err: Get http://127.0.0.1:4151/stats?topic=RESP-c_agent.cn.1&channel=0global_1rpc&format=json: dial tcp 127.0.0.1:4151: connect: connection refused
+
+goroutine 1 [running]:
+github.com/op/go-logging.(*Logger).Panicf(0xc0002cc6f0, 0xd18bc0, 0x18, 0xc000191ec0, 0x2, 0x2)
+	/root/go/pkg/mod/github.com/op/go-logging@v0.0.0-20160315200505-970db520ece7/logger.go:194 +0x105
+tjgame/server_framework/tj/log.Panicf(...)
+	/mnt/hgfs/pokemon_server/gosrc/tjgame/server_framework/tj/log/log.go:138
+tjgame/server_framework/tj/nsq.getClientsNum(0xc0002d8480, 0xe, 0xc0002caca0, 0x11, 0xd10337, 0xc, 0x11)
+	/mnt/hgfs/pokemon_server/gosrc/tjgame/server_framework/tj/nsq/rpcserver.go:280 +0x1033
+tjgame/server_framework/tj/nsq.(*NSQRPCClient).initResponseConsumer(0xc000344230, 0xc0002d2360)
+	/mnt/hgfs/pokemon_server/gosrc/tjgame/server_framework/tj/nsq/rpcclient.go:283 +0x142
+tjgame/server_framework/tj/nsq.(*NSQRPCClient).Connect(0xc000344230, 0xc0002d4840, 0x1, 0x1)
+	/mnt/hgfs/pokemon_server/gosrc/tjgame/server_framework/tj/nsq/rpcclient.go:111 +0xff
+tjgame/server_framework/tj/service.(*Container).Init(0xc00031e0f0)
+	/mnt/hgfs/pokemon_server/gosrc/tjgame/server_framework/tj/service/container.go:228 +0x8b2
+main.(*Server).OnStart(0xc0002da460, 0xc0002c8300)
+	/mnt/hgfs/pokemon_server/gosrc/tjgame/anti_cheat/server.go:43 +0x32
+tjgame/server_framework/tj.(*ServerFramework).Start(0xc0002c68a0)
+	/mnt/hgfs/pokemon_server/gosrc/tjgame/server_framework/tj/server.go:25 +0x38
+main.main()
+	/mnt/hgfs/pokemon_server/gosrc/tjgame/anti_cheat/main.go:47 +0x797
+[anti_cheat_server I 260403 05:53:48.621.001 document.go:151] register document default ok
+[anti_cheat_server I 260403 05:53:48.635.002 init.go:171] register document ok
+[anti_cheat_server D 260403 05:53:48.648.003 config.go:49] cwd in /mnt/pokemon/release/anti_cheat
+[anti_cheat_server D 260403 05:53:48.673.004 server.go:29] GetExtend service anticheat.cn.1 &anti_cheat.Option{Option:service.Option{Name:"anticheat.cn.1", Alias:[]string(nil), Dependent:[]string(nil)}, ErrorNotForceResult:true, TracebackReportUrl:""}
+[anti_cheat_server I 260403 05:53:48.673.005 config.go:60] agent.cn.1 config in defines.json
+[agent.cn.1 I 260403 05:53:48.673.006 main.go:35] &main.Define{ContainerOption:service.ContainerOption{Name:"@agent.cn.1", Debug:false, Addr:"", NSQLookupd:"http://127.0.0.1:4161/", Mainnsqd:"", NSQTcpAddresses:[]string{"127.0.0.1:4150"}, Shushu:false, Services:[]service.IOption{(*anti_cheat.Option)(0xc0000de9c0)}, ServicesRaw:[]json.RawMessage(nil)}}
+[agent.cn.1 I 260403 05:53:48.685.007 main.go:43] metrics listen: 192.168.97.6:2112
+[agent.cn.1 I 260403 05:53:48.741.010 rpcclient.go:292] create client consumer RESP-c_agent.cn.1/0global_1rpc
+[agent.cn.1 I 260403 05:53:48.741.011 consumer.go:1175] INF    2 [RESP-c_agent.cn.1/0global_1rpc] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 05:53:48.747.012 container.go:259] service anticheat.cn.1 start
+[agent.cn.1 I 260403 05:53:48.747.013 container.go:264] container @agent.cn.1 start
+[agent.cn.1 I 260403 05:53:48.747.014 server.go:29] server start ok
+[agent.cn.1 I 260403 05:53:48.760.018 rpcserver.go:349] create server consumer REQ-anticheat.cn.1/rpc
+[agent.cn.1 I 260403 05:53:48.760.020 rpcserver.go:349] create server consumer NewArenaBattle/global
+[agent.cn.1 I 260403 05:53:48.760.022 rpcserver.go:349] create server consumer NewCrossCraftBattle/global
+[agent.cn.1 I 260403 05:53:48.761.024 rpcserver.go:349] create server consumer NewGateBattle/global
+[agent.cn.1 I 260403 05:53:48.761.026 rpcserver.go:349] create server consumer NewCrossMineBattle/global
+[agent.cn.1 I 260403 05:53:48.761.028 rpcserver.go:349] create server consumer NewBraveChallengeBattle/global
+[agent.cn.1 I 260403 05:53:48.761.030 rpcserver.go:349] create server consumer NewSummerChallengeBattle/global
+[agent.cn.1 I 260403 05:53:48.761.032 rpcserver.go:349] create server consumer NewEndlessBattle/global
+[agent.cn.1 I 260403 05:53:48.761.034 rpcserver.go:349] create server consumer NewCrossMineBossBattle/global
+[agent.cn.1 I 260403 05:53:48.761.036 rpcserver.go:349] create server consumer NewCrossArenaBattle/global
+[agent.cn.1 I 260403 05:53:48.761.038 rpcserver.go:349] create server consumer NewCrossUnionFightBattle/global
+[agent.cn.1 I 260403 05:53:48.761.040 rpcserver.go:349] create server consumer NewCraftBattle/global
+[agent.cn.1 I 260403 05:53:48.761.042 rpcserver.go:349] create server consumer NewUnionFightBattle/global
+[agent.cn.1 I 260403 05:53:48.761.044 rpcserver.go:349] create server consumer NewHuntingBattle/global
+[agent.cn.1 I 260403 05:53:48.762.045 consumer.go:1175] INF    3 [REQ-anticheat.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 05:53:48.766.046 consumer.go:1175] INF    4 [NewArenaBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 05:53:48.769.047 consumer.go:1175] INF    5 [NewCrossCraftBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 05:53:48.770.048 consumer.go:1175] INF    6 [NewGateBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 05:53:48.773.049 consumer.go:1175] INF    7 [NewCrossMineBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 05:53:48.774.050 consumer.go:1175] INF    8 [NewBraveChallengeBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 05:53:48.780.051 consumer.go:1175] INF    9 [NewSummerChallengeBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 05:53:48.781.052 consumer.go:1175] INF   10 [NewEndlessBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 05:53:48.789.053 consumer.go:1175] INF   11 [NewCrossMineBossBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 05:53:48.796.054 consumer.go:1175] INF   12 [NewCrossArenaBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 05:53:48.803.055 consumer.go:1175] INF   13 [NewCrossUnionFightBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 05:53:48.804.056 consumer.go:1175] INF   14 [NewCraftBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 05:53:48.805.057 consumer.go:1175] INF   15 [NewUnionFightBattle/global] (127.0.0.1:4150) connecting to nsqd
+[agent.cn.1 I 260403 05:53:48.806.058 consumer.go:1175] INF   16 [NewHuntingBattle/global] (127.0.0.1:4150) connecting to nsqd

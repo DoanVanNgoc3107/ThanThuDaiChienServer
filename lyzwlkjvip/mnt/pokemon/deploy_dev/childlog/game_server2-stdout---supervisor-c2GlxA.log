@@ -1,0 +1,394 @@
+[game.cn.2 I 260403 05:53:52  patch:26] patch_framework ok !
+[game.cn.2 W 260403 05:53:52  __init__:130] url /yy/rmbgold/return nonstandard
+[game.cn.2 W 260403 05:53:52  __init__:130] url /cross/mine/boss/times/buy nonstandard
+[game.cn.2 W 260403 05:53:52  __init__:130] url /cross/mine/buff/feed nonstandard
+[game.cn.2 W 260403 05:53:52  __init__:130] url /cross/mine/times/buy nonstandard
+[game.cn.2 W 260403 05:53:52  __init__:130] url /unionadventure/input nonstandard
+[game.cn.2 W 260403 05:53:52  __init__:130] url /town/adventure/done nonstandard
+[game.cn.2 W 260403 05:53:52  __init__:130] url /town/adventure/recall nonstandard
+[game.cn.2 W 260403 05:53:52  __init__:130] url /town/adventure/setout nonstandard
+[game.cn.2 W 260403 05:53:52  __init__:130] url /town/adventure/task/award nonstandard
+[game.cn.2 W 260403 05:53:52  __init__:130] url /town/building/finish/atonce nonstandard
+[game.cn.2 W 260403 05:53:52  __init__:130] url /town/building/level/up nonstandard
+[game.cn.2 W 260403 05:53:52  __init__:130] url /town/building/refresh nonstandard
+[game.cn.2 W 260403 05:53:52  __init__:130] url /town/continuous/card/place nonstandard
+[game.cn.2 W 260403 05:53:52  __init__:130] url /town/continuous/card/remove nonstandard
+[game.cn.2 W 260403 05:53:52  __init__:130] url /town/continuous/receive nonstandard
+[game.cn.2 W 260403 05:53:52  __init__:130] url /town/explorer/skill/upgrade nonstandard
+[game.cn.2 W 260403 05:53:52  __init__:130] url /town/get nonstandard
+[game.cn.2 W 260403 05:53:52  __init__:130] url /town/home/card/remove nonstandard
+[game.cn.2 W 260403 05:53:52  __init__:130] url /town/home/card/rest nonstandard
+[game.cn.2 W 260403 05:53:52  __init__:130] url /town/home/layout/apply nonstandard
+[game.cn.2 W 260403 05:53:52  __init__:130] url /town/home/layout/delete nonstandard
+[game.cn.2 W 260403 05:53:52  __init__:130] url /town/home/layout/rename nonstandard
+[game.cn.2 W 260403 05:53:52  __init__:130] url /town/home/layout/save nonstandard
+[game.cn.2 W 260403 05:53:52  __init__:130] url /town/home/layout/update nonstandard
+[game.cn.2 W 260403 05:53:52  __init__:130] url /town/home/rename nonstandard
+[game.cn.2 W 260403 05:53:52  __init__:130] url /town/home/shop/buy nonstandard
+[game.cn.2 W 260403 05:53:52  __init__:130] url /town/order/cancel nonstandard
+[game.cn.2 W 260403 05:53:52  __init__:130] url /town/order/card/place nonstandard
+[game.cn.2 W 260403 05:53:52  __init__:130] url /town/order/card/remove nonstandard
+[game.cn.2 W 260403 05:53:52  __init__:130] url /town/order/place nonstandard
+[game.cn.2 W 260403 05:53:52  __init__:130] url /town/order/receive nonstandard
+[game.cn.2 W 260403 05:53:52  __init__:130] url /town/relic/buff/refresh nonstandard
+[game.cn.2 I 260403 05:53:52  server:123] GameServOpenDatetime 2025-07-11 10:00:00
+[game.cn.2 I 260403 05:53:53  thinkingdata:40] tjta init, path /mnt/logbus_data/game.cn.2
+[game.cn.2 I 260403 05:53:53  server:155] dependent ['anticheat', 'chat_monitor', 'giftdb.cn.1', 'card_comment.cn.1', 'card_score.cn.1', 'storage.cn.2', 'arena.cn.2', 'union.cn.2', 'craft.cn.2', 'clone.cn.2', 'pvp.cn.2', 'union_fight.cn.2', 'yyhuodong.cn.2', 'card_fight.cn.2', 'gym.cn.2', 'hunting.cn.2']
+[game.cn.2 I 260403 05:53:53  writer:110] starting writer...
+[game.cn.2 I 260403 05:53:53  writer:189] [127.0.0.1:4150] connecting to nsqd
+[game.cn.2 I 260403 05:53:53  reader:235] [RESP-c_game.cn.2:0global_1rpc] starting reader for RESP-c_game.cn.2/0global_1rpc...
+[game.cn.2 I 260403 05:53:53  reader:490] [127.0.0.1:4150:RESP-c_game.cn.2:0global_1rpc] connecting to nsqd
+[game.cn.2 I 260403 05:53:53  writer:110] starting writer...
+[game.cn.2 I 260403 05:53:53  writer:189] [127.0.0.1:4150] connecting to nsqd
+[game.cn.2 W 260403 05:53:53  reader:508] [127.0.0.1:4150:RESP-c_game.cn.2:0global_1rpc] max RDY count 2500 < reader max in flight 10000, truncation possible
+[game.cn.2 I 260403 05:53:54  session:87] localtime 2026-04-03 05:53:54.552161 servertime 2026-04-03 13:53:54.552161
+[game.cn.2 I 260403 05:53:54  server:248] initGM OK
+[game.cn.2 I 260403 05:53:54  servrecord:52] ObjectServerGlobalRecord.half_period_keys {}
+[game.cn.2 I 260403 05:53:54  server:709] CrossUnionQA Round closed
+[game.cn.2 I 260403 05:53:54  server:252] initServerGlobal OK
+[game.cn.2 I 260403 05:53:54  server:256] VIPLevelMax 20
+[game.cn.2 I 260403 05:53:54  card:305] [StarSkillAttr] Loading card_star_skill_attr.csv...
+[game.cn.2 I 260403 05:53:54  card:340] [StarSkillAttr] Loaded 3000 entries into StarSkillAttrCache
+[game.cn.2 I 260403 05:54:00  yyhuodong:8803] RoundFlop GrandPrizeMap loaded: [23601]
+[game.cn.2 I 260403 05:54:00  huodong:395] delta 1 金币副本 True 15:06:05.447839
+[game.cn.2 I 260403 05:54:00  huodong:395] delta 2 经验副本 True 15:06:05.447839
+[game.cn.2 I 260403 05:54:00  huodong:395] delta 3 礼物副本 True 15:06:05.447839
+[game.cn.2 I 260403 05:54:00  huodong:395] delta 4 碎片副本 True 15:06:05.447839
+[game.cn.2 I 260403 05:54:00  huodong:395] delta 20 契约副本 True 10:06:05.447839
+[game.cn.2 I 260403 05:54:00  yyhuodong:10125] delta 1 宝芙蕾 False 16:06:05.447839
+[game.cn.2 I 260403 05:54:00  yyhuodong:10125] delta 2 宝芙蕾 True 1:06:05.447839
+[game.cn.2 I 260403 05:54:00  yyhuodong:10125] delta 3 宝芙蕾 False 4:06:05.447839
+[game.cn.2 I 260403 05:54:00  yyhuodong:10125] delta 4 宝芙蕾 False 7:06:05.447839
+[game.cn.2 I 260403 05:54:00  yyhuodong:10125] delta 5 宝芙蕾 True 26570 days, 15:06:05.447839
+[game.cn.2 I 260403 05:54:00  yyhuodong:10125] delta 7 每日登陆奖励 True 26570 days, 15:06:05.447839
+[game.cn.2 I 260403 05:54:00  yyhuodong:10125] delta 11 月卡 True 15:06:05.447839
+[game.cn.2 I 260403 05:54:00  yyhuodong:10125] delta 12 至尊月卡 True 15:06:05.447839
+[game.cn.2 I 260403 05:54:00  yyhuodong:10125] delta 21 正式-梦幻海报 True 26570 days, 15:06:05.447839
+[game.cn.2 I 260403 05:54:00  yyhuodong:10125] delta 23 正式-限时礼包 True 26570 days, 15:06:05.447839
+[game.cn.2 I 260403 05:54:00  yyhuodong:10125] delta 24 登录送十连抽 True 26570 days, 15:06:05.447839
+[game.cn.2 I 260403 05:54:00  yyhuodong:10125] delta 35 开服嘉年华 True 26570 days, 15:06:05.447839
+[game.cn.2 I 260403 05:54:00  yyhuodong:10125] delta 40 直购礼包 True 26570 days, 15:06:05.447839
+[game.cn.2 I 260403 05:54:00  yyhuodong:10125] delta 41 直购礼包 True 26570 days, 15:06:05.447839
+[game.cn.2 I 260403 05:54:00  yyhuodong:10125] delta 75 新手福利 True 26570 days, 15:06:05.447839
+[game.cn.2 I 260403 05:54:00  yyhuodong:10125] delta 106 金币副本次数增加 True 26570 days, 15:06:05.447839
+[game.cn.2 I 260403 05:54:00  yyhuodong:10125] delta 107 冒险之路扫荡双倍 True 26570 days, 15:06:05.447839
+[game.cn.2 I 260403 05:54:00  yyhuodong:10125] delta 108 礼物副本次数增加 True 26570 days, 15:06:05.447839
+[game.cn.2 I 260403 05:54:00  yyhuodong:10125] delta 109 碎片副本次数增加 True 26570 days, 15:06:05.447839
+[game.cn.2 I 260403 05:54:00  yyhuodong:10125] delta 110 金币副本双倍掉落 True 26570 days, 15:06:05.447839
+[game.cn.2 I 260403 05:54:00  yyhuodong:10125] delta 111 礼物副本双倍掉落 True 26570 days, 15:06:05.447839
+[game.cn.2 I 260403 05:54:00  yyhuodong:10125] delta 112 普通关卡双倍掉落 True 26570 days, 15:06:05.447839
+[game.cn.2 I 260403 05:54:00  yyhuodong:10125] delta 113 困难关卡双倍掉落 True 26570 days, 15:06:05.447839
+[game.cn.2 I 260403 05:54:00  yyhuodong:10125] delta 114 聚宝双倍 True 26570 days, 15:06:05.447839
+[game.cn.2 I 260403 05:54:00  yyhuodong:10125] delta 115 体力购买双倍 True 26570 days, 15:06:05.447839
+[game.cn.2 I 260403 05:54:00  yyhuodong:10125] delta 116 以太乐园金币双倍 True 26570 days, 15:06:05.447839
+[game.cn.2 I 260403 05:54:00  yyhuodong:10125] delta 117 金币副本次数增加 True 26570 days, 15:06:05.447839
+[game.cn.2 I 260403 05:54:00  yyhuodong:10125] delta 118 冒险之路扫荡双倍 True 26570 days, 15:06:05.447839
+[game.cn.2 I 260403 05:54:00  yyhuodong:10125] delta 119 礼物副本次数增加 True 26570 days, 15:06:05.447839
+[game.cn.2 I 260403 05:54:00  yyhuodong:10125] delta 120 聚宝双倍 True 26570 days, 15:06:05.447839
+[game.cn.2 I 260403 05:54:00  yyhuodong:10125] delta 121 碎片副本次数增加 True 26570 days, 15:06:05.447839
+[game.cn.2 I 260403 05:54:00  yyhuodong:10125] delta 122 金币副本双倍掉落 True 26570 days, 15:06:05.447839
+[game.cn.2 I 260403 05:54:00  yyhuodong:10125] delta 123 礼物副本双倍掉落 True 26570 days, 15:06:05.447839
+[game.cn.2 I 260403 05:54:00  yyhuodong:10125] delta 124 普通关卡双倍掉落 True 26570 days, 15:06:05.447839
+[game.cn.2 I 260403 05:54:00  yyhuodong:10125] delta 125 困难关卡双倍掉落 True 26570 days, 15:06:05.447839
+[game.cn.2 I 260403 05:54:00  yyhuodong:10125] delta 126 体力购买双倍 True 26570 days, 15:06:05.447839
+[game.cn.2 I 260403 05:54:00  yyhuodong:10125] delta 127 以太乐园金币双倍 True 26570 days, 15:06:05.447839
+[game.cn.2 I 260403 05:54:00  yyhuodong:10125] delta 131 纸飞机掉落 True 26570 days, 15:06:05.447839
+[game.cn.2 I 260403 05:54:00  yyhuodong:10125] delta 132 纸飞机兑换 True 26570 days, 15:06:05.447839
+[game.cn.2 I 260403 05:54:00  yyhuodong:10125] delta 133 限时掉落六一 True 26570 days, 15:06:05.447839
+[game.cn.2 I 260403 05:54:00  yyhuodong:10125] delta 100101 口袋新纪元重磅福利 True 26570 days, 15:06:05.447839
+[game.cn.2 I 260403 05:54:00  yyhuodong:10125] delta 100102 口袋新纪元重磅福利 True 26570 days, 15:06:05.447839
+[game.cn.2 I 260403 05:54:00  yyhuodong:10125] delta 100103 口袋新纪元重磅福利 True 26570 days, 15:06:05.447839
+[game.cn.2 I 260403 05:54:00  yyhuodong:10125] delta 100104 口袋新纪元重磅福利 True 26570 days, 15:06:05.447839
+[game.cn.2 I 260403 05:54:00  yyhuodong:10125] delta 100105 口袋新纪元重磅福利 True 26570 days, 15:06:05.447839
+[game.cn.2 I 260403 05:54:00  yyhuodong:10125] delta 100106 口袋新纪元重磅福利 True 26570 days, 15:06:05.447839
+[game.cn.2 I 260403 05:54:00  yyhuodong:10125] delta 100107 口袋新纪元重磅福利 True 26570 days, 15:06:05.447839
+[game.cn.2 I 260403 05:54:00  yyhuodong:10125] delta 100108 口袋新纪元重磅福利 True 26570 days, 15:06:05.447839
+[game.cn.2 I 260403 05:54:00  yyhuodong:10125] delta 100109 口袋新纪元重磅福利 True 26570 days, 15:06:05.447839
+[game.cn.2 I 260403 05:54:00  yyhuodong:10125] delta 100110 口袋新纪元重磅福利 True 26570 days, 15:06:05.447839
+[game.cn.2 I 260403 05:54:00  yyhuodong:10125] delta 100302 首充活动 True 26570 days, 15:06:05.447839
+[game.cn.2 I 260403 05:54:00  yyhuodong:10125] delta 100303 首充活动 True 26570 days, 15:06:05.447839
+[game.cn.2 I 260403 05:54:00  yyhuodong:10125] delta 100402 每日特惠 True 26570 days, 15:06:05.447839
+[game.cn.2 I 260403 05:54:00  yyhuodong:10125] delta 100406 限定形象 True 26570 days, 15:06:05.447839
+[game.cn.2 I 260403 05:54:00  yyhuodong:10125] delta 100409 助战商店 True 26570 days, 15:06:05.447839
+[game.cn.2 I 260403 05:54:00  yyhuodong:10125] delta 100410 携带商城 True 26570 days, 15:06:05.447839
+[game.cn.2 I 260403 05:54:00  yyhuodong:10125] delta 100411 精灵商城 True 26570 days, 15:06:05.447839
+[game.cn.2 I 260403 05:54:00  yyhuodong:10125] delta 100412 超进化商城 True 26570 days, 15:06:05.447839
+[game.cn.2 I 260403 05:54:00  yyhuodong:10125] delta 100504 勇者挑战 True 26570 days, 15:06:05.447839
+[game.cn.2 I 260403 05:54:00  yyhuodong:10125] delta 100505 礼券商店 True 26570 days, 15:06:05.447839
+[game.cn.2 I 260403 05:54:00  yyhuodong:10125] delta 101007 护符精华兑换 True 26570 days, 15:06:05.447839
+[game.cn.2 I 260403 05:54:00  yyhuodong:10125] delta 101008 护符兑换 True 26570 days, 15:06:05.447839
+[game.cn.2 I 260403 05:54:00  yyhuodong:10125] delta 101009 特殊兑换 True 26570 days, 15:06:05.447839
+[game.cn.2 I 260403 05:54:00  yyhuodong:10125] delta 101603 永久充值回馈 True 26570 days, 15:06:05.447839
+[game.cn.2 I 260403 05:54:00  yyhuodong:10125] delta 101614 每日充值回馈 True 26570 days, 15:06:05.447839
+[game.cn.2 I 260403 05:54:00  yyhuodong:10125] delta 102001 携带兑换 True 245 days, 15:06:05.447839
+[game.cn.2 I 260403 05:54:00  yyhuodong:10125] delta 102002 助战兑换 True 26570 days, 15:06:05.447839
+[game.cn.2 I 260403 05:54:00  yyhuodong:10125] delta 102003 助战兑换 True 26570 days, 15:06:05.447839
+[game.cn.2 I 260403 05:54:00  session:561] _huodongRefresh 10:06:05.447839; 1:06:05.447839
+[game.cn.2 I 260403 05:54:01  server:260] initAllClass OK
+[game.cn.2 I 260403 05:54:01  server:264] initMail OK
+[game.cn.2 I 260403 05:54:01  server:623] Union count:0
+[game.cn.2 I 260403 05:54:01  server:268] initUnion OK
+[game.cn.2 I 260403 05:54:01  server:272] initRank OK
+[game.cn.2 I 260403 05:54:01  server:276] initShop OK
+[game.cn.2 I 260403 05:54:01  server:280] initMessage OK
+[game.cn.2 I 260403 05:54:01  server:765] Society RoleCache Size: 0
+[game.cn.2 I 260403 05:54:01  server:284] initSociety OK
+[game.cn.2 I 260403 05:54:01  craft:214] Craft Init AutoSign Roles 0
+[game.cn.2 I 260403 05:54:01  server:785] Craft Before Init Status signup
+[game.cn.2 W 260403 05:54:01  craft:347] Craft already in signup
+[game.cn.2 I 260403 05:54:01  server:799] Craft Now Status signup
+[game.cn.2 I 260403 05:54:01  server:288] initCraft OK
+[game.cn.2 I 260403 05:54:02  union_fight:309] UnionFight Init AutoSign Roles 0
+[game.cn.2 I 260403 05:54:02  server:1022] UnionFight Last AwardTime 0, opendate 2025-07-24 05:00:00
+[game.cn.2 I 260403 05:54:02  union_fight:288] ObjectUnionFightGlobal.onStartSignUp
+[game.cn.2 I 260403 05:54:02  server:1033] UnionFight Now Status signup
+[game.cn.2 I 260403 05:54:02  server:292] initUnionFight OK
+[game.cn.2 I 260403 05:54:02  server:832] Cross Craft Befroe Init  0 signup 0
+[game.cn.2 I 260403 05:54:02  cross_craft:148] Cross Craft Reset  0 closed
+[game.cn.2 I 260403 05:54:02  server:841] game.cn.2 Cross Craft key: , Cross Craft Now Status closed
+[game.cn.2 I 260403 05:54:02  cross_craft:169] Cross Craft Init AutoSign Roles 0
+[game.cn.2 I 260403 05:54:02  server:296] initCrossCraft OK
+[game.cn.2 I 260403 05:54:02  server:300] initEndlessTower OK
+[game.cn.2 I 260403 05:54:02  server:1083] game.cn.2 Cross OnlineFight key: , Cross OnlineFight Now Status closed
+[game.cn.2 I 260403 05:54:02  server:304] initCrossOnlineFight OK
+[game.cn.2 I 260403 05:54:02  server:868] game.cn.2 Cross Arena key: , Now Status closed
+[game.cn.2 I 260403 05:54:02  server:308] initCrossArena OK
+[game.cn.2 I 260403 05:54:02  server:893] game.cn.2 Cross Supremacy key: , Now Status closed
+[game.cn.2 I 260403 05:54:02  server:312] initCrossSupremacy OK
+[game.cn.2 I 260403 05:54:02  cross_fishing:170] Cross fishing Init crossfishing.cn.1 20260403 start
+[game.cn.2 I 260403 05:54:02  server:918] game.cn.2 Cross fishing key: crossfishing.cn.1, Cross fishing Now Status start
+[game.cn.2 I 260403 05:54:02  server:316] initCrossFishing OK
+[game.cn.2 I 260403 05:54:02  server:944] game.cn.2 Cross mimicry key: , Cross mimicry Now Status closed
+[game.cn.2 I 260403 05:54:02  server:320] initCrossMimicry OK
+[game.cn.2 I 260403 05:54:02  server:970] game.cn.2 Cross auto chess key: , Cross auto chess Now Status closed
+[game.cn.2 I 260403 05:54:02  server:324] initCrossAutoChess OK
+[game.cn.2 I 260403 05:54:02  server:1003] game.cn.2 Cross town party waiting for match, round=closed
+[game.cn.2 I 260403 05:54:02  server:328] initCrossTownParty OK
+[game.cn.2 I 260403 05:54:02  gym:266] ObjectGymGameGlobal.initCrossData
+[game.cn.2 I 260403 05:54:02  server:1059] game.cn.2 Cross Gym key: , Gym Now Status start
+[game.cn.2 I 260403 05:54:02  server:332] initGym OK
+[game.cn.2 I 260403 05:54:02  server:1109] game.cn.2 Cross Mine key: , Now Status closed
+[game.cn.2 I 260403 05:54:02  server:336] initCrossMine OK
+[game.cn.2 I 260403 05:54:02  server:1135] game.cn.2 Cross Union Fight key: , Now Status closed
+[game.cn.2 I 260403 05:54:02  server:340] initCrossUnionFight OK
+[game.cn.2 I 260403 05:54:02  server:367] [game.cn.2] Game Server Start OK
+[game.cn.2 I 260403 05:54:02  reader:235] [REQ-game.cn.2:rpc] starting reader for REQ-game.cn.2/rpc...
+[game.cn.2 I 260403 05:54:02  reader:490] [127.0.0.1:4150:REQ-game.cn.2:rpc] connecting to nsqd
+[game.cn.2 I 260403 05:54:02  reader:235] [CrossMatchServerCheck:game.cn.2] starting reader for CrossMatchServerCheck/game.cn.2...
+[game.cn.2 I 260403 05:54:02  reader:490] [127.0.0.1:4150:CrossMatchServerCheck:game.cn.2] connecting to nsqd
+[game.cn.2 W 260403 05:54:02  reader:508] [127.0.0.1:4150:REQ-game.cn.2:rpc] max RDY count 2500 < reader max in flight 10000, truncation possible
+[game.cn.2 W 260403 05:54:02  reader:508] [127.0.0.1:4150:CrossMatchServerCheck:game.cn.2] max RDY count 2500 < reader max in flight 10000, truncation possible
+[game.cn.2 I 260403 05:54:02  rpc:2137] game.cn.2 openDays 266
+[game.cn.2 I 260403 05:58:52  rpc:2137] game.cn.2 openDays 266
+[game.cn.2 I 260403 06:00:59  server:411] [game.cn.2] Game Server onShutdown ...
+[game.cn.2 I 260403 06:00:59  server:372] [game.cn.2] Game Server Session clear over, left 0
+[game.cn.2 I 260403 06:00:59  server:375] [game.cn.2] Game Server MailJoinableQueue join over, left 0
+[game.cn.2 I 260403 06:00:59  server:378] [game.cn.2] Game Server DBJoinableQueue join over, left 0
+[game.cn.2 I 260403 06:00:59  server:372] [game.cn.2] Game Server Session clear over, left 0
+[game.cn.2 I 260403 06:00:59  server:375] [game.cn.2] Game Server MailJoinableQueue join over, left 0
+[game.cn.2 I 260403 06:00:59  server:378] [game.cn.2] Game Server DBJoinableQueue join over, left 0
+[game.cn.2 I 260403 06:00:59  server:402] [game.cn.2] Game Server close PVP Server over
+[game.cn.2 I 260403 06:00:59  server:435] [game.cn.2] Game Server 29002 closed
+[game.cn.2 I 260403 06:00:59  server:447] [game.cn.2] Game Server run loop stop
+It is release mode!
+Server UTC 8:00:00 Local UTC 00:00:00 Delta 0:00:00
+who set error ID, 0 0 <class 'cn_config_csv.__csv_scene_conf_'>
+who set error ID, 0 0 <class 'cn_config_csv.__csv_talent_cost_'>
+who set error ID, 0 0 <class 'cn_config_csv.__csv_base_attribute__skill_level_'>
+who set error ID, 0 0 <class 'cn_config_csv.__csv_base_attribute__equip_star_'>
+who set error ID, 0 0 <class 'cn_config_csv.__csv_base_attribute__equip_awake_'>
+who set error ID, 0 0 <class 'cn_config_csv.__csv_base_attribute__equip_ability_'>
+who set error ID, 0 0 <class 'cn_config_csv.__csv_base_attribute__equip_signet_'>
+who set error ID, 0 0 <class 'cn_config_csv.__csv_base_attribute__equip_signet_advance_cost_'>
+who set error ID, 0 0 <class 'cn_config_csv.__csv_base_attribute__equip_awake_ability_'>
+who set error ID, 0 0 <class 'cn_config_csv.__csv_gym__talent_cost_'>
+[game.cn.2] Server 29002 running ...
+MailJoinableQueue joining 0
+DBJoinableQueue joining 0
+MailJoinableQueue joining 0
+DBJoinableQueue joining 0
+[game.cn.2 I 260403 06:01:03  patch:26] patch_framework ok !
+[game.cn.2 W 260403 06:01:03  __init__:130] url /yy/rmbgold/return nonstandard
+[game.cn.2 W 260403 06:01:03  __init__:130] url /cross/mine/boss/times/buy nonstandard
+[game.cn.2 W 260403 06:01:03  __init__:130] url /cross/mine/buff/feed nonstandard
+[game.cn.2 W 260403 06:01:03  __init__:130] url /cross/mine/times/buy nonstandard
+[game.cn.2 W 260403 06:01:03  __init__:130] url /unionadventure/input nonstandard
+[game.cn.2 W 260403 06:01:03  __init__:130] url /town/adventure/done nonstandard
+[game.cn.2 W 260403 06:01:03  __init__:130] url /town/adventure/recall nonstandard
+[game.cn.2 W 260403 06:01:03  __init__:130] url /town/adventure/setout nonstandard
+[game.cn.2 W 260403 06:01:03  __init__:130] url /town/adventure/task/award nonstandard
+[game.cn.2 W 260403 06:01:03  __init__:130] url /town/building/finish/atonce nonstandard
+[game.cn.2 W 260403 06:01:03  __init__:130] url /town/building/level/up nonstandard
+[game.cn.2 W 260403 06:01:03  __init__:130] url /town/building/refresh nonstandard
+[game.cn.2 W 260403 06:01:03  __init__:130] url /town/continuous/card/place nonstandard
+[game.cn.2 W 260403 06:01:03  __init__:130] url /town/continuous/card/remove nonstandard
+[game.cn.2 W 260403 06:01:03  __init__:130] url /town/continuous/receive nonstandard
+[game.cn.2 W 260403 06:01:03  __init__:130] url /town/explorer/skill/upgrade nonstandard
+[game.cn.2 W 260403 06:01:03  __init__:130] url /town/get nonstandard
+[game.cn.2 W 260403 06:01:03  __init__:130] url /town/home/card/remove nonstandard
+[game.cn.2 W 260403 06:01:03  __init__:130] url /town/home/card/rest nonstandard
+[game.cn.2 W 260403 06:01:03  __init__:130] url /town/home/layout/apply nonstandard
+[game.cn.2 W 260403 06:01:03  __init__:130] url /town/home/layout/delete nonstandard
+[game.cn.2 W 260403 06:01:03  __init__:130] url /town/home/layout/rename nonstandard
+[game.cn.2 W 260403 06:01:03  __init__:130] url /town/home/layout/save nonstandard
+[game.cn.2 W 260403 06:01:03  __init__:130] url /town/home/layout/update nonstandard
+[game.cn.2 W 260403 06:01:03  __init__:130] url /town/home/rename nonstandard
+[game.cn.2 W 260403 06:01:03  __init__:130] url /town/home/shop/buy nonstandard
+[game.cn.2 W 260403 06:01:03  __init__:130] url /town/order/cancel nonstandard
+[game.cn.2 W 260403 06:01:03  __init__:130] url /town/order/card/place nonstandard
+[game.cn.2 W 260403 06:01:03  __init__:130] url /town/order/card/remove nonstandard
+[game.cn.2 W 260403 06:01:03  __init__:130] url /town/order/place nonstandard
+[game.cn.2 W 260403 06:01:03  __init__:130] url /town/order/receive nonstandard
+[game.cn.2 W 260403 06:01:03  __init__:130] url /town/relic/buff/refresh nonstandard
+[game.cn.2 I 260403 06:01:03  server:123] GameServOpenDatetime 2025-07-11 10:00:00
+[game.cn.2 I 260403 06:01:04  thinkingdata:40] tjta init, path /mnt/logbus_data/game.cn.2
+[game.cn.2 I 260403 06:01:04  server:155] dependent ['anticheat', 'chat_monitor', 'giftdb.cn.1', 'card_comment.cn.1', 'card_score.cn.1', 'storage.cn.2', 'arena.cn.2', 'union.cn.2', 'craft.cn.2', 'clone.cn.2', 'pvp.cn.2', 'union_fight.cn.2', 'yyhuodong.cn.2', 'card_fight.cn.2', 'gym.cn.2', 'hunting.cn.2']
+[game.cn.2 I 260403 06:01:04  writer:110] starting writer...
+[game.cn.2 I 260403 06:01:04  writer:189] [127.0.0.1:4150] connecting to nsqd
+[game.cn.2 I 260403 06:01:04  reader:235] [RESP-c_game.cn.2:0global_1rpc] starting reader for RESP-c_game.cn.2/0global_1rpc...
+[game.cn.2 I 260403 06:01:04  reader:490] [127.0.0.1:4150:RESP-c_game.cn.2:0global_1rpc] connecting to nsqd
+[game.cn.2 I 260403 06:01:04  writer:110] starting writer...
+[game.cn.2 I 260403 06:01:04  writer:189] [127.0.0.1:4150] connecting to nsqd
+[game.cn.2 W 260403 06:01:04  reader:508] [127.0.0.1:4150:RESP-c_game.cn.2:0global_1rpc] max RDY count 2500 < reader max in flight 10000, truncation possible
+[game.cn.2 I 260403 06:01:05  session:87] localtime 2026-04-03 06:01:05.206005 servertime 2026-04-03 14:01:05.206005
+[game.cn.2 I 260403 06:01:05  server:248] initGM OK
+[game.cn.2 I 260403 06:01:05  servrecord:52] ObjectServerGlobalRecord.half_period_keys {}
+[game.cn.2 I 260403 06:01:05  server:252] initServerGlobal OK
+[game.cn.2 I 260403 06:01:05  server:256] VIPLevelMax 20
+[game.cn.2 I 260403 06:01:05  card:305] [StarSkillAttr] Loading card_star_skill_attr.csv...
+[game.cn.2 I 260403 06:01:05  card:340] [StarSkillAttr] Loaded 3000 entries into StarSkillAttrCache
+[game.cn.2 I 260403 06:01:10  yyhuodong:8803] RoundFlop GrandPrizeMap loaded: [23601]
+[game.cn.2 I 260403 06:01:10  huodong:395] delta 1 金币副本 True 14:58:54.793995
+[game.cn.2 I 260403 06:01:10  huodong:395] delta 2 经验副本 True 14:58:54.793995
+[game.cn.2 I 260403 06:01:10  huodong:395] delta 3 礼物副本 True 14:58:54.793995
+[game.cn.2 I 260403 06:01:10  huodong:395] delta 4 碎片副本 True 14:58:54.793995
+[game.cn.2 I 260403 06:01:10  huodong:395] delta 20 契约副本 True 9:58:54.793995
+[game.cn.2 I 260403 06:01:10  yyhuodong:10125] delta 1 宝芙蕾 False 15:58:54.793995
+[game.cn.2 I 260403 06:01:10  yyhuodong:10125] delta 2 宝芙蕾 True 0:58:54.793995
+[game.cn.2 I 260403 06:01:10  yyhuodong:10125] delta 3 宝芙蕾 False 3:58:54.793995
+[game.cn.2 I 260403 06:01:10  yyhuodong:10125] delta 4 宝芙蕾 False 6:58:54.793995
+[game.cn.2 I 260403 06:01:10  yyhuodong:10125] delta 5 宝芙蕾 True 26570 days, 14:58:54.793995
+[game.cn.2 I 260403 06:01:10  yyhuodong:10125] delta 7 每日登陆奖励 True 26570 days, 14:58:54.793995
+[game.cn.2 I 260403 06:01:10  yyhuodong:10125] delta 11 月卡 True 14:58:54.793995
+[game.cn.2 I 260403 06:01:10  yyhuodong:10125] delta 12 至尊月卡 True 14:58:54.793995
+[game.cn.2 I 260403 06:01:10  yyhuodong:10125] delta 21 正式-梦幻海报 True 26570 days, 14:58:54.793995
+[game.cn.2 I 260403 06:01:10  yyhuodong:10125] delta 23 正式-限时礼包 True 26570 days, 14:58:54.793995
+[game.cn.2 I 260403 06:01:10  yyhuodong:10125] delta 24 登录送十连抽 True 26570 days, 14:58:54.793995
+[game.cn.2 I 260403 06:01:10  yyhuodong:10125] delta 35 开服嘉年华 True 26570 days, 14:58:54.793995
+[game.cn.2 I 260403 06:01:10  yyhuodong:10125] delta 40 直购礼包 True 26570 days, 14:58:54.793995
+[game.cn.2 I 260403 06:01:10  yyhuodong:10125] delta 41 直购礼包 True 26570 days, 14:58:54.793995
+[game.cn.2 I 260403 06:01:10  yyhuodong:10125] delta 75 新手福利 True 26570 days, 14:58:54.793995
+[game.cn.2 I 260403 06:01:10  yyhuodong:10125] delta 106 金币副本次数增加 True 26570 days, 14:58:54.793995
+[game.cn.2 I 260403 06:01:10  yyhuodong:10125] delta 107 冒险之路扫荡双倍 True 26570 days, 14:58:54.793995
+[game.cn.2 I 260403 06:01:10  yyhuodong:10125] delta 108 礼物副本次数增加 True 26570 days, 14:58:54.793995
+[game.cn.2 I 260403 06:01:10  yyhuodong:10125] delta 109 碎片副本次数增加 True 26570 days, 14:58:54.793995
+[game.cn.2 I 260403 06:01:10  yyhuodong:10125] delta 110 金币副本双倍掉落 True 26570 days, 14:58:54.793995
+[game.cn.2 I 260403 06:01:10  yyhuodong:10125] delta 111 礼物副本双倍掉落 True 26570 days, 14:58:54.793995
+[game.cn.2 I 260403 06:01:10  yyhuodong:10125] delta 112 普通关卡双倍掉落 True 26570 days, 14:58:54.793995
+[game.cn.2 I 260403 06:01:10  yyhuodong:10125] delta 113 困难关卡双倍掉落 True 26570 days, 14:58:54.793995
+[game.cn.2 I 260403 06:01:10  yyhuodong:10125] delta 114 聚宝双倍 True 26570 days, 14:58:54.793995
+[game.cn.2 I 260403 06:01:10  yyhuodong:10125] delta 115 体力购买双倍 True 26570 days, 14:58:54.793995
+[game.cn.2 I 260403 06:01:10  yyhuodong:10125] delta 116 以太乐园金币双倍 True 26570 days, 14:58:54.793995
+[game.cn.2 I 260403 06:01:10  yyhuodong:10125] delta 117 金币副本次数增加 True 26570 days, 14:58:54.793995
+[game.cn.2 I 260403 06:01:10  yyhuodong:10125] delta 118 冒险之路扫荡双倍 True 26570 days, 14:58:54.793995
+[game.cn.2 I 260403 06:01:10  yyhuodong:10125] delta 119 礼物副本次数增加 True 26570 days, 14:58:54.793995
+[game.cn.2 I 260403 06:01:10  yyhuodong:10125] delta 120 聚宝双倍 True 26570 days, 14:58:54.793995
+[game.cn.2 I 260403 06:01:10  yyhuodong:10125] delta 121 碎片副本次数增加 True 26570 days, 14:58:54.793995
+[game.cn.2 I 260403 06:01:10  yyhuodong:10125] delta 122 金币副本双倍掉落 True 26570 days, 14:58:54.793995
+[game.cn.2 I 260403 06:01:10  yyhuodong:10125] delta 123 礼物副本双倍掉落 True 26570 days, 14:58:54.793995
+[game.cn.2 I 260403 06:01:10  yyhuodong:10125] delta 124 普通关卡双倍掉落 True 26570 days, 14:58:54.793995
+[game.cn.2 I 260403 06:01:10  yyhuodong:10125] delta 125 困难关卡双倍掉落 True 26570 days, 14:58:54.793995
+[game.cn.2 I 260403 06:01:10  yyhuodong:10125] delta 126 体力购买双倍 True 26570 days, 14:58:54.793995
+[game.cn.2 I 260403 06:01:10  yyhuodong:10125] delta 127 以太乐园金币双倍 True 26570 days, 14:58:54.793995
+[game.cn.2 I 260403 06:01:10  yyhuodong:10125] delta 131 纸飞机掉落 True 26570 days, 14:58:54.793995
+[game.cn.2 I 260403 06:01:10  yyhuodong:10125] delta 132 纸飞机兑换 True 26570 days, 14:58:54.793995
+[game.cn.2 I 260403 06:01:10  yyhuodong:10125] delta 133 限时掉落六一 True 26570 days, 14:58:54.793995
+[game.cn.2 I 260403 06:01:10  yyhuodong:10125] delta 100101 口袋新纪元重磅福利 True 26570 days, 14:58:54.793995
+[game.cn.2 I 260403 06:01:10  yyhuodong:10125] delta 100102 口袋新纪元重磅福利 True 26570 days, 14:58:54.793995
+[game.cn.2 I 260403 06:01:10  yyhuodong:10125] delta 100103 口袋新纪元重磅福利 True 26570 days, 14:58:54.793995
+[game.cn.2 I 260403 06:01:10  yyhuodong:10125] delta 100104 口袋新纪元重磅福利 True 26570 days, 14:58:54.793995
+[game.cn.2 I 260403 06:01:10  yyhuodong:10125] delta 100105 口袋新纪元重磅福利 True 26570 days, 14:58:54.793995
+[game.cn.2 I 260403 06:01:10  yyhuodong:10125] delta 100106 口袋新纪元重磅福利 True 26570 days, 14:58:54.793995
+[game.cn.2 I 260403 06:01:10  yyhuodong:10125] delta 100107 口袋新纪元重磅福利 True 26570 days, 14:58:54.793995
+[game.cn.2 I 260403 06:01:10  yyhuodong:10125] delta 100108 口袋新纪元重磅福利 True 26570 days, 14:58:54.793995
+[game.cn.2 I 260403 06:01:10  yyhuodong:10125] delta 100109 口袋新纪元重磅福利 True 26570 days, 14:58:54.793995
+[game.cn.2 I 260403 06:01:10  yyhuodong:10125] delta 100110 口袋新纪元重磅福利 True 26570 days, 14:58:54.793995
+[game.cn.2 I 260403 06:01:10  yyhuodong:10125] delta 100302 首充活动 True 26570 days, 14:58:54.793995
+[game.cn.2 I 260403 06:01:10  yyhuodong:10125] delta 100303 首充活动 True 26570 days, 14:58:54.793995
+[game.cn.2 I 260403 06:01:10  yyhuodong:10125] delta 100402 每日特惠 True 26570 days, 14:58:54.793995
+[game.cn.2 I 260403 06:01:10  yyhuodong:10125] delta 100406 限定形象 True 26570 days, 14:58:54.793995
+[game.cn.2 I 260403 06:01:10  yyhuodong:10125] delta 100409 助战商店 True 26570 days, 14:58:54.793995
+[game.cn.2 I 260403 06:01:10  yyhuodong:10125] delta 100410 携带商城 True 26570 days, 14:58:54.793995
+[game.cn.2 I 260403 06:01:10  yyhuodong:10125] delta 100411 精灵商城 True 26570 days, 14:58:54.793995
+[game.cn.2 I 260403 06:01:10  yyhuodong:10125] delta 100412 超进化商城 True 26570 days, 14:58:54.793995
+[game.cn.2 I 260403 06:01:10  yyhuodong:10125] delta 100504 勇者挑战 True 26570 days, 14:58:54.793995
+[game.cn.2 I 260403 06:01:10  yyhuodong:10125] delta 100505 礼券商店 True 26570 days, 14:58:54.793995
+[game.cn.2 I 260403 06:01:10  yyhuodong:10125] delta 101007 护符精华兑换 True 26570 days, 14:58:54.793995
+[game.cn.2 I 260403 06:01:10  yyhuodong:10125] delta 101008 护符兑换 True 26570 days, 14:58:54.793995
+[game.cn.2 I 260403 06:01:10  yyhuodong:10125] delta 101009 特殊兑换 True 26570 days, 14:58:54.793995
+[game.cn.2 I 260403 06:01:10  yyhuodong:10125] delta 101603 永久充值回馈 True 26570 days, 14:58:54.793995
+[game.cn.2 I 260403 06:01:10  yyhuodong:10125] delta 101614 每日充值回馈 True 26570 days, 14:58:54.793995
+[game.cn.2 I 260403 06:01:10  yyhuodong:10125] delta 102001 携带兑换 True 245 days, 14:58:54.793995
+[game.cn.2 I 260403 06:01:10  yyhuodong:10125] delta 102002 助战兑换 True 26570 days, 14:58:54.793995
+[game.cn.2 I 260403 06:01:10  yyhuodong:10125] delta 102003 助战兑换 True 26570 days, 14:58:54.793995
+[game.cn.2 I 260403 06:01:10  session:561] _huodongRefresh 9:58:54.793995; 0:58:54.793995
+[game.cn.2 I 260403 06:01:11  server:260] initAllClass OK
+[game.cn.2 I 260403 06:01:11  server:264] initMail OK
+[game.cn.2 I 260403 06:01:11  server:623] Union count:0
+[game.cn.2 I 260403 06:01:11  server:268] initUnion OK
+[game.cn.2 I 260403 06:01:11  server:272] initRank OK
+[game.cn.2 I 260403 06:01:11  server:276] initShop OK
+[game.cn.2 I 260403 06:01:11  server:280] initMessage OK
+[game.cn.2 I 260403 06:01:11  server:765] Society RoleCache Size: 0
+[game.cn.2 I 260403 06:01:11  server:284] initSociety OK
+[game.cn.2 I 260403 06:01:11  craft:214] Craft Init AutoSign Roles 0
+[game.cn.2 I 260403 06:01:11  server:785] Craft Before Init Status signup
+[game.cn.2 W 260403 06:01:11  craft:347] Craft already in signup
+[game.cn.2 I 260403 06:01:11  server:799] Craft Now Status signup
+[game.cn.2 I 260403 06:01:11  server:288] initCraft OK
+[game.cn.2 I 260403 06:01:12  union_fight:309] UnionFight Init AutoSign Roles 0
+[game.cn.2 I 260403 06:01:12  server:1022] UnionFight Last AwardTime 0, opendate 2025-07-24 05:00:00
+[game.cn.2 I 260403 06:01:12  union_fight:288] ObjectUnionFightGlobal.onStartSignUp
+[game.cn.2 I 260403 06:01:12  server:1033] UnionFight Now Status signup
+[game.cn.2 I 260403 06:01:12  server:292] initUnionFight OK
+[game.cn.2 I 260403 06:01:12  server:832] Cross Craft Befroe Init  0 signup 0
+[game.cn.2 I 260403 06:01:12  cross_craft:148] Cross Craft Reset  0 closed
+[game.cn.2 I 260403 06:01:12  server:841] game.cn.2 Cross Craft key: , Cross Craft Now Status closed
+[game.cn.2 I 260403 06:01:12  cross_craft:169] Cross Craft Init AutoSign Roles 0
+[game.cn.2 I 260403 06:01:12  server:296] initCrossCraft OK
+[game.cn.2 I 260403 06:01:12  server:300] initEndlessTower OK
+[game.cn.2 I 260403 06:01:12  server:1083] game.cn.2 Cross OnlineFight key: , Cross OnlineFight Now Status closed
+[game.cn.2 I 260403 06:01:12  server:304] initCrossOnlineFight OK
+[game.cn.2 I 260403 06:01:12  server:868] game.cn.2 Cross Arena key: , Now Status closed
+[game.cn.2 I 260403 06:01:12  server:308] initCrossArena OK
+[game.cn.2 I 260403 06:01:12  server:893] game.cn.2 Cross Supremacy key: , Now Status closed
+[game.cn.2 I 260403 06:01:12  server:312] initCrossSupremacy OK
+[game.cn.2 I 260403 06:01:12  cross_fishing:170] Cross fishing Init crossfishing.cn.1 20260403 start
+[game.cn.2 I 260403 06:01:12  server:918] game.cn.2 Cross fishing key: crossfishing.cn.1, Cross fishing Now Status start
+[game.cn.2 I 260403 06:01:12  server:316] initCrossFishing OK
+[game.cn.2 I 260403 06:01:12  server:944] game.cn.2 Cross mimicry key: , Cross mimicry Now Status closed
+[game.cn.2 I 260403 06:01:12  server:320] initCrossMimicry OK
+[game.cn.2 I 260403 06:01:12  server:970] game.cn.2 Cross auto chess key: , Cross auto chess Now Status closed
+[game.cn.2 I 260403 06:01:12  server:324] initCrossAutoChess OK
+[game.cn.2 I 260403 06:01:12  server:1003] game.cn.2 Cross town party waiting for match, round=closed
+[game.cn.2 I 260403 06:01:12  server:328] initCrossTownParty OK
+[game.cn.2 I 260403 06:01:12  gym:266] ObjectGymGameGlobal.initCrossData
+[game.cn.2 I 260403 06:01:12  server:1059] game.cn.2 Cross Gym key: , Gym Now Status start
+[game.cn.2 I 260403 06:01:12  server:332] initGym OK
+[game.cn.2 I 260403 06:01:12  server:1109] game.cn.2 Cross Mine key: , Now Status closed
+[game.cn.2 I 260403 06:01:12  server:336] initCrossMine OK
+[game.cn.2 I 260403 06:01:12  server:1135] game.cn.2 Cross Union Fight key: , Now Status closed
+[game.cn.2 I 260403 06:01:12  server:340] initCrossUnionFight OK
+[game.cn.2 I 260403 06:01:12  server:367] [game.cn.2] Game Server Start OK
+[game.cn.2 I 260403 06:01:12  reader:235] [REQ-game.cn.2:rpc] starting reader for REQ-game.cn.2/rpc...
+[game.cn.2 I 260403 06:01:12  reader:490] [127.0.0.1:4150:REQ-game.cn.2:rpc] connecting to nsqd
+[game.cn.2 I 260403 06:01:12  reader:235] [CrossMatchServerCheck:game.cn.2] starting reader for CrossMatchServerCheck/game.cn.2...
+[game.cn.2 I 260403 06:01:12  reader:490] [127.0.0.1:4150:CrossMatchServerCheck:game.cn.2] connecting to nsqd
+[game.cn.2 W 260403 06:01:12  reader:508] [127.0.0.1:4150:CrossMatchServerCheck:game.cn.2] max RDY count 2500 < reader max in flight 10000, truncation possible
+[game.cn.2 W 260403 06:01:12  reader:508] [127.0.0.1:4150:REQ-game.cn.2:rpc] max RDY count 2500 < reader max in flight 10000, truncation possible
+[game.cn.2 I 260403 06:03:52  rpc:2137] game.cn.2 openDays 266
+[game.cn.2 I 260403 06:08:52  rpc:2137] game.cn.2 openDays 266
+[game.cn.2 I 260403 06:13:52  rpc:2137] game.cn.2 openDays 266
+[game.cn.2 I 260403 06:18:52  rpc:2137] game.cn.2 openDays 266
+[game.cn.2 I 260403 06:23:52  rpc:2137] game.cn.2 openDays 266
+[game.cn.2 I 260403 06:28:52  rpc:2137] game.cn.2 openDays 266

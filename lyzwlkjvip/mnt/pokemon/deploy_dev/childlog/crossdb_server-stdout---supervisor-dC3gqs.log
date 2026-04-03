@@ -1,0 +1,96 @@
+[host_server I 260403 05:53:46.897.001 document.go:151] register document default ok
+[host_server I 260403 05:53:46.906.002 init.go:171] register document ok
+[host_server D 260403 05:53:46.920.003 config.go:49] cwd in /mnt/pokemon/release/storage
+[host_server D 260403 05:53:46.945.004 config.go:23] GetExtend service crossdb.cn.1 &storage.Option{Option:service.Option{Name:"crossdb.cn.1", Alias:[]string(nil), Dependent:[]string(nil)}, MongoDB:"mongodb://root:GpFkU9O24cjhnWco@mongo44:27017/cross_cn_1?authMechanism=SCRAM-SHA-1&authSource=admin", DBName:"cross_cn_1", MGOPoolLimit:0, MGOStats:false}
+[host_server I 260403 05:53:46.950.005 config.go:60] crossdb.cn.1 config in defines.json
+[crossdb.cn.1 I 260403 05:53:46.950.006 main.go:44] &services.Define{ContainerOption:service.ContainerOption{Name:"@crossdb.cn.1", Debug:false, Addr:"", NSQLookupd:"http://127.0.0.1:4161/", Mainnsqd:"", NSQTcpAddresses:[]string{"127.0.0.1:4150"}, Shushu:false, Services:[]service.IOption{(*storage.Option)(0xc0003682a0)}, ServicesRaw:[]json.RawMessage(nil)}}
+[crossdb.cn.1 I 260403 05:53:51.302.009 storage.go:236] connect to mongodb mongodb://root:GpFkU9O24cjhnWco@mongo44:27017/cross_cn_1?authMechanism=SCRAM-SHA-1&authSource=admin cross_cn_1
+[crossdb.cn.1 I 260403 05:53:51.323.013 rpcclient.go:292] create client consumer RESP-c_crossdb.cn.1/0global_1rpc
+[crossdb.cn.1 I 260403 05:53:51.326.014 consumer.go:1175] INF    2 [RESP-c_crossdb.cn.1/0global_1rpc] (127.0.0.1:4150) connecting to nsqd
+[crossdb.cn.1 I 260403 05:53:51.331.015 container.go:259] service crossdb.cn.1 start
+[crossdb.cn.1 I 260403 05:53:51.332.016 container.go:264] container @crossdb.cn.1 start
+[crossdb.cn.1 I 260403 05:53:51.333.018 server.go:29] server start ok
+[crossdb.cn.1 I 260403 05:53:51.334.021 rpcserver.go:349] create server consumer REQ-crossdb.cn.1/rpc
+[crossdb.cn.1 I 260403 05:53:51.338.089 consumer.go:1175] INF    3 [REQ-crossdb.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[crossdb.cn.1 I 260403 05:53:52.488.090 framework.go:534] REQ crossdb.cn.1.DBReadsert 1 [0xc014912d50 0xc0145680e0 0xc0004afaa8]
+[crossdb.cn.1 I 260403 05:53:52.509.091 producer.go:382] INF    4 (127.0.0.1:4150) connecting to nsqd
+[crossdb.cn.1 I 260403 05:53:52.510.092 rpcserver.go:622] RESP crossdb.cn.1.DBReadsert 1 454B -ms
+[crossdb.cn.1 I 260403 05:53:52.513.093 framework.go:534] REQ crossdb.cn.1.DBReadsert 2 [0xc0148d5a40 0xc0146aec68 0xc00055cf18]
+[crossdb.cn.1 I 260403 05:53:52.516.094 rpcserver.go:622] RESP crossdb.cn.1.DBReadsert 2 240B 2.497ms from c_cross.cn.1
+[crossdb.cn.1 I 260403 05:53:52.525.095 framework.go:534] REQ crossdb.cn.1.DBReadBy 3 [0xc0148c6a00 0xc00016e260]
+[crossdb.cn.1 I 260403 05:53:52.531.096 rpcserver.go:622] RESP crossdb.cn.1.DBReadBy 3 170B 5.91ms from c_cross.cn.1
+[crossdb.cn.1 I 260403 05:53:52.561.097 framework.go:534] REQ crossdb.cn.1.DBReadBy 4 [0xc0148c7900 0xc00016e2c8]
+[crossdb.cn.1 I 260403 05:53:52.561.098 rpcserver.go:622] RESP crossdb.cn.1.DBReadBy 4 44B 543µs from c_cross.cn.1
+[crossdb.cn.1 I 260403 05:53:52.577.099 framework.go:534] REQ crossdb.cn.1.DBReadsert 5 [0xc014913d50 0xc014568148 0xc0004afe68]
+[crossdb.cn.1 I 260403 05:53:52.579.100 rpcserver.go:622] RESP crossdb.cn.1.DBReadsert 5 240B 2.001ms from c_cross.cn.1
+[crossdb.cn.1 I 260403 05:53:52.598.101 framework.go:534] REQ crossdb.cn.1.DBReadsert 6 [0xc01489aca0 0xc0145681c8 0xc000762378]
+[crossdb.cn.1 I 260403 05:53:52.600.102 rpcserver.go:622] RESP crossdb.cn.1.DBReadsert 6 228B 2.077ms from c_cross.cn.1
+[crossdb.cn.1 I 260403 05:53:52.624.103 framework.go:534] REQ crossdb.cn.1.DBReadsert 7 [0xc01489bb50 0xc014568228 0xc000762818]
+[crossdb.cn.1 I 260403 05:53:52.626.104 rpcserver.go:622] RESP crossdb.cn.1.DBReadsert 7 131B 1.974ms from c_cross.cn.1
+[crossdb.cn.1 I 260403 05:53:52.649.105 framework.go:534] REQ crossdb.cn.1.DBReadsert 8 [0xc0148aa870 0xc00016e328 0xc0007c8078]
+[crossdb.cn.1 I 260403 05:53:52.652.106 rpcserver.go:622] RESP crossdb.cn.1.DBReadsert 8 396B -ms
+[crossdb.cn.1 I 260403 05:53:52.676.107 framework.go:534] REQ crossdb.cn.1.DBReadBy 9 [0xc01488ce20 0xc0145682f8]
+[crossdb.cn.1 I 260403 05:53:52.678.108 rpcserver.go:622] RESP crossdb.cn.1.DBReadBy 9 188B 2.192ms from c_cross.cn.1
+[crossdb.cn.1 I 260403 05:53:52.699.109 framework.go:534] REQ crossdb.cn.1.DBReadBy 10 [0xc0148b7430 0xc0146aed68]
+[crossdb.cn.1 I 260403 05:53:52.700.110 rpcserver.go:622] RESP crossdb.cn.1.DBReadBy 10 44B 1.553ms from c_cross.cn.1
+[crossdb.cn.1 I 260403 05:53:52.722.111 framework.go:534] REQ crossdb.cn.1.DBReadBy 11 [0xc0148ab270 0xc00016e370]
+[crossdb.cn.1 I 260403 05:53:52.724.112 rpcserver.go:622] RESP crossdb.cn.1.DBReadBy 11 44B 2.221ms from c_cross.cn.1
+[crossdb.cn.1 I 260403 05:53:52.753.113 framework.go:534] REQ crossdb.cn.1.DBReadBy 12 [0xc0148b7b00 0xc0146aed88]
+[crossdb.cn.1 I 260403 05:53:52.756.114 rpcserver.go:622] RESP crossdb.cn.1.DBReadBy 12 151B 3.835ms from c_cross.cn.1
+[crossdb.cn.1 I 260403 05:53:52.772.115 framework.go:534] REQ crossdb.cn.1.DBReadsert 13 [0xc0148ab900 0xc00016e3a0 0xc0007c8568]
+[crossdb.cn.1 I 260403 05:53:52.775.116 rpcserver.go:622] RESP crossdb.cn.1.DBReadsert 13 111B 3.226ms from c_cross.cn.1
+[crossdb.cn.1 I 260403 05:53:52.798.117 framework.go:534] REQ crossdb.cn.1.DBReadBy 14 [0xc01486a340 0xc00016e3f0]
+[crossdb.cn.1 I 260403 05:53:52.800.118 rpcserver.go:622] RESP crossdb.cn.1.DBReadBy 14 242B 1.874ms from c_cross.cn.1
+[crossdb.cn.1 I 260403 05:53:52.824.119 framework.go:534] REQ crossdb.cn.1.DBReadBy 15 [0xc01487b640 0xc0146aee08]
+[crossdb.cn.1 I 260403 05:53:52.824.120 rpcserver.go:622] RESP crossdb.cn.1.DBReadBy 15 44B 476µs from c_cross.cn.1
+[crossdb.cn.1 I 260403 05:53:52.847.121 framework.go:534] REQ crossdb.cn.1.DBReadBy 16 [0xc01486a850 0xc00016e410]
+[crossdb.cn.1 I 260403 05:53:52.849.122 rpcserver.go:622] RESP crossdb.cn.1.DBReadBy 16 44B 2.073ms from c_cross.cn.1
+[crossdb.cn.1 I 260403 05:53:52.872.123 framework.go:534] REQ crossdb.cn.1.DBReadBy 17 [0xc01486afb0 0xc00016e430]
+[crossdb.cn.1 I 260403 05:53:52.873.124 rpcserver.go:622] RESP crossdb.cn.1.DBReadBy 17 44B 622µs from c_cross.cn.1
+[crossdb.cn.1 I 260403 05:53:52.897.125 framework.go:534] REQ crossdb.cn.1.DBReadBy 18 [0xc01485a270 0xc0146aee58]
+[crossdb.cn.1 I 260403 05:53:52.898.126 rpcserver.go:622] RESP crossdb.cn.1.DBReadBy 18 44B 1.421ms from c_cross.cn.1
+[crossdb.cn.1 I 260403 05:54:02.490.127 framework.go:534] REQ crossdb.cn.1.DBUpdate 19 [0xc01486b730 IDHex("69ce84f6c9d6fb04cd54c192") 0xc0148508c0 0xc0007c8ef8]
+[crossdb.cn.1 I 260403 05:54:02.491.128 framework.go:534] REQ crossdb.cn.1.DBUpdate 20 [0xc01486b9a0 IDHex("69cf45c493eec20021b6adb1") 0xc014850ac0 0xc0007c8fb8]
+[crossdb.cn.1 I 260403 05:54:02.493.129 framework.go:534] REQ crossdb.cn.1.DBUpdate 21 [0xc01485a830 IDHex("69ce84f6c9d6fb04cd54c194") 0xc014860b80 0xc00085a928]
+[crossdb.cn.1 I 260403 05:54:02.493.130 framework.go:534] REQ crossdb.cn.1.DBUpdate 22 [0xc01485aaa0 IDHex("69ce84f6c9d6fb04cd54c193") 0xc014860ce0 0xc00085a9c0]
+[crossdb.cn.1 I 260403 05:54:02.495.131 rpcserver.go:622] RESP crossdb.cn.1.DBUpdate 22 44B 2.027ms from c_cross.cn.1
+[crossdb.cn.1 I 260403 05:54:02.495.132 rpcserver.go:622] RESP crossdb.cn.1.DBUpdate 21 44B 2.372ms from c_cross.cn.1
+[crossdb.cn.1 I 260403 05:54:02.495.133 rpcserver.go:622] RESP crossdb.cn.1.DBUpdate 19 44B 6.127ms from c_cross.cn.1
+[crossdb.cn.1 I 260403 05:54:02.497.134 rpcserver.go:622] RESP crossdb.cn.1.DBUpdate 20 44B 6.281ms from c_cross.cn.1
+[crossdb.cn.1 I 260403 05:54:02.515.135 framework.go:534] REQ crossdb.cn.1.DBUpdate 23 [0xc01486bfa0 IDHex("69cf45c493eec20021b6adb2") 0xc0148511c0 0xc0007c91d8]
+[crossdb.cn.1 I 260403 05:54:02.516.136 framework.go:534] REQ crossdb.cn.1.DBUpdate 24 [0xc01488d460 IDHex("69ce84f6c9d6fb04cd54c195") 0xc01488b900 0xc000763150]
+[crossdb.cn.1 I 260403 05:54:02.516.138 rpcserver.go:622] RESP crossdb.cn.1.DBUpdate 24 44B 444µs from c_cross.cn.1
+[crossdb.cn.1 I 260403 05:54:02.516.137 framework.go:534] REQ crossdb.cn.1.DBUpdate 25 [0xc01488d6b0 IDHex("69ce84f6c9d6fb04cd54c196") 0xc01488ba60 0xc000763200]
+[crossdb.cn.1 I 260403 05:54:02.517.139 rpcserver.go:622] RESP crossdb.cn.1.DBUpdate 25 44B 885µs from c_cross.cn.1
+[crossdb.cn.1 I 260403 05:54:02.517.140 rpcserver.go:622] RESP crossdb.cn.1.DBUpdate 23 44B 2.151ms from c_cross.cn.1
+[crossdb.cn.1 I 260403 05:54:02.540.141 framework.go:534] REQ crossdb.cn.1.DBUpdate 26 [0xc014976a90 IDHex("69ce84f6c9d6fb04cd54c197") 0xc014924a00 0xc0006421e8]
+[crossdb.cn.1 I 260403 05:54:02.540.142 rpcserver.go:622] RESP crossdb.cn.1.DBUpdate 26 44B 530µs from c_cross.cn.1
+[crossdb.cn.1 I 260403 05:55:51.344.143 session.go:132] Commit 9 objects, success 9
+[crossdb.cn.1 I 260403 05:57:51.346.144 session.go:132] Commit 9 objects, success 9
+[crossdb.cn.1 I 260403 05:59:02.494.145 framework.go:534] REQ crossdb.cn.1.DBUpdate 27 [0xc01489af40 IDHex("69ce84f6c9d6fb04cd54c197") 0xc01489e920 0xc017754ce8]
+[crossdb.cn.1 I 260403 05:59:02.499.146 rpcserver.go:622] RESP crossdb.cn.1.DBUpdate 27 44B 7.53ms from c_cross.cn.1
+[crossdb.cn.1 I 260403 05:59:51.375.147 session.go:132] Commit 9 objects, success 9
+[crossdb.cn.1 I 260403 06:01:51.375.148 session.go:132] Commit 9 objects, success 9
+[crossdb.cn.1 I 260403 06:03:51.377.149 session.go:132] Commit 9 objects, success 9
+[crossdb.cn.1 I 260403 06:04:02.481.150 framework.go:534] REQ crossdb.cn.1.DBUpdate 28 [0xc01486a340 IDHex("69ce84f6c9d6fb04cd54c197") 0xc014876380 0xc017754e18]
+[crossdb.cn.1 I 260403 06:04:02.482.151 rpcserver.go:622] RESP crossdb.cn.1.DBUpdate 28 44B 1.281ms from c_cross.cn.1
+[crossdb.cn.1 I 260403 06:05:51.405.152 session.go:132] Commit 9 objects, success 9
+[crossdb.cn.1 I 260403 06:07:51.408.153 session.go:132] Commit 9 objects, success 9
+[crossdb.cn.1 I 260403 06:09:02.484.154 framework.go:534] REQ crossdb.cn.1.DBUpdate 29 [0xc01485a6e0 IDHex("69ce84f6c9d6fb04cd54c197") 0xc0148504a0 0xc011c34608]
+[crossdb.cn.1 I 260403 06:09:02.485.155 rpcserver.go:622] RESP crossdb.cn.1.DBUpdate 29 44B 2.542ms from c_cross.cn.1
+[crossdb.cn.1 I 260403 06:09:51.435.156 session.go:132] Commit 9 objects, success 9
+[crossdb.cn.1 I 260403 06:11:51.440.157 session.go:132] Commit 9 objects, success 9
+[crossdb.cn.1 I 260403 06:13:51.450.158 session.go:132] Commit 9 objects, success 9
+[crossdb.cn.1 I 260403 06:14:02.487.159 framework.go:534] REQ crossdb.cn.1.DBUpdate 30 [0xc01489b290 IDHex("69ce84f6c9d6fb04cd54c197") 0xc014876a40 0xc0178d86e8]
+[crossdb.cn.1 I 260403 06:14:02.489.160 rpcserver.go:622] RESP crossdb.cn.1.DBUpdate 30 44B 4.057ms from c_cross.cn.1
+[crossdb.cn.1 I 260403 06:15:51.475.161 session.go:132] Commit 9 objects, success 9
+[crossdb.cn.1 I 260403 06:17:51.479.162 session.go:132] Commit 9 objects, success 9
+[crossdb.cn.1 I 260403 06:19:02.481.163 framework.go:534] REQ crossdb.cn.1.DBUpdate 31 [0xc01489a120 IDHex("69ce84f6c9d6fb04cd54c197") 0xc0148761a0 0xc011c88638]
+[crossdb.cn.1 I 260403 06:19:02.483.164 rpcserver.go:622] RESP crossdb.cn.1.DBUpdate 31 44B 1.885ms from c_cross.cn.1
+[crossdb.cn.1 I 260403 06:19:51.500.165 session.go:132] Commit 9 objects, success 9
+[crossdb.cn.1 I 260403 06:21:51.503.166 session.go:132] Commit 9 objects, success 9
+[crossdb.cn.1 I 260403 06:23:51.510.167 session.go:132] Commit 9 objects, success 9
+[crossdb.cn.1 I 260403 06:24:02.517.168 framework.go:534] REQ crossdb.cn.1.DBUpdate 32 [0xc01486a5a0 IDHex("69ce84f6c9d6fb04cd54c197") 0xc014876340 0xc0178d8828]
+[crossdb.cn.1 I 260403 06:24:02.518.169 rpcserver.go:622] RESP crossdb.cn.1.DBUpdate 32 44B 2.134ms from c_cross.cn.1
+[crossdb.cn.1 I 260403 06:25:51.537.170 session.go:132] Commit 9 objects, success 9
+[crossdb.cn.1 I 260403 06:27:51.538.171 session.go:132] Commit 9 objects, success 9

@@ -1,0 +1,58 @@
+[host_server I 260403 05:53:46.873.001 document.go:151] register document default ok
+[host_server I 260403 05:53:46.889.002 init.go:171] register document ok
+[host_server D 260403 05:53:46.896.003 config.go:49] cwd in /mnt/pokemon/release/storage
+[host_server D 260403 05:53:46.910.004 config.go:23] GetExtend service accountdb.cn.1 &storage.Option{Option:service.Option{Name:"accountdb.cn.1", Alias:[]string{"giftdb.cn.1", "paymentdb.cn.1"}, Dependent:[]string(nil)}, MongoDB:"mongodb://root:GpFkU9O24cjhnWco@mongo44:27017/account?authMechanism=SCRAM-SHA-1&authSource=admin", DBName:"account", MGOPoolLimit:0, MGOStats:false}
+[host_server I 260403 05:53:46.914.005 config.go:60] account.cn.1 config in defines.json
+[account.cn.1 I 260403 05:53:46.914.006 main.go:44] &services.Define{ContainerOption:service.ContainerOption{Name:"@account.cn.1", Debug:false, Addr:"", NSQLookupd:"http://127.0.0.1:4161/", Mainnsqd:"", NSQTcpAddresses:[]string{"127.0.0.1:4150"}, Shushu:false, Services:[]service.IOption{(*storage.Option)(0xc0002d1490)}, ServicesRaw:[]json.RawMessage(nil)}}
+[account.cn.1 I 260403 05:53:51.048.009 storage.go:236] connect to mongodb mongodb://root:GpFkU9O24cjhnWco@mongo44:27017/account?authMechanism=SCRAM-SHA-1&authSource=admin account
+[account.cn.1 I 260403 05:53:51.065.012 container.go:224] alias giftdb.cn.1 to service accountdb.cn.1
+[account.cn.1 I 260403 05:53:51.065.013 container.go:224] alias paymentdb.cn.1 to service accountdb.cn.1
+[account.cn.1 I 260403 05:53:51.078.016 rpcclient.go:292] create client consumer RESP-c_account.cn.1/0global_1rpc
+[account.cn.1 I 260403 05:53:51.079.017 consumer.go:1175] INF    2 [RESP-c_account.cn.1/0global_1rpc] (127.0.0.1:4150) connecting to nsqd
+[account.cn.1 I 260403 05:53:51.084.018 container.go:259] service accountdb.cn.1 start
+[account.cn.1 I 260403 05:53:51.084.019 container.go:264] container @account.cn.1 start
+[account.cn.1 I 260403 05:53:51.084.020 server.go:29] server start ok
+[account.cn.1 I 260403 05:53:51.087.024 rpcserver.go:349] create server consumer REQ-giftdb.cn.1/rpc
+[account.cn.1 I 260403 05:53:51.088.028 rpcserver.go:349] create server consumer REQ-paymentdb.cn.1/rpc
+[account.cn.1 I 260403 05:53:51.088.032 rpcserver.go:349] create server consumer REQ-accountdb.cn.1/rpc
+[account.cn.1 I 260403 05:53:51.089.234 consumer.go:1175] INF    3 [REQ-giftdb.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[account.cn.1 I 260403 05:53:51.090.235 consumer.go:1175] INF    4 [REQ-paymentdb.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[account.cn.1 I 260403 05:53:51.091.236 consumer.go:1175] INF    5 [REQ-accountdb.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[account.cn.1 I 260403 05:53:51.117.237 framework.go:534] REQ accountdb.cn.1.MyPayOrderAll 1 []
+[account.cn.1 I 260403 05:53:51.137.238 rpcserver.go:622] RESP accountdb.cn.1.MyPayOrderAll 1 1B 19.651ms from c_payment.cn.1
+[account.cn.1 I 260403 05:53:51.138.239 producer.go:382] INF    6 (127.0.0.1:4150) connecting to nsqd
+[account.cn.1 I 260403 05:53:51.144.240 framework.go:534] REQ accountdb.cn.1.DBReadBy 2 [0xc01339e200 0xc013d58db8]
+[account.cn.1 I 260403 05:53:51.148.241 rpcserver.go:622] RESP accountdb.cn.1.DBReadBy 2 46B 4.258ms from c_payment.cn.1
+[account.cn.1 I 260403 05:55:13.011.242 framework.go:534] REQ accountdb.cn.1.AccountLogin 3 [0xc01337d170]
+[account.cn.1 I 260403 05:55:13.022.243 rpcserver.go:622] RESP accountdb.cn.1.AccountLogin 3 233B 11.068ms from c_login.cn.1
+[account.cn.1 I 260403 05:55:13.415.244 framework.go:534] REQ accountdb.cn.1.AccountRoleCheckIn 4 [IDHex("69cf509793eec200226c8ed1") 0xc01334f160 0xc00033f100]
+[account.cn.1 I 260403 05:55:13.415.245 rpcserver.go:622] RESP accountdb.cn.1.AccountRoleCheckIn 4 46B 1.161ms from c_login.cn.1
+[account.cn.1 I 260403 05:55:51.102.246 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 05:56:14.648.247 framework.go:534] REQ accountdb.cn.1.AccountLogin 5 [0xc01337c3f0]
+[account.cn.1 I 260403 05:56:14.665.248 rpcserver.go:622] RESP accountdb.cn.1.AccountLogin 5 233B 16.889ms from c_login.cn.1
+[account.cn.1 I 260403 05:56:18.657.249 framework.go:534] REQ accountdb.cn.1.AccountRoleCheckIn 6 [IDHex("69cf509793eec200226c8ed1") 0xc01337d160 0xc0003d6240]
+[account.cn.1 I 260403 05:56:18.657.250 rpcserver.go:622] RESP accountdb.cn.1.AccountRoleCheckIn 6 46B 509µs from c_login.cn.1
+[account.cn.1 I 260403 05:57:51.148.251 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 05:59:51.149.252 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 06:01:31.396.253 framework.go:534] REQ accountdb.cn.1.AccountLogin 7 [0xc01336fe30]
+[account.cn.1 I 260403 06:01:31.409.254 rpcserver.go:622] RESP accountdb.cn.1.AccountLogin 7 233B 13.228ms from c_login.cn.1
+[account.cn.1 I 260403 06:01:32.103.255 framework.go:534] REQ accountdb.cn.1.AccountRoleCheckIn 8 [IDHex("69cf509793eec200226c8ed1") 0xc0133dc660 0xc0003d63c0]
+[account.cn.1 I 260403 06:01:32.103.256 rpcserver.go:622] RESP accountdb.cn.1.AccountRoleCheckIn 8 46B 500µs from c_login.cn.1
+[account.cn.1 I 260403 06:01:51.165.257 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 06:03:51.167.258 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 06:05:51.168.259 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 06:07:51.173.260 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 06:09:51.178.261 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 06:11:51.179.262 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 06:13:51.182.263 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 06:15:42.357.264 framework.go:534] REQ accountdb.cn.1.AccountLogin 9 [0xc0133cf110]
+[account.cn.1 I 260403 06:15:42.384.265 rpcserver.go:622] RESP accountdb.cn.1.AccountLogin 9 233B 27.419ms from c_login.cn.1
+[account.cn.1 I 260403 06:15:45.240.266 framework.go:534] REQ accountdb.cn.1.AccountRoleCheckIn 10 [IDHex("69cf509793eec200226c8ed1") 0xc0133bfad0 0xc000314400]
+[account.cn.1 I 260403 06:15:45.241.267 rpcserver.go:622] RESP accountdb.cn.1.AccountRoleCheckIn 10 46B 1.013ms from c_login.cn.1
+[account.cn.1 I 260403 06:15:51.205.268 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 06:17:51.214.269 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 06:19:51.215.270 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 06:21:51.218.271 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 06:23:51.221.272 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 06:25:51.229.273 session.go:132] Commit 1 objects, success 1
+[account.cn.1 I 260403 06:27:51.233.274 session.go:132] Commit 1 objects, success 1

@@ -1,0 +1,207 @@
+ ※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※
+※                                                                                             ※
+※该源码是本人亲测“可用可搭建” 所有文件和教程都会打包发布，常用工具下拉底部访问链接自行下载    ※
+※                                                                                             ※
+※如果你搭建不了，不好意思，资源并没有问题，自己仔细排查一下是否有漏操作或漏改                 ※
+※                                                                                             ※
+※温馨提示：不管搭建什么之前服务器都要安装所需环境，关闭防火墙，开放所有端口                   ※
+※                                                                                             ※
+※本站教程、资源皆在单机环境进行，仅供单机研究学习使用，请大家不要用于商用                     ※
+※                                                                                             ※
+ ※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※
+
+关闭服务器防火墙，开放所有端口参考：https://www.lyzwlkj.vip/185/hybk/
+
+口袋新世纪 Linux 架设教程
+
+演示系统：CentOS 7.6
+
+演示地址：192.168.1.11
+
+最低配置：8H16G
+
+==============================================================================================
+
+安装宝塔：
+
+yum install -y wget && wget -O install.sh https://download.bt.cn/install/install_6.0.sh && sh install.sh ed8484bec
+
+遇到提示：输入小写y回车确认安装
+
+关闭SSL验证命令：bt 26
+
+查看新的面板地址：bt 14
+
+安装环境：
+
+Nginx 1.22
+MySQL 5.6
+PHP 5.6
+Redis 6.2
+MongoDB 4.4
+
+Linux工具箱【根据自己服务器配置添加适量虚拟内存！】
+
+==============================================================================================
+
+宝塔放行端口：1-65535
+
+关闭防火墙：
+
+systemctl stop firewalld.service
+systemctl disable firewalld.service
+
+==============================================================================================
+
+上传服务端“lyzwlkjvip.zip”到服务器根目录“/”
+
+解压服务端：
+
+cd / && unzip lyzwlkjvip.zip
+
+注：解压服务端之前要确保Nginx环境已经安装成功！
+
+重启Nginx：
+
+/etc/init.d/nginx restart
+
+给777权限：
+
+chmod -R 777 /mnt
+chmod -R 777 /www/wwwroot
+
+==============================================================================================
+
+安装运行环境：
+
+cd /mnt && ./install
+
+PS：到结尾只要没出红字就说明安装成功了！
+
+==============================================================================================
+
+修改服务端IP：// 改 “192.168.1.11”
+
+用命令一键修改：
+
+cd /mnt && ./ip.sh
+
+以下是具体文件修改路径：★★★和上面的命令修改方式二选一★★★
+
+/mnt/pokemon/release/autochess_room/defines.json
+
+/mnt/pokemon/release/online_fight_forward/defines.json
+
+/mnt/pokemon/release/game_defines.py
+
+/mnt/pokemon/release/payment_defines.py
+
+/mnt/pokemon/release/login/defines.json
+
+/mnt/pokemon/release/login/conf/game.json
+
+/mnt/pokemon/release/login/conf/cn/serv.json
+
+/www/wwwroot/game/patch/3/res/version.plist
+
+==============================================================================================
+
+校准文件MD5值和大小：
+
+cd /mnt && ./md5
+
+==============================================================================================
+
+启动游戏：
+
+cd /mnt/pokemon/deploy_dev
+
+rm supervisor.sock
+
+supervisord -c supervisord.conf
+
+supervisorctl start all
+
+注：启动很慢，需要等待10分钟左右，CPU和内存降下来了就可以了！
+
+关闭游戏：
+
+supervisorctl reload
+
+重启游戏：
+
+supervisorctl restart all
+
+==============================================================================================
+
+查询启动：
+
+supervisorctl status
+
+显示如下就是启动成功了：
+
+account_db_server                RUNNING   pid 9236, uptime 2:00:02
+anti_cheat_server                RUNNING   pid 9421, uptime 2:00:00
+autochess_room_server            RUNNING   pid 9251, uptime 2:00:02
+comment_server                   RUNNING   pid 9213, uptime 2:00:02
+commentdb_server                 RUNNING   pid 9208, uptime 2:00:02
+crash_platform_server            RUNNING   pid 8214, uptime 0:00:10
+cross_server                     RUNNING   pid 9183, uptime 2:00:02
+crossdb_server                   RUNNING   pid 9215, uptime 2:00:02
+crosslobby_server                RUNNING   pid 9240, uptime 2:00:02
+disable_word_check_server        RUNNING   pid 9206, uptime 2:00:02
+game_server1                     RUNNING   pid 9254, uptime 2:00:02
+game_server2                     RUNNING   pid 9261, uptime 2:00:02
+gm_server                        RUNNING   pid 9262, uptime 2:00:02
+login_server1                    RUNNING   pid 9272, uptime 2:00:02
+login_server2                    RUNNING   pid 9275, uptime 2:00:02
+mongod                           FATAL     Exited too quickly (process log may have details)
+nsqadmin                         RUNNING   pid 9190, uptime 2:00:02
+nsqd                             RUNNING   pid 9184, uptime 2:00:02
+nsqlookupd                       RUNNING   pid 9191, uptime 2:00:02
+online_fight_forward_server      RUNNING   pid 9422, uptime 2:00:00
+payment_server                   RUNNING   pid 9252, uptime 2:00:02
+pvp_server1                      RUNNING   pid 9250, uptime 2:00:02
+pvp_server2                      RUNNING   pid 9245, uptime 2:00:02
+storage_server1                  RUNNING   pid 9203, uptime 2:00:02
+storage_server2                  RUNNING   pid 9202, uptime 2:00:02
+transfer_daemon                  RUNNING   pid 9280, uptime 2:00:02
+
+
+==============================================================================================
+
+修改客户端IP：
+
+安卓客户端：// 改 “192.168.1.11”
+
+\assets\res\version.plist
+
+苹果客户端：// 改 “192.168.1.11”
+
+\Payload\MyLuaGame-mobile.app\res\version.plist
+
+==============================================================================================
+
+GM授权后台：
+http://IP:81/gm/gm.php
+GM码：lyzwlkj.vip
+
+玩家后台：
+http://IP:81/gm
+
+运营后台：
+http://IP:38088
+登录账号：admin
+登录密码：admin
+
+==============================================================================================
+
+PS：
+
+每日登陆奖励邮件修改：/mnt/pokemon/release/cn_config_csv.py【第17763行以及17779~17788行】
+
+游戏区名修改：/mnt/pokemon/release/login/conf/cn/serv.json
+
+公告修改：/mnt/pokemon/release/login/conf/cn/notice.json
+
+删档：软件商店--已安装--MongoDB 4.4.6--设置--数据库--全部删除

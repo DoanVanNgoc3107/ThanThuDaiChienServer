@@ -1,0 +1,167 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "recreate-docker-lan-stack",
+			"type": "shell",
+			"command": "cd lyzwlkjvip && docker compose -f docker-compose.local.yml down && docker compose -f docker-compose.local.yml up -d --force-recreate",
+			"isBackground": false
+		},
+		{
+			"label": "check-docker-ps",
+			"type": "shell",
+			"command": "cd lyzwlkjvip && docker compose -f docker-compose.local.yml ps",
+			"isBackground": false
+		},
+		{
+			"label": "verify-lan-endpoints",
+			"type": "shell",
+			"command": "cd lyzwlkjvip && echo '[version]' && curl -sS --max-time 8 http://192.168.1.13:18081/version | head -c 300 && echo && echo '[servers]' && curl -sS --max-time 8 http://192.168.1.13:18081/servers | head -c 300 && echo && echo '[patch-head]' && curl -I -sS --max-time 8 http://192.168.1.13:81/patch/ | head -n 5",
+			"isBackground": false
+		},
+		{
+			"label": "verify-lan-http-headers",
+			"type": "shell",
+			"command": "cd lyzwlkjvip && echo '[version-head]' && curl -I -sS --max-time 8 http://192.168.1.13:18081/version | head -n 8 && echo '[servers-head]' && curl -I -sS --max-time 8 http://192.168.1.13:18081/servers | head -n 8 && echo '[patch-version-plist]' && curl -sS --max-time 8 http://192.168.1.13:81/patch/3/res/version.plist | head -n 12 && echo '[gm-head]' && curl -I -sS --max-time 8 http://192.168.1.13:81/gm | head -n 8",
+			"isBackground": false
+		},
+		{
+			"label": "verify-login-port-and-gm",
+			"type": "shell",
+			"command": "cd lyzwlkjvip && echo '[tcp-16666]' && (nc -vz -w 3 192.168.1.13 16666 2>&1 || true) && echo '[tcp-16667]' && (nc -vz -w 3 192.168.1.13 16667 2>&1 || true) && echo '[gm-slash-head]' && curl -I -sS --max-time 8 http://192.168.1.13:81/gm/ | head -n 8",
+			"isBackground": false
+		},
+		{
+			"label": "check-login-endpoints",
+			"type": "shell",
+			"command": "cd lyzwlkjvip && echo '[GET /game/login]' && curl -i -sS --max-time 8 http://192.168.1.13:18081/game/login | head -n 40 && echo '[POST /game/login empty]' && curl -i -sS --max-time 8 -X POST http://192.168.1.13:18081/game/login -H 'Content-Type: application/json' -d '{}' | head -n 60",
+			"isBackground": false
+		},
+		{
+			"label": "tail-login-childlogs",
+			"type": "shell",
+			"command": "cd lyzwlkjvip && ls -1t mnt/pokemon/deploy_dev/childlog/login_server*-stderr* mnt/pokemon/deploy_dev/childlog/login_server*-stdout* 2>/dev/null | head -n 4 | xargs -I{} sh -c 'echo \"===== {} =====\"; tail -n 80 \"{}\"; echo'",
+			"isBackground": false
+		},
+		{
+			"label": "tail-game-childlogs",
+			"type": "shell",
+			"command": "cd lyzwlkjvip && ls -1t mnt/pokemon/deploy_dev/childlog/game_server*-stderr* mnt/pokemon/deploy_dev/childlog/game_server*-stdout* 2>/dev/null | head -n 6 | xargs -I{} sh -c 'echo \"===== {} =====\"; tail -n 80 \"{}\"; echo'",
+			"isBackground": false
+		},
+		{
+			"label": "supervisor-status",
+			"type": "shell",
+			"command": "cd lyzwlkjvip && docker exec pokemon-game-runtime supervisorctl -c /mnt/pokemon/deploy_dev/supervisord.conf status | sed -n '1,120p'",
+			"isBackground": false
+		},
+		{
+			"label": "inspect-loginmap-files",
+			"type": "shell",
+			"command": "cd lyzwlkjvip && ls -la mnt/pokemon/release/loginmap && find mnt/pokemon/release/loginmap -maxdepth 2 -type f | sed -n '1,120p'",
+			"isBackground": false
+		},
+		{
+			"label": "tail-runtime-childlogs-in-container",
+			"type": "shell",
+			"command": "cd lyzwlkjvip && docker exec pokemon-game-runtime sh -lc 'ls -la /mnt/pokemon/deploy_dev/childlog | head -n 80; echo; ls -1t /mnt/pokemon/deploy_dev/childlog | head -n 12; echo; for f in $(ls -1t /mnt/pokemon/deploy_dev/childlog | head -n 8); do echo \"===== $f =====\"; tail -n 80 \"/mnt/pokemon/deploy_dev/childlog/$f\"; echo; done'",
+			"isBackground": false
+		},
+		{
+			"label": "grep-login-errors-in-container",
+			"type": "shell",
+			"command": "cd lyzwlkjvip && docker exec pokemon-game-runtime sh -lc \"grep -RinE 'error|exception|panic|fail|login|network|interrupted' /mnt/pokemon/deploy_dev/childlog | tail -n 120\"",
+			"isBackground": false
+		},
+		{
+			"label": "inspect-lz4-module",
+			"type": "shell",
+			"command": "cd lyzwlkjvip && docker exec pokemon-game-runtime python2 - <<'PY'\nimport lz4\nprint('lz4 module:', lz4)\nprint('lz4 file:', getattr(lz4, '__file__', 'n/a'))\nprint('has uncompress:', hasattr(lz4, 'uncompress'))\nprint('has decompress:', hasattr(lz4, 'decompress'))\nprint('attrs sample:', [x for x in dir(lz4) if x in ('compress','uncompress','decompress','loads','dumps','block','frame')])\ntry:\n    import lz4.block as b\n    print('lz4.block has decompress:', hasattr(b, 'decompress'))\nexcept Exception as e:\n    print('lz4.block import err:', e)\nPY",
+			"isBackground": false
+		},
+		{
+			"label": "inspect-lz4-module-oneliner",
+			"type": "shell",
+			"command": "cd lyzwlkjvip && docker exec pokemon-game-runtime python2 -c \"import lz4;import sys;print('file=%s'%getattr(lz4,'__file__','n/a'));print('uncompress=%s'%hasattr(lz4,'uncompress'));print('decompress=%s'%hasattr(lz4,'decompress'));import lz4.block as b;print('block.decompress=%s'%hasattr(b,'decompress'))\"",
+			"isBackground": false
+		},
+		{
+			"label": "inspect-lz4-compress",
+			"type": "shell",
+			"command": "cd lyzwlkjvip && docker exec pokemon-game-runtime python2 -c \"import lz4;print('compress=%s'%hasattr(lz4,'compress'));import lz4.block as b;print('block.compress=%s'%hasattr(b,'compress'))\"",
+			"isBackground": false
+		},
+		{
+			"label": "restart-game-login-services",
+			"type": "shell",
+			"command": "cd lyzwlkjvip && docker exec pokemon-game-runtime supervisorctl -c /mnt/pokemon/deploy_dev/supervisord.conf restart game_server1 game_server2 login_server1 login_server2 && docker exec pokemon-game-runtime supervisorctl -c /mnt/pokemon/deploy_dev/supervisord.conf status | egrep 'game_server1|game_server2|login_server1|login_server2'",
+			"isBackground": false
+		},
+		{
+			"label": "verify-wnet-lz4-helpers",
+			"type": "shell",
+			"command": "cd lyzwlkjvip && docker exec pokemon-game-runtime python2 - <<'PY'\nfrom framework import wnet\ns='hello'*20\nc=wnet._lz4_compress(s)\nd=wnet._lz4_uncompress(c)\nprint('roundtrip_ok=%s'% (d==s))\nprint('compressed_len=%d original_len=%d'% (len(c), len(s)))\nPY",
+			"isBackground": false
+		},
+		{
+			"label": "tail-game-log-after-restart",
+			"type": "shell",
+			"command": "cd lyzwlkjvip && docker exec pokemon-game-runtime sh -lc 'f=$(ls -1t /mnt/pokemon/deploy_dev/childlog/game_server1-stdout* | head -n 1); echo \"FILE=$f\"; tail -n 120 \"$f\" | egrep -n \"uncompress|Traceback|readBody error|game/login|Start OK|Conn Close\" || true'",
+			"isBackground": false
+		},
+		{
+			"label": "verify-loaded-wnet-module",
+			"type": "shell",
+			"command": "cd lyzwlkjvip && docker exec pokemon-game-runtime sh -lc \"cd /mnt/pokemon/release/src && python2 -c 'import framework.wnet as w; print(w.__file__); print(hasattr(w, \\\"_lz4_uncompress\\\")); print(hasattr(w, \\\"_lz4_compress\\\"))'\"",
+			"isBackground": false
+		},
+		{
+			"label": "tail-fresh-game-log",
+			"type": "shell",
+			"command": "cd lyzwlkjvip && docker exec pokemon-game-runtime sh -lc 'f=$(ls -1t /mnt/pokemon/deploy_dev/childlog/game_server1-stdout* | head -n 1); echo \"FILE=$f\"; tail -n 40 \"$f\"'",
+			"isBackground": false
+		},
+		{
+			"label": "check-new-uncompress-errors",
+			"type": "shell",
+			"command": "cd lyzwlkjvip && docker exec pokemon-game-runtime sh -lc 'f=$(ls -1t /mnt/pokemon/deploy_dev/childlog/game_server1-stdout* | head -n 1); echo \"FILE=$f\"; tail -n 200 \"$f\" | egrep -n \"AttributeError|uncompress|readBody error|/game/login\" || echo \"no recent matching errors\"'",
+			"isBackground": false
+		},
+		{
+			"label": "tail-login1-log",
+			"type": "shell",
+			"command": "cd lyzwlkjvip && docker exec pokemon-game-runtime sh -lc 'f=$(ls -1t /mnt/pokemon/deploy_dev/childlog/login_server1-stdout* | head -n 1); echo \"FILE=$f\"; tail -n 200 \"$f\"'",
+			"isBackground": false
+		},
+		{
+			"label": "tail-login2-log",
+			"type": "shell",
+			"command": "cd lyzwlkjvip && docker exec pokemon-game-runtime sh -lc 'f=$(ls -1t /mnt/pokemon/deploy_dev/childlog/login_server2-stdout* | head -n 1); echo \"FILE=$f\"; tail -n 200 \"$f\"'",
+			"isBackground": false
+		},
+		{
+			"label": "grep-auth-session-errors",
+			"type": "shell",
+			"command": "cd lyzwlkjvip && docker exec pokemon-game-runtime sh -lc \"grep -RinE 'session not existed|auth_error|/game/login|login\\.cn|token|session' /mnt/pokemon/deploy_dev/childlog/login_server*-stdout* /mnt/pokemon/deploy_dev/childlog/game_server*-stdout* | tail -n 200\"",
+			"isBackground": false
+		},
+		{
+			"label": "tail-latest-game1-80",
+			"type": "shell",
+			"command": "cd lyzwlkjvip && docker exec pokemon-game-runtime sh -lc 'f=$(ls -1t /mnt/pokemon/deploy_dev/childlog/game_server1-stdout* | head -n 1); echo \"FILE=$f\"; tail -n 80 \"$f\"'",
+			"isBackground": false
+		},
+		{
+			"label": "grep-game1-log-lines",
+			"type": "shell",
+			"command": "cd lyzwlkjvip && docker exec pokemon-game-runtime sh -lc \"grep -nE 'uncompress|ERR /game/login|REQ 1 .* /game/login' /mnt/pokemon/deploy_dev/childlog/game_server1-stdout---supervisor-rjj1qp.log | tail -n 30\"",
+			"isBackground": false
+		},
+		{
+			"label": "grep-post-login-requests",
+			"type": "shell",
+			"command": "cd lyzwlkjvip && docker exec pokemon-game-runtime sh -lc \"grep -nE '/game/role/guide/newbie|/game/role/newbie/init|/game/role/newbie/card/choose' /mnt/pokemon/deploy_dev/childlog/game_server1-stdout---supervisor-rjj1qp.log | tail -n 20\"",
+			"isBackground": false
+		}
+	]
+}

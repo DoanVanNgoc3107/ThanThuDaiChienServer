@@ -1,0 +1,117 @@
+[login_server I 260403 05:53:46.882.001 document.go:151] register document default ok
+[login_server I 260403 05:53:46.885.002 init.go:171] register document ok
+[login_server D 260403 05:53:46.907.003 config.go:49] cwd in /mnt/pokemon/release/login
+[login_server I 260403 05:53:46.913.004 config.go:60] login.cn.1 config in defines.json
+[login.cn.1 I 260403 05:53:46.914.005 main.go:40] &main.Define{ContainerOption:service.ContainerOption{Name:"@login.cn.1", Debug:false, Addr:":16666", NSQLookupd:"http://127.0.0.1:4161/", Mainnsqd:"", NSQTcpAddresses:[]string{"127.0.0.1:4150"}, Shushu:false, Services:[]service.IOption{(*service.Option)(0xc00008c900)}, ServicesRaw:[]json.RawMessage(nil)}, HTTPAddr:":18081", PatchUrl:"http://192.168.1.13:81/patch/"}
+[login.cn.1 I 260403 05:53:46.918.006 server.go:127] langKey cn
+[login.cn.1 I 260403 05:53:46.918.007 init.go:485] version 3.1.0.0
+[login.cn.1 I 260403 05:53:46.918.008 init.go:486] patchUrl http://192.168.1.13:81/patch/
+[login.cn.1 I 260403 05:53:46.918.009 filter.go:45] conf/filter.json filter init ok
+[login.cn.1 I 260403 05:53:46.919.012 test.go:40] conf/test.json test init ok
+[login.cn.1 I 260403 05:53:46.919.015 init.go:97] patch url map map[]
+[login.cn.1 I 260403 05:53:46.920.016 patch.go:126] patch/cn init ok
+[login.cn.1 I 260403 05:53:46.920.017 patch.go:133] patch 3 files 1
+[login.cn.1 I 260403 05:53:46.935.018 servers.go:195] forward.json error open conf/cn/forward.json: no such file or directory
+[login.cn.1 I 260403 05:53:46.948.019 servers.go:380] open new server game.cn.2 - Arbok
+[login.cn.1 I 260403 05:53:47.027.022 rpcclient.go:292] create client consumer RESP-c_login.cn.1/0global_1rpc
+[login.cn.1 I 260403 05:53:47.034.023 consumer.go:1175] INF    2 [RESP-c_login.cn.1/0global_1rpc] (127.0.0.1:4150) connecting to nsqd
+[login.cn.1 I 260403 05:53:47.044.024 container.go:250] remote service accountdb.cn.1 start
+[login.cn.1 I 260403 05:53:47.044.025 container.go:250] remote service game.cn.1 start
+[login.cn.1 I 260403 05:53:47.044.026 container.go:250] remote service game.cn.2 start
+[login.cn.1 I 260403 05:53:47.044.027 container.go:259] service login.cn.1 start
+[login.cn.1 I 260403 05:53:47.044.028 container.go:264] container @login.cn.1 start
+[login.cn.1 I 260403 05:53:47.062.032 rpcserver.go:349] create server consumer REQ-login.cn.1/rpc
+[login.cn.1 I 260403 05:53:47.073.033 consumer.go:1175] INF    3 [REQ-login.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[login.cn.1 I 260403 05:53:47.088.034 server.go:157] watch paths [patch patch_test conf blacklist patch/cn conf/cn]
+[login.cn.1 I 260403 05:53:47.091.035 server.go:163] fsnotify add watch patch
+[login.cn.1 I 260403 05:53:47.091.036 server.go:163] fsnotify add watch patch_test
+[login.cn.1 I 260403 05:53:47.091.037 server.go:163] fsnotify add watch conf
+[login.cn.1 I 260403 05:53:47.091.038 server.go:163] fsnotify add watch blacklist
+[login.cn.1 I 260403 05:53:47.091.039 server.go:163] fsnotify add watch patch/cn
+[login.cn.1 I 260403 05:53:47.091.040 server.go:163] fsnotify add watch conf/cn
+[login.cn.1 I 260403 05:53:47.101.041 server_tcp.go:52] tcp server listen :16666
+[login.cn.1 I 260403 05:53:47.102.042 manager.go:33] 4 new conn goroutines be created
+[login.cn.1 I 260403 05:53:47.102.043 server_tcp.go:66] tcp server :16666 start ok
+[login.cn.1 I 260403 05:53:48.680.044 server.go:170] fsnotify event: "conf/cn/serv.json": WRITE
+[login.cn.1 I 260403 05:53:48.681.045 filter.go:45] conf/filter.json filter init ok
+[login.cn.1 I 260403 05:53:48.681.048 test.go:40] conf/test.json test init ok
+[login.cn.1 I 260403 05:53:48.681.051 init.go:97] patch url map map[]
+[login.cn.1 I 260403 05:53:48.682.052 patch.go:126] patch/cn init ok
+[login.cn.1 I 260403 05:53:48.682.053 patch.go:133] patch 3 files 1
+[login.cn.1 I 260403 05:53:48.682.054 servers.go:195] forward.json error open conf/cn/forward.json: no such file or directory
+[login.cn.1 I 260403 05:53:48.683.055 servers.go:380] open new server game.cn.2 - Arbok
+[login.cn.1 I 260403 05:53:48.683.056 servers.go:392] no new data be write to conf/cn/serv.json
+[login.cn.1 W 260403 05:53:55.470.057 init.go:411] error patch
+[login.cn.1 I 260403 05:53:55.471.058 http.go:11] GET /version (192.168.97.1:53687) 1.31 ms
+[login.cn.1 I 260403 05:53:55.481.059 http.go:11] GET /servers (192.168.97.1:63716) 0.03 ms
+[login.cn.1 W 260403 05:54:04.950.060 init.go:411] error patch
+[login.cn.1 I 260403 05:54:04.950.061 http.go:11] HEAD /version (192.168.97.1:54378) 0.05 ms
+[login.cn.1 I 260403 05:54:04.960.062 http.go:11] HEAD /servers (192.168.97.1:44684) 0.01 ms
+[login.cn.1 I 260403 05:55:13.005.078 check.go:47] `admin123` login request with channel `none` tag `none`
+[login.cn.1 I 260403 05:55:13.005.079 check.go:48] `admin123` channel `none` tag `none` guarder `8b4d620ca7d7cd99ad30b27cba9f2742`
+[login.cn.1 I 260403 05:55:13.010.081 producer.go:382] INF    1 (127.0.0.1:4150) connecting to nsqd
+[login.cn.1 I 260403 05:55:13.385.091 enter_server.go:39] `admin123` login in server 1 `game.cn.1` `Pikachu`
+[login.cn.1 I 260403 05:56:14.646.106 check.go:47] `admin123` login request with channel `none` tag `none`
+[login.cn.1 I 260403 05:56:14.646.107 check.go:48] `admin123` channel `none` tag `none` guarder `8b4d620ca7d7cd99ad30b27cba9f2742`
+[login.cn.1 I 260403 05:56:18.624.118 enter_server.go:39] `admin123` login in server 1 `game.cn.1` `Pikachu`
+[login.cn.1 I 260403 05:58:40.701.123 server.go:52] GET /game/login (192.168.97.1:57506) 5.37 ms
+[login.cn.1 I 260403 05:58:40.714.124 server.go:52] POST /game/login (192.168.97.1:65087) 0.10 ms
+[login.cn.1 I 260403 06:00:59.839.130 consumer.go:1175] INF    3 [REQ-login.cn.1/rpc] stopping...
+[login.cn.1 I 260403 06:00:59.840.131 consumer.go:1175] INF    3 [REQ-login.cn.1/rpc] (127.0.0.1:4150) received CLOSE_WAIT from nsqd
+[login.cn.1 I 260403 06:00:59.831.129 server_tcp.go:97] tcp server :16666 stopping
+[login.cn.1 I 260403 06:00:59.840.132 producer.go:382] INF    4 stopping
+[login.cn.1 I 260403 06:00:59.841.133 container.go:279] service login.cn.1 stop
+[login.cn.1 I 260403 06:00:59.841.134 container.go:286] container @login.cn.1 stop
+[login.cn.1 I 260403 06:00:59.841.139 manager.go:50] all new conn goroutines were closed
+[login.cn.1 I 260403 06:00:59.841.142 server_tcp.go:100] tcp server :16666 stop ok
+[login_server I 260403 06:01:01.964.001 document.go:151] register document default ok
+[login_server I 260403 06:01:01.969.002 init.go:171] register document ok
+[login_server D 260403 06:01:01.985.003 config.go:49] cwd in /mnt/pokemon/release/login
+[login_server I 260403 06:01:01.987.004 config.go:60] login.cn.1 config in defines.json
+[login.cn.1 I 260403 06:01:01.987.005 main.go:40] &main.Define{ContainerOption:service.ContainerOption{Name:"@login.cn.1", Debug:false, Addr:":16666", NSQLookupd:"http://127.0.0.1:4161/", Mainnsqd:"", NSQTcpAddresses:[]string{"127.0.0.1:4150"}, Shushu:false, Services:[]service.IOption{(*service.Option)(0xc0000d3a00)}, ServicesRaw:[]json.RawMessage(nil)}, HTTPAddr:":18081", PatchUrl:"http://192.168.1.13:81/patch/"}
+[login.cn.1 I 260403 06:01:01.988.006 server.go:127] langKey cn
+[login.cn.1 I 260403 06:01:01.988.007 init.go:485] version 3.1.0.0
+[login.cn.1 I 260403 06:01:01.988.008 init.go:486] patchUrl http://192.168.1.13:81/patch/
+[login.cn.1 I 260403 06:01:01.988.009 filter.go:45] conf/filter.json filter init ok
+[login.cn.1 I 260403 06:01:01.989.012 test.go:40] conf/test.json test init ok
+[login.cn.1 I 260403 06:01:01.989.015 init.go:97] patch url map map[]
+[login.cn.1 I 260403 06:01:01.991.016 patch.go:126] patch/cn init ok
+[login.cn.1 I 260403 06:01:01.991.017 patch.go:133] patch 3 files 1
+[login.cn.1 I 260403 06:01:01.996.018 servers.go:195] forward.json error open conf/cn/forward.json: no such file or directory
+[login.cn.1 I 260403 06:01:02.000.019 servers.go:380] open new server game.cn.2 - Arbok
+[login.cn.1 I 260403 06:01:02.019.022 rpcclient.go:292] create client consumer RESP-c_login.cn.1/0global_1rpc
+[login.cn.1 I 260403 06:01:02.020.023 consumer.go:1175] INF    2 [RESP-c_login.cn.1/0global_1rpc] (127.0.0.1:4150) connecting to nsqd
+[login.cn.1 I 260403 06:01:02.024.024 container.go:250] remote service accountdb.cn.1 start
+[login.cn.1 I 260403 06:01:02.024.025 container.go:250] remote service game.cn.1 start
+[login.cn.1 I 260403 06:01:02.024.026 container.go:250] remote service game.cn.2 start
+[login.cn.1 I 260403 06:01:02.024.027 container.go:259] service login.cn.1 start
+[login.cn.1 I 260403 06:01:02.024.028 container.go:264] container @login.cn.1 start
+[login.cn.1 I 260403 06:01:02.029.032 rpcserver.go:349] create server consumer REQ-login.cn.1/rpc
+[login.cn.1 I 260403 06:01:02.031.033 consumer.go:1175] INF    3 [REQ-login.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[login.cn.1 I 260403 06:01:02.031.034 server.go:157] watch paths [patch patch_test conf blacklist patch/cn conf/cn]
+[login.cn.1 I 260403 06:01:02.033.035 server.go:163] fsnotify add watch patch
+[login.cn.1 I 260403 06:01:02.033.036 server.go:163] fsnotify add watch patch_test
+[login.cn.1 I 260403 06:01:02.033.037 server.go:163] fsnotify add watch conf
+[login.cn.1 I 260403 06:01:02.033.038 server.go:163] fsnotify add watch blacklist
+[login.cn.1 I 260403 06:01:02.033.039 server.go:163] fsnotify add watch patch/cn
+[login.cn.1 I 260403 06:01:02.033.040 server.go:163] fsnotify add watch conf/cn
+[login.cn.1 I 260403 06:01:02.035.041 server_tcp.go:52] tcp server listen :16666
+[login.cn.1 I 260403 06:01:02.035.042 manager.go:33] 4 new conn goroutines be created
+[login.cn.1 I 260403 06:01:02.035.043 server_tcp.go:66] tcp server :16666 start ok
+[login.cn.1 I 260403 06:01:03.306.044 server.go:170] fsnotify event: "conf/cn/serv.json": WRITE
+[login.cn.1 I 260403 06:01:03.307.045 filter.go:45] conf/filter.json filter init ok
+[login.cn.1 I 260403 06:01:03.307.048 test.go:40] conf/test.json test init ok
+[login.cn.1 I 260403 06:01:03.307.051 init.go:97] patch url map map[]
+[login.cn.1 I 260403 06:01:03.307.052 patch.go:126] patch/cn init ok
+[login.cn.1 I 260403 06:01:03.307.053 patch.go:133] patch 3 files 1
+[login.cn.1 I 260403 06:01:03.307.054 servers.go:195] forward.json error open conf/cn/forward.json: no such file or directory
+[login.cn.1 I 260403 06:01:03.307.055 servers.go:380] open new server game.cn.2 - Arbok
+[login.cn.1 I 260403 06:01:03.308.056 servers.go:392] no new data be write to conf/cn/serv.json
+[login.cn.1 I 260403 06:01:31.390.063 check.go:47] `admin123` login request with channel `none` tag `none`
+[login.cn.1 I 260403 06:01:31.390.064 check.go:48] `admin123` channel `none` tag `none` guarder `8b4d620ca7d7cd99ad30b27cba9f2742`
+[login.cn.1 I 260403 06:01:31.393.066 producer.go:382] INF    1 (127.0.0.1:4150) connecting to nsqd
+[login.cn.1 I 260403 06:01:32.073.076 enter_server.go:39] `admin123` login in server 1 `game.cn.1` `Pikachu`
+[login.cn.1 I 260403 06:15:42.350.093 check.go:47] `admin123` login request with channel `none` tag `none`
+[login.cn.1 I 260403 06:15:42.352.094 check.go:48] `admin123` channel `none` tag `none` guarder `8b4d620ca7d7cd99ad30b27cba9f2742`
+[login.cn.1 I 260403 06:15:45.216.105 enter_server.go:39] `admin123` login in server 1 `game.cn.1` `Pikachu`
+[login.cn.1 W 260403 06:15:49.818.114 conn.go:103] read tcp 192.168.97.6:16666->192.168.97.1:54098: use of closed network connection

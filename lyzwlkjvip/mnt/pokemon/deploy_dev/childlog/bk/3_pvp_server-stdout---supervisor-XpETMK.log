@@ -1,0 +1,15 @@
+[host_server I 250824 14:26:48.395.001 document.go:151] register document default ok
+[host_server I 250824 14:26:48.397.002 init.go:130] register document ok
+[host_server D 250824 14:26:48.399.003 config.go:49] cwd in /mnt/pokemon/release/pvp
+[host_server D 250824 14:26:48.399.004 config.go:23] GetExtend service pvp.cn.3 &service.Option{Name:"pvp.cn.3", Alias:[]string(nil), Dependent:[]string{"storage.cn.3"}}
+[host_server D 250824 14:26:48.399.005 config.go:23] GetExtend service clone.cn.3 &service.Option{Name:"clone.cn.3", Alias:[]string(nil), Dependent:[]string{"storage.cn.3"}}
+[host_server D 250824 14:26:48.399.006 config.go:23] GetExtend service arena.cn.3 &service.Option{Name:"arena.cn.3", Alias:[]string(nil), Dependent:[]string{"storage.cn.3"}}
+[host_server D 250824 14:26:48.399.007 config.go:23] GetExtend service union.cn.3 &service.Option{Name:"union.cn.3", Alias:[]string(nil), Dependent:[]string{"storage.cn.3"}}
+[host_server D 250824 14:26:48.399.008 config.go:23] GetExtend service union_fight.cn.3 &service.Option{Name:"union_fight.cn.3", Alias:[]string(nil), Dependent:[]string{"storage.cn.3", "game.cn.3", "anticheat"}}
+[host_server D 250824 14:26:48.400.009 config.go:23] GetExtend service craft.cn.3 &service.Option{Name:"craft.cn.3", Alias:[]string(nil), Dependent:[]string{"storage.cn.3", "game.cn.3", "anticheat"}}
+[host_server D 250824 14:26:48.400.010 config.go:23] GetExtend service yyhuodong.cn.3 &service.Option{Name:"yyhuodong.cn.3", Alias:[]string(nil), Dependent:[]string{"storage.cn.3"}}
+[host_server D 250824 14:26:48.400.011 config.go:23] GetExtend service card_fight.cn.3 &service.Option{Name:"card_fight.cn.3", Alias:[]string(nil), Dependent:[]string{"storage.cn.3"}}
+[host_server D 250824 14:26:48.400.012 config.go:23] GetExtend service gym.cn.3 &service.Option{Name:"gym.cn.3", Alias:[]string(nil), Dependent:[]string{"storage.cn.3", "game.cn.3"}}
+[host_server D 250824 14:26:48.400.013 config.go:23] GetExtend service hunting.cn.3 &service.Option{Name:"hunting.cn.3", Alias:[]string(nil), Dependent:[]string{"storage.cn.3"}}
+[host_server I 250824 14:26:48.400.014 config.go:60] pvp.cn.3 config in defines.json
+[pvp.cn.3 I 250824 14:26:48.400.015 main.go:44] &services.Define{ContainerOption:service.ContainerOption{Name:"@pvp.cn.3", Debug:false, Addr:"", NSQLookupd:"http://127.0.0.1:4161/", Mainnsqd:"", NSQTcpAddresses:[]string{"127.0.0.1:4150"}, Shushu:true, Services:[]service.IOption{(*service.Option)(0xc000160f80), (*service.Option)(0xc0001610c0), (*service.Option)(0xc000161200), (*service.Option)(0xc000161340), (*service.Option)(0xc000161480), (*service.Option)(0xc0001615c0), (*service.Option)(0xc000161700), (*service.Option)(0xc000161840), (*service.Option)(0xc000161980), (*service.Option)(0xc000161ac0)}, ServicesRaw:[]json.RawMessage(nil)}}

@@ -1,0 +1,11 @@
+[payment.cn.1 I 260403 05:53:47  server:150] {'test': {'appsecret': 'uS5QjKDtKXnFlqUW'}}
+[payment.cn.1 I 260403 05:53:47  writer:110] starting writer...
+[payment.cn.1 I 260403 05:53:47  writer:189] [127.0.0.1:4150] connecting to nsqd
+[payment.cn.1 I 260403 05:53:47  reader:235] [RESP-c_payment.cn.1:0global_1rpc] starting reader for RESP-c_payment.cn.1/0global_1rpc...
+[payment.cn.1 I 260403 05:53:47  reader:490] [127.0.0.1:4150:RESP-c_payment.cn.1:0global_1rpc] connecting to nsqd
+[payment.cn.1 I 260403 05:53:47  writer:110] starting writer...
+[payment.cn.1 I 260403 05:53:47  writer:189] [127.0.0.1:4150] connecting to nsqd
+[payment.cn.1 W 260403 05:53:47  reader:508] [127.0.0.1:4150:RESP-c_payment.cn.1:0global_1rpc] max RDY count 2500 < reader max in flight 10000, truncation possible
+[payment.cn.1 I 260403 05:53:51  server:166] [payment.cn.1] Payment Server 0/0 My Orders Left Last Time
+[payment.cn.1 I 260403 05:53:51  server:181] [payment.cn.1] Payment Server 0/0 Orders Left Last Time
+[payment.cn.1 I 260403 05:53:51  server:114] [payment.cn.1] Payment Server Start OK

@@ -1,0 +1,78 @@
+name: pokemon-local-dev
+
+services:
+  mysql56:
+    image: mysql:5.6
+    platform: linux/amd64
+    container_name: pokemon-mysql56
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: pokemon
+      TZ: Asia/Shanghai
+    ports:
+      - "3306:3306"
+    command: ["--character-set-server=utf8mb4", "--collation-server=utf8mb4_unicode_ci"]
+    volumes:
+      - ./docker-data/mysql:/var/lib/mysql
+
+  redis62:
+    image: redis:6.2
+    container_name: pokemon-redis62
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - ./docker-data/redis:/data
+
+  mongo44:
+    image: mongo:4.4
+    platform: linux/amd64
+    container_name: pokemon-mongo44
+    restart: unless-stopped
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: GpFkU9O24cjhnWco
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./docker-data/mongo:/data/db
+
+  php56:
+    image: webdevops/php-nginx:5.6
+    platform: linux/amd64
+    container_name: pokemon-php56-nginx
+    restart: unless-stopped
+    environment:
+      WEB_DOCUMENT_ROOT: /app/www/wwwroot/game
+      PHP_DISPLAY_ERRORS: 1
+      PHP_MEMORY_LIMIT: 512M
+    ports:
+      - "81:80"
+    volumes:
+      - ./:/app
+
+  game-runtime:
+    image: pokemon-game-runtime-patched:latest
+    platform: linux/amd64
+    container_name: pokemon-game-runtime
+    restart: unless-stopped
+    tty: true
+    working_dir: /mnt/pokemon/deploy_dev
+    command: /bin/bash -lc "rm -f /mnt/pokemon/deploy_dev/supervisord.pid /tmp/pokemon_supervisor.sock; cd /mnt/pokemon/deploy_dev && exec supervisord -c supervisord.conf -n"
+    depends_on:
+      - mysql56
+      - redis62
+      - mongo44
+    ports:
+      - "16666:16666"
+      - "16667:16667"
+      - "18081:18081"
+      - "29001:29001"
+      - "29002:29002"
+      - "38088:38088"
+      - "45770:45770/udp"
+    volumes:
+      - ./mnt:/mnt
+      - ./www:/www
+      - ./logs:/logs

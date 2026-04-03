@@ -1,0 +1,13 @@
+[host_server I 260403 05:53:46.830.001 document.go:151] register document default ok
+[host_server I 260403 05:53:46.839.002 init.go:171] register document ok
+[host_server D 260403 05:53:46.846.003 config.go:49] cwd in /mnt/pokemon/release/crosslobby
+[host_server D 260403 05:53:46.852.004 config.go:23] GetExtend service crosslobby.cn.1 &service.Option{Name:"crosslobby.cn.1", Alias:[]string(nil), Dependent:[]string{}}
+[host_server I 260403 05:53:46.853.005 config.go:60] crosslobby.cn.1 config in defines.json
+[crosslobby.cn.1 I 260403 05:53:46.853.006 main.go:44] &services.Define{ContainerOption:service.ContainerOption{Name:"@crosslobby.cn.1", Debug:false, Addr:"", NSQLookupd:"http://127.0.0.1:4161/", Mainnsqd:"", NSQTcpAddresses:[]string{"127.0.0.1:4150"}, Shushu:false, Services:[]service.IOption{(*service.Option)(0xc00008d500)}, ServicesRaw:[]json.RawMessage(nil)}}
+[crosslobby.cn.1 I 260403 05:53:52.603.010 rpcclient.go:292] create client consumer RESP-c_crosslobby.cn.1/0global_1rpc
+[crosslobby.cn.1 I 260403 05:53:52.607.011 consumer.go:1175] INF    2 [RESP-c_crosslobby.cn.1/0global_1rpc] (127.0.0.1:4150) connecting to nsqd
+[crosslobby.cn.1 I 260403 05:53:52.623.012 container.go:259] service crosslobby.cn.1 start
+[crosslobby.cn.1 I 260403 05:53:52.623.013 container.go:264] container @crosslobby.cn.1 start
+[crosslobby.cn.1 I 260403 05:53:52.623.014 server.go:29] server start ok
+[crosslobby.cn.1 I 260403 05:53:52.625.018 rpcserver.go:349] create server consumer REQ-crosslobby.cn.1/rpc
+[crosslobby.cn.1 I 260403 05:53:52.625.021 consumer.go:1175] INF    3 [REQ-crosslobby.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd

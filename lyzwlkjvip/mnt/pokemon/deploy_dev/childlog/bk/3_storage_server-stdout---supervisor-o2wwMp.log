@@ -1,0 +1,6 @@
+[host_server I 250824 14:26:48.331.001 document.go:151] register document default ok
+[host_server I 250824 14:26:48.333.002 init.go:130] register document ok
+[host_server D 250824 14:26:48.342.003 config.go:49] cwd in /mnt/pokemon/release/storage
+[host_server D 250824 14:26:48.343.004 config.go:23] GetExtend service storage.cn.3 &storage.Option{Option:service.Option{Name:"storage.cn.3", Alias:[]string(nil), Dependent:[]string(nil)}, MongoDB:"mongodb://root:vnv5xOI9vecubR2m@127.0.0.1:27017/game_cn_3?authMechanism=SCRAM-SHA-1&authSource=admin", DBName:"game_cn_3", MGOPoolLimit:0, MGOStats:false}
+[host_server I 250824 14:26:48.343.005 config.go:60] storage.cn.3 config in defines.json
+[storage.cn.3 I 250824 14:26:48.343.006 main.go:44] &services.Define{ContainerOption:service.ContainerOption{Name:"@storage.cn.3", Debug:false, Addr:"", NSQLookupd:"http://127.0.0.1:4161/", Mainnsqd:"", NSQTcpAddresses:[]string{"127.0.0.1:4150"}, Shushu:false, Services:[]service.IOption{(*storage.Option)(0xc00026e770)}, ServicesRaw:[]json.RawMessage(nil)}}

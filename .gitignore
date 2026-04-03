@@ -1,0 +1,7 @@
+# Bỏ qua các file log và data của MongoDB
+lyzwlkjvip/docker-data/mongo/journal/
+WiredTiger*
+
+# Bỏ qua các bản nén database cũ và file cài đặt
+*.gz
+*.deb

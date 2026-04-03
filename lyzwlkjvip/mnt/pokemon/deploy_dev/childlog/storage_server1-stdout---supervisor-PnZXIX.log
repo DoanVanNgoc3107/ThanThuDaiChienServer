@@ -1,0 +1,867 @@
+[host_server I 260403 05:53:46.916.001 document.go:151] register document default ok
+[host_server I 260403 05:53:46.932.002 init.go:171] register document ok
+[host_server D 260403 05:53:46.955.003 config.go:49] cwd in /mnt/pokemon/release/storage
+[host_server D 260403 05:53:46.967.004 config.go:23] GetExtend service storage.cn.1 &storage.Option{Option:service.Option{Name:"storage.cn.1", Alias:[]string(nil), Dependent:[]string(nil)}, MongoDB:"mongodb://root:GpFkU9O24cjhnWco@mongo44:27017/game_cn_1?authMechanism=SCRAM-SHA-1&authSource=admin", DBName:"game_cn_1", MGOPoolLimit:0, MGOStats:false}
+[host_server I 260403 05:53:46.969.005 config.go:60] storage.cn.1 config in defines.json
+[storage.cn.1 I 260403 05:53:46.970.006 main.go:44] &services.Define{ContainerOption:service.ContainerOption{Name:"@storage.cn.1", Debug:false, Addr:"", NSQLookupd:"http://127.0.0.1:4161/", Mainnsqd:"", NSQTcpAddresses:[]string{"127.0.0.1:4150"}, Shushu:false, Services:[]service.IOption{(*storage.Option)(0xc000354e00)}, ServicesRaw:[]json.RawMessage(nil)}}
+[storage.cn.1 I 260403 05:53:52.786.009 storage.go:236] connect to mongodb mongodb://root:GpFkU9O24cjhnWco@mongo44:27017/game_cn_1?authMechanism=SCRAM-SHA-1&authSource=admin game_cn_1
+[storage.cn.1 I 260403 05:53:52.805.014 rpcclient.go:292] create client consumer RESP-c_storage.cn.1/0global_1rpc
+[storage.cn.1 I 260403 05:53:52.807.015 consumer.go:1175] INF    2 [RESP-c_storage.cn.1/0global_1rpc] (127.0.0.1:4150) connecting to nsqd
+[storage.cn.1 I 260403 05:53:52.811.016 container.go:259] service storage.cn.1 start
+[storage.cn.1 I 260403 05:53:52.811.017 container.go:264] container @storage.cn.1 start
+[storage.cn.1 I 260403 05:53:52.811.018 server.go:29] server start ok
+[storage.cn.1 I 260403 05:53:52.812.022 rpcserver.go:349] create server consumer REQ-storage.cn.1/rpc
+[storage.cn.1 I 260403 05:53:52.813.090 consumer.go:1175] INF    3 [REQ-storage.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[storage.cn.1 I 260403 05:53:52.842.091 framework.go:534] REQ storage.cn.1.DBReadsert 1 [0xc014a0efa0 0xc014552090 0xc00060ce48]
+[storage.cn.1 I 260403 05:53:52.850.092 producer.go:382] INF    4 (127.0.0.1:4150) connecting to nsqd
+[storage.cn.1 I 260403 05:53:52.851.093 rpcserver.go:622] RESP storage.cn.1.DBReadsert 1 284B -ms
+[storage.cn.1 I 260403 05:53:52.866.094 framework.go:534] REQ storage.cn.1.DBReadBy 2 [0xc014a48e10 0xc0148d0cd8]
+[storage.cn.1 I 260403 05:53:52.867.095 rpcserver.go:622] RESP storage.cn.1.DBReadBy 2 44B 1.889ms from c_pvp.cn.1
+[storage.cn.1 I 260403 05:53:52.891.096 framework.go:534] REQ storage.cn.1.DBReadBy 3 [0xc0149fc070 0xc014552130]
+[storage.cn.1 I 260403 05:53:52.892.097 rpcserver.go:622] RESP storage.cn.1.DBReadBy 3 44B 824µs from c_pvp.cn.1
+[storage.cn.1 I 260403 05:53:52.916.098 framework.go:534] REQ storage.cn.1.DBReadsert 4 [0xc014a49540 0xc0148d0d38 0xc00056d168]
+[storage.cn.1 I 260403 05:53:52.918.099 rpcserver.go:622] RESP storage.cn.1.DBReadsert 4 102B 1.96ms from c_pvp.cn.1
+[storage.cn.1 I 260403 05:53:52.940.100 framework.go:534] REQ storage.cn.1.DBReadRangeBy 5 [0xc0149fc420 0xc014552150 0xc00060dd08]
+[storage.cn.1 I 260403 05:53:52.941.101 rpcserver.go:622] RESP storage.cn.1.DBReadRangeBy 5 44B 980µs from c_pvp.cn.1
+[storage.cn.1 I 260403 05:53:52.965.102 framework.go:534] REQ storage.cn.1.DBReadAll 6 [0xc014a49db0]
+[storage.cn.1 I 260403 05:53:52.967.103 rpcserver.go:622] RESP storage.cn.1.DBReadAll 6 44B 1.938ms from c_pvp.cn.1
+[storage.cn.1 I 260403 05:53:52.991.104 framework.go:534] REQ storage.cn.1.DBReadIn 7 [0xc014acd530 0xc014acd540 0xc0148e7920]
+[storage.cn.1 I 260403 05:53:52.994.105 rpcserver.go:622] RESP storage.cn.1.DBReadIn 7 44B 4.194ms from c_pvp.cn.1
+[storage.cn.1 I 260403 05:53:53.016.106 framework.go:534] REQ storage.cn.1.DBReadAll 8 [0xc0149fca70]
+[storage.cn.1 I 260403 05:53:53.018.107 rpcserver.go:622] RESP storage.cn.1.DBReadAll 8 44B 1.406ms from c_pvp.cn.1
+[storage.cn.1 I 260403 05:53:53.040.108 framework.go:534] REQ storage.cn.1.DBReadsert 9 [0xc0149ec830 0xc0148d0dd0 0xc00056da08]
+[storage.cn.1 I 260403 05:53:53.058.109 rpcserver.go:622] RESP storage.cn.1.DBReadsert 9 266B 17.943ms from c_pvp.cn.1
+[storage.cn.1 I 260403 05:53:53.065.110 framework.go:534] REQ storage.cn.1.DBReadsert 10 [0xc0149fd620 0xc014552238 0xc0007865f8]
+[storage.cn.1 I 260403 05:53:53.079.111 rpcserver.go:622] RESP storage.cn.1.DBReadsert 10 151B -ms
+[storage.cn.1 I 260403 05:53:53.090.112 framework.go:534] REQ storage.cn.1.DBReadsert 11 [0xc0149fda40 0xc014552268 0xc0007867f8]
+[storage.cn.1 I 260403 05:53:53.096.113 rpcserver.go:622] RESP storage.cn.1.DBReadsert 11 148B 5.809ms from c_pvp.cn.1
+[storage.cn.1 I 260403 05:53:53.115.114 framework.go:534] REQ storage.cn.1.DBReadsert 12 [0xc0149ed1a0 0xc0148d0e50 0xc00056dec8]
+[storage.cn.1 I 260403 05:53:53.117.115 rpcserver.go:622] RESP storage.cn.1.DBReadsert 12 1248B 1.925ms from c_pvp.cn.1
+[storage.cn.1 I 260403 05:53:53.140.116 framework.go:534] REQ storage.cn.1.DBReadsert 13 [0xc0149ed570 0xc0148d0e70 0xc0007fa068]
+[storage.cn.1 I 260403 05:53:53.142.117 rpcserver.go:622] RESP storage.cn.1.DBReadsert 13 110B 2.322ms from c_pvp.cn.1
+[storage.cn.1 I 260403 05:53:54.765.118 framework.go:534] REQ storage.cn.1.DBReadsert 14 [0xc0149c8150 0xc005d7ea30 0xc00084e118]
+[storage.cn.1 I 260403 05:53:54.767.119 rpcserver.go:622] RESP storage.cn.1.DBReadsert 14 134B 1.678ms from c_game.cn.1
+[storage.cn.1 I 260403 05:53:54.791.120 framework.go:534] REQ storage.cn.1.DBCommit 15 [0xc00084e2d8 0xc00084e2d9]
+[storage.cn.1 I 260403 05:53:54.791.121 session.go:132] Commit 8 objects, success 8
+[storage.cn.1 I 260403 05:53:54.791.122 rpcserver.go:622] RESP storage.cn.1.DBCommit 15 44B 441µs from c_game.cn.1
+[storage.cn.1 I 260403 05:53:54.816.123 framework.go:534] REQ storage.cn.1.DBReadsert 16 [0xc0149c89c0 0xc005d7eaa0 0xc00084e518]
+[storage.cn.1 I 260403 05:53:54.818.124 rpcserver.go:622] RESP storage.cn.1.DBReadsert 16 1488B 2.482ms from c_game.cn.1
+[storage.cn.1 I 260403 05:53:54.841.125 framework.go:534] REQ storage.cn.1.DBCommit 17 [0xc0007fa4d8 0xc0007fa4d9]
+[storage.cn.1 I 260403 05:53:54.841.126 session.go:132] Commit 9 objects, success 9
+[storage.cn.1 I 260403 05:53:54.841.127 rpcserver.go:622] RESP storage.cn.1.DBCommit 17 44B 236µs from c_game.cn.1
+[storage.cn.1 I 260403 05:54:01.228.128 framework.go:534] REQ storage.cn.1.DBReadsert 18 [0xc0149c9a10 0xc005d7eb58 0xc00084ed58]
+[storage.cn.1 I 260403 05:54:01.229.129 rpcserver.go:622] RESP storage.cn.1.DBReadsert 18 81B 1.307ms from c_game.cn.1
+[storage.cn.1 I 260403 05:54:01.240.130 framework.go:534] REQ storage.cn.1.DBCommit 19 [0xc00084f078 0xc00084f079]
+[storage.cn.1 I 260403 05:54:01.240.131 session.go:132] Commit 10 objects, success 10
+[storage.cn.1 I 260403 05:54:01.240.132 rpcserver.go:622] RESP storage.cn.1.DBCommit 19 44B 109µs from c_game.cn.1
+[storage.cn.1 I 260403 05:54:01.279.133 framework.go:534] REQ storage.cn.1.DBGetRankSize 20 [0xc0149a2560 0xc00084f2a8 0xc00084f2b0 0xc0149a25a0]
+[storage.cn.1 I 260403 05:54:01.281.134 rpcserver.go:622] RESP storage.cn.1.DBGetRankSize 20 1B 1.618ms from c_game.cn.1
+[storage.cn.1 I 260403 05:54:01.304.135 framework.go:534] REQ storage.cn.1.DBGetRankSize 21 [0xc0149a2a70 0xc00084f448 0xc00084f450 0xc0149a2aa0]
+[storage.cn.1 I 260403 05:54:01.304.136 rpcserver.go:622] RESP storage.cn.1.DBGetRankSize 21 1B 946µs from c_game.cn.1
+[storage.cn.1 I 260403 05:54:01.328.137 framework.go:534] REQ storage.cn.1.DBGetRankSize 22 [0xc0149a2e40 0xc00084f5b8 0xc00084f5c0 0xc0149a2e50]
+[storage.cn.1 I 260403 05:54:01.329.138 rpcserver.go:622] RESP storage.cn.1.DBGetRankSize 22 1B 880µs from c_game.cn.1
+[storage.cn.1 I 260403 05:54:01.353.139 framework.go:534] REQ storage.cn.1.DBGetRankSize 23 [0xc014a5dc50 0xc000658878 0xc000658880 0xc014a5dc60]
+[storage.cn.1 I 260403 05:54:01.354.140 rpcserver.go:622] RESP storage.cn.1.DBGetRankSize 23 1B 908µs from c_game.cn.1
+[storage.cn.1 I 260403 05:54:01.379.141 framework.go:534] REQ storage.cn.1.DBGetRankSize 24 [0xc0149922a0 0xc000658af8 0xc000658b00 0xc0149922b0]
+[storage.cn.1 I 260403 05:54:01.380.142 rpcserver.go:622] RESP storage.cn.1.DBGetRankSize 24 1B 987µs from c_game.cn.1
+[storage.cn.1 I 260403 05:54:01.404.143 framework.go:534] REQ storage.cn.1.DBGetRankSize 25 [0xc0149b4410 0xc0007fa8c8 0xc0007fa8d0 0xc0149b4420]
+[storage.cn.1 I 260403 05:54:01.405.144 rpcserver.go:622] RESP storage.cn.1.DBGetRankSize 25 1B 1.143ms from c_game.cn.1
+[storage.cn.1 I 260403 05:54:01.429.145 framework.go:534] REQ storage.cn.1.DBGetRankSize 26 [0xc0149a3500 0xc00084f878 0xc00084f880 0xc0149a3510]
+[storage.cn.1 I 260403 05:54:01.430.146 rpcserver.go:622] RESP storage.cn.1.DBGetRankSize 26 1B 1.191ms from c_game.cn.1
+[storage.cn.1 I 260403 05:54:01.453.147 framework.go:534] REQ storage.cn.1.DBGetRankSize 27 [0xc014992a00 0xc000658e08 0xc000658e10 0xc014992a10]
+[storage.cn.1 I 260403 05:54:01.455.148 rpcserver.go:622] RESP storage.cn.1.DBGetRankSize 27 1B 1.423ms from c_game.cn.1
+[storage.cn.1 I 260403 05:54:01.479.149 framework.go:534] REQ storage.cn.1.DBGetRankSize 28 [0xc014993080 0xc0006590a8 0xc0006590b0 0xc014993090]
+[storage.cn.1 I 260403 05:54:01.480.150 rpcserver.go:622] RESP storage.cn.1.DBGetRankSize 28 1B 1.084ms from c_game.cn.1
+[storage.cn.1 I 260403 05:54:01.503.151 framework.go:534] REQ storage.cn.1.DBGetRankSize 29 [0xc0149934f0 0xc000659218 0xc000659220 0xc014993500]
+[storage.cn.1 I 260403 05:54:01.505.152 rpcserver.go:622] RESP storage.cn.1.DBGetRankSize 29 1B 1.731ms from c_game.cn.1
+[storage.cn.1 I 260403 05:54:01.530.153 framework.go:534] REQ storage.cn.1.DBGetRankSize 30 [0xc014993b00 0xc0006594a8 0xc0006594b0 0xc014993b30]
+[storage.cn.1 I 260403 05:54:01.531.154 rpcserver.go:622] RESP storage.cn.1.DBGetRankSize 30 1B 1.278ms from c_game.cn.1
+[storage.cn.1 I 260403 05:54:01.555.155 framework.go:534] REQ storage.cn.1.DBReadsert 31 [0xc0149601b0 0xc013194190 0xc000659758]
+[storage.cn.1 I 260403 05:54:01.558.156 rpcserver.go:622] RESP storage.cn.1.DBReadsert 31 82B 3.251ms from c_game.cn.1
+[storage.cn.1 I 260403 05:54:01.580.157 framework.go:534] REQ storage.cn.1.DBReadsert 32 [0xc0149605e0 0xc0131941d0 0xc000659a78]
+[storage.cn.1 I 260403 05:54:01.582.158 rpcserver.go:622] RESP storage.cn.1.DBReadsert 32 82B 1.691ms from c_game.cn.1
+[storage.cn.1 I 260403 05:54:01.605.159 framework.go:534] REQ storage.cn.1.DBReadsert 33 [0xc0149b4950 0xc0148d0f48 0xc0007faaa8]
+[storage.cn.1 I 260403 05:54:01.606.160 rpcserver.go:622] RESP storage.cn.1.DBReadsert 33 82B 1.545ms from c_game.cn.1
+[storage.cn.1 I 260403 05:54:01.631.161 framework.go:534] REQ storage.cn.1.DBReadsert 34 [0xc014960ba0 0xc013194210 0xc000659dc8]
+[storage.cn.1 I 260403 05:54:01.632.162 rpcserver.go:622] RESP storage.cn.1.DBReadsert 34 82B 1.385ms from c_game.cn.1
+[storage.cn.1 I 260403 05:54:01.658.163 framework.go:534] REQ storage.cn.1.DBReadBy 35 [0xc0149261c0 0xc005d7ec78]
+[storage.cn.1 I 260403 05:54:01.660.164 rpcserver.go:622] RESP storage.cn.1.DBReadBy 35 44B 2.645ms from c_game.cn.1
+[storage.cn.1 I 260403 05:54:01.681.165 framework.go:534] REQ storage.cn.1.DBReadBy 36 [0xc0149611a0 0xc013194238]
+[storage.cn.1 I 260403 05:54:01.685.166 rpcserver.go:622] RESP storage.cn.1.DBReadBy 36 44B 3.43ms from c_game.cn.1
+[storage.cn.1 I 260403 05:54:01.707.167 framework.go:534] REQ storage.cn.1.DBReadBy 37 [0xc014926650 0xc005d7eca0]
+[storage.cn.1 I 260403 05:54:01.711.168 rpcserver.go:622] RESP storage.cn.1.DBReadBy 37 44B 4.642ms from c_game.cn.1
+[storage.cn.1 I 260403 05:54:01.731.169 framework.go:534] REQ storage.cn.1.DBReadBy 38 [0xc014926af0 0xc005d7ecc0]
+[storage.cn.1 I 260403 05:54:01.735.170 rpcserver.go:622] RESP storage.cn.1.DBReadBy 38 44B 3.436ms from c_game.cn.1
+[storage.cn.1 I 260403 05:54:01.756.171 framework.go:534] REQ storage.cn.1.DBReadBy 39 [0xc0149b4fe0 0xc0148d0f68]
+[storage.cn.1 I 260403 05:54:01.759.172 rpcserver.go:622] RESP storage.cn.1.DBReadBy 39 44B 3.168ms from c_game.cn.1
+[storage.cn.1 I 260403 05:54:01.781.173 framework.go:534] REQ storage.cn.1.DBReadBy 40 [0xc014927230 0xc005d7ecf0]
+[storage.cn.1 I 260403 05:54:01.784.174 rpcserver.go:622] RESP storage.cn.1.DBReadBy 40 44B 3.367ms from c_game.cn.1
+[storage.cn.1 I 260403 05:54:01.805.175 framework.go:534] REQ storage.cn.1.DBReadBy 41 [0xc014961b40 0xc013194288]
+[storage.cn.1 I 260403 05:54:01.810.176 rpcserver.go:622] RESP storage.cn.1.DBReadBy 41 44B 4.514ms from c_game.cn.1
+[storage.cn.1 I 260403 05:54:01.832.177 framework.go:534] REQ storage.cn.1.DBCommit 42 [0xc0007fb010 0xc0007fb011]
+[storage.cn.1 I 260403 05:54:01.833.178 session.go:132] Commit 14 objects, success 14
+[storage.cn.1 I 260403 05:54:01.833.179 rpcserver.go:622] RESP storage.cn.1.DBCommit 42 44B 508µs from c_game.cn.1
+[storage.cn.1 I 260403 05:54:01.854.180 framework.go:534] REQ storage.cn.1.DBReadsert 43 [0xc014961fa0 0xc0131942b8 0xc00094a748]
+[storage.cn.1 I 260403 05:54:01.856.181 rpcserver.go:622] RESP storage.cn.1.DBReadsert 43 133B 2.064ms from c_game.cn.1
+[storage.cn.1 I 260403 05:54:01.881.182 framework.go:534] REQ storage.cn.1.DBReadRangeBy 44 [0xc014927870 0xc005d7ed10 0xc00094e698]
+[storage.cn.1 I 260403 05:54:01.889.183 rpcserver.go:622] RESP storage.cn.1.DBReadRangeBy 44 44B 8.074ms from c_game.cn.1
+[storage.cn.1 I 260403 05:54:01.907.184 framework.go:534] REQ storage.cn.1.DBCommit 45 [0xc00094ab90 0xc00094ab91]
+[storage.cn.1 I 260403 05:54:01.908.185 session.go:132] Commit 15 objects, success 15
+[storage.cn.1 I 260403 05:54:01.908.186 rpcserver.go:622] RESP storage.cn.1.DBCommit 45 44B 1.155ms from c_game.cn.1
+[storage.cn.1 I 260403 05:54:01.930.187 framework.go:534] REQ storage.cn.1.DBReadsert 46 [0xc0149b5a60 0xc0148d0fc0 0xc0007fb268]
+[storage.cn.1 I 260403 05:54:01.934.188 rpcserver.go:622] RESP storage.cn.1.DBReadsert 46 170B 3.34ms from c_game.cn.1
+[storage.cn.1 I 260403 05:54:01.955.189 framework.go:534] REQ storage.cn.1.DBReadKeysRangeBy 47 [0xc01490a520 0xc0148d1008 0xc014766f60 0xc0007fb708]
+[storage.cn.1 I 260403 05:54:01.958.190 rpcserver.go:622] RESP storage.cn.1.DBReadKeysRangeBy 47 44B 3.216ms from c_game.cn.1
+[storage.cn.1 I 260403 05:54:01.980.191 framework.go:534] REQ storage.cn.1.DBCommit 48 [0xc00094f320 0xc00094f321]
+[storage.cn.1 I 260403 05:54:01.981.192 session.go:132] Commit 16 objects, success 16
+[storage.cn.1 I 260403 05:54:01.981.193 rpcserver.go:622] RESP storage.cn.1.DBCommit 48 44B 383µs from c_game.cn.1
+[storage.cn.1 I 260403 05:54:02.005.194 framework.go:534] REQ storage.cn.1.DBReadsert 49 [0xc01490b920 0xc0148d1040 0xc0009b63c8]
+[storage.cn.1 I 260403 05:54:02.007.195 rpcserver.go:622] RESP storage.cn.1.DBReadsert 49 153B 2.037ms from c_game.cn.1
+[storage.cn.1 I 260403 05:54:02.030.196 framework.go:534] REQ storage.cn.1.DBReadKeysRangeBy 50 [0xc0148fa3c0 0xc005d7ed90 0xc014743000 0xc00094f558]
+[storage.cn.1 I 260403 05:54:02.033.197 rpcserver.go:622] RESP storage.cn.1.DBReadKeysRangeBy 50 44B 2.451ms from c_game.cn.1
+[storage.cn.1 I 260403 05:54:02.056.198 framework.go:534] REQ storage.cn.1.DBCommit 51 [0xc0009b6860 0xc0009b6861]
+[storage.cn.1 I 260403 05:54:02.056.199 session.go:132] Commit 17 objects, success 17
+[storage.cn.1 I 260403 05:54:02.056.200 rpcserver.go:622] RESP storage.cn.1.DBCommit 51 44B 1.108ms from c_game.cn.1
+[storage.cn.1 I 260403 05:54:02.082.201 framework.go:534] REQ storage.cn.1.DBReadAll 52 [0xc0148fb440]
+[storage.cn.1 I 260403 05:54:02.086.202 rpcserver.go:622] RESP storage.cn.1.DBReadAll 52 256B 3.857ms from c_game.cn.1
+[storage.cn.1 I 260403 05:54:02.104.203 framework.go:534] REQ storage.cn.1.DBReadKeysRangeBy 53 [0xc0148de460 0xc005d7ee58 0xc01471ed60 0xc0009da758]
+[storage.cn.1 I 260403 05:54:02.106.204 rpcserver.go:622] RESP storage.cn.1.DBReadKeysRangeBy 53 44B 2.022ms from c_game.cn.1
+[storage.cn.1 I 260403 05:54:02.129.205 framework.go:534] REQ storage.cn.1.DBCommit 54 [0xc00094ae78 0xc00094ae79]
+[storage.cn.1 I 260403 05:54:02.129.206 session.go:132] Commit 17 objects, success 17
+[storage.cn.1 I 260403 05:54:02.129.207 rpcserver.go:622] RESP storage.cn.1.DBCommit 54 44B 223µs from c_game.cn.1
+[storage.cn.1 I 260403 05:54:02.156.208 framework.go:534] REQ storage.cn.1.DBReadsert 55 [0xc0148df700 0xc005d7ee88 0xc0009db3c8]
+[storage.cn.1 I 260403 05:54:02.160.209 rpcserver.go:622] RESP storage.cn.1.DBReadsert 55 130B 3.357ms from c_game.cn.1
+[storage.cn.1 I 260403 05:54:02.182.210 framework.go:534] REQ storage.cn.1.DBReadAll 56 [0xc014919d20]
+[storage.cn.1 I 260403 05:54:02.186.211 rpcserver.go:622] RESP storage.cn.1.DBReadAll 56 198B 3.313ms from c_game.cn.1
+[storage.cn.1 I 260403 05:54:02.205.212 framework.go:534] REQ storage.cn.1.DBCommit 57 [0xc0009b6b20 0xc0009b6b21]
+[storage.cn.1 I 260403 05:54:02.206.213 session.go:132] Commit 18 objects, success 18
+[storage.cn.1 I 260403 05:54:02.206.214 rpcserver.go:622] RESP storage.cn.1.DBCommit 57 44B 581µs from c_game.cn.1
+[storage.cn.1 I 260403 05:54:02.232.215 framework.go:534] REQ storage.cn.1.DBReadAll 58 [0xc0148eb120]
+[storage.cn.1 I 260403 05:54:02.236.216 rpcserver.go:622] RESP storage.cn.1.DBReadAll 58 160B 4.175ms from c_game.cn.1
+[storage.cn.1 I 260403 05:54:02.256.217 framework.go:534] REQ storage.cn.1.DBCommit 59 [0xc00094b548 0xc00094b549]
+[storage.cn.1 I 260403 05:54:02.256.218 session.go:132] Commit 18 objects, success 18
+[storage.cn.1 I 260403 05:54:02.256.219 rpcserver.go:622] RESP storage.cn.1.DBCommit 59 44B 461µs from c_game.cn.1
+[storage.cn.1 I 260403 05:54:02.281.220 framework.go:534] REQ storage.cn.1.DBReadAll 60 [0xc0148ba630]
+[storage.cn.1 I 260403 05:54:02.286.221 rpcserver.go:622] RESP storage.cn.1.DBReadAll 60 145B 4.109ms from c_game.cn.1
+[storage.cn.1 I 260403 05:54:02.306.222 framework.go:534] REQ storage.cn.1.DBCommit 61 [0xc0009dbd38 0xc0009dbd39]
+[storage.cn.1 I 260403 05:54:02.306.223 session.go:132] Commit 18 objects, success 18
+[storage.cn.1 I 260403 05:54:02.306.224 rpcserver.go:622] RESP storage.cn.1.DBCommit 61 44B 432µs from c_game.cn.1
+[storage.cn.1 I 260403 05:54:02.333.225 framework.go:534] REQ storage.cn.1.DBReadAll 62 [0xc0148bb5d0]
+[storage.cn.1 I 260403 05:54:02.337.226 rpcserver.go:622] RESP storage.cn.1.DBReadAll 62 159B 4.321ms from c_game.cn.1
+[storage.cn.1 I 260403 05:54:02.356.227 framework.go:534] REQ storage.cn.1.DBCommit 63 [0xc0009b6f68 0xc0009b6f69]
+[storage.cn.1 I 260403 05:54:02.356.228 session.go:132] Commit 18 objects, success 18
+[storage.cn.1 I 260403 05:54:02.357.229 rpcserver.go:622] RESP storage.cn.1.DBCommit 63 44B 824µs from c_game.cn.1
+[storage.cn.1 I 260403 05:54:02.407.230 framework.go:534] REQ storage.cn.1.DBReadAll 64 [0xc0148caf20]
+[storage.cn.1 I 260403 05:54:02.412.231 rpcserver.go:622] RESP storage.cn.1.DBReadAll 64 158B 5.796ms from c_game.cn.1
+[storage.cn.1 I 260403 05:54:02.431.232 framework.go:534] REQ storage.cn.1.DBCommit 65 [0xc00094b998 0xc00094b999]
+[storage.cn.1 I 260403 05:54:02.431.233 session.go:132] Commit 18 objects, success 18
+[storage.cn.1 I 260403 05:54:02.432.234 rpcserver.go:622] RESP storage.cn.1.DBCommit 65 44B 452µs from c_game.cn.1
+[storage.cn.1 I 260403 05:54:02.455.235 framework.go:534] REQ storage.cn.1.DBReadAll 66 [0xc0148cb840]
+[storage.cn.1 I 260403 05:54:02.459.236 rpcserver.go:622] RESP storage.cn.1.DBReadAll 66 153B 3.959ms from c_game.cn.1
+[storage.cn.1 I 260403 05:54:02.482.237 framework.go:534] REQ storage.cn.1.DBCommit 67 [0xc000a98348 0xc000a98349]
+[storage.cn.1 I 260403 05:54:02.482.238 session.go:132] Commit 18 objects, success 18
+[storage.cn.1 I 260403 05:54:02.483.239 rpcserver.go:622] RESP storage.cn.1.DBCommit 67 44B 565µs from c_game.cn.1
+[storage.cn.1 I 260403 05:54:02.505.240 framework.go:534] REQ storage.cn.1.DBReadAll 68 [0xc014890440]
+[storage.cn.1 I 260403 05:54:02.507.241 rpcserver.go:622] RESP storage.cn.1.DBReadAll 68 115B 1.258ms from c_game.cn.1
+[storage.cn.1 I 260403 05:54:02.529.242 framework.go:534] REQ storage.cn.1.DBCommit 69 [0xc000a98800 0xc000a98801]
+[storage.cn.1 I 260403 05:54:02.529.243 session.go:132] Commit 18 objects, success 18
+[storage.cn.1 I 260403 05:54:02.529.244 rpcserver.go:622] RESP storage.cn.1.DBCommit 69 44B 246µs from c_game.cn.1
+[storage.cn.1 I 260403 05:54:02.555.245 framework.go:534] REQ storage.cn.1.DBReadAll 70 [0xc0148908f0]
+[storage.cn.1 I 260403 05:54:02.558.246 rpcserver.go:622] RESP storage.cn.1.DBReadAll 70 426B 2.795ms from c_game.cn.1
+[storage.cn.1 I 260403 05:54:02.580.247 framework.go:534] REQ storage.cn.1.DBCommit 71 [0xc000a98a78 0xc000a98a79]
+[storage.cn.1 I 260403 05:54:02.580.248 session.go:132] Commit 18 objects, success 18
+[storage.cn.1 I 260403 05:54:02.580.249 rpcserver.go:622] RESP storage.cn.1.DBCommit 71 44B 262µs from c_game.cn.1
+[storage.cn.1 I 260403 05:54:02.607.250 framework.go:534] REQ storage.cn.1.DBReadAll 72 [0xc0148ab7b0]
+[storage.cn.1 I 260403 05:54:02.611.251 rpcserver.go:622] RESP storage.cn.1.DBReadAll 72 189B 3.199ms from c_game.cn.1
+[storage.cn.1 I 260403 05:54:02.631.252 framework.go:534] REQ storage.cn.1.DBCommit 73 [0xc000ad3238 0xc000ad3239]
+[storage.cn.1 I 260403 05:54:02.631.253 session.go:132] Commit 18 objects, success 18
+[storage.cn.1 I 260403 05:54:02.631.254 rpcserver.go:622] RESP storage.cn.1.DBCommit 73 44B 509µs from c_game.cn.1
+[storage.cn.1 I 260403 05:54:02.657.255 framework.go:534] REQ storage.cn.1.DBReadAll 74 [0xc014891a20]
+[storage.cn.1 I 260403 05:54:02.661.256 rpcserver.go:622] RESP storage.cn.1.DBReadAll 74 249B 4.293ms from c_game.cn.1
+[storage.cn.1 I 260403 05:54:02.681.257 framework.go:534] REQ storage.cn.1.DBCommit 75 [0xc000ad3620 0xc000ad3621]
+[storage.cn.1 I 260403 05:54:02.681.258 session.go:132] Commit 18 objects, success 18
+[storage.cn.1 I 260403 05:54:02.681.259 rpcserver.go:622] RESP storage.cn.1.DBCommit 75 44B 606µs from c_game.cn.1
+[storage.cn.1 I 260403 05:54:02.705.260 framework.go:534] REQ storage.cn.1.DBCommit 76 [0xc000ad3810 0xc000ad3811]
+[storage.cn.1 I 260403 05:54:02.705.261 session.go:132] Commit 18 objects, success 18
+[storage.cn.1 I 260403 05:54:02.705.262 rpcserver.go:622] RESP storage.cn.1.DBCommit 76 44B 329µs from c_game.cn.1
+[storage.cn.1 I 260403 05:54:12.510.263 framework.go:534] REQ storage.cn.1.DBUpdate 77 [0xc014870b60 IDHex("69ce84fec9d6fb04dc096315") 0xc0145a36a0 0xc000ad3ab8]
+[storage.cn.1 I 260403 05:54:12.513.264 rpcserver.go:622] RESP storage.cn.1.DBUpdate 77 44B 4.273ms from c_pvp.cn.1
+[storage.cn.1 I 260403 05:54:12.516.265 framework.go:534] REQ storage.cn.1.DBUpdate 78 [0xc014880f70 IDHex("69ce84fec9d6fb04dc096316") 0xc0145e3f00 0xc000a995f8]
+[storage.cn.1 I 260403 05:54:12.517.266 rpcserver.go:622] RESP storage.cn.1.DBUpdate 78 44B 846µs from c_pvp.cn.1
+[storage.cn.1 I 260403 05:54:14.761.267 framework.go:534] REQ storage.cn.1.DBUpdate 79 [0xc01489c6b0 IDHex("69ce86dac9d6fb04dc096319") 0xc0141fa560 0xc0009b7588]
+[storage.cn.1 W 260403 05:54:14.762.268 document.go:45] ServerGlobalRecord without field cross_union_adventure_round
+[storage.cn.1 I 260403 05:54:14.762.269 rpcserver.go:622] RESP storage.cn.1.DBUpdate 79 44B 829µs from c_game.cn.1
+[storage.cn.1 I 260403 05:54:14.766.270 framework.go:534] REQ storage.cn.1.DBUpdate 80 [0xc01489cdb0 IDHex("69ce86e1c9d6fb04dc096321") 0xc0141fa820 0xc0009b7808]
+[storage.cn.1 I 260403 05:54:14.766.271 rpcserver.go:622] RESP storage.cn.1.DBUpdate 80 44B 645µs from c_game.cn.1
+[storage.cn.1 I 260403 05:54:14.791.272 framework.go:534] REQ storage.cn.1.DBUpdate 81 [0xc01489d310 IDHex("69ce86e1c9d6fb04dc096322") 0xc0141faa20 0xc0009b79d8]
+[storage.cn.1 I 260403 05:54:14.805.273 rpcserver.go:622] RESP storage.cn.1.DBUpdate 81 44B 14.636ms from c_game.cn.1
+[storage.cn.1 I 260403 05:54:14.815.274 framework.go:534] REQ storage.cn.1.DBUpdate 82 [0xc014862470 IDHex("69ce86e1c9d6fb04dc096324") 0xc0141fb5a0 0xc000b86078]
+[storage.cn.1 I 260403 05:54:14.817.275 rpcserver.go:622] RESP storage.cn.1.DBUpdate 82 44B 2.324ms from c_game.cn.1
+[storage.cn.1 I 260403 05:54:14.840.276 framework.go:534] REQ storage.cn.1.DBUpdate 83 [0xc014862d20 IDHex("69ce86e1c9d6fb04dc096325") 0xc0141fbee0 0xc000b86398]
+[storage.cn.1 I 260403 05:54:14.844.277 rpcserver.go:622] RESP storage.cn.1.DBUpdate 83 44B 3.753ms from c_game.cn.1
+[storage.cn.1 I 260403 05:54:14.865.278 framework.go:534] REQ storage.cn.1.DBUpdate 84 [0xc0148815c0 IDHex("69ce86e1c9d6fb04dc096326") 0xc014090580 0xc000a99898]
+[storage.cn.1 I 260403 05:54:14.869.279 rpcserver.go:622] RESP storage.cn.1.DBUpdate 84 44B 3.863ms from c_game.cn.1
+[storage.cn.1 I 260403 05:54:14.890.280 framework.go:534] REQ storage.cn.1.DBUpdate 85 [0xc014881f90 IDHex("69ce86e1c9d6fb04dc096327") 0xc014085460 0xc000a99c78]
+[storage.cn.1 I 260403 05:54:14.893.281 rpcserver.go:622] RESP storage.cn.1.DBUpdate 85 44B 3.052ms from c_game.cn.1
+[storage.cn.1 I 260403 05:54:14.915.282 framework.go:534] REQ storage.cn.1.DBUpdate 86 [0xc014863d20 IDHex("69ce86e1c9d6fb04dc096328") 0xc014072bc0 0xc000b86988]
+[storage.cn.1 I 260403 05:54:14.918.283 rpcserver.go:622] RESP storage.cn.1.DBUpdate 86 44B 3.282ms from c_game.cn.1
+[storage.cn.1 I 260403 05:54:14.940.284 framework.go:534] REQ storage.cn.1.DBUpdate 87 [0xc014854580 IDHex("69ce86e2c9d6fb04dc096329") 0xc01405a480 0xc000a99e48]
+[storage.cn.1 I 260403 05:54:14.945.285 rpcserver.go:622] RESP storage.cn.1.DBUpdate 87 44B 4.856ms from c_game.cn.1
+[storage.cn.1 I 260403 05:54:14.965.286 framework.go:534] REQ storage.cn.1.DBUpdate 88 [0xc014842730 IDHex("69ce86e2c9d6fb04dc09632b") 0xc01405f540 0xc000b86df8]
+[storage.cn.1 I 260403 05:54:14.969.287 rpcserver.go:622] RESP storage.cn.1.DBUpdate 88 44B 4.049ms from c_game.cn.1
+[storage.cn.1 I 260403 05:54:14.991.288 framework.go:534] REQ storage.cn.1.DBUpdate 89 [0xc014842c20 IDHex("69ce86e2c9d6fb04dc09632c") 0xc0140495c0 0xc000b86fd8]
+[storage.cn.1 I 260403 05:54:14.996.289 rpcserver.go:622] RESP storage.cn.1.DBUpdate 89 44B 4.655ms from c_game.cn.1
+[storage.cn.1 I 260403 05:54:15.016.290 framework.go:534] REQ storage.cn.1.DBUpdate 90 [0xc0148431d0 IDHex("69ce86e2c9d6fb04dc09632d") 0xc014032520 0xc000b871c8]
+[storage.cn.1 I 260403 05:54:15.020.291 rpcserver.go:622] RESP storage.cn.1.DBUpdate 90 44B 4.286ms from c_game.cn.1
+[storage.cn.1 I 260403 05:55:13.395.292 framework.go:534] REQ storage.cn.1.RoleGet 91 [0xc000b989c0]
+[storage.cn.1 W 260403 05:55:13.410.293 storage.go:79] Document exec Role Error: not found
+[storage.cn.1 I 260403 05:55:13.411.294 rpcserver.go:622] RESP storage.cn.1.RoleGet 91 53B 16.128ms from c_game.cn.1
+[storage.cn.1 W 260403 05:55:52.824.295 document.go:45] ServerGlobalRecord without field cross_union_adventure_round
+[storage.cn.1 I 260403 05:55:52.826.296 session.go:132] Commit 28 objects, success 28
+[storage.cn.1 I 260403 05:56:18.634.297 framework.go:534] REQ storage.cn.1.RoleGet 92 [0xc0003fc0c0]
+[storage.cn.1 W 260403 05:56:18.652.298 storage.go:79] Document exec Role Error: not found
+[storage.cn.1 I 260403 05:56:18.652.299 rpcserver.go:622] RESP storage.cn.1.RoleGet 92 53B 18.234ms from c_game.cn.1
+[storage.cn.1 I 260403 05:57:52.827.300 session.go:132] Commit 28 objects, success 28
+[storage.cn.1 I 260403 05:59:52.829.301 session.go:132] Commit 28 objects, success 28
+[storage.cn.1 I 260403 06:00:59.250.302 framework.go:534] REQ storage.cn.1.DBCommit 93 [0xc01448c878 0xc01448c879]
+[storage.cn.1 I 260403 06:00:59.251.303 session.go:132] Commit 28 objects, success 28
+[storage.cn.1 I 260403 06:00:59.252.304 rpcserver.go:622] RESP storage.cn.1.DBCommit 93 44B 2.448ms from c_game.cn.1
+[storage.cn.1 I 260403 06:00:59.265.305 framework.go:534] REQ storage.cn.1.DBCommitObject 94 [0xc014854680 IDHex("69ce86e0c9d6fb04dc09631a")]
+[storage.cn.1 I 260403 06:00:59.267.306 rpcserver.go:622] RESP storage.cn.1.DBCommitObject 94 44B 2.228ms from c_game.cn.1
+[storage.cn.1 I 260403 06:00:59.290.307 framework.go:534] REQ storage.cn.1.DBCommitObject 95 [0xc014854c40 IDHex("69ce86dac9d6fb04dc096319")]
+[storage.cn.1 I 260403 06:00:59.290.308 rpcserver.go:622] RESP storage.cn.1.DBCommitObject 95 44B 57µs from c_game.cn.1
+[storage.cn.1 I 260403 06:00:59.315.309 framework.go:534] REQ storage.cn.1.DBUpdate 96 [0xc014862ed0 IDHex("69ce86e1c9d6fb04dc09631f") 0xc01402de00 0xc0170eeb78]
+[storage.cn.1 I 260403 06:00:59.318.310 rpcserver.go:622] RESP storage.cn.1.DBUpdate 96 44B 2.263ms from c_game.cn.1
+[storage.cn.1 I 260403 06:01:04.253.311 framework.go:534] REQ storage.cn.1.DBReadsert 97 [0xc0148709a0 0xc0148d0140 0xc0155fca48]
+[storage.cn.1 I 260403 06:01:04.264.312 rpcserver.go:622] RESP storage.cn.1.DBReadsert 97 134B 11.549ms from c_game.cn.1
+[storage.cn.1 I 260403 06:01:04.266.313 framework.go:534] REQ storage.cn.1.DBCommit 98 [0xc017942920 0xc017942921]
+[storage.cn.1 I 260403 06:01:04.269.314 session.go:132] Commit 26 objects, success 26
+[storage.cn.1 I 260403 06:01:04.269.315 rpcserver.go:622] RESP storage.cn.1.DBCommit 98 44B 3.428ms from c_game.cn.1
+[storage.cn.1 I 260403 06:01:04.291.316 framework.go:534] REQ storage.cn.1.DBReadsert 99 [0xc0148422e0 0xc0145521d0 0xc017942bd8]
+[storage.cn.1 I 260403 06:01:04.292.317 rpcserver.go:622] RESP storage.cn.1.DBReadsert 99 1477B 1.397ms from c_game.cn.1
+[storage.cn.1 I 260403 06:01:04.316.318 framework.go:534] REQ storage.cn.1.DBCommit 100 [0xc0170effe8 0xc0170effe9]
+[storage.cn.1 I 260403 06:01:04.316.319 session.go:132] Commit 27 objects, success 27
+[storage.cn.1 I 260403 06:01:04.316.320 rpcserver.go:622] RESP storage.cn.1.DBCommit 100 44B 312µs from c_game.cn.1
+[storage.cn.1 I 260403 06:01:10.273.321 framework.go:534] REQ storage.cn.1.DBReadsert 101 [0xc0148125d0 0xc0131940a8 0xc01197a758]
+[storage.cn.1 I 260403 06:01:10.279.322 rpcserver.go:622] RESP storage.cn.1.DBReadsert 101 81B 6.228ms from c_game.cn.1
+[storage.cn.1 I 260403 06:01:10.290.323 framework.go:534] REQ storage.cn.1.DBCommit 102 [0xc0118bc950 0xc0118bc951]
+[storage.cn.1 I 260403 06:01:10.290.324 session.go:132] Commit 28 objects, success 28
+[storage.cn.1 I 260403 06:01:10.290.325 rpcserver.go:622] RESP storage.cn.1.DBCommit 102 44B 104µs from c_game.cn.1
+[storage.cn.1 I 260403 06:01:10.315.326 framework.go:534] REQ storage.cn.1.DBGetRankSize 103 [0xc014880250 0xc010ed2df8 0xc010ed2e00 0xc014880260]
+[storage.cn.1 I 260403 06:01:10.348.327 rpcserver.go:622] RESP storage.cn.1.DBGetRankSize 103 1B 33.507ms from c_game.cn.1
+[storage.cn.1 I 260403 06:01:10.350.328 framework.go:534] REQ storage.cn.1.DBGetRankSize 104 [0xc014880b90 0xc0106faf58 0xc0106faf60 0xc014880ba0]
+[storage.cn.1 I 260403 06:01:10.350.329 rpcserver.go:622] RESP storage.cn.1.DBGetRankSize 104 1B 494µs from c_game.cn.1
+[storage.cn.1 I 260403 06:01:10.366.330 framework.go:534] REQ storage.cn.1.DBGetRankSize 105 [0xc014843ee0 0xc0179437b8 0xc0179437c0 0xc014843f00]
+[storage.cn.1 I 260403 06:01:10.367.331 rpcserver.go:622] RESP storage.cn.1.DBGetRankSize 105 1B 984µs from c_game.cn.1
+[storage.cn.1 I 260403 06:01:10.391.332 framework.go:534] REQ storage.cn.1.DBGetRankSize 106 [0xc014890400 0xc017943948 0xc017943950 0xc014890440]
+[storage.cn.1 I 260403 06:01:10.391.333 rpcserver.go:622] RESP storage.cn.1.DBGetRankSize 106 1B 621µs from c_game.cn.1
+[storage.cn.1 I 260403 06:01:10.415.334 framework.go:534] REQ storage.cn.1.DBGetRankSize 107 [0xc014890710 0xc017943a38 0xc017943a40 0xc014890720]
+[storage.cn.1 I 260403 06:01:10.416.335 rpcserver.go:622] RESP storage.cn.1.DBGetRankSize 107 1B 888µs from c_game.cn.1
+[storage.cn.1 I 260403 06:01:10.440.336 framework.go:534] REQ storage.cn.1.DBGetRankSize 108 [0xc014881ae0 0xc00b72be78 0xc00b72be80 0xc014881b20]
+[storage.cn.1 I 260403 06:01:10.441.337 rpcserver.go:622] RESP storage.cn.1.DBGetRankSize 108 1B 668µs from c_game.cn.1
+[storage.cn.1 I 260403 06:01:10.465.338 framework.go:534] REQ storage.cn.1.DBGetRankSize 109 [0xc014891150 0xc017943c68 0xc017943c70 0xc014891160]
+[storage.cn.1 I 260403 06:01:10.466.339 rpcserver.go:622] RESP storage.cn.1.DBGetRankSize 109 1B 456µs from c_game.cn.1
+[storage.cn.1 I 260403 06:01:10.490.340 framework.go:534] REQ storage.cn.1.DBGetRankSize 110 [0xc014812c70 0xc00bb78188 0xc00bb78190 0xc014812cf0]
+[storage.cn.1 I 260403 06:01:10.491.341 rpcserver.go:622] RESP storage.cn.1.DBGetRankSize 110 1B 325µs from c_game.cn.1
+[storage.cn.1 I 260403 06:01:10.515.342 framework.go:534] REQ storage.cn.1.DBGetRankSize 111 [0xc014891c80 0xc0146cd488 0xc0146cd490 0xc014891cc0]
+[storage.cn.1 I 260403 06:01:10.516.343 rpcserver.go:622] RESP storage.cn.1.DBGetRankSize 111 1B 583µs from c_game.cn.1
+[storage.cn.1 I 260403 06:01:10.540.344 framework.go:534] REQ storage.cn.1.DBGetRankSize 112 [0xc014813380 0xc01465c718 0xc01465c720 0xc014813390]
+[storage.cn.1 I 260403 06:01:10.541.345 rpcserver.go:622] RESP storage.cn.1.DBGetRankSize 112 1B 298µs from c_game.cn.1
+[storage.cn.1 I 260403 06:01:10.565.346 framework.go:534] REQ storage.cn.1.DBGetRankSize 113 [0xc01489c930 0xc000486198 0xc0004861a0 0xc01489c970]
+[storage.cn.1 I 260403 06:01:10.566.347 rpcserver.go:622] RESP storage.cn.1.DBGetRankSize 113 1B 650µs from c_game.cn.1
+[storage.cn.1 I 260403 06:01:10.590.348 framework.go:534] REQ storage.cn.1.DBReadsert 114 [0xc01489d360 0xc014552340 0xc000486478]
+[storage.cn.1 I 260403 06:01:10.590.349 rpcserver.go:622] RESP storage.cn.1.DBReadsert 114 82B 451µs from c_game.cn.1
+[storage.cn.1 I 260403 06:01:10.615.350 framework.go:534] REQ storage.cn.1.DBReadsert 115 [0xc0148aa050 0xc005d7e1f0 0xc01459fcd8]
+[storage.cn.1 I 260403 06:01:10.615.351 rpcserver.go:622] RESP storage.cn.1.DBReadsert 115 82B 453µs from c_game.cn.1
+[storage.cn.1 I 260403 06:01:10.640.352 framework.go:534] REQ storage.cn.1.DBReadsert 116 [0xc01489d5f0 0xc014552360 0xc000486598]
+[storage.cn.1 I 260403 06:01:10.640.353 rpcserver.go:622] RESP storage.cn.1.DBReadsert 116 82B 353µs from c_game.cn.1
+[storage.cn.1 I 260403 06:01:10.665.354 framework.go:534] REQ storage.cn.1.DBReadsert 117 [0xc01489dae0 0xc014552380 0xc000486738]
+[storage.cn.1 I 260403 06:01:10.666.355 rpcserver.go:622] RESP storage.cn.1.DBReadsert 117 82B 509µs from c_game.cn.1
+[storage.cn.1 I 260403 06:01:10.691.356 framework.go:534] REQ storage.cn.1.DBReadBy 118 [0xc0148ba090 0xc013194138]
+[storage.cn.1 I 260403 06:01:10.691.357 rpcserver.go:622] RESP storage.cn.1.DBReadBy 118 44B 598µs from c_game.cn.1
+[storage.cn.1 I 260403 06:01:10.716.358 framework.go:534] REQ storage.cn.1.DBReadBy 119 [0xc0148ba580 0xc013194158]
+[storage.cn.1 I 260403 06:01:10.716.359 rpcserver.go:622] RESP storage.cn.1.DBReadBy 119 44B 312µs from c_game.cn.1
+[storage.cn.1 I 260403 06:01:10.740.360 framework.go:534] REQ storage.cn.1.DBReadBy 120 [0xc0148ca410 0xc0145523b0]
+[storage.cn.1 I 260403 06:01:10.741.361 rpcserver.go:622] RESP storage.cn.1.DBReadBy 120 44B 307µs from c_game.cn.1
+[storage.cn.1 I 260403 06:01:10.765.362 framework.go:534] REQ storage.cn.1.DBReadBy 121 [0xc0148ca820 0xc0145523d0]
+[storage.cn.1 I 260403 06:01:10.765.363 rpcserver.go:622] RESP storage.cn.1.DBReadBy 121 44B 381µs from c_game.cn.1
+[storage.cn.1 I 260403 06:01:10.790.364 framework.go:534] REQ storage.cn.1.DBReadBy 122 [0xc0148ab370 0xc005d7e240]
+[storage.cn.1 I 260403 06:01:10.791.365 rpcserver.go:622] RESP storage.cn.1.DBReadBy 122 44B 526µs from c_game.cn.1
+[storage.cn.1 I 260403 06:01:10.815.366 framework.go:534] REQ storage.cn.1.DBReadBy 123 [0xc0148ab550 0xc005d7e260]
+[storage.cn.1 I 260403 06:01:10.816.367 rpcserver.go:622] RESP storage.cn.1.DBReadBy 123 44B 442µs from c_game.cn.1
+[storage.cn.1 I 260403 06:01:10.840.368 framework.go:534] REQ storage.cn.1.DBReadBy 124 [0xc0148ab740 0xc005d7e280]
+[storage.cn.1 I 260403 06:01:10.841.369 rpcserver.go:622] RESP storage.cn.1.DBReadBy 124 44B 717µs from c_game.cn.1
+[storage.cn.1 I 260403 06:01:10.865.370 framework.go:534] REQ storage.cn.1.DBCommit 125 [0xc0005949c8 0xc0005949c9]
+[storage.cn.1 I 260403 06:01:10.865.371 session.go:132] Commit 28 objects, success 28
+[storage.cn.1 I 260403 06:01:10.865.372 rpcserver.go:622] RESP storage.cn.1.DBCommit 125 44B 391µs from c_game.cn.1
+[storage.cn.1 I 260403 06:01:10.890.373 framework.go:534] REQ storage.cn.1.DBReadsert 126 [0xc0148de240 0xc005d7e2c8 0xc000594bf8]
+[storage.cn.1 I 260403 06:01:10.891.374 rpcserver.go:622] RESP storage.cn.1.DBReadsert 126 133B 597µs from c_game.cn.1
+[storage.cn.1 I 260403 06:01:10.921.375 framework.go:534] REQ storage.cn.1.DBReadRangeBy 127 [0xc0148def90 0xc005d7e2f8 0xc000594f88]
+[storage.cn.1 I 260403 06:01:10.924.376 rpcserver.go:622] RESP storage.cn.1.DBReadRangeBy 127 44B 9.088ms from c_game.cn.1
+[storage.cn.1 I 260403 06:01:10.941.377 framework.go:534] REQ storage.cn.1.DBCommit 128 [0xc0005950c0 0xc0005950c1]
+[storage.cn.1 I 260403 06:01:10.941.378 session.go:132] Commit 28 objects, success 28
+[storage.cn.1 I 260403 06:01:10.941.379 rpcserver.go:622] RESP storage.cn.1.DBCommit 128 44B 172µs from c_game.cn.1
+[storage.cn.1 I 260403 06:01:10.965.380 framework.go:534] REQ storage.cn.1.DBReadsert 129 [0xc0148df7c0 0xc005d7e350 0xc0005952e8]
+[storage.cn.1 I 260403 06:01:10.966.381 rpcserver.go:622] RESP storage.cn.1.DBReadsert 129 170B 572µs from c_game.cn.1
+[storage.cn.1 I 260403 06:01:10.990.382 framework.go:534] REQ storage.cn.1.DBReadKeysRangeBy 130 [0xc0148bbc00 0xc0131941b8 0xc0145a3fa0 0xc00056d4b8]
+[storage.cn.1 I 260403 06:01:10.991.383 rpcserver.go:622] RESP storage.cn.1.DBReadKeysRangeBy 130 44B 811µs from c_game.cn.1
+[storage.cn.1 I 260403 06:01:11.015.384 framework.go:534] REQ storage.cn.1.DBCommit 131 [0xc00060c170 0xc00060c171]
+[storage.cn.1 I 260403 06:01:11.015.385 session.go:132] Commit 28 objects, success 28
+[storage.cn.1 I 260403 06:01:11.015.386 rpcserver.go:622] RESP storage.cn.1.DBCommit 131 44B 127µs from c_game.cn.1
+[storage.cn.1 I 260403 06:01:11.041.387 framework.go:534] REQ storage.cn.1.DBReadsert 132 [0xc0148fb3f0 0xc013194210 0xc00060c398]
+[storage.cn.1 I 260403 06:01:11.041.388 rpcserver.go:622] RESP storage.cn.1.DBReadsert 132 153B 431µs from c_game.cn.1
+[storage.cn.1 I 260403 06:01:11.066.389 framework.go:534] REQ storage.cn.1.DBReadKeysRangeBy 133 [0xc0148fb9d0 0xc013194230 0xc01471f4a0 0xc00060c548]
+[storage.cn.1 I 260403 06:01:11.066.390 rpcserver.go:622] RESP storage.cn.1.DBReadKeysRangeBy 133 44B 598µs from c_game.cn.1
+[storage.cn.1 I 260403 06:01:11.091.391 framework.go:534] REQ storage.cn.1.DBCommit 134 [0xc00060d1e8 0xc00060d1e9]
+[storage.cn.1 I 260403 06:01:11.091.392 session.go:132] Commit 28 objects, success 28
+[storage.cn.1 I 260403 06:01:11.091.393 rpcserver.go:622] RESP storage.cn.1.DBCommit 134 44B 120µs from c_game.cn.1
+[storage.cn.1 I 260403 06:01:11.116.394 framework.go:534] REQ storage.cn.1.DBReadAll 135 [0xc014871940]
+[storage.cn.1 I 260403 06:01:11.117.395 rpcserver.go:622] RESP storage.cn.1.DBReadAll 135 256B 780µs from c_game.cn.1
+[storage.cn.1 I 260403 06:01:11.141.396 framework.go:534] REQ storage.cn.1.DBReadKeysRangeBy 136 [0xc0148ea320 0xc005d7e380 0xc01470a620 0xc000595728]
+[storage.cn.1 I 260403 06:01:11.141.397 rpcserver.go:622] RESP storage.cn.1.DBReadKeysRangeBy 136 44B 454µs from c_game.cn.1
+[storage.cn.1 I 260403 06:01:11.165.398 framework.go:534] REQ storage.cn.1.DBCommit 137 [0xc00060d4a0 0xc00060d4a1]
+[storage.cn.1 I 260403 06:01:11.166.399 session.go:132] Commit 28 objects, success 28
+[storage.cn.1 I 260403 06:01:11.166.400 rpcserver.go:622] RESP storage.cn.1.DBCommit 137 44B 104µs from c_game.cn.1
+[storage.cn.1 I 260403 06:01:11.190.401 framework.go:534] REQ storage.cn.1.DBReadsert 138 [0xc0148eb330 0xc005d7e3a0 0xc0007fa3c8]
+[storage.cn.1 I 260403 06:01:11.191.402 rpcserver.go:622] RESP storage.cn.1.DBReadsert 138 130B 657µs from c_game.cn.1
+[storage.cn.1 I 260403 06:01:11.215.403 framework.go:534] REQ storage.cn.1.DBReadAll 139 [0xc0148eb800]
+[storage.cn.1 I 260403 06:01:11.216.404 rpcserver.go:622] RESP storage.cn.1.DBReadAll 139 198B 267µs from c_game.cn.1
+[storage.cn.1 I 260403 06:01:11.240.405 framework.go:534] REQ storage.cn.1.DBCommit 140 [0xc0007fa8a0 0xc0007fa8a1]
+[storage.cn.1 I 260403 06:01:11.240.406 session.go:132] Commit 28 objects, success 28
+[storage.cn.1 I 260403 06:01:11.241.407 rpcserver.go:622] RESP storage.cn.1.DBCommit 140 44B -ms
+[storage.cn.1 I 260403 06:01:11.265.408 framework.go:534] REQ storage.cn.1.DBReadAll 141 [0xc0149265a0]
+[storage.cn.1 I 260403 06:01:11.266.409 rpcserver.go:622] RESP storage.cn.1.DBReadAll 141 160B 310µs from c_game.cn.1
+[storage.cn.1 I 260403 06:01:11.291.410 framework.go:534] REQ storage.cn.1.DBCommit 142 [0xc00060d878 0xc00060d879]
+[storage.cn.1 I 260403 06:01:11.291.411 session.go:132] Commit 28 objects, success 28
+[storage.cn.1 I 260403 06:01:11.291.412 rpcserver.go:622] RESP storage.cn.1.DBCommit 142 44B 94µs from c_game.cn.1
+[storage.cn.1 I 260403 06:01:11.316.413 framework.go:534] REQ storage.cn.1.DBReadAll 143 [0xc014926eb0]
+[storage.cn.1 I 260403 06:01:11.316.414 rpcserver.go:622] RESP storage.cn.1.DBReadAll 143 145B 334µs from c_game.cn.1
+[storage.cn.1 I 260403 06:01:11.341.415 framework.go:534] REQ storage.cn.1.DBCommit 144 [0xc00060dab0 0xc00060dab1]
+[storage.cn.1 I 260403 06:01:11.341.416 session.go:132] Commit 28 objects, success 28
+[storage.cn.1 I 260403 06:01:11.341.417 rpcserver.go:622] RESP storage.cn.1.DBCommit 144 44B 124µs from c_game.cn.1
+[storage.cn.1 I 260403 06:01:11.366.418 framework.go:534] REQ storage.cn.1.DBReadAll 145 [0xc0149603d0]
+[storage.cn.1 I 260403 06:01:11.366.419 rpcserver.go:622] RESP storage.cn.1.DBReadAll 145 159B 283µs from c_game.cn.1
+[storage.cn.1 I 260403 06:01:11.390.420 framework.go:534] REQ storage.cn.1.DBCommit 146 [0xc0007fb1f8 0xc0007fb1f9]
+[storage.cn.1 I 260403 06:01:11.391.421 session.go:132] Commit 28 objects, success 28
+[storage.cn.1 I 260403 06:01:11.391.422 rpcserver.go:622] RESP storage.cn.1.DBCommit 146 44B 164µs from c_game.cn.1
+[storage.cn.1 I 260403 06:01:11.441.423 framework.go:534] REQ storage.cn.1.DBReadAll 147 [0xc0149607d0]
+[storage.cn.1 I 260403 06:01:11.441.424 rpcserver.go:622] RESP storage.cn.1.DBReadAll 147 158B 351µs from c_game.cn.1
+[storage.cn.1 I 260403 06:01:11.465.425 framework.go:534] REQ storage.cn.1.DBCommit 148 [0xc0007fb438 0xc0007fb439]
+[storage.cn.1 I 260403 06:01:11.465.426 session.go:132] Commit 28 objects, success 28
+[storage.cn.1 I 260403 06:01:11.465.427 rpcserver.go:622] RESP storage.cn.1.DBCommit 148 44B 105µs from c_game.cn.1
+[storage.cn.1 I 260403 06:01:11.491.428 framework.go:534] REQ storage.cn.1.DBReadAll 149 [0xc014960e50]
+[storage.cn.1 I 260403 06:01:11.491.429 rpcserver.go:622] RESP storage.cn.1.DBReadAll 149 153B 503µs from c_game.cn.1
+[storage.cn.1 I 260403 06:01:11.515.430 framework.go:534] REQ storage.cn.1.DBCommit 150 [0xc0007fb6d0 0xc0007fb6d1]
+[storage.cn.1 I 260403 06:01:11.515.431 session.go:132] Commit 28 objects, success 28
+[storage.cn.1 I 260403 06:01:11.515.432 rpcserver.go:622] RESP storage.cn.1.DBCommit 150 44B 195µs from c_game.cn.1
+[storage.cn.1 I 260403 06:01:11.541.433 framework.go:534] REQ storage.cn.1.DBReadAll 151 [0xc014992040]
+[storage.cn.1 I 260403 06:01:11.541.434 rpcserver.go:622] RESP storage.cn.1.DBReadAll 151 115B 530µs from c_game.cn.1
+[storage.cn.1 I 260403 06:01:11.566.435 framework.go:534] REQ storage.cn.1.DBCommit 152 [0xc0007fbc78 0xc0007fbc79]
+[storage.cn.1 I 260403 06:01:11.567.436 session.go:132] Commit 28 objects, success 28
+[storage.cn.1 I 260403 06:01:11.567.437 rpcserver.go:622] RESP storage.cn.1.DBCommit 152 44B 131µs from c_game.cn.1
+[storage.cn.1 I 260403 06:01:11.592.438 framework.go:534] REQ storage.cn.1.DBReadAll 153 [0xc014992ae0]
+[storage.cn.1 I 260403 06:01:11.593.439 rpcserver.go:622] RESP storage.cn.1.DBReadAll 153 426B 1.369ms from c_game.cn.1
+[storage.cn.1 I 260403 06:01:11.618.440 framework.go:534] REQ storage.cn.1.DBCommit 154 [0xc00084ee80 0xc00084ee81]
+[storage.cn.1 I 260403 06:01:11.618.441 session.go:132] Commit 28 objects, success 28
+[storage.cn.1 I 260403 06:01:11.618.442 rpcserver.go:622] RESP storage.cn.1.DBCommit 154 44B 458µs from c_game.cn.1
+[storage.cn.1 I 260403 06:01:11.644.443 framework.go:534] REQ storage.cn.1.DBReadAll 155 [0xc014993590]
+[storage.cn.1 I 260403 06:01:11.645.444 rpcserver.go:622] RESP storage.cn.1.DBReadAll 155 189B 1.428ms from c_game.cn.1
+[storage.cn.1 I 260403 06:01:11.667.445 framework.go:534] REQ storage.cn.1.DBCommit 156 [0xc000802bb0 0xc000802bb1]
+[storage.cn.1 I 260403 06:01:11.668.446 session.go:132] Commit 28 objects, success 28
+[storage.cn.1 I 260403 06:01:11.668.447 rpcserver.go:622] RESP storage.cn.1.DBCommit 156 44B 1.197ms from c_game.cn.1
+[storage.cn.1 I 260403 06:01:11.692.448 framework.go:534] REQ storage.cn.1.DBReadAll 157 [0xc014961b50]
+[storage.cn.1 I 260403 06:01:11.694.449 rpcserver.go:622] RESP storage.cn.1.DBReadAll 157 249B 1.385ms from c_game.cn.1
+[storage.cn.1 I 260403 06:01:11.717.450 framework.go:534] REQ storage.cn.1.DBCommit 158 [0xc00084f5a8 0xc00084f5a9]
+[storage.cn.1 I 260403 06:01:11.717.451 session.go:132] Commit 28 objects, success 28
+[storage.cn.1 I 260403 06:01:11.717.452 rpcserver.go:622] RESP storage.cn.1.DBCommit 158 44B 436µs from c_game.cn.1
+[storage.cn.1 I 260403 06:01:11.746.453 framework.go:534] REQ storage.cn.1.DBCommit 159 [0xc000658ec8 0xc000658ec9]
+[storage.cn.1 I 260403 06:01:11.747.454 session.go:132] Commit 28 objects, success 28
+[storage.cn.1 I 260403 06:01:11.747.455 rpcserver.go:622] RESP storage.cn.1.DBCommit 159 44B 1.419ms from c_game.cn.1
+[storage.cn.1 I 260403 06:01:24.242.456 framework.go:534] REQ storage.cn.1.DBUpdate 160 [0xc014918e90 IDHex("69ce86dac9d6fb04dc096319") 0xc0147333c0 0xc000659168]
+[storage.cn.1 W 260403 06:01:24.243.457 document.go:45] ServerGlobalRecord without field cross_union_adventure_round
+[storage.cn.1 I 260403 06:01:24.244.458 rpcserver.go:622] RESP storage.cn.1.DBUpdate 160 44B 1.586ms from c_game.cn.1
+[storage.cn.1 I 260403 06:01:24.266.459 framework.go:534] REQ storage.cn.1.DBUpdate 161 [0xc014993ee0 IDHex("69ce86e1c9d6fb04dc096321") 0xc0147940a0 0xc00084f7f8]
+[storage.cn.1 I 260403 06:01:24.266.460 rpcserver.go:622] RESP storage.cn.1.DBUpdate 161 44B 453µs from c_game.cn.1
+[storage.cn.1 I 260403 06:01:24.291.461 framework.go:534] REQ storage.cn.1.DBUpdate 162 [0xc014961f60 IDHex("69ce86e1c9d6fb04dc096322") 0xc0147675a0 0xc000802fb8]
+[storage.cn.1 I 260403 06:01:24.291.462 rpcserver.go:622] RESP storage.cn.1.DBUpdate 162 44B 359µs from c_game.cn.1
+[storage.cn.1 I 260403 06:01:24.315.463 framework.go:534] REQ storage.cn.1.DBUpdate 163 [0xc0149195e0 IDHex("69ce86e1c9d6fb04dc096324") 0xc014733820 0xc000659418]
+[storage.cn.1 I 260403 06:01:24.315.464 rpcserver.go:622] RESP storage.cn.1.DBUpdate 163 44B 255µs from c_game.cn.1
+[storage.cn.1 I 260403 06:01:24.340.465 framework.go:534] REQ storage.cn.1.DBUpdate 164 [0xc014919b30 IDHex("69ce86e1c9d6fb04dc096325") 0xc014733c20 0xc0006595f8]
+[storage.cn.1 I 260403 06:01:24.341.466 rpcserver.go:622] RESP storage.cn.1.DBUpdate 164 44B 446µs from c_game.cn.1
+[storage.cn.1 I 260403 06:01:24.365.467 framework.go:534] REQ storage.cn.1.DBUpdate 165 [0xc0149b4380 IDHex("69ce86e1c9d6fb04dc096326") 0xc014767a40 0xc0008031e8]
+[storage.cn.1 I 260403 06:01:24.366.468 rpcserver.go:622] RESP storage.cn.1.DBUpdate 165 44B 386µs from c_game.cn.1
+[storage.cn.1 I 260403 06:01:24.390.469 framework.go:534] REQ storage.cn.1.DBUpdate 166 [0xc0149b47a0 IDHex("69ce86e1c9d6fb04dc096327") 0xc014767fc0 0xc0008033f8]
+[storage.cn.1 I 260403 06:01:24.391.470 rpcserver.go:622] RESP storage.cn.1.DBUpdate 166 44B -ms
+[storage.cn.1 I 260403 06:01:24.415.471 framework.go:534] REQ storage.cn.1.DBUpdate 167 [0xc0149c80e0 IDHex("69ce86e1c9d6fb04dc096328") 0xc0147b81e0 0xc000659888]
+[storage.cn.1 I 260403 06:01:24.416.472 rpcserver.go:622] RESP storage.cn.1.DBUpdate 167 44B 525µs from c_game.cn.1
+[storage.cn.1 I 260403 06:01:24.441.473 framework.go:534] REQ storage.cn.1.DBUpdate 168 [0xc0149b4b00 IDHex("69ce86e2c9d6fb04dc096329") 0xc0147a42e0 0xc0008035b8]
+[storage.cn.1 I 260403 06:01:24.442.474 rpcserver.go:622] RESP storage.cn.1.DBUpdate 168 44B 851µs from c_game.cn.1
+[storage.cn.1 I 260403 06:01:24.465.475 framework.go:534] REQ storage.cn.1.DBUpdate 169 [0xc0149b4e70 IDHex("69ce86e2c9d6fb04dc09632b") 0xc0147a46c0 0xc000803788]
+[storage.cn.1 I 260403 06:01:24.466.476 rpcserver.go:622] RESP storage.cn.1.DBUpdate 169 44B 558µs from c_game.cn.1
+[storage.cn.1 I 260403 06:01:24.491.477 framework.go:534] REQ storage.cn.1.DBUpdate 170 [0xc0149b52e0 IDHex("69ce86e2c9d6fb04dc09632c") 0xc0147a4ac0 0xc000803988]
+[storage.cn.1 I 260403 06:01:24.492.478 rpcserver.go:622] RESP storage.cn.1.DBUpdate 170 44B 509µs from c_game.cn.1
+[storage.cn.1 I 260403 06:01:24.516.479 framework.go:534] REQ storage.cn.1.DBUpdate 171 [0xc0149c85b0 IDHex("69ce86e2c9d6fb04dc09632d") 0xc0147b87c0 0xc000659b28]
+[storage.cn.1 I 260403 06:01:24.516.480 rpcserver.go:622] RESP storage.cn.1.DBUpdate 171 44B 915µs from c_game.cn.1
+[storage.cn.1 I 260403 06:01:32.084.481 framework.go:534] REQ storage.cn.1.RoleGet 172 [0xc000b23590]
+[storage.cn.1 W 260403 06:01:32.099.482 storage.go:79] Document exec Role Error: not found
+[storage.cn.1 I 260403 06:01:32.099.483 rpcserver.go:622] RESP storage.cn.1.RoleGet 172 53B 15.976ms from c_game.cn.1
+[storage.cn.1 I 260403 06:01:32.245.484 framework.go:534] REQ storage.cn.1.RoleGet 173 [0xc00077ff20]
+[storage.cn.1 W 260403 06:01:32.248.485 storage.go:79] Document exec Role Error: not found
+[storage.cn.1 I 260403 06:01:32.248.486 rpcserver.go:622] RESP storage.cn.1.RoleGet 173 53B 3.488ms from c_game.cn.1
+[storage.cn.1 I 260403 06:01:32.265.487 framework.go:534] REQ storage.cn.1.RoleAdd 174 [0xc014794720]
+[storage.cn.1 I 260403 06:01:32.354.488 rpcserver.go:622] RESP storage.cn.1.RoleAdd 174 5723B 88.727ms from c_game.cn.1
+[storage.cn.1 I 260403 06:01:32.359.489 framework.go:534] REQ storage.cn.1.DBCreate 175 [0xc0149ec5e0 0xc0146fb620]
+[storage.cn.1 I 260403 06:01:32.364.490 rpcserver.go:622] RESP storage.cn.1.DBCreate 175 203B 5.023ms from c_game.cn.1
+[storage.cn.1 I 260403 06:01:32.367.491 framework.go:534] REQ storage.cn.1.DBCreate 176 [0xc0149ed010 0xc0146fbe00]
+[storage.cn.1 I 260403 06:01:32.368.492 framework.go:534] REQ storage.cn.1.DBCreate 177 [0xc0149b5810 0xc0147a51a0]
+[storage.cn.1 I 260403 06:01:32.371.493 framework.go:534] REQ storage.cn.1.DBCreate 178 [0xc014a48730 0xc014826ac0]
+[storage.cn.1 I 260403 06:01:32.371.494 framework.go:534] REQ storage.cn.1.DBCreate 179 [0xc014a488c0 0xc014826c60]
+[storage.cn.1 I 260403 06:01:32.371.495 framework.go:534] REQ storage.cn.1.DBCreate 180 [0xc014a489f0 0xc014826e00]
+[storage.cn.1 I 260403 06:01:32.371.496 framework.go:534] REQ storage.cn.1.DBCreate 181 [0xc014a48b20 0xc014826fa0]
+[storage.cn.1 I 260403 06:01:32.371.497 framework.go:534] REQ storage.cn.1.DBCreate 182 [0xc014a48c90 0xc014827160]
+[storage.cn.1 I 260403 06:01:32.373.498 framework.go:534] REQ storage.cn.1.DBCreate 183 [0xc0149c9900 0xc0147b9e60]
+[storage.cn.1 I 260403 06:01:32.377.499 framework.go:534] REQ storage.cn.1.DBCreate 184 [0xc0149c9d10 0xc01483c440]
+[storage.cn.1 I 260403 06:01:32.377.500 framework.go:534] REQ storage.cn.1.DBCreate 185 [0xc014a88010 0xc01483c900]
+[storage.cn.1 I 260403 06:01:32.377.501 rpcserver.go:622] RESP storage.cn.1.DBCreate 176 3545B 10.843ms from c_game.cn.1
+[storage.cn.1 I 260403 06:01:32.378.502 framework.go:534] REQ storage.cn.1.DBCreate 186 [0xc014a88440 0xc01483d4c0]
+[storage.cn.1 I 260403 06:01:32.413.503 rpcserver.go:622] RESP storage.cn.1.DBCreate 181 785B 41.759ms from c_game.cn.1
+[storage.cn.1 I 260403 06:01:32.416.504 rpcserver.go:622] RESP storage.cn.1.DBCreate 180 229B 45.013ms from c_game.cn.1
+[storage.cn.1 I 260403 06:01:32.432.505 rpcserver.go:622] RESP storage.cn.1.DBCreate 185 119B 55.27ms from c_game.cn.1
+[storage.cn.1 I 260403 06:01:32.462.506 rpcserver.go:622] RESP storage.cn.1.DBCreate 184 129B 85.259ms from c_game.cn.1
+[storage.cn.1 I 260403 06:01:32.464.507 rpcserver.go:622] RESP storage.cn.1.DBCreate 178 193B 92.817ms from c_game.cn.1
+[storage.cn.1 I 260403 06:01:32.465.508 rpcserver.go:622] RESP storage.cn.1.DBCreate 182 150B 94.127ms from c_game.cn.1
+[storage.cn.1 I 260403 06:01:32.467.509 rpcserver.go:622] RESP storage.cn.1.DBCreate 183 209B 93.981ms from c_game.cn.1
+[storage.cn.1 I 260403 06:01:32.488.510 rpcserver.go:622] RESP storage.cn.1.DBCreate 186 791B 110.75ms from c_game.cn.1
+[storage.cn.1 I 260403 06:01:32.491.511 rpcserver.go:622] RESP storage.cn.1.DBCreate 177 230B 122.949ms from c_game.cn.1
+[storage.cn.1 I 260403 06:01:32.492.512 rpcserver.go:622] RESP storage.cn.1.DBCreate 179 421B 120.708ms from c_game.cn.1
+[storage.cn.1 I 260403 06:01:32.516.513 framework.go:534] REQ storage.cn.1.DBCreate 187 [0xc014ae4350 0xc014851920]
+[storage.cn.1 I 260403 06:01:32.521.514 rpcserver.go:622] RESP storage.cn.1.DBCreate 187 286B 4.488ms from c_game.cn.1
+[storage.cn.1 I 260403 06:01:32.564.515 framework.go:534] REQ storage.cn.1.DBRankRoleAdd 188 [0xc014ae44d0 IDHex("69cf57bc36908d001b1ee319") 0xc000a8c0e0 0xc014ae4500]
+[storage.cn.1 I 260403 06:01:32.569.516 rpcserver.go:622] RESP storage.cn.1.DBRankRoleAdd 188 1B 4.791ms from c_game.cn.1
+[storage.cn.1 I 260403 06:01:35.247.517 framework.go:534] REQ storage.cn.1.DBCreate 189 [0xc014ae59c0 0xc0148ad5e0]
+[storage.cn.1 I 260403 06:01:35.264.518 rpcserver.go:622] RESP storage.cn.1.DBCreate 189 412B 16.794ms from c_game.cn.1
+[storage.cn.1 I 260403 06:01:35.267.519 framework.go:534] REQ storage.cn.1.DBCreate 190 [0xc014afa050 0xc0148adf60]
+[storage.cn.1 I 260403 06:01:35.269.520 rpcserver.go:622] RESP storage.cn.1.DBCreate 190 464B 1.809ms from c_game.cn.1
+[storage.cn.1 I 260403 06:01:35.290.521 framework.go:534] REQ storage.cn.1.DBCreate 191 [0xc014accd70 0xc014889040]
+[storage.cn.1 I 260403 06:01:35.291.522 rpcserver.go:622] RESP storage.cn.1.DBCreate 191 478B 1.298ms from c_game.cn.1
+[storage.cn.1 I 260403 06:01:35.315.523 framework.go:534] REQ storage.cn.1.DBCreate 192 [0xc014afa9f0 0xc0148c2c20]
+[storage.cn.1 I 260403 06:01:35.317.524 rpcserver.go:622] RESP storage.cn.1.DBCreate 192 428B 1.791ms from c_game.cn.1
+[storage.cn.1 I 260403 06:01:35.340.525 framework.go:534] REQ storage.cn.1.DBCreate 193 [0xc014acd1c0 0xc014889620]
+[storage.cn.1 I 260403 06:01:35.342.526 rpcserver.go:622] RESP storage.cn.1.DBCreate 193 474B 1.502ms from c_game.cn.1
+[storage.cn.1 I 260403 06:01:35.365.527 framework.go:534] REQ storage.cn.1.DBCreate 194 [0xc014acd820 0xc014889ba0]
+[storage.cn.1 I 260403 06:01:35.367.528 rpcserver.go:622] RESP storage.cn.1.DBCreate 194 472B 1.797ms from c_game.cn.1
+[storage.cn.1 I 260403 06:01:35.390.529 framework.go:534] REQ storage.cn.1.DBCreate 195 [0xc014aaf960 0xc01489b1e0]
+[storage.cn.1 I 260403 06:01:35.392.530 rpcserver.go:622] RESP storage.cn.1.DBCreate 195 426B 1.342ms from c_game.cn.1
+[storage.cn.1 I 260403 06:01:35.415.531 framework.go:534] REQ storage.cn.1.DBCreate 196 [0xc014acdf50 0xc0148d21e0]
+[storage.cn.1 I 260403 06:01:35.417.532 rpcserver.go:622] RESP storage.cn.1.DBCreate 196 454B 1.667ms from c_game.cn.1
+[storage.cn.1 I 260403 06:01:35.440.533 framework.go:534] REQ storage.cn.1.DBCreate 197 [0xc014afb140 0xc0148c3380]
+[storage.cn.1 I 260403 06:01:35.442.534 rpcserver.go:622] RESP storage.cn.1.DBCreate 197 408B 1.428ms from c_game.cn.1
+[storage.cn.1 I 260403 06:01:35.466.535 framework.go:534] REQ storage.cn.1.DBCreate 198 [0xc014b1e080 0xc01489b8a0]
+[storage.cn.1 I 260403 06:01:35.467.536 rpcserver.go:622] RESP storage.cn.1.DBCreate 198 426B 1.344ms from c_game.cn.1
+[storage.cn.1 I 260403 06:01:35.490.537 framework.go:534] REQ storage.cn.1.DBCreate 199 [0xc014afb9d0 0xc0148c3a80]
+[storage.cn.1 I 260403 06:01:35.492.538 rpcserver.go:622] RESP storage.cn.1.DBCreate 199 412B 1.525ms from c_game.cn.1
+[storage.cn.1 I 260403 06:01:37.505.539 framework.go:534] REQ storage.cn.1.DBReadBy 200 [0xc014b1e470 0xc0148d0c90]
+[storage.cn.1 I 260403 06:01:37.508.540 rpcserver.go:622] RESP storage.cn.1.DBReadBy 200 44B 2.731ms from c_game.cn.1
+[storage.cn.1 I 260403 06:01:40.273.541 framework.go:534] REQ storage.cn.1.DBCreate 201 [0xc014b1ebf0 0xc0148e6ba0]
+[storage.cn.1 I 260403 06:01:40.329.542 rpcserver.go:622] RESP storage.cn.1.DBCreate 201 1202B 56.029ms from c_game.cn.1
+[storage.cn.1 I 260403 06:01:40.341.543 framework.go:534] REQ storage.cn.1.DBRankRoleAdd 202 [0xc014b32100 IDHex("69cf57bc36908d001b1ee319") 0xc000a8ca80 0xc014b32120]
+[storage.cn.1 I 260403 06:01:40.346.544 rpcserver.go:622] RESP storage.cn.1.DBRankRoleAdd 202 1B 5.051ms from c_game.cn.1
+[storage.cn.1 I 260403 06:01:40.365.545 framework.go:534] REQ storage.cn.1.DBGetRankSize 203 [0xc014b42160 0xc000b96c98 0xc000b96ca0 0xc014b42170]
+[storage.cn.1 I 260403 06:01:40.366.546 rpcserver.go:622] RESP storage.cn.1.DBGetRankSize 203 134B 551µs from c_game.cn.1
+[storage.cn.1 I 260403 06:01:40.391.547 framework.go:534] REQ storage.cn.1.DBRankRoleAdd 204 [0xc014b32600 IDHex("69cf57bc36908d001b1ee319") 0xc000a8cd20 0xc014b32650]
+[storage.cn.1 I 260403 06:01:40.392.548 rpcserver.go:622] RESP storage.cn.1.DBRankRoleAdd 204 1B 1.186ms from c_game.cn.1
+[storage.cn.1 I 260403 06:01:40.415.549 framework.go:534] REQ storage.cn.1.DBGetRankSize 205 [0xc014b42bd0 0xc000b970e8 0xc000b970f0 0xc014b42be0]
+[storage.cn.1 I 260403 06:01:40.416.550 rpcserver.go:622] RESP storage.cn.1.DBGetRankSize 205 311B 1.032ms from c_game.cn.1
+[storage.cn.1 I 260403 06:01:44.243.551 framework.go:534] REQ storage.cn.1.DBUpdate 206 [0xc014b56cb0 IDHex("69cf57bc36908d001b1ee326") 0xc0148fd7a0 0xc000787a98]
+[storage.cn.1 I 260403 06:01:44.243.552 rpcserver.go:622] RESP storage.cn.1.DBUpdate 206 44B 874µs from c_game.cn.1
+[storage.cn.1 I 260403 06:01:44.265.553 framework.go:534] REQ storage.cn.1.DBUpdate 207 [0xc014b57ac0 IDHex("69cf57bc36908d001b1ee320") 0xc0149201c0 0xc000787e38]
+[storage.cn.1 I 260403 06:01:44.266.554 rpcserver.go:622] RESP storage.cn.1.DBUpdate 207 44B 341µs from c_game.cn.1
+[storage.cn.1 I 260403 06:01:44.292.555 framework.go:534] REQ storage.cn.1.DBUpdate 208 [0xc014b1f730 IDHex("69cf57bc36908d001b1ee324") 0xc0148e7420 0xc000d12658]
+[storage.cn.1 I 260403 06:01:44.294.556 rpcserver.go:622] RESP storage.cn.1.DBUpdate 208 44B 2.373ms from c_game.cn.1
+[storage.cn.1 I 260403 06:01:44.315.557 framework.go:534] REQ storage.cn.1.DBUpdate 209 [0xc014a7e170 IDHex("69cf57bc36908d001b1ee322") 0xc0149206e0 0xc000de0058]
+[storage.cn.1 I 260403 06:01:44.316.558 rpcserver.go:622] RESP storage.cn.1.DBUpdate 209 44B 714µs from c_game.cn.1
+[storage.cn.1 I 260403 06:01:44.340.559 framework.go:534] REQ storage.cn.1.DBUpdate 210 [0xc014b1ff00 IDHex("69cf57bc36908d001b1ee31b") 0xc014934bc0 0xc000d12a48]
+[storage.cn.1 I 260403 06:01:44.341.560 rpcserver.go:622] RESP storage.cn.1.DBUpdate 210 44B 717µs from c_game.cn.1
+[storage.cn.1 I 260403 06:01:44.366.561 framework.go:534] REQ storage.cn.1.DBUpdate 211 [0xc014a7e560 IDHex("69cf57bc36908d001b1ee325") 0xc014920f60 0xc000de0368]
+[storage.cn.1 I 260403 06:01:44.366.562 rpcserver.go:622] RESP storage.cn.1.DBUpdate 211 44B 553µs from c_game.cn.1
+[storage.cn.1 I 260403 06:01:52.502.563 framework.go:534] REQ storage.cn.1.DBUpdate 212 [0xc014a7ea50 IDHex("69ce84fec9d6fb04dc096316") 0xc014921380 0xc000de0538]
+[storage.cn.1 I 260403 06:01:52.503.564 rpcserver.go:622] RESP storage.cn.1.DBUpdate 212 44B 877µs from c_pvp.cn.1
+[storage.cn.1 W 260403 06:01:52.847.565 document.go:45] ServerGlobalRecord without field cross_union_adventure_round
+[storage.cn.1 I 260403 06:01:52.848.566 session.go:132] Commit 54 objects, success 54
+[storage.cn.1 I 260403 06:01:54.244.567 framework.go:534] REQ storage.cn.1.DBUpdate 213 [0xc0149dc5f0 IDHex("69cf57c436908d001b1ee332") 0xc014a97dc0 0xc000538248]
+[storage.cn.1 I 260403 06:01:54.246.568 rpcserver.go:622] RESP storage.cn.1.DBUpdate 213 44B 1.54ms from c_game.cn.1
+[storage.cn.1 I 260403 06:01:54.266.569 framework.go:534] REQ storage.cn.1.DBUpdate 214 [0xc0148374d0 IDHex("69cf57bc36908d001b1ee31c") 0xc014a84620 0xc000d12f68]
+[storage.cn.1 I 260403 06:01:54.266.570 rpcserver.go:622] RESP storage.cn.1.DBUpdate 214 44B 636µs from c_game.cn.1
+[storage.cn.1 I 260403 06:01:55.646.571 framework.go:534] REQ storage.cn.1.DBReadBy 215 [0xc014837a00 0xc0148d0eb8]
+[storage.cn.1 I 260403 06:01:55.649.572 rpcserver.go:622] RESP storage.cn.1.DBReadBy 215 44B 2.909ms from c_game.cn.1
+[storage.cn.1 I 260403 06:02:04.244.573 framework.go:534] REQ storage.cn.1.DBUpdate 216 [0xc014812090 IDHex("69cf57bc36908d001b1ee319") 0xc01402ce00 0xc0155fc7e8]
+[storage.cn.1 W 260403 06:02:04.253.574 document.go:45] Role without field auto_chess_shop_db_id
+[storage.cn.1 I 260403 06:02:04.254.575 rpcserver.go:622] RESP storage.cn.1.DBUpdate 216 44B 10.72ms from c_game.cn.1
+[storage.cn.1 I 260403 06:02:15.310.576 framework.go:534] REQ storage.cn.1.DBReadBy 217 [0xc014854100 0xc005d7e040]
+[storage.cn.1 I 260403 06:02:15.330.577 rpcserver.go:622] RESP storage.cn.1.DBReadBy 217 44B 20.406ms from c_game.cn.1
+[storage.cn.1 I 260403 06:02:34.243.578 framework.go:534] REQ storage.cn.1.DBUpdate 218 [0xc014870110 IDHex("69cf57bc36908d001b1ee319") 0xc01490c180 0xc000ad2068]
+[storage.cn.1 I 260403 06:02:34.244.579 rpcserver.go:622] RESP storage.cn.1.DBUpdate 218 44B 1.056ms from c_game.cn.1
+[storage.cn.1 W 260403 06:03:52.851.580 document.go:45] Role without field auto_chess_shop_db_id
+[storage.cn.1 I 260403 06:03:52.878.581 session.go:132] Commit 54 objects, success 54
+[storage.cn.1 I 260403 06:05:52.879.582 session.go:132] Commit 54 objects, success 54
+[storage.cn.1 I 260403 06:07:52.882.583 session.go:132] Commit 54 objects, success 54
+[storage.cn.1 I 260403 06:09:52.884.584 session.go:132] Commit 54 objects, success 54
+[storage.cn.1 I 260403 06:10:16.244.585 framework.go:534] REQ storage.cn.1.DBRankRoleAdd 219 [0xc0148544d0 IDHex("69cf57bc36908d001b1ee319") 0xc0004842a0 0xc014854520]
+[storage.cn.1 I 260403 06:10:16.257.586 rpcserver.go:622] RESP storage.cn.1.DBRankRoleAdd 219 1B 14.386ms from c_game.cn.1
+[storage.cn.1 I 260403 06:10:16.266.587 framework.go:534] REQ storage.cn.1.DBGetRankSize 220 [0xc014854e00 0xc000a98028 0xc000a98030 0xc014854e40]
+[storage.cn.1 I 260403 06:10:16.267.588 rpcserver.go:622] RESP storage.cn.1.DBGetRankSize 220 311B 1.818ms from c_game.cn.1
+[storage.cn.1 I 260403 06:10:20.146.589 framework.go:534] REQ storage.cn.1.DBReadBy 221 [0xc0148125d0 0xc0148d0078]
+[storage.cn.1 I 260403 06:10:20.148.590 rpcserver.go:622] RESP storage.cn.1.DBReadBy 221 44B 2.098ms from c_game.cn.1
+[storage.cn.1 I 260403 06:10:24.150.591 framework.go:534] REQ storage.cn.1.DBUpdate 222 [0xc014855330 IDHex("69cf57bf36908d001b1ee331") 0xc014934900 0xc000a98268]
+[storage.cn.1 I 260403 06:10:24.150.592 rpcserver.go:622] RESP storage.cn.1.DBUpdate 222 44B 1.164ms from c_game.cn.1
+[storage.cn.1 I 260403 06:10:24.165.593 framework.go:534] REQ storage.cn.1.DBUpdate 223 [0xc014855880 IDHex("69cf57bf36908d001b1ee330") 0xc014934ec0 0xc000a98458]
+[storage.cn.1 I 260403 06:10:24.165.594 rpcserver.go:622] RESP storage.cn.1.DBUpdate 223 44B 317µs from c_game.cn.1
+[storage.cn.1 I 260403 06:10:24.191.595 framework.go:534] REQ storage.cn.1.DBUpdate 224 [0xc014808de0 IDHex("69cf57bf36908d001b1ee32f") 0xc014002b80 0xc000ad2b38]
+[storage.cn.1 I 260403 06:10:24.192.596 rpcserver.go:622] RESP storage.cn.1.DBUpdate 224 44B 684µs from c_game.cn.1
+[storage.cn.1 I 260403 06:10:24.216.597 framework.go:534] REQ storage.cn.1.DBUpdate 225 [0xc014855e10 IDHex("69cf57bf36908d001b1ee32e") 0xc014935480 0xc000a98658]
+[storage.cn.1 I 260403 06:10:24.216.598 rpcserver.go:622] RESP storage.cn.1.DBUpdate 225 44B 638µs from c_game.cn.1
+[storage.cn.1 I 260403 06:10:24.241.599 framework.go:534] REQ storage.cn.1.DBUpdate 226 [0xc014809340 IDHex("69cf57bf36908d001b1ee32d") 0xc014920320 0xc000ad2d68]
+[storage.cn.1 I 260403 06:10:24.241.600 rpcserver.go:622] RESP storage.cn.1.DBUpdate 226 44B 657µs from c_game.cn.1
+[storage.cn.1 I 260403 06:10:24.266.601 framework.go:534] REQ storage.cn.1.DBUpdate 227 [0xc014b56650 IDHex("69cf57bf36908d001b1ee32c") 0xc014935c20 0xc000a98888]
+[storage.cn.1 I 260403 06:10:24.266.602 rpcserver.go:622] RESP storage.cn.1.DBUpdate 227 44B 439µs from c_game.cn.1
+[storage.cn.1 I 260403 06:10:24.266.603 framework.go:534] REQ storage.cn.1.DBUpdate 228 [0xc0148098d0 IDHex("69cf57bc36908d001b1ee319") 0xc014920720 0xc000ad2f60]
+[storage.cn.1 I 260403 06:10:24.268.604 rpcserver.go:622] RESP storage.cn.1.DBUpdate 228 44B 2.247ms from c_game.cn.1
+[storage.cn.1 I 260403 06:10:24.476.605 framework.go:534] REQ storage.cn.1.DBUpdate 229 [0xc014812fb0 IDHex("69cf57bf36908d001b1ee32b") 0xc01402d5c0 0xc000b86f18]
+[storage.cn.1 I 260403 06:10:24.476.606 rpcserver.go:622] RESP storage.cn.1.DBUpdate 229 44B 188µs from c_game.cn.1
+[storage.cn.1 I 260403 06:10:24.490.607 framework.go:534] REQ storage.cn.1.DBUpdate 230 [0xc0148134f0 IDHex("69cf57bf36908d001b1ee32a") 0xc0148fc280 0xc000b87128]
+[storage.cn.1 I 260403 06:10:24.490.608 rpcserver.go:622] RESP storage.cn.1.DBUpdate 230 44B 93µs from c_game.cn.1
+[storage.cn.1 I 260403 06:10:24.515.609 framework.go:534] REQ storage.cn.1.DBUpdate 231 [0xc014b57400 IDHex("69cf57bf36908d001b1ee329") 0xc01490c320 0xc000a98a78]
+[storage.cn.1 I 260403 06:10:24.515.610 rpcserver.go:622] RESP storage.cn.1.DBUpdate 231 44B 95µs from c_game.cn.1
+[storage.cn.1 I 260403 06:10:24.517.611 framework.go:534] REQ storage.cn.1.DBCreate 232 [0xc014a7e3f0 0xc014921a60]
+[storage.cn.1 I 260403 06:10:24.518.612 framework.go:534] REQ storage.cn.1.DBCreate 233 [0xc014813ac0 0xc0148fcbc0]
+[storage.cn.1 I 260403 06:10:24.518.613 framework.go:534] REQ storage.cn.1.DBCreate 234 [0xc014813c70 0xc0148fce80]
+[storage.cn.1 I 260403 06:10:24.518.614 framework.go:534] REQ storage.cn.1.DBCreate 235 [0xc014813e50 0xc0148fd040]
+[storage.cn.1 I 260403 06:10:24.518.615 framework.go:534] REQ storage.cn.1.DBCreate 236 [0xc014813ff0 0xc0148fd200]
+[storage.cn.1 I 260403 06:10:24.518.616 framework.go:534] REQ storage.cn.1.DBCreate 237 [0xc014862230 0xc0148fd3a0]
+[storage.cn.1 I 260403 06:10:24.518.617 framework.go:534] REQ storage.cn.1.DBCreate 238 [0xc014a7ec50 0xc0148e6460]
+[storage.cn.1 I 260403 06:10:24.519.618 framework.go:534] REQ storage.cn.1.DBCreate 239 [0xc014a7f330 0xc0148e6e40]
+[storage.cn.1 I 260403 06:10:24.519.619 framework.go:534] REQ storage.cn.1.DBCreate 240 [0xc014870710 0xc014a2bd00]
+[storage.cn.1 I 260403 06:10:24.519.620 framework.go:534] REQ storage.cn.1.DBCreate 241 [0xc014a7fcc0 0xc0148e76e0]
+[storage.cn.1 I 260403 06:10:24.519.621 rpcserver.go:622] RESP storage.cn.1.DBCreate 233 1204B 1.39ms from c_game.cn.1
+[storage.cn.1 I 260403 06:10:24.519.622 rpcserver.go:622] RESP storage.cn.1.DBCreate 238 1204B 1.092ms from c_game.cn.1
+[storage.cn.1 I 260403 06:10:24.519.623 rpcserver.go:622] RESP storage.cn.1.DBCreate 234 1204B 1.587ms from c_game.cn.1
+[storage.cn.1 I 260403 06:10:24.519.624 rpcserver.go:622] RESP storage.cn.1.DBCreate 241 1204B 679µs from c_game.cn.1
+[storage.cn.1 I 260403 06:10:24.519.625 rpcserver.go:622] RESP storage.cn.1.DBCreate 236 1204B 1.783ms from c_game.cn.1
+[storage.cn.1 I 260403 06:10:24.520.626 rpcserver.go:622] RESP storage.cn.1.DBCreate 239 1204B 1.036ms from c_game.cn.1
+[storage.cn.1 I 260403 06:10:24.520.627 rpcserver.go:622] RESP storage.cn.1.DBCreate 240 1204B 1.025ms from c_game.cn.1
+[storage.cn.1 I 260403 06:10:24.520.628 rpcserver.go:622] RESP storage.cn.1.DBCreate 235 1204B 2.079ms from c_game.cn.1
+[storage.cn.1 I 260403 06:10:24.523.629 rpcserver.go:622] RESP storage.cn.1.DBCreate 232 1204B 5.796ms from c_game.cn.1
+[storage.cn.1 I 260403 06:10:24.524.630 rpcserver.go:622] RESP storage.cn.1.DBCreate 237 1204B 6.58ms from c_game.cn.1
+[storage.cn.1 I 260403 06:10:24.540.631 framework.go:534] REQ storage.cn.1.DBCreate 242 [0xc014b1e720 0xc01490d280]
+[storage.cn.1 I 260403 06:10:24.540.632 framework.go:534] REQ storage.cn.1.DBCreate 243 [0xc014b42740 0xc01489a340]
+[storage.cn.1 I 260403 06:10:24.540.633 rpcserver.go:622] RESP storage.cn.1.DBCreate 243 1204B 394µs from c_game.cn.1
+[storage.cn.1 I 260403 06:10:24.541.634 rpcserver.go:622] RESP storage.cn.1.DBCreate 242 1204B 519µs from c_game.cn.1
+[storage.cn.1 I 260403 06:10:24.541.635 framework.go:534] REQ storage.cn.1.DBCreate 244 [0xc014afa1d0 0xc0148c3940]
+[storage.cn.1 I 260403 06:10:24.541.636 framework.go:534] REQ storage.cn.1.DBCreate 245 [0xc014afa320 0xc0148c3ac0]
+[storage.cn.1 I 260403 06:10:24.541.637 rpcserver.go:622] RESP storage.cn.1.DBCreate 245 1204B 405µs from c_game.cn.1
+[storage.cn.1 I 260403 06:10:24.541.638 rpcserver.go:622] RESP storage.cn.1.DBCreate 244 1204B 699µs from c_game.cn.1
+[storage.cn.1 I 260403 06:10:24.632.639 framework.go:534] REQ storage.cn.1.DBUpdate 246 [0xc014b43330 IDHex("69cf57bf36908d001b1ee328") 0xc01489b700 0xc000787ba8]
+[storage.cn.1 I 260403 06:10:24.632.640 rpcserver.go:622] RESP storage.cn.1.DBUpdate 246 44B 116µs from c_game.cn.1
+[storage.cn.1 I 260403 06:10:24.634.641 framework.go:534] REQ storage.cn.1.DBCreate 247 [0xc014b325a0 0xc0148ad3c0]
+[storage.cn.1 I 260403 06:10:24.634.642 framework.go:534] REQ storage.cn.1.DBCreate 248 [0xc014b326d0 0xc0148ad580]
+[storage.cn.1 I 260403 06:10:24.634.643 framework.go:534] REQ storage.cn.1.DBCreate 249 [0xc014b327f0 0xc0148ad740]
+[storage.cn.1 I 260403 06:10:24.634.644 framework.go:534] REQ storage.cn.1.DBCreate 250 [0xc014b1efa0 0xc01490dfa0]
+[storage.cn.1 I 260403 06:10:24.634.645 framework.go:534] REQ storage.cn.1.DBCreate 251 [0xc014b43760 0xc01489be60]
+[storage.cn.1 I 260403 06:10:24.634.646 rpcserver.go:622] RESP storage.cn.1.DBCreate 249 1204B 805µs from c_game.cn.1
+[storage.cn.1 I 260403 06:10:24.634.647 framework.go:534] REQ storage.cn.1.DBCreate 252 [0xc014b1f450 0xc014874900]
+[storage.cn.1 I 260403 06:10:24.635.648 framework.go:534] REQ storage.cn.1.DBCreate 253 [0xc014b1f570 0xc014874aa0]
+[storage.cn.1 I 260403 06:10:24.635.649 framework.go:534] REQ storage.cn.1.DBCreate 254 [0xc014b1f6d0 0xc014874c40]
+[storage.cn.1 I 260403 06:10:24.635.650 framework.go:534] REQ storage.cn.1.DBCreate 255 [0xc014b1f810 0xc014874dc0]
+[storage.cn.1 I 260403 06:10:24.635.651 framework.go:534] REQ storage.cn.1.DBCreate 256 [0xc014b1fa40 0xc014874f40]
+[storage.cn.1 I 260403 06:10:24.635.652 rpcserver.go:622] RESP storage.cn.1.DBCreate 251 1204B 531µs from c_game.cn.1
+[storage.cn.1 I 260403 06:10:24.635.653 rpcserver.go:622] RESP storage.cn.1.DBCreate 250 1204B 844µs from c_game.cn.1
+[storage.cn.1 I 260403 06:10:24.635.654 rpcserver.go:622] RESP storage.cn.1.DBCreate 256 1204B 485µs from c_game.cn.1
+[storage.cn.1 I 260403 06:10:24.635.655 rpcserver.go:622] RESP storage.cn.1.DBCreate 253 1204B 737µs from c_game.cn.1
+[storage.cn.1 I 260403 06:10:24.635.656 rpcserver.go:622] RESP storage.cn.1.DBCreate 248 1204B 1.798ms from c_game.cn.1
+[storage.cn.1 I 260403 06:10:24.636.657 rpcserver.go:622] RESP storage.cn.1.DBCreate 252 1204B 1.069ms from c_game.cn.1
+[storage.cn.1 I 260403 06:10:24.636.658 rpcserver.go:622] RESP storage.cn.1.DBCreate 254 1204B 1.306ms from c_game.cn.1
+[storage.cn.1 I 260403 06:10:24.636.659 rpcserver.go:622] RESP storage.cn.1.DBCreate 247 1204B 2.426ms from c_game.cn.1
+[storage.cn.1 I 260403 06:10:24.636.660 rpcserver.go:622] RESP storage.cn.1.DBCreate 255 1204B 1.69ms from c_game.cn.1
+[storage.cn.1 I 260403 06:10:24.640.661 framework.go:534] REQ storage.cn.1.DBCreate 257 [0xc014ae5300 0xc014826660]
+[storage.cn.1 I 260403 06:10:24.640.662 framework.go:534] REQ storage.cn.1.DBCreate 258 [0xc014ae5450 0xc0148268c0]
+[storage.cn.1 I 260403 06:10:24.641.663 rpcserver.go:622] RESP storage.cn.1.DBCreate 258 1204B 253µs from c_game.cn.1
+[storage.cn.1 I 260403 06:10:24.641.664 rpcserver.go:622] RESP storage.cn.1.DBCreate 257 1204B 655µs from c_game.cn.1
+[storage.cn.1 I 260403 06:10:24.764.665 framework.go:534] REQ storage.cn.1.DBUpdate 259 [0xc014acc970 IDHex("69cf57bf36908d001b1ee327") 0xc01483c440 0xc00094a878]
+[storage.cn.1 I 260403 06:10:24.764.666 rpcserver.go:622] RESP storage.cn.1.DBUpdate 259 44B 168µs from c_game.cn.1
+[storage.cn.1 I 260403 06:10:24.773.667 framework.go:534] REQ storage.cn.1.DBRankRoleAdd 260 [0xc014afb2a0 IDHex("69cf57bc36908d001b1ee319") 0xc0006a48c0 0xc014afb2f0]
+[storage.cn.1 I 260403 06:10:24.774.668 rpcserver.go:622] RESP storage.cn.1.DBRankRoleAdd 260 1B 1.424ms from c_game.cn.1
+[storage.cn.1 I 260403 06:10:24.790.669 framework.go:534] REQ storage.cn.1.DBGetRankSize 261 [0xc014afbbd0 0xc000b97ec8 0xc000b97ed0 0xc014afbbe0]
+[storage.cn.1 I 260403 06:10:24.791.670 rpcserver.go:622] RESP storage.cn.1.DBGetRankSize 261 134B 621µs from c_game.cn.1
+[storage.cn.1 I 260403 06:10:24.815.671 framework.go:534] REQ storage.cn.1.DBRankRoleAdd 262 [0xc014accd80 IDHex("69cf57bc36908d001b1ee319") 0xc000484e00 0xc014accda0]
+[storage.cn.1 I 260403 06:10:24.816.672 rpcserver.go:622] RESP storage.cn.1.DBRankRoleAdd 262 1B 860µs from c_game.cn.1
+[storage.cn.1 I 260403 06:10:24.840.673 framework.go:534] REQ storage.cn.1.DBGetRankSize 263 [0xc014acd6a0 0xc00094adc8 0xc00094add0 0xc014acd6b0]
+[storage.cn.1 I 260403 06:10:24.841.674 rpcserver.go:622] RESP storage.cn.1.DBGetRankSize 263 323B 511µs from c_game.cn.1
+[storage.cn.1 I 260403 06:10:32.507.675 framework.go:534] REQ storage.cn.1.DBUpdate 264 [0xc014a883c0 IDHex("69ce84fec9d6fb04dc096316") 0xc01483dd20 0xc00094b4d8]
+[storage.cn.1 I 260403 06:10:32.509.676 rpcserver.go:622] RESP storage.cn.1.DBUpdate 264 44B 3.185ms from c_pvp.cn.1
+[storage.cn.1 I 260403 06:10:44.242.677 framework.go:534] REQ storage.cn.1.DBUpdate 265 [0xc014b33ac0 IDHex("69cf57c436908d001b1ee332") 0xc014850f00 0xc0009db8f8]
+[storage.cn.1 I 260403 06:10:44.243.678 rpcserver.go:622] RESP storage.cn.1.DBUpdate 265 44B 1.856ms from c_game.cn.1
+[storage.cn.1 I 260403 06:10:44.266.679 framework.go:534] REQ storage.cn.1.DBUpdate 266 [0xc014b33e20 IDHex("69cf57bc36908d001b1ee31b") 0xc014851460 0xc0009dbd18]
+[storage.cn.1 I 260403 06:10:44.266.680 rpcserver.go:622] RESP storage.cn.1.DBUpdate 266 44B 759µs from c_game.cn.1
+[storage.cn.1 I 260403 06:10:44.291.681 framework.go:534] REQ storage.cn.1.DBUpdate 267 [0xc014a89860 IDHex("69cf57bc36908d001b1ee319") 0xc0147dc1c0 0xc00094beb8]
+[storage.cn.1 I 260403 06:10:44.294.682 rpcserver.go:622] RESP storage.cn.1.DBUpdate 267 44B 3.535ms from c_game.cn.1
+[storage.cn.1 I 260403 06:10:44.315.683 framework.go:534] REQ storage.cn.1.DBUpdate 268 [0xc014a6a1e0 IDHex("69cf59d036908d001b1ee33b") 0xc014851920 0xc0009dbfb8]
+[storage.cn.1 I 260403 06:10:44.316.684 rpcserver.go:622] RESP storage.cn.1.DBUpdate 268 44B 640µs from c_game.cn.1
+[storage.cn.1 I 260403 06:10:44.341.685 framework.go:534] REQ storage.cn.1.DBUpdate 269 [0xc014abf160 IDHex("69cf59d036908d001b1ee349") 0xc0148027e0 0xc000802278]
+[storage.cn.1 I 260403 06:10:44.341.686 rpcserver.go:622] RESP storage.cn.1.DBUpdate 269 44B 654µs from c_game.cn.1
+[storage.cn.1 I 260403 06:10:44.366.687 framework.go:534] REQ storage.cn.1.DBUpdate 270 [0xc014a6a5c0 IDHex("69cf59d036908d001b1ee342") 0xc014851e20 0xc0006589c8]
+[storage.cn.1 I 260403 06:10:44.367.688 rpcserver.go:622] RESP storage.cn.1.DBUpdate 270 44B 1.569ms from c_game.cn.1
+[storage.cn.1 I 260403 06:10:44.390.689 framework.go:534] REQ storage.cn.1.DBUpdate 271 [0xc014a6a940 IDHex("69cf59d036908d001b1ee33f") 0xc0147ca3e0 0xc000658e58]
+[storage.cn.1 I 260403 06:10:44.391.690 rpcserver.go:622] RESP storage.cn.1.DBUpdate 271 44B 651µs from c_game.cn.1
+[storage.cn.1 I 260403 06:10:44.416.691 framework.go:534] REQ storage.cn.1.DBUpdate 272 [0xc014a6acf0 IDHex("69cf59d036908d001b1ee333") 0xc0147ca9a0 0xc0006592a8]
+[storage.cn.1 I 260403 06:10:44.416.692 rpcserver.go:622] RESP storage.cn.1.DBUpdate 272 44B 810µs from c_game.cn.1
+[storage.cn.1 I 260403 06:10:44.441.693 framework.go:534] REQ storage.cn.1.DBUpdate 273 [0xc014a5c820 IDHex("69cf59d036908d001b1ee337") 0xc0147b8060 0xc0007faf98]
+[storage.cn.1 I 260403 06:10:44.441.694 rpcserver.go:622] RESP storage.cn.1.DBUpdate 273 44B 816µs from c_game.cn.1
+[storage.cn.1 I 260403 06:10:44.466.695 framework.go:534] REQ storage.cn.1.DBUpdate 274 [0xc014a5cf20 IDHex("69cf59d036908d001b1ee338") 0xc0147b8600 0xc0007fb428]
+[storage.cn.1 I 260403 06:10:44.466.696 rpcserver.go:622] RESP storage.cn.1.DBUpdate 274 44B 625µs from c_game.cn.1
+[storage.cn.1 I 260403 06:10:44.490.697 framework.go:534] REQ storage.cn.1.DBUpdate 275 [0xc014a5d340 IDHex("69cf59d036908d001b1ee343") 0xc0147b8b80 0xc0007fb918]
+[storage.cn.1 I 260403 06:10:44.491.698 rpcserver.go:622] RESP storage.cn.1.DBUpdate 275 44B 654µs from c_game.cn.1
+[storage.cn.1 I 260403 06:10:44.515.699 framework.go:534] REQ storage.cn.1.DBUpdate 276 [0xc014a6b080 IDHex("69cf59d036908d001b1ee34a") 0xc0147caf40 0xc0006597b8]
+[storage.cn.1 I 260403 06:10:44.516.700 rpcserver.go:622] RESP storage.cn.1.DBUpdate 276 44B 600µs from c_game.cn.1
+[storage.cn.1 I 260403 06:10:44.541.701 framework.go:534] REQ storage.cn.1.DBUpdate 277 [0xc014abf700 IDHex("69cf59d036908d001b1ee341") 0xc014802fe0 0xc0008027b8]
+[storage.cn.1 I 260403 06:10:44.542.702 rpcserver.go:622] RESP storage.cn.1.DBUpdate 277 44B 1.138ms from c_game.cn.1
+[storage.cn.1 I 260403 06:10:44.565.703 framework.go:534] REQ storage.cn.1.DBUpdate 278 [0xc014a6b4b0 IDHex("69cf59d036908d001b1ee33d") 0xc0147cb520 0xc000659ce8]
+[storage.cn.1 I 260403 06:10:44.566.704 rpcserver.go:622] RESP storage.cn.1.DBUpdate 278 44B 593µs from c_game.cn.1
+[storage.cn.1 I 260403 06:10:44.591.705 framework.go:534] REQ storage.cn.1.DBUpdate 279 [0xc014abfa40 IDHex("69cf59d036908d001b1ee348") 0xc0148034e0 0xc000802c28]
+[storage.cn.1 I 260403 06:10:44.592.706 rpcserver.go:622] RESP storage.cn.1.DBUpdate 279 44B 714µs from c_game.cn.1
+[storage.cn.1 I 260403 06:10:44.615.707 framework.go:534] REQ storage.cn.1.DBUpdate 280 [0xc014abfdc0 IDHex("69cf59d036908d001b1ee33c") 0xc014803b00 0xc0008030d8]
+[storage.cn.1 I 260403 06:10:44.616.708 rpcserver.go:622] RESP storage.cn.1.DBUpdate 280 44B 662µs from c_game.cn.1
+[storage.cn.1 I 260403 06:10:44.641.709 framework.go:534] REQ storage.cn.1.DBUpdate 281 [0xc014a481d0 IDHex("69cf59d036908d001b1ee33e") 0xc0147a4100 0xc000803558]
+[storage.cn.1 I 260403 06:10:44.642.710 rpcserver.go:622] RESP storage.cn.1.DBUpdate 281 44B 1.083ms from c_game.cn.1
+[storage.cn.1 I 260403 06:10:44.666.711 framework.go:534] REQ storage.cn.1.DBUpdate 282 [0xc014a48560 IDHex("69cf59d036908d001b1ee340") 0xc0147a4600 0xc0008039c8]
+[storage.cn.1 I 260403 06:10:44.667.712 rpcserver.go:622] RESP storage.cn.1.DBUpdate 282 44B 1.188ms from c_game.cn.1
+[storage.cn.1 I 260403 06:10:44.691.713 framework.go:534] REQ storage.cn.1.DBUpdate 283 [0xc014a6b880 IDHex("69cf59d036908d001b1ee346") 0xc0147cbb80 0xc00060c1c8]
+[storage.cn.1 I 260403 06:10:44.692.714 rpcserver.go:622] RESP storage.cn.1.DBUpdate 283 44B 925µs from c_game.cn.1
+[storage.cn.1 I 260403 06:10:44.716.715 framework.go:534] REQ storage.cn.1.DBUpdate 284 [0xc014a5d730 IDHex("69cf59d036908d001b1ee334") 0xc0147b91e0 0xc0007fbe18]
+[storage.cn.1 I 260403 06:10:44.717.716 rpcserver.go:622] RESP storage.cn.1.DBUpdate 284 44B 1.161ms from c_game.cn.1
+[storage.cn.1 I 260403 06:10:44.741.717 framework.go:534] REQ storage.cn.1.DBUpdate 285 [0xc014a5da00 IDHex("69cf59d036908d001b1ee347") 0xc0147b9700 0xc000594278]
+[storage.cn.1 I 260403 06:10:44.742.718 rpcserver.go:622] RESP storage.cn.1.DBUpdate 285 44B 733µs from c_game.cn.1
+[storage.cn.1 I 260403 06:10:44.766.719 framework.go:534] REQ storage.cn.1.DBUpdate 286 [0xc014aae7b0 IDHex("69cf59d036908d001b1ee335") 0xc014814c60 0xc00084e4a8]
+[storage.cn.1 I 260403 06:10:44.767.720 rpcserver.go:622] RESP storage.cn.1.DBUpdate 286 44B 1.439ms from c_game.cn.1
+[storage.cn.1 I 260403 06:10:44.791.721 framework.go:534] REQ storage.cn.1.DBUpdate 287 [0xc014aaec00 IDHex("69cf59d036908d001b1ee34b") 0xc014815240 0xc00084e938]
+[storage.cn.1 I 260403 06:10:44.791.722 rpcserver.go:622] RESP storage.cn.1.DBUpdate 287 44B 849µs from c_game.cn.1
+[storage.cn.1 I 260403 06:10:44.816.723 framework.go:534] REQ storage.cn.1.DBUpdate 288 [0xc014a5dd50 IDHex("69cf59d036908d001b1ee336") 0xc0147b9be0 0xc000594738]
+[storage.cn.1 I 260403 06:10:44.816.724 rpcserver.go:622] RESP storage.cn.1.DBUpdate 288 44B 622µs from c_game.cn.1
+[storage.cn.1 I 260403 06:10:44.841.725 framework.go:534] REQ storage.cn.1.DBUpdate 289 [0xc014a30200 IDHex("69cf59d036908d001b1ee33a") 0xc01477e1c0 0xc000594be8]
+[storage.cn.1 I 260403 06:10:44.841.726 rpcserver.go:622] RESP storage.cn.1.DBUpdate 289 44B 666µs from c_game.cn.1
+[storage.cn.1 I 260403 06:10:44.866.727 framework.go:534] REQ storage.cn.1.DBUpdate 290 [0xc014a305f0 IDHex("69cf59d036908d001b1ee344") 0xc01477e7c0 0xc000595078]
+[storage.cn.1 I 260403 06:10:44.866.728 rpcserver.go:622] RESP storage.cn.1.DBUpdate 290 44B 690µs from c_game.cn.1
+[storage.cn.1 I 260403 06:10:44.890.729 framework.go:534] REQ storage.cn.1.DBUpdate 291 [0xc014aaefe0 IDHex("69cf59d036908d001b1ee345") 0xc014815840 0xc00084ee08]
+[storage.cn.1 I 260403 06:10:44.891.730 rpcserver.go:622] RESP storage.cn.1.DBUpdate 291 44B 618µs from c_game.cn.1
+[storage.cn.1 I 260403 06:10:44.915.731 framework.go:534] REQ storage.cn.1.DBUpdate 292 [0xc014a6bd90 IDHex("69cf59d036908d001b1ee34c") 0xc014794240 0xc00060c718]
+[storage.cn.1 I 260403 06:10:44.916.732 rpcserver.go:622] RESP storage.cn.1.DBUpdate 292 44B 996µs from c_game.cn.1
+[storage.cn.1 I 260403 06:10:44.941.733 framework.go:534] REQ storage.cn.1.DBUpdate 293 [0xc014aaf460 IDHex("69cf59d036908d001b1ee339") 0xc014815de0 0xc00084f2d8]
+[storage.cn.1 I 260403 06:10:44.941.734 rpcserver.go:622] RESP storage.cn.1.DBUpdate 293 44B 697µs from c_game.cn.1
+[storage.cn.1 I 260403 06:10:44.966.735 framework.go:534] REQ storage.cn.1.DBUpdate 294 [0xc014a30bc0 IDHex("69ce86dac9d6fb04dc096319") 0xc01477efa0 0xc0005955c8]
+[storage.cn.1 I 260403 06:10:44.967.736 rpcserver.go:622] RESP storage.cn.1.DBUpdate 294 44B 636µs from c_game.cn.1
+[storage.cn.1 I 260403 06:11:52.936.737 session.go:132] Commit 80 objects, success 80
+[storage.cn.1 I 260403 06:13:52.938.738 session.go:132] Commit 80 objects, success 80
+[storage.cn.1 I 260403 06:15:45.474.739 framework.go:534] REQ storage.cn.1.DBCreate 295 [0xc014870660 0xc014a2ab20]
+[storage.cn.1 I 260403 06:15:45.486.740 rpcserver.go:622] RESP storage.cn.1.DBCreate 295 12580B 12.5ms from c_pvp.cn.1
+[storage.cn.1 I 260403 06:15:45.525.741 framework.go:534] REQ storage.cn.1.DBCreate 296 [0xc014854a80 0xc014732800]
+[storage.cn.1 I 260403 06:15:45.531.742 rpcserver.go:622] RESP storage.cn.1.DBCreate 296 15044B 6ms from c_pvp.cn.1
+[storage.cn.1 I 260403 06:15:45.583.743 framework.go:534] REQ storage.cn.1.DBCreate 297 [0xc0149a3500 0xc0147587c0]
+[storage.cn.1 I 260403 06:15:45.587.744 rpcserver.go:622] RESP storage.cn.1.DBCreate 297 34864B 4.45ms from c_pvp.cn.1
+[storage.cn.1 I 260403 06:15:45.617.745 framework.go:534] REQ storage.cn.1.DBRankRoleAdd 298 [0xc014a6aed0 IDHex("69cf57bc36908d001b1ee319") 0xc000a8c540 0xc014a6aef0]
+[storage.cn.1 I 260403 06:15:45.619.746 rpcserver.go:622] RESP storage.cn.1.DBRankRoleAdd 298 1B 1.888ms from c_game.cn.1
+[storage.cn.1 I 260403 06:15:45.640.747 framework.go:534] REQ storage.cn.1.DBGetRankSize 299 [0xc014927ec0 0xc00056c4d8 0xc00056c4e0 0xc014927ed0]
+[storage.cn.1 I 260403 06:15:45.641.748 rpcserver.go:622] RESP storage.cn.1.DBGetRankSize 299 323B 885µs from c_game.cn.1
+[storage.cn.1 I 260403 06:15:52.944.749 session.go:132] Commit 83 objects, success 83
+[storage.cn.1 I 260403 06:16:04.243.750 framework.go:534] REQ storage.cn.1.DBUpdate 300 [0xc014a882a0 IDHex("69cf59d036908d001b1ee33c") 0xc0147a44e0 0xc00056c678]
+[storage.cn.1 I 260403 06:16:04.243.751 rpcserver.go:622] RESP storage.cn.1.DBUpdate 300 44B 922µs from c_game.cn.1
+[storage.cn.1 I 260403 06:16:04.265.752 framework.go:534] REQ storage.cn.1.DBUpdate 301 [0xc014a6b7e0 IDHex("69cf59d036908d001b1ee33d") 0xc014767e20 0xc0009da3b8]
+[storage.cn.1 I 260403 06:16:04.266.753 rpcserver.go:622] RESP storage.cn.1.DBUpdate 301 44B 392µs from c_game.cn.1
+[storage.cn.1 I 260403 06:16:04.291.754 framework.go:534] REQ storage.cn.1.DBUpdate 302 [0xc014a88620 IDHex("69cf59d036908d001b1ee33e") 0xc0147a4980 0xc00056cbd8]
+[storage.cn.1 I 260403 06:16:04.291.755 rpcserver.go:622] RESP storage.cn.1.DBUpdate 302 44B 790µs from c_game.cn.1
+[storage.cn.1 I 260403 06:16:04.316.756 framework.go:534] REQ storage.cn.1.DBUpdate 303 [0xc014836d80 IDHex("69cf59d036908d001b1ee33f") 0xc014a96c40 0xc0007862b8]
+[storage.cn.1 I 260403 06:16:04.316.757 rpcserver.go:622] RESP storage.cn.1.DBUpdate 303 44B 1.091ms from c_game.cn.1
+[storage.cn.1 I 260403 06:16:04.341.758 framework.go:534] REQ storage.cn.1.DBUpdate 304 [0xc0148372e0 IDHex("69cf59d036908d001b1ee338") 0xc014a97500 0xc0007868d8]
+[storage.cn.1 I 260403 06:16:04.341.759 rpcserver.go:622] RESP storage.cn.1.DBUpdate 304 44B 804µs from c_game.cn.1
+[storage.cn.1 I 260403 06:16:04.365.760 framework.go:534] REQ storage.cn.1.DBUpdate 305 [0xc0148377d0 IDHex("69cf59d036908d001b1ee339") 0xc014a97dc0 0xc000786d98]
+[storage.cn.1 I 260403 06:16:04.366.761 rpcserver.go:622] RESP storage.cn.1.DBUpdate 305 44B 348µs from c_game.cn.1
+[storage.cn.1 I 260403 06:16:04.392.762 framework.go:534] REQ storage.cn.1.DBUpdate 306 [0xc014837d20 IDHex("69cf59d036908d001b1ee33a") 0xc0147ca3a0 0xc000787208]
+[storage.cn.1 I 260403 06:16:04.392.763 rpcserver.go:622] RESP storage.cn.1.DBUpdate 306 44B 834µs from c_game.cn.1
+[storage.cn.1 I 260403 06:16:04.415.764 framework.go:534] REQ storage.cn.1.DBUpdate 307 [0xc014a6bd30 IDHex("69cf59d036908d001b1ee33b") 0xc0147b8400 0xc0009da888]
+[storage.cn.1 I 260403 06:16:04.416.765 rpcserver.go:622] RESP storage.cn.1.DBUpdate 307 44B 409µs from c_game.cn.1
+[storage.cn.1 I 260403 06:16:04.440.766 framework.go:534] REQ storage.cn.1.DBUpdate 308 [0xc014abe080 IDHex("69cf57c436908d001b1ee332") 0xc0147b8800 0xc0009dac78]
+[storage.cn.1 I 260403 06:16:04.441.767 rpcserver.go:622] RESP storage.cn.1.DBUpdate 308 44B 408µs from c_game.cn.1
+[storage.cn.1 I 260403 06:16:04.465.768 framework.go:534] REQ storage.cn.1.DBUpdate 309 [0xc014abe470 IDHex("69cf59d036908d001b1ee335") 0xc0147b8c40 0xc0009db0d8]
+[storage.cn.1 I 260403 06:16:04.467.769 rpcserver.go:622] RESP storage.cn.1.DBUpdate 309 44B 1.925ms from c_game.cn.1
+[storage.cn.1 I 260403 06:16:04.491.770 framework.go:534] REQ storage.cn.1.DBUpdate 310 [0xc014abe860 IDHex("69cf59d036908d001b1ee336") 0xc0147b9160 0xc0009db558]
+[storage.cn.1 I 260403 06:16:04.492.771 rpcserver.go:622] RESP storage.cn.1.DBUpdate 310 44B 806µs from c_game.cn.1
+[storage.cn.1 I 260403 06:16:04.515.772 framework.go:534] REQ storage.cn.1.DBUpdate 311 [0xc014813cf0 IDHex("69cf59d036908d001b1ee337") 0xc014934780 0xc000b86ad8]
+[storage.cn.1 I 260403 06:16:04.516.773 rpcserver.go:622] RESP storage.cn.1.DBUpdate 311 44B 517µs from c_game.cn.1
+[storage.cn.1 I 260403 06:16:04.541.774 framework.go:534] REQ storage.cn.1.DBUpdate 312 [0xc014aae290 IDHex("69cf59d036908d001b1ee334") 0xc0147ca9e0 0xc0007876e8]
+[storage.cn.1 I 260403 06:16:04.542.775 rpcserver.go:622] RESP storage.cn.1.DBUpdate 312 44B 690µs from c_game.cn.1
+[storage.cn.1 I 260403 06:16:04.565.776 framework.go:534] REQ storage.cn.1.DBUpdate 313 [0xc014acc130 IDHex("69cf59d036908d001b1ee333") 0xc014934e00 0xc000b86f68]
+[storage.cn.1 I 260403 06:16:04.566.777 rpcserver.go:622] RESP storage.cn.1.DBUpdate 313 44B 370µs from c_game.cn.1
+[storage.cn.1 I 260403 06:16:04.591.778 framework.go:534] REQ storage.cn.1.DBUpdate 314 [0xc014abec40 IDHex("69cf59d036908d001b1ee34c") 0xc0147b9600 0xc0009dbc18]
+[storage.cn.1 I 260403 06:16:04.591.779 rpcserver.go:622] RESP storage.cn.1.DBUpdate 314 44B 896µs from c_game.cn.1
+[storage.cn.1 I 260403 06:16:04.615.780 framework.go:534] REQ storage.cn.1.DBUpdate 315 [0xc014acc4c0 IDHex("69cf59d036908d001b1ee348") 0xc014935540 0xc000b873f8]
+[storage.cn.1 I 260403 06:16:04.616.781 rpcserver.go:622] RESP storage.cn.1.DBUpdate 315 44B 370µs from c_game.cn.1
+[storage.cn.1 I 260403 06:16:04.641.782 framework.go:534] REQ storage.cn.1.DBUpdate 316 [0xc014aae600 IDHex("69cf59d036908d001b1ee349") 0xc0147cae80 0xc000787b88]
+[storage.cn.1 I 260403 06:16:04.641.783 rpcserver.go:622] RESP storage.cn.1.DBUpdate 316 44B 677µs from c_game.cn.1
+[storage.cn.1 I 260403 06:16:04.665.784 framework.go:534] REQ storage.cn.1.DBUpdate 317 [0xc014abefd0 IDHex("69cf59d036908d001b1ee34a") 0xc0147b99e0 0xc0155fc808]
+[storage.cn.1 I 260403 06:16:04.666.785 rpcserver.go:622] RESP storage.cn.1.DBUpdate 317 44B 384µs from c_game.cn.1
+[storage.cn.1 I 260403 06:16:04.691.786 framework.go:534] REQ storage.cn.1.DBUpdate 318 [0xc014acca50 IDHex("69cf59d036908d001b1ee34b") 0xc014935f60 0xc000b87888]
+[storage.cn.1 I 260403 06:16:04.691.787 rpcserver.go:622] RESP storage.cn.1.DBUpdate 318 44B 933µs from c_game.cn.1
+[storage.cn.1 I 260403 06:16:04.716.788 framework.go:534] REQ storage.cn.1.DBUpdate 319 [0xc014aaea70 IDHex("69cf59d036908d001b1ee344") 0xc0147cb320 0xc000787f98]
+[storage.cn.1 I 260403 06:16:04.716.789 rpcserver.go:622] RESP storage.cn.1.DBUpdate 319 44B 684µs from c_game.cn.1
+[storage.cn.1 I 260403 06:16:04.741.790 framework.go:534] REQ storage.cn.1.DBUpdate 320 [0xc014abf410 IDHex("69cf59d036908d001b1ee345") 0xc0147b9da0 0xc000b96178]
+[storage.cn.1 I 260403 06:16:04.742.791 rpcserver.go:622] RESP storage.cn.1.DBUpdate 320 44B 864µs from c_game.cn.1
+[storage.cn.1 I 260403 06:16:04.767.792 framework.go:534] REQ storage.cn.1.DBUpdate 321 [0xc014abf7e0 IDHex("69cf59d036908d001b1ee346") 0xc014802220 0xc000b96638]
+[storage.cn.1 I 260403 06:16:04.767.793 rpcserver.go:622] RESP storage.cn.1.DBUpdate 321 44B 1.204ms from c_game.cn.1
+[storage.cn.1 I 260403 06:16:04.791.794 framework.go:534] REQ storage.cn.1.DBUpdate 322 [0xc014abfbb0 IDHex("69cf59d036908d001b1ee347") 0xc014802760 0xc000b96a38]
+[storage.cn.1 I 260403 06:16:04.792.795 rpcserver.go:622] RESP storage.cn.1.DBUpdate 322 44B 1.007ms from c_game.cn.1
+[storage.cn.1 I 260403 06:16:04.816.796 framework.go:534] REQ storage.cn.1.DBUpdate 323 [0xc014acce30 IDHex("69cf59d036908d001b1ee340") 0xc0147dc4c0 0xc000b87d88]
+[storage.cn.1 I 260403 06:16:04.817.797 rpcserver.go:622] RESP storage.cn.1.DBUpdate 323 44B 829µs from c_game.cn.1
+[storage.cn.1 I 260403 06:16:04.841.798 framework.go:534] REQ storage.cn.1.DBUpdate 324 [0xc014ae4040 IDHex("69cf59d036908d001b1ee341") 0xc014802ce0 0xc000b96ef8]
+[storage.cn.1 I 260403 06:16:04.842.799 rpcserver.go:622] RESP storage.cn.1.DBUpdate 324 44B 853µs from c_game.cn.1
+[storage.cn.1 I 260403 06:16:04.865.800 framework.go:534] REQ storage.cn.1.DBUpdate 325 [0xc014acd1a0 IDHex("69cf59d036908d001b1ee342") 0xc0147dc900 0xc00060c1e8]
+[storage.cn.1 I 260403 06:16:04.866.801 rpcserver.go:622] RESP storage.cn.1.DBUpdate 325 44B 594µs from c_game.cn.1
+[storage.cn.1 I 260403 06:16:04.891.802 framework.go:534] REQ storage.cn.1.DBUpdate 326 [0xc014aaee80 IDHex("69cf59d036908d001b1ee343") 0xc0147cb820 0xc000a98478]
+[storage.cn.1 I 260403 06:16:04.892.803 rpcserver.go:622] RESP storage.cn.1.DBUpdate 326 44B 799µs from c_game.cn.1
+[storage.cn.1 I 260403 06:16:04.915.804 framework.go:534] REQ storage.cn.1.DBUpdate 327 [0xc014ae44c0 IDHex("69cf57bc36908d001b1ee324") 0xc0148032a0 0xc000b973b8]
+[storage.cn.1 I 260403 06:16:04.948.805 rpcserver.go:622] RESP storage.cn.1.DBUpdate 327 44B 33.245ms from c_game.cn.1
+[storage.cn.1 I 260403 06:16:04.950.806 framework.go:534] REQ storage.cn.1.DBUpdate 328 [0xc014acd560 IDHex("69cf57bc36908d001b1ee31b") 0xc0147dce00 0xc00060c818]
+[storage.cn.1 I 260403 06:16:04.950.807 rpcserver.go:622] RESP storage.cn.1.DBUpdate 328 44B 357µs from c_game.cn.1
+[storage.cn.1 I 260403 06:16:04.966.808 framework.go:534] REQ storage.cn.1.DBUpdate 329 [0xc014acd990 IDHex("69cf57bc36908d001b1ee319") 0xc0147dd340 0xc00060cc18]
+[storage.cn.1 I 260403 06:16:04.967.809 rpcserver.go:622] RESP storage.cn.1.DBUpdate 329 44B 590µs from c_game.cn.1
+[storage.cn.1 I 260403 06:16:08.959.810 framework.go:534] REQ storage.cn.1.DBReadBy 330 [0xc014afa3b0 0xc005d7e308]
+[storage.cn.1 I 260403 06:16:08.977.811 rpcserver.go:622] RESP storage.cn.1.DBReadBy 330 44B 17.454ms from c_game.cn.1
+[storage.cn.1 I 260403 06:16:22.502.812 framework.go:534] REQ storage.cn.1.DBUpdate 331 [0xc014812090 IDHex("69ce84fec9d6fb04dc096316") 0xc014a2a340 0xc000786068]
+[storage.cn.1 I 260403 06:16:22.504.813 rpcserver.go:622] RESP storage.cn.1.DBUpdate 331 44B 2.889ms from c_pvp.cn.1
+[storage.cn.1 I 260403 06:16:24.242.814 framework.go:534] REQ storage.cn.1.DBUpdate 332 [0xc014870110 IDHex("69cf57bc36908d001b1ee319") 0xc014934220 0xc000b860e8]
+[storage.cn.1 I 260403 06:16:24.243.815 rpcserver.go:622] RESP storage.cn.1.DBUpdate 332 44B 853µs from c_game.cn.1
+[storage.cn.1 I 260403 06:17:52.982.816 session.go:132] Commit 83 objects, success 83
+[storage.cn.1 I 260403 06:18:34.241.817 framework.go:534] REQ storage.cn.1.DBUpdate 333 [0xc0149c8150 IDHex("69cf57bc36908d001b1ee319") 0xc0147583e0 0xc0007fa158]
+[storage.cn.1 I 260403 06:18:34.242.818 rpcserver.go:622] RESP storage.cn.1.DBUpdate 333 44B 1.404ms from c_game.cn.1
+[storage.cn.1 I 260403 06:18:54.244.819 framework.go:534] REQ storage.cn.1.DBUpdate 334 [0xc0149b40a0 IDHex("69cf57bc36908d001b1ee31b") 0xc014766e00 0xc0006586b8]
+[storage.cn.1 I 260403 06:18:54.245.820 rpcserver.go:622] RESP storage.cn.1.DBUpdate 334 44B 1.431ms from c_game.cn.1
+[storage.cn.1 I 260403 06:18:54.266.821 framework.go:534] REQ storage.cn.1.DBUpdate 335 [0xc0149a2450 IDHex("69cf57bc36908d001b1ee319") 0xc014a96ac0 0xc000802948]
+[storage.cn.1 I 260403 06:18:54.266.822 rpcserver.go:622] RESP storage.cn.1.DBUpdate 335 44B 864µs from c_game.cn.1
+[storage.cn.1 I 260403 06:19:52.993.823 session.go:132] Commit 83 objects, success 83
+[storage.cn.1 I 260403 06:20:04.243.824 framework.go:534] REQ storage.cn.1.DBUpdate 336 [0xc0149c9560 IDHex("69cf59d036908d001b1ee33a") 0xc014934260 0xc0007fbf98]
+[storage.cn.1 I 260403 06:20:04.244.825 rpcserver.go:622] RESP storage.cn.1.DBUpdate 336 44B 1.066ms from c_game.cn.1
+[storage.cn.1 I 260403 06:20:04.266.826 framework.go:534] REQ storage.cn.1.DBUpdate 337 [0xc0149c9900 IDHex("69cf57bc36908d001b1ee319") 0xc014934840 0xc01495e8a8]
+[storage.cn.1 I 260403 06:20:04.267.827 rpcserver.go:622] RESP storage.cn.1.DBUpdate 337 44B 1.216ms from c_game.cn.1
+[storage.cn.1 I 260403 06:21:08.334.828 framework.go:534] REQ storage.cn.1.DBReadBy 338 [0xc014992460 0xc013194090]
+[storage.cn.1 I 260403 06:21:08.354.829 rpcserver.go:622] RESP storage.cn.1.DBReadBy 338 44B 20.145ms from c_game.cn.1
+[storage.cn.1 I 260403 06:21:24.276.830 framework.go:534] REQ storage.cn.1.DBUpdate 339 [0xc0149b4b60 IDHex("69cf57bc36908d001b1ee319") 0xc014767860 0xc01465c6d8]
+[storage.cn.1 I 260403 06:21:24.277.831 rpcserver.go:622] RESP storage.cn.1.DBUpdate 339 44B 33.44ms from c_game.cn.1
+[storage.cn.1 I 260403 06:21:53.013.832 session.go:132] Commit 83 objects, success 83
+[storage.cn.1 I 260403 06:23:53.014.833 session.go:132] Commit 83 objects, success 83
+[storage.cn.1 I 260403 06:25:53.019.834 session.go:132] Commit 83 objects, success 83
+[storage.cn.1 I 260403 06:26:43.114.835 framework.go:534] REQ storage.cn.1.DBCreate 340 [0xc0149b41a0 0xc0149c04e0]
+[storage.cn.1 I 260403 06:26:43.128.836 rpcserver.go:622] RESP storage.cn.1.DBCreate 340 1204B 14.278ms from c_game.cn.1
+[storage.cn.1 I 260403 06:26:43.131.837 framework.go:534] REQ storage.cn.1.DBCreate 341 [0xc0149c8240 0xc0147670a0]
+[storage.cn.1 I 260403 06:26:43.141.838 rpcserver.go:622] RESP storage.cn.1.DBCreate 341 214B 10.544ms from c_game.cn.1
+[storage.cn.1 I 260403 06:26:43.142.839 framework.go:534] REQ storage.cn.1.DBCreate 342 [0xc0149c8b90 0xc0147678a0]
+[storage.cn.1 I 260403 06:26:43.143.840 rpcserver.go:622] RESP storage.cn.1.DBCreate 342 214B 444µs from c_game.cn.1
+[storage.cn.1 I 260403 06:26:43.166.841 framework.go:534] REQ storage.cn.1.DBCreate 343 [0xc0149c9250 0xc014767f60]
+[storage.cn.1 I 260403 06:26:43.166.842 rpcserver.go:622] RESP storage.cn.1.DBCreate 343 214B 598µs from c_game.cn.1
+[storage.cn.1 I 260403 06:26:43.190.843 framework.go:534] REQ storage.cn.1.DBCreate 344 [0xc0149c9940 0xc014a2ace0]
+[storage.cn.1 I 260403 06:26:43.191.844 rpcserver.go:622] RESP storage.cn.1.DBCreate 344 214B 804µs from c_game.cn.1
+[storage.cn.1 I 260403 06:26:43.216.845 framework.go:534] REQ storage.cn.1.DBCreate 345 [0xc0149b48a0 0xc0147b85c0]
+[storage.cn.1 I 260403 06:26:43.217.846 rpcserver.go:622] RESP storage.cn.1.DBCreate 345 214B 667µs from c_game.cn.1
+[storage.cn.1 I 260403 06:26:43.322.847 framework.go:534] REQ storage.cn.1.DBRankRoleAdd 346 [0xc0149b4fb0 IDHex("69cf57bc36908d001b1ee319") 0xc0006a4700 0xc0149b4ff0]
+[storage.cn.1 I 260403 06:26:43.323.848 rpcserver.go:622] RESP storage.cn.1.DBRankRoleAdd 346 1B 2.027ms from c_game.cn.1
+[storage.cn.1 I 260403 06:26:43.340.849 framework.go:534] REQ storage.cn.1.DBGetRankSize 347 [0xc0149b5920 0xc0007fbaf8 0xc0007fbb00 0xc0149b5930]
+[storage.cn.1 I 260403 06:26:43.340.850 rpcserver.go:622] RESP storage.cn.1.DBGetRankSize 347 134B 544µs from c_game.cn.1
+[storage.cn.1 I 260403 06:26:43.365.851 framework.go:534] REQ storage.cn.1.DBRankRoleAdd 348 [0xc0149b5d10 IDHex("69cf57bc36908d001b1ee319") 0xc0006a4c40 0xc0149b5d30]
+[storage.cn.1 I 260403 06:26:43.366.852 rpcserver.go:622] RESP storage.cn.1.DBRankRoleAdd 348 1B 1.516ms from c_game.cn.1
+[storage.cn.1 I 260403 06:26:43.390.853 framework.go:534] REQ storage.cn.1.DBGetRankSize 349 [0xc0149605e0 0xc0004864a8 0xc0004864b0 0xc0149605f0]
+[storage.cn.1 I 260403 06:26:43.391.854 rpcserver.go:622] RESP storage.cn.1.DBGetRankSize 349 323B 579µs from c_game.cn.1
+[storage.cn.1 I 260403 06:26:50.765.855 framework.go:534] REQ storage.cn.1.DBReadBy 350 [0xc014926130 0xc0145520d8]
+[storage.cn.1 I 260403 06:26:50.768.856 rpcserver.go:622] RESP storage.cn.1.DBReadBy 350 44B 2.958ms from c_game.cn.1
+[storage.cn.1 I 260403 06:26:54.243.857 framework.go:534] REQ storage.cn.1.DBUpdate 351 [0xc014918160 IDHex("69cf5da336908d001b1ee351") 0xc0147b99a0 0xc014c96598]
+[storage.cn.1 I 260403 06:26:54.246.858 rpcserver.go:622] RESP storage.cn.1.DBUpdate 351 44B 2.931ms from c_game.cn.1
+[storage.cn.1 I 260403 06:26:54.265.859 framework.go:534] REQ storage.cn.1.DBUpdate 352 [0xc014926ab0 IDHex("69cf5da336908d001b1ee352") 0xc014742340 0xc0154c68a8]
+[storage.cn.1 I 260403 06:26:54.266.860 rpcserver.go:622] RESP storage.cn.1.DBUpdate 352 44B 869µs from c_game.cn.1
+[storage.cn.1 I 260403 06:26:54.291.861 framework.go:534] REQ storage.cn.1.DBUpdate 353 [0xc014961210 IDHex("69cf5da336908d001b1ee353") 0xc014759640 0xc000486b58]
+[storage.cn.1 I 260403 06:26:54.291.862 rpcserver.go:622] RESP storage.cn.1.DBUpdate 353 44B 658µs from c_game.cn.1
+[storage.cn.1 I 260403 06:26:54.316.863 framework.go:534] REQ storage.cn.1.DBUpdate 354 [0xc0149186e0 IDHex("69cf5da336908d001b1ee354") 0xc0147b9ee0 0xc01543b408]
+[storage.cn.1 I 260403 06:26:54.316.864 rpcserver.go:622] RESP storage.cn.1.DBUpdate 354 44B 573µs from c_game.cn.1
+[storage.cn.1 I 260403 06:26:54.341.865 framework.go:534] REQ storage.cn.1.DBUpdate 355 [0xc014926fe0 IDHex("69cf5da336908d001b1ee355") 0xc0147428a0 0xc0175db958]
+[storage.cn.1 I 260403 06:26:54.341.866 rpcserver.go:622] RESP storage.cn.1.DBUpdate 355 44B 579µs from c_game.cn.1
+[storage.cn.1 I 260403 06:26:54.366.867 framework.go:534] REQ storage.cn.1.DBUpdate 356 [0xc014918d00 IDHex("69cf59d036908d001b1ee33c") 0xc0147dc3e0 0xc01778e218]
+[storage.cn.1 I 260403 06:26:54.367.868 rpcserver.go:622] RESP storage.cn.1.DBUpdate 356 44B 912µs from c_game.cn.1
+[storage.cn.1 I 260403 06:26:54.391.869 framework.go:534] REQ storage.cn.1.DBUpdate 357 [0xc014919290 IDHex("69cf59d036908d001b1ee33d") 0xc0147dc900 0xc01197a878]
+[storage.cn.1 I 260403 06:26:54.391.870 rpcserver.go:622] RESP storage.cn.1.DBUpdate 357 44B 707µs from c_game.cn.1
+[storage.cn.1 I 260403 06:26:54.416.871 framework.go:534] REQ storage.cn.1.DBUpdate 358 [0xc014961580 IDHex("69cf59d036908d001b1ee33e") 0xc014802160 0xc000486d88]
+[storage.cn.1 I 260403 06:26:54.417.872 rpcserver.go:622] RESP storage.cn.1.DBUpdate 358 44B 882µs from c_game.cn.1
+[storage.cn.1 I 260403 06:26:54.441.873 framework.go:534] REQ storage.cn.1.DBUpdate 359 [0xc014919790 IDHex("69cf59d036908d001b1ee33f") 0xc0147dcdc0 0xc000ad2438]
+[storage.cn.1 I 260403 06:26:54.441.874 rpcserver.go:622] RESP storage.cn.1.DBUpdate 359 44B 715µs from c_game.cn.1
+[storage.cn.1 I 260403 06:26:54.466.875 framework.go:534] REQ storage.cn.1.DBUpdate 360 [0xc014919c10 IDHex("69cf59d036908d001b1ee338") 0xc0147dd240 0xc015549868]
+[storage.cn.1 I 260403 06:26:54.467.876 rpcserver.go:622] RESP storage.cn.1.DBUpdate 360 44B 642µs from c_game.cn.1
+[storage.cn.1 I 260403 06:26:54.491.877 framework.go:534] REQ storage.cn.1.DBUpdate 361 [0xc014961950 IDHex("69cf59d036908d001b1ee339") 0xc014802680 0xc0004871a8]
+[storage.cn.1 I 260403 06:26:54.491.878 rpcserver.go:622] RESP storage.cn.1.DBUpdate 361 44B 658µs from c_game.cn.1
+[storage.cn.1 I 260403 06:26:54.516.879 framework.go:534] REQ storage.cn.1.DBUpdate 362 [0xc014992120 IDHex("69cf59d036908d001b1ee33a") 0xc014a96420 0xc01495e7e8]
+[storage.cn.1 I 260403 06:26:54.516.880 rpcserver.go:622] RESP storage.cn.1.DBUpdate 362 44B 796µs from c_game.cn.1
+[storage.cn.1 I 260403 06:26:54.541.881 framework.go:534] REQ storage.cn.1.DBUpdate 363 [0xc014992620 IDHex("69cf59d036908d001b1ee33b") 0xc014a96f00 0xc00084e658]
+[storage.cn.1 I 260403 06:26:54.542.882 rpcserver.go:622] RESP storage.cn.1.DBUpdate 363 44B 853µs from c_game.cn.1
+[storage.cn.1 I 260403 06:26:54.566.883 framework.go:534] REQ storage.cn.1.DBUpdate 364 [0xc01490a2e0 IDHex("69cf57c436908d001b1ee332") 0xc0147dd940 0xc000b86418]
+[storage.cn.1 I 260403 06:26:54.566.884 rpcserver.go:622] RESP storage.cn.1.DBUpdate 364 44B 676µs from c_game.cn.1
+[storage.cn.1 I 260403 06:26:54.591.885 framework.go:534] REQ storage.cn.1.DBUpdate 365 [0xc0149929c0 IDHex("69cf59d036908d001b1ee335") 0xc014a975c0 0xc00084ea58]
+[storage.cn.1 I 260403 06:26:54.592.886 rpcserver.go:622] RESP storage.cn.1.DBUpdate 365 44B 1.074ms from c_game.cn.1
+[storage.cn.1 I 260403 06:26:54.616.887 framework.go:534] REQ storage.cn.1.DBUpdate 366 [0xc014961c90 IDHex("69cf59d036908d001b1ee336") 0xc014802b60 0xc0004875f8]
+[storage.cn.1 I 260403 06:26:54.616.888 rpcserver.go:622] RESP storage.cn.1.DBUpdate 366 44B 650µs from c_game.cn.1
+[storage.cn.1 I 260403 06:26:54.641.889 framework.go:534] REQ storage.cn.1.DBUpdate 367 [0xc0148fa0e0 IDHex("69cf59d036908d001b1ee337") 0xc014802f60 0xc000786058]
+[storage.cn.1 I 260403 06:26:54.642.890 rpcserver.go:622] RESP storage.cn.1.DBUpdate 367 44B 882µs from c_game.cn.1
+[storage.cn.1 I 260403 06:26:54.666.891 framework.go:534] REQ storage.cn.1.DBUpdate 368 [0xc01490a930 IDHex("69cf59d036908d001b1ee334") 0xc0147ddf60 0xc000b868a8]
+[storage.cn.1 I 260403 06:26:54.667.892 rpcserver.go:622] RESP storage.cn.1.DBUpdate 368 44B 1.15ms from c_game.cn.1
+[storage.cn.1 I 260403 06:26:54.691.893 framework.go:534] REQ storage.cn.1.DBUpdate 369 [0xc014992cf0 IDHex("69cf59d036908d001b1ee333") 0xc014a97e20 0xc00084ee68]
+[storage.cn.1 I 260403 06:26:54.692.894 rpcserver.go:622] RESP storage.cn.1.DBUpdate 369 44B 1.037ms from c_game.cn.1
+[storage.cn.1 I 260403 06:26:54.716.895 framework.go:534] REQ storage.cn.1.DBUpdate 370 [0xc0148fa700 IDHex("69cf59d036908d001b1ee34c") 0xc014803520 0xc000787758]
+[storage.cn.1 I 260403 06:26:54.717.896 rpcserver.go:622] RESP storage.cn.1.DBUpdate 370 44B 640µs from c_game.cn.1
+[storage.cn.1 I 260403 06:26:54.741.897 framework.go:534] REQ storage.cn.1.DBUpdate 371 [0xc0149930b0 IDHex("69cf59d036908d001b1ee348") 0xc014826780 0xc00084f248]
+[storage.cn.1 I 260403 06:26:54.741.898 rpcserver.go:622] RESP storage.cn.1.DBUpdate 371 44B 616µs from c_game.cn.1
+[storage.cn.1 I 260403 06:26:54.766.899 framework.go:534] REQ storage.cn.1.DBUpdate 372 [0xc014993500 IDHex("69cf59d036908d001b1ee349") 0xc014826d80 0xc00084f638]
+[storage.cn.1 I 260403 06:26:54.767.900 rpcserver.go:622] RESP storage.cn.1.DBUpdate 372 44B 696µs from c_game.cn.1
+[storage.cn.1 I 260403 06:26:54.790.901 framework.go:534] REQ storage.cn.1.DBUpdate 373 [0xc01490ae10 IDHex("69cf59d036908d001b1ee34a") 0xc0147a42e0 0xc000b86ed8]
+[storage.cn.1 I 260403 06:26:54.791.902 rpcserver.go:622] RESP storage.cn.1.DBUpdate 373 44B 696µs from c_game.cn.1
+[storage.cn.1 I 260403 06:26:54.816.903 framework.go:534] REQ storage.cn.1.DBUpdate 374 [0xc014927690 IDHex("69cf59d036908d001b1ee34b") 0xc014743640 0xc0170eeb88]
+[storage.cn.1 I 260403 06:26:54.817.904 rpcserver.go:622] RESP storage.cn.1.DBUpdate 374 44B 1.009ms from c_game.cn.1
+[storage.cn.1 I 260403 06:26:54.840.905 framework.go:534] REQ storage.cn.1.DBUpdate 375 [0xc014927a10 IDHex("69cf59d036908d001b1ee344") 0xc014743b00 0xc017943d48]
+[storage.cn.1 I 260403 06:26:54.841.906 rpcserver.go:622] RESP storage.cn.1.DBUpdate 375 44B 648µs from c_game.cn.1
+[storage.cn.1 I 260403 06:26:54.866.907 framework.go:534] REQ storage.cn.1.DBUpdate 376 [0xc01490b3e0 IDHex("69cf59d036908d001b1ee345") 0xc0147a4780 0xc000b87738]
+[storage.cn.1 I 260403 06:26:54.866.908 rpcserver.go:622] RESP storage.cn.1.DBUpdate 376 44B 696µs from c_game.cn.1
+[storage.cn.1 I 260403 06:26:54.891.909 framework.go:534] REQ storage.cn.1.DBUpdate 377 [0xc0149938b0 IDHex("69cf59d036908d001b1ee346") 0xc014827260 0xc00084fa68]
+[storage.cn.1 I 260403 06:26:54.891.910 rpcserver.go:622] RESP storage.cn.1.DBUpdate 377 44B 926µs from c_game.cn.1
+[storage.cn.1 I 260403 06:26:54.916.911 framework.go:534] REQ storage.cn.1.DBUpdate 378 [0xc014927d40 IDHex("69cf59d036908d001b1ee347") 0xc014814120 0xc00094a1f8]
+[storage.cn.1 I 260403 06:26:54.918.912 rpcserver.go:622] RESP storage.cn.1.DBUpdate 378 44B 1.824ms from c_game.cn.1
+[storage.cn.1 I 260403 06:26:54.941.913 framework.go:534] REQ storage.cn.1.DBUpdate 379 [0xc014993bc0 IDHex("69cf59d036908d001b1ee340") 0xc014827640 0xc00084fe68]
+[storage.cn.1 I 260403 06:26:54.942.914 rpcserver.go:622] RESP storage.cn.1.DBUpdate 379 44B 875µs from c_game.cn.1
+[storage.cn.1 I 260403 06:26:54.965.915 framework.go:534] REQ storage.cn.1.DBUpdate 380 [0xc014993fe0 IDHex("69cf59d036908d001b1ee341") 0xc014827b00 0xc0009b62a8]
+[storage.cn.1 I 260403 06:26:54.966.916 rpcserver.go:622] RESP storage.cn.1.DBUpdate 380 44B 638µs from c_game.cn.1
+[storage.cn.1 I 260403 06:26:54.991.917 framework.go:534] REQ storage.cn.1.DBUpdate 381 [0xc014870070 IDHex("69cf59d036908d001b1ee342") 0xc0148145e0 0xc00094a658]
+[storage.cn.1 I 260403 06:26:54.991.918 rpcserver.go:622] RESP storage.cn.1.DBUpdate 381 44B 802µs from c_game.cn.1
+[storage.cn.1 I 260403 06:26:55.016.919 framework.go:534] REQ storage.cn.1.DBUpdate 382 [0xc0148544d0 IDHex("69cf59d036908d001b1ee343") 0xc0147ca020 0xc0009b66c8]
+[storage.cn.1 I 260403 06:26:55.017.920 rpcserver.go:622] RESP storage.cn.1.DBUpdate 382 44B 772µs from c_game.cn.1
+[storage.cn.1 I 260403 06:27:02.504.921 framework.go:534] REQ storage.cn.1.DBUpdate 383 [0xc014854b90 IDHex("69ce84fec9d6fb04dc096316") 0xc0147ca560 0xc0009b6b98]
+[storage.cn.1 I 260403 06:27:02.506.922 rpcserver.go:622] RESP storage.cn.1.DBUpdate 383 44B 2.682ms from c_pvp.cn.1
+[storage.cn.1 I 260403 06:27:04.242.923 framework.go:534] REQ storage.cn.1.DBUpdate 384 [0xc01490bec0 IDHex("69cf5da336908d001b1ee350") 0xc0147a4fc0 0xc0009da238]
+[storage.cn.1 I 260403 06:27:04.243.924 rpcserver.go:622] RESP storage.cn.1.DBUpdate 384 44B 1.014ms from c_game.cn.1
+[storage.cn.1 I 260403 06:27:05.354.925 framework.go:534] REQ storage.cn.1.DBReadBy 385 [0xc0148123c0 0xc013194338]
+[storage.cn.1 I 260403 06:27:05.373.926 rpcserver.go:622] RESP storage.cn.1.DBReadBy 385 44B 19.039ms from c_game.cn.1
+[storage.cn.1 I 260403 06:27:14.245.927 framework.go:534] REQ storage.cn.1.DBUpdate 386 [0xc014870f20 IDHex("69cf57bc36908d001b1ee319") 0xc014815680 0xc00094b698]
+[storage.cn.1 I 260403 06:27:14.248.928 rpcserver.go:622] RESP storage.cn.1.DBUpdate 386 44B 2.688ms from c_game.cn.1
+[storage.cn.1 I 260403 06:27:24.242.929 framework.go:534] REQ storage.cn.1.DBUpdate 387 [0xc0148714a0 IDHex("69cf57bc36908d001b1ee31e") 0xc014815aa0 0xc00094b868]
+[storage.cn.1 I 260403 06:27:24.243.930 rpcserver.go:622] RESP storage.cn.1.DBUpdate 387 44B 1.072ms from c_game.cn.1
+[storage.cn.1 I 260403 06:27:34.244.931 framework.go:534] REQ storage.cn.1.DBUpdate 388 [0xc014813110 IDHex("69cf57bc36908d001b1ee319") 0xc01483c080 0xc0009db118]
+[storage.cn.1 I 260403 06:27:34.248.932 rpcserver.go:622] RESP storage.cn.1.DBUpdate 388 44B 4.321ms from c_game.cn.1
+[storage.cn.1 I 260403 06:27:53.060.933 session.go:132] Commit 89 objects, success 89
+[storage.cn.1 I 260403 06:27:54.250.934 framework.go:534] REQ storage.cn.1.DBUpdate 389 [0xc014a49ba0 IDHex("69cf57bc36908d001b1ee31e") 0xc01483dde0 0xc000a988e8]
+[storage.cn.1 I 260403 06:27:54.250.935 rpcserver.go:622] RESP storage.cn.1.DBUpdate 389 44B 875µs from c_game.cn.1
+[storage.cn.1 I 260403 06:28:03.795.936 framework.go:534] REQ storage.cn.1.DBCreate 390 [0xc014afbd30 0xc01489b940]
+[storage.cn.1 I 260403 06:28:03.847.937 rpcserver.go:622] RESP storage.cn.1.DBCreate 390 249B 52.292ms from c_game.cn.1
+[storage.cn.1 I 260403 06:28:04.244.938 framework.go:534] REQ storage.cn.1.DBUpdate 391 [0xc014abfdc0 IDHex("69cf57bc36908d001b1ee31b") 0xc014875020 0xc0008243b8]
+[storage.cn.1 I 260403 06:28:04.245.939 rpcserver.go:622] RESP storage.cn.1.DBUpdate 391 44B 1.392ms from c_game.cn.1
+[storage.cn.1 I 260403 06:28:12.155.940 framework.go:534] REQ storage.cn.1.DBReadBy 392 [0xc0148face0 0xc005d7e278]
+[storage.cn.1 I 260403 06:28:12.168.941 rpcserver.go:622] RESP storage.cn.1.DBReadBy 392 44B 12.372ms from c_game.cn.1
+[storage.cn.1 I 260403 06:28:24.251.942 framework.go:534] REQ storage.cn.1.DBUpdate 393 [0xc0148fbbd0 IDHex("69cf57bc36908d001b1ee319") 0xc0148e7060 0xc00084ada8]
+[storage.cn.1 I 260403 06:28:24.257.943 rpcserver.go:622] RESP storage.cn.1.DBUpdate 393 44B 9.859ms from c_game.cn.1

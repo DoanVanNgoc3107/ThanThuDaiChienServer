@@ -1,0 +1,58 @@
+[host_server I 260403 05:53:46.903.001 document.go:151] register document default ok
+[host_server I 260403 05:53:46.910.002 init.go:171] register document ok
+[host_server D 260403 05:53:46.913.003 config.go:49] cwd in /mnt/pokemon/release/storage
+[host_server D 260403 05:53:46.947.004 config.go:23] GetExtend service commentdb.cn.1 &storage.Option{Option:service.Option{Name:"commentdb.cn.1", Alias:[]string(nil), Dependent:[]string(nil)}, MongoDB:"mongodb://root:GpFkU9O24cjhnWco@mongo44:27017/commentdb_cn_1?authMechanism=SCRAM-SHA-1&authSource=admin", DBName:"commentdb_cn_1", MGOPoolLimit:0, MGOStats:false}
+[host_server I 260403 05:53:46.948.005 config.go:60] commentdb.cn.1 config in defines.json
+[commentdb.cn.1 I 260403 05:53:46.948.006 main.go:44] &services.Define{ContainerOption:service.ContainerOption{Name:"@commentdb.cn.1", Debug:false, Addr:"", NSQLookupd:"http://127.0.0.1:4161/", Mainnsqd:"", NSQTcpAddresses:[]string{"127.0.0.1:4150"}, Shushu:false, Services:[]service.IOption{(*storage.Option)(0xc00030b340)}, ServicesRaw:[]json.RawMessage(nil)}}
+[commentdb.cn.1 I 260403 05:53:52.229.009 storage.go:236] connect to mongodb mongodb://root:GpFkU9O24cjhnWco@mongo44:27017/commentdb_cn_1?authMechanism=SCRAM-SHA-1&authSource=admin commentdb_cn_1
+[commentdb.cn.1 W 260403 05:53:52.234.010 service.go:161] EnsureIndexKey CardComment error <nil>
+[commentdb.cn.1 W 260403 05:53:52.235.011 service.go:165] EnsureIndexKey CardComment error <nil>
+[commentdb.cn.1 I 260403 05:53:52.258.015 rpcclient.go:292] create client consumer RESP-c_commentdb.cn.1/0global_1rpc
+[commentdb.cn.1 I 260403 05:53:52.262.016 consumer.go:1175] INF    2 [RESP-c_commentdb.cn.1/0global_1rpc] (127.0.0.1:4150) connecting to nsqd
+[commentdb.cn.1 I 260403 05:53:52.267.017 container.go:259] service commentdb.cn.1 start
+[commentdb.cn.1 I 260403 05:53:52.267.018 container.go:264] container @commentdb.cn.1 start
+[commentdb.cn.1 I 260403 05:53:52.267.019 server.go:29] server start ok
+[commentdb.cn.1 I 260403 05:53:52.269.023 rpcserver.go:349] create server consumer REQ-commentdb.cn.1/rpc
+[commentdb.cn.1 I 260403 05:53:52.273.091 consumer.go:1175] INF    3 [REQ-commentdb.cn.1/rpc] (127.0.0.1:4150) connecting to nsqd
+[commentdb.cn.1 I 260403 05:53:52.494.092 framework.go:534] REQ commentdb.cn.1.DBReadsert 1 [0xc013f15340 0xc014074060 0xc0004c67b8]
+[commentdb.cn.1 I 260403 05:53:52.528.093 producer.go:382] INF    4 (127.0.0.1:4150) connecting to nsqd
+[commentdb.cn.1 I 260403 05:53:52.528.094 rpcserver.go:622] RESP commentdb.cn.1.DBReadsert 1 29240B -ms
+[commentdb.cn.1 I 260403 05:54:02.493.095 framework.go:534] REQ commentdb.cn.1.DBUpdate 2 [0xc01436e000 IDHex("69ce84f4c9d6fb04c2e442a1") 0xc0140b9500 0xc000454940]
+[commentdb.cn.1 I 260403 05:54:02.496.096 rpcserver.go:622] RESP commentdb.cn.1.DBUpdate 2 46B 3.983ms from c_comment.cn.1
+[commentdb.cn.1 I 260403 05:55:52.276.097 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 05:57:52.278.098 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 05:59:52.280.099 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 06:01:52.281.100 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 06:03:52.282.101 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 06:05:52.284.102 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 06:07:52.287.103 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 06:09:52.287.104 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 06:11:52.288.105 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 06:13:52.294.106 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 06:15:52.297.107 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 06:17:52.298.108 session.go:132] Commit 1 objects, success 1
+[commentdb.cn.1 I 260403 06:18:14.396.109 framework.go:534] REQ commentdb.cn.1.CardCommentQuery 3 [0xc0004c60f8 0xc0004c6110 <nil> 0xc0140d0d20]
+[commentdb.cn.1 I 260403 06:18:14.417.110 rpcserver.go:622] RESP commentdb.cn.1.CardCommentQuery 3 46B 21.827ms from c_comment.cn.1
+[commentdb.cn.1 I 260403 06:18:14.419.111 framework.go:534] REQ commentdb.cn.1.CardCommentQuery 4 [0xc0004c65a8 0xc0004c65b0 <nil> 0xc0140d1c00]
+[commentdb.cn.1 I 260403 06:18:14.419.112 rpcserver.go:622] RESP commentdb.cn.1.CardCommentQuery 4 46B 772µs from c_comment.cn.1
+[commentdb.cn.1 I 260403 06:18:14.434.113 framework.go:534] REQ commentdb.cn.1.CardCommentQuery 5 [0xc0004c6870 0xc0004c6878 IDHex("69cf57bc36908d001b1ee319") 0xc0140d1e00]
+[commentdb.cn.1 I 260403 06:18:14.437.114 rpcserver.go:622] RESP commentdb.cn.1.CardCommentQuery 5 46B 3.12ms from c_comment.cn.1
+[commentdb.cn.1 I 260403 06:18:14.459.115 framework.go:534] REQ commentdb.cn.1.DBReadBy 6 [0xc0143d2bc0 0xc014074158]
+[commentdb.cn.1 I 260403 06:18:14.460.116 rpcserver.go:622] RESP commentdb.cn.1.DBReadBy 6 46B 1.692ms from c_comment.cn.1
+[commentdb.cn.1 I 260403 06:18:14.556.117 framework.go:534] REQ commentdb.cn.1.DBReadBy 7 [0xc013f97920 0xc010e5a1a8]
+[commentdb.cn.1 I 260403 06:18:14.558.118 rpcserver.go:622] RESP commentdb.cn.1.DBReadBy 7 46B 1.468ms from c_comment.cn.1
+[commentdb.cn.1 I 260403 06:18:38.676.119 framework.go:534] REQ commentdb.cn.1.DBReadBy 8 [0xc0143a8080 0xc010d0c058]
+[commentdb.cn.1 I 260403 06:18:38.693.120 rpcserver.go:622] RESP commentdb.cn.1.DBReadBy 8 46B 17.094ms from c_comment.cn.1
+[commentdb.cn.1 I 260403 06:18:38.696.121 framework.go:534] REQ commentdb.cn.1.DBCreate 9 [0xc0143a8790 0xc013f194c0]
+[commentdb.cn.1 I 260403 06:18:38.700.122 rpcserver.go:622] RESP commentdb.cn.1.DBCreate 9 181B 4.256ms from c_comment.cn.1
+[commentdb.cn.1 I 260403 06:18:38.709.123 framework.go:534] REQ commentdb.cn.1.DBCreate 10 [0xc0143a9110 0xc0140be6a0]
+[commentdb.cn.1 I 260403 06:18:38.714.124 rpcserver.go:622] RESP commentdb.cn.1.DBCreate 10 174B 5.386ms from c_comment.cn.1
+[commentdb.cn.1 I 260403 06:18:52.488.125 framework.go:534] REQ commentdb.cn.1.DBUpdate 11 [0xc013f145e0 IDHex("69cf5bbe36908d001d5db5fa") 0xc0140cc4e0 0xc00ae1b228]
+[commentdb.cn.1 I 260403 06:18:52.488.126 rpcserver.go:622] RESP commentdb.cn.1.DBUpdate 11 46B 595µs from c_comment.cn.1
+[commentdb.cn.1 I 260403 06:18:52.500.127 framework.go:534] REQ commentdb.cn.1.DBUpdate 12 [0xc013f14b90 IDHex("69cf5bbe36908d001d5db5f9") 0xc0140b8620 0xc0004c6178]
+[commentdb.cn.1 I 260403 06:18:52.503.128 rpcserver.go:622] RESP commentdb.cn.1.DBUpdate 12 46B 2.864ms from c_comment.cn.1
+[commentdb.cn.1 I 260403 06:19:52.321.129 session.go:132] Commit 3 objects, success 3
+[commentdb.cn.1 I 260403 06:21:52.322.130 session.go:132] Commit 3 objects, success 3
+[commentdb.cn.1 I 260403 06:23:52.330.131 session.go:132] Commit 3 objects, success 3
+[commentdb.cn.1 I 260403 06:25:52.335.132 session.go:132] Commit 3 objects, success 3
+[commentdb.cn.1 I 260403 06:27:52.337.133 session.go:132] Commit 3 objects, success 3

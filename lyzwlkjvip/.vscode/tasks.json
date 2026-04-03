@@ -1,0 +1,11 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "recreate-docker-lan-stack",
+			"type": "shell",
+			"command": "docker compose -f docker-compose.local.yml down && docker compose -f docker-compose.local.yml up -d --force-recreate",
+			"isBackground": false
+		}
+	]
+}
